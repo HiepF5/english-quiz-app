@@ -1,0 +1,205 @@
+{
+  "id": "day2-past-tenses",
+  "title": "Day 2: Past Simple & Past Continuous",
+  "description": "Thì Quá khứ đơn & Quá khứ tiếp diễn trong đề thi TOEIC & Ngữ cảnh công sở (15 câu)",
+  "level": "Intermediate (B1)",
+  "category": "Grammar",
+  "timeLimitMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "part": "Part A — Quá Khứ Đơn Cơ Bản",
+      "question": "The accounting team ______ the annual financial audit yesterday.",
+      "options": [
+        "finalize",
+        "finalizes",
+        "finalized",
+        "was finalizing"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu thời gian \"yesterday\" chỉ hành động đã hoàn tất hoàn toàn trong quá khứ -> chọn thì Quá khứ đơn \"finalized\"."
+    },
+    {
+      "id": 2,
+      "part": "Part A — Quá Khứ Đơn Cơ Bản",
+      "question": "Ms. Clara ______ the contract before sending it to the legal division.",
+      "options": [
+        "review",
+        "reviewed",
+        "reviews",
+        "has reviewed"
+      ],
+      "correct": 1,
+      "explanation": "Chuỗi hành động xảy ra tuần tự trong quá khứ -> \"reviewed\"."
+    },
+    {
+      "id": 3,
+      "part": "Part B — Quá Khứ Tiếp Diễn & Cắt Ngang",
+      "question": "While Mr. Tanaka ______ the proposal, the system crashed unexpectedly.",
+      "options": [
+        "is writing",
+        "wrote",
+        "was writing",
+        "writes"
+      ],
+      "correct": 2,
+      "explanation": "Hành động đang diễn ra trong quá khứ dùng Quá khứ tiếp diễn (was writing), hành động ngắn xen vào dùng Quá khứ đơn (crashed)."
+    },
+    {
+      "id": 4,
+      "part": "Part B — Quá Khứ Tiếp Diễn & Cắt Ngang",
+      "question": "The clients arrived at the venue while we ______ up the presentation screens.",
+      "options": [
+        "set",
+        "were setting",
+        "are setting",
+        "have set"
+      ],
+      "correct": 1,
+      "explanation": "Hành động đang diễn ra lúc khách đến là \"were setting up\"."
+    },
+    {
+      "id": 5,
+      "part": "Part C — Bẫy Động Từ & Từ Vựng TOEIC",
+      "question": "Two days ago, the project director ______ to expand the marketing budget.",
+      "options": [
+        "decides",
+        "decided",
+        "deciding",
+        "decision"
+      ],
+      "correct": 1,
+      "explanation": "Dấu hiệu \"Two days ago\" cần động từ chia quá khứ đơn -> \"decided\"."
+    },
+    {
+      "id": 6,
+      "part": "Part C — Bẫy Động Từ & Từ Vựng TOEIC",
+      "question": "The firm ______ a major increase in sales during the previous quarter.",
+      "options": [
+        "report",
+        "reported",
+        "reporting",
+        "reports"
+      ],
+      "correct": 1,
+      "explanation": "\"During the previous quarter\" chỉ thời gian quý trước đã kết thúc -> \"reported\"."
+    },
+    {
+      "id": 7,
+      "part": "Part C — Bẫy Động Từ & Từ Vựng TOEIC",
+      "question": "When the fire alarm rang, everyone ______ out of the building safely.",
+      "options": [
+        "walks",
+        "was walking",
+        "walked",
+        "has walked"
+      ],
+      "correct": 2,
+      "explanation": "Chuỗi phản ứng liên tiếp trong quá khứ -> \"walked\"."
+    },
+    {
+      "id": 8,
+      "part": "Part C — Bẫy Động Từ & Từ Vựng TOEIC",
+      "question": "The software engineer ______ the bug before the end of his shift.",
+      "options": [
+        "fix",
+        "fixed",
+        "fixing",
+        "fixes"
+      ],
+      "correct": 1,
+      "explanation": "Hành động đã hoàn thành trong quá khứ -> \"fixed\"."
+    },
+    {
+      "id": 9,
+      "part": "Part C — Bẫy Động Từ & Từ Vựng TOEIC",
+      "question": "Last night, the CEO ______ an emergency announcement regarding the merger.",
+      "options": [
+        "make",
+        "makes",
+        "made",
+        "making"
+      ],
+      "correct": 2,
+      "explanation": "Quá khứ của \"make\" là \"made\". Dấu hiệu \"Last night\"."
+    },
+    {
+      "id": 10,
+      "part": "Part C — Bẫy Động Từ & Từ Vựng TOEIC",
+      "question": "We ______ any major complaints from users last week.",
+      "options": [
+        "didn't receive",
+        "don't receive",
+        "haven't received",
+        "not received"
+      ],
+      "correct": 0,
+      "explanation": "Phủ định quá khứ đơn dùng \"didn't + V-inf\" -> \"didn't receive\"."
+    },
+    {
+      "id": 11,
+      "part": "Part C — Bẫy Động Từ & Từ Vựng TOEIC",
+      "question": "The new regional branch ______ operations three months ago.",
+      "options": [
+        "commence",
+        "commenced",
+        "commences",
+        "commencing"
+      ],
+      "correct": 1,
+      "explanation": "\"Commence\" (bắt đầu), chia quá khứ đơn có \"ago\" -> \"commenced\"."
+    },
+    {
+      "id": 12,
+      "part": "Part C — Bẫy Động Từ & Từ Vựng TOEIC",
+      "question": "While the technical team ______ the server, users experienced brief interruptions.",
+      "options": [
+        "upgraded",
+        "was upgrading",
+        "upgrades",
+        "is upgrading"
+      ],
+      "correct": 1,
+      "explanation": "\"The technical team\" (dạng số ít) đang nâng cấp máy chủ -> \"was upgrading\"."
+    },
+    {
+      "id": 13,
+      "part": "Part C — Bẫy Động Từ & Từ Vựng TOEIC",
+      "question": "She ______ her flight ticket to Tokyo last Tuesday.",
+      "options": [
+        "book",
+        "booked",
+        "booking",
+        "books"
+      ],
+      "correct": 1,
+      "explanation": "Dấu hiệu \"last Tuesday\" -> chia quá khứ đơn \"booked\"."
+    },
+    {
+      "id": 14,
+      "part": "Part C — Bẫy Động Từ & Từ Vựng TOEIC",
+      "question": "The company ______ its 10th anniversary celebration in Paris last year.",
+      "options": [
+        "hosts",
+        "hosted",
+        "hosting",
+        "host"
+      ],
+      "correct": 1,
+      "explanation": "\"Last year\" -> chia quá khứ đơn \"hosted\"."
+    },
+    {
+      "id": 15,
+      "part": "Part C — Bẫy Động Từ & Từ Vựng TOEIC",
+      "question": "They ______ to an agreement after hours of intensive negotiation.",
+      "options": [
+        "come",
+        "came",
+        "coming",
+        "comes"
+      ],
+      "correct": 1,
+      "explanation": "Quá khứ đơn của \"come\" là \"came\"."
+    }
+  ]
+}

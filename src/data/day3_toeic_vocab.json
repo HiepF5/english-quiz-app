@@ -1,0 +1,205 @@
+{
+  "id": "day3-toeic-vocab",
+  "title": "Day 3: Essential Business Vocabulary & Collocations",
+  "description": "Từ vựng Tiếng Anh thương mại & TOEIC Part 5/6 thông dụng nhất (15 câu)",
+  "level": "Intermediate (B1 - B2)",
+  "category": "Vocabulary",
+  "timeLimitMinutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "part": "Part A — Từ Vựng Văn Phòng & Thương Mại",
+      "question": "The company offers a highly ______ salary package to attract top talents.",
+      "options": [
+        "competitive",
+        "compete",
+        "competition",
+        "competitor"
+      ],
+      "correct": 0,
+      "explanation": "Sau trạng từ \"highly\" và trước danh từ \"salary package\" cần một tính từ -> \"competitive\" (cạnh tranh)."
+    },
+    {
+      "id": 2,
+      "part": "Part A — Từ Vựng Văn Phòng & Thương Mại",
+      "question": "Please submit your application before the deadline to ensure ______ consideration.",
+      "options": [
+        "prompt",
+        "promptly",
+        "promptness",
+        "prompts"
+      ],
+      "correct": 0,
+      "explanation": "Trước danh từ \"consideration\" cần tính từ bổ nghĩa -> \"prompt\" (nhanh chóng, kịp thời)."
+    },
+    {
+      "id": 3,
+      "part": "Part A — Từ Vựng Văn Phòng & Thương Mại",
+      "question": "All employees are required to attend the mandatory safety ______ tomorrow.",
+      "options": [
+        "seminar",
+        "product",
+        "invoice",
+        "receipt"
+      ],
+      "correct": 0,
+      "explanation": "Cụm từ \"safety seminar\" (hội thảo an toàn). Các đáp án khác không phù hợp ngữ cảnh."
+    },
+    {
+      "id": 4,
+      "part": "Part B — Từ Loại & Cụm Từ Thường Gặp",
+      "question": "The board of directors approved the proposed budget ______ after reviewing the financial audit.",
+      "options": [
+        "unanimously",
+        "unanimous",
+        "unanimity",
+        "unanimousness"
+      ],
+      "correct": 0,
+      "explanation": "Sau động từ \"approved\" cần trạng từ chỉ thể cách -> \"unanimously\" (nhất trí 100%)."
+    },
+    {
+      "id": 5,
+      "part": "Part B — Từ Loại & Cụm Từ Thường Gặp",
+      "question": "Passengers are advised to keep their personal belongings ______ at all times.",
+      "options": [
+        "secure",
+        "securely",
+        "security",
+        "securing"
+      ],
+      "correct": 0,
+      "explanation": "Cấu trúc \"keep + O + adj\" -> chọn tính từ \"secure\" (an toàn, bảo vệ)."
+    },
+    {
+      "id": 6,
+      "part": "Part C — Cụm Từ Giới Từ & Cấu Trúc TOEIC",
+      "question": "Due to unforeseen circumstances, the workshop has been postponed ______ further notice.",
+      "options": [
+        "until",
+        "by",
+        "for",
+        "since"
+      ],
+      "correct": 0,
+      "explanation": "Cụm cố định \"until further notice\" nghĩa là cho đến khi có thông báo mới."
+    },
+    {
+      "id": 7,
+      "part": "Part C — Cụm Từ Giới Từ & Cấu Trúc TOEIC",
+      "question": "The new policy will take ______ starting next Monday.",
+      "options": [
+        "effect",
+        "affect",
+        "effective",
+        "effectively"
+      ],
+      "correct": 0,
+      "explanation": "Cụm từ \"take effect\" có nghĩa là có hiệu lực."
+    },
+    {
+      "id": 8,
+      "part": "Part C — Cụm Từ Giới Từ & Cấu Trúc TOEIC",
+      "question": "Mr. David is directly responsible ______ managing international client relations.",
+      "options": [
+        "for",
+        "to",
+        "with",
+        "about"
+      ],
+      "correct": 0,
+      "explanation": "Cấu trúc \"be responsible for + V-ing/N\" (chịu trách nhiệm cho việc gì)."
+    },
+    {
+      "id": 9,
+      "part": "Part C — Cụm Từ Giới Từ & Cấu Trúc TOEIC",
+      "question": "The revised manual contains clear instructions for equipment ______.",
+      "options": [
+        "maintenance",
+        "maintain",
+        "maintained",
+        "maintaining"
+      ],
+      "correct": 0,
+      "explanation": "Sau danh từ \"equipment\" cần danh từ ghép -> \"equipment maintenance\" (việc bảo trì thiết bị)."
+    },
+    {
+      "id": 10,
+      "part": "Part C — Cụm Từ Giới Từ & Cấu Trúc TOEIC",
+      "question": "We sincerely appreciate your ongoing ______ to our charitable foundation.",
+      "options": [
+        "contribution",
+        "contribute",
+        "contributed",
+        "contributing"
+      ],
+      "correct": 0,
+      "explanation": "Sau tính từ sở hữu \"your\" và tính từ \"ongoing\" cần một danh từ -> \"contribution\" (sự đóng góp)."
+    },
+    {
+      "id": 11,
+      "part": "Part C — Cụm Từ Giới Từ & Cấu Trúc TOEIC",
+      "question": "The warranty covers free repair service for any manufacturing ______.",
+      "options": [
+        "defects",
+        "defective",
+        "defectively",
+        "defecting"
+      ],
+      "correct": 0,
+      "explanation": "\"manufacturing defects\" (lỗi từ nhà sản xuất)."
+    },
+    {
+      "id": 12,
+      "part": "Part C — Cụm Từ Giới Từ & Cấu Trúc TOEIC",
+      "question": "Please review the attached document and let us know if any ______ are needed.",
+      "options": [
+        "revisions",
+        "revise",
+        "revising",
+        "revised"
+      ],
+      "correct": 0,
+      "explanation": "Sau \"any\" cần một danh từ số nhiều -> \"revisions\" (sự chỉnh sửa)."
+    },
+    {
+      "id": 13,
+      "part": "Part C — Cụm Từ Giới Từ & Cấu Trúc TOEIC",
+      "question": "The marketing campaign resulted in a substantial ______ in customer engagements.",
+      "options": [
+        "increase",
+        "increasing",
+        "increasingly",
+        "increased"
+      ],
+      "correct": 0,
+      "explanation": "Sau tính từ \"substantial\" cần danh từ -> \"increase\" (sự gia tăng)."
+    },
+    {
+      "id": 14,
+      "part": "Part C — Cụm Từ Giới Từ & Cấu Trúc TOEIC",
+      "question": "Candidates must possess excellent communication skills and a strong work ______.",
+      "options": [
+        "ethic",
+        "ethical",
+        "ethically",
+        "ethics"
+      ],
+      "correct": 0,
+      "explanation": "Cụm danh từ \"work ethic\" (đạo đức nghề nghiệp / tác phong làm việc)."
+    },
+    {
+      "id": 15,
+      "part": "Part C — Cụm Từ Giới Từ & Cấu Trúc TOEIC",
+      "question": "The hotel is conveniently ______ within walking distance of the central train station.",
+      "options": [
+        "located",
+        "location",
+        "locating",
+        "locate"
+      ],
+      "correct": 0,
+      "explanation": "Cụm \"be conveniently located\" (nằm ở vị trí thuận tiện)."
+    }
+  ]
+}

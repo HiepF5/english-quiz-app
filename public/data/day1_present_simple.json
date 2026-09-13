@@ -1,0 +1,270 @@
+{
+  "title": "Day 1: Luyện Tập Thì Hiện Tại Đơn & TOEIC",
+  "description": "Cơ bản đến TOEIC & Bẫy thường gặp (20 câu)",
+  "level": "A2 - B1",
+  "category": "Grammar",
+  "timeLimitMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "part": "Part A — Cơ bản",
+      "question": "The manager ______ the office at 8 a.m. every day.",
+      "options": [
+        "arrive",
+        "arrives",
+        "arriving",
+        "arrived"
+      ],
+      "correct": 1,
+      "explanation": "Chủ ngữ 'The manager' là ngôi thứ ba số ít (he/she), dấu hiệu 'every day' chỉ thói quen ở hiện tại đơn nên động từ thêm -s/es -> 'arrives'."
+    },
+    {
+      "id": 2,
+      "part": "Part A — Cơ bản",
+      "question": "They ______ the monthly report every Friday.",
+      "options": [
+        "prepare",
+        "prepares",
+        "preparing",
+        "prepared"
+      ],
+      "correct": 0,
+      "explanation": "Chủ ngữ 'They' là số nhiều, dấu hiệu 'every Friday' là hiện tại đơn -> dùng động từ nguyên thể 'prepare'."
+    },
+    {
+      "id": 3,
+      "part": "Part A — Cơ bản",
+      "question": "She ______ work on Sundays.",
+      "options": [
+        "don't",
+        "doesn't",
+        "isn't",
+        "not"
+      ],
+      "correct": 1,
+      "explanation": "Với động từ thường 'work' và chủ ngữ 'She', câu phủ định ở hiện tại đơn dùng trợ động từ 'doesn't'."
+    },
+    {
+      "id": 4,
+      "part": "Part A — Cơ bản",
+      "question": "______ your supervisor usually attend the meeting?",
+      "options": [
+        "Do",
+        "Does",
+        "Is",
+        "Are"
+      ],
+      "correct": 1,
+      "explanation": "Câu hỏi thì hiện tại đơn với động từ thường 'attend' và chủ ngữ số ít 'your supervisor' -> dùng trợ động từ 'Does'."
+    },
+    {
+      "id": 5,
+      "part": "Part A — Cơ bản",
+      "question": "The system ______ customer information.",
+      "options": [
+        "store",
+        "stores",
+        "storing",
+        "stored"
+      ],
+      "correct": 1,
+      "explanation": "'The system' là danh từ số ít chỉ chức năng chung -> động từ chia ngôi thứ 3 số ít: 'stores'."
+    },
+    {
+      "id": 6,
+      "part": "Part A — Cơ bản",
+      "question": "We ______ two meetings every month.",
+      "options": [
+        "has",
+        "have",
+        "having",
+        "had"
+      ],
+      "correct": 1,
+      "explanation": "Chủ ngữ 'We' đi với động từ nguyên thể 'have' trong thì hiện tại đơn."
+    },
+    {
+      "id": 7,
+      "part": "Part A — Cơ bản",
+      "question": "He ______ the documents before submitting them.",
+      "options": [
+        "check",
+        "checks",
+        "checking",
+        "checked"
+      ],
+      "correct": 1,
+      "explanation": "Chủ ngữ 'He' (ngôi ba số ít), diễn tả hành động/quy trình thường quy -> dùng 'checks'."
+    },
+    {
+      "id": 8,
+      "part": "Part A — Cơ bản",
+      "question": "My colleagues ______ usually available in the afternoon.",
+      "options": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "correct": 2,
+      "explanation": "'My colleagues' có đuôi -s là danh từ số nhiều -> to be ở hiện tại đơn là 'are'."
+    },
+    {
+      "id": 9,
+      "part": "Part B — TOEIC",
+      "question": "The accounting department ______ all invoices before payment.",
+      "options": [
+        "review",
+        "reviews",
+        "reviewing",
+        "reviewed"
+      ],
+      "correct": 1,
+      "explanation": "'The accounting department' (phòng kế toán) là danh từ số ít chỉ một tổ chức/đơn vị -> động từ chia 'reviews'."
+    },
+    {
+      "id": 10,
+      "part": "Part B — TOEIC",
+      "question": "The new policy ______ into effect next Monday.",
+      "options": [
+        "go",
+        "goes",
+        "going",
+        "went"
+      ],
+      "correct": 1,
+      "explanation": "Hiện tại đơn dùng để diễn tả lịch trình/quy định có hiệu lực cố định trong tương lai với chủ ngữ số ít 'policy' -> 'goes into effect'."
+    },
+    {
+      "id": 11,
+      "part": "Part B — TOEIC",
+      "question": "The train ______ at 7:15 tomorrow morning.",
+      "options": [
+        "leave",
+        "leaves",
+        "left",
+        "leaving"
+      ],
+      "correct": 1,
+      "explanation": "Hiện tại đơn diễn tả lịch trình tàu xe, máy bay cố định (timetables/schedules) -> 'The train leaves'."
+    },
+    {
+      "id": 12,
+      "part": "Part B — TOEIC",
+      "question": "The company rarely ______ its employees on weekends.",
+      "options": [
+        "contact",
+        "contacts",
+        "contacting",
+        "contacted"
+      ],
+      "correct": 1,
+      "explanation": "Trạng từ tần suất 'rarely' đi với hiện tại đơn, chủ ngữ 'The company' số ít -> 'contacts'."
+    },
+    {
+      "id": 13,
+      "part": "Part B — TOEIC",
+      "question": "Ms. Brown ______ responsible for managing international accounts.",
+      "options": [
+        "are",
+        "be",
+        "is",
+        "does"
+      ],
+      "correct": 2,
+      "explanation": "Cấu trúc 'be responsible for' (chịu trách nhiệm cho). Chủ ngữ 'Ms. Brown' là tên riêng số ít -> to be là 'is'."
+    },
+    {
+      "id": 14,
+      "part": "Part B — TOEIC",
+      "question": "The software automatically ______ a confirmation email after each transaction.",
+      "options": [
+        "send",
+        "sends",
+        "sending",
+        "sent"
+      ],
+      "correct": 1,
+      "explanation": "'The software' là danh từ không đếm được/số ít, diễn tả nguyên lý vận hành tự động lặp lại -> 'sends'."
+    },
+    {
+      "id": 15,
+      "part": "Part B — TOEIC",
+      "question": "The manager doesn't ______ the proposal.",
+      "options": [
+        "approves",
+        "approving",
+        "approve",
+        "approved"
+      ],
+      "correct": 2,
+      "explanation": "Sau trợ động từ phủ định 'doesn't', động từ luôn ở dạng nguyên thể không chia (bare infinitive) -> 'approve'."
+    },
+    {
+      "id": 16,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "The conference ______ at 9:00 a.m. tomorrow, so all participants should arrive early.",
+      "options": [
+        "begins",
+        "is beginning",
+        "began",
+        "will began"
+      ],
+      "correct": 0,
+      "explanation": "Bẫy thời gian tương lai: Với sự kiện có lịch trình chính thức cố định (hội nghị, sự kiện), thì hiện tại đơn ('begins') được ưu tiên sử dụng. Lưu ý 'will began' sai ngữ pháp."
+    },
+    {
+      "id": 17,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "The customer service department ______ more than 500 inquiries each week.",
+      "options": [
+        "handles",
+        "handle",
+        "is handling",
+        "handled"
+      ],
+      "correct": 0,
+      "explanation": "Bẫy chủ ngữ dài: Trọng tâm chủ ngữ là 'department' (danh từ số ít), không phải 'inquiries'. Dấu hiệu 'each week' -> 'handles'."
+    },
+    {
+      "id": 18,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "Does the new employee ______ how to operate the system?",
+      "options": [
+        "knows",
+        "knowing",
+        "know",
+        "knew"
+      ],
+      "correct": 2,
+      "explanation": "Bẫy chia động từ sau trợ động từ: Trong câu hỏi bắt đầu bằng 'Does', động từ chính bắt buộc ở dạng nguyên mẫu không chia -> 'know'."
+    },
+    {
+      "id": 19,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "The company ______ not usually provide transportation for employees.",
+      "options": [
+        "do",
+        "does",
+        "is",
+        "are"
+      ],
+      "correct": 1,
+      "explanation": "Động từ chính là 'provide' (động từ thường), chủ ngữ 'The company' số ít -> câu phủ định cần trợ động từ 'does'."
+    },
+    {
+      "id": 20,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "The CEO ______ the annual meeting every December.",
+      "options": [
+        "attend",
+        "attending",
+        "attends",
+        "attended"
+      ],
+      "correct": 2,
+      "explanation": "'The CEO' (số ít) kết hợp dấu hiệu thói quen lặp lại hàng năm 'every December' -> chia hiện tại đơn số ít: 'attends'."
+    }
+  ],
+  "id": "day1-present-simple"
+}
