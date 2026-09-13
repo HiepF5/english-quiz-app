@@ -7,6 +7,7 @@ import { QuizTracker } from './components/QuizTracker';
 import { ResultSummary } from './components/ResultSummary';
 import { JsonCreatorModal } from './components/JsonCreatorModal';
 import { JsonTemplateModal } from './components/JsonTemplateModal';
+import { GithubPushModal } from './components/GithubPushModal';
 
 // Import default datasets
 import day1Data from './data/day1_present_simple.json';
@@ -27,6 +28,7 @@ export const App: React.FC = () => {
   const [secondsElapsed, setSecondsElapsed] = useState<number>(0);
   const [isCreatorOpen, setIsCreatorOpen] = useState<boolean>(false);
   const [isTemplateModalOpen, setIsTemplateModalOpen] = useState<boolean>(false);
+  const [isGithubModalOpen, setIsGithubModalOpen] = useState<boolean>(false);
   const [completedCount, setCompletedCount] = useState<number>(0);
 
   // Timer interval effect
@@ -157,6 +159,7 @@ export const App: React.FC = () => {
         onImportJson={handleImportJson}
         onOpenCreator={() => setIsCreatorOpen(true)}
         onOpenTemplateModal={() => setIsTemplateModalOpen(true)}
+        onOpenGithubModal={() => setIsGithubModalOpen(true)}
         onResetToSelection={() => setActiveQuiz(null)}
         currentQuizTitle={activeQuiz?.title}
         scoreHistoryCount={completedCount}
@@ -171,6 +174,7 @@ export const App: React.FC = () => {
             onSelectQuiz={handleSelectQuiz}
             onFileUpload={handleImportJson}
             onOpenTemplateModal={() => setIsTemplateModalOpen(true)}
+            onOpenGithubModal={() => setIsGithubModalOpen(true)}
             customQuizCount={quizSets.length - 3}
           />
         ) : (
@@ -205,6 +209,13 @@ export const App: React.FC = () => {
                     <h2 className="text-xl font-bold text-white mt-2">{activeQuiz.title}</h2>
                     <p className="text-xs text-slate-400 mt-1">{activeQuiz.description}</p>
                   </div>
+
+                  <button
+                    onClick={() => setIsGithubModalOpen(true)}
+                    className="flex items-center space-x-1.5 text-xs px-3.5 py-2 rounded-xl bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 font-semibold border border-purple-500/30 shadow-sm"
+                  >
+                    <span>Đẩy Đề Này Lên GitHub & Vercel</span>
+                  </button>
                 </div>
 
                 {/* List of Questions */}
@@ -259,6 +270,13 @@ export const App: React.FC = () => {
       <JsonTemplateModal
         isOpen={isTemplateModalOpen}
         onClose={() => setIsTemplateModalOpen(false)}
+      />
+
+      {/* GitHub Auto-Commit & Deploy Modal */}
+      <GithubPushModal
+        isOpen={isGithubModalOpen}
+        onClose={() => setIsGithubModalOpen(false)}
+        currentQuiz={activeQuiz || (quizSets.length > 0 ? quizSets[0] : null)}
       />
 
       {/* Footer */}

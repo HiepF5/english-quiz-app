@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import type { QuizSet, QuizMode } from '../types/quiz';
-import { Play, Eye, UploadCloud, Clock, HelpCircle, Sparkles, CheckCircle2, FileCode } from 'lucide-react';
+import { Play, Eye, UploadCloud, Clock, HelpCircle, Sparkles, CheckCircle2, FileCode, GitCommit } from 'lucide-react';
 
 interface QuizSelectorProps {
   quizSets: QuizSet[];
   onSelectQuiz: (quiz: QuizSet, mode: QuizMode) => void;
   onFileUpload: (content: string, filename: string) => void;
   onOpenTemplateModal: () => void;
+  onOpenGithubModal: () => void;
   customQuizCount: number;
 }
 
@@ -15,6 +16,7 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
   onSelectQuiz,
   onFileUpload,
   onOpenTemplateModal,
+  onOpenGithubModal,
   customQuizCount
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -121,13 +123,23 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
             </p>
           </div>
 
-          <button
-            onClick={onOpenTemplateModal}
-            className="inline-flex items-center space-x-1.5 text-xs px-3.5 py-1.5 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 transition-all font-semibold mt-1"
-          >
-            <FileCode className="w-3.5 h-3.5 text-indigo-400" />
-            <span>Xem & Tải Cấu Trúc JSON Mẫu</span>
-          </button>
+          <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+            <button
+              onClick={onOpenTemplateModal}
+              className="inline-flex items-center space-x-1.5 text-xs px-3.5 py-1.5 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 transition-all font-semibold"
+            >
+              <FileCode className="w-3.5 h-3.5 text-indigo-400" />
+              <span>Xem Cấu Trúc & Prompt AI</span>
+            </button>
+
+            <button
+              onClick={onOpenGithubModal}
+              className="inline-flex items-center space-x-1.5 text-xs px-3.5 py-1.5 rounded-xl bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 border border-purple-500/30 transition-all font-semibold"
+            >
+              <GitCommit className="w-3.5 h-3.5 text-purple-400" />
+              <span>Push GitHub & Vercel</span>
+            </button>
+          </div>
         </div>
       </div>
 
