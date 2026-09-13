@@ -8,6 +8,7 @@ import { ResultSummary } from './components/ResultSummary';
 import { JsonCreatorModal } from './components/JsonCreatorModal';
 import { JsonTemplateModal } from './components/JsonTemplateModal';
 import { GithubPushModal } from './components/GithubPushModal';
+import { JsonPasteModal } from './components/JsonPasteModal';
 
 // Import default datasets
 import day1Data from './data/day1_present_simple.json';
@@ -26,9 +27,13 @@ export const App: React.FC = () => {
   const [userAnswers, setUserAnswers] = useState<Record<number, number>>({});
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const [secondsElapsed, setSecondsElapsed] = useState<number>(0);
+
+  // Modals state
   const [isCreatorOpen, setIsCreatorOpen] = useState<boolean>(false);
   const [isTemplateModalOpen, setIsTemplateModalOpen] = useState<boolean>(false);
   const [isGithubModalOpen, setIsGithubModalOpen] = useState<boolean>(false);
+  const [isPasteModalOpen, setIsPasteModalOpen] = useState<boolean>(false);
+
   const [completedCount, setCompletedCount] = useState<number>(0);
 
   // Timer interval effect
@@ -159,6 +164,7 @@ export const App: React.FC = () => {
         onImportJson={handleImportJson}
         onOpenCreator={() => setIsCreatorOpen(true)}
         onOpenTemplateModal={() => setIsTemplateModalOpen(true)}
+        onOpenPasteModal={() => setIsPasteModalOpen(true)}
         onOpenGithubModal={() => setIsGithubModalOpen(true)}
         onResetToSelection={() => setActiveQuiz(null)}
         currentQuizTitle={activeQuiz?.title}
@@ -174,6 +180,7 @@ export const App: React.FC = () => {
             onSelectQuiz={handleSelectQuiz}
             onFileUpload={handleImportJson}
             onOpenTemplateModal={() => setIsTemplateModalOpen(true)}
+            onOpenPasteModal={() => setIsPasteModalOpen(true)}
             onOpenGithubModal={() => setIsGithubModalOpen(true)}
             customQuizCount={quizSets.length - 3}
           />
@@ -261,6 +268,16 @@ export const App: React.FC = () => {
         isOpen={isCreatorOpen}
         onClose={() => setIsCreatorOpen(false)}
         onLoadCreatedQuiz={(newQuiz) => {
+          setQuizSets((prev) => [newQuiz, ...prev]);
+          handleSelectQuiz(newQuiz, 'practice');
+        }}
+      />
+
+      {/* JSON Direct Paste & Auto-Sync Modal */}
+      <JsonPasteModal
+        isOpen={isPasteModalOpen}
+        onClose={() => setIsPasteModalOpen(false)}
+        onLoadQuiz={(newQuiz) => {
           setQuizSets((prev) => [newQuiz, ...prev]);
           handleSelectQuiz(newQuiz, 'practice');
         }}

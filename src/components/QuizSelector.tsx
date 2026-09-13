@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import type { QuizSet, QuizMode } from '../types/quiz';
-import { Play, Eye, UploadCloud, Clock, HelpCircle, Sparkles, CheckCircle2, FileCode, GitCommit } from 'lucide-react';
+import { Play, Eye, UploadCloud, Clock, HelpCircle, Sparkles, CheckCircle2, FileCode, GitCommit, ClipboardPaste } from 'lucide-react';
 
 interface QuizSelectorProps {
   quizSets: QuizSet[];
   onSelectQuiz: (quiz: QuizSet, mode: QuizMode) => void;
   onFileUpload: (content: string, filename: string) => void;
   onOpenTemplateModal: () => void;
+  onOpenPasteModal: () => void;
   onOpenGithubModal: () => void;
   customQuizCount: number;
 }
@@ -16,6 +17,7 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
   onSelectQuiz,
   onFileUpload,
   onOpenTemplateModal,
+  onOpenPasteModal,
   onOpenGithubModal,
   customQuizCount
 }) => {
@@ -75,13 +77,13 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
             Lựa Chọn Bộ Đề Bài Hoặc <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400">
-              Nạp File JSON Đề Thi Của Bạn
+              Nạp / Dán File JSON Đề Thi
             </span>
           </h2>
 
           <p className="text-sm text-slate-300 leading-relaxed">
             Chọn bộ đề bài tiếng Anh có sẵn (Hiện tại đơn, Quá khứ đơn, TOEIC Part 5/6, Từ vựng) 
-            hoặc nạp trực tiếp bất kỳ file JSON câu hỏi nào để bắt đầu làm bài thi & luyện tập!
+            hoặc nạp / dán trực tiếp mã JSON câu hỏi từ AI để bắt đầu làm bài thi & luyện tập!
           </p>
 
           <div className="pt-2 flex flex-wrap items-center gap-3 text-xs text-slate-400 font-medium">
@@ -119,11 +121,19 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
               Kéo & thả file <code className="px-1.5 py-0.5 rounded bg-slate-800 text-indigo-300 text-xs">.json</code> đề bài vào đây
             </p>
             <p className="text-xs text-slate-400 mt-1">
-              hoặc nhấn nút <span className="text-indigo-400 font-semibold">Nạp JSON Mới</span> trên thanh điều hướng
+              hoặc dán trực tiếp mã JSON vừa copy từ AI vào hệ thống
             </p>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+            <button
+              onClick={onOpenPasteModal}
+              className="inline-flex items-center space-x-1.5 text-xs px-3.5 py-1.5 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 border border-emerald-500/30 transition-all font-semibold"
+            >
+              <ClipboardPaste className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Dán Trực Tiếp Mã JSON</span>
+            </button>
+
             <button
               onClick={onOpenTemplateModal}
               className="inline-flex items-center space-x-1.5 text-xs px-3.5 py-1.5 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 transition-all font-semibold"
