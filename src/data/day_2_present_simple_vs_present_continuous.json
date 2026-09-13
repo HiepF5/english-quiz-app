@@ -1,0 +1,270 @@
+{
+  "id": "day-2-present-simple-vs-continuous",
+  "title": "Day 2 — Present Simple vs. Present Continuous",
+  "description": "Bài tập luyện tập và phân biệt thì Hiện tại đơn (Present Simple) và Hiện tại tiếp diễn (Present Continuous), bao gồm các bẫy thường gặp trong đề thi TOEIC.",
+  "level": "Intermediate (B1)",
+  "category": "Grammar & Vocabulary",
+  "timeLimitMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "part": "Part A — Cơ bản",
+      "question": "Look! The children ______ in the garden.",
+      "options": [
+        "play",
+        "plays",
+        "are playing",
+        "played"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu nhận biết 'Look!' (câu mệnh lệnh thu hút sự chú ý vào hành động đang diễn ra) -> dùng thì Hiện tại tiếp diễn (S + am/is/are + V-ing). Chủ ngữ 'The children' là danh từ số nhiều nên chọn 'are playing'."
+    },
+    {
+      "id": 2,
+      "part": "Part A — Cơ bản",
+      "question": "She ______ an email to the customer right now.",
+      "options": [
+        "writes",
+        "is writing",
+        "write",
+        "wrote"
+      ],
+      "correct": 1,
+      "explanation": "Dấu hiệu 'right now' (ngay lúc này) chỉ hành động đang xảy ra tại thời điểm nói -> dùng thì Hiện tại tiếp diễn. Chủ ngữ ngôi thứ 3 số ít 'She' đi với 'is writing'."
+    },
+    {
+      "id": 3,
+      "part": "Part A — Cơ bản",
+      "question": "We ______ for the manager at the moment.",
+      "options": [
+        "wait",
+        "waits",
+        "are waiting",
+        "waited"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu 'at the moment' (lúc này) chỉ hành động đang diễn ra -> dùng thì Hiện tại tiếp diễn. Chủ ngữ ngôi số nhiều 'We' đi với 'are waiting'."
+    },
+    {
+      "id": 4,
+      "part": "Part A — Cơ bản",
+      "question": "My colleagues ______ a meeting now.",
+      "options": [
+        "have",
+        "has",
+        "are having",
+        "had"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu 'now' (bây giờ) diễn tả hành động đang diễn ra. Ở đây 'have a meeting' mang nghĩa hành động (tổ chức/tham gia cuộc họp), nên có thể chia thì tiếp diễn -> chọn 'are having' phù hợp với chủ ngữ số nhiều 'My colleagues'."
+    },
+    {
+      "id": 5,
+      "part": "Part A — Cơ bản",
+      "question": "The system ______ properly at the moment.",
+      "options": [
+        "doesn't work",
+        "isn't working",
+        "don't work",
+        "not working"
+      ],
+      "correct": 1,
+      "explanation": "Dấu hiệu 'at the moment' yêu cầu dùng thì Hiện tại tiếp diễn. Dạng phủ định của thì Hiện tại tiếp diễn với chủ ngữ số ít 'The system' là 'isn't working'."
+    },
+    {
+      "id": 6,
+      "part": "Part A — Cơ bản",
+      "question": "______ you currently working on the new project?",
+      "options": [
+        "Do",
+        "Does",
+        "Are",
+        "Is"
+      ],
+      "correct": 2,
+      "explanation": "Câu có động từ dạng V-ing ('working') và trạng từ 'currently' (hiện tại), cấu trúc câu hỏi thì Hiện tại tiếp diễn: Am/Is/Are + S + V-ing? Với chủ ngữ 'you', ta dùng to be 'Are'."
+    },
+    {
+      "id": 7,
+      "part": "Part A — Cơ bản",
+      "question": "He ______ from home this week.",
+      "options": [
+        "works",
+        "work",
+        "is working",
+        "worked"
+      ],
+      "correct": 2,
+      "explanation": "Cụm từ 'this week' (tuần này) diễn tả tình huống/hành động mang tính tạm thời trong một khoảng thời gian nhất định -> dùng thì Hiện tại tiếp diễn. Chủ ngữ 'He' đi với 'is working'."
+    },
+    {
+      "id": 8,
+      "part": "Part A — Cơ bản",
+      "question": "I ______ English these days.",
+      "options": [
+        "study",
+        "studies",
+        "am studying",
+        "studied"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu 'these days' (dạo này) diễn tả hành động/xu hướng đang diễn ra xung quanh thời điểm nói mang tính tạm thời -> dùng thì Hiện tại tiếp diễn. Chủ ngữ 'I' đi với 'am studying'."
+    },
+    {
+      "id": 9,
+      "part": "Part B — Simple vs Continuous",
+      "question": "The company usually ______ its employees on Mondays.",
+      "options": [
+        "trains",
+        "is training",
+        "train",
+        "trained"
+      ],
+      "correct": 0,
+      "explanation": "Dấu hiệu 'usually' (thường xuyên) và 'on Mondays' (vào các ngày thứ Hai) diễn tả thói quen/lịch trình lặp đi lặp lại -> dùng thì Hiện tại đơn. Chủ ngữ 'The company' là danh từ số ít nên động từ thêm 's' -> 'trains'."
+    },
+    {
+      "id": 10,
+      "part": "Part B — Simple vs Continuous",
+      "question": "The company ______ a new training program this month.",
+      "options": [
+        "introduces",
+        "introduce",
+        "is introducing",
+        "introduced"
+      ],
+      "correct": 2,
+      "explanation": "Cụm 'this month' (tháng này) diễn đạt một dự án/hoạt động đang diễn ra tạm thời xung quanh thời điểm hiện tại -> dùng thì Hiện tại tiếp diễn: 'is introducing'."
+    },
+    {
+      "id": 11,
+      "part": "Part B — Simple vs Continuous",
+      "question": "She ______ at the bank every day.",
+      "options": [
+        "is working",
+        "works",
+        "work",
+        "working"
+      ],
+      "correct": 1,
+      "explanation": "Dấu hiệu 'every day' (mỗi ngày) diễn tả thói quen, sự thật cố định lâu dài -> dùng thì Hiện tại đơn. Chủ ngữ 'She' đi với động từ số ít 'works'."
+    },
+    {
+      "id": 12,
+      "part": "Part B — Simple vs Continuous",
+      "question": "She ______ from home today.",
+      "options": [
+        "works",
+        "is working",
+        "work",
+        "worked"
+      ],
+      "correct": 1,
+      "explanation": "Trạng từ 'today' (hôm nay) diễn tả một hành động tạm thời, khác với thói quen hằng ngày -> dùng thì Hiện tại tiếp diễn: 'is working'."
+    },
+    {
+      "id": 13,
+      "part": "Part B — Simple vs Continuous",
+      "question": "The manager ______ the monthly report every Friday.",
+      "options": [
+        "is checking",
+        "check",
+        "checks",
+        "checking"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu 'every Friday' (thứ Sáu hàng tuần) thể hiện một công việc định kỳ, thói quen -> dùng thì Hiện tại đơn. Chủ ngữ 'The manager' là số ít nên chọn 'checks'."
+    },
+    {
+      "id": 14,
+      "part": "Part B — Simple vs Continuous",
+      "question": "The manager ______ the report right now.",
+      "options": [
+        "checks",
+        "is checking",
+        "check",
+        "checked"
+      ],
+      "correct": 1,
+      "explanation": "Dấu hiệu 'right now' (ngay bây giờ) thể hiện hành động đang diễn ra tại thời điểm nói -> dùng thì Hiện tại tiếp diễn: 'is checking'."
+    },
+    {
+      "id": 15,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "Please be quiet. The director ______ an important presentation at the moment.",
+      "options": [
+        "gives",
+        "is giving",
+        "give",
+        "gave"
+      ],
+      "correct": 1,
+      "explanation": "Cụm câu yêu cầu 'Please be quiet' kết hợp với dấu hiệu 'at the moment' nhấn mạnh hành động thuyết trình đang diễn ra ngay tại thời điểm nói -> chia Hiện tại tiếp diễn: 'is giving'."
+    },
+    {
+      "id": 16,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "The company ______ five branches in Hanoi.",
+      "options": [
+        "is currently operating",
+        "currently operates",
+        "operate currently",
+        "is operate"
+      ],
+      "correct": 1,
+      "explanation": "Bẫy TOEIC: 'operate' khi diễn đạt tình trạng vận hành/hoạt động ổn định như một sự thật, bản chất của công ty thường dùng Hiện tại đơn. Trạng từ 'currently' đứng trước động từ thường. 'The company' số ít nên chọn 'currently operates'."
+    },
+    {
+      "id": 17,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "I ______ what you mean.",
+      "options": [
+        "am understanding",
+        "understand",
+        "am understand",
+        "understanding"
+      ],
+      "correct": 1,
+      "explanation": "Bẫy TOEIC: Động từ chỉ trạng thái nhận thức (Stative Verbs) như 'understand', 'know', 'believe' không được chia ở các thì tiếp diễn. Do đó, chỉ dùng thì Hiện tại đơn: 'understand'."
+    },
+    {
+      "id": 18,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "We ______ the client tomorrow at 10 a.m.",
+      "options": [
+        "meet",
+        "are meeting",
+        "met",
+        "have meet"
+      ],
+      "correct": 1,
+      "explanation": "Bẫy TOEIC: Thì Hiện tại tiếp diễn được dùng để diễn tả một kế hoạch, lịch hẹn đã được sắp xếp cụ thể trong tương lai gần (có thời gian cụ thể: 'tomorrow at 10 a.m.'). Vì vậy chọn 'are meeting'."
+    },
+    {
+      "id": 19,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "The flight ______ at 7:30 tomorrow morning.",
+      "options": [
+        "is leaving",
+        "leaves",
+        "leave",
+        "leaving"
+      ],
+      "correct": 1,
+      "explanation": "Bẫy TOEIC: Lịch trình cố định, thời khóa biểu của phương tiện giao thông công cộng (chuyến bay, tàu hỏa, xe buýt) luôn dùng thì Hiện tại đơn kể cả khi nói về tương lai. Chủ ngữ 'The flight' số ít -> chọn 'leaves'."
+    },
+    {
+      "id": 20,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "The IT department ______ a problem with the server right now.",
+      "options": [
+        "investigates",
+        "investigate",
+        "is investigating",
+        "investigated"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu 'right now' (ngay lúc này) chỉ hành động đang diễn ra. 'The IT department' là danh từ tập hợp số ít -> chia thì Hiện tại tiếp diễn: 'is investigating'."
+    }
+  ]
+}
