@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import type { QuizSet, QuizMode } from '../types/quiz';
-import { Play, Eye, UploadCloud, Clock, HelpCircle, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Play, Eye, UploadCloud, Clock, HelpCircle, Sparkles, CheckCircle2, FileCode } from 'lucide-react';
 
 interface QuizSelectorProps {
   quizSets: QuizSet[];
   onSelectQuiz: (quiz: QuizSet, mode: QuizMode) => void;
   onFileUpload: (content: string, filename: string) => void;
+  onOpenTemplateModal: () => void;
   customQuizCount: number;
 }
 
@@ -13,6 +14,7 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
   quizSets,
   onSelectQuiz,
   onFileUpload,
+  onOpenTemplateModal,
   customQuizCount
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -106,7 +108,7 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
             : 'border-slate-800 hover:border-slate-700 bg-slate-900/40'
         }`}
       >
-        <div className="flex flex-col items-center justify-center space-y-2">
+        <div className="flex flex-col items-center justify-center space-y-2.5">
           <div className="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center text-indigo-400">
             <UploadCloud className="w-6 h-6" />
           </div>
@@ -118,6 +120,14 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
               hoặc nhấn nút <span className="text-indigo-400 font-semibold">Nạp JSON Mới</span> trên thanh điều hướng
             </p>
           </div>
+
+          <button
+            onClick={onOpenTemplateModal}
+            className="inline-flex items-center space-x-1.5 text-xs px-3.5 py-1.5 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 transition-all font-semibold mt-1"
+          >
+            <FileCode className="w-3.5 h-3.5 text-indigo-400" />
+            <span>Xem & Tải Cấu Trúc JSON Mẫu</span>
+          </button>
         </div>
       </div>
 

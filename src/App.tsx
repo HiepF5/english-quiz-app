@@ -6,6 +6,7 @@ import { QuizCard } from './components/QuizCard';
 import { QuizTracker } from './components/QuizTracker';
 import { ResultSummary } from './components/ResultSummary';
 import { JsonCreatorModal } from './components/JsonCreatorModal';
+import { JsonTemplateModal } from './components/JsonTemplateModal';
 
 // Import default datasets
 import day1Data from './data/day1_present_simple.json';
@@ -25,6 +26,7 @@ export const App: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const [secondsElapsed, setSecondsElapsed] = useState<number>(0);
   const [isCreatorOpen, setIsCreatorOpen] = useState<boolean>(false);
+  const [isTemplateModalOpen, setIsTemplateModalOpen] = useState<boolean>(false);
   const [completedCount, setCompletedCount] = useState<number>(0);
 
   // Timer interval effect
@@ -154,6 +156,7 @@ export const App: React.FC = () => {
       <Navbar
         onImportJson={handleImportJson}
         onOpenCreator={() => setIsCreatorOpen(true)}
+        onOpenTemplateModal={() => setIsTemplateModalOpen(true)}
         onResetToSelection={() => setActiveQuiz(null)}
         currentQuizTitle={activeQuiz?.title}
         scoreHistoryCount={completedCount}
@@ -167,6 +170,7 @@ export const App: React.FC = () => {
             quizSets={quizSets}
             onSelectQuiz={handleSelectQuiz}
             onFileUpload={handleImportJson}
+            onOpenTemplateModal={() => setIsTemplateModalOpen(true)}
             customQuizCount={quizSets.length - 3}
           />
         ) : (
@@ -249,6 +253,12 @@ export const App: React.FC = () => {
           setQuizSets((prev) => [newQuiz, ...prev]);
           handleSelectQuiz(newQuiz, 'practice');
         }}
+      />
+
+      {/* JSON Template Structure Modal */}
+      <JsonTemplateModal
+        isOpen={isTemplateModalOpen}
+        onClose={() => setIsTemplateModalOpen(false)}
       />
 
       {/* Footer */}
