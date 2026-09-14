@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import type { QuizSet, QuizMode } from '../types/quiz';
-import { Play, Eye, UploadCloud, Clock, HelpCircle, Sparkles, CheckCircle2, FileCode, GitCommit, ClipboardPaste } from 'lucide-react';
+import type { QuizSet, QuizMode, QuizHistoryRecord } from '../types/quiz';
+import { Play, Eye, UploadCloud, Clock, HelpCircle, Sparkles, CheckCircle2, FileCode, GitCommit, ClipboardPaste, Award } from 'lucide-react';
 
 interface QuizSelectorProps {
   quizSets: QuizSet[];
+  quizHistoryMap: Record<string, QuizHistoryRecord>;
   onSelectQuiz: (quiz: QuizSet, mode: QuizMode) => void;
   onFileUpload: (content: string, filename: string) => void;
   onOpenTemplateModal: () => void;
@@ -14,21 +15,37 @@ interface QuizSelectorProps {
 
 export const QuizSelector: React.FC<QuizSelectorProps> = ({
   quizSets,
+  quizHistoryMap,
   onSelectQuiz,
   onFileUpload,
   onOpenTemplateModal,
   onOpenPasteModal,
   onOpenGithubModal,
-  customQuizCount
+  customQuizCount: _customQuizCount
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [statusFilter, setStatusFilter] = useState<'all' | 'completed' | 'uncompleted'>('all');
   const [dragActive, setDragActive] = useState<boolean>(false);
 
   const categories = ['All', ...Array.from(new Set(quizSets.map(q => q.category || 'General')))];
 
-  const filteredSets = selectedCategory === 'All'
-    ? quizSets
-    : quizSets.filter(q => (q.category || 'General') === selectedCategory);
+  const filteredSets = quizSets.filter(quiz => {
+    // Category match
+    const categoryMatch = selectedCategory === 'All' || (quiz.category || 'General') === selectedCategory;
+    
+    // Status match
+    const history = quizHistoryMap[quiz.id];
+    let statusMatch = true;
+    if (statusFilter === 'completed') {
+      statusMatch = !!history;
+    } else if (statusFilter === 'uncompleted') {
+      statusMatch = !history;
+    }
+
+    return categoryMatch && statusMatch;
+  });
+
+  const completedTotalCount = Object.keys(quizHistoryMap).length;
 
   const handleDrag = (e: React.DragEvent) => {
     e.preventDefault();
@@ -91,7 +108,7 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
               <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Giải thích chi tiết
             </span>
             <span className="flex items-center gap-1 text-slate-300">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Tính giờ tự động
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Lưu tiến độ đã thi trong máy
             </span>
             <span className="flex items-center gap-1 text-slate-300">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Phát âm câu hỏi (TTS)
@@ -153,8 +170,10 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
         </div>
       </div>
 
-      {/* Category Filter Tabs */}
-      <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+      {/* Category Filter Tabs & Status Filter */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-800 pb-4 gap-4">
+        
+        {/* Category Tabs */}
         <div className="flex items-center space-x-2 overflow-x-auto pb-1 no-scrollbar">
           {categories.map(cat => (
             <button
@@ -171,77 +190,136 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
           ))}
         </div>
 
-        <div className="hidden sm:flex items-center space-x-3 text-xs text-slate-400 font-medium">
-          {customQuizCount > 0 && (
-            <span className="px-2.5 py-0.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300">
-              Đề tự nạp: {customQuizCount}
-            </span>
-          )}
-          <span>Tìm thấy <strong className="text-indigo-400">{filteredSets.length}</strong> bộ đề</span>
+        {/* Status Filter Buttons */}
+        <div className="flex items-center space-x-2 text-xs">
+          <button
+            onClick={() => setStatusFilter('all')}
+            className={`px-3 py-1.5 rounded-lg font-semibold transition ${
+              statusFilter === 'all' ? 'bg-slate-800 text-white border border-slate-700' : 'text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            Tất cả ({quizSets.length})
+          </button>
+
+          <button
+            onClick={() => setStatusFilter('completed')}
+            className={`px-3 py-1.5 rounded-lg font-semibold transition flex items-center space-x-1 ${
+              statusFilter === 'completed' ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40' : 'text-slate-400 hover:text-emerald-400'
+            }`}
+          >
+            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+            <span>Đã làm ({completedTotalCount})</span>
+          </button>
+
+          <button
+            onClick={() => setStatusFilter('uncompleted')}
+            className={`px-3 py-1.5 rounded-lg font-semibold transition ${
+              statusFilter === 'uncompleted' ? 'bg-slate-800 text-white border border-slate-700' : 'text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            Chưa làm ({quizSets.length - completedTotalCount})
+          </button>
         </div>
+
       </div>
 
       {/* Quiz Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredSets.map((quiz) => (
-          <div
-            key={quiz.id}
-            className="group relative rounded-2xl glass-card p-6 flex flex-col justify-between hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-500/10"
-          >
-            <div>
-              {/* Card Header badges */}
-              <div className="flex items-center justify-between gap-2 mb-3">
-                <span className="px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs font-bold">
-                  {quiz.category || 'General'}
-                </span>
-                <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700 text-xs font-medium">
-                  {quiz.level || 'All Levels'}
-                </span>
-              </div>
+        {filteredSets.map((quiz) => {
+          const history = quizHistoryMap[quiz.id];
 
-              {/* Title & Description */}
-              <h3 className="text-lg font-bold text-white group-hover:text-indigo-300 transition-colors line-clamp-2 mb-2">
-                {quiz.title}
-              </h3>
-              <p className="text-xs text-slate-400 leading-relaxed line-clamp-3 mb-4">
-                {quiz.description}
-              </p>
-            </div>
+          return (
+            <div
+              key={quiz.id}
+              className={`group relative rounded-2xl glass-card p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
+                history
+                  ? 'border-emerald-500/40 hover:border-emerald-500/60 bg-gradient-to-b from-emerald-950/20 to-slate-900/80 shadow-emerald-500/5'
+                  : 'hover:border-indigo-500/40 hover:shadow-indigo-500/10'
+              }`}
+            >
+              <div>
+                {/* Completed Badge Indicator */}
+                {history && (
+                  <div className="mb-3 p-2.5 rounded-xl bg-emerald-950/60 border border-emerald-500/40 flex items-center justify-between animate-fadeIn">
+                    <div className="flex items-center space-x-1.5">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      <span className="text-xs font-bold text-emerald-300">Đã Hoàn Thành</span>
+                    </div>
 
-            <div className="space-y-4 pt-3 border-t border-slate-800/80">
-              {/* Specs */}
-              <div className="flex items-center justify-between text-xs text-slate-400 font-medium">
-                <div className="flex items-center space-x-1.5">
-                  <HelpCircle className="w-4 h-4 text-indigo-400" />
-                  <span>{quiz.questions.length} câu hỏi</span>
+                    <div className="flex items-center space-x-2 text-xs">
+                      <span className="font-extrabold text-emerald-300 bg-emerald-500/20 px-2 py-0.5 rounded-md border border-emerald-500/30">
+                        {history.highestScore}/{history.totalQuestions} ({history.highestPercentage}%)
+                      </span>
+                    </div>
+                  </div>
+                )}
+
+                {/* Card Header badges */}
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <span className="px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs font-bold">
+                    {quiz.category || 'General'}
+                  </span>
+                  <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700 text-xs font-medium">
+                    {quiz.level || 'All Levels'}
+                  </span>
                 </div>
-                <div className="flex items-center space-x-1.5">
-                  <Clock className="w-4 h-4 text-purple-400" />
-                  <span>{quiz.timeLimitMinutes || 15} phút</span>
+
+                {/* Title & Description */}
+                <h3 className="text-lg font-bold text-white group-hover:text-indigo-300 transition-colors line-clamp-2 mb-2">
+                  {quiz.title}
+                </h3>
+                <p className="text-xs text-slate-400 leading-relaxed line-clamp-3 mb-4">
+                  {quiz.description}
+                </p>
+              </div>
+
+              <div className="space-y-4 pt-3 border-t border-slate-800/80">
+                {/* Specs & Attempts history */}
+                <div className="flex items-center justify-between text-xs text-slate-400 font-medium">
+                  <div className="flex items-center space-x-1.5">
+                    <HelpCircle className="w-4 h-4 text-indigo-400" />
+                    <span>{quiz.questions.length} câu hỏi</span>
+                  </div>
+
+                  {history ? (
+                    <div className="flex items-center space-x-1 text-slate-400">
+                      <Award className="w-3.5 h-3.5 text-amber-400" />
+                      <span>Đã làm {history.timesCompleted} lần</span>
+                    </div>
+                  ) : (
+                    <div className="flex items-center space-x-1.5">
+                      <Clock className="w-4 h-4 text-purple-400" />
+                      <span>{quiz.timeLimitMinutes || 15} phút</span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Action Buttons */}
+                <div className="grid grid-cols-2 gap-2.5">
+                  <button
+                    onClick={() => onSelectQuiz(quiz, 'practice')}
+                    className="flex items-center justify-center space-x-1.5 py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition border border-slate-700"
+                  >
+                    <Eye className="w-3.5 h-3.5 text-indigo-400" />
+                    <span>{history ? 'Luyện Lại' : 'Luyện Tập'}</span>
+                  </button>
+
+                  <button
+                    onClick={() => onSelectQuiz(quiz, 'exam')}
+                    className={`flex items-center justify-center space-x-1.5 py-2.5 px-3 rounded-xl text-xs font-semibold shadow transition ${
+                      history
+                        ? 'bg-emerald-600 hover:bg-emerald-500 text-white shadow-emerald-600/20'
+                        : 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-indigo-600/20'
+                    }`}
+                  >
+                    <Play className="w-3.5 h-3.5 fill-current" />
+                    <span>{history ? 'Thi Lại' : 'Thi Tính Giờ'}</span>
+                  </button>
                 </div>
               </div>
-
-              {/* Action Buttons */}
-              <div className="grid grid-cols-2 gap-2.5">
-                <button
-                  onClick={() => onSelectQuiz(quiz, 'practice')}
-                  className="flex items-center justify-center space-x-1.5 py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition border border-slate-700"
-                >
-                  <Eye className="w-3.5 h-3.5 text-indigo-400" />
-                  <span>Luyện Tập</span>
-                </button>
-
-                <button
-                  onClick={() => onSelectQuiz(quiz, 'exam')}
-                  className="flex items-center justify-center space-x-1.5 py-2.5 px-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-md shadow-indigo-600/20 transition"
-                >
-                  <Play className="w-3.5 h-3.5 fill-current" />
-                  <span>Thi Tính Giờ</span>
-                </button>
-              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
     </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { QuizSet, QuizMode } from './types/quiz';
+import type { QuizSet, QuizMode, QuizHistoryRecord } from './types/quiz';
 import { Navbar } from './components/Navbar';
 import { QuizSelector } from './components/QuizSelector';
 import { QuizCard } from './components/QuizCard';
@@ -21,7 +21,6 @@ export const App: React.FC = () => {
       const savedCustom = localStorage.getItem('custom_saved_quiz_sets');
       if (savedCustom) {
         const parsedCustom: QuizSet[] = JSON.parse(savedCustom);
-        // Filter out any custom quiz that already exists in DEFAULT_QUIZZES
         const uniqueCustom = parsedCustom.filter(
           (cQuiz) => !DEFAULT_QUIZZES.some((defQuiz) => defQuiz.id === cQuiz.id)
         );
@@ -31,6 +30,19 @@ export const App: React.FC = () => {
       console.error('Error loading custom saved quizzes from localStorage:', e);
     }
     return DEFAULT_QUIZZES;
+  });
+
+  // Load completion history map from localStorage per client
+  const [quizHistoryMap, setQuizHistoryMap] = useState<Record<string, QuizHistoryRecord>>(() => {
+    try {
+      const savedHistory = localStorage.getItem('quiz_completion_history');
+      if (savedHistory) {
+        return JSON.parse(savedHistory);
+      }
+    } catch (e) {
+      console.error('Error loading quiz completion history:', e);
+    }
+    return {};
   });
 
   const [activeQuiz, setActiveQuiz] = useState<QuizSet | null>(null);
@@ -45,16 +57,14 @@ export const App: React.FC = () => {
   const [isGithubModalOpen, setIsGithubModalOpen] = useState<boolean>(false);
   const [isPasteModalOpen, setIsPasteModalOpen] = useState<boolean>(false);
 
-  const [completedCount, setCompletedCount] = useState<number>(0);
+  const [completedCount, setCompletedCount] = useState<number>(() => Object.keys(quizHistoryMap).length);
 
   // Helper to save new custom quiz to localStorage
   const saveCustomQuizLocally = (newQuiz: QuizSet) => {
     setQuizSets((prev) => {
-      // Check if already exists by id, update or prepend
       const filtered = prev.filter(q => q.id !== newQuiz.id);
       const updatedList = [newQuiz, ...filtered];
       
-      // Save only custom quizzes (exclude defaults) to localStorage
       const customOnly = updatedList.filter(q => !DEFAULT_QUIZZES.some(def => def.id === q.id));
       try {
         localStorage.setItem('custom_saved_quiz_sets', JSON.stringify(customOnly));
@@ -63,6 +73,44 @@ export const App: React.FC = () => {
       }
 
       return updatedList;
+    });
+  };
+
+  // Helper to record completion in localStorage per client
+  const recordQuizCompletion = (score: number, total: number, mode: QuizMode) => {
+    if (!activeQuiz) return;
+    const percentage = Math.round((score / total) * 100);
+
+    setQuizHistoryMap((prev) => {
+      const existing = prev[activeQuiz.id];
+      const timesCompleted = existing ? existing.timesCompleted + 1 : 1;
+      const highestScore = existing ? Math.max(existing.highestScore, score) : score;
+      const highestPercentage = existing ? Math.max(existing.highestPercentage, percentage) : percentage;
+
+      const updatedHistory: QuizHistoryRecord = {
+        quizId: activeQuiz.id,
+        quizTitle: activeQuiz.title,
+        lastCompletedAt: new Date().toISOString(),
+        timesCompleted,
+        highestScore,
+        totalQuestions: total,
+        highestPercentage,
+        lastMode: mode
+      };
+
+      const newMap = {
+        ...prev,
+        [activeQuiz.id]: updatedHistory
+      };
+
+      try {
+        localStorage.setItem('quiz_completion_history', JSON.stringify(newMap));
+      } catch (err) {
+        console.error('Error saving quiz completion history:', err);
+      }
+
+      setCompletedCount(Object.keys(newMap).length);
+      return newMap;
     });
   };
 
@@ -111,8 +159,10 @@ export const App: React.FC = () => {
       if (!confirmSubmit) return;
     }
 
+    const currentScore = calculateScore();
+    recordQuizCompletion(currentScore, totalCount, quizMode);
+
     setIsSubmitted(true);
-    setCompletedCount((prev) => prev + 1);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -131,7 +181,6 @@ export const App: React.FC = () => {
       let newQuizSet: QuizSet;
 
       if (Array.isArray(parsed)) {
-        // If it's a raw array of questions
         newQuizSet = {
           id: `custom-file-${Date.now()}`,
           title: filename.replace('.json', ''),
@@ -142,7 +191,6 @@ export const App: React.FC = () => {
           questions: parsed
         };
       } else if (parsed.questions && Array.isArray(parsed.questions)) {
-        // Standard QuizSet object format
         newQuizSet = {
           id: parsed.id || `custom-file-${Date.now()}`,
           title: parsed.title || filename.replace('.json', ''),
@@ -207,6 +255,7 @@ export const App: React.FC = () => {
           /* Quiz Selector Screen */
           <QuizSelector
             quizSets={quizSets}
+            quizHistoryMap={quizHistoryMap}
             onSelectQuiz={handleSelectQuiz}
             onFileUpload={handleImportJson}
             onOpenTemplateModal={() => setIsTemplateModalOpen(true)}
