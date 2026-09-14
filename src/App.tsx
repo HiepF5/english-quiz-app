@@ -10,16 +10,9 @@ import { JsonTemplateModal } from './components/JsonTemplateModal';
 import { GithubPushModal } from './components/GithubPushModal';
 import { JsonPasteModal } from './components/JsonPasteModal';
 
-// Import default datasets
-import day1Data from './data/day1_present_simple.json';
-import day2Data from './data/day2_past_tenses.json';
-import day3Data from './data/day3_toeic_vocab.json';
-
-const DEFAULT_QUIZZES: QuizSet[] = [
-  day1Data as unknown as QuizSet,
-  day2Data as unknown as QuizSet,
-  day3Data as unknown as QuizSet
-];
+// Dynamically import ALL .json files inside src/data/ at build time via Vite glob
+const jsonModules = import.meta.glob('./data/*.json', { eager: true });
+const DEFAULT_QUIZZES: QuizSet[] = Object.values(jsonModules).map((mod: any) => mod.default || mod);
 
 export const App: React.FC = () => {
   // Load custom saved quizzes from localStorage on initial render
@@ -28,8 +21,11 @@ export const App: React.FC = () => {
       const savedCustom = localStorage.getItem('custom_saved_quiz_sets');
       if (savedCustom) {
         const parsedCustom: QuizSet[] = JSON.parse(savedCustom);
-        // Combine custom saved quizzes with default built-in quizzes
-        return [...parsedCustom, ...DEFAULT_QUIZZES];
+        // Filter out any custom quiz that already exists in DEFAULT_QUIZZES
+        const uniqueCustom = parsedCustom.filter(
+          (cQuiz) => !DEFAULT_QUIZZES.some((defQuiz) => defQuiz.id === cQuiz.id)
+        );
+        return [...uniqueCustom, ...DEFAULT_QUIZZES];
       }
     } catch (e) {
       console.error('Error loading custom saved quizzes from localStorage:', e);
