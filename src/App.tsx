@@ -15,12 +15,27 @@ import day1Data from './data/day1_present_simple.json';
 import day2Data from './data/day2_past_tenses.json';
 import day3Data from './data/day3_toeic_vocab.json';
 
+const DEFAULT_QUIZZES: QuizSet[] = [
+  day1Data as unknown as QuizSet,
+  day2Data as unknown as QuizSet,
+  day3Data as unknown as QuizSet
+];
+
 export const App: React.FC = () => {
-  const [quizSets, setQuizSets] = useState<QuizSet[]>([
-    day1Data as unknown as QuizSet,
-    day2Data as unknown as QuizSet,
-    day3Data as unknown as QuizSet
-  ]);
+  // Load custom saved quizzes from localStorage on initial render
+  const [quizSets, setQuizSets] = useState<QuizSet[]>(() => {
+    try {
+      const savedCustom = localStorage.getItem('custom_saved_quiz_sets');
+      if (savedCustom) {
+        const parsedCustom: QuizSet[] = JSON.parse(savedCustom);
+        // Combine custom saved quizzes with default built-in quizzes
+        return [...parsedCustom, ...DEFAULT_QUIZZES];
+      }
+    } catch (e) {
+      console.error('Error loading custom saved quizzes from localStorage:', e);
+    }
+    return DEFAULT_QUIZZES;
+  });
 
   const [activeQuiz, setActiveQuiz] = useState<QuizSet | null>(null);
   const [quizMode, setQuizMode] = useState<QuizMode>('exam');
@@ -35,6 +50,25 @@ export const App: React.FC = () => {
   const [isPasteModalOpen, setIsPasteModalOpen] = useState<boolean>(false);
 
   const [completedCount, setCompletedCount] = useState<number>(0);
+
+  // Helper to save new custom quiz to localStorage
+  const saveCustomQuizLocally = (newQuiz: QuizSet) => {
+    setQuizSets((prev) => {
+      // Check if already exists by id, update or prepend
+      const filtered = prev.filter(q => q.id !== newQuiz.id);
+      const updatedList = [newQuiz, ...filtered];
+      
+      // Save only custom quizzes (exclude defaults) to localStorage
+      const customOnly = updatedList.filter(q => !DEFAULT_QUIZZES.some(def => def.id === q.id));
+      try {
+        localStorage.setItem('custom_saved_quiz_sets', JSON.stringify(customOnly));
+      } catch (err) {
+        console.error('Could not save custom quiz to localStorage:', err);
+      }
+
+      return updatedList;
+    });
+  };
 
   // Timer interval effect
   useEffect(() => {
@@ -127,7 +161,7 @@ export const App: React.FC = () => {
         return;
       }
 
-      setQuizSets((prev) => [newQuizSet, ...prev]);
+      saveCustomQuizLocally(newQuizSet);
       handleSelectQuiz(newQuizSet, 'practice');
     } catch (err: any) {
       alert(`Không thể đọc file JSON: ${err.message}`);
@@ -182,7 +216,7 @@ export const App: React.FC = () => {
             onOpenTemplateModal={() => setIsTemplateModalOpen(true)}
             onOpenPasteModal={() => setIsPasteModalOpen(true)}
             onOpenGithubModal={() => setIsGithubModalOpen(true)}
-            customQuizCount={quizSets.length - 3}
+            customQuizCount={quizSets.length - DEFAULT_QUIZZES.length}
           />
         ) : (
           /* Active Quiz Workspace */
@@ -268,7 +302,7 @@ export const App: React.FC = () => {
         isOpen={isCreatorOpen}
         onClose={() => setIsCreatorOpen(false)}
         onLoadCreatedQuiz={(newQuiz) => {
-          setQuizSets((prev) => [newQuiz, ...prev]);
+          saveCustomQuizLocally(newQuiz);
           handleSelectQuiz(newQuiz, 'practice');
         }}
       />
@@ -278,7 +312,7 @@ export const App: React.FC = () => {
         isOpen={isPasteModalOpen}
         onClose={() => setIsPasteModalOpen(false)}
         onLoadQuiz={(newQuiz) => {
-          setQuizSets((prev) => [newQuiz, ...prev]);
+          saveCustomQuizLocally(newQuiz);
           handleSelectQuiz(newQuiz, 'practice');
         }}
       />
