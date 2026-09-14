@@ -9,6 +9,18 @@ interface JsonPasteModalProps {
   onLoadQuiz: (quiz: QuizSet) => void;
 }
 
+function slugify(str: string): string {
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/Đ/g, 'd')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '_')
+    .replace(/_+/g, '_')
+    .replace(/^_+|_+$/g, '');
+}
+
 export const JsonPasteModal: React.FC<JsonPasteModalProps> = ({
   isOpen,
   onClose,
@@ -92,16 +104,22 @@ export const JsonPasteModal: React.FC<JsonPasteModalProps> = ({
     setSyncResult(null);
     localStorage.setItem('github_pat_token', githubToken.trim());
 
-    const safeTitle = parsedQuiz.title.toLowerCase().replace(/[^a-z0-9]/g, '_').replace(/_+/g, '_');
-    const filePath = 'src/data/' + (safeTitle || 'de_thi_moi') + '.json';
+    const slug = slugify(parsedQuiz.title || 'de_thi_tieng_anh');
+    const timeStamp = Date.now().toString().slice(-6);
+    const filePath = 'src/data/' + (slug || 'de_thi') + '_' + timeStamp + '.json';
+
+    const quizToPush = {
+      ...parsedQuiz,
+      id: parsedQuiz.id || slug + '_' + timeStamp
+    };
 
     const res = await pushToGithub({
       token: githubToken.trim(),
       owner: 'HiepF5',
       repo: 'english-quiz-app',
       filePath,
-      content: parsedQuiz,
-      message: 'Auto-sync new quiz: ' + parsedQuiz.title
+      content: quizToPush,
+      message: 'Auto-create quiz dataset file: ' + filePath
     });
 
     setIsPushing(false);
@@ -109,10 +127,10 @@ export const JsonPasteModal: React.FC<JsonPasteModalProps> = ({
     if (res.success) {
       setSyncResult({
         success: true,
-        message: 'Đã lưu file JSON và đẩy lên GitHub thành công! Vercel đang tự động Re-deploy bài thi mới cho TẤT CẢ mọi người.',
+        message: 'Đã tạo file "' + filePath + '" trên GitHub thành công! Bạn có thể chạy "git pull origin main" ở máy tính để kéo file về, hoặc chờ Vercel Re-deploy.',
         url: res.commitUrl
       });
-      onLoadQuiz(parsedQuiz);
+      onLoadQuiz(quizToPush);
     } else {
       setSyncResult({
         success: false,

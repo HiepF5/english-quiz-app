@@ -9,6 +9,18 @@ interface GithubPushModalProps {
   currentQuiz: QuizSet | null;
 }
 
+function slugify(str: string): string {
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/Đ/g, 'd')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '_')
+    .replace(/_+/g, '_')
+    .replace(/^_+|_+$/g, '');
+}
+
 export const GithubPushModal: React.FC<GithubPushModalProps> = ({
   isOpen,
   onClose,
@@ -27,11 +39,13 @@ export const GithubPushModal: React.FC<GithubPushModalProps> = ({
     if (savedToken) setToken(savedToken);
 
     if (currentQuiz) {
-      const safeTitle = currentQuiz.title.toLowerCase().replace(/[^a-z0-9]/g, '_').replace(/_+/g, '_');
-      setFileName(`src/data/${safeTitle || 'de_thi_moi'}.json`);
-      setCommitMsg(`Add new quiz: ${currentQuiz.title}`);
+      const slug = slugify(currentQuiz.title || 'de_thi_tieng_anh');
+      const timeStamp = Date.now().toString().slice(-6);
+      const generatedName = `src/data/${slug || 'de_thi'}_${timeStamp}.json`;
+      setFileName(generatedName);
+      setCommitMsg(`Add quiz dataset: ${currentQuiz.title}`);
     } else {
-      setFileName('src/data/de_thi_tieng_anh_moi.json');
+      setFileName(`src/data/de_thi_${Date.now().toString().slice(-6)}.json`);
       setCommitMsg('Add new English quiz dataset');
     }
   }, [currentQuiz, isOpen]);
@@ -54,12 +68,22 @@ export const GithubPushModal: React.FC<GithubPushModalProps> = ({
     // Save token to localStorage for convenience
     localStorage.setItem('github_pat_token', token.trim());
 
+    // Clean up filename and ensure quiz object has unique id
+    const cleanPath = fileName.trim().startsWith('src/data/') 
+      ? fileName.trim() 
+      : `src/data/${fileName.trim()}`;
+
+    const quizToPush = {
+      ...currentQuiz,
+      id: currentQuiz.id || slugify(currentQuiz.title || 'quiz') + '_' + Date.now()
+    };
+
     const response = await pushToGithub({
       token: token.trim(),
       owner: owner.trim(),
       repo: repo.trim(),
-      filePath: fileName.trim(),
-      content: currentQuiz,
+      filePath: cleanPath,
+      content: quizToPush,
       message: commitMsg.trim()
     });
 
@@ -68,7 +92,7 @@ export const GithubPushModal: React.FC<GithubPushModalProps> = ({
     if (response.success) {
       setResult({
         success: true,
-        message: 'Đã commit & push thành công lên GitHub! Vercel đang tự động Re-deploy bài thi mới này cho TẤT CẢ mọi người.',
+        message: `Đã commit file "${cleanPath}" lên GitHub thành công! Hãy chạy "git pull origin main" ở máy tính để kéo file về, hoặc chờ Vercel tự Re-deploy (~30s).`,
         url: response.commitUrl
       });
     } else {
@@ -91,12 +115,9 @@ export const GithubPushModal: React.FC<GithubPushModalProps> = ({
             </div>
             <div>
               <h3 className="text-base font-bold text-white flex items-center gap-2">
-                Tự Động Push GitHub & Deploy Vercel
-                <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300">
-                  Tự Động Re-deploy
-                </span>
+                Tự Động Push File JSON Lên GitHub & Deploy Vercel
               </h3>
-              <p className="text-xs text-slate-400">Đẩy bộ đề bài này thành bài thi cố định cho tất cả người học</p>
+              <p className="text-xs text-slate-400">Tạo file .json thật trên GitHub & kéo về máy local bằng git pull</p>
             </div>
           </div>
 
@@ -110,7 +131,7 @@ export const GithubPushModal: React.FC<GithubPushModalProps> = ({
           
           {/* Active Quiz Preview */}
           <div className="p-4 rounded-2xl bg-slate-800/60 border border-slate-700/80 space-y-1">
-            <span className="text-[11px] font-semibold uppercase text-indigo-400">Bộ đề đang chọn để đẩy lên</span>
+            <span className="text-[11px] font-semibold uppercase text-indigo-400">Bộ đề đang chọn để lưu thành file</span>
             <h4 className="text-sm font-bold text-white">{currentQuiz?.title || 'Chưa chọn đề bài'}</h4>
             <p className="text-xs text-slate-400">{currentQuiz?.description} ({currentQuiz?.questions.length || 0} câu hỏi)</p>
           </div>
@@ -168,12 +189,12 @@ export const GithubPushModal: React.FC<GithubPushModalProps> = ({
           {/* File path & commit message */}
           <div className="space-y-3">
             <div>
-              <label className="text-xs font-semibold text-slate-400">Đường dẫn file lưu trong Repo</label>
+              <label className="text-xs font-semibold text-slate-400">Tên File Lưu Trong Repo (Đường Dẫn)</label>
               <input
                 type="text"
                 value={fileName}
                 onChange={(e) => setFileName(e.target.value)}
-                className="w-full mt-1 px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-indigo-300 text-xs font-mono"
+                className="w-full mt-1 px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-indigo-300 text-xs font-mono font-bold"
               />
             </div>
 
@@ -207,7 +228,7 @@ export const GithubPushModal: React.FC<GithubPushModalProps> = ({
                   rel="noreferrer"
                   className="inline-flex items-center space-x-1 text-emerald-400 hover:underline font-semibold mt-2"
                 >
-                  <span>Xem Commit Trên GitHub</span>
+                  <span>Xem Commit & File Tạo Mới Trên GitHub</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               )}
@@ -218,7 +239,7 @@ export const GithubPushModal: React.FC<GithubPushModalProps> = ({
 
         {/* Footer */}
         <div className="p-5 border-t border-slate-800 flex items-center justify-between bg-slate-900">
-          <span className="text-xs text-slate-400">Vercel sẽ tự rebuild bài thi mới sau khi push (~30s)</span>
+          <span className="text-xs text-slate-400">Chạy "git pull" trên máy tính sau khi push để nhận file .json</span>
 
           <div className="flex items-center space-x-2">
             <button
@@ -234,7 +255,7 @@ export const GithubPushModal: React.FC<GithubPushModalProps> = ({
               className="flex items-center space-x-2 px-5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 disabled:opacity-50 text-white text-xs font-bold shadow-lg shadow-purple-600/25 transition"
             >
               {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <GitCommit className="w-4 h-4" />}
-              <span>{isLoading ? 'Đang Push...' : 'Đẩy Lên GitHub & Deploy Vercel'}</span>
+              <span>{isLoading ? 'Đang Tạo File...' : 'Tạo File & Push Lên GitHub'}</span>
             </button>
           </div>
         </div>
