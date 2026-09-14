@@ -4,6 +4,16 @@ Tất cả những nâng cấp, sửa lỗi và cải tiến của dự án **En
 
 ---
 
+## 🌟 [v1.5.0] - 2026-09-15
+### ✨ Tính Năng Mới Đột Phá
+- **Tự Động Chuyển Đề Thi Thô Thành JSON Bằng AI & Push Vercel (`AiConverterModal.tsx` & `gemini.ts`)**:
+  - Tích hợp trực tiếp **Google Gemini 2.0 Flash API** vào ứng dụng web.
+  - Cho phép người dùng **ném/dán bất kỳ bài thi thô nào** (Word, PDF, văn bản thô).
+  - AI tự động phân tích câu hỏi, mảng lựa chọn A/B/C/D, nhận diện đáp án đúng `correct` (0-3) và **tự viết lời giải thích ngữ pháp tiếng Việt chi tiết**.
+  - Tích hợp nút 1-click **"🚀 Push Lên GitHub & Vercel"** trực tiếp sau khi AI sinh bài thi!
+
+---
+
 ## 🟢 [v1.4.0] - 2026-09-15
 ### ✨ Tính Năng Mới
 - **Ghi Nhớ Tiến Độ & Dấu Hiệu Đã Thi Per-Client**:

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { QuizSet, QuizMode, QuizHistoryRecord } from '../types/quiz';
-import { Play, Eye, UploadCloud, Clock, HelpCircle, Sparkles, CheckCircle2, FileCode, GitCommit, ClipboardPaste, Award } from 'lucide-react';
+import { Play, Eye, Clock, HelpCircle, Sparkles, CheckCircle2, FileCode, ClipboardPaste, Award } from 'lucide-react';
 
 interface QuizSelectorProps {
   quizSets: QuizSet[];
@@ -9,6 +9,7 @@ interface QuizSelectorProps {
   onFileUpload: (content: string, filename: string) => void;
   onOpenTemplateModal: () => void;
   onOpenPasteModal: () => void;
+  onOpenAiModal: () => void;
   onOpenGithubModal: () => void;
   customQuizCount: number;
 }
@@ -20,7 +21,7 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
   onFileUpload,
   onOpenTemplateModal,
   onOpenPasteModal,
-  onOpenGithubModal,
+  onOpenAiModal,
   customQuizCount: _customQuizCount
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -30,10 +31,7 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
   const categories = ['All', ...Array.from(new Set(quizSets.map(q => q.category || 'General')))];
 
   const filteredSets = quizSets.filter(quiz => {
-    // Category match
     const categoryMatch = selectedCategory === 'All' || (quiz.category || 'General') === selectedCategory;
-    
-    // Status match
     const history = quizHistoryMap[quiz.id];
     let statusMatch = true;
     if (statusFilter === 'completed') {
@@ -41,7 +39,6 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
     } else if (statusFilter === 'uncompleted') {
       statusMatch = !history;
     }
-
     return categoryMatch && statusMatch;
   });
 
@@ -94,21 +91,21 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
             Lựa Chọn Bộ Đề Bài Hoặc <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400">
-              Nạp / Dán File JSON Đề Thi
+              Nạp Văn Bản Thô — AI Tự Sinh JSON
             </span>
           </h2>
 
           <p className="text-sm text-slate-300 leading-relaxed">
             Chọn bộ đề bài tiếng Anh có sẵn (Hiện tại đơn, Quá khứ đơn, TOEIC Part 5/6, Từ vựng) 
-            hoặc nạp / dán trực tiếp mã JSON câu hỏi từ AI để bắt đầu làm bài thi & luyện tập!
+            hoặc dán bài thi thô để AI tự tạo JSON & Push trực tiếp lên Vercel!
           </p>
 
           <div className="pt-2 flex flex-wrap items-center gap-3 text-xs text-slate-400 font-medium">
             <span className="flex items-center gap-1 text-slate-300">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Giải thích chi tiết
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> AI tự sinh câu hỏi & giải thích
             </span>
             <span className="flex items-center gap-1 text-slate-300">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Lưu tiến độ đã thi trong máy
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> 1-Click Push GitHub & Vercel
             </span>
             <span className="flex items-center gap-1 text-slate-300">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Phát âm câu hỏi (TTS)
@@ -130,22 +127,30 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
         }`}
       >
         <div className="flex flex-col items-center justify-center space-y-2.5">
-          <div className="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center text-indigo-400">
-            <UploadCloud className="w-6 h-6" />
+          <div className="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-400">
+            <Sparkles className="w-6 h-6 animate-pulse" />
           </div>
           <div>
             <p className="text-sm font-semibold text-slate-200">
               Kéo & thả file <code className="px-1.5 py-0.5 rounded bg-slate-800 text-indigo-300 text-xs">.json</code> đề bài vào đây
             </p>
             <p className="text-xs text-slate-400 mt-1">
-              hoặc dán trực tiếp mã JSON vừa copy từ AI vào hệ thống
+              hoặc sử dụng công cụ <span className="text-purple-400 font-semibold">✨ AI Chuyển Đề & Push</span> để biến bài thô thành JSON
             </p>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
             <button
+              onClick={onOpenAiModal}
+              className="inline-flex items-center space-x-1.5 text-xs px-4 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold shadow-lg shadow-purple-600/25 transition-all"
+            >
+              <Sparkles className="w-3.5 h-3.5 fill-current text-amber-300" />
+              <span>✨ AI Tự Chuyển Đề Thô ➔ JSON & Push</span>
+            </button>
+
+            <button
               onClick={onOpenPasteModal}
-              className="inline-flex items-center space-x-1.5 text-xs px-3.5 py-1.5 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 border border-emerald-500/30 transition-all font-semibold"
+              className="inline-flex items-center space-x-1.5 text-xs px-3.5 py-2 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 border border-emerald-500/30 transition-all font-semibold"
             >
               <ClipboardPaste className="w-3.5 h-3.5 text-emerald-400" />
               <span>Dán Trực Tiếp Mã JSON</span>
@@ -153,18 +158,10 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
 
             <button
               onClick={onOpenTemplateModal}
-              className="inline-flex items-center space-x-1.5 text-xs px-3.5 py-1.5 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 transition-all font-semibold"
+              className="inline-flex items-center space-x-1.5 text-xs px-3.5 py-2 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 transition-all font-semibold"
             >
               <FileCode className="w-3.5 h-3.5 text-indigo-400" />
-              <span>Xem Cấu Trúc & Prompt AI</span>
-            </button>
-
-            <button
-              onClick={onOpenGithubModal}
-              className="inline-flex items-center space-x-1.5 text-xs px-3.5 py-1.5 rounded-xl bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 border border-purple-500/30 transition-all font-semibold"
-            >
-              <GitCommit className="w-3.5 h-3.5 text-purple-400" />
-              <span>Push GitHub & Vercel</span>
+              <span>Mẫu JSON & Prompt AI</span>
             </button>
           </div>
         </div>

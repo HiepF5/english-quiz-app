@@ -1,11 +1,12 @@
 import React, { useRef } from 'react';
-import { BookOpen, Upload, PlusCircle, Award, RotateCcw, FileCode, GitCommit, ClipboardPaste } from 'lucide-react';
+import { BookOpen, Upload, Award, RotateCcw, FileCode, GitCommit, ClipboardPaste, Sparkles } from 'lucide-react';
 
 interface NavbarProps {
   onImportJson: (content: string, filename: string) => void;
   onOpenCreator: () => void;
   onOpenTemplateModal: () => void;
   onOpenPasteModal: () => void;
+  onOpenAiModal: () => void;
   onOpenGithubModal: () => void;
   onResetToSelection: () => void;
   currentQuizTitle?: string;
@@ -14,9 +15,9 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = ({
   onImportJson,
-  onOpenCreator,
   onOpenTemplateModal,
   onOpenPasteModal,
+  onOpenAiModal,
   onOpenGithubModal,
   onResetToSelection,
   currentQuizTitle,
@@ -79,28 +80,36 @@ export const Navbar: React.FC<NavbarProps> = ({
           />
 
           <button
+            onClick={onOpenAiModal}
+            className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white text-xs font-bold shadow-md shadow-purple-600/25 transition-all border border-purple-400/30 animate-pulse"
+            title="Dán văn bản thô, AI tự chuyển JSON & Push lên Vercel"
+          >
+            <Sparkles className="w-3.5 h-3.5 fill-current text-amber-300" />
+            <span className="hidden sm:inline">✨ AI Chuyển Đề & Push</span>
+            <span className="sm:hidden">✨ AI Chuyển Đề</span>
+          </button>
+
+          <button
             onClick={() => fileInputRef.current?.click()}
-            className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg bg-indigo-600/90 hover:bg-indigo-500 text-white text-xs font-semibold shadow-md shadow-indigo-600/20 transition-all border border-indigo-400/30"
+            className="hidden md:flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg bg-indigo-600/90 hover:bg-indigo-500 text-white text-xs font-semibold shadow-md shadow-indigo-600/20 transition-all border border-indigo-400/30"
             title="Tải file JSON đề bài của bạn"
           >
             <Upload className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Nạp JSON Mới</span>
-            <span className="sm:hidden">Nạp JSON</span>
+            <span>Nạp JSON Mới</span>
           </button>
 
           <button
             onClick={onOpenPasteModal}
-            className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 text-xs font-semibold border border-emerald-500/30 transition-all"
+            className="hidden lg:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 text-xs font-semibold border border-emerald-500/30 transition-all"
             title="Dán trực tiếp mã JSON vừa copy từ AI vào đây"
           >
             <ClipboardPaste className="w-3.5 h-3.5 text-emerald-400" />
-            <span className="hidden md:inline">Dán Mã JSON</span>
-            <span className="md:hidden">Dán JSON</span>
+            <span>Dán Mã JSON</span>
           </button>
 
           <button
             onClick={onOpenGithubModal}
-            className="hidden lg:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 text-xs font-semibold border border-purple-500/30 transition-all shadow-sm shadow-purple-500/10"
+            className="hidden xl:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 text-xs font-semibold border border-purple-500/30 transition-all shadow-sm shadow-purple-500/10"
             title="Tự động Push đề mới lên GitHub để Vercel Re-deploy"
           >
             <GitCommit className="w-3.5 h-3.5 text-purple-400" />
@@ -109,20 +118,11 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           <button
             onClick={onOpenTemplateModal}
-            className="hidden xl:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 text-xs font-semibold border border-indigo-500/30 transition-all"
+            className="hidden 2xl:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 text-xs font-semibold border border-indigo-500/30 transition-all"
             title="Xem cấu trúc file JSON mẫu chuẩn"
           >
             <FileCode className="w-3.5 h-3.5 text-indigo-400" />
             <span>Mẫu JSON</span>
-          </button>
-
-          <button
-            onClick={onOpenCreator}
-            className="hidden 2xl:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold border border-slate-700 transition-all"
-            title="Tạo file JSON đề thi trực quan"
-          >
-            <PlusCircle className="w-3.5 h-3.5" />
-            <span>Tạo File JSON</span>
           </button>
 
           {scoreHistoryCount > 0 && (

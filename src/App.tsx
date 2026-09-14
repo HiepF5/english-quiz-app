@@ -9,6 +9,7 @@ import { JsonCreatorModal } from './components/JsonCreatorModal';
 import { JsonTemplateModal } from './components/JsonTemplateModal';
 import { GithubPushModal } from './components/GithubPushModal';
 import { JsonPasteModal } from './components/JsonPasteModal';
+import { AiConverterModal } from './components/AiConverterModal';
 
 // Dynamically import ALL .json files inside src/data/ at build time via Vite glob
 const jsonModules = import.meta.glob('./data/*.json', { eager: true });
@@ -56,6 +57,7 @@ export const App: React.FC = () => {
   const [isTemplateModalOpen, setIsTemplateModalOpen] = useState<boolean>(false);
   const [isGithubModalOpen, setIsGithubModalOpen] = useState<boolean>(false);
   const [isPasteModalOpen, setIsPasteModalOpen] = useState<boolean>(false);
+  const [isAiModalOpen, setIsAiModalOpen] = useState<boolean>(false);
 
   const [completedCount, setCompletedCount] = useState<number>(() => Object.keys(quizHistoryMap).length);
 
@@ -243,6 +245,7 @@ export const App: React.FC = () => {
         onOpenCreator={() => setIsCreatorOpen(true)}
         onOpenTemplateModal={() => setIsTemplateModalOpen(true)}
         onOpenPasteModal={() => setIsPasteModalOpen(true)}
+        onOpenAiModal={() => setIsAiModalOpen(true)}
         onOpenGithubModal={() => setIsGithubModalOpen(true)}
         onResetToSelection={() => setActiveQuiz(null)}
         currentQuizTitle={activeQuiz?.title}
@@ -260,6 +263,7 @@ export const App: React.FC = () => {
             onFileUpload={handleImportJson}
             onOpenTemplateModal={() => setIsTemplateModalOpen(true)}
             onOpenPasteModal={() => setIsPasteModalOpen(true)}
+            onOpenAiModal={() => setIsAiModalOpen(true)}
             onOpenGithubModal={() => setIsGithubModalOpen(true)}
             customQuizCount={quizSets.length - DEFAULT_QUIZZES.length}
           />
@@ -347,6 +351,16 @@ export const App: React.FC = () => {
         isOpen={isCreatorOpen}
         onClose={() => setIsCreatorOpen(false)}
         onLoadCreatedQuiz={(newQuiz) => {
+          saveCustomQuizLocally(newQuiz);
+          handleSelectQuiz(newQuiz, 'practice');
+        }}
+      />
+
+      {/* AI Raw Quiz Converter Modal */}
+      <AiConverterModal
+        isOpen={isAiModalOpen}
+        onClose={() => setIsAiModalOpen(false)}
+        onLoadQuiz={(newQuiz) => {
           saveCustomQuizLocally(newQuiz);
           handleSelectQuiz(newQuiz, 'practice');
         }}
