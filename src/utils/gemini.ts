@@ -16,8 +16,7 @@ export async function convertRawQuizWithGemini(
   apiKey: string,
   rawText: string
 ): Promise<QuizSet> {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey.trim()}`;
-
+  const models = ['gemini-2.5-flash', 'gemini-2.0-flash-exp', 'gemini-1.5-flash-latest'];
   const systemInstruction = `Bạn là chuyên gia biên soạn đề thi tiếng Anh. Nhiệm vụ của bạn là đọc đoạn văn bản đề thi thô do người dùng cung cấp (dạng Word, PDF, văn bản thô) và chuyển đổi thành MỘT KHỐI MÃ JSON DUY NHẤT theo đúng cấu trúc sau:
 
 {
@@ -60,42 +59,48 @@ Lưu ý quan trọng:
     }
   };
 
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(body)
-  });
+  let lastErrorMsg = '';
 
-  if (!response.ok) {
-    const errorData = await response.json();
-    throw new Error(errorData.error?.message || `Lỗi HTTP ${response.status}: Không thể gọi Gemini API`);
+  for (const model of models) {
+    try {
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey.trim()}`;
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        lastErrorMsg = errorData.error?.message || `HTTP ${response.status}`;
+        continue;
+      }
+
+      const data = await response.json();
+      const jsonString = data.candidates?.[0]?.content?.parts?.[0]?.text;
+
+      if (jsonString) {
+        const parsed = JSON.parse(jsonString);
+        const timeStamp = Date.now().toString().slice(-6);
+        const quizTitle = parsed.title || "Đề Thi Tiếng Anh AI Sinh";
+        const slug = slugify(quizTitle);
+
+        const formattedQuiz: QuizSet = {
+          id: parsed.id || `ai-${slug || 'quiz'}-${timeStamp}`,
+          title: quizTitle,
+          description: parsed.description || "Đề thi được AI tự động phân tích & chuyển đổi",
+          level: parsed.level || "Intermediate",
+          category: parsed.category || "AI Generated",
+          timeLimitMinutes: parsed.timeLimitMinutes || Math.max(5, Math.ceil((parsed.questions?.length || 10) * 0.8)),
+          questions: parsed.questions || []
+        };
+
+        return formattedQuiz;
+      }
+    } catch (err: any) {
+      lastErrorMsg = err.message;
+    }
   }
 
-  const data = await response.json();
-  const jsonString = data.candidates?.[0]?.content?.parts?.[0]?.text;
-
-  if (!jsonString) {
-    throw new Error('Gemini API không phản hồi khối JSON hợp lệ.');
-  }
-
-  const parsed = JSON.parse(jsonString);
-
-  // Normalize parsed result
-  const timeStamp = Date.now().toString().slice(-6);
-  const quizTitle = parsed.title || "Đề Thi Tiếng Anh AI Sinh";
-  const slug = slugify(quizTitle);
-
-  const formattedQuiz: QuizSet = {
-    id: parsed.id || `ai-${slug || 'quiz'}-${timeStamp}`,
-    title: quizTitle,
-    description: parsed.description || "Đề thi được AI tự động phân tích & chuyển đổi",
-    level: parsed.level || "Intermediate",
-    category: parsed.category || "AI Generated",
-    timeLimitMinutes: parsed.timeLimitMinutes || Math.max(5, Math.ceil((parsed.questions?.length || 10) * 0.8)),
-    questions: parsed.questions || []
-  };
-
-  return formattedQuiz;
+  throw new Error(lastErrorMsg || 'Không thể gọi Gemini API. Vui lòng kiểm tra lại API Key.');
 }
