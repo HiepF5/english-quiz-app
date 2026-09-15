@@ -14,7 +14,7 @@ import { TranslationWorkspace } from './components/TranslationWorkspace';
 
 // Dynamically import ALL .json files inside src/data/ at build time via Vite glob
 const jsonModules = import.meta.glob('./data/*.json', { eager: true });
-const DEFAULT_QUIZZES: QuizSet[] = Object.values(jsonModules).map((mod: any) => mod.default || mod);
+const DEFAULT_QUIZZES: QuizSet[] = Object.values(jsonModules).map((mod: any) => mod.default || mod).filter((quiz: any) => quiz && Array.isArray(quiz.questions));
 
 export const App: React.FC = () => {
   // Active Module tab state: 'quiz' | 'translation'

@@ -28,7 +28,8 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
   const [statusFilter, setStatusFilter] = useState<'all' | 'completed' | 'uncompleted'>('all');
   const [dragActive, setDragActive] = useState<boolean>(false);
 
-  const categories = ['All', ...Array.from(new Set(quizSets.map(q => q.category || 'General')))];
+  const validQuizSets = (quizSets || []).filter(q => q && Array.isArray(q.questions));
+  const categories = ['All', ...Array.from(new Set(validQuizSets.map(q => q.category || 'General')))];
 
   const filteredSets = quizSets.filter(quiz => {
     const categoryMatch = selectedCategory === 'All' || (quiz.category || 'General') === selectedCategory;
@@ -275,7 +276,7 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
                 <div className="flex items-center justify-between text-xs text-slate-400 font-medium">
                   <div className="flex items-center space-x-1.5">
                     <HelpCircle className="w-4 h-4 text-indigo-400" />
-                    <span>{quiz.questions.length} câu hỏi</span>
+                    <span>{quiz.questions?.length || 0} câu hỏi</span>
                   </div>
 
                   {history ? (
