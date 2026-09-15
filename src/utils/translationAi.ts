@@ -3,42 +3,36 @@ import type { TranslationExercise, TranslationItem, TranslationGradeReport, Item
 export function parseRawTextLocally(rawText: string): TranslationItem[] {
   const lines = rawText.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
   const items: TranslationItem[] = [];
-  let currentTopic = 'CHỦ ĐỀ LUYỆN DỊCH';
+
+  let currentTopic = '';
+  let currentContentLines: string[] = [];
   let itemId = 1;
 
-  let currentQ = '';
-  let currentALines: string[] = [];
-
-  const saveCurrentPair = () => {
-    if (currentQ || currentALines.length > 0) {
+  const saveCurrentTopicItem = () => {
+    if (currentTopic || currentContentLines.length > 0) {
       items.push({
         id: itemId++,
-        topic: currentTopic,
-        originalEnglishQuestion: currentQ || ('Câu ' + itemId),
-        originalEnglishAnswer: currentALines.join(' '),
+        topic: currentTopic || ('CHỦ ĐỀ ' + itemId),
+        originalEnglishQuestion: 'Phần Dịch: ' + (currentTopic || ('Đoạn ' + itemId)),
+        originalEnglishAnswer: currentContentLines.join('\n\n'),
         vietnamesePromptQuestion: '',
         vietnamesePromptAnswer: ''
       });
-      currentQ = '';
-      currentALines = [];
+      currentTopic = '';
+      currentContentLines = [];
     }
   };
 
   for (const line of lines) {
-    if (/^\d+\.\s+[A-Z0-9\s_-]+$/i.test(line) || (/^[A-Z0-9\s_-]{3,}$/.test(line) && !line.includes('?'))) {
-      saveCurrentPair();
+    // Detect topic headers like '1. HOME', '2. BIRTHDAYS', '3. ADVERTISEMENTS', '4. BUSES', '5. TV SHOWS'
+    if (/^\d+\.\s+[A-Z0-9\s_-]+$/i.test(line) || /^PHẦN\s+\d+/i.test(line) || /^TOPIC\s+\d+/i.test(line)) {
+      saveCurrentTopicItem();
       currentTopic = line;
       continue;
     }
-
-    if (line.endsWith('?') || /^(Do|Does|Did|Is|Are|Was|Were|What|Why|Where|When|How|Who|Which|Can|Could|Should|Would)/i.test(line)) {
-      saveCurrentPair();
-      currentQ = line;
-    } else {
-      currentALines.push(line);
-    }
+    currentContentLines.push(line);
   }
-  saveCurrentPair();
+  saveCurrentTopicItem();
 
   return items;
 }
@@ -55,7 +49,7 @@ export async function parseRawToTranslationExercise(
     return {
       id: 'ex-' + Date.now(),
       title: title,
-      description: 'Bài luyện dịch gồm ' + localItems.length + ' phần câu hỏi & trả lời.',
+      description: 'Bài luyện dịch gồm ' + localItems.length + ' đoạn chủ đề.',
       rawInputText,
       createdAt: new Date().toISOString(),
       items: localItems
@@ -72,7 +66,7 @@ export async function parseRawToTranslationExercise(
           body: JSON.stringify({
             contents: [{
               parts: [{
-                text: 'Phân tích đoạn văn bản sau thành các phần Luyện Dịch:\n' + rawInputText
+                text: 'Phân tích đoạn văn bản sau thành các đoạn Luyện Dịch:\n' + rawInputText
               }]
             }]
           })
@@ -86,7 +80,7 @@ export async function parseRawToTranslationExercise(
         return {
           id: 'ex-' + Date.now(),
           title,
-          description: 'Bài luyện dịch gồm ' + parsed.length + ' phần câu hỏi & trả lời.',
+          description: 'Bài luyện dịch gồm ' + parsed.length + ' đoạn chủ đề.',
           rawInputText,
           createdAt: new Date().toISOString(),
           items: parsed.map((item: any, idx: number) => ({
@@ -107,7 +101,7 @@ export async function parseRawToTranslationExercise(
   return {
     id: 'ex-' + Date.now(),
     title: 'Bài Luyện Dịch',
-    description: 'Chưa tự động phân tách được. Vui lòng kiểm tra lại định dạng.',
+    description: 'Nội dung bài dịch gốc',
     rawInputText,
     createdAt: new Date().toISOString(),
     items: [
@@ -191,7 +185,7 @@ export async function gradeUserTranslationWithGemini(
     return {
       itemId: item.id,
       topic: item.topic,
-      originalEnglish: (item.originalEnglishQuestion + ' ' + item.originalEnglishAnswer).trim(),
+      originalEnglish: item.originalEnglishAnswer,
       userTranslation: userText || '(Chưa nhập)',
       score,
       correctedEnglish: item.originalEnglishAnswer,
