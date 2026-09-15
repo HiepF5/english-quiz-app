@@ -24,7 +24,6 @@ export function parseRawTextLocally(rawText: string): TranslationItem[] {
   };
 
   for (const line of lines) {
-    // Detect topic headers like '1. HOME', '2. BIRTHDAYS', '3. ADVERTISEMENTS', '4. BUSES', '5. TV SHOWS'
     if (/^\d+\.\s+[A-Z0-9\s_-]+$/i.test(line) || /^PHẦN\s+\d+/i.test(line) || /^TOPIC\s+\d+/i.test(line)) {
       saveCurrentTopicItem();
       currentTopic = line;
@@ -41,6 +40,34 @@ export async function parseRawToTranslationExercise(
   rawInputText: string,
   apiKey?: string
 ): Promise<TranslationExercise> {
+  const trimmed = rawInputText.trim();
+  
+  // Direct JSON input support
+  if (trimmed.startsWith('{') && trimmed.endsWith('}')) {
+    try {
+      const parsedJson = JSON.parse(trimmed);
+      if (parsedJson.items && Array.isArray(parsedJson.items)) {
+        return {
+          id: parsedJson.id || ('ex-' + Date.now()),
+          title: parsedJson.title || 'Bài Luyện Dịch',
+          description: parsedJson.description || ('Bài luyện dịch gồm ' + parsedJson.items.length + ' đoạn chủ đề.'),
+          rawInputText,
+          createdAt: new Date().toISOString(),
+          items: parsedJson.items.map((it: any, idx: number) => ({
+            id: it.id || idx + 1,
+            topic: it.topic || ('PHẦN #' + (idx + 1)),
+            originalEnglishQuestion: it.originalEnglishQuestion || ('Phần Dịch: ' + (it.topic || (idx + 1))),
+            originalEnglishAnswer: it.originalEnglishAnswer || '',
+            vietnamesePromptQuestion: it.vietnamesePromptQuestion || '',
+            vietnamesePromptAnswer: it.vietnamesePromptAnswer || ''
+          }))
+        };
+      }
+    } catch (e) {
+      console.warn('Direct JSON parse attempted but failed, falling back to text parsing:', e);
+    }
+  }
+
   const localItems = parseRawTextLocally(rawInputText);
   const firstLine = rawInputText.split(/\r?\n/)[0]?.trim() || 'Bài Luyện Dịch Mới';
   const title = firstLine.length > 50 ? firstLine.substring(0, 50) + '...' : firstLine;
