@@ -4,6 +4,17 @@ Tất cả những nâng cấp, sửa lỗi và cải tiến của dự án **En
 
 ---
 
+## 🚀 [v2.0.0] - 2026-09-15
+### ✨ Đột Phá Mới: Phân Hệ Luyện Dịch IELTS Speaking & AI Chấm Điểm
+- **Phân Hệ Luyện Dịch Tiếng Anh (`TranslationWorkspace.tsx` & `translationAi.ts`)**:
+  - Hỗ trợ dán văn bản thô gồm các câu hỏi & câu trả lời theo chủ đề (Ví dụ: **1. HOME, 2. BIRTHDAYS, 3. ADVERTISEMENTS, 4. BUSES, 5. TV SHOWS**).
+  - **AI Tự Động Tạo Bài Tập Dịch**: Phân tích cú pháp văn bản thô thành bài tập dịch câu hỏi & câu trả lời có gợi ý Tiếng Việt và đáp án mẫu Tiếng Anh.
+  - **AI Chấm Điểm & Sửa Lỗi Chi Tiết**: Sau khi học viên hoàn thành bài dịch, Gemini AI chấm điểm overall (thang điểm 10), chỉ ra lỗi chia thì/mạo từ/chính tả, viết lại câu dịch chuẩn tự nhiên nhất và gợi ý từ vựng hay.
+  - **Export Bài Làm Của Tôi**: Cho phép học viên xuất toàn bộ bài làm dịch + kết quả đánh giá chi tiết của AI ra file tài liệu Markdown (`.md`) tiện cho việc lưu trữ & in ấn.
+  - **Đồng Bộ Git & Vercel**: Nút **"Lưu & Push Git"** tự động commit bài tập dịch & bài làm của học viên lên GitHub (`src/data/trans_xxx.json`) để Vercel Re-deploy.
+
+---
+
 ## 🌟 [v1.5.0] - 2026-09-15
 ### ✨ Tính Năng Mới Đột Phá
 - **Tự Động Chuyển Đề Thi Thô Thành JSON Bằng AI & Push Vercel (`AiConverterModal.tsx` & `gemini.ts`)**:

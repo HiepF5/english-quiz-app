@@ -10,12 +10,16 @@ import { JsonTemplateModal } from './components/JsonTemplateModal';
 import { GithubPushModal } from './components/GithubPushModal';
 import { JsonPasteModal } from './components/JsonPasteModal';
 import { AiConverterModal } from './components/AiConverterModal';
+import { TranslationWorkspace } from './components/TranslationWorkspace';
 
 // Dynamically import ALL .json files inside src/data/ at build time via Vite glob
 const jsonModules = import.meta.glob('./data/*.json', { eager: true });
 const DEFAULT_QUIZZES: QuizSet[] = Object.values(jsonModules).map((mod: any) => mod.default || mod);
 
 export const App: React.FC = () => {
+  // Active Module tab state: 'quiz' | 'translation'
+  const [activeModule, setActiveModule] = useState<'quiz' | 'translation'>('quiz');
+
   // Load custom saved quizzes from localStorage on initial render
   const [quizSets, setQuizSets] = useState<QuizSet[]>(() => {
     try {
@@ -241,8 +245,9 @@ export const App: React.FC = () => {
       
       {/* Navigation Header */}
       <Navbar
+        activeModule={activeModule}
+        onChangeModule={setActiveModule}
         onImportJson={handleImportJson}
-        onOpenCreator={() => setIsCreatorOpen(true)}
         onOpenTemplateModal={() => setIsTemplateModalOpen(true)}
         onOpenPasteModal={() => setIsPasteModalOpen(true)}
         onOpenAiModal={() => setIsAiModalOpen(true)}
@@ -254,7 +259,10 @@ export const App: React.FC = () => {
 
       {/* Main Container */}
       <main className="flex-1 pb-16">
-        {!activeQuiz ? (
+        {activeModule === 'translation' ? (
+          /* Translation Practice & AI Grading Workspace */
+          <TranslationWorkspace />
+        ) : !activeQuiz ? (
           /* Quiz Selector Screen */
           <QuizSelector
             quizSets={quizSets}
@@ -392,7 +400,7 @@ export const App: React.FC = () => {
       {/* Footer */}
       <footer className="border-t border-slate-900 bg-slate-950 py-6 text-center text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <span>English Quiz App — Powered by JSON Test Banks & React + Vite</span>
+          <span>English Quiz & Translation App — Powered by Gemini AI & React + Vite</span>
           <span>Sẵn sàng Deploy lên Vercel</span>
         </div>
       </footer>
