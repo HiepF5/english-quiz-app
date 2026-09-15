@@ -1,0 +1,154 @@
+  const handleSubmitGrading = async () => {
+    if (!exercise) return;
+    if (!apiKey.trim()) {
+      alert('Vui l?ng nh?p Google Gemini API Key ?? th?c hi?n ch?m ?i?m b?i l?m!');
+      return;
+    }
+
+    const answeredCount = Object.values(userAnswers).filter(val => val.trim().length > 0).length;
+    if (answeredCount === 0) {
+      alert('Vui l?ng nh?p b?i d?ch cho ?t nh?t 1 c?u tr??c khi n?p ch?m ?i?m.');
+      return;
+    }
+
+    setIsGrading(true);
+    setErrorMsg(null);
+    setReport(null);
+
+    localStorage.setItem('gemini_api_key', apiKey.trim());
+
+    try {
+      const result = await gradeUserTranslationWithGemini(apiKey.trim(), exercise, userAnswers);
+      setReport(result);
+      saveSession(exercise, userAnswers, result);
+    } catch (err: any) {
+      setErrorMsg(err.message || 'L?i khi ch?m ?i?m b?i l?m v?i Gemini AI.');
+    } finally {
+      setIsGrading(false);
+    }
+  };
+
+  const handleExportUserWork = () => {
+    if (!exercise) return;
+
+    const lines: string[] = [
+      '# B?I LUY?N D?CH TI?NG ANH - ' + exercise.title.toUpperCase(),
+      '*Th?i gian t?o:* ' + new Date(exercise.createdAt).toLocaleString('vi-VN'),
+      '*S? l??ng c?u h?i:* ' + exercise.items.length + ' c?u',
+      ''
+    ];
+
+    if (report) {
+      lines.push('## K?T QU? CH?M ?I?M AI');
+      lines.push('- **?i?m T?ng Quan:** ' + report.overallScore + ' / 10 (' + report.overallPercentage + '%)');
+      lines.push('- **Nh?n X?t C?a Gi?m Kh?o AI:** ' + report.evaluationComment);
+      lines.push('');
+    }
+
+    lines.push('---');
+    lines.push('');
+    lines.push('## CHI TI?T B?I L?M C?A H?C VI?N');
+    lines.push('');
+
+    exercise.items.forEach((item, idx) => {
+      const itemFB = report?.feedbackItems.find(fb => fb.itemId === item.id);
+      const userAns = userAnswers[item.id] || '(Ch?a l?m b?i)';
+
+      lines.push('### C?u ' + (idx + 1) + ' [Topic: ' + item.topic + ']');
+      lines.push('**C?u h?i Ti?ng Anh:** ' + item.originalEnglishQuestion);
+      lines.push('');
+      lines.push('**?o?n m?u Ti?ng Anh:**');
+      lines.push('> ' + item.originalEnglishAnswer);
+      lines.push('');
+      lines.push('**G?i ? Ti?ng Vi?t:**');
+      lines.push('- C?u h?i: ' + item.vietnamesePromptQuestion);
+      lines.push('- N?i dung: ' + item.vietnamesePromptAnswer);
+      lines.push('');
+      lines.push('**?? B?i D?ch C?a B?n:**');
+      lines.push(userAns);
+      lines.push('');
+
+      if (itemFB) {
+        lines.push('**? Gemini AI Ch?m ?i?m & S?a L?i:**');
+        lines.push('- **?i?m:** ' + itemFB.score + ' / 10');
+        lines.push('- **C?u s?a chu?n:** ' + itemFB.correctedEnglish);
+        if (itemFB.grammarErrors.length > 0) {
+          lines.push('- **L?i ng? ph?p c?n tr?nh:** ' + itemFB.grammarErrors.join('; '));
+        }
+        if (itemFB.vocabularySuggestions.length > 0) {
+          lines.push('- **G?i ? t? v?ng hay:** ' + itemFB.vocabularySuggestions.join('; '));
+        }
+        lines.push('- **Gi?i th?ch:** ' + itemFB.explanation);
+        lines.push('');
+      }
+
+      lines.push('---');
+      lines.push('');
+    });
+
+    const blob = new Blob([lines.join('
+')], { type: 'text/markdown;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = exercise.id + '-bai-lam-luyen-dich.md';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  const handlePushGit = async () => {
+    if (!githubToken.trim()) {
+      const token = prompt('Vui l?ng nh?p GitHub Personal Access Token (PAT):');
+      if (!token) return;
+      setGithubToken(token.trim());
+      localStorage.setItem('github_pat_token', token.trim());
+    }
+
+    setIsPushing(true);
+    setPushResult(null);
+
+    const tokenToUse = githubToken.trim() || localStorage.getItem('github_pat_token') || '';
+
+    try {
+      const res = await pushToGithub({
+        token: tokenToUse,
+        owner: 'HiepF5',
+        repo: 'english-quiz-app',
+        filePath: 'src/data/latest_translation_session.json',
+        content: { exercise, userAnswers, report },
+        message: 'Update Translation Practice session - ' + new Date().toLocaleTimeString()
+      });
+
+      if (res.success) {
+        setPushResult({
+          success: true,
+          message: '?? Push b?i luy?n d?ch th?nh c?ng l?n GitHub! Vercel s? t? ??ng deploy b?n m?i nh?t.',
+          url: res.commitUrl
+        });
+      } else {
+        setPushResult({
+          success: false,
+          message: res.error || 'L?i khi Push b?i l?m l?n GitHub.'
+        });
+      }
+    } catch (err: any) {
+      setPushResult({
+        success: false,
+        message: err.message || 'L?i khi Push b?i l?m l?n GitHub.'
+      });
+    } finally {
+      setIsPushing(false);
+    }
+  };
+
+  const topics = exercise ? Array.from(new Set(exercise.items.map(i => i.topic))) : [];
+  const filteredItems = exercise
+    ? (selectedTopic === 'ALL' ? exercise.items : exercise.items.filter(i => i.topic === selectedTopic))
+    : [];
+
+  const answeredCount = exercise
+    ? Object.values(userAnswers).filter(val => val.trim().length > 0).length
+    : 0;
+

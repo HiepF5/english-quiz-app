@@ -1,0 +1,76 @@
+export const TranslationWorkspace: React.FC = () => {
+  const [apiKey, setApiKey] = useState<string>(() => localStorage.getItem('gemini_api_key') || '');
+  const [githubToken, setGithubToken] = useState<string>(() => localStorage.getItem('github_pat_token') || '');
+  
+  const [rawText, setRawText] = useState<string>(DEFAULT_SAMPLE_TEXT);
+  const [exercise, setExercise] = useState<TranslationExercise | null>(null);
+  const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
+  const [selectedTopic, setSelectedTopic] = useState<string>('ALL');
+  
+  const [isGenerating, setIsGenerating] = useState<boolean>(false);
+  const [isGrading, setIsGrading] = useState<boolean>(false);
+  const [isPushing, setIsPushing] = useState<boolean>(false);
+
+  const [report, setReport] = useState<TranslationGradeReport | null>(null);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [pushResult, setPushResult] = useState<{ success: boolean; message: string; url?: string } | null>(null);
+
+  useEffect(() => {
+    try {
+      const savedEx = localStorage.getItem('active_translation_exercise');
+      const savedAns = localStorage.getItem('active_translation_answers');
+      const savedRep = localStorage.getItem('active_translation_report');
+
+      if (savedEx) setExercise(JSON.parse(savedEx));
+      if (savedAns) setUserAnswers(JSON.parse(savedAns));
+      if (savedRep) setReport(JSON.parse(savedRep));
+    } catch (e) {
+      console.error('Error loading saved session:', e);
+    }
+  }, []);
+
+  const saveSession = (ex: TranslationExercise | null, ans: Record<number, string>, rep: TranslationGradeReport | null) => {
+    try {
+      if (ex) localStorage.setItem('active_translation_exercise', JSON.stringify(ex));
+      localStorage.setItem('active_translation_answers', JSON.stringify(ans));
+      if (rep) localStorage.setItem('active_translation_report', JSON.stringify(rep));
+    } catch (e) {
+      console.error('Error saving session:', e);
+    }
+  };
+
+  const handleStartPractice = async () => {
+    if (!rawText.trim()) {
+      alert('Vui l?ng d?n v?n b?n b?i t?p v?o ? nh?p li?u');
+      return;
+    }
+
+    setIsGenerating(true);
+    setErrorMsg(null);
+    setExercise(null);
+    setUserAnswers({});
+    setReport(null);
+    setPushResult(null);
+
+    if (apiKey.trim()) {
+      localStorage.setItem('gemini_api_key', apiKey.trim());
+    }
+
+    try {
+      const result = await parseRawToTranslationExercise(apiKey.trim(), rawText.trim());
+      setExercise(result);
+      saveSession(result, {}, null);
+    } catch (err: any) {
+      const fallback = parseRawTextLocally(rawText.trim());
+      setExercise(fallback);
+      saveSession(fallback, {}, null);
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
+  const handleAnswerChange = (itemId: number, text: string) => {
+    const updated = { ...userAnswers, [itemId]: text };
+    setUserAnswers(updated);
+    saveSession(exercise, updated, report);
+  };

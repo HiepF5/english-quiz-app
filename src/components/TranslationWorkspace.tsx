@@ -44,6 +44,10 @@ Benefits of watching a TV show?
 Watching TV shows helps me relax after a long day. It also allows me to learn more about different cultures and ideas.`;
 
 export const TranslationWorkspace: React.FC = () => {
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    return (localStorage.getItem('app_theme') as 'light' | 'dark') || 'light';
+  });
+
   const [rawText, setRawText] = useState(SAMPLE_RAW_TEXT);
   const [exercise, setExercise] = useState<TranslationExercise | null>(null);
   const [userTranslations, setUserTranslations] = useState<Record<number, string>>({});
@@ -63,12 +67,25 @@ export const TranslationWorkspace: React.FC = () => {
   });
 
   useEffect(() => {
+    localStorage.setItem('app_theme', theme);
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme]);
+
+  useEffect(() => {
     localStorage.setItem('gemini_api_key', apiKey);
   }, [apiKey]);
 
   useEffect(() => {
     localStorage.setItem('github_access_token', githubToken);
   }, [githubToken]);
+
+  const toggleTheme = () => {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+  };
 
   const handleCreateExercise = async () => {
     if (!rawText.trim()) return;
@@ -99,7 +116,6 @@ export const TranslationWorkspace: React.FC = () => {
       const resReport = await gradeUserTranslationWithGemini(exercise, userTranslations, apiKey);
       setReport(resReport);
 
-      // Save to history
       const newRecord: TranslationHistoryRecord = {
         id: 'hist-' + Date.now(),
         exercise,
@@ -174,252 +190,330 @@ export const TranslationWorkspace: React.FC = () => {
   };
 
   const completedCount = exercise ? Object.values(userTranslations).filter(t => t.trim().length > 0).length : 0;
+  const isLight = theme === 'light';
 
   return (
-    <div className="max-w-5xl mx-auto p-4 md:p-6 space-y-6">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-indigo-950 via-slate-900 to-purple-950 p-6 rounded-2xl border border-indigo-500/30 shadow-xl text-white flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-        <div>
-          <span className="bg-indigo-500/20 text-indigo-300 text-xs px-3 py-1 rounded-full border border-indigo-400/30 font-semibold tracking-wide">
-            ENGLISH TRANSLATION WORKSPACE
-          </span>
-          <h1 className="text-2xl md:text-3xl font-bold mt-2 bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-100 to-purple-200">
-            Luyện Dịch Tiếng Anh - Tự Nhập & AI Chấm Điểm
-          </h1>
-          <p className="text-slate-300 text-sm mt-1">
-            Dán đoạn văn bản (nhiều chủ đề), tự gõ bản dịch của bạn vào từng phần, sau đó nhấn Nộp bài để Gemini AI chấm điểm chi tiết.
-          </p>
-        </div>
-        <button
-          onClick={() => setShowApiSettings(!showApiSettings)}
-          className="self-start md:self-auto bg-slate-800/80 hover:bg-slate-700 text-indigo-200 text-xs px-3 py-2 rounded-lg border border-slate-600 transition flex items-center gap-2"
-        >
-          <span>⚙️ Gemini & Git Config</span>
-        </button>
-      </div>
-
-      {/* API Key settings modal / accordion */}
-      {showApiSettings && (
-        <div className="bg-slate-900 border border-slate-700 p-4 rounded-xl text-white space-y-4">
-          <h3 className="font-semibold text-indigo-400 text-sm">Cấu hình Gemini API & GitHub Token</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-xs text-slate-300 mb-1">Gemini API Key</label>
-              <input
-                type="password"
-                value={apiKey}
-                onChange={e => setApiKey(e.target.value)}
-                placeholder="AIzaSy..."
-                className="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-indigo-500"
-              />
+    <div className={`min-h-screen py-6 px-4 md:px-8 transition-colors duration-200 ${isLight ? 'bg-slate-100 text-slate-800' : 'bg-slate-950 text-slate-100'}`}>
+      <div className="max-w-5xl mx-auto space-y-6">
+        
+        {/* Header Banner */}
+        <div className={`p-6 rounded-2xl border shadow-xl flex flex-col md:flex-row md:items-center md:justify-between gap-4 transition-colors ${
+          isLight
+            ? 'bg-gradient-to-r from-indigo-700 via-indigo-800 to-purple-800 border-indigo-200 text-white'
+            : 'bg-gradient-to-r from-indigo-950 via-slate-900 to-purple-950 border-indigo-500/30 text-white'
+        }`}>
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="bg-white/20 text-white text-xs px-3 py-1 rounded-full font-semibold tracking-wide backdrop-blur-sm">
+                ENGLISH TRANSLATION WORKSPACE
+              </span>
+              <button
+                onClick={toggleTheme}
+                className="bg-white/20 hover:bg-white/30 text-white text-xs px-3 py-1 rounded-full font-semibold transition flex items-center gap-1.5"
+              >
+                {isLight ? '🌙 Chuyển sang Giao Diện Tối (Dark)' : '☀️ Chuyển sang Giao Diện Sáng (Light)'}
+              </button>
             </div>
-            <div>
-              <label className="block text-xs text-slate-300 mb-1">GitHub Access Token (Để Push 1-Click)</label>
-              <input
-                type="password"
-                value={githubToken}
-                onChange={e => setGithubToken(e.target.value)}
-                placeholder="ghp_..."
-                className="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-indigo-500"
-              />
-            </div>
+            <h1 className="text-2xl md:text-3xl font-bold mt-2 text-white">
+              Luyện Dịch Tiếng Anh - Tự Nhập & AI Chấm Điểm
+            </h1>
+            <p className="text-indigo-100 text-sm mt-1">
+              Dán đoạn văn bản (nhiều chủ đề), tự gõ bản dịch của bạn vào từng phần, sau đó nhấn Nộp bài để Gemini AI chấm điểm chi tiết.
+            </p>
           </div>
-        </div>
-      )}
-
-      {/* Step 1: Input text area if exercise not created yet */}
-      {!exercise && (
-        <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-4 shadow-lg">
-          <div className="flex items-center justify-between">
-            <h2 className="text-lg font-bold text-white flex items-center gap-2">
-              <span>📝 Nhập Đoạn Văn Bản / Đề Bài Tiếng Anh</span>
-            </h2>
-            <button
-              onClick={() => setRawText(SAMPLE_RAW_TEXT)}
-              className="text-xs text-indigo-400 hover:underline"
-            >
-              Nạp bài mẫu (5 Chủ đề: Home, Birthdays...)
-            </button>
-          </div>
-          <textarea
-            rows={12}
-            value={rawText}
-            onChange={e => setRawText(e.target.value)}
-            placeholder="Dán đoạn văn bản Tiếng Anh gồm các chủ đề (1. HOME, 2. BIRTHDAYS...) vào đây..."
-            className="w-full bg-slate-950 border border-slate-800 rounded-xl p-4 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 font-mono leading-relaxed resize-y"
-          />
           <button
-            onClick={handleCreateExercise}
-            disabled={isParsing || !rawText.trim()}
-            className="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold shadow-lg shadow-indigo-500/20 transition disabled:opacity-50 flex items-center justify-center gap-2 text-base"
+            onClick={() => setShowApiSettings(!showApiSettings)}
+            className="self-start md:self-auto bg-white/10 hover:bg-white/20 text-white text-xs px-3.5 py-2 rounded-xl border border-white/20 transition flex items-center gap-2 font-medium"
           >
-            {isParsing ? (
-              <>
-                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                <span>Đang phân tách đoạn văn...</span>
-              </>
-            ) : (
-              <>
-                <span>🚀 Tạo Các Phần Bài Tập Dịch (Tự Động Phân Tách)</span>
-              </>
-            )}
+            <span>⚙️ Cấu hình API & Git</span>
           </button>
         </div>
-      )}
 
-      {/* Step 2: Interactive typing sections */}
-      {exercise && (
-        <div className="space-y-6">
-          <div className="bg-slate-900 border border-slate-800 p-4 rounded-xl flex flex-col md:flex-row items-center justify-between gap-4">
-            <div>
-              <h2 className="text-lg font-bold text-white">{exercise.title}</h2>
-              <p className="text-xs text-slate-400">
-                Đã phân tách thành <span className="text-indigo-400 font-semibold">{exercise.items.length} phần</span>. Đã dịch: <span className="text-emerald-400 font-semibold">{completedCount}/{exercise.items.length}</span>
-              </p>
-            </div>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setExercise(null)}
-                className="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs"
-              >
-                ✏️ Sửa văn bản gốc
-              </button>
-              <button
-                onClick={handleExportMarkdown}
-                className="px-3 py-1.5 rounded-lg bg-indigo-950 hover:bg-indigo-900 border border-indigo-700/50 text-indigo-300 text-xs"
-              >
-                📥 Xuất .md
-              </button>
-              <button
-                onClick={handlePushGit}
-                className="px-3 py-1.5 rounded-lg bg-purple-950 hover:bg-purple-900 border border-purple-700/50 text-purple-300 text-xs"
-              >
-                🐙 Push Git
-              </button>
-            </div>
-          </div>
-
-          {pushStatus && (
-            <div className="p-3 bg-slate-800 border border-slate-700 rounded-lg text-xs text-indigo-300">
-              {pushStatus}
-            </div>
-          )}
-
-          {/* Cards for typing */}
-          <div className="space-y-4">
-            {exercise.items.map((item, idx) => (
-              <div
-                key={item.id}
-                className="bg-slate-900/90 border border-slate-800 hover:border-slate-700 p-5 rounded-2xl space-y-3 transition shadow-md"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs px-2.5 py-1 rounded-md font-semibold">
-                    PHẦN #{idx + 1} • {item.topic}
-                  </span>
-                  <span className="text-xs text-slate-500 font-mono">ID: {item.id}</span>
-                </div>
-
-                {item.originalEnglishQuestion && (
-                  <div className="text-sm font-semibold text-slate-100 flex items-start gap-2">
-                    <span className="text-indigo-400">❓</span>
-                    <span>{item.originalEnglishQuestion}</span>
-                  </div>
-                )}
-
-                <div className="bg-slate-950/80 p-3.5 rounded-xl border border-slate-800/80 text-sm text-indigo-200 font-medium leading-relaxed">
-                  {item.originalEnglishAnswer}
-                </div>
-
-                <div>
-                  <label className="block text-xs text-slate-400 mb-1 font-medium">
-                    ✍️ Bản dịch của bạn (Gõ lại nội dung bạn tự dịch):
-                  </label>
-                  <textarea
-                    rows={3}
-                    value={userTranslations[item.id] || ''}
-                    onChange={e => handleTranslationChange(item.id, e.target.value)}
-                    placeholder="Gõ bản dịch Tiếng Việt (hoặc Tiếng Anh) của bạn tại đây..."
-                    className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition resize-y"
-                  />
-                </div>
+        {/* API Settings Accordion */}
+        {showApiSettings && (
+          <div className={`p-5 rounded-xl border space-y-4 shadow-md transition-colors ${
+            isLight ? 'bg-white border-slate-200 text-slate-800' : 'bg-slate-900 border-slate-700 text-white'
+          }`}>
+            <h3 className="font-bold text-indigo-600 dark:text-indigo-400 text-sm">Cấu hình Gemini API Key & GitHub Token</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-xs font-semibold mb-1 opacity-80">Gemini API Key</label>
+                <input
+                  type="password"
+                  value={apiKey}
+                  onChange={e => setApiKey(e.target.value)}
+                  placeholder="AIzaSy..."
+                  className={`w-full rounded-lg px-3 py-2 text-sm border focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+                    isLight ? 'bg-slate-50 border-slate-300 text-slate-900' : 'bg-slate-800 border-slate-700 text-white'
+                  }`}
+                />
               </div>
-            ))}
-          </div>
-
-          {/* Submit button */}
-          <div className="sticky bottom-4 bg-slate-950/90 backdrop-blur-md p-4 rounded-2xl border border-indigo-500/30 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="text-xs text-slate-300">
-              Tiến độ: <strong className="text-indigo-400">{completedCount}</strong> / <strong>{exercise.items.length}</strong> phần bài dịch đã nhập.
+              <div>
+                <label className="block text-xs font-semibold mb-1 opacity-80">GitHub Token (Push 1-Click)</label>
+                <input
+                  type="password"
+                  value={githubToken}
+                  onChange={e => setGithubToken(e.target.value)}
+                  placeholder="ghp_..."
+                  className={`w-full rounded-lg px-3 py-2 text-sm border focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+                    isLight ? 'bg-slate-50 border-slate-300 text-slate-900' : 'bg-slate-800 border-slate-700 text-white'
+                  }`}
+                />
+              </div>
             </div>
+          </div>
+        )}
+
+        {/* Step 1: Input text area */}
+        {!exercise && (
+          <div className={`p-6 rounded-2xl border space-y-4 shadow-md transition-colors ${
+            isLight ? 'bg-white border-slate-200' : 'bg-slate-900 border-slate-800'
+          }`}>
+            <div className="flex items-center justify-between">
+              <h2 className="text-lg font-bold flex items-center gap-2">
+                <span>📝 Nhập Đoạn Văn Bản / Đề Bài Tiếng Anh</span>
+              </h2>
+              <button
+                onClick={() => setRawText(SAMPLE_RAW_TEXT)}
+                className="text-xs font-semibold text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 hover:underline"
+              >
+                Nạp bài mẫu (5 Chủ đề: Home, Birthdays...)
+              </button>
+            </div>
+            <textarea
+              rows={12}
+              value={rawText}
+              onChange={e => setRawText(e.target.value)}
+              placeholder="Dán đoạn văn bản Tiếng Anh gồm các chủ đề (1. HOME, 2. BIRTHDAYS...) vào đây..."
+              className={`w-full rounded-xl p-4 text-sm font-mono leading-relaxed resize-y border focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+                isLight
+                  ? 'bg-slate-50 border-slate-300 text-slate-900 focus:bg-white'
+                  : 'bg-slate-950 border-slate-800 text-slate-100'
+              }`}
+            />
             <button
-              onClick={handleSubmitAndGrade}
-              disabled={isGrading}
-              className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-indigo-600 hover:from-emerald-500 hover:to-indigo-500 text-white font-bold shadow-lg shadow-emerald-500/20 transition disabled:opacity-50 flex items-center justify-center gap-2"
+              onClick={handleCreateExercise}
+              disabled={isParsing || !rawText.trim()}
+              className="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold shadow-lg shadow-indigo-500/20 transition disabled:opacity-50 flex items-center justify-center gap-2 text-base"
             >
-              {isGrading ? (
+              {isParsing ? (
                 <>
                   <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                  <span>Gemini AI Đang Chấm Điểm...</span>
+                  <span>Đang phân tách đoạn văn...</span>
                 </>
               ) : (
                 <>
-                  <span>✨ Nộp Bài & Gemini AI Chấm Điểm</span>
+                  <span>🚀 Tạo Các Phần Bài Tập Dịch (Tự Động Phân Tách)</span>
                 </>
               )}
             </button>
           </div>
-        </div>
-      )}
+        )}
 
-      {/* Step 3: AI Grade Report display */}
-      {report && (
-        <div className="bg-slate-900 border border-indigo-500/30 p-6 rounded-2xl space-y-6 shadow-2xl">
-          <div className="flex flex-col sm:flex-row items-center justify-between border-b border-slate-800 pb-4 gap-4">
-            <div>
-              <span className="text-xs text-emerald-400 font-semibold uppercase tracking-wider">
-                KẾT QUẢ CHẤM ĐIỂM GEMINI AI
-              </span>
-              <h2 className="text-2xl font-bold text-white mt-1">{report.exerciseTitle}</h2>
-            </div>
-            <div className="bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 px-6 py-3 rounded-2xl text-center">
-              <div className="text-3xl font-extrabold">{report.overallScore} / 10</div>
-              <div className="text-xs text-emerald-400 font-medium">Tỷ lệ chính xác: {report.overallPercentage}%</div>
-            </div>
-          </div>
-
-          <div className="bg-slate-950 p-4 rounded-xl border border-slate-800 text-slate-300 text-sm">
-            <strong className="text-indigo-400 block mb-1">💡 Nhận xét tổng quan của AI:</strong>
-            {report.evaluationComment}
-          </div>
-
-          {/* Feedback items */}
-          <div className="space-y-4">
-            <h3 className="text-base font-bold text-white">Chi tiết từng câu:</h3>
-            {report.feedbackItems.map(fb => (
-              <div key={fb.itemId} className="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-indigo-400 font-semibold">{fb.topic} • Câu #{fb.itemId}</span>
-                  <span className="bg-indigo-950 border border-indigo-800 text-indigo-300 px-2 py-0.5 rounded font-bold">
-                    {fb.score} / 10 Điểm
-                  </span>
-                </div>
-                <div className="text-xs text-slate-400">
-                  <strong className="text-slate-200">Bản gốc:</strong> {fb.originalEnglish}
-                </div>
-                <div className="text-xs text-slate-300 bg-slate-900 p-2.5 rounded-lg border border-slate-800">
-                  <strong className="text-amber-400">Bài làm của bạn:</strong> {fb.userTranslation}
-                </div>
-                <div className="text-xs text-emerald-300 bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-900/50">
-                  <strong className="text-emerald-400">Gợi ý mượt mà:</strong> {fb.correctedEnglish}
-                </div>
-                <div className="text-xs text-slate-400 pt-1">
-                  <strong>Đánh giá & Giải thích:</strong> {fb.explanation}
-                </div>
+        {/* Step 2: Typing cards */}
+        {exercise && (
+          <div className="space-y-6">
+            <div className={`p-4 rounded-xl border flex flex-col md:flex-row items-center justify-between gap-4 shadow-sm transition-colors ${
+              isLight ? 'bg-white border-slate-200 text-slate-800' : 'bg-slate-900 border-slate-800 text-white'
+            }`}>
+              <div>
+                <h2 className="text-lg font-bold">{exercise.title}</h2>
+                <p className="text-xs opacity-75">
+                  Đã phân tách thành <span className="text-indigo-600 dark:text-indigo-400 font-semibold">{exercise.items.length} phần</span>. Đã dịch: <span className="text-emerald-600 dark:text-emerald-400 font-semibold">{completedCount}/{exercise.items.length}</span>
+                </p>
               </div>
-            ))}
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setExercise(null)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-medium border transition ${
+                    isLight ? 'bg-slate-100 hover:bg-slate-200 border-slate-300 text-slate-700' : 'bg-slate-800 hover:bg-slate-700 border-slate-700 text-slate-300'
+                  }`}
+                >
+                  ✏️ Sửa văn bản gốc
+                </button>
+                <button
+                  onClick={handleExportMarkdown}
+                  className="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold shadow-sm"
+                >
+                  📥 Xuất .md
+                </button>
+                <button
+                  onClick={handlePushGit}
+                  className="px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold shadow-sm"
+                >
+                  🐙 Push Git
+                </button>
+              </div>
+            </div>
+
+            {pushStatus && (
+              <div className="p-3 bg-indigo-50 border border-indigo-200 text-indigo-800 rounded-lg text-xs font-medium">
+                {pushStatus}
+              </div>
+            )}
+
+            {/* List of cards */}
+            <div className="space-y-4">
+              {exercise.items.map((item, idx) => (
+                <div
+                  key={item.id}
+                  className={`p-5 rounded-2xl border space-y-3 transition shadow-sm ${
+                    isLight
+                      ? 'bg-white border-slate-200 hover:border-slate-300 text-slate-800'
+                      : 'bg-slate-900 border-slate-800 hover:border-slate-700 text-slate-100'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className={`text-xs px-2.5 py-1 rounded-md font-bold border ${
+                      isLight
+                        ? 'bg-indigo-50 text-indigo-700 border-indigo-200'
+                        : 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20'
+                    }`}>
+                      PHẦN #{idx + 1} • {item.topic}
+                    </span>
+                    <span className="text-xs font-mono opacity-50">ID: {item.id}</span>
+                  </div>
+
+                  {item.originalEnglishQuestion && (
+                    <div className="text-sm font-bold flex items-start gap-2">
+                      <span className="text-indigo-600 dark:text-indigo-400">❓</span>
+                      <span>{item.originalEnglishQuestion}</span>
+                    </div>
+                  )}
+
+                  <div className={`p-3.5 rounded-xl border text-sm font-medium leading-relaxed ${
+                    isLight
+                      ? 'bg-indigo-50/70 border-indigo-200/60 text-indigo-950'
+                      : 'bg-slate-950/80 border-slate-800 text-indigo-200'
+                  }`}>
+                    {item.originalEnglishAnswer}
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-semibold mb-1 opacity-75">
+                      ✍️ Bản dịch của bạn (Gõ lại nội dung bạn tự dịch):
+                    </label>
+                    <textarea
+                      rows={3}
+                      value={userTranslations[item.id] || ''}
+                      onChange={e => handleTranslationChange(item.id, e.target.value)}
+                      placeholder="Gõ bản dịch Tiếng Việt (hoặc Tiếng Anh) của bạn tại đây..."
+                      className={`w-full rounded-xl p-3 text-sm transition resize-y border focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+                        isLight
+                          ? 'bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 focus:bg-white'
+                          : 'bg-slate-950 border-slate-800 text-slate-100'
+                      }`}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Sticky Submit Bar */}
+            <div className={`sticky bottom-4 backdrop-blur-md p-4 rounded-2xl border shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-4 transition-colors ${
+              isLight
+                ? 'bg-white/95 border-indigo-200 text-slate-800'
+                : 'bg-slate-950/95 border-indigo-500/30 text-white'
+            }`}>
+              <div className="text-xs font-semibold">
+                Tiến độ: <strong className="text-indigo-600 dark:text-indigo-400">{completedCount}</strong> / <strong>{exercise.items.length}</strong> phần bài dịch đã nhập.
+              </div>
+              <button
+                onClick={handleSubmitAndGrade}
+                disabled={isGrading}
+                className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-indigo-600 hover:from-emerald-500 hover:to-indigo-500 text-white font-bold shadow-lg shadow-emerald-500/20 transition disabled:opacity-50 flex items-center justify-center gap-2"
+              >
+                {isGrading ? (
+                  <>
+                    <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                    <span>Gemini AI Đang Chấm Điểm...</span>
+                  </>
+                ) : (
+                  <>
+                    <span>✨ Nộp Bài & Gemini AI Chấm Điểm</span>
+                  </>
+                )}
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+
+        {/* Step 3: AI Grade Report */}
+        {report && (
+          <div className={`p-6 rounded-2xl border space-y-6 shadow-xl transition-colors ${
+            isLight
+              ? 'bg-white border-indigo-200 text-slate-800'
+              : 'bg-slate-900 border-indigo-500/30 text-white'
+          }`}>
+            <div className="flex flex-col sm:flex-row items-center justify-between border-b pb-4 gap-4 border-slate-200 dark:border-slate-800">
+              <div>
+                <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
+                  KẾT QUẢ CHẤM ĐIỂM GEMINI AI
+                </span>
+                <h2 className="text-2xl font-bold mt-1">{report.exerciseTitle}</h2>
+              </div>
+              <div className={`px-6 py-3 rounded-2xl text-center border ${
+                isLight
+                  ? 'bg-emerald-50 border-emerald-200 text-emerald-900'
+                  : 'bg-emerald-950/80 border-emerald-500/40 text-emerald-300'
+              }`}>
+                <div className="text-3xl font-extrabold">{report.overallScore} / 10</div>
+                <div className="text-xs font-medium opacity-80">Tỷ lệ chính xác: {report.overallPercentage}%</div>
+              </div>
+            </div>
+
+            <div className={`p-4 rounded-xl border text-sm ${
+              isLight
+                ? 'bg-slate-50 border-slate-200 text-slate-800'
+                : 'bg-slate-950 border-slate-800 text-slate-300'
+            }`}>
+              <strong className="text-indigo-600 dark:text-indigo-400 block mb-1">💡 Nhận xét tổng quan của AI:</strong>
+              {report.evaluationComment}
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-base font-bold">Chi tiết từng câu:</h3>
+              {report.feedbackItems.map(fb => (
+                <div
+                  key={fb.itemId}
+                  className={`p-4 rounded-xl border space-y-2 ${
+                    isLight
+                      ? 'bg-slate-50 border-slate-200 text-slate-800'
+                      : 'bg-slate-950 border-slate-800 text-slate-200'
+                  }`}
+                >
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-bold text-indigo-600 dark:text-indigo-400">{fb.topic} • Câu #{fb.itemId}</span>
+                    <span className="bg-indigo-100 dark:bg-indigo-950 border border-indigo-300 dark:border-indigo-800 text-indigo-800 dark:text-indigo-300 px-2 py-0.5 rounded font-bold">
+                      {fb.score} / 10 Điểm
+                    </span>
+                  </div>
+                  <div className="text-xs opacity-75">
+                    <strong className="opacity-100">Bản gốc:</strong> {fb.originalEnglish}
+                  </div>
+                  <div className={`text-xs p-2.5 rounded-lg border ${
+                    isLight
+                      ? 'bg-amber-50 border-amber-200 text-amber-950'
+                      : 'bg-slate-900 border-slate-800 text-slate-200'
+                  }`}>
+                    <strong className="text-amber-600 dark:text-amber-400">Bài làm của bạn:</strong> {fb.userTranslation}
+                  </div>
+                  <div className={`text-xs p-2.5 rounded-lg border ${
+                    isLight
+                      ? 'bg-emerald-50 border-emerald-200 text-emerald-950'
+                      : 'bg-emerald-950/30 border-emerald-900/50 text-emerald-300'
+                  }`}>
+                    <strong className="text-emerald-700 dark:text-emerald-400">Gợi ý mượt mà:</strong> {fb.correctedEnglish}
+                  </div>
+                  <div className="text-xs opacity-80 pt-1">
+                    <strong>Đánh giá & Giải thích:</strong> {fb.explanation}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

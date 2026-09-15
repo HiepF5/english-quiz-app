@@ -18,6 +18,23 @@ const DEFAULT_QUIZZES: QuizSet[] = Object.values(jsonModules).map((mod: any) => 
 
 export const App: React.FC = () => {
   // Active Module tab state: 'quiz' | 'translation'
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    return (localStorage.getItem('app_theme') as 'light' | 'dark') || 'light';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('app_theme', theme);
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+  };
+
   const [activeModule, setActiveModule] = useState<'quiz' | 'translation'>('quiz');
 
   // Load custom saved quizzes from localStorage on initial render
@@ -241,7 +258,9 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
+    <div className={`min-h-screen flex flex-col font-sans transition-colors duration-200 ${
+    theme === 'light' ? 'bg-slate-100 text-slate-800' : 'bg-slate-950 text-slate-100'
+  }`}>
       
       {/* Navigation Header */}
       <Navbar
@@ -255,6 +274,8 @@ export const App: React.FC = () => {
         onResetToSelection={() => setActiveQuiz(null)}
         currentQuizTitle={activeQuiz?.title}
         scoreHistoryCount={completedCount}
+        theme={theme}
+        onToggleTheme={toggleTheme}
       />
 
       {/* Main Container */}

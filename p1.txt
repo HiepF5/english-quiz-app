@@ -1,0 +1,49 @@
+import React, { useState, useEffect } from 'react';
+import type { TranslationExercise, TranslationGradeReport } from '../types/translation';
+import { parseRawToTranslationExercise, parseRawTextLocally, gradeUserTranslationWithGemini } from '../utils/translationAi';
+import { pushToGithub } from '../utils/github';
+import { 
+  Sparkles, Key, FileText, Loader2, CheckCircle2, AlertCircle, 
+  Send, Download, GitCommit, ExternalLink, Award, FileCheck, RefreshCw, Layers
+} from 'lucide-react';
+
+const DEFAULT_SAMPLE_TEXT = `1. HOME
+Do you live in a house or a flat?
+I live in a small flat in the city centre. It?s quite modern and fully furnished, so it?s comfortable for my daily life. Although it?s not very spacious, it?s convenient to live near shops and my workplace.
+Do you plan to live there in the future?
+I plan to stay there for a couple of years because it suits my current lifestyle. However, in the long term, I hope to move to a bigger place with more privacy.
+What would you like to change in your house?
+I?d like to redesign the living room and make it brighter. I also want to add some plants to make the space feel more relaxing.
+
+2. BIRTHDAYS
+Do you usually celebrate your birthday?
+Yes, I usually celebrate my birthday every year. I don?t do anything too big, but I like spending time with my family or close friends.
+What did you do on your latest birthday?
+On my latest birthday, I went out for dinner with my friends. After that, we had a small gathering at home and enjoyed some music and cake.
+What do people often do on their birthday?
+People often go out to eat or meet their friends. Some people prefer to stay at home and celebrate with their families.
+
+3. ADVERTISEMENTS
+Do you often watch advertisements? Where?
+Yes, I see advertisements almost every day. Most of them appear on YouTube or social media, and sometimes on TV.
+Do you often buy things from advertisements?
+I sometimes do, but I usually research the product carefully before making a decision. If it has good reviews and a reasonable price, I might give it a try.
+How can we create a good advertisement?
+A good advertisement needs eye-catching visuals and a short, clear message. Besides, the main idea should be memorable so it can attract viewers effectively.
+
+4. BUSES
+Do you often use buses?
+Yes, I use buses quite often to travel to school or work. It?s a convenient option when I don?t want to ride my motorbike.
+How do you rate the bus service in your city?
+I think the bus service is improving, but it still has some problems like delays and overcrowding. However, the routes are quite useful.
+Benefits of using buses
+Using buses helps reduce traffic jams and pollution. It?s also much cheaper than driving your own vehicle.
+
+5. TV SHOWS
+The latest TV show you watched?
+The latest show I watched was a Korean drama about family relationships. The storyline was meaningful and the acting was impressive.
+Watching TV shows alone or with others?
+I prefer watching alone because I can concentrate better. But sometimes I enjoy watching with my friends if it?s a funny show.
+Benefits of watching a TV show?
+Watching TV shows helps me relax after a long day. It also allows me to learn more about different cultures and ideas.`;
+
