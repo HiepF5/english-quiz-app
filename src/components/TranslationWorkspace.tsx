@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import type { TranslationExercise, TranslationGradeReport } from '../types/translation';
+import type { TranslationExercise, TranslationGradeReport, TranslationHistoryRecord } from '../types/translation';
 import { parseRawToTranslationExercise, gradeUserTranslationWithGemini } from '../utils/translationAi';
 import { pushToGithub } from '../utils/github';
-import { 
-  Sparkles, Key, FileText, Loader2, CheckCircle2, AlertCircle, 
-  Send, Download, GitCommit, ExternalLink, Award, FileCheck 
-} from 'lucide-react';
 
-
-const DEFAULT_SAMPLE_TEXT = `1. HOME
+const SAMPLE_RAW_TEXT = `1. HOME
 Do you live in a house or a flat?
 I live in a small flat in the city centre. It’s quite modern and fully furnished, so it’s comfortable for my daily life. Although it’s not very spacious, it’s convenient to live near shops and my workplace.
 Do you plan to live there in the future?
@@ -49,544 +44,382 @@ Benefits of watching a TV show?
 Watching TV shows helps me relax after a long day. It also allows me to learn more about different cultures and ideas.`;
 
 export const TranslationWorkspace: React.FC = () => {
-  const [apiKey, setApiKey] = useState<string>(() => localStorage.getItem('gemini_api_key') || '');
-  const [githubToken, setGithubToken] = useState<string>(() => localStorage.getItem('github_pat_token') || '');
-  
-  const [rawText, setRawText] = useState<string>(DEFAULT_SAMPLE_TEXT);
+  const [rawText, setRawText] = useState(SAMPLE_RAW_TEXT);
   const [exercise, setExercise] = useState<TranslationExercise | null>(null);
-  const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
-  
-  const [isGenerating, setIsGenerating] = useState<boolean>(false);
-  const [isGrading, setIsGrading] = useState<boolean>(false);
-  const [isPushing, setIsPushing] = useState<boolean>(false);
-
+  const [userTranslations, setUserTranslations] = useState<Record<number, string>>({});
   const [report, setReport] = useState<TranslationGradeReport | null>(null);
-  const [errorMsg, setErrorMsg] = useState<string | null>(null);
-  const [pushResult, setPushResult] = useState<{ success: boolean; message: string; url?: string } | null>(null);
+  const [isParsing, setIsParsing] = useState(false);
+  const [isGrading, setIsGrading] = useState(false);
+  const [apiKey, setApiKey] = useState(() => localStorage.getItem('gemini_api_key') || 'AIzaSyD1N0OEt5XQy8hVWOwmC-cmI3Ug_qQ0h1U');
+  const [githubToken, setGithubToken] = useState(() => localStorage.getItem('github_access_token') || '');
+  const [showApiSettings, setShowApiSettings] = useState(false);
+  const [pushStatus, setPushStatus] = useState<string | null>(null);
+  const [history, setHistory] = useState<TranslationHistoryRecord[]>(() => {
+    try {
+      return JSON.parse(localStorage.getItem('translation_history') || '[]');
+    } catch {
+      return [];
+    }
+  });
 
-  // Load saved active translation exercise from localStorage if any
   useEffect(() => {
+    localStorage.setItem('gemini_api_key', apiKey);
+  }, [apiKey]);
+
+  useEffect(() => {
+    localStorage.setItem('github_access_token', githubToken);
+  }, [githubToken]);
+
+  const handleCreateExercise = async () => {
+    if (!rawText.trim()) return;
+    setIsParsing(true);
     try {
-      const savedEx = localStorage.getItem('active_translation_exercise');
-      const savedAns = localStorage.getItem('active_translation_answers');
-      const savedRep = localStorage.getItem('active_translation_report');
-
-      if (savedEx) setExercise(JSON.parse(savedEx));
-      if (savedAns) setUserAnswers(JSON.parse(savedAns));
-      if (savedRep) setReport(JSON.parse(savedRep));
-    } catch (e) {
-      console.error('Error loading saved translation session:', e);
-    }
-  }, []);
-
-  // Save changes to localStorage
-  const saveSession = (ex: TranslationExercise | null, ans: Record<number, string>, rep: TranslationGradeReport | null) => {
-    try {
-      if (ex) localStorage.setItem('active_translation_exercise', JSON.stringify(ex));
-      localStorage.setItem('active_translation_answers', JSON.stringify(ans));
-      if (rep) localStorage.setItem('active_translation_report', JSON.stringify(rep));
-    } catch (e) {
-      console.error('Error saving translation session:', e);
-    }
-  };
-
-  // Step 1: Generate Translation Exercise from raw text
-  const handleGenerateExercise = async () => {
-    if (!apiKey.trim()) {
-      alert('Vui lòng nhập Google Gemini API Key');
-      return;
-    }
-    if (!rawText.trim()) {
-      alert('Vui lòng dán văn bản thô đề bài vào ô nhập');
-      return;
-    }
-
-    setIsGenerating(true);
-    setErrorMsg(null);
-    setExercise(null);
-    setUserAnswers({});
-    setReport(null);
-    setPushResult(null);
-
-    localStorage.setItem('gemini_api_key', apiKey.trim());
-
-    try {
-      const result = await parseRawToTranslationExercise(apiKey.trim(), rawText.trim());
-      setExercise(result);
-      saveSession(result, {}, null);
-    } catch (err: any) {
-      setErrorMsg(err.message || 'Lỗi không thể phân tích văn bản thô.');
+      const ex = await parseRawToTranslationExercise(rawText, apiKey);
+      setExercise(ex);
+      setUserTranslations({});
+      setReport(null);
+    } catch (err) {
+      console.error(err);
     } finally {
-      setIsGenerating(false);
+      setIsParsing(false);
     }
   };
 
-  // Handle user input per question
-  const handleAnswerChange = (itemId: number, text: string) => {
-    const updated = { ...userAnswers, [itemId]: text };
-    setUserAnswers(updated);
-    saveSession(exercise, updated, report);
+  const handleTranslationChange = (itemId: number, text: string) => {
+    setUserTranslations(prev => ({
+      ...prev,
+      [itemId]: text
+    }));
   };
 
-  // Step 2: Submit for AI Grading
-  const handleSubmitGrading = async () => {
+  const handleSubmitAndGrade = async () => {
     if (!exercise) return;
-    if (!apiKey.trim()) {
-      alert('Vui lòng nhập Gemini API Key để AI chấm điểm');
-      return;
-    }
-
-    const answeredCount = Object.values(userAnswers).filter(val => val.trim().length > 0).length;
-    if (answeredCount === 0) {
-      alert('Vui lòng nhập bài dịch cho ít nhất 1 câu trước khi nộp chấm điểm.');
-      return;
-    }
-
     setIsGrading(true);
-    setErrorMsg(null);
-    setReport(null);
-
-    localStorage.setItem('gemini_api_key', apiKey.trim());
-
     try {
-      const gradeReport = await gradeUserTranslationWithGemini(apiKey.trim(), exercise, userAnswers);
-      setReport(gradeReport);
-      saveSession(exercise, userAnswers, gradeReport);
-      window.scrollTo({ top: 400, behavior: 'smooth' });
-    } catch (err: any) {
-      setErrorMsg(err.message || 'Lỗi không thể chấm điểm bài dịch bằng AI.');
+      const resReport = await gradeUserTranslationWithGemini(exercise, userTranslations, apiKey);
+      setReport(resReport);
+
+      // Save to history
+      const newRecord: TranslationHistoryRecord = {
+        id: 'hist-' + Date.now(),
+        exercise,
+        userTranslations,
+        report: resReport
+      };
+      const updatedHistory = [newRecord, ...history];
+      setHistory(updatedHistory);
+      localStorage.setItem('translation_history', JSON.stringify(updatedHistory));
+    } catch (err) {
+      console.error(err);
     } finally {
       setIsGrading(false);
     }
   };
 
-  // Step 3: Push topic & exercise to GitHub
-  const handlePushToGithub = async () => {
+  const handleExportMarkdown = () => {
     if (!exercise) return;
-    if (!githubToken.trim()) {
-      alert('Vui lòng nhập GitHub Personal Access Token (PAT)');
-      return;
-    }
-
-    setIsPushing(true);
-    setPushResult(null);
-    localStorage.setItem('github_pat_token', githubToken.trim());
-
-    const timeStamp = Date.now().toString().slice(-6);
-    const safeTitle = exercise.id.replace(/[^a-z0-9]/gi, '_');
-    const filePath = `src/data/${safeTitle}_${timeStamp}.json`;
-
-    const payloadToPush = {
-      ...exercise,
-      userTranslations: userAnswers,
-      report: report || null
-    };
-
-    const res = await pushToGithub({
-      token: githubToken.trim(),
-      owner: 'HiepF5',
-      repo: 'english-quiz-app',
-      filePath,
-      content: payloadToPush,
-      message: `Add Translation exercise & answers: ${exercise.title}`
-    });
-
-    setIsPushing(false);
-
-    if (res.success) {
-      setPushResult({
-        success: true,
-        message: `Đã commit file "${filePath}" lên GitHub thành công! Bài tập dịch & đáp án đã được lưu cố định trên Vercel.`,
-        url: res.commitUrl
-      });
-    } else {
-      setPushResult({
-        success: false,
-        message: res.error || 'Lỗi không thể push lên GitHub.'
-      });
-    }
-  };
-
-  // Step 4: Export User Work & AI Report as Markdown File
-  const handleExportUserWork = () => {
-    if (!exercise) return;
-
-    let exportContent = `# 📝 BÁO CÁO BÀI LÀM DỊCH TIẾNG ANH & ĐÁNH GIÁ AI
-Thời gian tạo: ${new Date().toLocaleString('vi-VN')}
-Bài tập: ${exercise.title}
-
-==================================================
-1. ĐỀ BÀI THÔ BAN ĐẦU:
-==================================================
-${exercise.rawInputText}
-
-==================================================
-2. BÀI LÀM DỊCH CỦA BẠN & ĐÁNH GIÁ AI CHI TIẾT:
-==================================================
-`;
-
+    let md = `# ${exercise.title}\n\n`;
+    md += `*Ngày tạo: ${new Date(exercise.createdAt).toLocaleString('vi-VN')}*\n\n`;
     if (report) {
-      exportContent += `
-🏆 ĐIỂM TỔNG KẾT: ${report.overallScore} / 10 (${report.overallPercentage}%)
-💬 NHẬN XÉT TỔNG QUAN: ${report.evaluationComment}
-
---------------------------------------------------
-`;
+      md += `## Điểm Tổng Kết AI: ${report.overallScore}/10 (${report.overallPercentage}%)\n`;
+      md += `> ${report.evaluationComment}\n\n`;
     }
 
-    exercise.items.forEach((item, index) => {
-      const userText = userAnswers[item.id] || "(Chưa làm câu này)";
-      const itemFB = report?.feedbackItems.find(fb => fb.itemId === item.id);
-
-      exportContent += `
-[Câu ${index + 1} - Chủ đề: ${item.topic}]
-- Câu hỏi Tiếng Anh gốc: ${item.originalEnglishQuestion}
-- Câu trả lời chuẩn: ${item.originalEnglishAnswer}
-- Đề bài dịch Tiếng Việt: ${item.vietnamesePromptAnswer || item.vietnamesePromptQuestion}
-👉 Bài làm dịch của bạn: ${userText}
-`;
-
-      if (itemFB) {
-        exportContent += `
-✨ Điểm câu này: ${itemFB.score} / 10
-✏️ Câu dịch chuẩn sửa lại: ${itemFB.correctedEnglish}
-⚠️ Lỗi ngữ pháp: ${itemFB.grammarErrors.join(', ') || 'Không có'}
-💡 Gợi ý từ vựng hay: ${itemFB.vocabularySuggestions.join(', ') || 'Không có'}
-📝 Lời giải thích: ${itemFB.explanation}
-`;
+    exercise.items.forEach(item => {
+      md += `### [${item.topic}] Phần ${item.id}\n`;
+      md += `**Câu hỏi / Tiêu đề:** ${item.originalEnglishQuestion}\n\n`;
+      md += `**Bản Tiếng Anh gốc:** ${item.originalEnglishAnswer}\n\n`;
+      md += `**Bản tự dịch của bạn:** ${userTranslations[item.id] || '(Chưa dịch)'}\n\n`;
+      if (report) {
+        const itemFeedback = report.feedbackItems.find(f => f.itemId === item.id);
+        if (itemFeedback) {
+          md += `- **Điểm phần này:** ${itemFeedback.score}/10\n`;
+          md += `- **Gợi ý mượt mà:** ${itemFeedback.correctedEnglish}\n`;
+          md += `- **Nhận xét AI:** ${itemFeedback.explanation}\n\n`;
+        }
       }
-      exportContent += `--------------------------------------------------\n`;
+      md += `---\n\n`;
     });
 
-    const blob = new Blob([exportContent], { type: 'text/markdown;charset=utf-8' });
+    const blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `Bai_Lam_Dich_${exercise.title.toLowerCase().replace(/[^a-z0-9]/g, '_')}.md`;
+    a.download = `Bai_Luyen_Dich_${Date.now()}.md`;
     a.click();
     URL.revokeObjectURL(url);
   };
 
+  const handlePushGit = async () => {
+    if (!exercise) return;
+    setPushStatus('Đang push bài luyện dịch lên GitHub...');
+    try {
+      const fileName = `data/translation-${Date.now()}.json`;
+      const res = await pushToGithub({
+        token: githubToken,
+        owner: 'HiepF5',
+        repo: 'english-quiz-app',
+        filePath: fileName,
+        content: { exercise, userTranslations, report },
+        message: `Add translation exercise ${exercise.title}`
+      });
+      if (res.success) {
+        setPushStatus(`Push thành công! File: ${fileName}`);
+      } else {
+        setPushStatus(`Lỗi Push: ${res.error}`);
+      }
+    } catch (err: any) {
+      setPushStatus(`Lỗi: ${err.message}`);
+    }
+  };
+
+  const completedCount = exercise ? Object.values(userTranslations).filter(t => t.trim().length > 0).length : 0;
+
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8 space-y-8 animate-fadeIn">
-      
-      {/* Header Banner */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950 border border-slate-800 p-8 sm:p-10 shadow-2xl">
-        <div className="max-w-3xl space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-semibold">
-            <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-            <span>Mô Hình Luyện Dịch IELTS Speaking / Writing & AI Chấm Điểm</span>
-          </div>
-
-          <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight leading-tight">
-            Luyện Dịch Tiếng Anh & <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-300 to-emerald-400">
-              AI Chấm Điểm, Sửa Lỗi, Export & Sync Git
-            </span>
-          </h2>
-
-          <p className="text-sm text-slate-300 leading-relaxed">
-            Dán đoạn văn bản Q&A Speaking/Writing thô vào hệ thống ➔ AI sẽ tự động tạo bài tập dịch, 
-            chấm điểm chi tiết từng câu, gợi ý nâng band từ vựng, cho phép xuất file kết quả bài làm và lưu lên GitHub/Vercel!
+    <div className="max-w-5xl mx-auto p-4 md:p-6 space-y-6">
+      {/* Header */}
+      <div className="bg-gradient-to-r from-indigo-950 via-slate-900 to-purple-950 p-6 rounded-2xl border border-indigo-500/30 shadow-xl text-white flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <span className="bg-indigo-500/20 text-indigo-300 text-xs px-3 py-1 rounded-full border border-indigo-400/30 font-semibold tracking-wide">
+            ENGLISH TRANSLATION WORKSPACE
+          </span>
+          <h1 className="text-2xl md:text-3xl font-bold mt-2 bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-100 to-purple-200">
+            Luyện Dịch Tiếng Anh - Tự Nhập & AI Chấm Điểm
+          </h1>
+          <p className="text-slate-300 text-sm mt-1">
+            Dán đoạn văn bản (nhiều chủ đề), tự gõ bản dịch của bạn vào từng phần, sau đó nhấn Nộp bài để Gemini AI chấm điểm chi tiết.
           </p>
         </div>
-      </div>
-
-      {/* Input Keys & Raw Text Section */}
-      <div className="bg-slate-900/90 rounded-2xl border border-slate-800 p-6 space-y-5 shadow-xl">
-        
-        {/* Keys Input Bar */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-slate-950/60 p-4 rounded-xl border border-slate-800">
-          <div>
-            <div className="flex items-center justify-between mb-1">
-              <label className="text-xs font-bold text-purple-300 flex items-center gap-1.5">
-                <Key className="w-3.5 h-3.5 text-purple-400" />
-                Google Gemini API Key:
-              </label>
-              <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noreferrer" className="text-[11px] text-purple-400 hover:underline">
-                Lấy Key miễn phí
-              </a>
-            </div>
-            <input
-              type="password"
-              value={apiKey}
-              onChange={(e) => setApiKey(e.target.value)}
-              placeholder="AIzaSy..."
-              className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-mono focus:border-purple-500 focus:outline-none"
-            />
-          </div>
-
-          <div>
-            <div className="flex items-center justify-between mb-1">
-              <label className="text-xs font-bold text-purple-300 flex items-center gap-1.5">
-                <Key className="w-3.5 h-3.5 text-purple-400" />
-                GitHub Token (dùng để Push Git):
-              </label>
-            </div>
-            <input
-              type="password"
-              value={githubToken}
-              onChange={(e) => setGithubToken(e.target.value)}
-              placeholder="github_pat_11A..."
-              className="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-mono focus:border-purple-500 focus:outline-none"
-            />
-          </div>
-        </div>
-
-        {/* Raw Text Input */}
-        <div className="space-y-2">
-          <div className="flex items-center justify-between">
-            <label className="text-xs font-bold text-slate-200 flex items-center gap-1.5">
-              <FileText className="w-4 h-4 text-indigo-400" />
-              Đoạn Văn Bản Thô Đề Bài (Mẫu 5 Chủ Đề HOME, BIRTHDAYS, BUSES...):
-            </label>
-            <button
-              onClick={() => setRawText(DEFAULT_SAMPLE_TEXT)}
-              className="text-xs text-indigo-400 hover:underline font-semibold"
-            >
-              Nạp mẫu 5 chủ đề mặc định
-            </button>
-          </div>
-
-          <textarea
-            rows={8}
-            value={rawText}
-            onChange={(e) => setRawText(e.target.value)}
-            placeholder="Dán đoạn văn bản Q&A tiếng Anh vào đây..."
-            className="w-full p-4 rounded-2xl bg-slate-950 border border-slate-800 text-xs font-mono text-slate-200 focus:border-indigo-500 focus:outline-none leading-relaxed resize-none"
-          />
-        </div>
-
-        {/* Generate Button */}
         <button
-          disabled={isGenerating}
-          onClick={handleGenerateExercise}
-          className="w-full py-3.5 rounded-xl bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-600 hover:from-purple-500 hover:to-indigo-500 disabled:opacity-50 text-white font-bold text-sm shadow-lg shadow-purple-600/25 transition-all flex items-center justify-center space-x-2"
+          onClick={() => setShowApiSettings(!showApiSettings)}
+          className="self-start md:self-auto bg-slate-800/80 hover:bg-slate-700 text-indigo-200 text-xs px-3 py-2 rounded-lg border border-slate-600 transition flex items-center gap-2"
         >
-          {isGenerating ? <Loader2 className="w-4 h-4 animate-spin" /> : <Sparkles className="w-4 h-4 text-amber-300" />}
-          <span>{isGenerating ? 'AI Đang Tạo Bài Tập Dịch Từ Văn Bản Thô...' : '✨ AI Tạo Bài Tập Dịch Ngay'}</span>
+          <span>⚙️ Gemini & Git Config</span>
         </button>
-
-        {errorMsg && (
-          <div className="p-4 rounded-xl bg-rose-950/40 border border-rose-500/30 text-rose-300 text-xs flex items-center space-x-2">
-            <AlertCircle className="w-4 h-4 shrink-0 text-rose-400" />
-            <span>{errorMsg}</span>
-          </div>
-        )}
-
       </div>
 
-      {/* Exercise Workspace */}
-      {exercise && (
-        <div className="space-y-6 animate-fadeIn">
-          
-          {/* Header Specs & Action Toolbar */}
-          <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl flex flex-wrap items-center justify-between gap-4 shadow-xl">
+      {/* API Key settings modal / accordion */}
+      {showApiSettings && (
+        <div className="bg-slate-900 border border-slate-700 p-4 rounded-xl text-white space-y-4">
+          <h3 className="font-semibold text-indigo-400 text-sm">Cấu hình Gemini API & GitHub Token</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <span className="px-3 py-1 rounded-md bg-purple-500/10 text-purple-300 border border-purple-500/20 text-xs font-bold">
-                Bài tập dịch ({exercise.items.length} câu)
-              </span>
-              <h3 className="text-xl font-bold text-white mt-2">{exercise.title}</h3>
-              <p className="text-xs text-slate-400 mt-1">{exercise.description}</p>
+              <label className="block text-xs text-slate-300 mb-1">Gemini API Key</label>
+              <input
+                type="password"
+                value={apiKey}
+                onChange={e => setApiKey(e.target.value)}
+                placeholder="AIzaSy..."
+                className="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-indigo-500"
+              />
             </div>
-
-            <div className="flex flex-wrap items-center gap-2">
-              {/* Export Button */}
-              <button
-                onClick={handleExportUserWork}
-                className="flex items-center space-x-1.5 px-4 py-2 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 text-xs font-bold border border-emerald-500/30 transition shadow-sm"
-                title="Xuất file Markdown/Text chứa bài làm dịch & kết quả chấm điểm"
-              >
-                <Download className="w-4 h-4 text-emerald-400" />
-                <span>Export Bài Làm Của Tôi</span>
-              </button>
-
-              {/* Push Git Button */}
-              <button
-                disabled={isPushing}
-                onClick={handlePushToGithub}
-                className="flex items-center space-x-1.5 px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold shadow-lg shadow-purple-600/20 transition"
-                title="Lưu & Push bài tập + bài làm này lên GitHub/Vercel"
-              >
-                {isPushing ? <Loader2 className="w-4 h-4 animate-spin" /> : <GitCommit className="w-4 h-4" />}
-                <span>Lưu & Push Git</span>
-              </button>
-            </div>
-          </div>
-
-          {pushResult && (
-            <div className={`p-4 rounded-xl border text-xs leading-relaxed ${
-              pushResult.success ? 'bg-emerald-950/40 border-emerald-500/40 text-emerald-300' : 'bg-rose-950/40 border-rose-500/40 text-rose-300'
-            }`}>
-              <div className="flex items-center space-x-2 font-bold mb-1">
-                {pushResult.success ? <CheckCircle2 className="w-4 h-4 text-emerald-400" /> : <AlertCircle className="w-4 h-4 text-rose-400" />}
-                <span>{pushResult.success ? 'Thành công' : 'Lỗi Push'}</span>
-              </div>
-              <p>{pushResult.message}</p>
-              {pushResult.url && (
-                <a href={pushResult.url} target="_blank" rel="noreferrer" className="text-emerald-400 underline font-semibold mt-1 inline-flex items-center gap-1">
-                  <span>Xem trên GitHub</span>
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-              )}
-            </div>
-          )}
-
-          {/* AI Overall Grade Report Header */}
-          {report && (
-            <div className="bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950 border border-purple-500/40 p-6 rounded-3xl shadow-2xl space-y-4 text-center">
-              <div className="inline-flex p-3 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-300">
-                <Award className="w-8 h-8 text-amber-300" />
-              </div>
-              <h3 className="text-2xl font-black text-white">Kết Quả AI Chấm Điểm Bài Dịch</h3>
-              
-              <div className="flex items-center justify-center space-x-6">
-                <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-700 min-w-[120px]">
-                  <span className="text-xs text-slate-400 font-semibold uppercase">Điểm Overall</span>
-                  <div className="text-3xl font-black text-purple-400 mt-1">{report.overallScore} / 10</div>
-                </div>
-
-                <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-700 min-w-[120px]">
-                  <span className="text-xs text-slate-400 font-semibold uppercase">Tỷ Lệ Chuẩn</span>
-                  <div className="text-3xl font-black text-emerald-400 mt-1">{report.overallPercentage}%</div>
-                </div>
-              </div>
-
-              <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                <strong className="text-purple-300">Nhận xét tổng quan của AI:</strong> {report.evaluationComment}
-              </div>
-            </div>
-          )}
-
-          {/* Items Questions & User Translation Workspaces */}
-          <div className="space-y-6">
-            {exercise.items.map((item, idx) => {
-              const itemFB = report?.feedbackItems.find(fb => fb.itemId === item.id);
-
-              return (
-                <div key={item.id} className="bg-slate-900/90 rounded-2xl border border-slate-800 p-6 space-y-4 shadow-xl">
-                  
-                  {/* Topic & Question Info Header */}
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-2">
-                      <span className="px-3 py-1 rounded-lg bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 text-xs font-bold">
-                        Câu {idx + 1}
-                      </span>
-                      <span className="text-xs font-bold text-purple-400 uppercase tracking-wider">
-                        Topic: {item.topic}
-                      </span>
-                    </div>
-
-                    {itemFB && (
-                      <span className="text-xs font-bold px-3 py-1 rounded-lg bg-purple-500/20 text-purple-300 border border-purple-500/30">
-                        Điểm: {itemFB.score} / 10
-                      </span>
-                    )}
-                  </div>
-
-                  {/* English Original & Vietnamese Prompt Reference */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 text-xs space-y-1 sm:space-y-0">
-                    <div>
-                      <span className="font-bold text-indigo-400 uppercase tracking-wider block mb-1">Mẫu Tiếng Anh Chuẩn:</span>
-                      <p className="font-semibold text-slate-200 leading-relaxed mb-1">{item.originalEnglishQuestion}</p>
-                      <p className="text-slate-300 leading-relaxed italic">{item.originalEnglishAnswer}</p>
-                    </div>
-
-                    <div className="border-t md:border-t-0 md:border-l border-slate-800 pt-3 md:pt-0 md:pl-4">
-                      <span className="font-bold text-purple-400 uppercase tracking-wider block mb-1">Gợi Ý Đề Bài Tiếng Việt:</span>
-                      <p className="font-semibold text-slate-200 leading-relaxed mb-1">{item.vietnamesePromptQuestion}</p>
-                      <p className="text-slate-300 leading-relaxed">{item.vietnamesePromptAnswer}</p>
-                    </div>
-                  </div>
-
-                  {/* User Translation Input Box */}
-                  <div className="space-y-1.5">
-                    <label className="text-xs font-bold text-slate-300 flex items-center justify-between">
-                      <span>Nhập bài dịch Tiếng Anh của bạn:</span>
-                      <span className="text-[11px] text-slate-500 font-normal">Nhìn gợi ý Tiếng Việt và tự dịch sang Tiếng Anh</span>
-                    </label>
-                    <textarea
-                      rows={3}
-                      value={userAnswers[item.id] || ''}
-                      onChange={(e) => handleAnswerChange(item.id, e.target.value)}
-                      placeholder="Nhập câu dịch tiếng Anh của bạn tại đây..."
-                      className="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-700 text-xs font-medium text-slate-100 focus:border-indigo-500 focus:outline-none leading-relaxed resize-none"
-                    />
-                  </div>
-
-                  {/* AI Detailed Feedback for this item */}
-                  {itemFB && (
-                    <div className="p-4 rounded-xl bg-slate-950/80 border border-purple-500/30 text-xs space-y-2.5 animate-fadeIn">
-                      <div className="flex items-center space-x-2 font-bold text-purple-300">
-                        <FileCheck className="w-4 h-4 text-purple-400" />
-                        <span>AI Sửa Lỗi & Gợi Ý Diễn Đạt:</span>
-                      </div>
-
-                      <div className="p-3 rounded-lg bg-emerald-950/30 border border-emerald-500/30 text-emerald-200">
-                        <strong className="text-emerald-400">Câu sửa hoàn chỉnh:</strong> {itemFB.correctedEnglish}
-                      </div>
-
-                      {itemFB.grammarErrors.length > 0 && (
-                        <div className="text-rose-300 space-y-1">
-                          <strong className="text-rose-400">Lỗi ngữ pháp cần tránh:</strong>
-                          <ul className="list-disc list-inside space-y-0.5 text-slate-300">
-                            {itemFB.grammarErrors.map((err, eIdx) => (
-                              <li key={eIdx}>{err}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-
-                      {itemFB.vocabularySuggestions.length > 0 && (
-                        <div className="text-indigo-300 space-y-1">
-                          <strong className="text-indigo-400">Từ vựng & Cụm từ hay hơn:</strong>
-                          <ul className="list-disc list-inside space-y-0.5 text-slate-300">
-                            {itemFB.vocabularySuggestions.map((sug, sIdx) => (
-                              <li key={sIdx}>{sug}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-
-                      <p className="text-slate-300 border-t border-slate-800 pt-2">{itemFB.explanation}</p>
-                    </div>
-                  )}
-
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Submit Grading Button at bottom */}
-          <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
             <div>
-              <h4 className="text-sm font-bold text-white">Hoàn Thành Bài Dịch?</h4>
-              <p className="text-xs text-slate-400">Nhấn nút bên cạnh để Gemini AI chấm điểm & sửa lỗi toàn bộ bài làm của bạn.</p>
-            </div>
-
-            <div className="flex items-center space-x-3 w-full sm:w-auto">
-              <button
-                onClick={handleExportUserWork}
-                className="flex-1 sm:flex-none flex items-center justify-center space-x-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold border border-slate-700 transition"
-              >
-                <Download className="w-4 h-4 text-emerald-400" />
-                <span>Export Bài Làm (.md)</span>
-              </button>
-
-              <button
-                disabled={isGrading}
-                onClick={handleSubmitGrading}
-                className="flex-1 sm:flex-none flex items-center justify-center space-x-2 px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-xs shadow-lg shadow-purple-600/25 transition"
-              >
-                {isGrading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
-                <span>{isGrading ? 'AI Đang Chấm Điểm...' : 'Nộp Bài & AI Chấm Điểm'}</span>
-              </button>
+              <label className="block text-xs text-slate-300 mb-1">GitHub Access Token (Để Push 1-Click)</label>
+              <input
+                type="password"
+                value={githubToken}
+                onChange={e => setGithubToken(e.target.value)}
+                placeholder="ghp_..."
+                className="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-indigo-500"
+              />
             </div>
           </div>
-
         </div>
       )}
 
+      {/* Step 1: Input text area if exercise not created yet */}
+      {!exercise && (
+        <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-4 shadow-lg">
+          <div className="flex items-center justify-between">
+            <h2 className="text-lg font-bold text-white flex items-center gap-2">
+              <span>📝 Nhập Đoạn Văn Bản / Đề Bài Tiếng Anh</span>
+            </h2>
+            <button
+              onClick={() => setRawText(SAMPLE_RAW_TEXT)}
+              className="text-xs text-indigo-400 hover:underline"
+            >
+              Nạp bài mẫu (5 Chủ đề: Home, Birthdays...)
+            </button>
+          </div>
+          <textarea
+            rows={12}
+            value={rawText}
+            onChange={e => setRawText(e.target.value)}
+            placeholder="Dán đoạn văn bản Tiếng Anh gồm các chủ đề (1. HOME, 2. BIRTHDAYS...) vào đây..."
+            className="w-full bg-slate-950 border border-slate-800 rounded-xl p-4 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 font-mono leading-relaxed resize-y"
+          />
+          <button
+            onClick={handleCreateExercise}
+            disabled={isParsing || !rawText.trim()}
+            className="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold shadow-lg shadow-indigo-500/20 transition disabled:opacity-50 flex items-center justify-center gap-2 text-base"
+          >
+            {isParsing ? (
+              <>
+                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                <span>Đang phân tách đoạn văn...</span>
+              </>
+            ) : (
+              <>
+                <span>🚀 Tạo Các Phần Bài Tập Dịch (Tự Động Phân Tách)</span>
+              </>
+            )}
+          </button>
+        </div>
+      )}
+
+      {/* Step 2: Interactive typing sections */}
+      {exercise && (
+        <div className="space-y-6">
+          <div className="bg-slate-900 border border-slate-800 p-4 rounded-xl flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+              <h2 className="text-lg font-bold text-white">{exercise.title}</h2>
+              <p className="text-xs text-slate-400">
+                Đã phân tách thành <span className="text-indigo-400 font-semibold">{exercise.items.length} phần</span>. Đã dịch: <span className="text-emerald-400 font-semibold">{completedCount}/{exercise.items.length}</span>
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setExercise(null)}
+                className="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs"
+              >
+                ✏️ Sửa văn bản gốc
+              </button>
+              <button
+                onClick={handleExportMarkdown}
+                className="px-3 py-1.5 rounded-lg bg-indigo-950 hover:bg-indigo-900 border border-indigo-700/50 text-indigo-300 text-xs"
+              >
+                📥 Xuất .md
+              </button>
+              <button
+                onClick={handlePushGit}
+                className="px-3 py-1.5 rounded-lg bg-purple-950 hover:bg-purple-900 border border-purple-700/50 text-purple-300 text-xs"
+              >
+                🐙 Push Git
+              </button>
+            </div>
+          </div>
+
+          {pushStatus && (
+            <div className="p-3 bg-slate-800 border border-slate-700 rounded-lg text-xs text-indigo-300">
+              {pushStatus}
+            </div>
+          )}
+
+          {/* Cards for typing */}
+          <div className="space-y-4">
+            {exercise.items.map((item, idx) => (
+              <div
+                key={item.id}
+                className="bg-slate-900/90 border border-slate-800 hover:border-slate-700 p-5 rounded-2xl space-y-3 transition shadow-md"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs px-2.5 py-1 rounded-md font-semibold">
+                    PHẦN #{idx + 1} • {item.topic}
+                  </span>
+                  <span className="text-xs text-slate-500 font-mono">ID: {item.id}</span>
+                </div>
+
+                {item.originalEnglishQuestion && (
+                  <div className="text-sm font-semibold text-slate-100 flex items-start gap-2">
+                    <span className="text-indigo-400">❓</span>
+                    <span>{item.originalEnglishQuestion}</span>
+                  </div>
+                )}
+
+                <div className="bg-slate-950/80 p-3.5 rounded-xl border border-slate-800/80 text-sm text-indigo-200 font-medium leading-relaxed">
+                  {item.originalEnglishAnswer}
+                </div>
+
+                <div>
+                  <label className="block text-xs text-slate-400 mb-1 font-medium">
+                    ✍️ Bản dịch của bạn (Gõ lại nội dung bạn tự dịch):
+                  </label>
+                  <textarea
+                    rows={3}
+                    value={userTranslations[item.id] || ''}
+                    onChange={e => handleTranslationChange(item.id, e.target.value)}
+                    placeholder="Gõ bản dịch Tiếng Việt (hoặc Tiếng Anh) của bạn tại đây..."
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition resize-y"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Submit button */}
+          <div className="sticky bottom-4 bg-slate-950/90 backdrop-blur-md p-4 rounded-2xl border border-indigo-500/30 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-xs text-slate-300">
+              Tiến độ: <strong className="text-indigo-400">{completedCount}</strong> / <strong>{exercise.items.length}</strong> phần bài dịch đã nhập.
+            </div>
+            <button
+              onClick={handleSubmitAndGrade}
+              disabled={isGrading}
+              className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-indigo-600 hover:from-emerald-500 hover:to-indigo-500 text-white font-bold shadow-lg shadow-emerald-500/20 transition disabled:opacity-50 flex items-center justify-center gap-2"
+            >
+              {isGrading ? (
+                <>
+                  <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  <span>Gemini AI Đang Chấm Điểm...</span>
+                </>
+              ) : (
+                <>
+                  <span>✨ Nộp Bài & Gemini AI Chấm Điểm</span>
+                </>
+              )}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Step 3: AI Grade Report display */}
+      {report && (
+        <div className="bg-slate-900 border border-indigo-500/30 p-6 rounded-2xl space-y-6 shadow-2xl">
+          <div className="flex flex-col sm:flex-row items-center justify-between border-b border-slate-800 pb-4 gap-4">
+            <div>
+              <span className="text-xs text-emerald-400 font-semibold uppercase tracking-wider">
+                KẾT QUẢ CHẤM ĐIỂM GEMINI AI
+              </span>
+              <h2 className="text-2xl font-bold text-white mt-1">{report.exerciseTitle}</h2>
+            </div>
+            <div className="bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 px-6 py-3 rounded-2xl text-center">
+              <div className="text-3xl font-extrabold">{report.overallScore} / 10</div>
+              <div className="text-xs text-emerald-400 font-medium">Tỷ lệ chính xác: {report.overallPercentage}%</div>
+            </div>
+          </div>
+
+          <div className="bg-slate-950 p-4 rounded-xl border border-slate-800 text-slate-300 text-sm">
+            <strong className="text-indigo-400 block mb-1">💡 Nhận xét tổng quan của AI:</strong>
+            {report.evaluationComment}
+          </div>
+
+          {/* Feedback items */}
+          <div className="space-y-4">
+            <h3 className="text-base font-bold text-white">Chi tiết từng câu:</h3>
+            {report.feedbackItems.map(fb => (
+              <div key={fb.itemId} className="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-indigo-400 font-semibold">{fb.topic} • Câu #{fb.itemId}</span>
+                  <span className="bg-indigo-950 border border-indigo-800 text-indigo-300 px-2 py-0.5 rounded font-bold">
+                    {fb.score} / 10 Điểm
+                  </span>
+                </div>
+                <div className="text-xs text-slate-400">
+                  <strong className="text-slate-200">Bản gốc:</strong> {fb.originalEnglish}
+                </div>
+                <div className="text-xs text-slate-300 bg-slate-900 p-2.5 rounded-lg border border-slate-800">
+                  <strong className="text-amber-400">Bài làm của bạn:</strong> {fb.userTranslation}
+                </div>
+                <div className="text-xs text-emerald-300 bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-900/50">
+                  <strong className="text-emerald-400">Gợi ý mượt mà:</strong> {fb.correctedEnglish}
+                </div>
+                <div className="text-xs text-slate-400 pt-1">
+                  <strong>Đánh giá & Giải thích:</strong> {fb.explanation}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
