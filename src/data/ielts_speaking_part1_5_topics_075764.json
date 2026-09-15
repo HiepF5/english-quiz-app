@@ -1,0 +1,131 @@
+{
+  "id": "ielts-speaking-part1-5-topics",
+  "title": "Luyện Dịch IELTS Speaking Part 1 - 5 Chủ Đề",
+  "description": "Luyện dịch các câu hỏi & câu trả lời chủ đề Home, Birthdays, Advertisements, Buses, TV Shows.",
+  "rawInputText": "1. HOME\nDo you live in a house or a flat?\nI live in a small flat in the city centre. It’s quite modern and fully furnished, so it’s comfortable for my daily life. Although it’s not very spacious, it’s convenient to live near shops and my workplace.\nDo you plan to live there in the future?\nI plan to stay there for a couple of years because it suits my current lifestyle. However, in the long term, I hope to move to a bigger place with more privacy.\nWhat would you like to change in your house?\nI’d like to redesign the living room and make it brighter. I also want to add some plants to make the space feel more relaxing.\n\n2. BIRTHDAYS\nDo you usually celebrate your birthday?\nYes, I usually celebrate my birthday every year. I don’t do anything too big, but I like spending time with my family or close friends.\nWhat did you do on your latest birthday?\nOn my latest birthday, I went out for dinner with my friends. After that, we had a small gathering at home and enjoyed some music and cake.\nWhat do people often do on their birthday?\nPeople often go out to eat or meet their friends. Some people prefer to stay at home and celebrate with their families.\n\n3. ADVERTISEMENTS\nDo you often watch advertisements? Where?\nYes, I see advertisements almost every day. Most of them appear on YouTube or social media, and sometimes on TV.\nDo you often buy things from advertisements?\nI sometimes do, but I usually research the product carefully before making a decision. If it has good reviews and a reasonable price, I might give it a try.\nHow can we create a good advertisement?\nA good advertisement needs eye-catching visuals and a short, clear message. Besides, the main idea should be memorable so it can attract viewers effectively.\n\n4. BUSES\nDo you often use buses?\nYes, I use buses quite often to travel to school or work. It’s a convenient option when I don’t want to ride my motorbike.\nHow do you rate the bus service in your city?\nI think the bus service is improving, but it still has some problems like delays and overcrowding. However, the routes are quite useful.\nBenefits of using buses\nUsing buses helps reduce traffic jams and pollution. It’s also much cheaper than driving your own vehicle.\n\n5. TV SHOWS\nThe latest TV show you watched?\nThe latest show I watched was a Korean drama about family relationships. The storyline was meaningful and the acting was impressive.\nWatching TV shows alone or with others?\nI prefer watching alone because I can concentrate better. But sometimes I enjoy watching with my friends if it’s a funny show.\nBenefits of watching a TV show?\nWatching TV shows helps me relax after a long day. It also allows me to learn more about different cultures and ideas.",
+  "createdAt": "2026-09-15T15:27:51.211Z",
+  "items": [
+    {
+      "id": 1,
+      "topic": "HOME",
+      "originalEnglishQuestion": "Do you live in a house or a flat?",
+      "originalEnglishAnswer": "I live in a small flat in the city centre. It’s quite modern and fully furnished, so it’s comfortable for my daily life. Although it’s not very spacious, it’s convenient to live near shops and my workplace.",
+      "vietnamesePromptQuestion": "Bạn sống ở nhà riêng hay căn hộ chung cư?",
+      "vietnamesePromptAnswer": "Tôi sống trong một căn hộ nhỏ ở trung tâm thành phố. Nó khá hiện đại và đầy đủ nội thất, nên rất thoải mái cho cuộc sống hàng ngày của tôi. Mặc dù không quá rộng rãi, nhưng rất tiện lợi khi sống gần các cửa hàng và nơi làm việc của tôi."
+    },
+    {
+      "id": 2,
+      "topic": "HOME",
+      "originalEnglishQuestion": "Do you plan to live there in the future?",
+      "originalEnglishAnswer": "I plan to stay there for a couple of years because it suits my current lifestyle. However, in the long term, I hope to move to a bigger place with more privacy.",
+      "vietnamesePromptQuestion": "Bạn có dự định sống ở đó trong tương lai không?",
+      "vietnamesePromptAnswer": "Tôi dự định ở đó thêm vài năm nữa vì nó phù hợp với lối sống hiện tại của tôi. Tuy nhiên, về lâu dài, tôi hy vọng sẽ chuyển đến một nơi rộng hơn với nhiều sự riêng tư hơn."
+    },
+    {
+      "id": 3,
+      "topic": "HOME",
+      "originalEnglishQuestion": "What would you like to change in your house?",
+      "originalEnglishAnswer": "I’d like to redesign the living room and make it brighter. I also want to add some plants to make the space feel more relaxing.",
+      "vietnamesePromptQuestion": "Bạn muốn thay đổi điều gì trong ngôi nhà của mình?",
+      "vietnamesePromptAnswer": "Tôi muốn thiết kế lại phòng khách và làm cho nó sáng sủa hơn. Tôi cũng muốn thêm một vài cây xanh để không gian cảm thấy thư giãn hơn."
+    },
+    {
+      "id": 4,
+      "topic": "BIRTHDAYS",
+      "originalEnglishQuestion": "Do you usually celebrate your birthday?",
+      "originalEnglishAnswer": "Yes, I usually celebrate my birthday every year. I don’t do anything too big, but I like spending time with my family or close friends.",
+      "vietnamesePromptQuestion": "Bạn có thường tổ chức sinh nhật không?",
+      "vietnamesePromptAnswer": "Có, tôi thường tổ chức sinh nhật hàng năm. Tôi không làm gì quá lớn, nhưng tôi thích dành thời gian với gia đình hoặc bạn bè thân thiết."
+    },
+    {
+      "id": 5,
+      "topic": "BIRTHDAYS",
+      "originalEnglishQuestion": "What did you do on your latest birthday?",
+      "originalEnglishAnswer": "On my latest birthday, I went out for dinner with my friends. After that, we had a small gathering at home and enjoyed some music and cake.",
+      "vietnamesePromptQuestion": "Bạn đã làm gì vào sinh nhật gần đây nhất của mình?",
+      "vietnamesePromptAnswer": "Vào sinh nhật gần đây nhất của tôi, tôi đã đi ăn tối với bạn bè. Sau đó, chúng tôi có một buổi tụ tập nhỏ tại nhà và thưởng thức âm nhạc và bánh ngọt."
+    },
+    {
+      "id": 6,
+      "topic": "BIRTHDAYS",
+      "originalEnglishQuestion": "What do people often do on their birthday?",
+      "originalEnglishAnswer": "People often go out to eat or meet their friends. Some people prefer to stay at home and celebrate with their families.",
+      "vietnamesePromptQuestion": "Mọi người thường làm gì vào ngày sinh nhật của họ?",
+      "vietnamesePromptAnswer": "Mọi người thường đi ăn ngoài hoặc gặp gỡ bạn bè. Một số người thích ở nhà và tổ chức cùng gia đình."
+    },
+    {
+      "id": 7,
+      "topic": "ADVERTISEMENTS",
+      "originalEnglishQuestion": "Do you often watch advertisements? Where?",
+      "originalEnglishAnswer": "Yes, I see advertisements almost every day. Most of them appear on YouTube or social media, and sometimes on TV.",
+      "vietnamesePromptQuestion": "Bạn có thường xem quảng cáo không? Ở đâu?",
+      "vietnamesePromptAnswer": "Có, tôi xem quảng cáo gần như mỗi ngày. Hầu hết chúng xuất hiện trên YouTube hoặc mạng xã hội, và đôi khi trên TV."
+    },
+    {
+      "id": 8,
+      "topic": "ADVERTISEMENTS",
+      "originalEnglishQuestion": "Do you often buy things from advertisements?",
+      "originalEnglishAnswer": "I sometimes do, but I usually research the product carefully before making a decision. If it has good reviews and a reasonable price, I might give it a try.",
+      "vietnamesePromptQuestion": "Bạn có thường mua đồ từ quảng cáo không?",
+      "vietnamesePromptAnswer": "Đôi khi có, nhưng tôi thường nghiên cứu sản phẩm kỹ lưỡng trước khi đưa ra quyết định. Nếu nó có đánh giá tốt và giá cả hợp lý, tôi có thể thử."
+    },
+    {
+      "id": 9,
+      "topic": "ADVERTISEMENTS",
+      "originalEnglishQuestion": "How can we create a good advertisement?",
+      "originalEnglishAnswer": "A good advertisement needs eye-catching visuals and a short, clear message. Besides, the main idea should be memorable so it can attract viewers effectively.",
+      "vietnamesePromptQuestion": "Làm thế nào chúng ta có thể tạo ra một quảng cáo tốt?",
+      "vietnamesePromptAnswer": "Một quảng cáo tốt cần hình ảnh bắt mắt và một thông điệp ngắn gọn, rõ ràng. Bên cạnh đó, ý chính phải dễ nhớ để có thể thu hút người xem một cách hiệu quả."
+    },
+    {
+      "id": 10,
+      "topic": "BUSES",
+      "originalEnglishQuestion": "Do you often use buses?",
+      "originalEnglishAnswer": "Yes, I use buses quite often to travel to school or work. It’s a convenient option when I don’t want to ride my motorbike.",
+      "vietnamesePromptQuestion": "Bạn có thường sử dụng xe buýt không?",
+      "vietnamesePromptAnswer": "Có, tôi khá thường xuyên sử dụng xe buýt để đi học hoặc đi làm. Đó là một lựa chọn tiện lợi khi tôi không muốn đi xe máy."
+    },
+    {
+      "id": 11,
+      "topic": "BUSES",
+      "originalEnglishQuestion": "How do you rate the bus service in your city?",
+      "originalEnglishAnswer": "I think the bus service is improving, but it still has some problems like delays and overcrowding. However, the routes are quite useful.",
+      "vietnamesePromptQuestion": "Bạn đánh giá dịch vụ xe buýt ở thành phố của mình như thế nào?",
+      "vietnamesePromptAnswer": "Tôi nghĩ dịch vụ xe buýt đang được cải thiện, nhưng nó vẫn còn một số vấn đề như chậm trễ và quá tải. Tuy nhiên, các tuyến đường khá hữu ích."
+    },
+    {
+      "id": 12,
+      "topic": "BUSES",
+      "originalEnglishQuestion": "Benefits of using buses",
+      "originalEnglishAnswer": "Using buses helps reduce traffic jams and pollution. It’s also much cheaper than driving your own vehicle.",
+      "vietnamesePromptQuestion": "Lợi ích của việc sử dụng xe buýt là gì?",
+      "vietnamesePromptAnswer": "Sử dụng xe buýt giúp giảm ùn tắc giao thông và ô nhiễm. Nó cũng rẻ hơn nhiều so với việc tự lái xe riêng."
+    },
+    {
+      "id": 13,
+      "topic": "TV SHOWS",
+      "originalEnglishQuestion": "The latest TV show you watched?",
+      "originalEnglishAnswer": "The latest show I watched was a Korean drama about family relationships. The storyline was meaningful and the acting was impressive.",
+      "vietnamesePromptQuestion": "Chương trình TV gần đây nhất bạn đã xem là gì?",
+      "vietnamesePromptAnswer": "Chương trình gần đây nhất tôi xem là một bộ phim truyền hình Hàn Quốc về các mối quan hệ gia đình. Cốt truyện rất ý nghĩa và diễn xuất ấn tượng."
+    },
+    {
+      "id": 14,
+      "topic": "TV SHOWS",
+      "originalEnglishQuestion": "Watching TV shows alone or with others?",
+      "originalEnglishAnswer": "I prefer watching alone because I can concentrate better. But sometimes I enjoy watching with my friends if it’s a funny show.",
+      "vietnamesePromptQuestion": "Bạn thích xem chương trình TV một mình hay với người khác?",
+      "vietnamesePromptAnswer": "Tôi thích xem một mình hơn vì tôi có thể tập trung tốt hơn. Nhưng đôi khi tôi cũng thích xem với bạn bè nếu đó là một chương trình hài hước."
+    },
+    {
+      "id": 15,
+      "topic": "TV SHOWS",
+      "originalEnglishQuestion": "Benefits of watching a TV show?",
+      "originalEnglishAnswer": "Watching TV shows helps me relax after a long day. It also allows me to learn more about different cultures and ideas.",
+      "vietnamesePromptQuestion": "Lợi ích của việc xem chương trình TV là gì?",
+      "vietnamesePromptAnswer": "Xem chương trình TV giúp tôi thư giãn sau một ngày dài. Nó cũng cho phép tôi tìm hiểu thêm về các nền văn hóa và ý tưởng khác nhau."
+    }
+  ],
+  "userTranslations": {},
+  "report": null
+}
