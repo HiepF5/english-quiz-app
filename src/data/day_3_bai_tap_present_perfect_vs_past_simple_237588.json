@@ -1,0 +1,270 @@
+{
+  "id": "toeic-day-3-present-perfect",
+  "title": "DAY 3 — BÀI TẬP: Present Perfect vs Past Simple",
+  "description": "Luyện tập thì Hiện tại hoàn thành và phân biệt với thì Quá khứ đơn cùng các bẫy thường gặp trong đề thi TOEIC.",
+  "level": "Intermediate (B1)",
+  "category": "Grammar & Vocabulary",
+  "timeLimitMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "part": "Part A — Cơ bản",
+      "question": "She ______ the report already.",
+      "options": [
+        "has finished",
+        "finished",
+        "finishes",
+        "is finishing"
+      ],
+      "correct": 0,
+      "explanation": "Dấu hiệu nhận biết 'already' (đã... rồi) thường dùng trong thì Hiện tại hoàn thành (have/has + V3/V-ed) để diễn tả hành động đã hoàn tất tính đến hiện tại. Chủ ngữ số ít 'She' đi với 'has finished'."
+    },
+    {
+      "id": 2,
+      "part": "Part A — Cơ bản",
+      "question": "I ______ this software before.",
+      "options": [
+        "use",
+        "used",
+        "have used",
+        "am using"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu 'before' (trước đây) dùng để nói về trải nghiệm hoặc kinh nghiệm tính tới thời điểm hiện tại, chia thì Hiện tại hoàn thành. Chủ ngữ 'I' đi với 'have used'."
+    },
+    {
+      "id": 3,
+      "part": "Part A — Cơ bản",
+      "question": "They ______ the email yet.",
+      "options": [
+        "haven't received",
+        "didn't receive",
+        "don't receive",
+        "aren't receiving"
+      ],
+      "correct": 0,
+      "explanation": "Dấu hiệu 'yet' (chưa) đứng ở cuối câu phủ định hoặc nghi vấn trong thì Hiện tại hoàn thành. Cấu trúc phủ định với chủ ngữ số nhiều 'They' là 'haven't + V3/V-ed' (haven't received)."
+    },
+    {
+      "id": 4,
+      "part": "Part A — Cơ bản",
+      "question": "______ you ever ______ to Singapore?",
+      "options": [
+        "Did / go",
+        "Have / been",
+        "Have / went",
+        "Has / been"
+      ],
+      "correct": 1,
+      "explanation": "Cấu trúc hỏi về trải nghiệm tính đến hiện tại: 'Have + S + ever + V3/V-ed?'. Đi với giới từ 'to' chỉ việc từng đến một địa điểm nào đó và đã quay về, ta dùng 'Have you ever been to...?'."
+    },
+    {
+      "id": 5,
+      "part": "Part A — Cơ bản",
+      "question": "He ______ here for five years.",
+      "options": [
+        "works",
+        "worked",
+        "has worked",
+        "is worked"
+      ],
+      "correct": 2,
+      "explanation": "Cụm 'for five years' (trong khoảng 5 năm) biểu thị hành động bắt đầu trong quá khứ và vẫn tiếp diễn ở hiện tại, sử dụng thì Hiện tại hoàn thành. Chủ ngữ 'He' đi với 'has worked'."
+    },
+    {
+      "id": 6,
+      "part": "Part A — Cơ bản",
+      "question": "We ______ the project since January.",
+      "options": [
+        "manage",
+        "managed",
+        "have managed",
+        "are managing"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu 'since January' (kể từ tháng 1) chỉ mốc thời gian bắt đầu hành động kéo dài đến thời điểm nói, chia thì Hiện tại hoàn thành (have managed)."
+    },
+    {
+      "id": 7,
+      "part": "Part A — Cơ bản",
+      "question": "She ______ never ______ this type of problem before.",
+      "options": [
+        "has / encountered",
+        "has / encounter",
+        "did / encountered",
+        "is / encountered"
+      ],
+      "correct": 0,
+      "explanation": "Cấu trúc diễn tả trải nghiệm chưa từng làm gì tính đến hiện tại: 'S + have/has + never + V3/V-ed + ... + before'. Chủ ngữ 'She' số ít đi kèm trợ động từ 'has' và phân từ 'encountered'."
+    },
+    {
+      "id": 8,
+      "part": "Part A — Cơ bản",
+      "question": "I ______ just ______ the customer.",
+      "options": [
+        "have / contacted",
+        "has / contacted",
+        "did / contact",
+        "am / contacted"
+      ],
+      "correct": 0,
+      "explanation": "Dấu hiệu 'just' (vừa mới) đứng giữa trợ động từ và quá khứ phân từ trong thì Hiện tại hoàn thành để diễn tả hành động vừa mới diễn ra. Chủ ngữ 'I' đi với 'have contacted'."
+    },
+    {
+      "id": 9,
+      "part": "Part B — Present Perfect vs Past Simple",
+      "question": "I ______ the report yesterday.",
+      "options": [
+        "have finished",
+        "finish",
+        "finished",
+        "have been finishing"
+      ],
+      "correct": 2,
+      "explanation": "Có mốc thời gian xác định rõ ràng đã kết thúc trong quá khứ là 'yesterday' (hôm qua), do đó bắt buộc dùng thì Quá khứ đơn (finished)."
+    },
+    {
+      "id": 10,
+      "part": "Part B — Present Perfect vs Past Simple",
+      "question": "I ______ the report already.",
+      "options": [
+        "finished",
+        "have finished",
+        "finish",
+        "was finishing"
+      ],
+      "correct": 1,
+      "explanation": "Dấu hiệu 'already' nhấn mạnh kết quả của hành động đã hoàn tất tính tới thời điểm hiện tại và không có mốc thời gian quá khứ xác định, sử dụng thì Hiện tại hoàn thành (have finished)."
+    },
+    {
+      "id": 11,
+      "part": "Part B — Present Perfect vs Past Simple",
+      "question": "She ______ at this company since 2022.",
+      "options": [
+        "worked",
+        "works",
+        "has worked",
+        "is worked"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu 'since 2022' (từ năm 2022 đến nay) thể hiện sự việc bắt đầu trong quá khứ và vẫn tiếp tục ở hiện tại, dùng thì Hiện tại hoàn thành (has worked)."
+    },
+    {
+      "id": 12,
+      "part": "Part B — Present Perfect vs Past Simple",
+      "question": "She ______ at that company from 2019 to 2022.",
+      "options": [
+        "has worked",
+        "works",
+        "worked",
+        "has been working"
+      ],
+      "correct": 2,
+      "explanation": "Khoảng thời gian 'from 2019 to 2022' là khoảng thời gian đã hoàn toàn chấm dứt trong quá khứ (hiện tại không còn làm ở đó nữa), do đó dùng thì Quá khứ đơn (worked)."
+    },
+    {
+      "id": 13,
+      "part": "Part B — Present Perfect vs Past Simple",
+      "question": "The manager ______ the email two hours ago.",
+      "options": [
+        "has sent",
+        "sends",
+        "sent",
+        "has send"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu 'two hours ago' (2 tiếng trước) là trạng từ chỉ thời điểm xác định đã kết thúc trong quá khứ, chia thì Quá khứ đơn. Dạng V2 của 'send' là 'sent'."
+    },
+    {
+      "id": 14,
+      "part": "Part B — Present Perfect vs Past Simple",
+      "question": "The manager ______ several emails today.",
+      "options": [
+        "sent",
+        "has sent",
+        "sends",
+        "was sending"
+      ],
+      "correct": 1,
+      "explanation": "'today' (hôm nay) là khoảng thời gian chưa kết thúc tại thời điểm nói. Khi diễn tả số lượng kết quả đạt được trong khoảng thời gian còn đang tiếp diễn, ta dùng thì Hiện tại hoàn thành (has sent)."
+    },
+    {
+      "id": 15,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "The company ______ three new employees this month.",
+      "options": [
+        "hired",
+        "has hired",
+        "hires",
+        "had hired"
+      ],
+      "correct": 1,
+      "explanation": "'this month' (tháng này) là khoảng thời gian chưa kết thúc. Diễn tả sự việc đã diễn ra và có ảnh hưởng đến hiện tại trong khoảng thời gian này, dùng thì Hiện tại hoàn thành (has hired)."
+    },
+    {
+      "id": 16,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "The company ______ three new employees last month.",
+      "options": [
+        "has hired",
+        "hires",
+        "hired",
+        "has been hired"
+      ],
+      "correct": 2,
+      "explanation": "Khác với 'this month', 'last month' (tháng trước) là khoảng thời gian đã hoàn toàn chấm dứt trong quá khứ, vì vậy phải dùng thì Quá khứ đơn (hired)."
+    },
+    {
+      "id": 17,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "Mr. Smith ______ the company in 2020.",
+      "options": [
+        "has joined",
+        "joins",
+        "joined",
+        "has been joining"
+      ],
+      "correct": 2,
+      "explanation": "'in 2020' là mốc thời gian xác định trong quá khứ. Động từ 'join' (gia nhập) là hành động mang tính thời điểm xảy ra tại năm đó nên chia thì Quá khứ đơn (joined)."
+    },
+    {
+      "id": 18,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "Mr. Smith ______ the company for six years.",
+      "options": [
+        "joined",
+        "has been with",
+        "is joined",
+        "was joining"
+      ],
+      "correct": 1,
+      "explanation": "Hành động 'join' không thể kéo dài suốt 6 năm. Để chỉ tình trạng gắn bó, làm việc tại công ty kéo dài trong 6 năm đến hiện tại, ta dùng 'has been with' (thì Hiện tại hoàn thành)."
+    },
+    {
+      "id": 19,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "This is the first time I ______ this system.",
+      "options": [
+        "use",
+        "used",
+        "have used",
+        "am using"
+      ],
+      "correct": 2,
+      "explanation": "Cấu trúc kinh điển trong TOEIC: 'This is the first / second / ... time + S + have/has + V3/V-ed' (Đây là lần đầu tiên/thứ hai ai đó làm việc gì), luôn chia thì Hiện tại hoàn thành (have used)."
+    },
+    {
+      "id": 20,
+      "part": "Part C — TOEIC Trap 🔥",
+      "question": "The manager isn't in the office. He ______ to a client meeting.",
+      "options": [
+        "has gone",
+        "has been",
+        "went",
+        "goes"
+      ],
+      "correct": 0,
+      "explanation": "Phân biệt 'have/has gone to' (đã đi và hiện chưa về/vẫn đang ở đó) và 'have/has been to' (đã từng đi đến đó rồi trở về). Ngữ cảnh 'The manager isn't in the office' chứng tỏ người này hiện chưa có mặt ở văn phòng, do đó phải chọn 'has gone'."
+    }
+  ]
+}
