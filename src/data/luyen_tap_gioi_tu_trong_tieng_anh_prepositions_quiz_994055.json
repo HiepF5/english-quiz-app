@@ -1,0 +1,686 @@
+{
+  "id": "english-prepositions-quiz",
+  "title": "Luyện Tập Giới Từ Trong Tiếng Anh (Prepositions Quiz)",
+  "description": "Bộ câu hỏi trắc nghiệm kiểm tra và củng cố toàn diện cách sử dụng giới từ chỉ thời gian, nơi chốn, cụm cố định và giới từ đi kèm động từ/tính từ trong tiếng Anh.",
+  "level": "Intermediate (B1)",
+  "category": "Grammar & Vocabulary",
+  "timeLimitMinutes": 35,
+  "questions": [
+    {
+      "id": 1,
+      "part": "Prepositions",
+      "question": "I’ll be at home ______ Saturday morning. You can phone me then.",
+      "options": [
+        "At",
+        "on",
+        "In",
+        "By"
+      ],
+      "correct": 1,
+      "explanation": "Quy tắc chỉ thời gian: Trước các ngày trong tuần hoặc buổi của một ngày cụ thể (ví dụ: on Saturday morning), ta dùng giới từ 'on'."
+    },
+    {
+      "id": 2,
+      "part": "Prepositions",
+      "question": "I’m going away ______ the end of June.",
+      "options": [
+        "At",
+        "on",
+        "in",
+        "to"
+      ],
+      "correct": 0,
+      "explanation": "Cụm cố định chỉ thời điểm kết thúc của một khoảng thời gian cụ thể: 'at the end of + noun/thời gian' (ở đây là 'at the end of June' - vào cuối tháng 6)."
+    },
+    {
+      "id": 3,
+      "part": "Prepositions",
+      "question": "What time did they ______ the hotel?",
+      "options": [
+        "arrive to",
+        "arrive at",
+        "arrive in",
+        "arrive on"
+      ],
+      "correct": 1,
+      "explanation": "Quy tắc với 'arrive': 'arrive at' dùng cho địa điểm nhỏ, cụ thể như khách sạn, sân bay, nhà ga; 'arrive in' dùng cho thành phố, quốc gia. Không dùng 'arrive to'."
+    },
+    {
+      "id": 4,
+      "part": "Prepositions",
+      "question": "Have you read any books ______ Agatha Christie?",
+      "options": [
+        "of",
+        "from",
+        "by",
+        "with"
+      ],
+      "correct": 2,
+      "explanation": "Dùng 'by + tác giả/nghệ sĩ' để chỉ tác phẩm được viết hoặc sáng tác bởi ai (books by Agatha Christie)."
+    },
+    {
+      "id": 5,
+      "part": "Prepositions",
+      "question": "I’m not very good ______ repairing things.",
+      "options": [
+        "at",
+        "for",
+        "in",
+        "about"
+      ],
+      "correct": 0,
+      "explanation": "Cấu trúc tính từ: 'be good at (doing) something' mang nghĩa giỏi/thạo về việc gì đó."
+    },
+    {
+      "id": 6,
+      "part": "Prepositions",
+      "question": "“What time will you arrive?” “I don’t know. It depends ______ the traffic.”",
+      "options": [
+        "of",
+        "for",
+        "from",
+        "on"
+      ],
+      "correct": 3,
+      "explanation": "Động từ 'depend' luôn đi kèm với giới từ 'on' tạo thành cụm 'depend on' (phụ thuộc vào)."
+    },
+    {
+      "id": 7,
+      "part": "Prepositions",
+      "question": "I prefer tea ______ coffee.",
+      "options": [
+        "to",
+        "than",
+        "against",
+        "over"
+      ],
+      "correct": 0,
+      "explanation": "Cấu trúc so sánh sở thích: 'prefer something to something' (thích cái gì hơn cái gì), không dùng 'than' với động từ 'prefer'."
+    },
+    {
+      "id": 8,
+      "part": "Prepositions",
+      "question": "The accident was my fault, so I had to pay for the damage ______ the other car.",
+      "options": [
+        "of",
+        "for",
+        "to",
+        "on"
+      ],
+      "correct": 2,
+      "explanation": "Cụm danh từ: 'damage to something' (sự hư hại, thiệt hại gây ra đối với vật/người nào)."
+    },
+    {
+      "id": 9,
+      "part": "Prepositions",
+      "question": "These days everybody is aware ______ the dangers of smoking.",
+      "options": [
+        "on",
+        "of",
+        "with",
+        "about"
+      ],
+      "correct": 1,
+      "explanation": "Cấu trúc tính từ: 'be aware of something' (nhận thức được, ý thức được điều gì)."
+    },
+    {
+      "id": 10,
+      "part": "Prepositions",
+      "question": "He’s very brave. He’s not afraid ______ anything.",
+      "options": [
+        "at",
+        "about",
+        "with",
+        "of"
+      ],
+      "correct": 3,
+      "explanation": "Cấu trúc tính từ chỉ cảm xúc: 'be afraid of something/someone' (sợ hãi cái gì/ai)."
+    },
+    {
+      "id": 11,
+      "part": "Prepositions",
+      "question": "Bill and I come from the same town but my accent is different ______ his.",
+      "options": [
+        "with",
+        "on",
+        "at",
+        "from"
+      ],
+      "correct": 3,
+      "explanation": "Cấu trúc tính từ so sánh sự khác biệt: 'be different from something/someone' (khác biệt so với cái gì/ai)."
+    },
+    {
+      "id": 12,
+      "part": "Prepositions",
+      "question": "Do you know anyone who might be interested ______ buying an old car?",
+      "options": [
+        "on",
+        "in",
+        "with",
+        "about"
+      ],
+      "correct": 1,
+      "explanation": "Cấu trúc: 'be interested in (doing) something' (hứng thú, quan tâm đến việc gì)."
+    },
+    {
+      "id": 13,
+      "part": "Prepositions",
+      "question": "Sun oil can protect the skin ______ the sun.",
+      "options": [
+        "in",
+        "for",
+        "from",
+        "by"
+      ],
+      "correct": 2,
+      "explanation": "Cấu trúc bảo vệ: 'protect someone/something from (or against) something' (bảo vệ ai/cái gì khỏi điều gì nguy hại)."
+    },
+    {
+      "id": 14,
+      "part": "Prepositions",
+      "question": "The apartment consists ______ three rooms, a kitchen and bathroom.",
+      "options": [
+        "of",
+        "about",
+        "on",
+        "at"
+      ],
+      "correct": 0,
+      "explanation": "Động từ 'consist' đi kèm giới từ 'of': 'consist of' (bao gồm, gồm có)."
+    },
+    {
+      "id": 15,
+      "part": "Prepositions",
+      "question": "Mozart died ______ Vienna in 1791 ______ the age of 35.",
+      "options": [
+        "in / on",
+        "in / at",
+        "at / in",
+        "of / for"
+      ],
+      "correct": 1,
+      "explanation": "Vienna là tên thành phố lớn nên dùng 'in Vienna'. Chỉ độ tuổi dùng cụm cố định 'at the age of...' (ở độ tuổi bao nhiêu) -> chọn 'in / at'."
+    },
+    {
+      "id": 16,
+      "part": "Prepositions",
+      "question": "We waited ages for a taxi. We gave up ______ the end and walked home.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "of"
+      ],
+      "correct": 0,
+      "explanation": "Cụm thành ngữ: 'in the end' mang nghĩa là rốt cuộc, cuối cùng sau tất cả (tương đương với 'finally'). Phân biệt với 'at the end of' (ở phần cuối của một khoảng thời gian/vật thể)."
+    },
+    {
+      "id": 17,
+      "part": "Prepositions",
+      "question": "I like to get up ______ time to have a big breakfast before going to work.",
+      "options": [
+        "on",
+        "to",
+        "in",
+        "for"
+      ],
+      "correct": 2,
+      "explanation": "'in time (for something / to do something)' có nghĩa là kịp giờ để làm việc gì (đủ sớm để làm gì). Ngược lại, 'on time' nghĩa là đúng giờ (theo lịch trình)."
+    },
+    {
+      "id": 18,
+      "part": "Prepositions",
+      "question": "Why are you never ______ time? You always keep everybody waiting.",
+      "options": [
+        "in",
+        "on",
+        "for",
+        "at"
+      ],
+      "correct": 1,
+      "explanation": "'on time' mang nghĩa là đúng giờ, không bị muộn/trễ theo lịch hẹn (punctual)."
+    },
+    {
+      "id": 19,
+      "part": "Prepositions",
+      "question": "“Romeo and Juliet” is a play ______ Shakespeare.",
+      "options": [
+        "about",
+        "for",
+        "on",
+        "by"
+      ],
+      "correct": 3,
+      "explanation": "Tương tự như câu 4, dùng 'by + tác giả' để chỉ người sáng tác vở kịch ('a play by Shakespeare')."
+    },
+    {
+      "id": 20,
+      "part": "Prepositions",
+      "question": "There has been an increase ______ the number of road accidents recently.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "by"
+      ],
+      "correct": 0,
+      "explanation": "Cụm danh từ: 'an increase/decrease in something' (sự gia tăng/giảm sút về mặt số lượng hoặc tỉ lệ của cái gì)."
+    },
+    {
+      "id": 21,
+      "part": "Prepositions",
+      "question": "I’m sure you are capable ______ passing the examination.",
+      "options": [
+        "with",
+        "to",
+        "of",
+        "by"
+      ],
+      "correct": 2,
+      "explanation": "Cấu trúc tính từ: 'be capable of doing something' (có năng lực, có khả năng làm gì)."
+    },
+    {
+      "id": 22,
+      "part": "Prepositions",
+      "question": "My home town is not especially interesting. It’s not famous ______ anything.",
+      "options": [
+        "for",
+        "with",
+        "at",
+        "on"
+      ],
+      "correct": 0,
+      "explanation": "Cấu trúc tính từ: 'be famous for something' (nổi tiếng về điều gì)."
+    },
+    {
+      "id": 23,
+      "part": "Prepositions",
+      "question": "Linda is married ______ an American.",
+      "options": [
+        "with",
+        "to",
+        "in",
+        "for"
+      ],
+      "correct": 1,
+      "explanation": "Bẫy ngữ pháp thường gặp: Tiếng Việt hay nói 'kết hôn với ai', nhưng tiếng Anh bắt buộc dùng 'be married to someone', không dùng 'with'."
+    },
+    {
+      "id": 24,
+      "part": "Prepositions",
+      "question": "When I realized that I was wrong, I apologized ______ my mistake.",
+      "options": [
+        "to",
+        "at",
+        "on",
+        "for"
+      ],
+      "correct": 3,
+      "explanation": "Cấu trúc xin lỗi: 'apologize to someone for something' (xin lỗi ai vì việc gì). Ở đây tân ngữ là 'my mistake' nên đi với giới từ 'for'."
+    },
+    {
+      "id": 25,
+      "part": "Prepositions",
+      "question": "The book is divided ______ three parts.",
+      "options": [
+        "to",
+        "with",
+        "of",
+        "into"
+      ],
+      "correct": 3,
+      "explanation": "Cấu trúc phân chia: 'divide something into parts' hoặc thể bị động 'be divided into' (được chia thành nhiều phần)."
+    },
+    {
+      "id": 26,
+      "part": "Prepositions",
+      "question": "Don’t throw stones ______ the birds! It’s cruel.",
+      "options": [
+        "at",
+        "to",
+        "into",
+        "in"
+      ],
+      "correct": 0,
+      "explanation": "Phân biệt: 'throw at' mang ý định ném tấn công/gây hại (như ném đá vào chim); 'throw to' dùng khi ném cho ai đó bắt lấy."
+    },
+    {
+      "id": 27,
+      "part": "Prepositions",
+      "question": "I saw a really funny program ______ television.",
+      "options": [
+        "at",
+        "from",
+        "in",
+        "on"
+      ],
+      "correct": 3,
+      "explanation": "Cụm từ chỉ phương tiện truyền thông: 'on television', 'on the radio', 'on the internet'."
+    },
+    {
+      "id": 28,
+      "part": "Prepositions",
+      "question": "Stuart: Good heaven! It’s Nick Jenkins, isn’t it? I don’t believe it!\nNick: Stuart! I haven’t seen you ______ we left school.",
+      "options": [
+        "for",
+        "from",
+        "since",
+        "by"
+      ],
+      "correct": 2,
+      "explanation": "Trong thì Hiện tại hoàn thành, liên từ 'since + mệnh đề quá khứ' mang nghĩa 'kể từ khi' để chỉ mốc thời gian bắt đầu một hành động."
+    },
+    {
+      "id": 29,
+      "part": "Prepositions",
+      "question": "What’s the difference ______ a boat and a ship?",
+      "options": [
+        "between",
+        "from",
+        "under",
+        "with"
+      ],
+      "correct": 0,
+      "explanation": "Cấu trúc danh từ: 'the difference between A and B' (sự khác nhau giữa hai đối tượng A và B)."
+    },
+    {
+      "id": 30,
+      "part": "Prepositions",
+      "question": "I can’t find my keys. I had them a minute ______.",
+      "options": [
+        "ago",
+        "before",
+        "behind",
+        "back"
+      ],
+      "correct": 0,
+      "explanation": "Cấu trúc thời gian quá khứ đơn: 'khoảng thời gian + ago' (cách đây bao lâu: a minute ago = cách đây một phút)."
+    },
+    {
+      "id": 31,
+      "part": "Prepositions",
+      "question": "Father: What’s this girl’s name?\nSon: Julie. She’s ______ college ______ me.",
+      "options": [
+        "at / with",
+        "at / on",
+        "in / to",
+        "to / with"
+      ],
+      "correct": 0,
+      "explanation": "Học đại học dùng cụm 'at college'; cùng với ai thì dùng giới từ 'with' ('at college with me' = học cùng trường đại học với con)."
+    },
+    {
+      "id": 32,
+      "part": "Prepositions",
+      "question": "We all laughed ______ the cartoon.",
+      "options": [
+        "for",
+        "at",
+        "on",
+        "to"
+      ],
+      "correct": 1,
+      "explanation": "Cụm động từ chỉ phản ứng: 'laugh at someone/something' (cười vì điều gì / cười nhạo ai)."
+    },
+    {
+      "id": 33,
+      "part": "Prepositions",
+      "question": "Sally and Kevin had an argument and now they’re not speaking ______ one another.",
+      "options": [
+        "about",
+        "to",
+        "for",
+        "at"
+      ],
+      "correct": 1,
+      "explanation": "Cụm từ giao tiếp: 'speak to someone' (nói chuyện với ai)."
+    },
+    {
+      "id": 34,
+      "part": "Prepositions",
+      "question": "Police are searching ______ the man who escaped from prison.",
+      "options": [
+        "at",
+        "in",
+        "for",
+        "by"
+      ],
+      "correct": 2,
+      "explanation": "Cụm động từ: 'search for someone/something' nghĩa là tìm kiếm, truy tìm đối tượng nào đó."
+    },
+    {
+      "id": 35,
+      "part": "Prepositions",
+      "question": "Don’t point that knife ______ me. It’s dangerous.",
+      "options": [
+        "at",
+        "to",
+        "into",
+        "onto"
+      ],
+      "correct": 0,
+      "explanation": "Cụm động từ chỉ hướng nhắm vào ai đó: 'point something at someone' (chĩa cái gì vào ai)."
+    },
+    {
+      "id": 36,
+      "part": "Prepositions",
+      "question": "I heard a noise behind me and turned ______, but there was nothing.",
+      "options": [
+        "away",
+        "out",
+        "on",
+        "round"
+      ],
+      "correct": 3,
+      "explanation": "Cụm phrasal verb: 'turn round' (hoặc 'turn around') nghĩa là quay người lại phía sau."
+    },
+    {
+      "id": 37,
+      "part": "Prepositions",
+      "question": "Why were you so unfriendly ______ Tessa? Have you had an argument with her?",
+      "options": [
+        "of",
+        "for",
+        "to",
+        "with"
+      ],
+      "correct": 2,
+      "explanation": "Cấu trúc thái độ đối xử: 'be friendly / unfriendly to someone' (thân thiện / không thân thiện với ai)."
+    },
+    {
+      "id": 38,
+      "part": "Prepositions",
+      "question": "They gave me a form and told me to fill ______ it.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "with"
+      ],
+      "correct": 0,
+      "explanation": "Cụm phrasal verb: 'fill in' (hoặc 'fill out') mang nghĩa điền thông tin vào mẫu đơn, bảng biểu."
+    },
+    {
+      "id": 39,
+      "part": "Prepositions",
+      "question": "We travelled ______ 6.45 train, which arrived at 8.30.",
+      "options": [
+        "in the",
+        "on the",
+        "by the",
+        "by"
+      ],
+      "correct": 1,
+      "explanation": "Khi có mạo từ 'the' hoặc xác định cụ thể chuyến tàu ('the 6.45 train'), ta dùng giới từ 'on the train'. Nếu không có mạo từ thì mới dùng 'by train'."
+    },
+    {
+      "id": 40,
+      "part": "Prepositions",
+      "question": "Janet warned me ______ the water. She said it wasn’t safe to drink.",
+      "options": [
+        "about",
+        "with",
+        "on",
+        "to"
+      ],
+      "correct": 0,
+      "explanation": "Cấu trúc cảnh báo: 'warn someone about/against something' (cảnh báo ai về mối nguy hiểm nào đó)."
+    },
+    {
+      "id": 41,
+      "part": "Prepositions",
+      "question": "Albert is 85 and lives alone. He needs somebody to look ______ him.",
+      "options": [
+        "for",
+        "on",
+        "at",
+        "after"
+      ],
+      "correct": 3,
+      "explanation": "Cụm phrasal verb: 'look after someone' có nghĩa là chăm sóc, trông nom ai."
+    },
+    {
+      "id": 42,
+      "part": "Prepositions",
+      "question": "I will not be here next week. I am going ______ business in Singapore.",
+      "options": [
+        "in",
+        "on",
+        "with",
+        "at"
+      ],
+      "correct": 1,
+      "explanation": "Cụm từ cố định: 'go on business' (đi công tác)."
+    },
+    {
+      "id": 43,
+      "part": "Prepositions",
+      "question": "I don’t believe ______ ghosts. I think people only imagine that they see them.",
+      "options": [
+        "to",
+        "about",
+        "in",
+        "with"
+      ],
+      "correct": 2,
+      "explanation": "Cụm động từ: 'believe in something/someone' mang nghĩa là tin vào sự tồn tại của cái gì hoặc tin tưởng ai đó."
+    },
+    {
+      "id": 44,
+      "part": "Prepositions",
+      "question": "Don’t go too fast. I can’t keep ______ you.",
+      "options": [
+        "on to",
+        "on with",
+        "up to",
+        "up with"
+      ],
+      "correct": 3,
+      "explanation": "Cụm phrasal verb: 'keep up with someone/something' nghĩa là theo kịp, bắt kịp tốc độ của ai/cái gì."
+    },
+    {
+      "id": 45,
+      "part": "Prepositions",
+      "question": "Polly wants to cycle round the world. She’s really keen ______ the idea.",
+      "options": [
+        "about",
+        "for",
+        "on",
+        "with"
+      ],
+      "correct": 2,
+      "explanation": "Cấu trúc tính từ: 'be keen on something / doing something' (rất thích, say mê điều gì)."
+    },
+    {
+      "id": 46,
+      "part": "Prepositions",
+      "question": "This village is ______ Hanoi. It’s only six miles away.",
+      "options": [
+        "along",
+        "by",
+        "near",
+        "next"
+      ],
+      "correct": 2,
+      "explanation": "Giới từ 'near' đứng trực tiếp trước danh từ để chỉ vị trí 'gần nơi nào'. 'next' phải có 'to' (next to), do đó 'near Hanoi' là lựa chọn chính xác."
+    },
+    {
+      "id": 47,
+      "part": "Prepositions",
+      "question": "Endangered species are plant and animal species which are ______ danger of extinction.",
+      "options": [
+        "on",
+        "in",
+        "at",
+        "by"
+      ],
+      "correct": 1,
+      "explanation": "Cụm giới từ cố định: 'in danger of (extinction)' mang nghĩa là đang gặp nguy cơ, lâm vào cảnh nguy hiểm."
+    },
+    {
+      "id": 48,
+      "part": "Prepositions",
+      "question": "Plant and animal extinction leads ______ loss of biodiversity.",
+      "options": [
+        "on",
+        "in",
+        "into",
+        "to"
+      ],
+      "correct": 3,
+      "explanation": "Cụm động từ nguyên nhân - kết quả: 'lead to something' (dẫn đến, gây ra kết quả gì)."
+    },
+    {
+      "id": 49,
+      "part": "Prepositions",
+      "question": "The initiative for founding the Red Cross came ______ a Swiss man called Jean Henri Dunant.",
+      "options": [
+        "from",
+        "with",
+        "through",
+        "to"
+      ],
+      "correct": 0,
+      "explanation": "Cụm từ chỉ nguồn gốc/xuất phát điểm: 'come from someone/something' (đến từ ai, xuất phát từ nguồn nào)."
+    },
+    {
+      "id": 50,
+      "part": "Prepositions",
+      "question": "Helen: Hello, Julie. You look very brown. Where’ve you been?\nJulie: Oh, I’ve just got back ______ holiday.",
+      "options": [
+        "on",
+        "at",
+        "in",
+        "from"
+      ],
+      "correct": 3,
+      "explanation": "Cụm động từ: 'get back from somewhere/something' nghĩa là trở về từ đâu/từ kỳ nghỉ ('got back from holiday')."
+    },
+    {
+      "id": 51,
+      "part": "Prepositions",
+      "question": "Miss Dunn: Hello, Tenex Transport. Can I help you?\nMr. Miller: Yes. Can I speak ______ Mr. Smithers, please?",
+      "options": [
+        "at",
+        "about",
+        "to",
+        "for"
+      ],
+      "correct": 2,
+      "explanation": "Mẫu câu đàm thoại điện thoại lịch sự: 'speak to someone' (nói chuyện với ai qua điện thoại)."
+    },
+    {
+      "id": 52,
+      "part": "Prepositions",
+      "question": "Tom: How long have you been living there?\nPeter: Oh, ______ about two years.",
+      "options": [
+        "In",
+        "Since",
+        "On",
+        "For"
+      ],
+      "correct": 3,
+      "explanation": "Trong thì Hiện tại hoàn thành tiếp diễn (hoặc Hiện tại hoàn thành), 'for + khoảng thời gian' được dùng để diễn tả độ dài thời gian ('for about two years' = được khoảng 2 năm)."
+    }
+  ]
+}
