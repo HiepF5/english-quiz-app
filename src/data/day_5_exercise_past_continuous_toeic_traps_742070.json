@@ -1,0 +1,270 @@
+{
+  "id": "toeic-day-5-past-continuous",
+  "title": "Day 5 — Exercise: Past Continuous & TOEIC Traps",
+  "description": "Bài tập luyện tập thì Quá khứ tiếp diễn kết hợp Quá khứ đơn (hành động đang diễn ra thì có hành động khác xen vào, hành động song song, mốc thời gian cụ thể trong quá khứ và các bẫy động từ chỉ trạng thái).",
+  "level": "Intermediate (B1)",
+  "category": "Grammar & Vocabulary",
+  "timeLimitMinutes": 20,
+  "questions": [
+    {
+      "id": 1,
+      "part": "Basic",
+      "question": "I ______ TV at 9 p.m. yesterday.",
+      "options": [
+        "watched",
+        "was watching",
+        "have watched",
+        "watch"
+      ],
+      "correct": 1,
+      "explanation": "Có thời điểm xác định cụ thể trong quá khứ ('at 9 p.m. yesterday') nên ta dùng thì Quá khứ tiếp diễn (Past Continuous): S + was/were + V-ing. Chủ ngữ 'I' đi với 'was watching'."
+    },
+    {
+      "id": 2,
+      "part": "Basic",
+      "question": "She ______ dinner when I called her.",
+      "options": [
+        "cooked",
+        "cooks",
+        "was cooking",
+        "has cooked"
+      ],
+      "correct": 2,
+      "explanation": "Diễn tả hành động đang xảy ra trong quá khứ thì một hành động khác xen vào: hành động đang xảy ra dùng Quá khứ tiếp diễn (was cooking), hành động xen vào dùng Quá khứ đơn (called)."
+    },
+    {
+      "id": 3,
+      "part": "Basic",
+      "question": "They ______ the system at that time.",
+      "options": [
+        "were testing",
+        "tested",
+        "have tested",
+        "test"
+      ],
+      "correct": 0,
+      "explanation": "'At that time' (vào thời điểm đó trong quá khứ) là dấu hiệu nhận biết của thì Quá khứ tiếp diễn. Chủ ngữ 'They' số nhiều nên đi với 'were testing'."
+    },
+    {
+      "id": 4,
+      "part": "Basic",
+      "question": "While I ______ to work, it started raining.",
+      "options": [
+        "drove",
+        "was driving",
+        "drive",
+        "have driven"
+      ],
+      "correct": 1,
+      "explanation": "Mệnh đề sau 'While' thường chia ở thì Quá khứ tiếp diễn để diễn tả hành động đang kéo dài (was driving) thì hành động khác bất chợt xảy đến (started raining)."
+    },
+    {
+      "id": 5,
+      "part": "Basic",
+      "question": "The manager ______ a meeting when the client arrived.",
+      "options": [
+        "had",
+        "has",
+        "was having",
+        "is having"
+      ],
+      "correct": 2,
+      "explanation": "Hành động 'tổ chức/tham gia cuộc họp' đang diễn ra thì khách hàng đến ('arrived' - Quá khứ đơn). Cụm 'have a meeting' là động từ hành động chỉ sự kiện, chia Quá khứ tiếp diễn: 'was having'."
+    },
+    {
+      "id": 6,
+      "part": "Basic",
+      "question": "We ______ the report at 10 a.m. yesterday.",
+      "options": [
+        "prepared",
+        "were preparing",
+        "have prepared",
+        "prepare"
+      ],
+      "correct": 1,
+      "explanation": "Có mốc thời gian cụ thể trong quá khứ ('at 10 a.m. yesterday') nên dùng thì Quá khứ tiếp diễn. Chủ ngữ 'We' đi với 'were preparing'."
+    },
+    {
+      "id": 7,
+      "part": "Basic",
+      "question": "When the phone rang, I ______.",
+      "options": [
+        "slept",
+        "was sleeping",
+        "have slept",
+        "sleep"
+      ],
+      "correct": 1,
+      "explanation": "Hành động đang ngủ (kéo dài) thì chuông điện thoại reo (xen vào). Hành động đang diễn ra chia thì Quá khứ tiếp diễn: 'was sleeping'."
+    },
+    {
+      "id": 8,
+      "part": "Basic",
+      "question": "While the developers ______ the bug, the testers were preparing test cases.",
+      "options": [
+        "fixed",
+        "fix",
+        "were fixing",
+        "have fixed"
+      ],
+      "correct": 2,
+      "explanation": "Diễn tả hai hành động diễn ra song song cùng một lúc trong quá khứ (kết nối bởi 'While'). Cả hai mệnh đề đều chia ở Quá khứ tiếp diễn: 'were fixing' và 'were preparing'."
+    },
+    {
+      "id": 9,
+      "part": "Basic",
+      "question": "He ______ to the client when the connection was interrupted.",
+      "options": [
+        "talked",
+        "was talking",
+        "has talked",
+        "talks"
+      ],
+      "correct": 1,
+      "explanation": "Hành động đang nói chuyện với khách hàng thì đường truyền bị gián đoạn. Hành động đang tiếp diễn trong quá khứ chia 'was talking'."
+    },
+    {
+      "id": 10,
+      "part": "Basic",
+      "question": "At that moment, everyone ______ for the announcement.",
+      "options": [
+        "waited",
+        "was waiting",
+        "has waited",
+        "waits"
+      ],
+      "correct": 1,
+      "explanation": "'At that moment' (vào đúng khoảnh khắc đó trong quá khứ) là dấu hiệu chia Quá khứ tiếp diễn. Đại từ bất định 'everyone' đi với động từ số ít: 'was waiting'."
+    },
+    {
+      "id": 11,
+      "part": "TOEIC Traps",
+      "question": "When I entered the room, the employees ______ about the new project.",
+      "options": [
+        "discussed",
+        "were discussing",
+        "have discussed",
+        "discuss"
+      ],
+      "correct": 1,
+      "explanation": "Khi tôi bước vào phòng ('entered' - quá khứ đơn), các nhân viên đang thảo luận ('were discussing' - quá khứ tiếp diễn). Đây là cấu trúc hành động xen vào một hành động đang tiếp diễn."
+    },
+    {
+      "id": 12,
+      "part": "TOEIC Traps",
+      "question": "The engineer ______ the server when the alarm suddenly went off.",
+      "options": [
+        "checked",
+        "was checking",
+        "has checked",
+        "checks"
+      ],
+      "correct": 1,
+      "explanation": "Kỹ sư đang kiểm tra máy chủ ('was checking') thì chuông báo động bất ngờ vang lên ('went off'). Hành động đang diễn ra chia Quá khứ tiếp diễn."
+    },
+    {
+      "id": 13,
+      "part": "TOEIC Traps",
+      "question": "While the customer ______ the form, the receptionist prepared the documents.",
+      "options": [
+        "filled out",
+        "was filling out",
+        "has filled out",
+        "fills out"
+      ],
+      "correct": 1,
+      "explanation": "Sau liên từ 'While', để diễn tả hành động đang diễn ra kéo dài trong quá khứ ta dùng thì Quá khứ tiếp diễn: 'was filling out'."
+    },
+    {
+      "id": 14,
+      "part": "TOEIC Traps",
+      "question": "At 3 p.m. yesterday, our team ______ a new feature.",
+      "options": [
+        "developed",
+        "was developing",
+        "has developed",
+        "develops"
+      ],
+      "correct": 1,
+      "explanation": "Có thời điểm chính xác trong quá khứ ('At 3 p.m. yesterday'), nhấn mạnh quá trình đang tiến hành tại thời điểm đó nên dùng Quá khứ tiếp diễn: 'was developing'."
+    },
+    {
+      "id": 15,
+      "part": "TOEIC Traps",
+      "question": "The employees ______ lunch when the fire alarm rang.",
+      "options": [
+        "had",
+        "were having",
+        "have had",
+        "have"
+      ],
+      "correct": 1,
+      "explanation": "Các nhân viên đang ăn trưa ('were having lunch') thì chuông báo cháy reo ('rang'). 'Have' trong ngữ cảnh dùng bữa là động từ chỉ hành động, hoàn toàn có thể chia ở dạng tiếp diễn."
+    },
+    {
+      "id": 16,
+      "part": "TOEIC Traps",
+      "question": "When the manager called, I ______ the database.",
+      "options": [
+        "checked",
+        "was checking",
+        "have checked",
+        "check"
+      ],
+      "correct": 1,
+      "explanation": "Hành động người quản lý gọi điện ('called' - quá khứ đơn) chen ngang vào hành động đang kiểm tra cơ sở dữ liệu ('was checking' - quá khứ tiếp diễn)."
+    },
+    {
+      "id": 17,
+      "part": "TOEIC Traps",
+      "question": "While the developers were working, the project manager ______ with the client.",
+      "options": [
+        "communicated",
+        "was communicating",
+        "has communicated",
+        "communicates"
+      ],
+      "correct": 1,
+      "explanation": "Hai hành động diễn ra song song đồng thời trong quá khứ (While developers were working... PM was communicating...), do đó cả 2 vế đều dùng thì Quá khứ tiếp diễn."
+    },
+    {
+      "id": 18,
+      "part": "TOEIC Traps",
+      "question": "I ______ what you meant when you explained the problem.",
+      "options": [
+        "was understanding",
+        "understood",
+        "was understood",
+        "have understood"
+      ],
+      "correct": 1,
+      "explanation": "Bẫy TOEIC kinh điển: 'understand' là động từ trạng thái (stative verb) chỉ nhận thức/tri giác, tuyệt đối KHÔNG chia ở các thì tiếp diễn (không dùng 'was understanding'). Vì ngữ cảnh trong quá khứ nên chia Quá khứ đơn: 'understood'."
+    },
+    {
+      "id": 19,
+      "part": "TOEIC Traps",
+      "question": "When we arrived at the station, the train ______.",
+      "options": [
+        "left",
+        "was leaving",
+        "has left",
+        "leaves"
+      ],
+      "correct": 1,
+      "explanation": "Khi chúng tôi vừa đến ga thì con tàu 'đang chuyển bánh rời đi' ('was leaving'). Nếu dùng 'left' thì mang nghĩa tàu đã đi rồi (hoặc thường đi với quá khứ hoàn thành 'had left'). Ở các phương án đề bài đưa ra, 'was leaving' diễn tả cảnh tượng đang diễn ra ngay lúc chúng tôi đến."
+    },
+    {
+      "id": 20,
+      "part": "TOEIC Traps",
+      "question": "While the IT team ______ the server issue, the customer ______ several times.",
+      "options": [
+        "investigated / called",
+        "was investigating / called",
+        "investigated / was calling",
+        "was investigating / was calling"
+      ],
+      "correct": 1,
+      "explanation": "Vế đầu là quá trình đang diễn ra kéo dài ('was investigating'). Vế sau 'called several times' diễn tả hành động lặp đi lặp lại xen vào sự việc đang xảy ra hoặc hoàn tất từng lần gọi, ta dùng Quá khứ đơn 'called' chứ không dùng tiếp diễn cho việc đếm số lần hoàn thành."
+    }
+  ]
+}
