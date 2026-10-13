@@ -1,0 +1,270 @@
+{
+  "id": "toeic-day-4-past-simple-traps",
+  "title": "DAY 4 — EXERCISE: Past Simple & TOEIC Traps",
+  "description": "Luyện tập thì Quá khứ đơn (Past Simple), phân biệt với Hiện tại hoàn thành và các bẫy ngữ pháp thường gặp trong đề thi TOEIC.",
+  "level": "Intermediate (B1)",
+  "category": "Grammar & Vocabulary",
+  "timeLimitMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "part": "Part A — Cơ bản",
+      "question": "I ______ the report yesterday.",
+      "options": [
+        "finish",
+        "finished",
+        "have finished",
+        "finishing"
+      ],
+      "correct": 1,
+      "explanation": "Có trạng từ chỉ thời gian xác định trong quá khứ 'yesterday' (hôm qua) nên động từ chia ở thì Quá khứ đơn (V-ed/V2) -> chọn 'finished'."
+    },
+    {
+      "id": 2,
+      "part": "Part A — Cơ bản",
+      "question": "She ______ to the office last Monday.",
+      "options": [
+        "goes",
+        "has gone",
+        "went",
+        "going"
+      ],
+      "correct": 2,
+      "explanation": "Cụm 'last Monday' (thứ Hai tuần trước) là mốc thời gian đã kết thúc trong quá khứ, dùng thì Quá khứ đơn. Dạng quá khứ của 'go' là 'went'."
+    },
+    {
+      "id": 3,
+      "part": "Part A — Cơ bản",
+      "question": "Did you ______ the email?",
+      "options": [
+        "sent",
+        "sends",
+        "send",
+        "sending"
+      ],
+      "correct": 2,
+      "explanation": "Trong câu hỏi thì Quá khứ đơn có trợ động từ 'Did' đứng đầu (Did + S + V-bare?), động từ chính luôn ở dạng nguyên mẫu không 'to' -> chọn 'send'."
+    },
+    {
+      "id": 4,
+      "part": "Part A — Cơ bản",
+      "question": "We ______ the system two weeks ago.",
+      "options": [
+        "deploy",
+        "deployed",
+        "have deployed",
+        "deploying"
+      ],
+      "correct": 1,
+      "explanation": "Dấu hiệu 'two weeks ago' (hai tuần trước) chỉ thời điểm đã kết thúc trong quá khứ, chia động từ ở thì Quá khứ đơn -> chọn 'deployed'."
+    },
+    {
+      "id": 5,
+      "part": "Part A — Cơ bản",
+      "question": "He ______ not attend the meeting yesterday.",
+      "options": [
+        "does",
+        "has",
+        "did",
+        "was"
+      ],
+      "correct": 2,
+      "explanation": "Câu phủ định của động từ thường ở thì Quá khứ đơn có trạng từ 'yesterday' dùng trợ động từ 'did' (S + did not + V-bare) -> chọn 'did'."
+    },
+    {
+      "id": 6,
+      "part": "Part A — Cơ bản",
+      "question": "They ______ very busy last week.",
+      "options": [
+        "are",
+        "have been",
+        "were",
+        "did"
+      ],
+      "correct": 2,
+      "explanation": "'last week' là dấu hiệu thì Quá khứ đơn. Sau chỗ trống là tính từ 'busy' nên cần động từ to be quá khứ. Chủ ngữ 'They' số nhiều đi với to be 'were'."
+    },
+    {
+      "id": 7,
+      "part": "Part A — Cơ bản",
+      "question": "The manager ______ the client three hours ago.",
+      "options": [
+        "calls",
+        "has called",
+        "called",
+        "calling"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu 'three hours ago' (3 tiếng trước) diễn tả hành động đã xảy ra và chấm dứt tại thời điểm cụ thể trong quá khứ -> chia Quá khứ đơn 'called'."
+    },
+    {
+      "id": 8,
+      "part": "Part A — Cơ bản",
+      "question": "When I arrived at the office, everyone ______ busy.",
+      "options": [
+        "is",
+        "was",
+        "were",
+        "has been"
+      ],
+      "correct": 1,
+      "explanation": "Mệnh đề thời gian ở quá khứ 'When I arrived...'. Đại từ bất định 'everyone' luôn chia với động từ ở ngôi thứ 3 số ít, do đó to be quá khứ là 'was'."
+    },
+    {
+      "id": 9,
+      "part": "Part A — Cơ bản",
+      "question": "My colleague ______ the document yesterday morning.",
+      "options": [
+        "sends",
+        "sent",
+        "has sent",
+        "sending"
+      ],
+      "correct": 1,
+      "explanation": "'yesterday morning' (sáng hôm qua) là mốc thời gian rõ ràng trong quá khứ -> chia thì Quá khứ đơn. Dạng V2 của 'send' là 'sent'."
+    },
+    {
+      "id": 10,
+      "part": "Part A — Cơ bản",
+      "question": "We ______ this issue in 2024.",
+      "options": [
+        "have encountered",
+        "encounter",
+        "encountered",
+        "encountering"
+      ],
+      "correct": 2,
+      "explanation": "Cụm giới từ chỉ năm trong quá khứ 'in 2024' là dấu hiệu của thì Quá khứ đơn, diễn tả sự việc đã diễn ra và kết thúc trong năm đó -> chọn 'encountered'."
+    },
+    {
+      "id": 11,
+      "part": "🔥 TOEIC TRAPS",
+      "question": "The company ______ three new employees last month.",
+      "options": [
+        "has hired",
+        "hires",
+        "hired",
+        "hiring"
+      ],
+      "correct": 2,
+      "explanation": "Bẫy TOEIC kinh điển: Dù có số lượng 'three new employees', có 'last month' (tháng trước - thời gian đã chấm dứt hoàn toàn) nên bắt buộc dùng Quá khứ đơn 'hired', không dùng Hiện tại hoàn thành."
+    },
+    {
+      "id": 12,
+      "part": "🔥 TOEIC TRAPS",
+      "question": "Did the customer ______ the payment yesterday?",
+      "options": [
+        "made",
+        "makes",
+        "make",
+        "has made"
+      ],
+      "correct": 2,
+      "explanation": "Bẫy chia lại quá khứ: Khi câu hỏi đã có trợ động từ 'Did', động từ chính phía sau bắt buộc giữ nguyên thể dạng 'V-bare' (Did + S + V-bare?) -> chọn 'make'."
+    },
+    {
+      "id": 13,
+      "part": "🔥 TOEIC TRAPS",
+      "question": "The engineer ______ the server because it was not responding.",
+      "options": [
+        "restarted",
+        "has restarted",
+        "restarts",
+        "restarting"
+      ],
+      "correct": 0,
+      "explanation": "Sự phối thì trong câu: Mệnh đề phụ dùng thì Quá khứ tiếp diễn 'it was not responding' chỉ ngữ cảnh xảy ra trong quá khứ, nên mệnh đề chính diễn tả hành động xử lý dứt khoát tại thời điểm đó chia Quá khứ đơn 'restarted'."
+    },
+    {
+      "id": 14,
+      "part": "🔥 TOEIC TRAPS",
+      "question": "She ______ at the company from 2020 to 2023.",
+      "options": [
+        "has worked",
+        "worked",
+        "works",
+        "is working"
+      ],
+      "correct": 1,
+      "explanation": "Bẫy khoảng thời gian: Cụm 'from 2020 to 2023' là khoảng thời gian cố định đã hoàn toàn kết thúc trong quá khứ (không kéo dài tới nay) -> bắt buộc dùng Quá khứ đơn 'worked'."
+    },
+    {
+      "id": 15,
+      "part": "🔥 TOEIC TRAPS",
+      "question": "We ______ the problem already.",
+      "options": [
+        "solved",
+        "have solved",
+        "solve",
+        "solving"
+      ],
+      "correct": 1,
+      "explanation": "Trạng từ 'already' (đã... rồi) nhấn mạnh kết quả của hành động tính đến hiện tại và không có mốc thời gian quá khứ xác định -> dùng thì Hiện tại hoàn thành 'have solved'."
+    },
+    {
+      "id": 16,
+      "part": "🔥 TOEIC TRAPS",
+      "question": "The manager ______ the report before the meeting started yesterday.",
+      "options": [
+        "reviews",
+        "has reviewed",
+        "reviewed",
+        "reviewing"
+      ],
+      "correct": 2,
+      "explanation": "Ngữ cảnh xảy ra 'yesterday' và trước một hành động quá khứ khác ('the meeting started'). Trong 4 phương án cho sẵn, 'reviewed' là phương án quá khứ đơn duy nhất phù hợp về mặt cấu trúc thời gian (không thể dùng thì hiện tại hay hiện tại hoàn thành)."
+    },
+    {
+      "id": 17,
+      "part": "🔥 TOEIC TRAPS",
+      "question": "I ______ him several times, but he didn't answer.",
+      "options": [
+        "called",
+        "have called",
+        "call",
+        "am calling"
+      ],
+      "correct": 0,
+      "explanation": "Bẫy 'several times': Thông thường 'several times' chia hiện tại hoàn thành, nhưng ở đây có vế liên kết chỉ quá khứ rõ ràng 'but he didn't answer' (nhưng anh ấy đã không bắt máy), chứng tỏ chuỗi cuộc gọi này diễn ra trong quá khứ cụ thể -> chia Quá khứ đơn 'called'."
+    },
+    {
+      "id": 18,
+      "part": "🔥 TOEIC TRAPS",
+      "question": "The company ______ its first mobile application in 2021.",
+      "options": [
+        "has launched",
+        "launched",
+        "launches",
+        "is launching"
+      ],
+      "correct": 1,
+      "explanation": "Có mốc thời gian xác định 'in 2021' là một năm trong quá khứ. Hành động ra mắt sản phẩm diễn ra tại thời điểm đó nên chia Quá khứ đơn 'launched'."
+    },
+    {
+      "id": 19,
+      "part": "🔥 TOEIC TRAPS",
+      "question": "When the customer ______, the support team was already waiting.",
+      "options": [
+        "arrives",
+        "has arrived",
+        "arrived",
+        "arriving"
+      ],
+      "correct": 2,
+      "explanation": "Cấu trúc phối thì với 'When': Hành động đang diễn ra trong quá khứ ('was already waiting' - Quá khứ tiếp diễn) thì có một hành động khác xen vào ngắn hơn, hành động xen vào chia Quá khứ đơn -> 'arrived'."
+    },
+    {
+      "id": 20,
+      "part": "🔥 TOEIC TRAPS",
+      "question": "The IT department ______ several security issues since January, but it ______ a major problem last Friday.",
+      "options": [
+        "has fixed / discovered",
+        "fixed / has discovered",
+        "has fixed / has discovered",
+        "fixed / discovered"
+      ],
+      "correct": 0,
+      "explanation": "Câu phối hợp hai thì: Vế đầu có 'since January' (kể từ tháng 1 đến nay) diễn tả hành động kéo dài đến hiện tại -> chia Hiện tại hoàn thành 'has fixed'. Vế hai có 'last Friday' (thứ Sáu tuần trước) chỉ thời điểm kết thúc trong quá khứ -> chia Quá khứ đơn 'discovered'."
+    }
+  ]
+}

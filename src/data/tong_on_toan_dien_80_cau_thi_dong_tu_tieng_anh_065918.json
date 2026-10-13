@@ -1,0 +1,1050 @@
+{
+  "id": "english-tenses-80-questions-quiz",
+  "title": "Tổng Ôn Toàn Diện 80 Câu Thì Động Từ Tiếng Anh",
+  "description": "Bộ đề thi 80 câu trắc nghiệm chuyên sâu về các thì trong tiếng Anh: Hiện tại đơn, Hiện tại tiếp diễn, Hiện tại hoàn thành, Quá khứ đơn, Quá khứ tiếp diễn, Quá khứ hoàn thành và các dạng thức Tương lai.",
+  "level": "Intermediate (B1)",
+  "category": "Grammar & Vocabulary",
+  "timeLimitMinutes": 60,
+  "questions": [
+    {
+      "id": 1,
+      "part": "Verb Tenses",
+      "question": "He ______ for London one year ago.",
+      "options": [
+        "left",
+        "has left",
+        "leaves",
+        "had left"
+      ],
+      "correct": 0,
+      "explanation": "Dấu hiệu nhận biết 'one year ago' (cách đây 1 năm) chỉ thời điểm xác định trong quá khứ nên dùng thì Quá khứ đơn (V2/ed -> 'left')."
+    },
+    {
+      "id": 2,
+      "part": "Verb Tenses",
+      "question": "She ______ in Hue for twenty years.",
+      "options": [
+        "lives",
+        "has lived",
+        "lived",
+        "will live"
+      ],
+      "correct": 1,
+      "explanation": "Có 'for twenty years' (khoảng thời gian kéo dài đến hiện tại) diễn tả hành động bắt đầu trong quá khứ và vẫn tiếp diễn, dùng thì Hiện tại hoàn thành (have/has + V3/ed -> 'has lived')."
+    },
+    {
+      "id": 3,
+      "part": "Verb Tenses",
+      "question": "I ______ to the market with my mother yesterday.",
+      "options": [
+        "go",
+        "went",
+        "have gone",
+        "was going"
+      ],
+      "correct": 1,
+      "explanation": "Dấu hiệu 'yesterday' (hôm qua) chỉ hành động đã xảy ra và chấm dứt hoàn toàn trong quá khứ nên dùng Quá khứ đơn ('went')."
+    },
+    {
+      "id": 4,
+      "part": "Verb Tenses",
+      "question": "What ______ you ______, Nam? – I’m thinking of my mother.",
+      "options": [
+        "do/think",
+        "are/thinking",
+        "have/thought",
+        "were/thinking"
+      ],
+      "correct": 1,
+      "explanation": "Câu trả lời dùng thì Hiện tại tiếp diễn ('I’m thinking...'), hỏi về hành động đang suy nghĩ tại thời điểm nói nên câu hỏi dùng 'are you thinking'."
+    },
+    {
+      "id": 5,
+      "part": "Verb Tenses",
+      "question": "How long ______ you ______ her? – For five months.",
+      "options": [
+        "do/know",
+        "are/knowing",
+        "have/known",
+        "had/known"
+      ],
+      "correct": 2,
+      "explanation": "Hỏi về khoảng thời gian kéo dài tới hiện tại với 'How long' và câu trả lời 'For five months'. Động từ 'know' là động từ trạng thái không dùng tiếp diễn, nên chia Hiện tại hoàn thành ('have you known')."
+    },
+    {
+      "id": 6,
+      "part": "Verb Tenses",
+      "question": "I usually ______ to school by bus.",
+      "options": [
+        "went",
+        "am going",
+        "go",
+        "have gone"
+      ],
+      "correct": 2,
+      "explanation": "Trạng từ tần suất 'usually' diễn tả thói quen lặp đi lặp lại ở hiện tại, chủ ngữ 'I' đi với động từ nguyên thể 'go'."
+    },
+    {
+      "id": 7,
+      "part": "Verb Tenses",
+      "question": "Yesterday morning I ______ up at 6.30.",
+      "options": [
+        "got",
+        "get",
+        "was getting",
+        "had got"
+      ],
+      "correct": 0,
+      "explanation": "'Yesterday morning' (sáng hôm qua) là mốc thời gian xác định trong quá khứ, diễn tả một sự việc đã xảy ra và kết thúc nên dùng Quá khứ đơn ('got')."
+    },
+    {
+      "id": 8,
+      "part": "Verb Tenses",
+      "question": "Please don’t make so much noise. I ______.",
+      "options": [
+        "studying",
+        "study",
+        "am studying",
+        "studied"
+      ],
+      "correct": 2,
+      "explanation": "Lời đề nghị/mệnh lệnh 'Please don’t make so much noise' chỉ hành động đang diễn ra ngay lúc nói -> chia thì Hiện tại tiếp diễn ('am studying')."
+    },
+    {
+      "id": 9,
+      "part": "Verb Tenses",
+      "question": "Water ______ at 100 degrees Celsius.",
+      "options": [
+        "boils",
+        "boiled",
+        "is boiling",
+        "will boil"
+      ],
+      "correct": 0,
+      "explanation": "Diễn tả một chân lý, sự thật hiển nhiên khoa học (nước sôi ở 100 độ C) -> chia thì Hiện tại đơn, chủ ngữ 'Water' không đếm được nên thêm 's' ('boils')."
+    },
+    {
+      "id": 10,
+      "part": "Verb Tenses",
+      "question": "It is raining now. It began raining two hours ago. So it ______ for two hours.",
+      "options": [
+        "rains",
+        "is raining",
+        "has rained",
+        "rained"
+      ],
+      "correct": 2,
+      "explanation": "Hành động bắt đầu từ 2 tiếng trước và hiện tại vẫn đang diễn ra, có 'for two hours' -> dùng thì Hiện tại hoàn thành ('has rained')."
+    },
+    {
+      "id": 11,
+      "part": "Verb Tenses",
+      "question": "______ you ______ out last night?",
+      "options": [
+        "Did/go",
+        "Do/go",
+        "Have/gone",
+        "Were/going"
+      ],
+      "correct": 0,
+      "explanation": "Dấu hiệu 'last night' (tối qua) là mốc thời gian quá khứ -> câu hỏi Quá khứ đơn mượn trợ động từ 'Did' + V nguyên thể ('Did you go')."
+    },
+    {
+      "id": 12,
+      "part": "Verb Tenses",
+      "question": "This house ______ 35,000 pounds in 1980.",
+      "options": [
+        "costs",
+        "cost",
+        "had cost",
+        "was cost"
+      ],
+      "correct": 1,
+      "explanation": "'in 1980' xác định thời điểm trong quá khứ. Động từ bất quy tắc 'cost' có dạng quá khứ V2 vẫn là 'cost'."
+    },
+    {
+      "id": 13,
+      "part": "Verb Tenses",
+      "question": "While Tom ______ tennis, Ann ______ a shower.",
+      "options": [
+        "played/took",
+        "playing/taking",
+        "was playing/was taking",
+        "was play/was take"
+      ],
+      "correct": 2,
+      "explanation": "Liên từ 'While' diễn tả hai hành động diễn ra song song cùng lúc trong quá khứ -> cả hai vế đều chia Quá khứ tiếp diễn ('was playing / was taking')."
+    },
+    {
+      "id": 14,
+      "part": "Verb Tenses",
+      "question": "Mike is playing chess. How long ______ he ______?",
+      "options": [
+        "did/play",
+        "is/playing",
+        "has/play",
+        "has/been playing"
+      ],
+      "correct": 3,
+      "explanation": "Mike đang chơi cờ và câu hỏi muốn nhấn mạnh tính liên tục của hành động kéo dài đến hiện tại ('How long') -> dùng thì Hiện tại hoàn thành tiếp diễn ('has he been playing')."
+    },
+    {
+      "id": 15,
+      "part": "Verb Tenses",
+      "question": "When they ______ in the garden, the phone ______.",
+      "options": [
+        "worked/was ringing",
+        "were working/rang",
+        "worked/rang",
+        "work/rings"
+      ],
+      "correct": 1,
+      "explanation": "Hành động đang diễn ra trong quá khứ dùng Quá khứ tiếp diễn ('were working'), hành động ngắn xen vào dùng Quá khứ đơn ('rang')."
+    },
+    {
+      "id": 16,
+      "part": "Verb Tenses",
+      "question": "After they ______ their breakfast, they ______ shopping yesterday.",
+      "options": [
+        "have/go",
+        "had had/go",
+        "had/had gone",
+        "had had/went"
+      ],
+      "correct": 3,
+      "explanation": "Hành động ăn sáng xảy ra trước hành động đi mua sắm trong quá khứ. Cấu trúc: After + Quá khứ hoàn thành ('had had'), Quá khứ đơn ('went')."
+    },
+    {
+      "id": 17,
+      "part": "Verb Tenses",
+      "question": "They ______ tea when the doorbell ______.",
+      "options": [
+        "have/is ringing",
+        "were having/rang",
+        "had had/ rang",
+        "having/ringing"
+      ],
+      "correct": 1,
+      "explanation": "Hành động đang uống trà (kéo dài) thì chuông cửa reo (xen vào) -> vế đầu Quá khứ tiếp diễn ('were having'), vế sau Quá khứ đơn ('rang')."
+    },
+    {
+      "id": 18,
+      "part": "Verb Tenses",
+      "question": "Father ______ his pipe while mother ______ a magazine.",
+      "options": [
+        "smoked/read",
+        "had smoked/read",
+        "was smoking/was reading",
+        "smoking/reading"
+      ],
+      "correct": 2,
+      "explanation": "Hai hành động diễn ra đồng thời, song song trong quá khứ với liên từ 'while' -> chia Quá khứ tiếp diễn cho cả hai vế ('was smoking / was reading')."
+    },
+    {
+      "id": 19,
+      "part": "Verb Tenses",
+      "question": "When I ______ into the office, my boss ______ for me.",
+      "options": [
+        "came/was waiting",
+        "was coming/waited",
+        "had come/waited",
+        "came/waiting"
+      ],
+      "correct": 0,
+      "explanation": "Hành động sếp đang đợi diễn ra từ trước và đang tiếp diễn ('was waiting') thì hành động tôi bước vào xen ngang ('came')."
+    },
+    {
+      "id": 20,
+      "part": "Verb Tenses",
+      "question": "When I ______ Brian, he ______ a taxi.",
+      "options": [
+        "see/drives",
+        "see/was driving",
+        "saw/was driving",
+        "saw/is driving"
+      ],
+      "correct": 2,
+      "explanation": "Khi tôi nhìn thấy Brian ('saw' - hành động xen vào trong quá khứ), anh ấy đang lái xe taxi ('was driving' - hành động đang tiếp diễn)."
+    },
+    {
+      "id": 21,
+      "part": "Verb Tenses",
+      "question": "When he ______, we ______ dinner.",
+      "options": [
+        "arrived/having",
+        "arrived/were having",
+        "was arriving/had",
+        "had arrived/had"
+      ],
+      "correct": 1,
+      "explanation": "Khi anh ấy đến nơi ('arrived' - quá khứ đơn), chúng tôi đang ăn tối ('were having' - quá khứ tiếp diễn)."
+    },
+    {
+      "id": 22,
+      "part": "Verb Tenses",
+      "question": "While they ______ chess, we ______ the shopping.",
+      "options": [
+        "playing/doing",
+        "were playing/doing",
+        "played/did",
+        "were playing/were doing"
+      ],
+      "correct": 3,
+      "explanation": "Hai hành động song song cùng diễn ra trong quá khứ kết nối bởi 'While' -> chia Quá khứ tiếp diễn cho cả hai ('were playing / were doing')."
+    },
+    {
+      "id": 23,
+      "part": "Verb Tenses",
+      "question": "They ______ football when the lights in the stadium ______ out.",
+      "options": [
+        "were playing/went",
+        "played/was going",
+        "were playing/ was going",
+        "playing/went"
+      ],
+      "correct": 0,
+      "explanation": "Đang chơi bóng đá ('were playing' - tiếp diễn) thì đèn vụt tắt ('went out' - quá khứ đơn xen vào)."
+    },
+    {
+      "id": 24,
+      "part": "Verb Tenses",
+      "question": "While George and John ______ their room, she ______ the ironing.",
+      "options": [
+        "cleaning/doing",
+        "were cleaning/was doing",
+        "were cleaning/doing",
+        "cleaning/was doing"
+      ],
+      "correct": 1,
+      "explanation": "Hai hành động diễn ra song song trong quá khứ: George và John đang dọn phòng ('were cleaning'), cô ấy đang ủi đồ ('was doing')."
+    },
+    {
+      "id": 25,
+      "part": "Verb Tenses",
+      "question": "Today is Thursday and she ______ late twice this week. She ______ late yesterday and on Monday.",
+      "options": [
+        "is/was",
+        "has been/is",
+        "has been/was",
+        "has been/had been"
+      ],
+      "correct": 2,
+      "explanation": "'this week' là khoảng thời gian chưa kết thúc (hôm nay mới là thứ Năm) -> dùng Hiện tại hoàn thành ('has been'). Vế sau có thời điểm xác định đã kết thúc 'yesterday and on Monday' -> dùng Quá khứ đơn ('was')."
+    },
+    {
+      "id": 26,
+      "part": "Verb Tenses",
+      "question": "He ______ in the same house since 1975.",
+      "options": [
+        "has lived",
+        "is living",
+        "lived",
+        "had lived"
+      ],
+      "correct": 0,
+      "explanation": "Dấu hiệu 'since 1975' (kể từ năm 1975) chỉ mốc thời gian bắt đầu trong quá khứ kéo dài đến hiện tại -> chia thì Hiện tại hoàn thành ('has lived')."
+    },
+    {
+      "id": 27,
+      "part": "Verb Tenses",
+      "question": "We ______ him since he ______ married.",
+      "options": [
+        "didn’t see/got",
+        "haven’t seen/got",
+        "don’t/get",
+        "hadn’t seen/got"
+      ],
+      "correct": 1,
+      "explanation": "Cấu trúc kinh điển với 'since': Mệnh đề chính chia Hiện tại hoàn thành ('haven’t seen') + since + Mệnh đề Quá khứ đơn ('got')."
+    },
+    {
+      "id": 28,
+      "part": "Verb Tenses",
+      "question": "It ______ for two hours and the ground is too wet to play tennis.",
+      "options": [
+        "is raining",
+        "had rained",
+        "has rained",
+        "was raining"
+      ],
+      "correct": 2,
+      "explanation": "Hành động mưa diễn ra suốt 2 tiếng ('for two hours') và để lại kết quả ở hiện tại ('the ground is too wet') -> dùng thì Hiện tại hoàn thành ('has rained')."
+    },
+    {
+      "id": 29,
+      "part": "Verb Tenses",
+      "question": "He ______ to HCMC last year and I ______ him since then.",
+      "options": [
+        "moved/didn’t see",
+        "moves/haven’t seen",
+        "moved/haven’t seen",
+        "moved/hadn’t seen"
+      ],
+      "correct": 2,
+      "explanation": "'last year' là mốc trong quá khứ -> Quá khứ đơn ('moved'). 'since then' (kể từ đó đến nay) -> Hiện tại hoàn thành ('haven’t seen')."
+    },
+    {
+      "id": 30,
+      "part": "Verb Tenses",
+      "question": "We ______ what to do with the money yet.",
+      "options": [
+        "not decide",
+        "didn’t decide",
+        "haven’t decided",
+        "hadn’t decided"
+      ],
+      "correct": 2,
+      "explanation": "Từ nhận biết 'yet' trong câu phủ định là dấu hiệu điển hình của thì Hiện tại hoàn thành -> 'haven’t decided'."
+    },
+    {
+      "id": 31,
+      "part": "Verb Tenses",
+      "question": "My father ______ as a teacher for thirty years.",
+      "options": [
+        "works",
+        "is working",
+        "worked",
+        "has worked"
+      ],
+      "correct": 3,
+      "explanation": "Hành động làm giáo viên kéo dài được 30 năm ('for thirty years') tính đến thời điểm hiện tại -> dùng Hiện tại hoàn thành ('has worked')."
+    },
+    {
+      "id": 32,
+      "part": "Verb Tenses",
+      "question": "He ______ to New York three times this year.",
+      "options": [
+        "had been",
+        "was",
+        "has been",
+        "is"
+      ],
+      "correct": 2,
+      "explanation": "Diễn tả số lần trải nghiệm ('three times') trong khoảng thời gian chưa kết thúc ('this year') -> dùng thì Hiện tại hoàn thành ('has been')."
+    },
+    {
+      "id": 33,
+      "part": "Verb Tenses",
+      "question": "I ______ how to dance when I ______ six years old.",
+      "options": [
+        "don’t know / was",
+        "didn’t know / am",
+        "didn’t know / was",
+        "haven’t known/was"
+      ],
+      "correct": 2,
+      "explanation": "Cả hai vế đều thuật lại trạng thái trong quá khứ khi tôi lên 6 tuổi ('when I was six years old') -> dùng Quá khứ đơn cho cả hai vế: 'didn’t know / was'."
+    },
+    {
+      "id": 34,
+      "part": "Verb Tenses",
+      "question": "Last month my brother ______ me his photos. He ______ me his photos every year.",
+      "options": [
+        "sends/sent",
+        "sent/sends",
+        "sent/sent",
+        "sends/sends"
+      ],
+      "correct": 1,
+      "explanation": "'Last month' chia Quá khứ đơn ('sent'). 'every year' chỉ thói quen lặp lại ở hiện tại -> chia Hiện tại đơn ngôi thứ ba số ít ('sends')."
+    },
+    {
+      "id": 35,
+      "part": "Verb Tenses",
+      "question": "Nam is a careful driver but yesterday he ______ carelessly.",
+      "options": [
+        "drove",
+        "had driven",
+        "drives",
+        "was driving"
+      ],
+      "correct": 0,
+      "explanation": "Có mốc thời gian 'yesterday' chỉ hành động xảy ra và kết thúc trong quá khứ -> chia Quá khứ đơn ('drove')."
+    },
+    {
+      "id": 36,
+      "part": "Verb Tenses",
+      "question": "Do you like swimming, Ba? – I ______ when I was a child but not now.",
+      "options": [
+        "do",
+        "did",
+        "have done",
+        "had done"
+      ],
+      "correct": 1,
+      "explanation": "Vế 'when I was a child but not now' nói về sở thích trong quá khứ nhưng nay không còn nữa -> dùng trợ động từ ở Quá khứ đơn thay thế cho động từ 'liked': 'did'."
+    },
+    {
+      "id": 37,
+      "part": "Verb Tenses",
+      "question": "I ______ her at the school gate yesterday.",
+      "options": [
+        "met",
+        "meet",
+        "had met",
+        "am meeting"
+      ],
+      "correct": 0,
+      "explanation": "'yesterday' là mốc thời gian quá khứ xác định -> chia động từ ở Quá khứ đơn: 'met'."
+    },
+    {
+      "id": 38,
+      "part": "Verb Tenses",
+      "question": "She ______ English when she was six years old.",
+      "options": [
+        "learned",
+        "has learned",
+        "is learning",
+        "had learned"
+      ],
+      "correct": 0,
+      "explanation": "'when she was six years old' chỉ một thời điểm/giai đoạn cụ thể đã qua trong quá khứ -> dùng Quá khứ đơn ('learned')."
+    },
+    {
+      "id": 39,
+      "part": "Verb Tenses",
+      "question": "I don’t remember where and when I ______ her.",
+      "options": [
+        "meet",
+        "had met",
+        "met",
+        "have met"
+      ],
+      "correct": 2,
+      "explanation": "Hành động gặp mặt ('met') đã xảy ra tại một thời điểm/địa điểm xác định trong quá khứ ('when and where') nên dùng Quá khứ đơn."
+    },
+    {
+      "id": 40,
+      "part": "Verb Tenses",
+      "question": "They ______ to know each other for more than ten years.",
+      "options": [
+        "get",
+        "got",
+        "have got",
+        "had got"
+      ],
+      "correct": 2,
+      "explanation": "Cụm 'get to know' đi kèm khoảng thời gian kéo dài tới hiện tại 'for more than ten years' -> chia thì Hiện tại hoàn thành: 'have got'."
+    },
+    {
+      "id": 41,
+      "part": "Verb Tenses",
+      "question": "______ you ______ that film yet?",
+      "options": [
+        "Do/see",
+        "Have/seen",
+        "Did/see",
+        "Had/seen"
+      ],
+      "correct": 1,
+      "explanation": "Dấu hiệu 'yet' trong câu hỏi nghi vấn chỉ trải nghiệm tính tới hiện tại -> chia Hiện tại hoàn thành: 'Have you seen'."
+    },
+    {
+      "id": 42,
+      "part": "Verb Tenses",
+      "question": "I ______ the film with my friends last week.",
+      "options": [
+        "watched",
+        "watch",
+        "have watched",
+        "had watched"
+      ],
+      "correct": 0,
+      "explanation": "'last week' (tuần trước) xác định thời gian đã qua trong quá khứ -> chia Quá khứ đơn: 'watched'."
+    },
+    {
+      "id": 43,
+      "part": "Verb Tenses",
+      "question": "He ______ up at five every morning.",
+      "options": [
+        "is getting",
+        "got",
+        "gets",
+        "was getting"
+      ],
+      "correct": 2,
+      "explanation": "'every morning' chỉ thói quen lặp đi lặp lại hàng ngày -> dùng thì Hiện tại đơn, chủ ngữ 'He' ngôi thứ 3 số ít nên động từ thêm 's' ('gets')."
+    },
+    {
+      "id": 44,
+      "part": "Verb Tenses",
+      "question": "______ she ______ in Hue at the moment?",
+      "options": [
+        "Does/live",
+        "Is/living",
+        "Did/live",
+        "Was/living"
+      ],
+      "correct": 1,
+      "explanation": "Dấu hiệu 'at the moment' (ngay lúc này) chỉ sự việc tạm thời đang diễn ra -> dùng thì Hiện tại tiếp diễn: 'Is she living'."
+    },
+    {
+      "id": 45,
+      "part": "Verb Tenses",
+      "question": "He usually ______ her at weekend but now he ______ in bed because of his severe illness.",
+      "options": [
+        "visits/stays",
+        "visits/staying",
+        "visited/stays",
+        "visits/is staying"
+      ],
+      "correct": 3,
+      "explanation": "Vế 1 có 'usually' chỉ thói quen thường nhật -> Hiện tại đơn ('visits'). Vế 2 có 'now' chỉ sự việc đang diễn ra tạm thời ngay lúc này -> Hiện tại tiếp diễn ('is staying')."
+    },
+    {
+      "id": 46,
+      "part": "Verb Tenses",
+      "question": "Don’t make noise, children! Parents ______.",
+      "options": [
+        "sleep",
+        "are sleeping",
+        "were sleeping",
+        "slept"
+      ],
+      "correct": 1,
+      "explanation": "Câu mệnh lệnh gây chú ý 'Don’t make noise, children!' báo hiệu hành động đang diễn ra ngay lúc nói -> chia Hiện tại tiếp diễn: 'are sleeping'."
+    },
+    {
+      "id": 47,
+      "part": "Verb Tenses",
+      "question": "Why ______ you often ______ so much noise in the house?",
+      "options": [
+        "do/make",
+        "did/make",
+        "are/making",
+        "were/making"
+      ],
+      "correct": 0,
+      "explanation": "Trạng từ tần suất 'often' biểu thị thói quen ở hiện tại -> câu hỏi Hiện tại đơn: 'Why do you often make...?'"
+    },
+    {
+      "id": 48,
+      "part": "Verb Tenses",
+      "question": "What ______ he ______ before you came?",
+      "options": [
+        "does/do",
+        "had/do",
+        "had/done",
+        "has/done"
+      ],
+      "correct": 2,
+      "explanation": "Hành động xảy ra trước một hành động khác trong quá khứ ('before you came' - quá khứ đơn) phải chia ở Quá khứ hoàn thành ('had he done')."
+    },
+    {
+      "id": 49,
+      "part": "Verb Tenses",
+      "question": "While mum was watching TV, I ______ my homework.",
+      "options": [
+        "am doing",
+        "was doing",
+        "had done",
+        "has done"
+      ],
+      "correct": 1,
+      "explanation": "Hai hành động diễn ra đồng thời trong quá khứ kết nối bởi 'While' -> cùng chia Quá khứ tiếp diễn ('was watching' và 'was doing')."
+    },
+    {
+      "id": 50,
+      "part": "Verb Tenses",
+      "question": "At this time yesterday I ______ to music.",
+      "options": [
+        "listened",
+        "had listened",
+        "was listening",
+        "am listening"
+      ],
+      "correct": 2,
+      "explanation": "Có thời điểm chính xác trong quá khứ: 'At this time yesterday' (Vào giờ này ngày hôm qua) -> chia Quá khứ tiếp diễn ('was listening')."
+    },
+    {
+      "id": 51,
+      "part": "Verb Tenses",
+      "question": "What ______ he ______ at 4pm last Sunday?",
+      "options": [
+        "did/do",
+        "was/do",
+        "had/done",
+        "was/doing"
+      ],
+      "correct": 3,
+      "explanation": "Thời điểm cụ thể trong quá khứ: 'at 4pm last Sunday' -> chia câu hỏi ở thì Quá khứ tiếp diễn: 'was he doing'."
+    },
+    {
+      "id": 52,
+      "part": "Verb Tenses",
+      "question": "When I ______ a little girl, I used to climb trees and go swimming in the river with my friends.",
+      "options": [
+        "am",
+        "was",
+        "have been",
+        "had been"
+      ],
+      "correct": 1,
+      "explanation": "Mệnh đề chỉ thời gian trong quá khứ 'When I was a little girl' phù hợp với cấu trúc thói quen trong quá khứ 'used to + V'."
+    },
+    {
+      "id": 53,
+      "part": "Verb Tenses",
+      "question": "Last year he came here and ______ me to marry him but I ______ too young to get married.",
+      "options": [
+        "asked/was",
+        "asks/am",
+        "had asked/was",
+        "has asked/am"
+      ],
+      "correct": 0,
+      "explanation": "'Last year' chi phối toàn bộ chuỗi hành động quá khứ: anh ta đến ('came'), cầu hôn ('asked') và tôi lúc đó còn quá trẻ ('was')."
+    },
+    {
+      "id": 54,
+      "part": "Verb Tenses",
+      "question": "How long ______ you ______ novels?",
+      "options": [
+        "have/write",
+        "do/write",
+        "have/written",
+        "are/writing"
+      ],
+      "correct": 2,
+      "explanation": "'How long' dùng để hỏi về độ dài thời gian của hành động kéo dài đến hiện tại -> chia Hiện tại hoàn thành: 'have you written'."
+    },
+    {
+      "id": 55,
+      "part": "Verb Tenses",
+      "question": "______ you sometimes ______ out with friends?",
+      "options": [
+        "Are/going",
+        "Do/go",
+        "Have/gone",
+        "Did/go"
+      ],
+      "correct": 1,
+      "explanation": "Trạng từ tần suất 'sometimes' chỉ thói quen thỉnh thoảng làm gì ở hiện tại -> câu hỏi Hiện tại đơn: 'Do you sometimes go'."
+    },
+    {
+      "id": 56,
+      "part": "Verb Tenses",
+      "question": "I ______ a lot of badminton recently.",
+      "options": [
+        "play",
+        "have played",
+        "am playing",
+        "was playing"
+      ],
+      "correct": 1,
+      "explanation": "Dấu hiệu 'recently' (gần đây) là trạng từ đặc trưng của thì Hiện tại hoàn thành -> 'have played'."
+    },
+    {
+      "id": 57,
+      "part": "Verb Tenses",
+      "question": "When I ______ home, everyone ______ TV.",
+      "options": [
+        "got/watch",
+        "got/watching",
+        "get/was watch",
+        "got/was watching"
+      ],
+      "correct": 3,
+      "explanation": "Hành động mọi người đang xem TV ('was watching' - tiếp diễn) thì tôi về đến nhà ('got' - hành động xen vào trong quá khứ)."
+    },
+    {
+      "id": 58,
+      "part": "Verb Tenses",
+      "question": "We ______ your mother for ages.",
+      "options": [
+        "don’t see",
+        "haven’t seen",
+        "didn’t see",
+        "hadn’t seen"
+      ],
+      "correct": 1,
+      "explanation": "Cụm 'for ages' (đã từ rất lâu rồi) diễn tả khoảng thời gian kéo dài đến nay -> chia Hiện tại hoàn thành: 'haven’t seen'."
+    },
+    {
+      "id": 59,
+      "part": "Verb Tenses",
+      "question": "London ______ a lot since we first ______ to live here.",
+      "options": [
+        "changed/came",
+        "had changed/ came",
+        "has changed/ came",
+        "has changed/ come"
+      ],
+      "correct": 2,
+      "explanation": "Cấu trúc: S + have/has + V3/ed ('has changed') + since + S + V2/ed ('came')."
+    },
+    {
+      "id": 60,
+      "part": "Verb Tenses",
+      "question": "How many times ______ you ______ this film? – The first time.",
+      "options": [
+        "have/seen",
+        "did/see",
+        "do/see",
+        "had/seen"
+      ],
+      "correct": 0,
+      "explanation": "Hỏi về số lần trải nghiệm tính đến thời điểm hiện tại ('How many times') -> chia Hiện tại hoàn thành: 'have you seen'."
+    },
+    {
+      "id": 61,
+      "part": "Verb Tenses",
+      "question": "Who’s that? I ______ never ______ him before in my life.",
+      "options": [
+        "am/seeing",
+        "had/seen",
+        "have/seen",
+        "was/seeing"
+      ],
+      "correct": 2,
+      "explanation": "Diễn tả trải nghiệm từ trước tới nay chưa từng gặp ai ('never ... before in my life') liên hệ tới hiện tại ('Who’s that?') -> dùng Hiện tại hoàn thành: 'have never seen'."
+    },
+    {
+      "id": 62,
+      "part": "Verb Tenses",
+      "question": "They ______ just ______ a new fuel. It’s half the price of the petrol and much cleaner.",
+      "options": [
+        "had/discovered",
+        "have/discovered",
+        "are/discovering",
+        "were/ discovering"
+      ],
+      "correct": 1,
+      "explanation": "Trạng từ 'just' diễn tả hành động vừa mới xảy ra và để lại kết quả ở hiện tại -> dùng Hiện tại hoàn thành: 'have just discovered'."
+    },
+    {
+      "id": 63,
+      "part": "Verb Tenses",
+      "question": "My sister ______ married three times.",
+      "options": [
+        "is",
+        "was",
+        "has been",
+        "had been"
+      ],
+      "correct": 2,
+      "explanation": "Diễn tả số lần diễn ra của một sự việc tính đến thời điểm hiện tại ('three times') -> dùng Hiện tại hoàn thành: 'has been married'."
+    },
+    {
+      "id": 64,
+      "part": "Verb Tenses",
+      "question": "While she ______ on the phone, the children ______ fighting and broke a window.",
+      "options": [
+        "talked/start",
+        "talking/started",
+        "talked/started",
+        "was talking/started"
+      ],
+      "correct": 3,
+      "explanation": "Trong khi cô ấy đang nói chuyện điện thoại ('was talking' - quá khứ tiếp diễn), lũ trẻ bắt đầu đánh nhau và làm vỡ cửa sổ ('started' - quá khứ đơn xen vào)."
+    },
+    {
+      "id": 65,
+      "part": "Verb Tenses",
+      "question": "I ______ a lot of time travelling since I ______ this new job.",
+      "options": [
+        "spend/get",
+        "have spent/get",
+        "spent/got",
+        "have spent/got"
+      ],
+      "correct": 3,
+      "explanation": "Cấu trúc với 'since': Mệnh đề chính chia Hiện tại hoàn thành ('have spent') + since + Mệnh đề quá khứ đơn ('got')."
+    },
+    {
+      "id": 66,
+      "part": "Verb Tenses",
+      "question": "When I ______ at school, we all ______ Latin.",
+      "options": [
+        "was/study",
+        "am/study",
+        "was/studied",
+        "had been/studied"
+      ],
+      "correct": 2,
+      "explanation": "Kể lại một sự thật/thói quen trong quá khứ khi còn đi học -> cả hai vế đều dùng Quá khứ đơn: 'was / studied'."
+    },
+    {
+      "id": 67,
+      "part": "Verb Tenses",
+      "question": "After he ______ breakfast, he ______ down to write some letters.",
+      "options": [
+        "has/sat",
+        "has had/sits",
+        "had had/sits",
+        "had had/sat"
+      ],
+      "correct": 3,
+      "explanation": "Cấu trúc 'After': Hành động ăn sáng diễn ra trước chia Quá khứ hoàn thành ('had had'), hành động ngồi viết thư diễn ra sau chia Quá khứ đơn ('sat')."
+    },
+    {
+      "id": 68,
+      "part": "Verb Tenses",
+      "question": "I ______ a new house last year, but I ______ my old house yet, so at the moment I have two houses.",
+      "options": [
+        "buy/didn’t sell",
+        "bought/haven’t sold",
+        "bought/hadn’t sold",
+        "bought/ didn’t sell"
+      ],
+      "correct": 1,
+      "explanation": "'last year' chia Quá khứ đơn ('bought'). Vế sau có 'yet' và kết quả ở hiện tại ('so at the moment...') nên chia Hiện tại hoàn thành ('haven’t sold')."
+    },
+    {
+      "id": 69,
+      "part": "Verb Tenses",
+      "question": "He ______ you when he has the necessary information.",
+      "options": [
+        "will tell",
+        "told",
+        "tells",
+        "is telling"
+      ],
+      "correct": 0,
+      "explanation": "Sự hòa hợp thì tương lai: Mệnh đề trạng ngữ chỉ thời gian dùng Hiện tại đơn ('when he has...'), mệnh đề chính dùng Tương lai đơn ('will tell')."
+    },
+    {
+      "id": 70,
+      "part": "Verb Tenses",
+      "question": "When we ______ at the stadium last Sunday, the match ______ already ______.",
+      "options": [
+        "arrive/had/started",
+        "had arrived/started",
+        "arrived/has/started",
+        "arrived/had/started"
+      ],
+      "correct": 3,
+      "explanation": "Trận đấu đã bắt đầu trước khi chúng tôi đến sân vận động vào Chủ nhật trước. Hành động đến chia Quá khứ đơn ('arrived'), hành động bắt đầu trước chia Quá khứ hoàn thành ('had already started')."
+    },
+    {
+      "id": 71,
+      "part": "Verb Tenses",
+      "question": "We ______ our plan next week.",
+      "options": [
+        "started",
+        "will start",
+        "have started",
+        "will have started"
+      ],
+      "correct": 1,
+      "explanation": "'next week' (tuần tới) là trạng từ chỉ thời gian trong tương lai -> dùng thì Tương lai đơn: 'will start'."
+    },
+    {
+      "id": 72,
+      "part": "Verb Tenses",
+      "question": "They ______ a house by June next year.",
+      "options": [
+        "will build",
+        "are building",
+        "have built",
+        "will have built"
+      ],
+      "correct": 3,
+      "explanation": "Cấu trúc: 'by + mốc thời gian trong tương lai' (by June next year) diễn tả hành động sẽ hoàn tất trước thời điểm đó -> dùng thì Tương lai hoàn thành: 'will have built'."
+    },
+    {
+      "id": 73,
+      "part": "Verb Tenses",
+      "question": "I ______ here until he answers me.",
+      "options": [
+        "stay",
+        "will stay",
+        "am staying",
+        "have stayed"
+      ],
+      "correct": 1,
+      "explanation": "Hòa hợp thì: Mệnh đề trạng ngữ chỉ thời gian với 'until' chia Hiện tại đơn ('until he answers me'), mệnh đề chính biểu thị quyết định trong tương lai -> Tương lai đơn ('will stay')."
+    },
+    {
+      "id": 74,
+      "part": "Verb Tenses",
+      "question": "She ______ until you are ready.",
+      "options": [
+        "didn’t come",
+        "isn’t coming",
+        "won’t come",
+        "doesn’t come"
+      ],
+      "correct": 2,
+      "explanation": "Tương tự, mệnh đề sau 'until' dùng Hiện tại đơn ('until you are ready'), mệnh đề chính phủ định chia Tương lai đơn ('won’t come')."
+    },
+    {
+      "id": 75,
+      "part": "Verb Tenses",
+      "question": "The film ______ by the time we get there.",
+      "options": [
+        "ends",
+        "will end",
+        "is ending",
+        "will have ended"
+      ],
+      "correct": 3,
+      "explanation": "Cấu trúc: 'by the time + mệnh đề hiện tại đơn' (we get there) biểu thị hành động xảy ra và hoàn tất trước thời điểm đó trong tương lai -> dùng thì Tương lai hoàn thành ('will have ended')."
+    },
+    {
+      "id": 76,
+      "part": "Verb Tenses",
+      "question": "Tom ______ to Hanoi before.",
+      "options": [
+        "is never",
+        "was never",
+        "had never been",
+        "has never been"
+      ],
+      "correct": 3,
+      "explanation": "Dấu hiệu 'before' ở cuối câu diễn tả trải nghiệm từ trước tới nay chưa từng làm gì -> dùng thì Hiện tại hoàn thành: 'has never been'."
+    },
+    {
+      "id": 77,
+      "part": "Verb Tenses",
+      "question": "When we came to the stadium, the match ______.",
+      "options": [
+        "already begins",
+        "already began",
+        "had already begun",
+        "have already begun"
+      ],
+      "correct": 2,
+      "explanation": "Trận đấu đã bắt đầu trước thời điểm chúng tôi đến sân ('came' - quá khứ đơn) -> hành động diễn ra trước chia Quá khứ hoàn thành: 'had already begun'."
+    },
+    {
+      "id": 78,
+      "part": "Verb Tenses",
+      "question": "It was the first time I ______ such a beautiful girl.",
+      "options": [
+        "ever saw",
+        "had ever seen",
+        "have ever seen",
+        "ever see"
+      ],
+      "correct": 1,
+      "explanation": "Quy tắc cấu trúc: 'It is the first time + Present Perfect', nhưng khi mệnh đề chính ở quá khứ 'It was the first time...' thì mệnh đề sau phải lùi thì thành Quá khứ hoàn thành ('had ever seen')."
+    },
+    {
+      "id": 79,
+      "part": "Verb Tenses",
+      "question": "He ______ in this school before he ______ for England.",
+      "options": [
+        "taught/had left",
+        "had taught/left",
+        "taught/has left",
+        "has taught/left"
+      ],
+      "correct": 1,
+      "explanation": "Hành động dạy học xảy ra trước hành động rời đi sang Anh trong quá khứ ('before he left'). Hành động xảy ra trước chia Quá khứ hoàn thành ('had taught'), hành động sau chia Quá khứ đơn ('left')."
+    },
+    {
+      "id": 80,
+      "part": "Verb Tenses",
+      "question": "She ______ the gold medal in 1986.",
+      "options": [
+        "wins",
+        "had won",
+        "won",
+        "has won"
+      ],
+      "correct": 2,
+      "explanation": "Dấu hiệu thời gian xác định đã hoàn tất trong quá khứ 'in 1986' -> dùng thì Quá khứ đơn (V2 của 'win' là 'won')."
+    }
+  ]
+}

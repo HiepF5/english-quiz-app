@@ -1,0 +1,348 @@
+{
+  "id": "english-articles-quiz",
+  "title": "Luyện Tập Mạo Từ Trong Tiếng Anh (Articles: A, An, The, Zero Article)",
+  "description": "Bộ câu hỏi trắc nghiệm toàn diện về cách sử dụng mạo từ xác định (The), mạo từ không xác định (A/An) và trường hợp không dùng mạo từ (Zero Article).",
+  "level": "Intermediate (B1)",
+  "category": "Grammar & Vocabulary",
+  "timeLimitMinutes": 20,
+  "questions": [
+    {
+      "id": 1,
+      "part": "Articles",
+      "question": "I want ______ apple from that basket.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 1,
+      "explanation": "'apple' là danh từ đếm được số ít, được nhắc tới lần đầu (muốn lấy một quả táo bất kỳ trong giỏ) và bắt đầu bằng nguyên âm /æ/ nên dùng mạo từ 'an'."
+    },
+    {
+      "id": 2,
+      "part": "Articles",
+      "question": "Miss Lin speaks ______ Chinese.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 3,
+      "explanation": "Quy tắc ngữ pháp: Không dùng bất kỳ mạo từ nào (Zero Article / X) trước tên các thứ tiếng hoặc ngôn ngữ (ví dụ: English, Chinese, Vietnamese)."
+    },
+    {
+      "id": 3,
+      "part": "Articles",
+      "question": "One of the students said, “______ professor is late today”",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 2,
+      "explanation": "Người nói và các sinh viên trong lớp đều biết rõ vị giáo sư cụ thể đang được nhắc tới (giáo sư dạy môn/lớp hôm đó) nên dùng mạo từ xác định 'the'."
+    },
+    {
+      "id": 4,
+      "part": "Articles",
+      "question": "Eli likes to play ______ volleyball.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 3,
+      "explanation": "Không sử dụng mạo từ (Zero Article / X) trước tên các môn thể thao hay trò chơi vận động (play football, play volleyball, play tennis)."
+    },
+    {
+      "id": 5,
+      "part": "Articles",
+      "question": "I bought ______ umbrella to go out in the rain.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 1,
+      "explanation": "'umbrella' là danh từ đếm được số ít, được nhắc đến lần đầu và bắt đầu bằng một nguyên âm phát âm là /ʌ/ nên dùng mạo từ 'an'."
+    },
+    {
+      "id": 6,
+      "part": "Articles",
+      "question": "My daughter is learning to play ______ guitar at her school.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 2,
+      "explanation": "Quy tắc với nhạc cụ: Khi đi cùng động từ 'play' mang nghĩa chơi một nhạc cụ nào đó, bắt buộc phải dùng mạo từ xác định 'the' (play the guitar, play the piano)."
+    },
+    {
+      "id": 7,
+      "part": "Articles",
+      "question": "Please give me ______ pen that is on the counter.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 2,
+      "explanation": "Danh từ 'pen' đã được xác định cụ thể thông qua mệnh đề quan hệ đứng sau 'that is on the counter' (cái bút ở trên quầy), do đó phải dùng mạo từ xác định 'the'."
+    },
+    {
+      "id": 8,
+      "part": "Articles",
+      "question": "Albany is the capital of ______ New York state.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 3,
+      "explanation": "Không dùng mạo từ trước tên riêng của hầu hết các bang, tỉnh, thành phố hoặc quốc gia ở dạng đơn lẻ (New York state) -> chọn 'X'."
+    },
+    {
+      "id": 9,
+      "part": "Articles",
+      "question": "Our neighbour has ______ cat and ______ dog.",
+      "options": [
+        "a/ a",
+        "an/ a",
+        "the/ the",
+        "X/ X"
+      ],
+      "correct": 0,
+      "explanation": "Cả hai con vật đều là danh từ đếm được số ít, được nhắc tới lần đầu tiên với nghĩa 'một con mèo và một con chó', đồng thời bắt đầu bằng phụ âm (/k/ và /d/) -> dùng 'a/ a'."
+    },
+    {
+      "id": 10,
+      "part": "Articles",
+      "question": "______ ink in my pen is red.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 2,
+      "explanation": "'ink' là danh từ không đếm được, tuy nhiên ở đây đã được xác định rõ là 'mực ở trong cây bút của tôi' (in my pen) nên phải dùng mạo từ xác định 'the'."
+    },
+    {
+      "id": 11,
+      "part": "Articles",
+      "question": "It is ______ funniest book that I have ever read.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 2,
+      "explanation": "Bắt buộc dùng mạo từ 'the' trước các tính từ/trạng từ ở cấp so sánh nhất ('the funniest')."
+    },
+    {
+      "id": 12,
+      "part": "Articles",
+      "question": "Can anyone give me ______ hand, please because I have just fallen over?",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 0,
+      "explanation": "Cụm thành ngữ cố định (idiom): 'give somebody a hand' nghĩa là giúp đỡ ai đó một tay -> chọn 'a'."
+    },
+    {
+      "id": 13,
+      "part": "Articles",
+      "question": "She always said that when she grew up she wanted to be ______",
+      "options": [
+        "doctor",
+        "a doctor",
+        "the doctor",
+        "a doctors"
+      ],
+      "correct": 1,
+      "explanation": "Trong tiếng Anh, khi nói về nghề nghiệp của một cá nhân ở số ít sau các động từ như 'be/become', bắt buộc phải có mạo từ bất định 'a/an' -> 'a doctor'."
+    },
+    {
+      "id": 14,
+      "part": "Articles",
+      "question": "I have left my book in ______ kitchen and I would like you to get it for me.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 2,
+      "explanation": "Dùng mạo từ 'the' trước các phòng/vị trí cụ thể, quen thuộc trong ngôi nhà mà cả người nói và người nghe đều tự hiểu ngầm (the kitchen, the living room, the bathroom)."
+    },
+    {
+      "id": 15,
+      "part": "Articles",
+      "question": "Please meet me at the train station in ______ hour from now.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 1,
+      "explanation": "Từ 'hour' có âm 'h' là âm câm, phát âm bắt đầu bằng nguyên âm đôi /aʊ/ ('an hour') nên phải sử dụng mạo từ 'an'."
+    },
+    {
+      "id": 16,
+      "part": "Articles",
+      "question": "I like to watch tennis on the television. It is ______ very good game.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 0,
+      "explanation": "Cấu trúc định nghĩa/nhận xét một đối tượng đếm được số ít: 'It is a/an + (adj) + noun'. 'very' bắt đầu bằng phụ âm /v/ nên dùng mạo từ 'a'."
+    },
+    {
+      "id": 17,
+      "part": "Articles",
+      "question": "______ president of the United States will be visiting Australia next week.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 2,
+      "explanation": "Dùng 'the' trước chức danh lãnh đạo độc nhất của một quốc gia, tổ chức: 'the president of the United States' (Tổng thống Hoa Kỳ)."
+    },
+    {
+      "id": 18,
+      "part": "Articles",
+      "question": "July goes to ______ work on the bus.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 3,
+      "explanation": "Cụm từ cố định chỉ mục đích thông thường: 'go to work' (đi làm việc), không đi kèm với bất kỳ mạo từ nào -> chọn 'X'."
+    },
+    {
+      "id": 19,
+      "part": "Articles",
+      "question": "______ golf is my favourite sport. I play once or twice ______ week if I can, but I’m not ______ very good player.",
+      "options": [
+        "X/ a/ a",
+        "The/ a/ a",
+        "The/ the/ the",
+        "X/ a/ the"
+      ],
+      "correct": 0,
+      "explanation": "- 'golf': Tên môn thể thao không dùng mạo từ (X).\n- 'once or twice a week': Cụm chỉ tần suất/đơn vị thời gian dùng 'a week' (mỗi tuần).\n- 'a very good player': Mô tả danh từ đếm được số ít (một người chơi giỏi) dùng 'a'."
+    },
+    {
+      "id": 20,
+      "part": "Articles",
+      "question": "I don’t know what to do. It’s ______ problem.",
+      "options": [
+        "quite difficult",
+        "a quite difficult",
+        "quite a difficult",
+        "the quite difficult"
+      ],
+      "correct": 2,
+      "explanation": "Cấu trúc nhấn mạnh với 'quite': 'quite + a/an + adj + singular noun' (ví dụ: 'quite a difficult problem' = một vấn đề khá khó khăn). Lưu ý mạo từ 'a' đứng sau 'quite'."
+    },
+    {
+      "id": 21,
+      "part": "Articles",
+      "question": "______ starts at seven o’clock.",
+      "options": [
+        "School",
+        "A school",
+        "The school",
+        "The schools"
+      ],
+      "correct": 0,
+      "explanation": "Khi 'school' được dùng để chỉ hoạt động học tập nói chung (giờ học bắt đầu) chứ không phải tòa nhà cụ thể, ta dùng dạng không mạo từ: 'School starts at seven o’clock'."
+    },
+    {
+      "id": 22,
+      "part": "Articles",
+      "question": "We can finish the rest of the bread for ______ breakfast.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 3,
+      "explanation": "Không dùng mạo từ trước tên các bữa ăn thường ngày (breakfast, lunch, dinner) khi không có tính từ bổ nghĩa phía trước -> chọn 'X'."
+    },
+    {
+      "id": 23,
+      "part": "Articles",
+      "question": "Nigel opened a drawer and took out ______",
+      "options": [
+        "photos",
+        "a photos",
+        "some photos",
+        "some photo"
+      ],
+      "correct": 2,
+      "explanation": "'photos' là danh từ số nhiều; khi diễn tả 'lấy ra vài bức ảnh' thì dùng từ chỉ số lượng bất định 'some' đi với danh từ số nhiều ('some photos'). 'a' không đi với số nhiều, và 'some' không đi với danh từ đếm được số ít 'photo'."
+    },
+    {
+      "id": 24,
+      "part": "Articles",
+      "question": "We need to protect ______ environment from pollution.",
+      "options": [
+        "some",
+        "a",
+        "an",
+        "the"
+      ],
+      "correct": 3,
+      "explanation": "Từ 'environment' khi chỉ môi trường tự nhiên quanh chúng ta là một đối tượng duy nhất, quen thuộc và bao quát nên luôn đi với mạo từ xác định: 'the environment'."
+    },
+    {
+      "id": 25,
+      "part": "Articles",
+      "question": "We often go to school by ______ bicycle.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "X"
+      ],
+      "correct": 3,
+      "explanation": "Cấu trúc phương tiện giao thông: 'by + phương tiện' (by car, by bus, by bicycle) thì không bao giờ có mạo từ xen vào giữa -> chọn 'X'."
+    },
+    {
+      "id": 26,
+      "part": "Articles",
+      "question": "There was ______ accident yesterday at ______ corner of ______ street.",
+      "options": [
+        "an / the / the",
+        "a / the / the",
+        "an / a / the",
+        "the / the / the"
+      ],
+      "correct": 0,
+      "explanation": "- 'accident' đếm được số ít, nhắc tới lần đầu và bắt đầu bằng nguyên âm /æ/ -> 'an accident'.\n- 'corner' được xác định bởi ngữ cảnh góc đường cụ thể -> 'the corner'.\n- 'street' là con phố cụ thể nơi tai nạn xảy ra -> 'the street'."
+    }
+  ]
+}
