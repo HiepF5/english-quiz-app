@@ -11,12 +11,13 @@ import {
   Award,
   RotateCcw,
   Sun,
-  Moon
+  Moon,
+  ListOrdered
 } from 'lucide-react';
 
 interface NavbarProps {
-  activeModule: 'quiz' | 'translation';
-  onChangeModule: (module: 'quiz' | 'translation') => void;
+  activeModule: 'quiz' | 'translation' | 'ordering';
+  onChangeModule: (module: 'quiz' | 'translation' | 'ordering') => void;
   onImportJson: (content: string, filename: string) => void;
   onOpenTemplateModal: () => void;
   onOpenPasteModal: () => void;
@@ -77,7 +78,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </h1>
               </div>
               <p className="text-xs opacity-75 font-medium line-clamp-1 max-w-xs sm:max-w-md">
-                {currentQuizTitle ? `Đang làm: ${currentQuizTitle}` : 'Luyện thi Trắc nghiệm & Luyện Dịch AI Chấm Điểm'}
+                {currentQuizTitle ? `Đang làm: ${currentQuizTitle}` : 'Trắc Nghiệm • Sắp Xếp Câu • Luyện Dịch AI'}
               </p>
             </div>
           </div>
@@ -96,6 +97,18 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <HelpCircle className="w-3.5 h-3.5" />
               <span>Trắc Nghiệm JSON</span>
+            </button>
+
+            <button
+              onClick={() => onChangeModule('ordering')}
+              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                activeModule === 'ordering'
+                  ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md'
+                  : 'opacity-70 hover:opacity-100'
+              }`}
+            >
+              <ListOrdered className="w-3.5 h-3.5 text-amber-300" />
+              <span>Sắp Xếp Câu (Aptis)</span>
             </button>
 
             <button

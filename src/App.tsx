@@ -11,13 +11,14 @@ import { GithubPushModal } from './components/GithubPushModal';
 import { JsonPasteModal } from './components/JsonPasteModal';
 import { AiConverterModal } from './components/AiConverterModal';
 import { TranslationWorkspace } from './components/TranslationWorkspace';
+import { OrderingWorkspace } from './components/OrderingWorkspace';
 
 // Dynamically import ALL .json files inside src/data/ at build time via Vite glob
 const jsonModules = import.meta.glob('./data/*.json', { eager: true });
 const DEFAULT_QUIZZES: QuizSet[] = Object.values(jsonModules).map((mod: any) => mod.default || mod).filter((quiz: any) => quiz && Array.isArray(quiz.questions));
 
 export const App: React.FC = () => {
-  // Active Module tab state: 'quiz' | 'translation'
+  // Active Module tab state: 'quiz' | 'translation' | 'ordering'
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     return (localStorage.getItem('app_theme') as 'light' | 'dark') || 'light';
   });
@@ -35,7 +36,7 @@ export const App: React.FC = () => {
     setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
   };
 
-  const [activeModule, setActiveModule] = useState<'quiz' | 'translation'>('quiz');
+  const [activeModule, setActiveModule] = useState<'quiz' | 'translation' | 'ordering'>('ordering');
 
   // Load custom saved quizzes from localStorage on initial render
   const [quizSets, setQuizSets] = useState<QuizSet[]>(() => {
@@ -280,7 +281,10 @@ export const App: React.FC = () => {
 
       {/* Main Container */}
       <main className="flex-1 pb-16">
-        {activeModule === 'translation' ? (
+        {activeModule === 'ordering' ? (
+          /* Sentence Reordering Workspace (Aptis Part 2) */
+          <OrderingWorkspace />
+        ) : activeModule === 'translation' ? (
           /* Translation Practice & AI Grading Workspace */
           <TranslationWorkspace />
         ) : !activeQuiz ? (
