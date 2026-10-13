@@ -12,12 +12,13 @@ import {
   RotateCcw,
   Sun,
   Moon,
-  ListOrdered
+  ListOrdered,
+  LayoutList
 } from 'lucide-react';
 
 interface NavbarProps {
-  activeModule: 'quiz' | 'translation' | 'ordering';
-  onChangeModule: (module: 'quiz' | 'translation' | 'ordering') => void;
+  activeModule: 'quiz' | 'translation' | 'ordering' | 'headings';
+  onChangeModule: (module: 'quiz' | 'translation' | 'ordering' | 'headings') => void;
   onImportJson: (content: string, filename: string) => void;
   onOpenTemplateModal: () => void;
   onOpenPasteModal: () => void;
@@ -78,7 +79,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </h1>
               </div>
               <p className="text-xs opacity-75 font-medium line-clamp-1 max-w-xs sm:max-w-md">
-                {currentQuizTitle ? `Đang làm: ${currentQuizTitle}` : 'Trắc Nghiệm • Sắp Xếp Câu • Luyện Dịch AI'}
+                {currentQuizTitle ? `Đang làm: ${currentQuizTitle}` : 'Trắc Nghiệm • Sắp Xếp Câu • Nối Tiêu Đề • Luyện Dịch'}
               </p>
             </div>
           </div>
@@ -89,7 +90,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           }`}>
             <button
               onClick={() => onChangeModule('quiz')}
-              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
                 activeModule === 'quiz'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'opacity-70 hover:opacity-100'
@@ -101,26 +102,38 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             <button
               onClick={() => onChangeModule('ordering')}
-              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
                 activeModule === 'ordering'
                   ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md'
                   : 'opacity-70 hover:opacity-100'
               }`}
             >
               <ListOrdered className="w-3.5 h-3.5 text-amber-300" />
-              <span>Sắp Xếp Câu (Aptis)</span>
+              <span>Sắp Xếp Câu</span>
+            </button>
+
+            <button
+              onClick={() => onChangeModule('headings')}
+              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                activeModule === 'headings'
+                  ? 'bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md'
+                  : 'opacity-70 hover:opacity-100'
+              }`}
+            >
+              <LayoutList className="w-3.5 h-3.5 text-emerald-300" />
+              <span>Nối Tiêu Đề (Part 3)</span>
             </button>
 
             <button
               onClick={() => onChangeModule('translation')}
-              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
                 activeModule === 'translation'
                   ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-md'
                   : 'opacity-70 hover:opacity-100'
               }`}
             >
               <Languages className="w-3.5 h-3.5 text-amber-300" />
-              <span>Luyện Dịch & AI Chấm</span>
+              <span>Luyện Dịch</span>
             </button>
           </div>
         </div>

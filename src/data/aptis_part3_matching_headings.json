@@ -1,0 +1,283 @@
+{
+  "id": "aptis-part3-matching-headings",
+  "title": "Aptis Reading Part 3: Nối Tiêu Đề & Tóm Tắt Đoạn Văn (3 Bài Thi)",
+  "description": "Bài tập đọc hiểu ghép tiêu đề Aptis ESOL Part 3: Four-Day Work Week, Mountain Summits, Emmy Noether & Women in Mathematics. Kèm mẹo nhớ từ khóa 1 từ.",
+  "level": "B2 - C1",
+  "category": "Aptis Reading Part 3",
+  "timeLimitMinutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "part": "The Arrival of the Four-Day Work Week [Đoạn 1]",
+      "question": "[Đoạn 1] For many decades, working five or even six days a week was seen as the norm. However, with modern technology, changing values, and a greater focus on work-life balance, that lifestyle is becoming less relevant. Employees and companies alike are beginning to question whether spending most of one’s week at work is still necessary or productive.\n\n-> Chọn tiêu đề tóm tắt đúng nhất cho đoạn văn trên (Mẹo: Linh - Life):",
+      "options": [
+        "A way of life now out of date",
+        "Benefits for employees",
+        "Undesirable financial consequences",
+        "Unforeseen challenges for employees"
+      ],
+      "correct": 0,
+      "explanation": "Từ khóa cốt lõi: 'lifestyle', 'work-life balance' -> Mẹo 1 từ: Life -> Tiêu đề: A way of life now out of date (Linh - Life)."
+    },
+    {
+      "id": 2,
+      "part": "The Arrival of the Four-Day Work Week [Đoạn 2]",
+      "question": "[Đoạn 2] Supporters of the four-day work week argue that it offers numerous advantages for workers. With an extra day off, employees have more time to rest, spend with family, or pursue hobbies. Studies show that many people become more focused and productive when working fewer hours, leading to better performance and increased job satisfaction.\n\n-> Chọn tiêu đề tóm tắt đúng nhất cho đoạn văn trên (Mẹo: Buộc - Benefits):",
+      "options": [
+        "Undesirable financial consequences",
+        "Benefits for employees",
+        "Difficult to give up old habits",
+        "Alternative solutions worth considering"
+      ],
+      "correct": 1,
+      "explanation": "Từ khóa cốt lõi: 'advantages for workers', 'benefits' -> Mẹo 1 từ: Benefits -> Tiêu đề: Benefits for employees (Buộc - Benefits)."
+    },
+    {
+      "id": 3,
+      "part": "The Arrival of the Four-Day Work Week [Đoạn 3]",
+      "question": "[Đoạn 3] Despite its appeal, a shorter work week can also lead to financial strain. Businesses may face higher costs due to hiring additional staff or adjusting pay structures. Some industries—especially those that rely on hourly workers—might struggle to maintain profit margins, potentially resulting in reduced services or even layoffs.\n\n-> Chọn tiêu đề tóm tắt đúng nhất cho đoạn văn trên (Mẹo: Phải - finance):",
+      "options": [
+        "Benefits for employees",
+        "Unfair for some people",
+        "Undesirable financial consequences",
+        "Unforeseen challenges for employees"
+      ],
+      "correct": 2,
+      "explanation": "Từ khóa cốt lõi: 'financial strain', 'higher costs', 'profit margins' -> Mẹo 1 từ: Finance -> Tiêu đề: Undesirable financial consequences (Phải - finance)."
+    },
+    {
+      "id": 4,
+      "part": "The Arrival of the Four-Day Work Week [Đoạn 4]",
+      "question": "[Đoạn 4] Not all employees adjust easily to a new schedule. Some may find it difficult to complete the same amount of work in fewer days, which can increase pressure and stress. In fast-paced industries, unexpected challenges may arise, such as scheduling conflicts or missed deadlines, making the transition more complicated than expected.\n\n-> Chọn tiêu đề tóm tắt đúng nhất cho đoạn văn trên (Mẹo: Có - Challenges):",
+      "options": [
+        "A way of life now out of date",
+        "Difficult to give up old habits",
+        "Alternative solutions worth considering",
+        "Unforeseen challenges for employees"
+      ],
+      "correct": 3,
+      "explanation": "Từ khóa cốt lõi: 'unexpected challenges', 'pressure and stress' -> Mẹo 1 từ: Challenges -> Tiêu đề: Unforeseen challenges for employees (Có - Challenges)."
+    },
+    {
+      "id": 5,
+      "part": "The Arrival of the Four-Day Work Week [Đoạn 5]",
+      "question": "[Đoạn 5] For those who have followed a traditional work schedule for years, switching to a four-day week can be uncomfortable. Old habits and routines are hard to break, and some individuals may resist change even if it’s beneficial. It often takes time and support to help people adapt to a new way of working.\n\n-> Chọn tiêu đề tóm tắt đúng nhất cho đoạn văn trên (Mẹo: Được - Difficult):",
+      "options": [
+        "Difficult to give up old habits",
+        "Unfair for some people",
+        "Benefits for employees",
+        "Undesirable financial consequences"
+      ],
+      "correct": 0,
+      "explanation": "Từ khóa cốt lõi: 'hard to break', 'old habits and routines' -> Mẹo 1 từ: Difficult -> Tiêu đề: Difficult to give up old habits (Được - Difficult)."
+    },
+    {
+      "id": 6,
+      "part": "The Arrival of the Four-Day Work Week [Đoạn 6]",
+      "question": "[Đoạn 6] Although the four-day week sounds ideal for many, it might not be fair to everyone. For example, essential workers, healthcare staff, or those in hospitality may not have the option to reduce their hours. This could create inequality between different groups of employees and cause tension in the workplace.\n\n-> Chọn tiêu đề tóm tắt đúng nhất cho đoạn văn trên (Mẹo: Phúc - People):",
+      "options": [
+        "Unfair for some people",
+        "A way of life now out of date",
+        "Unforeseen challenges for employees",
+        "Alternative solutions worth considering"
+      ],
+      "correct": 0,
+      "explanation": "Từ khóa cốt lõi: 'not be fair to everyone', 'some people' -> Mẹo 1 từ: People -> Tiêu đề: Unfair for some people (Phúc - People)."
+    },
+    {
+      "id": 7,
+      "part": "The Arrival of the Four-Day Work Week [Đoạn 7]",
+      "question": "[Đoạn 7] Rather than applying a four-day week to all companies, experts suggest looking at flexible solutions. Some propose allowing employees to choose their working days, while others support shorter daily hours. These alternatives can offer similar benefits without disrupting businesses that rely on traditional schedules.\n\n-> Chọn tiêu đề tóm tắt đúng nhất cho đoạn văn trên (Mẹo: Sao - Solution):",
+      "options": [
+        "Undesirable financial consequences",
+        "Alternative solutions worth considering",
+        "Benefits for employees",
+        "Difficult to give up old habits"
+      ],
+      "correct": 1,
+      "explanation": "Từ khóa cốt lõi: 'flexible solutions', 'alternatives' -> Mẹo 1 từ: Solution -> Tiêu đề: Alternative solutions worth considering (Sao - Solution)."
+    },
+    {
+      "id": 8,
+      "part": "Mountain Summits [Đoạn 1]",
+      "question": "[Đoạn 1] Even before the nineteenth century, mountains had always exerted a powerful attraction on travelers. They captivated visitors largely because of their natural beauty and the sense of awe inspired by dramatic landscapes. For early explorers, climbing to the summit was primarily about enjoyment and wonder, rather than proving personal strength. In contrast, today the peak is no longer seen merely as a scenic viewpoint but as a highly symbolic destination. Reaching the top has increasingly come to represent success, endurance, and a once-in-a-lifetime accomplishment that many people aspire to achieve.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Mai - mountains):",
+      "options": [
+        "Our changing the definition of mountains",
+        "A unique sense of achievement",
+        "The wrong priority",
+        "A disturbing revelation"
+      ],
+      "correct": 0,
+      "explanation": "Từ khóa cốt lõi: 'changing the definition of mountains' -> Mẹo 1 từ: Mountains -> Tiêu đề: Our changing the definition of mountains (Mai - mountains)."
+    },
+    {
+      "id": 9,
+      "part": "Mountain Summits [Đoạn 2]",
+      "question": "[Đoạn 2] For a large number of climbers, conquering a mountain summit embodies profound personal significance. The 'summit' is often interpreted as a metaphor for success in life, a clear representation of overcoming barriers and pushing human limits. The physical obstacles encountered on the climb mirror psychological struggles, which makes the achievement deeply rewarding. Over time, mountaineering has evolved into a cultural practice where people challenge themselves for adventure, resilience, and self-affirmation. Consequently, the scenery or encounters along the trail have become secondary to the psychological triumph of standing at the very top.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Anh - achievement):",
+      "options": [
+        "The wrong priority",
+        "A unique sense of achievement",
+        "A focus on sustainability",
+        "A more intimate relationship"
+      ],
+      "correct": 1,
+      "explanation": "Từ khóa cốt lõi: 'achievement deeply rewarding', 'psychological triumph' -> Mẹo 1 từ: Achievement -> Tiêu đề: A unique sense of achievement (Anh - achievement)."
+    },
+    {
+      "id": 10,
+      "part": "Mountain Summits [Đoạn 3]",
+      "question": "[Đoạn 3] Mountaineering as a celebrated 'achievement' has been amplified by the phenomenon of the 'summit selfie.' Even in the pre-digital era, photographs at the summit were considered valuable mementos, proof of the effort invested. What began as a way to preserve memories gradually turned into an opportunity to broadcast one’s success to others. The rise of social media has intensified this trend, as climbers are often more concerned with curating a perfect image than immersing themselves in the experience. In many cases, the journey itself becomes overshadowed by the simple desire to showcase the fact of having reached the summit.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Phải - Publicizing):",
+      "options": [
+        "A disturbing revelation",
+        "A more intimate relationship",
+        "Mountaineering as a celebrated 'achievement' / Publicizing success",
+        "Our changing the definition of mountains"
+      ],
+      "correct": 2,
+      "explanation": "Từ khóa cốt lõi: 'broadcast one's success to others', 'publicize', 'summit selfie' -> Mẹo 1 từ: Publicizing -> Tiêu đề: Publicizing success (Phải - Publicizing)."
+    },
+    {
+      "id": 11,
+      "part": "Mountain Summits [Đoạn 4]",
+      "question": "[Đoạn 4] From this picture, critics conclude that the summit has become an end in itself, often detached from the original spirit of exploration. Many people now seem to disregard the multifaceted nature of mountaineering, treating it simply as a fashionable objective. For some, neither the genuine process of climbing nor the authentic arrival at the peak matters, as their motivation is largely external. Furthermore, the preparation that should accompany such an endeavor—rigorous physical training, budgeting, and logistical planning—is frequently underestimated. As a result, the experience risks being superficial, emphasizing prestige rather than true engagement with the mountain.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Wa - wrong):",
+      "options": [
+        "The wrong priority",
+        "A unique sense of achievement",
+        "A focus on sustainability",
+        "A disturbing revelation"
+      ],
+      "correct": 0,
+      "explanation": "Từ khóa cốt lõi: 'wrong priority', 'superficial prestige' -> Mẹo 1 từ: Wrong -> Tiêu đề: The wrong priority (Wa - wrong)."
+    },
+    {
+      "id": 12,
+      "part": "Mountain Summits [Đoạn 5]",
+      "question": "[Đoạn 5] The photograph captured by Thomas in 1993 exposed the unsettling reality of contemporary mountaineering. It depicted hundreds of people queuing in a single file line to reach the summit-an image that contrasts starkly with the solitude once associated with genuine exploration. The climbers’ expressions reflected exhaustion and frustration rather than determination or joy, suggesting that the climb had lost its authenticity. Once published online, the image provoked widespread debate about whether the meaning of summiting had been reduced to mere spectacle. For many critics, it illustrated how the essence of mountaineering has been compromised by mass participation and social validation.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Đó - disturbing):",
+      "options": [
+        "Our changing the definition of mountains",
+        "A focus on sustainability",
+        "A disturbing revelation",
+        "A more intimate relationship"
+      ],
+      "correct": 2,
+      "explanation": "Từ khóa cốt lõi: 'unsettling reality', 'disturbing image' -> Mẹo 1 từ: Disturbing -> Tiêu đề: A disturbing revelation (Đó - disturbing)."
+    },
+    {
+      "id": 13,
+      "part": "Mountain Summits [Đoạn 6]",
+      "question": "[Đoạn 6] One of the most urgent debates surrounding contemporary mountaineering concerns sustainability. Popular climbing destinations often suffer from waste accumulation, environmental degradation, and disrespect for local ecosystems. Many activists argue that this trend-driven approach to climbing must be reconsidered in order to preserve fragile landscapes. Responsibility, they emphasize, should be integral to every stage of the climbing journey, from preparation to leaving the site clean. Ultimately, they believe that the summit can only be considered 'worthwhile' if the path toward it contributes positively to both the environment and the climber’s personal growth.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Sớm - sustainability):",
+      "options": [
+        "A unique sense of achievement",
+        "A focus on sustainability",
+        "The wrong priority",
+        "A more intimate relationship"
+      ],
+      "correct": 1,
+      "explanation": "Từ khóa cốt lõi: 'sustainability', 'environmental degradation' -> Mẹo 1 từ: Sustainability -> Tiêu đề: A focus on sustainability (Sớm - sustainability)."
+    },
+    {
+      "id": 14,
+      "part": "Mountain Summits [Đoạn 7]",
+      "question": "[Đoạn 7] Perhaps the time has come to reassess our perspective on climbing and return to its more authentic roots. Instead of pursuing mountains solely for recognition, individuals could rediscover the joy of walking, observing, and slowing down. In her autobiography, Cherke described how hiking offered her moments of reflection and a deeper connection with the natural world. Such experiences remind us that mountains provide not only physical challenges but also opportunities for serenity and contemplation. By cultivating a more intimate relationship with nature, climbing may once again regain its balance between personal fulfillment and environmental respect.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Rồi - Relationship):",
+      "options": [
+        "A more intimate relationship",
+        "Our changing the definition of mountains",
+        "A disturbing revelation",
+        "The wrong priority"
+      ],
+      "correct": 0,
+      "explanation": "Từ khóa cốt lõi: 'intimate relationship with nature', 'deeper connection' -> Mẹo 1 từ: Relationship -> Tiêu đề: A more intimate relationship (Rồi - Relationship)."
+    },
+    {
+      "id": 15,
+      "part": "Famous Female Mathematician – Emmy Noether [Đoạn 1]",
+      "question": "[Đoạn 1] In 2014, Maryam Mirzakhani achieved something unexpected–she won the Fields Medal, becoming the first woman ever to receive it. It was a landmark moment in the history of mathematics, yet public reaction was mixed. Much of the media attention focused more on her being a woman than on the substance of her mathematical work. Comparisons with male predecessors sometimes implied her success was less significant. This raised the question: do science and math still implicitly belong to men?\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Ông - obscures):",
+      "options": [
+        "Gender obscures achievements",
+        "Acknowledging achievement of a pioneer",
+        "Men unfairly credited",
+        "A long career showing exceptional ability"
+      ],
+      "correct": 0,
+      "explanation": "Từ khóa cốt lõi: 'obscures achievements', 'focused more on her being a woman' -> Mẹo 1 từ: Obscures -> Tiêu đề: Gender obscures achievements (Ông - obscures)."
+    },
+    {
+      "id": 16,
+      "part": "Famous Female Mathematician – Emmy Noether [Đoạn 2]",
+      "question": "[Đoạn 2] Even before Maryam, women have made noteworthy contributions to mathematics. Maria Gaetana Agnesi, an 18th-century Italian scholar, was the first to author a complete calculus text and to receive a university professorship in mathematics. Her work laid foundations in algebra, calculus, and analytical methods. Agnesi’s institutionally sanctioned success showed that precedent for women’s excellence existed far earlier than modern discourse often acknowledges.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Pio - pioneer):",
+      "options": [
+        "Labels can change perspective",
+        "Attempting to create a gender balance",
+        "Acknowledging achievement of a pioneer",
+        "Uniformity is as a disadvantage"
+      ],
+      "correct": 2,
+      "explanation": "Từ khóa cốt lõi: 'pioneer', 'first to author a complete calculus text' -> Mẹo 1 từ: Pioneer -> Tiêu đề: Acknowledging achievement of a pioneer (Pio - pioneer)."
+    },
+    {
+      "id": 17,
+      "part": "Famous Female Mathematician – Emmy Noether [Đoạn 3]",
+      "question": "[Đoạn 3] Philippa Garrett Fawcett is another such example. In 1890, she scored highest in the Cambridge Mathematical Tripos–more than 13% above the next-highest student–but was denied the formal title of Senior Wrangler because that distinction was reserved only for men. Although she was widely praised and her result was publicly known, she did not receive the official honour. Her case illustrates how institutional practices sidelined women, even when they clearly surpassed the norms. Society applauded her, but did not grant her equal status.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Muốn - men):",
+      "options": [
+        "A long career showing exceptional ability",
+        "Men unfairly credited",
+        "Gender obscures achievements",
+        "Labels can change perspective"
+      ],
+      "correct": 1,
+      "explanation": "Từ khóa cốt lõi: 'distinction reserved only for men', 'men unfairly credited' -> Mẹo 1 từ: Men -> Tiêu đề: Men unfairly credited (Muốn - men)."
+    },
+    {
+      "id": 18,
+      "part": "Famous Female Mathematician – Emmy Noether [Đoạn 4]",
+      "question": "[Đoạn 4] Mary Cartwright had a mathematical career spanning over six decades. Her work in nonlinear differential equations laid the groundwork for chaos theory, influencing both mathematics and engineering. Despite the challenges faced by women in academia during her time, she maintained a consistent output of high-quality research throughout her life.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: có - career):",
+      "options": [
+        "Uniformity is as a disadvantage",
+        "Attempting to create a gender balance",
+        "Acknowledging achievement of a pioneer",
+        "A long career showing exceptional ability"
+      ],
+      "correct": 3,
+      "explanation": "Từ khóa cốt lõi: 'career spanning over six decades' -> Mẹo 1 từ: Career -> Tiêu đề: A long career showing exceptional ability (có - career)."
+    },
+    {
+      "id": 19,
+      "part": "Famous Female Mathematician – Emmy Noether [Đoạn 5]",
+      "question": "[Đoạn 5] When female mathematicians are described as 'women geniuses' or 'female prodigies,' the gender label, while well-intended, often implies that excellence is rare among women. Such terms, though celebratory, can unintentionally reinforce the idea that women’s success in mathematics is unusual, rather than simply the result of talent and hard work.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Lon - labels):",
+      "options": [
+        "Labels can change perspective",
+        "Gender obscures achievements",
+        "Men unfairly credited",
+        "Uniformity is as a disadvantage"
+      ],
+      "correct": 0,
+      "explanation": "Từ khóa cốt lõi: 'gender label', 'labels can change perspective' -> Mẹo 1 từ: Labels -> Tiêu đề: Labels can change perspective (Lon - labels)."
+    },
+    {
+      "id": 20,
+      "part": "Famous Female Mathematician – Emmy Noether [Đoạn 6]",
+      "question": "[Đoạn 6] Recognition from awards and institutions has only recently begun to address the imbalance. Historically, major scientific prizes were almost exclusively awarded to men. But as awareness of gender bias has grown, some institutions have introduced policies to ensure women are given fair consideration – for example by selecting women for award shortlists or imposing minimum numbers. These steps have had effects, though critics ask whether they might lead to 'tokenism' or whether merit is being compromised. Still, many argue that without these interventions, equality cannot be realized.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Bia - balance):",
+      "options": [
+        "A long career showing exceptional ability",
+        "Attempting to create a gender balance",
+        "Acknowledging achievement of a pioneer",
+        "Uniformity is as a disadvantage"
+      ],
+      "correct": 1,
+      "explanation": "Từ khóa cốt lõi: 'address the imbalance', 'gender balance' -> Mẹo 1 từ: Balance -> Tiêu đề: Attempting to create a gender balance (Bia - balance)."
+    },
+    {
+      "id": 21,
+      "part": "Famous Female Mathematician – Emmy Noether [Đoạn 7]",
+      "question": "[Đoạn 7] In efforts to level the playing field, some institutions have implemented standardized criteria for admissions or research evaluation. However, such uniform methods can sometimes ignore the diverse paths and challenges faced by individuals, particularly women balancing academic and societal expectations. A one-size-fits-all approach may not always foster true equity. Traditions of male dominance continue to influence science and education. Studies confirm that having diverse voices brings more creativity, more robust ideas, better science. When women are excluded or under-recognised, we lose potential breakthroughs. Deep-seated cultural assumptions slow change. For progress, society must act-through education, policy, and cultural change to value ability over gender.\n\n-> Chọn tiêu đề tóm tắt đúng nhất (Mẹo: Uống - Uniformity):",
+      "options": [
+        "Gender obscures achievements",
+        "Men unfairly credited",
+        "Labels can change perspective",
+        "Uniformity is as a disadvantage"
+      ],
+      "correct": 3,
+      "explanation": "Từ khóa cốt lõi: 'uniform methods', 'uniformity disadvantage' -> Mẹo 1 từ: Uniformity -> Tiêu đề: Uniformity is as a disadvantage (Uống - Uniformity)."
+    }
+  ]
+}
