@@ -5,6 +5,9 @@ export interface Question {
   options: string[];
   correct: number;
   explanation: string;
+  passage?: string;
+  passageVi?: string;
+  mnemonicHint?: string;
 }
 
 export interface QuizSet {

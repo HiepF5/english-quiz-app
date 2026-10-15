@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { Question, QuizMode } from '../types/quiz';
-import { Volume2, Bookmark, CheckCircle2, XCircle, HelpCircle } from 'lucide-react';
+import { Volume2, Bookmark, CheckCircle2, XCircle, HelpCircle, BookOpen, ChevronDown, ChevronUp, Sparkles, Languages } from 'lucide-react';
 
 interface QuizCardProps {
   question: Question;
@@ -21,6 +21,9 @@ export const QuizCard: React.FC<QuizCardProps> = ({
 }) => {
   const [isBookmarked, setIsBookmarked] = useState(false);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+  const [isPassageOpen, setIsPassageOpen] = useState(true);
+  const [showVietnamesePassage, setShowVietnamesePassage] = useState(false);
+  const [showMnemonic, setShowMnemonic] = useState(false);
 
   const optionLabels = ['A', 'B', 'C', 'D'];
 
@@ -90,10 +93,97 @@ export const QuizCard: React.FC<QuizCardProps> = ({
         </div>
       </div>
 
+      {/* Reading Passage Box (if question contains passage) */}
+      {question.passage && (
+        <div className="rounded-xl border border-indigo-500/30 bg-slate-950/70 overflow-hidden shadow-inner">
+          <div className="flex flex-wrap items-center justify-between gap-2 px-3.5 py-2.5 bg-slate-800/80 border-b border-slate-800">
+            <button
+              onClick={() => setIsPassageOpen(!isPassageOpen)}
+              className="flex items-center space-x-2 text-xs font-bold text-indigo-300 hover:text-indigo-200 transition"
+            >
+              <BookOpen className="w-3.5 h-3.5 text-indigo-400" />
+              <span>Đoạn văn bài đọc (4 Nhân vật)</span>
+              {isPassageOpen ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+            </button>
+
+            <div className="flex items-center space-x-2">
+              {question.passageVi && (
+                <button
+                  type="button"
+                  onClick={() => setShowVietnamesePassage(!showVietnamesePassage)}
+                  className={`text-[11px] px-2.5 py-1 rounded-lg font-medium border transition flex items-center space-x-1 ${
+                    showVietnamesePassage
+                      ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40 shadow-sm'
+                      : 'bg-slate-800 text-slate-400 border-slate-700 hover:text-slate-200'
+                  }`}
+                  title="Bật/Tắt dịch song ngữ Tiếng Việt"
+                >
+                  <Languages className="w-3 h-3" />
+                  <span>{showVietnamesePassage ? '🇻🇳 Song ngữ Bật' : '🇬🇧 Tiếng Anh'}</span>
+                </button>
+              )}
+
+              {question.mnemonicHint && (
+                <button
+                  type="button"
+                  onClick={() => setShowMnemonic(!showMnemonic)}
+                  className={`text-[11px] px-2.5 py-1 rounded-lg font-medium border transition flex items-center space-x-1 ${
+                    showMnemonic
+                      ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-sm'
+                      : 'bg-slate-800 text-slate-400 border-slate-700 hover:text-slate-200'
+                  }`}
+                  title="Hiện mẹo ghi nhớ nhanh"
+                >
+                  <Sparkles className="w-3 h-3 text-amber-400" />
+                  <span>Mẹo</span>
+                </button>
+              )}
+            </div>
+          </div>
+
+          {isPassageOpen && (
+            <div className="p-4 space-y-3 text-xs sm:text-sm max-h-80 overflow-y-auto leading-relaxed">
+              {/* If mnemonic is toggled */}
+              {showMnemonic && question.mnemonicHint && (
+                <div className="p-3 rounded-lg bg-amber-500/10 border border-amber-500/25 text-amber-300 text-xs flex items-start space-x-2">
+                  <Sparkles className="w-4 h-4 shrink-0 text-amber-400 mt-0.5" />
+                  <div>
+                    <span className="font-bold">Mẹo nhớ câu này: </span>
+                    <span>{question.mnemonicHint}</span>
+                  </div>
+                </div>
+              )}
+
+              {/* Render passage content */}
+              <div className="whitespace-pre-line text-slate-300">
+                {showVietnamesePassage ? (
+                  <div className="space-y-4">
+                    <div className="text-slate-200">{question.passage}</div>
+                    <div className="pt-3 border-t border-slate-800 text-slate-300 italic bg-slate-900/50 p-3.5 rounded-xl border border-slate-800/80">
+                      <div className="font-bold text-emerald-400 text-xs mb-1.5 not-italic flex items-center space-x-1.5">
+                        <Languages className="w-3.5 h-3.5" />
+                        <span>Bản dịch Tiếng Việt:</span>
+                      </div>
+                      <div className="whitespace-pre-line not-italic text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        {question.passageVi}
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div>{question.passage}</div>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Question Text */}
-      <p className="text-base sm:text-lg font-semibold text-slate-100 leading-relaxed">
-        {question.question}
-      </p>
+      <div className="pt-1">
+        <p className="text-base sm:text-lg font-bold text-slate-100 leading-relaxed whitespace-pre-line">
+          {question.question}
+        </p>
+      </div>
 
       {/* Options Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
@@ -157,13 +247,13 @@ export const QuizCard: React.FC<QuizCardProps> = ({
               : 'bg-rose-950/40 border-rose-500 text-rose-200'
           }`}
         >
-          <div className="flex items-center space-x-2 font-bold mb-1">
+          <div className="flex items-center space-x-2 font-bold mb-2">
             <HelpCircle className="w-4 h-4" />
             <span>
               {selectedOption === question.correct ? 'Chính xác!' : `Chưa chính xác. Đáp án đúng: ${optionLabels[question.correct]}`}
             </span>
           </div>
-          <p className="text-slate-300 mt-1">{question.explanation}</p>
+          <div className="text-slate-300 whitespace-pre-line leading-relaxed">{question.explanation}</div>
         </div>
       )}
 
