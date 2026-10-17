@@ -13,13 +13,16 @@ import { AiConverterModal } from './components/AiConverterModal';
 import { TranslationWorkspace } from './components/TranslationWorkspace';
 import { OrderingWorkspace } from './components/OrderingWorkspace';
 import { HeadingsWorkspace } from './components/HeadingsWorkspace';
+import { ListeningP3Workspace } from './components/ListeningP3Workspace';
+import { ListeningP4Workspace } from './components/ListeningP4Workspace';
+import type { AppModule } from './components/Navbar';
 
 // Dynamically import ALL .json files inside src/data/ at build time via Vite glob
 const jsonModules = import.meta.glob('./data/*.json', { eager: true });
 const DEFAULT_QUIZZES: QuizSet[] = Object.values(jsonModules).map((mod: any) => mod.default || mod).filter((quiz: any) => quiz && Array.isArray(quiz.questions));
 
 export const App: React.FC = () => {
-  // Active Module tab state: 'quiz' | 'translation' | 'ordering' | 'headings'
+  // Active Module tab state: 'quiz' | 'translation' | 'ordering' | 'headings' | 'listening_p3' | 'listening_p4'
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     return (localStorage.getItem('app_theme') as 'light' | 'dark') || 'light';
   });
@@ -37,7 +40,7 @@ export const App: React.FC = () => {
     setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
   };
 
-  const [activeModule, setActiveModule] = useState<'quiz' | 'translation' | 'ordering' | 'headings'>('headings');
+  const [activeModule, setActiveModule] = useState<AppModule>('listening_p3');
 
   // Load custom saved quizzes from localStorage on initial render
   const [quizSets, setQuizSets] = useState<QuizSet[]>(() => {
@@ -282,7 +285,13 @@ export const App: React.FC = () => {
 
       {/* Main Container */}
       <main className="flex-1 pb-16">
-        {activeModule === 'headings' ? (
+        {activeModule === 'listening_p3' ? (
+          /* Aptis Listening Part 3 Workspace (Man / Woman / Both) */
+          <ListeningP3Workspace />
+        ) : activeModule === 'listening_p4' ? (
+          /* Aptis Listening Part 4 Workspace (Monologues / Talks) */
+          <ListeningP4Workspace />
+        ) : activeModule === 'headings' ? (
           /* Matching Headings Workspace (Aptis Part 3) */
           <HeadingsWorkspace />
         ) : activeModule === 'ordering' ? (

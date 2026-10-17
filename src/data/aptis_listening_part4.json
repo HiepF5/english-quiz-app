@@ -1,0 +1,207 @@
+{
+  "topics": [
+    {
+      "id": "p4-tourism-growth",
+      "title": "Topic 1: The Impact of Rapid Tourism Growth",
+      "titleVi": "Chủ đề 1: Tác động của sự bùng nổ du lịch nhanh chóng",
+      "category": "Economy & Environment",
+      "audioUrl": "",
+      "speakers": [
+        {
+          "speakerId": 1,
+          "speakerName": "Speaker 1: Liam (Local Café Owner)",
+          "speakerGender": "man",
+          "topicStance": "Supports tourism because it brings vital revenue to local small shops",
+          "scriptEn": "Ten years ago, our coastal town was dying because traditional fishing industries had declined. When international travel guides started recommending our beaches, visitors arrived in droves. My café business has doubled its profits, allowing me to employ four full-time baristas and invest in locally roasted coffee beans. Of course, during peak summer months, parking spaces in the town centre are impossible to find, and noise levels stay high until midnight. But honestly, without the cash injected by foreign visitors, many family businesses here would have closed permanently.",
+          "scriptVi": "Mười năm trước, thị trấn ven biển của chúng tôi đang dần lụi tàn vì ngành đánh bắt cá truyền thống suy giảm. Khi các cẩm nang du lịch quốc tế bắt đầu giới thiệu bãi biển của chúng tôi, du khách đổ về nườm nượp. Quán cà phê của tôi đã tăng gấp đôi lợi nhuận, cho phép tôi thuê bốn nhân viên pha chế toàn thời gian và đầu tư vào hạt cà phê rang xay tại địa phương. Dĩ nhiên, trong những tháng cao điểm mùa hè, chỗ đỗ xe ở trung tâm thị trấn gần như không thể tìm thấy, và tiếng ồn kéo dài đến tận nửa đêm. Nhưng thành thật mà nói, nếu không có nguồn tiền từ du khách nước ngoài, nhiều doanh nghiệp gia đình ở đây đã phải đóng cửa vĩnh viễn.",
+          "questions": [
+            {
+              "id": "p4-t1-q1",
+              "question": "What was the main economic factor before tourism grew in Liam's town?",
+              "questionVi": "Yếu tố kinh tế chính trước khi du lịch phát triển ở thị trấn của Liam là gì?",
+              "options": [
+                "Heavy industrial manufacturing",
+                "A shrinking fishing economy",
+                "High technology start-ups"
+              ],
+              "optionsVi": [
+                "Sản xuất công nghiệp nặng",
+                "Nền kinh tế đánh bắt cá đang suy giảm",
+                "Các công ty khởi nghiệp công nghệ cao"
+              ],
+              "correct": 1,
+              "explanation": "Liam nêu rõ: 'traditional fishing industries had declined' (ngành đánh cá truyền thống đã suy giảm/thu hẹp).",
+              "keywordClue": "traditional fishing industries had declined"
+            },
+            {
+              "id": "p4-t1-q2",
+              "question": "What is Liam's attitude towards the summer inconvenience caused by tourists?",
+              "questionVi": "Thái độ của Liam đối với những bất tiện vào mùa hè do khách du lịch gây ra là gì?",
+              "options": [
+                "He thinks it is an acceptable trade-off for economic survival",
+                "He demands strict curfews to reduce night noise",
+                "He intends to sell his business and move away"
+              ],
+              "optionsVi": [
+                "Ông cho rằng đó là sự đánh đổi chấp nhận được để sinh tồn kinh tế",
+                "Ông yêu cầu giờ giới nghiêm nghiêm ngặt để giảm tiếng ồn đêm",
+                "Ông dự định bán quán và chuyển đi nơi khác"
+              ],
+              "correct": 0,
+              "explanation": "Liam thừa nhận đỗ xe khó và ồn ào ('parking impossible... noise high'), nhưng chốt lại: 'without the cash injected... businesses would have closed permanently', chứng tỏ ông coi đó là sự đánh đổi cần thiết (acceptable trade-off).",
+              "keywordClue": "without the cash injected... businesses would have closed"
+            }
+          ]
+        },
+        {
+          "speakerId": 2,
+          "speakerName": "Speaker 2: Elena (Environmental Campaigner)",
+          "speakerGender": "woman",
+          "topicStance": "Warns about environmental degradation and surging living costs for locals",
+          "scriptEn": "While business proprietors celebrate surging income, local residents like myself are bearing the hidden costs. Short-term holiday rentals have driven property prices so high that young nurses and schoolteachers can no longer afford to rent flats here. Furthermore, our delicate coastal nature reserve is suffering. Irresponsible campers leave plastic garbage along the dunes, and rare bird nesting sites are regularly disturbed. Economic progress should never come at the expense of our community's natural heritage.",
+          "scriptVi": "Trong khi các chủ doanh nghiệp ăn mừng thu nhập tăng vọt, người dân địa phương như tôi lại đang phải gánh chịu những chi phí vô hình. Việc cho thuê nhà nghỉ ngắn hạn đã đẩy giá bất động sản lên cao đến mức các y tá trẻ và giáo viên trường học không còn đủ khả năng thuê căn hộ ở đây nữa. Hơn nữa, khu bảo tồn thiên nhiên ven biển nhạy cảm của chúng tôi đang bị hủy hoại. Những người cắm trại thiếu ý thức xả rác thải nhựa dọc các cồn cát, và các bãi làm tổ của chim quý thường xuyên bị quấy rầy. Tiến bộ kinh tế không bao giờ được phép đánh đổi bằng di sản thiên nhiên của cộng đồng chúng tôi.",
+          "questions": [
+            {
+              "id": "p4-t1-q3",
+              "question": "According to Elena, what negative impact has short-term holiday rentals caused?",
+              "questionVi": "Theo Elena, tác động tiêu cực nào do việc cho thuê nhà nghỉ dưỡng ngắn hạn gây ra?",
+              "options": [
+                "Fewer tourists visiting the town",
+                "Shortage of hotel receptionists",
+                "Making housing unaffordable for essential workers"
+              ],
+              "optionsVi": [
+                "Ít khách du lịch ghé thăm thị trấn hơn",
+                "Thiếu hụt nhân viên lễ tân khách sạn",
+                "Khiến giá nhà ở vượt ngoài tầm với của các lao động thiết yếu (y tá, giáo viên)"
+              ],
+              "correct": 2,
+              "explanation": "Elena đề cập: 'driven property prices so high that young nurses and schoolteachers can no longer afford to rent flats here' (nurses and teachers là essential workers).",
+              "keywordClue": "young nurses and schoolteachers can no longer afford to rent"
+            },
+            {
+              "id": "p4-t1-q4",
+              "question": "What is Elena's main recommendation regarding nature protection?",
+              "questionVi": "Khuyến nghị chính của Elena về việc bảo vệ thiên nhiên là gì?",
+              "options": [
+                "Economic gains must not destroy natural heritage",
+                "Close all beaches to the public throughout the year",
+                "Increase taxes on local café owners"
+              ],
+              "optionsVi": [
+                "Lợi ích kinh tế không được phép phá hủy di sản thiên nhiên",
+                "Đóng cửa toàn bộ bãi biển với công chúng quanh năm",
+                "Tăng thuế đối với các chủ quán cà phê địa phương"
+              ],
+              "correct": 0,
+              "explanation": "Elena kết luận: 'Economic progress should never come at the expense of our community's natural heritage'.",
+              "keywordClue": "Economic progress should never come at the expense of our natural heritage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4-cashless-society",
+      "title": "Topic 2: The Transition to a Cashless Society",
+      "titleVi": "Chủ đề 2: Chuyển dịch sang xã hội không dùng tiền mặt",
+      "category": "Technology & Society",
+      "audioUrl": "",
+      "speakers": [
+        {
+          "speakerId": 1,
+          "speakerName": "Speaker 1: Marcus (Fintech Specialist)",
+          "speakerGender": "man",
+          "topicStance": "Promotes digital payments for speed, security, and lower crime rates",
+          "scriptEn": "Carrying paper notes and metal coins has become an obsolete habit. With smartphones and contactless bank cards, transactions happen in fractions of a second, drastically cutting queue times at supermarkets and subway turnstiles. From a safety perspective, carrying digital currency prevents street muggings and robberies because criminals cannot easily steal and spend encrypted mobile funds. Retailers also save billions each year by eliminating armored transport trucks and bank counting charges.",
+          "scriptVi": "Mang theo tiền giấy và tiền xu kim loại đã trở thành thói quen lỗi thời. Với điện thoại thông minh và thẻ ngân hàng không tiếp xúc, các giao dịch diễn ra chỉ trong vài tích tắc, cắt giảm đáng kể thời gian xếp hàng tại siêu thị và cổng soát vé tàu điện. Về góc độ an toàn, việc mang theo tiền điện tử giúp ngăn chặn nạn cướp giật trên đường phố vì tội phạm không thể dễ dàng lấy cắp và tiêu xài nguồn tiền di động đã được mã hóa. Các nhà bán lẻ cũng tiết kiệm hàng tỷ đô mỗi năm nhờ loại bỏ các xe tải bọc thép vận chuyển tiền và phí kiểm đếm của ngân hàng.",
+          "questions": [
+            {
+              "id": "p4-t2-q1",
+              "question": "What security benefit of digital payments does Marcus highlight?",
+              "questionVi": "Marcus nhấn mạnh lợi ích an ninh nào của thanh toán kỹ thuật số?",
+              "options": [
+                "Banks give free smartphones to shoppers",
+                "It reduces street robberies as digital money is encrypted",
+                "Shoppers never lose their physical wallets"
+              ],
+              "optionsVi": [
+                "Ngân hàng tặng điện thoại miễn phí cho người mua sắm",
+                "Giảm nạn cướp giật đường phố vì tiền điện tử được mã hóa",
+                "Người mua sắm không bao giờ làm rơi ví vật lý"
+              ],
+              "correct": 1,
+              "explanation": "Marcus nói: 'carrying digital currency prevents street muggings and robberies because criminals cannot easily steal and spend encrypted mobile funds'.",
+              "keywordClue": "prevents street muggings and robberies... encrypted mobile funds"
+            },
+            {
+              "id": "p4-t2-q2",
+              "question": "How do retailers save money in a cashless system according to Marcus?",
+              "questionVi": "Theo Marcus, các nhà bán lẻ tiết kiệm tiền như thế nào trong hệ thống không tiền mặt?",
+              "options": [
+                "By cutting back on cash transport and counting fees",
+                "By paying lower salaries to cashiers",
+                "By selling cheaper goods to regular customers"
+              ],
+              "optionsVi": [
+                "Bằng cách cắt giảm chi phí vận chuyển tiền bọc thép và phí kiểm đếm",
+                "Bằng cách trả lương thấp hơn cho nhân viên thu ngân",
+                "Bằng cách bán hàng rẻ hơn cho khách quen"
+              ],
+              "correct": 0,
+              "explanation": "Marcus nói: 'Retailers save billions each year by eliminating armored transport trucks and bank counting charges'.",
+              "keywordClue": "eliminating armored transport trucks and bank counting charges"
+            }
+          ]
+        },
+        {
+          "speakerId": 2,
+          "speakerName": "Speaker 2: Margaret (Community Volunteer for Seniors)",
+          "speakerGender": "woman",
+          "topicStance": "Expresses anxiety about excluding older people and privacy loss",
+          "scriptEn": "While tech enthusiasts cheer for cash-free shops, millions of elderly citizens are being unfairly marginalized. Many seniors in my community do not own expensive smartphones, and complex banking applications cause them genuine confusion and anxiety. When local bus operators or bakeries refuse cash, these vulnerable individuals feel completely locked out of society. On top of that, every single digital transaction creates a permanent digital footprint, meaning big tech companies track exactly where we go and what we purchase.",
+          "scriptVi": "Trong khi những người đam mê công nghệ reo hò vì các cửa hàng không dùng tiền mặt, thì hàng triệu công dân cao tuổi đang bị gạt ra ngoài lề một cách bất công. Nhiều người già trong cộng đồng của tôi không có điện thoại thông minh đắt tiền, và các ứng dụng ngân hàng phức tạp gây ra cho họ sự bối rối và lo lắng thực sự. Khi các hãng xe buýt địa phương hoặc tiệm bánh từ chối nhận tiền mặt, những người dễ bị tổn thương này cảm thấy hoàn toàn bị cô lập khỏi xã hội. Trên hết, mỗi một giao dịch số đều tạo ra dấu vết vĩnh viễn, đồng nghĩa với việc các tập đoàn công nghệ lớn theo dõi chính xác chúng ta đi đâu và mua sắm thứ gì.",
+          "questions": [
+            {
+              "id": "p4-t2-q3",
+              "question": "What primary problem do elderly individuals face with digital payment apps?",
+              "questionVi": "Vấn đề chủ yếu mà người lớn tuổi gặp phải với ứng dụng thanh toán số là gì?",
+              "options": [
+                "They find complex mobile apps confusing and stressful",
+                "They forget their home addresses",
+                "Banks refuse to open accounts for them"
+              ],
+              "optionsVi": [
+                "Họ thấy các ứng dụng di động phức tạp gây bối rối và căng thẳng",
+                "Họ quên địa chỉ nhà",
+                "Ngân hàng từ chối mở tài khoản cho họ"
+              ],
+              "correct": 0,
+              "explanation": "Margaret giải thích: 'complex banking applications cause them genuine confusion and anxiety' (confusion and anxiety = confusing and stressful).",
+              "keywordClue": "complex banking applications cause them genuine confusion and anxiety"
+            },
+            {
+              "id": "p4-t2-q4",
+              "question": "Besides social exclusion, what other concern does Margaret express?",
+              "questionVi": "Bên cạnh việc bị gạt ra khỏi xã hội, Margaret còn bày tỏ mối lo ngại nào khác?",
+              "options": [
+                "Poor internet speed across the country",
+                "Loss of personal privacy as tech firms track digital purchases",
+                "Counterfeit coins becoming more widespread"
+              ],
+              "optionsVi": [
+                "Tốc độ mạng internet kém trên cả nước",
+                "Mất quyền riêng tư cá nhân khi các công ty công nghệ theo dõi các giao dịch số",
+                "Tiền xu giả trở nên tràn lan hơn"
+              ],
+              "correct": 1,
+              "explanation": "Margaret nói: 'every single digital transaction creates a permanent digital footprint, meaning big tech companies track exactly where we go and what we purchase' (loss of personal privacy).",
+              "keywordClue": "big tech companies track exactly where we go and what we purchase"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

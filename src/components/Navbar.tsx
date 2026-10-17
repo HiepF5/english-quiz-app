@@ -13,12 +13,16 @@ import {
   Sun,
   Moon,
   ListOrdered,
-  LayoutList
+  LayoutList,
+  Headphones,
+  Mic
 } from 'lucide-react';
 
+export type AppModule = 'quiz' | 'translation' | 'ordering' | 'headings' | 'listening_p3' | 'listening_p4';
+
 interface NavbarProps {
-  activeModule: 'quiz' | 'translation' | 'ordering' | 'headings';
-  onChangeModule: (module: 'quiz' | 'translation' | 'ordering' | 'headings') => void;
+  activeModule: AppModule;
+  onChangeModule: (module: AppModule) => void;
   onImportJson: (content: string, filename: string) => void;
   onOpenTemplateModal: () => void;
   onOpenPasteModal: () => void;
@@ -134,6 +138,30 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <Languages className="w-3.5 h-3.5 text-amber-300" />
               <span>Luyện Dịch</span>
+            </button>
+
+            <button
+              onClick={() => onChangeModule('listening_p3')}
+              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                activeModule === 'listening_p3'
+                  ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md'
+                  : 'opacity-70 hover:opacity-100'
+              }`}
+            >
+              <Headphones className="w-3.5 h-3.5 text-cyan-300" />
+              <span>Nghe Part 3</span>
+            </button>
+
+            <button
+              onClick={() => onChangeModule('listening_p4')}
+              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                activeModule === 'listening_p4'
+                  ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-md'
+                  : 'opacity-70 hover:opacity-100'
+              }`}
+            >
+              <Mic className="w-3.5 h-3.5 text-pink-300" />
+              <span>Nghe Part 4</span>
             </button>
           </div>
         </div>
