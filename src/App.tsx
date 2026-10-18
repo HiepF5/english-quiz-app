@@ -13,13 +13,14 @@ import { AiConverterModal } from './components/AiConverterModal';
 import { TranslationWorkspace } from './components/TranslationWorkspace';
 import { OrderingWorkspace } from './components/OrderingWorkspace';
 import { HeadingsWorkspace } from './components/HeadingsWorkspace';
+import { OpinionWorkspace } from './components/OpinionWorkspace';
 
 // Dynamically import ALL .json files inside src/data/ at build time via Vite glob
 const jsonModules = import.meta.glob('./data/*.json', { eager: true });
 const DEFAULT_QUIZZES: QuizSet[] = Object.values(jsonModules).map((mod: any) => mod.default || mod).filter((quiz: any) => quiz && Array.isArray(quiz.questions));
 
 export const App: React.FC = () => {
-  // Active Module tab state: 'quiz' | 'translation' | 'ordering' | 'headings'
+  // Active Module tab state: 'quiz' | 'translation' | 'ordering' | 'headings' | 'opinion'
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     return (localStorage.getItem('app_theme') as 'light' | 'dark') || 'light';
   });
@@ -37,7 +38,36 @@ export const App: React.FC = () => {
     setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
   };
 
-  const [activeModule, setActiveModule] = useState<'quiz' | 'translation' | 'ordering' | 'headings'>('headings');
+  const [activeModule, setActiveModule] = useState<'quiz' | 'translation' | 'ordering' | 'headings' | 'opinion'>('opinion');
+
+  // Specialized state for Aptis Part 4 (4 people opinion matching) in quiz mode
+  const [quizHideNames, setQuizHideNames] = useState<boolean>(true);
+  const [quizTopicOrderMap, setQuizTopicOrderMap] = useState<Record<string, number[]>>({});
+
+  const handleShuffleQuizTopics = () => {
+    if (!activeQuiz) return;
+    const newMap: Record<string, number[]> = {};
+    activeQuiz.questions.forEach((q) => {
+      const topicKey = q.part ? q.part.split('[')[0].trim() : 'default';
+      if (!newMap[topicKey]) {
+        const arr = [0, 1, 2, 3];
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        newMap[topicKey] = arr;
+      }
+    });
+    setQuizTopicOrderMap(newMap);
+    setUserAnswers({});
+    setIsSubmitted(false);
+  };
+
+  const handleResetQuizTopicsOrder = () => {
+    setQuizTopicOrderMap({});
+    setUserAnswers({});
+    setIsSubmitted(false);
+  };
 
   // Load custom saved quizzes from localStorage on initial render
   const [quizSets, setQuizSets] = useState<QuizSet[]>(() => {
@@ -242,7 +272,11 @@ export const App: React.FC = () => {
     if (!activeQuiz) return 0;
     let score = 0;
     activeQuiz.questions.forEach((q, idx) => {
-      if (userAnswers[idx] === q.correct) {
+      const is4People = activeQuiz.id === 'aptis-reading-4-people-opinion-matching';
+      const topicKey = q.part ? q.part.split('[')[0].trim() : 'default';
+      const order = is4People && quizTopicOrderMap[topicKey] ? quizTopicOrderMap[topicKey] : null;
+      const targetCorrect = order ? order.indexOf(q.correct) : q.correct;
+      if (userAnswers[idx] === targetCorrect) {
         score++;
       }
     });
@@ -254,7 +288,10 @@ export const App: React.FC = () => {
     if (!activeQuiz) return {};
     const map: Record<number, number> = {};
     activeQuiz.questions.forEach((q, idx) => {
-      map[idx] = q.correct;
+      const is4People = activeQuiz.id === 'aptis-reading-4-people-opinion-matching';
+      const topicKey = q.part ? q.part.split('[')[0].trim() : 'default';
+      const order = is4People && quizTopicOrderMap[topicKey] ? quizTopicOrderMap[topicKey] : null;
+      map[idx] = order ? order.indexOf(q.correct) : q.correct;
     });
     return map;
   };
@@ -282,7 +319,10 @@ export const App: React.FC = () => {
 
       {/* Main Container */}
       <main className="flex-1 pb-16">
-        {activeModule === 'headings' ? (
+        {activeModule === 'opinion' ? (
+          /* Four People Opinion Matching Workspace (Aptis Part 4) */
+          <OpinionWorkspace />
+        ) : activeModule === 'headings' ? (
           /* Matching Headings Workspace (Aptis Part 3) */
           <HeadingsWorkspace />
         ) : activeModule === 'ordering' ? (
@@ -302,6 +342,7 @@ export const App: React.FC = () => {
             onOpenPasteModal={() => setIsPasteModalOpen(true)}
             onOpenAiModal={() => setIsAiModalOpen(true)}
             onOpenGithubModal={() => setIsGithubModalOpen(true)}
+            onOpenOpinionWorkspace={() => setActiveModule('opinion')}
             customQuizCount={quizSets.length - DEFAULT_QUIZZES.length}
           />
         ) : (
@@ -345,19 +386,71 @@ export const App: React.FC = () => {
                   </button>
                 </div>
 
+                {/* Specialized Controls for Aptis Part 4 4-People Opinion Matching */}
+                {activeQuiz.id === 'aptis-reading-4-people-opinion-matching' && (
+                  <div className="bg-gradient-to-r from-indigo-950/70 via-slate-900 to-purple-950/70 border border-indigo-500/30 p-4 rounded-2xl shadow-xl flex flex-wrap items-center justify-between gap-3">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <button
+                        onClick={() => setQuizHideNames(prev => !prev)}
+                        className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition ${
+                          quizHideNames
+                            ? 'bg-indigo-500/25 text-indigo-200 border-indigo-500/50'
+                            : 'bg-slate-800 text-slate-400 border-slate-700 hover:text-white'
+                        }`}
+                        title="Bật/Tắt chế độ ẩn tên"
+                      >
+                        <span>Chế độ ẩn tên ABCD: {quizHideNames ? 'BẬT' : 'Tắt (Hiện Tên)'}</span>
+                      </button>
+
+                      <button
+                        onClick={handleShuffleQuizTopics}
+                        className="px-3 py-1.5 rounded-xl text-xs font-bold bg-purple-600/30 hover:bg-purple-600/40 text-purple-200 border border-purple-500/40 transition active:scale-95"
+                        title="Đảo thứ tự các đoạn văn ngẫu nhiên"
+                      >
+                        <span>🔀 Đảo Thứ Tự Các Đoạn</span>
+                      </button>
+
+                      {Object.keys(quizTopicOrderMap).length > 0 && (
+                        <button
+                          onClick={handleResetQuizTopicsOrder}
+                          className="px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition"
+                          title="Khôi phục thứ tự ban đầu"
+                        >
+                          <span>🔄 Thứ tự gốc</span>
+                        </button>
+                      )}
+                    </div>
+
+                    <button
+                      onClick={() => setActiveModule('opinion')}
+                      className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white text-xs font-bold shadow-md shadow-indigo-500/20 transition flex items-center space-x-1.5"
+                    >
+                      <span>🚀 Mở Giao Diện Luyện Tập Part 4 Chuyên Sâu</span>
+                    </button>
+                  </div>
+                )}
+
                 {/* List of Questions */}
                 <div className="space-y-6">
-                  {activeQuiz.questions.map((q, idx) => (
-                    <QuizCard
-                      key={q.id || idx}
-                      question={q}
-                      index={idx}
-                      selectedOption={userAnswers[idx]}
-                      onSelectOption={(optIdx) => handleSelectOption(idx, optIdx)}
-                      isSubmitted={isSubmitted}
-                      mode={quizMode}
-                    />
-                  ))}
+                  {activeQuiz.questions.map((q, idx) => {
+                    const is4PeopleQuiz = activeQuiz.id === 'aptis-reading-4-people-opinion-matching';
+                    const topicKey = q.part ? q.part.split('[')[0].trim() : 'default';
+                    const currentTopicOrder = is4PeopleQuiz && quizTopicOrderMap[topicKey] ? quizTopicOrderMap[topicKey] : undefined;
+
+                    return (
+                      <QuizCard
+                        key={q.id || idx}
+                        question={q}
+                        index={idx}
+                        selectedOption={userAnswers[idx]}
+                        onSelectOption={(optIdx) => handleSelectOption(idx, optIdx)}
+                        isSubmitted={isSubmitted}
+                        mode={quizMode}
+                        hideNames={is4PeopleQuiz ? quizHideNames : false}
+                        paragraphOrder={currentTopicOrder}
+                      />
+                    );
+                  })}
                 </div>
 
               </div>

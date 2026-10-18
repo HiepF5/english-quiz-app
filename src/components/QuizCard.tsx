@@ -9,6 +9,8 @@ interface QuizCardProps {
   onSelectOption: (optionIndex: number) => void;
   isSubmitted: boolean;
   mode: QuizMode;
+  hideNames?: boolean;
+  paragraphOrder?: number[];
 }
 
 export const QuizCard: React.FC<QuizCardProps> = ({
@@ -17,7 +19,9 @@ export const QuizCard: React.FC<QuizCardProps> = ({
   selectedOption,
   onSelectOption,
   isSubmitted,
-  mode
+  mode,
+  hideNames = false,
+  paragraphOrder
 }) => {
   const [isBookmarked, setIsBookmarked] = useState(false);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
@@ -26,6 +30,70 @@ export const QuizCard: React.FC<QuizCardProps> = ({
   const [showMnemonic, setShowMnemonic] = useState(false);
 
   const optionLabels = ['A', 'B', 'C', 'D'];
+
+  // Handle paragraph shuffling and name hiding if passage has 4 blocks
+  const { displayPassageEn, displayPassageVi, displayOptions, effectiveCorrect } = React.useMemo(() => {
+    if (!question.passage || question.options.length !== 4) {
+      return {
+        displayPassageEn: question.passage,
+        displayPassageVi: question.passageVi,
+        displayOptions: question.options,
+        effectiveCorrect: question.correct
+      };
+    }
+
+    const enBlocks = question.passage.split('\n\n');
+    const viBlocks = question.passageVi ? question.passageVi.split('\n\n') : [];
+    const is4Blocks = enBlocks.length === 4;
+
+    if (!is4Blocks) {
+      return {
+        displayPassageEn: question.passage,
+        displayPassageVi: question.passageVi,
+        displayOptions: question.options,
+        effectiveCorrect: question.correct
+      };
+    }
+
+    const order = (paragraphOrder && paragraphOrder.length === 4) ? paragraphOrder : [0, 1, 2, 3];
+
+    // Build shuffled & masked passage text
+    const processedEn = order.map((origIdx, slotIdx) => {
+      const block = enBlocks[origIdx] || '';
+      const letter = optionLabels[slotIdx];
+      const origName = question.options[origIdx];
+      const body = block.replace(/^\[.*?\]\s*/, '');
+      const header = hideNames ? `[Đoạn ${letter}]` : `[Đoạn ${letter} - ${origName}]`;
+      return `${header}\n${body}`;
+    }).join('\n\n');
+
+    const processedVi = viBlocks.length === 4 ? order.map((origIdx, slotIdx) => {
+      const block = viBlocks[origIdx] || '';
+      const letter = optionLabels[slotIdx];
+      const origName = question.options[origIdx];
+      const body = block.replace(/^\[.*?\]\s*/, '');
+      const header = hideNames ? `[Đoạn ${letter}]` : `[Đoạn ${letter} - ${origName}]`;
+      return `${header}\n${body}`;
+    }).join('\n\n') : question.passageVi;
+
+    // Build options
+    const processedOptions = order.map((origIdx, slotIdx) => {
+      const letter = optionLabels[slotIdx];
+      if (hideNames) {
+        return `Đoạn ${letter}`;
+      }
+      return `${question.options[origIdx]}`;
+    });
+
+    const newCorrect = order.indexOf(question.correct);
+
+    return {
+      displayPassageEn: processedEn,
+      displayPassageVi: processedVi,
+      displayOptions: processedOptions,
+      effectiveCorrect: newCorrect >= 0 ? newCorrect : question.correct
+    };
+  }, [question, hideNames, paragraphOrder]);
 
   const handleSpeakQuestion = () => {
     if ('speechSynthesis' in window) {
@@ -64,6 +132,11 @@ export const QuizCard: React.FC<QuizCardProps> = ({
               {question.part}
             </span>
           )}
+          {hideNames && (
+            <span className="text-[10px] px-2 py-0.5 rounded-md bg-purple-500/20 text-purple-300 border border-purple-500/30 font-medium">
+              Ẩn tên ABCD
+            </span>
+          )}
         </div>
 
         <div className="flex items-center space-x-1.5">
@@ -94,7 +167,7 @@ export const QuizCard: React.FC<QuizCardProps> = ({
       </div>
 
       {/* Reading Passage Box (if question contains passage) */}
-      {question.passage && (
+      {displayPassageEn && (
         <div className="rounded-xl border border-indigo-500/30 bg-slate-950/70 overflow-hidden shadow-inner">
           <div className="flex flex-wrap items-center justify-between gap-2 px-3.5 py-2.5 bg-slate-800/80 border-b border-slate-800">
             <button
@@ -102,12 +175,12 @@ export const QuizCard: React.FC<QuizCardProps> = ({
               className="flex items-center space-x-2 text-xs font-bold text-indigo-300 hover:text-indigo-200 transition"
             >
               <BookOpen className="w-3.5 h-3.5 text-indigo-400" />
-              <span>Đoạn văn bài đọc (4 Nhân vật)</span>
+              <span>Đoạn văn bài đọc (4 Nhân vật {hideNames ? '• Ẩn tên ABCD' : ''})</span>
               {isPassageOpen ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
             </button>
 
             <div className="flex items-center space-x-2">
-              {question.passageVi && (
+              {displayPassageVi && (
                 <button
                   type="button"
                   onClick={() => setShowVietnamesePassage(!showVietnamesePassage)}
@@ -158,19 +231,19 @@ export const QuizCard: React.FC<QuizCardProps> = ({
               <div className="whitespace-pre-line text-slate-300">
                 {showVietnamesePassage ? (
                   <div className="space-y-4">
-                    <div className="text-slate-200">{question.passage}</div>
+                    <div className="text-slate-200">{displayPassageEn}</div>
                     <div className="pt-3 border-t border-slate-800 text-slate-300 italic bg-slate-900/50 p-3.5 rounded-xl border border-slate-800/80">
                       <div className="font-bold text-emerald-400 text-xs mb-1.5 not-italic flex items-center space-x-1.5">
                         <Languages className="w-3.5 h-3.5" />
                         <span>Bản dịch Tiếng Việt:</span>
                       </div>
                       <div className="whitespace-pre-line not-italic text-xs sm:text-sm text-slate-300 leading-relaxed">
-                        {question.passageVi}
+                        {displayPassageVi}
                       </div>
                     </div>
                   </div>
                 ) : (
-                  <div>{question.passage}</div>
+                  <div>{displayPassageEn}</div>
                 )}
               </div>
             </div>
@@ -187,9 +260,9 @@ export const QuizCard: React.FC<QuizCardProps> = ({
 
       {/* Options Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-        {question.options.map((opt, oIdx) => {
+        {displayOptions.map((opt, oIdx) => {
           const isSelected = selectedOption === oIdx;
-          const isCorrect = question.correct === oIdx;
+          const isCorrect = effectiveCorrect === oIdx;
 
           let optionStyle = 'bg-slate-800/60 border-slate-700/80 text-slate-200 hover:bg-slate-800 hover:border-slate-600';
 
@@ -242,7 +315,7 @@ export const QuizCard: React.FC<QuizCardProps> = ({
       {showExplanation && (
         <div
           className={`mt-4 p-4 rounded-xl text-xs sm:text-sm leading-relaxed border-l-4 transition-all animate-fadeIn ${
-            selectedOption === question.correct
+            selectedOption === effectiveCorrect
               ? 'bg-emerald-950/40 border-emerald-500 text-emerald-200'
               : 'bg-rose-950/40 border-rose-500 text-rose-200'
           }`}
@@ -250,7 +323,9 @@ export const QuizCard: React.FC<QuizCardProps> = ({
           <div className="flex items-center space-x-2 font-bold mb-2">
             <HelpCircle className="w-4 h-4" />
             <span>
-              {selectedOption === question.correct ? 'Chính xác!' : `Chưa chính xác. Đáp án đúng: ${optionLabels[question.correct]}`}
+              {selectedOption === effectiveCorrect
+                ? `Chính xác! Đáp án đúng: Đoạn ${optionLabels[effectiveCorrect]} (${question.options[question.correct]})`
+                : `Chưa chính xác. Đáp án đúng: Đoạn ${optionLabels[effectiveCorrect]} (${question.options[question.correct]})`}
             </span>
           </div>
           <div className="text-slate-300 whitespace-pre-line leading-relaxed">{question.explanation}</div>

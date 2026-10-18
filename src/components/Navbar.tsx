@@ -13,12 +13,13 @@ import {
   Sun,
   Moon,
   ListOrdered,
-  LayoutList
+  LayoutList,
+  Users
 } from 'lucide-react';
 
 interface NavbarProps {
-  activeModule: 'quiz' | 'translation' | 'ordering' | 'headings';
-  onChangeModule: (module: 'quiz' | 'translation' | 'ordering' | 'headings') => void;
+  activeModule: 'quiz' | 'translation' | 'ordering' | 'headings' | 'opinion';
+  onChangeModule: (module: 'quiz' | 'translation' | 'ordering' | 'headings' | 'opinion') => void;
   onImportJson: (content: string, filename: string) => void;
   onOpenTemplateModal: () => void;
   onOpenPasteModal: () => void;
@@ -122,6 +123,18 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <LayoutList className="w-3.5 h-3.5 text-emerald-300" />
               <span>Nối Tiêu Đề (Part 3)</span>
+            </button>
+
+            <button
+              onClick={() => onChangeModule('opinion')}
+              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                activeModule === 'opinion'
+                  ? 'bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow-md'
+                  : 'opacity-70 hover:opacity-100'
+              }`}
+            >
+              <Users className="w-3.5 h-3.5 text-indigo-300" />
+              <span>Ý Kiến 4 Người (Part 4)</span>
             </button>
 
             <button

@@ -11,6 +11,7 @@ interface QuizSelectorProps {
   onOpenPasteModal: () => void;
   onOpenAiModal: () => void;
   onOpenGithubModal: () => void;
+  onOpenOpinionWorkspace?: () => void;
   customQuizCount: number;
 }
 
@@ -22,6 +23,7 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
   onOpenTemplateModal,
   onOpenPasteModal,
   onOpenAiModal,
+  onOpenOpinionWorkspace,
   customQuizCount: _customQuizCount
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -291,6 +293,17 @@ export const QuizSelector: React.FC<QuizSelectorProps> = ({
                     </div>
                   )}
                 </div>
+
+                {/* Special Workspace Launcher for Aptis Part 4 */}
+                {quiz.id === 'aptis-reading-4-people-opinion-matching' && onOpenOpinionWorkspace && (
+                  <button
+                    onClick={onOpenOpinionWorkspace}
+                    className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-500 hover:to-pink-500 text-white text-xs font-bold shadow-md shadow-indigo-500/20 transition flex items-center justify-center space-x-1.5"
+                  >
+                    <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+                    <span>Luyện Chế Độ Ẩn Tên & Đảo Đoạn ABCD</span>
+                  </button>
+                )}
 
                 {/* Action Buttons */}
                 <div className="grid grid-cols-2 gap-2.5">
