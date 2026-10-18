@@ -1,0 +1,1219 @@
+{
+  "topics": [
+    {
+      "id": "p3-de-01",
+      "title": "Đề 1: Community design",
+      "titleVi": "Đề 1: Thiết kế công trình và Cộng đồng",
+      "category": "Architecture & Society",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d1-1",
+          "speaker": "man",
+          "text": "Have you seen the new town square layout? I truly believe that the way buildings and spaces are constructed has a direct impact on how residents interact with each other.",
+          "textVi": "Cậu đã thấy thiết kế quảng trường thị trấn mới chưa? Tớ thực sự tin rằng cách các tòa nhà và không gian được xây dựng có ảnh hưởng trực tiếp đến cách cư dân tương tác với nhau."
+        },
+        {
+          "id": "d1-2",
+          "speaker": "woman",
+          "text": "I couldn't agree more. When architects create open shared courtyards, people naturally stop to talk. Building design undeniably shapes daily human behavior.",
+          "textVi": "Tớ hoàn toàn đồng ý. Khi các kiến trúc sư tạo ra những khoảng sân chung mở, mọi người sẽ tự nhiên dừng lại trò chuyện. Thiết kế công trình chắc chắn định hình hành vi thường nhật của con người."
+        },
+        {
+          "id": "d1-3",
+          "speaker": "man",
+          "text": "However, developing a real community spirit takes a while. You can't expect strangers to become close neighbors overnight; it takes patience.",
+          "textVi": "Tuy nhiên, để phát triển một tinh thần cộng đồng thực sự cần có thời gian. Cậu không thể mong đợi những người xa lạ trở thành hàng xóm thân thiết chỉ sau một đêm; điều đó cần sự kiên nhẫn."
+        },
+        {
+          "id": "d1-4",
+          "speaker": "woman",
+          "text": "Yes, building a genuine community cannot be rushed—it takes months or even years of shared events and trust building.",
+          "textVi": "Đúng vậy, xây dựng một cộng đồng chân chính không thể vội vàng—nó cần hàng tháng, thậm chí hàng năm của các sự kiện chung và tạo dựng niềm tin."
+        },
+        {
+          "id": "d1-5",
+          "speaker": "man",
+          "text": "In my opinion, work communities and social neighborhood communities are essentially the same. In both settings, people collaborate toward common goals and form bonds.",
+          "textVi": "Theo quan điểm của tớ, cộng đồng nơi làm việc và cộng đồng xã hội láng giềng về cơ bản là giống nhau. Ở cả hai nơi, mọi người đều hợp tác hướng tới mục tiêu chung và gắn kết."
+        },
+        {
+          "id": "d1-6",
+          "speaker": "woman",
+          "text": "I disagree with you on that. At work, relationships are driven by professional duties, whereas social communities are based purely on personal choices.",
+          "textVi": "Tớ không đồng tình với cậu về điểm đó. Ở nơi làm việc, các mối quan hệ xuất phát từ trách nhiệm công việc, trong khi cộng đồng xã hội hoàn toàn dựa trên sự tự nguyện cá nhân."
+        },
+        {
+          "id": "d1-7",
+          "speaker": "man",
+          "text": "What about digital technology? Social apps and forums have completely revolutionized the way communities gather and establish connections today.",
+          "textVi": "Còn công nghệ số thì sao? Các ứng dụng xã hội và diễn đàn đã hoàn toàn cách mạng hóa cách các cộng đồng tụ họp và thiết lập kết nối ngày nay."
+        },
+        {
+          "id": "d1-8",
+          "speaker": "woman",
+          "text": "Definitely. Online groups now connect people with shared interests across the globe, fundamentally altering how communities form.",
+          "textVi": "Chắc chắn rồi. Các hội nhóm trực tuyến hiện kết nối những người có chung sở thích trên toàn cầu, thay đổi căn bản cách thức hình thành cộng đồng."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Building design can influence people's behavior",
+          "statementVi": "Thiết kế của công trình có thể ảnh hưởng đến hành vi của con người",
+          "correct": "both",
+          "explanation": "Cả hai đều đồng tình: Người đàn ông nói 'the way buildings are constructed has a direct impact', người phụ nữ tán thành 'I couldn't agree more... Building design undeniably shapes daily human behavior'.",
+          "keywordClue": "direct impact on how residents interact... undeniably shapes daily human behavior"
+        },
+        {
+          "id": 2,
+          "statement": "Creating a community can take time.",
+          "statementVi": "Tạo dựng một cộng đồng có thể cần nhiều thời gian.",
+          "correct": "woman",
+          "explanation": "Người phụ nữ nhấn mạnh và khẳng định: 'Yes, building a genuine community cannot be rushed—it takes months or even years of shared events and trust building' (Đáp án chuẩn: Woman).",
+          "keywordClue": "cannot be rushed—it takes months or even years"
+        },
+        {
+          "id": 3,
+          "statement": "Work communities and social communities are the same.",
+          "statementVi": "Cộng đồng công việc và cộng đồng xã hội là giống nhau.",
+          "correct": "man",
+          "explanation": "Người đàn ông nêu quan điểm: 'In my opinion, work communities and social neighborhood communities are essentially the same'. Người phụ nữ phản bác 'I disagree'.",
+          "keywordClue": "In my opinion, work communities and social communities are essentially the same"
+        },
+        {
+          "id": 4,
+          "statement": "Technology has changed how community forms.",
+          "statementVi": "Công nghệ đã thay đổi cách thức hình thành cộng đồng.",
+          "correct": "both",
+          "explanation": "Cả hai cùng đồng ý: Người đàn ông nói công nghệ 'completely revolutionized the way communities gather', người phụ nữ đồng tình 'Definitely... fundamentally altering how communities form'.",
+          "keywordClue": "revolutionized the way communities gather... fundamentally altering how communities form"
+        }
+      ],
+      "keyword": "Community design",
+      "mnemonicPoem": "Community design - Bàn Wề Mưa Bão (BWMB - nam), nữ nói trước đổi thành BMWB"
+    },
+    {
+      "id": "p3-de-02",
+      "title": "Đề 2: Beauty",
+      "titleVi": "Đề 2: Quan niệm về cái đẹp",
+      "category": "Art & Philosophy",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d2-1",
+          "speaker": "man",
+          "text": "Do you think aesthetic standards differ across societies? I always believed that what one culture finds stunning might be completely unattractive to another.",
+          "textVi": "Cậu có nghĩ tiêu chuẩn thẩm mỹ khác nhau giữa các xã hội không? Tớ luôn tin rằng điều mà một nền văn hóa thấy lộng lẫy có thể hoàn toàn không hấp dẫn với nền văn hóa khác."
+        },
+        {
+          "id": "d2-2",
+          "speaker": "woman",
+          "text": "Actually, studies show that despite cultural differences, people share remarkably similar ideas about beauty. Facial symmetry and natural harmony are universally appreciated by almost all human societies.",
+          "textVi": "Thực ra các nghiên cứu chỉ ra rằng dù có khác biệt văn hóa, mọi người thực sự có những quan niệm rất tương tự nhau về cái đẹp. Sự cân đối khuôn mặt và sự hài hòa tự nhiên được hầu hết các xã hội công nhận."
+        },
+        {
+          "id": "d2-4",
+          "speaker": "man",
+          "text": "That may be, but historically speaking, ideas about beauty change dramatically over time. Just look at fashion and body ideals from the 18th century compared to now.",
+          "textVi": "Có thể là vậy, nhưng xét về mặt lịch sử, quan niệm về cái đẹp thay đổi rất mạnh mẽ theo thời gian. Cứ nhìn vào thời trang và chuẩn mực cơ thể từ thế kỷ 18 so với bây giờ."
+        },
+        {
+          "id": "d2-5",
+          "speaker": "woman",
+          "text": "That's very true. And isn't it wonderful that beauty can often be found in unlikely places? Like an old rusty fence covered in morning dew, or weathered stone walls.",
+          "textVi": "Rất đúng. Và chẳng phải thật tuyệt khi cái đẹp có thể được tìm thấy ở những nơi bất ngờ sao? Như một hàng rào gỉ sét đọng sương sớm, hay những bức tường đá phong hóa."
+        },
+        {
+          "id": "d2-6",
+          "speaker": "man",
+          "text": "I agree completely. Some of the most poignant photographs capture beauty in abandoned industrial sites or cracked pavement.",
+          "textVi": "Tớ hoàn toàn đồng ý. Một số bức ảnh xúc động nhất lại chụp lại vẻ đẹp ở những khu công nghiệp bỏ hoang hay vết nứt vỉa hè."
+        },
+        {
+          "id": "d2-7",
+          "speaker": "woman",
+          "text": "Do you think our conventional standards will remain fixed?",
+          "textVi": "Cậu có nghĩ các tiêu chuẩn truyền thống của chúng ta sẽ giữ nguyên không?"
+        },
+        {
+          "id": "d2-8",
+          "speaker": "man",
+          "text": "Not at all. With digital avatars and artificial intelligence, traditional ideas about beauty are definitely going to change in the near future.",
+          "textVi": "Không hề. Với các hình đại diện kỹ thuật số và trí tuệ nhân tạo, các quan niệm truyền thống về cái đẹp chắc chắn sẽ thay đổi trong tương lai gần."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "People share similar ideas about beauty",
+          "statementVi": "Mọi người có những quan niệm tương tự nhau về cái đẹp",
+          "correct": "woman",
+          "explanation": "Người phụ nữ mở đầu và khẳng định: 'people actually share remarkably similar ideas about beauty... facial symmetry and natural harmony are universally appreciated'.",
+          "keywordClue": "people actually share remarkably similar ideas about beauty"
+        },
+        {
+          "id": 2,
+          "statement": "Ideas about beauty change over time",
+          "statementVi": "Quan niệm về cái đẹp thay đổi theo thời gian",
+          "correct": "man",
+          "explanation": "Người đàn ông nêu quan điểm: 'historically speaking, ideas about beauty change dramatically over time. Just look at fashion from the 18th century'.",
+          "keywordClue": "historically speaking, ideas about beauty change dramatically over time"
+        },
+        {
+          "id": 3,
+          "statement": "Beauty can be found in unlikely places",
+          "statementVi": "Vẻ đẹp có thể được tìm thấy ở những nơi bất ngờ / không ngờ tới",
+          "correct": "both",
+          "explanation": "Cả hai đều tán thành: Người phụ nữ hỏi 'beauty can often be found in unlikely places?', người đàn ông đồng tình 'I agree completely. Some of the most poignant photographs capture beauty in abandoned sites'.",
+          "keywordClue": "beauty can often be found in unlikely places... I agree completely"
+        },
+        {
+          "id": 4,
+          "statement": "Traditional ideas about beauty are going to change",
+          "statementVi": "Những quan niệm truyền thống về cái đẹp sắp sửa thay đổi",
+          "correct": "man",
+          "explanation": "Người đàn ông nhấn mạnh: 'traditional ideas about beauty are definitely going to change in the near future' do ảnh hưởng của công nghệ số và AI.",
+          "keywordClue": "traditional ideas about beauty are definitely going to change"
+        }
+      ],
+      "keyword": "Beauty",
+      "mnemonicPoem": "The subject of beauty. Wừa Mới Bôi Môi"
+    },
+    {
+      "id": "p3-de-03",
+      "title": "Đề 3: Auditions - actor",
+      "titleVi": "Đề 3: Sự nghiệp diễn xuất và Sân khấu kịch",
+      "category": "Performing Arts",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d3-1",
+          "speaker": "man",
+          "text": "If you ask me, auditions are by far the most important factor for an actor's career. You can have immense talent, but if you don't nail the audition, you never get cast.",
+          "textVi": "Nếu cậu hỏi tớ, các buổi thử vai chắc chắn là yếu tố quan trọng nhất đối với sự nghiệp của một diễn viên. Cậu có thể có tài năng vô tận, nhưng nếu không thể hiện tốt ở buổi thử vai, cậu sẽ không bao giờ được nhận vai."
+        },
+        {
+          "id": "d3-2",
+          "speaker": "woman",
+          "text": "Auditions matter, of course, but continuous training and networking also carry huge weight. More importantly, actors tend to respond best to strong and engaging scripts that give them creative freedom.",
+          "textVi": "Buổi thử vai thì quan trọng rồi, nhưng việc rèn luyện liên tục và quan hệ trong nghề cũng rất nặng ký. Quan trọng hơn, diễn viên có xu hướng phản ứng và thăng hoa nhất với các kịch bản sâu sắc và lôi cuốn."
+        },
+        {
+          "id": "d3-3",
+          "speaker": "man",
+          "text": "Speaking of acting methods, theater acting and screen acting are quite different from each other. On stage you have to project your voice to the back row, while camera lenses pick up every subtle eye twitch.",
+          "textVi": "Nhắc đến phương pháp diễn xuất, diễn kịch sân khấu và diễn xuất trước ống kính rất khác nhau. Trên sân khấu cậu phải phóng giọng đến hàng ghế cuối, còn ống kính máy quay bắt trọn từng cái giật mắt tinh tế."
+        },
+        {
+          "id": "d3-4",
+          "speaker": "woman",
+          "text": "Absolutely. Live stage requires exaggerated physicality, whereas movie acting demands intense interior subtlety. They are fundamentally distinct disciplines.",
+          "textVi": "Hoàn toàn chính xác. Sân khấu trực tiếp đòi hỏi hình thể biểu cảm rõ nét, trong khi phim ảnh đòi hỏi sự tinh tế nội tâm sâu sắc. Đó là hai môn nghệ thuật hoàn toàn khác biệt."
+        },
+        {
+          "id": "d3-5",
+          "speaker": "man",
+          "text": "Also, artistic morale is delicate. Actors should be praised and recognized as much as possible to keep their confidence high.",
+          "textVi": "Hơn nữa, tinh thần nghệ sĩ rất mỏng manh. Các diễn viên nên được khen ngợi và ghi nhận càng nhiều càng tốt để giữ vững sự tự tin của họ."
+        },
+        {
+          "id": "d3-6",
+          "speaker": "woman",
+          "text": "I agree 100%. Genuine appreciation from directors and audience applause is vital for an artist's emotional stamina.",
+          "textVi": "Tớ đồng tình 100%. Sự ghi nhận chân thành từ đạo diễn và những tràng pháo tay của khán giả là điều tối quan trọng đối với sức bền cảm xúc của một nghệ sĩ."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Auditions are most important for an actor's career",
+          "statementVi": "Các buổi thử vai (audition) là quan trọng nhất đối với sự nghiệp diễn viên",
+          "correct": "man",
+          "explanation": "Người đàn ông khẳng định: 'auditions are by far the most important factor for an actor's career. You can have talent, but if you don't nail the audition, you never get cast'.",
+          "keywordClue": "auditions are by far the most important factor for an actor's career"
+        },
+        {
+          "id": 2,
+          "statement": "Actors tend to respond best to strong and engaging scripts",
+          "statementVi": "Diễn viên có xu hướng phản ứng và thể hiện tốt nhất với kịch bản hấp dẫn",
+          "correct": "woman",
+          "explanation": "Người phụ nữ nhấn mạnh quan điểm: 'actors tend to respond best to strong and engaging scripts that give them creative freedom'.",
+          "keywordClue": "actors tend to respond best to strong and engaging scripts"
+        },
+        {
+          "id": 3,
+          "statement": "Theater acting and screen acting are quite different from each other",
+          "statementVi": "Diễn xuất sân khấu kịch và diễn xuất trên màn ảnh khá khác biệt nhau",
+          "correct": "both",
+          "explanation": "Cả hai cùng phân tích và đồng tình: Người đàn ông nói 'theater acting and screen acting are quite different', người phụ nữ đáp 'Absolutely... They are fundamentally distinct disciplines'.",
+          "keywordClue": "quite different from each other... fundamentally distinct disciplines"
+        },
+        {
+          "id": 4,
+          "statement": "Actors should be praised and recognized as much as possible",
+          "statementVi": "Diễn viên nên được khen ngợi và công nhận càng nhiều càng tốt",
+          "correct": "both",
+          "explanation": "Cả hai cùng đồng ý: Người đàn ông nêu 'Actors should be praised and recognized as much as possible', người phụ nữ đồng tình 'I agree 100%. Genuine appreciation... is vital'.",
+          "keywordClue": "praised and recognized as much as possible... I agree 100%"
+        }
+      ],
+      "keyword": "Auditions - actor",
+      "mnemonicPoem": "Audition - Actor - Diễn viên Mới Wừa Bị Bắt"
+    },
+    {
+      "id": "p3-de-04",
+      "title": "Đề 4: Information - technology",
+      "titleVi": "Đề 4: Công nghệ và Não bộ con người",
+      "category": "Science & Tech",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d4-1",
+          "speaker": "man",
+          "text": "I am deeply worried about future generations. With constant notifications and instant gratification, I believe future generations fail to cope with technology information properly.",
+          "textVi": "Tớ thực sự rất lo lắng về các thế hệ tương lai. Với các thông báo liên tục và sự thỏa mãn tức thì, tớ tin rằng thế hệ tương lai đang thất bại trong việc xử lý lượng thông tin công nghệ khổng lồ."
+        },
+        {
+          "id": "d4-2",
+          "speaker": "woman",
+          "text": "Young people adapt faster than you think. In fact, the technology revolution is good for the economy as a whole, opening up millions of high-paying green and digital jobs.",
+          "textVi": "Giới trẻ thích nghi nhanh hơn cậu nghĩ đấy. Trên thực tế, cuộc cách mạng công nghệ rất tốt cho nền kinh tế nói chung, mở ra hàng triệu công việc kỹ thuật số và việc làm xanh với mức lương cao."
+        },
+        {
+          "id": "d4-3",
+          "speaker": "man",
+          "text": "Economic growth is fine, but look at advancements in supercomputers. Some experts claim artificial neural networks will soon surpass the human mind completely.",
+          "textVi": "Tăng trưởng kinh tế thì tốt rồi, nhưng hãy nhìn vào sự phát triển của siêu máy tính. Một số chuyên gia khẳng định mạng nơ-ron nhân tạo sẽ sớm vượt qua trí tuệ con người hoàn toàn."
+        },
+        {
+          "id": "d4-4",
+          "speaker": "woman",
+          "text": "I don't buy that theory. No computer is superior to the human brain when it comes to genuine empathy, emotional consciousness, and original creativity.",
+          "textVi": "Tớ không tin vào giả thuyết đó. Không một chiếc máy tính nào có thể vượt trội hơn não bộ con người khi xét về sự thấu cảm thực sự, ý thức cảm xúc và tính sáng tạo nguyên bản."
+        },
+        {
+          "id": "d4-5",
+          "speaker": "man",
+          "text": "Even so, data surveillance is alarming. Companies track our locations and conversations 24/7. More should be done to protect individual privacy by law.",
+          "textVi": "Dù vậy, việc giám sát dữ liệu rất đáng báo động. Các công ty theo dõi vị trí và cuộc trò chuyện của chúng ta 24/7. Cần phải làm nhiều hơn nữa để bảo vệ quyền riêng tư cá nhân bằng luật pháp."
+        },
+        {
+          "id": "d4-6",
+          "speaker": "woman",
+          "text": "I wholeheartedly support stronger privacy regulations. Governments definitely must enforce tougher privacy safeguards to shield citizens.",
+          "textVi": "Tớ hoàn toàn ủng hộ các quy định bảo mật mạnh mẽ hơn. Các chính phủ chắc chắn phải thực thi những biện pháp bảo vệ quyền riêng tư nghiêm ngặt hơn để che chở người dân."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Future generations fail to cope with technology information",
+          "statementVi": "Các thế hệ tương lai thất bại trong việc đối phó với luồng thông tin công nghệ",
+          "correct": "man",
+          "explanation": "Người đàn ông nêu quan điểm: 'I believe future generations fail to cope with technology information properly'.",
+          "keywordClue": "future generations fail to cope with technology information"
+        },
+        {
+          "id": 2,
+          "statement": "Technology revolution is good for the economy",
+          "statementVi": "Cuộc cách mạng công nghệ đem lại lợi ích tốt cho nền kinh tế",
+          "correct": "woman",
+          "explanation": "Người phụ nữ khẳng định: 'the technology revolution is good for the economy as a whole, opening up millions of high-paying jobs'.",
+          "keywordClue": "technology revolution is good for the economy"
+        },
+        {
+          "id": 3,
+          "statement": "No computer is superior to the human brain",
+          "statementVi": "Không một máy tính nào vượt trội hơn não bộ của con người",
+          "correct": "woman",
+          "explanation": "Người phụ nữ nhấn mạnh lập luận: 'No computer is superior to the human brain when it comes to empathy and creativity'.",
+          "keywordClue": "No computer is superior to the human brain"
+        },
+        {
+          "id": 4,
+          "statement": "More should be done to protect individual privacy",
+          "statementVi": "Cần phải hành động nhiều hơn để bảo vệ quyền riêng tư cá nhân",
+          "correct": "both",
+          "explanation": "Cả hai đều tán thành: Người đàn ông nói 'More should be done to protect individual privacy by law', người phụ nữ ủng hộ 'I wholeheartedly support stronger privacy regulations'.",
+          "keywordClue": "More should be done to protect individual privacy... wholeheartedly support"
+        }
+      ],
+      "keyword": "Information - technology",
+      "mnemonicPoem": "Information and technology - học ngành CN TT Mà Wẫn Wô Bổ"
+    },
+    {
+      "id": "p3-de-05",
+      "title": "Đề 5: Internet",
+      "titleVi": "Đề 5: Internet",
+      "category": "Digital Life",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d5-1",
+          "speaker": "man",
+          "text": "Do you find researching health topics online easy these days? There seem to be millions of articles available.",
+          "textVi": "Dạo này cậu có thấy việc tìm kiếm các chủ đề sức khỏe trên mạng dễ dàng không? Có vẻ như có hàng triệu bài viết có sẵn."
+        },
+        {
+          "id": "d5-2",
+          "speaker": "woman",
+          "text": "Not really. Every time I search for a simple health recipe, I get hundreds of conflicting articles. There is just too much information on the internet these days, and it's overwhelming.",
+          "textVi": "Không hẳn đâu. Mỗi lần tớ tìm một công thức ăn uống lành mạnh đơn giản, tớ nhận được hàng trăm bài viết mâu thuẫn nhau. Thực sự có quá nhiều thông tin trên internet hiện nay, và điều đó gây quá tải."
+        },
+        {
+          "id": "d5-3",
+          "speaker": "man",
+          "text": "Having vast data isn't a problem if you know how to navigate it. However, using the internet effectively definitely requires specific evaluation skills.",
+          "textVi": "Có lượng dữ liệu khổng lồ không phải là vấn đề nếu cậu biết cách điều hướng nó. Tuy nhiên, việc sử dụng internet một cách hiệu quả chắc chắn đòi hỏi những kỹ năng đánh giá nhất định."
+        },
+        {
+          "id": "d5-3",
+          "speaker": "woman",
+          "text": "I agree. Critical thinking and digital literacy skills are essential to filter reliable sources from clickbait.",
+          "textVi": "Tớ đồng ý. Tư duy phản biện và kỹ năng tin học là điều thiết yếu để chắt lọc các nguồn tin đáng tin cậy khỏi những bài mồi câu lượt nhấp."
+        },
+        {
+          "id": "d5-4",
+          "speaker": "man",
+          "text": "Neuroscientists say that constant hyperlink browsing is actually rewiring our cognition. The internet is fundamentally changing the way we think and process memories.",
+          "textVi": "Các nhà thần kinh học cho biết việc lướt web liên tục qua các liên kết thực sự đang tái kết nối nhận thức của chúng ta. Internet đang thay đổi căn bản cách chúng ta suy nghĩ và xử lý ký ức."
+        },
+        {
+          "id": "d5-5",
+          "speaker": "woman",
+          "text": "And it affects our temperaments too. Because search engines deliver answers in 0.1 seconds, the internet has made people far less patient in everyday life.",
+          "textVi": "Và nó còn ảnh hưởng đến tính khí của chúng ta nữa. Bởi vì các công cụ tìm kiếm trả về kết quả trong 0.1 giây, internet đã khiến con người trở nên kém kiên nhẫn hơn nhiều trong cuộc sống hàng ngày."
+        },
+        {
+          "id": "d5-6",
+          "speaker": "man",
+          "text": "You're spot on. Nobody wants to wait in a grocery line or read a long book anymore. We have all grown noticeably more impatient.",
+          "textVi": "Cậu nói chuẩn xác luôn. Chẳng ai muốn đứng chờ ở hàng thanh toán hay đọc một cuốn sách dài nữa. Tất cả chúng ta đều trở nên thiếu kiên nhẫn rõ rệt."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "There is too much information on the internet",
+          "statementVi": "Có quá nhiều thông tin trên internet",
+          "correct": "woman",
+          "explanation": "Người phụ nữ mở đầu phàn nàn: 'There is just too much information on the internet these days, and it's overwhelming'.",
+          "keywordClue": "too much information on the internet these days"
+        },
+        {
+          "id": 2,
+          "statement": "Using the internet requires skills",
+          "statementVi": "Việc sử dụng internet đòi hỏi có kỹ năng",
+          "correct": "both",
+          "explanation": "Cả hai đều đồng ý: Người đàn ông nói 'using the internet effectively definitely requires specific evaluation skills', người phụ nữ tán thành 'I agree. Critical thinking and digital literacy skills are essential'.",
+          "keywordClue": "requires specific evaluation skills... literacy skills are essential"
+        },
+        {
+          "id": 3,
+          "statement": "The internet is changing the way we think",
+          "statementVi": "Internet đang làm thay đổi cách thức chúng ta suy nghĩ",
+          "correct": "man",
+          "explanation": "Người đàn ông nêu dẫn chứng khoa học: 'The internet is fundamentally changing the way we think and process memories'.",
+          "keywordClue": "The internet is fundamentally changing the way we think"
+        },
+        {
+          "id": 4,
+          "statement": "Internet has made people less patient",
+          "statementVi": "Internet đã khiến cho con người trở nên kém kiên nhẫn hơn",
+          "correct": "both",
+          "explanation": "Cả hai cùng chia sẻ: Người phụ nữ nói 'the internet has made people far less patient in everyday life', người đàn ông tán thành 'You're spot on... We have all grown noticeably more impatient'.",
+          "keywordClue": "made people far less patient... noticeably more impatient"
+        }
+      ],
+      "keyword": "Internet",
+      "mnemonicPoem": "The Internet - Lên mạng để Wen Bạn Miền Bắc"
+    },
+    {
+      "id": "p3-de-06",
+      "title": "Đề 6: Art",
+      "titleVi": "Đề 6: Nghệ thuật và Xã hội",
+      "category": "Culture & Art",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d6-0",
+          "speaker": "man",
+          "text": "Did you read about the new contemporary art gallery opening downtown? I wonder what you think about it.",
+          "textVi": "Cậu có đọc về phòng triển lãm nghệ thuật đương đại mới mở ở trung tâm không? Tớ tự hỏi cậu nghĩ sao về nó."
+        },
+        {
+          "id": "d6-1",
+          "speaker": "woman",
+          "text": "Honestly, contemporary fine art has become so exclusive. High gallery ticket prices and elitist auctions mean art is only suitable for the privileged few.",
+          "textVi": "Thành thật mà nói, mỹ thuật đương đại đã trở nên quá biệt lập. Giá vé phòng tranh cao ngất ngưởng và các buổi đấu giá xa xỉ khiến nghệ thuật chỉ phù hợp với một thiểu số có đặc quyền."
+        },
+        {
+          "id": "d6-2",
+          "speaker": "man",
+          "text": "That's why public funding is essential! The government should invest more in arts to build free community cultural centers and subsidize local artists.",
+          "textVi": "Đó chính là lý do tại sao tài trợ công lại thiết yếu! Chính phủ nên đầu tư nhiều hơn vào nghệ thuật để xây dựng các trung tâm văn hóa cộng đồng miễn phí và trợ cấp cho nghệ sĩ địa phương."
+        },
+        {
+          "id": "d6-3",
+          "speaker": "woman",
+          "text": "I certainly agree with introducing culture to the next generation. Children should definitely be exposed to art early in elementary school to foster imagination.",
+          "textVi": "Tớ chắc chắn đồng ý với việc đưa văn hóa đến thế hệ tương lai. Trẻ em chắc chắn nên được tiếp xúc với nghệ thuật từ sớm ngay ở bậc tiểu học để nuôi dưỡng trí tưởng tượng."
+        },
+        {
+          "id": "d6-4",
+          "speaker": "man",
+          "text": "Exactly, early exposure develops lifelong creative thinking. And with interactive digital exhibits, in the future, art will become more accessible to ordinary people everywhere.",
+          "textVi": "Chính xác, tiếp xúc sớm sẽ phát triển tư duy sáng tạo suốt đời. Và với các triển lãm kỹ thuật số tương tác, trong tương lai, nghệ thuật sẽ trở nên dễ tiếp cận hơn đối với người bình thường ở khắp mọi nơi."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Art is only suitable for the privileged few",
+          "statementVi": "Nghệ thuật chỉ phù hợp với số ít người có đặc quyền / giàu có",
+          "correct": "woman",
+          "explanation": "Người phụ nữ mở đầu và khẳng định: 'High gallery ticket prices and elitist auctions mean art is only suitable for the privileged few'.",
+          "keywordClue": "art is only suitable for the privileged few"
+        },
+        {
+          "id": 2,
+          "statement": "The government should invest more in arts",
+          "statementVi": "Chính phủ nên đầu tư nhiều hơn vào nghệ thuật",
+          "correct": "man",
+          "explanation": "Người đàn ông nêu rõ đề xuất: 'The government should invest more in arts to build free community cultural centers'.",
+          "keywordClue": "The government should invest more in arts"
+        },
+        {
+          "id": 3,
+          "statement": "Children should be exposed to art early",
+          "statementVi": "Trẻ em nên được tiếp xúc với nghệ thuật từ sớm",
+          "correct": "both",
+          "explanation": "Cả hai cùng tán thành: Người phụ nữ nói 'Children should definitely be exposed to art early', người đàn ông đáp 'Exactly, early exposure develops lifelong creative thinking'.",
+          "keywordClue": "Children should definitely be exposed to art early... Exactly"
+        },
+        {
+          "id": 4,
+          "statement": "In the future, art will become more accessible",
+          "statementVi": "Trong tương lai, nghệ thuật sẽ trở nên dễ tiếp cận hơn",
+          "correct": "man",
+          "explanation": "Người đàn ông nhận định: 'with interactive digital exhibits, in the future, art will become more accessible to ordinary people'.",
+          "keywordClue": "in the future, art will become more accessible"
+        }
+      ],
+      "keyword": "Art",
+      "mnemonicPoem": "Art - Sáng tác nghệ thuật Wào Mỗi Bình Minh"
+    },
+    {
+      "id": "p3-de-07",
+      "title": "Đề 7: Sign - Singers & Music",
+      "titleVi": "Đề 7: Âm nhạc và Sức ảnh hưởng",
+      "category": "Entertainment & Music",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d7-0",
+          "speaker": "man",
+          "text": "Do you follow any celebrity singers on social media? Many people argue they have a negative influence on kids.",
+          "textVi": "Cậu có theo dõi ca sĩ nổi tiếng nào trên mạng xã hội không? Nhiều người cho rằng họ có ảnh hưởng tiêu cực đến con trẻ."
+        },
+        {
+          "id": "d7-1",
+          "speaker": "woman",
+          "text": "Many parents criticize pop stars, but I feel singers play a good role for young people by spreading awareness on mental health and charity work.",
+          "textVi": "Nhiều bậc cha mẹ chỉ trích các ngôi sao nhạc pop, nhưng tớ thấy các ca sĩ đóng một vai trò tốt đối với giới trẻ bằng cách lan tỏa nhận thức về sức khỏe tinh thần và từ thiện."
+        },
+        {
+          "id": "d7-2",
+          "speaker": "man",
+          "text": "Some do, though people's reactions vary widely. After all, taste in music is a highly personal thing; what one person loves, another finds unbearable.",
+          "textVi": "Một số người đúng là vậy, tuy nhiên phản ứng của mỗi người rất khác nhau. Rốt cuộc thì gu âm nhạc là một thứ mang tính cá nhân cao; thứ người này mê mẩn thì người khác lại thấy không chịu nổi."
+        },
+        {
+          "id": "d7-3",
+          "speaker": "woman",
+          "text": "That's true, everyone has distinct individual playlists based on their personal life experiences.",
+          "textVi": "Đúng thế, mỗi người đều có những danh sách bài hát cá nhân riêng biệt dựa trên trải nghiệm cuộc sống của chính họ."
+        },
+        {
+          "id": "d7-4",
+          "speaker": "man",
+          "text": "Yet despite personal tastes, music is truly a universal language. An acoustic guitar melody can bring tears to listeners anywhere in the world without needing any words.",
+          "textVi": "Tuy nhiên bất kể gu cá nhân, âm nhạc thực sự là một ngôn ngữ phổ quát. Một giai điệu guitar mộc có thể làm rơi nước mắt người nghe ở bất kỳ đâu trên thế giới mà không cần lời."
+        },
+        {
+          "id": "d7-5",
+          "speaker": "woman",
+          "text": "And we cannot ignore how music can manipulate people's feelings. Retail stores deliberately play slow jazz to make shoppers linger and spend more.",
+          "textVi": "Và chúng ta không thể bỏ qua việc âm nhạc có thể thao túng cảm xúc của con người. Các cửa hàng bán lẻ cố tình mở nhạc jazz chậm để khiến người mua nán lại và chi tiêu nhiều hơn."
+        },
+        {
+          "id": "d7-6",
+          "speaker": "man",
+          "text": "Horror movie soundtracks do the exact same thing! A sharp screeching violin instinctively triggers human fear and anxiety. It definitely alters our emotions.",
+          "textVi": "Nhạc phim kinh dị cũng làm y hệt như vậy! Tiếng vĩ cầm rít chói tai kích hoạt nỗi sợ hãi và lo âu bản năng của con người. Nó chắc chắn biến đổi cảm xúc của chúng ta."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Singers play a good role for young people",
+          "statementVi": "Các ca sĩ đóng một vai trò tốt đối với giới trẻ",
+          "correct": "woman",
+          "explanation": "Người phụ nữ mở đầu và bảo vệ quan điểm: 'I feel singers play a good role for young people by spreading awareness on mental health and charity'.",
+          "keywordClue": "singers play a good role for young people"
+        },
+        {
+          "id": 2,
+          "statement": "Taste in music is a highly personal thing",
+          "statementVi": "Gu âm nhạc là một điều mang tính cá nhân cao",
+          "correct": "both",
+          "explanation": "Cả hai đều đồng tình: Người đàn ông nói 'taste in music is a highly personal thing', người phụ nữ tán thành 'That's true, everyone has distinct individual playlists'.",
+          "keywordClue": "taste in music is a highly personal thing... That's true"
+        },
+        {
+          "id": 3,
+          "statement": "Music is a universal language",
+          "statementVi": "Âm nhạc là một ngôn ngữ phổ quát / toàn cầu",
+          "correct": "man",
+          "explanation": "Người đàn ông khẳng định: 'music is truly a universal language. An acoustic guitar melody can bring tears to listeners anywhere without words'.",
+          "keywordClue": "music is truly a universal language"
+        },
+        {
+          "id": 4,
+          "statement": "Music can manipulate people's feelings",
+          "statementVi": "Âm nhạc có thể thao túng / điều khiển cảm xúc của con người",
+          "correct": "both",
+          "explanation": "Cả hai cùng đưa dẫn chứng: Người phụ nữ nói 'music can manipulate people's feelings... retail stores play slow jazz', người đàn ông tán thành 'Horror movie soundtracks do the exact same thing... triggers fear'.",
+          "keywordClue": "music can manipulate people's feelings... do the exact same thing"
+        }
+      ],
+      "keyword": "Sign (Singers & Music)",
+      "mnemonicPoem": "Singers and Music - nhạc sĩ Wiết Bài Mưa Bay"
+    },
+    {
+      "id": "p3-de-08",
+      "title": "Đề 8: University and technology",
+      "titleVi": "Đề 8: Giáo dục và Cạnh tranh đại học",
+      "category": "Education & Academic",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d8-1",
+          "speaker": "man",
+          "text": "Online learning platforms and virtual classrooms are booming. Technology helps make education more accessible for working adults and remote communities.",
+          "textVi": "Các nền tảng học trực tuyến và lớp học ảo đang bùng nổ. Công nghệ giúp làm cho giáo dục trở nên dễ tiếp cận hơn đối với người đi làm và các cộng đồng vùng sâu vùng xa."
+        },
+        {
+          "id": "d8-2",
+          "speaker": "woman",
+          "text": "I agree. With digital tools, high-quality lectures from Oxford or Harvard are available to anyone with an internet connection.",
+          "textVi": "Tớ đồng ý. Với các công cụ số, các bài giảng chất lượng cao từ Oxford hay Harvard đều có sẵn cho bất kỳ ai có kết nối internet."
+        },
+        {
+          "id": "d8-3",
+          "speaker": "woman",
+          "text": "However, watching screens at home cannot replace the classroom. Social interaction is important for cultivating teamwork, emotional intelligence, and empathy.",
+          "textVi": "Tuy nhiên, ngồi nhìn màn hình ở nhà không thể thay thế lớp học thực tế. Tương tác xã hội là rất quan trọng để trau dồi kỹ năng làm việc nhóm, trí tuệ cảm xúc và sự thấu cảm."
+        },
+        {
+          "id": "d8-4",
+          "speaker": "man",
+          "text": "On another note, some universities offer too many interdisciplinary electives. In my view, the diverse curriculum is not an advantage because students end up with superficial knowledge instead of rigorous core skills.",
+          "textVi": "Ở một khía cạnh khác, một số trường đại học cung cấp quá nhiều môn tự chọn liên ngành. Theo góc nhìn của tớ, chương trình học quá đa dạng không phải là lợi thế vì sinh viên kết thúc với kiến thức hời hợt thay vì kỹ năng cốt lõi chuyên sâu."
+        },
+        {
+          "id": "d8-5",
+          "speaker": "woman",
+          "text": "Regarding university standards, competition between institutions drives innovation. University competition should be encouraged so colleges continuously improve teaching quality and student facilities.",
+          "textVi": "Về chuẩn mực đại học, sự cạnh tranh giữa các cơ sở đào tạo thúc đẩy đổi mới. Cạnh tranh giữa các trường đại học nên được khuyến khích để các trường không ngừng nâng cao chất lượng giảng dạy và cơ sở vật chất."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Technology helps make education more accessible",
+          "statementVi": "Công nghệ giúp làm cho giáo dục trở nên dễ tiếp cận hơn",
+          "correct": "both",
+          "explanation": "Cả hai cùng đồng tình: Người đàn ông nêu 'Technology helps make education more accessible', người phụ nữ tán thành 'I agree. With digital tools, high-quality lectures are available to anyone'.",
+          "keywordClue": "Technology helps make education more accessible... I agree"
+        },
+        {
+          "id": 2,
+          "statement": "Social interaction is important",
+          "statementVi": "Tương tác xã hội là quan trọng",
+          "correct": "woman",
+          "explanation": "Người phụ nữ nhấn mạnh: 'Social interaction is important for cultivating teamwork, emotional intelligence, and empathy'.",
+          "keywordClue": "Social interaction is important for cultivating teamwork"
+        },
+        {
+          "id": 3,
+          "statement": "The diverse curriculum is not an advantage",
+          "statementVi": "Chương trình giảng dạy quá đa dạng không phải là một lợi thế",
+          "correct": "man",
+          "explanation": "Người đàn ông nêu quan điểm: 'In my view, the diverse curriculum is not an advantage because students end up with superficial knowledge'.",
+          "keywordClue": "the diverse curriculum is not an advantage"
+        },
+        {
+          "id": 4,
+          "statement": "University competition should be encouraged",
+          "statementVi": "Sự cạnh tranh giữa các trường đại học nên được khuyến khích",
+          "correct": "woman",
+          "explanation": "Người phụ nữ khẳng định: 'University competition should be encouraged so colleges continuously improve teaching quality and facilities'.",
+          "keywordClue": "University competition should be encouraged"
+        }
+      ],
+      "keyword": "University and technology",
+      "mnemonicPoem": "University and technology - Học ĐH để Biết Wề Mọi Wiệc"
+    },
+    {
+      "id": "p3-de-09",
+      "title": "Đề 9: Politics",
+      "titleVi": "Đề 9: Giới trẻ và Chính trị",
+      "category": "Politics & Society",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d9-1",
+          "speaker": "man",
+          "text": "Have you seen the voter turnout statistics for the last election? Young people are becoming more interested in politics, especially regarding environmental action and housing costs.",
+          "textVi": "Cậu đã thấy thống kê tỷ lệ cử tri đi bầu trong cuộc bầu cử vừa qua chưa? Giới trẻ đang ngày càng quan tâm nhiều hơn đến chính trị, đặc biệt là các hành động về môi trường và chi phí nhà ở."
+        },
+        {
+          "id": "d9-2",
+          "speaker": "woman",
+          "text": "I noticed that too. Youth turnout at polling stations reached an all-time high; younger generations certainly care about civic engagement.",
+          "textVi": "Tớ cũng nhận thấy điều đó. Tỷ lệ thanh niên đi bỏ phiếu tại các điểm bầu cử đạt mức cao kỷ lục; thế hệ trẻ chắc chắn rất quan tâm đến các vấn đề dân sự."
+        },
+        {
+          "id": "d9-3",
+          "speaker": "man",
+          "text": "A huge factor behind this is online media. Social media has changed political activism completely. Grassroots campaigns organize nationwide rallies in just a couple of hours.",
+          "textVi": "Một yếu tố rất lớn đằng sau điều này là truyền thông trực tuyến. Mạng xã hội đã thay đổi hoàn toàn phong trào hoạt động chính trị. Các chiến dịch quần chúng tổ chức các cuộc tuần hành toàn quốc chỉ trong vài giờ."
+        },
+        {
+          "id": "d9-4",
+          "speaker": "woman",
+          "text": "And unlike previous generations who only read local newspapers, today people are better informed about political issues because independent investigative reporting is readily available.",
+          "textVi": "Và không giống như các thế hệ trước chỉ đọc báo địa phương, ngày nay mọi người được cung cấp thông tin tốt hơn về các vấn đề chính trị vì các bài phóng sự điều tra độc lập luôn có sẵn."
+        },
+        {
+          "id": "d9-5",
+          "speaker": "man",
+          "text": "What about gender representation? More women are likely to participate in politics now that mentorship initiatives and leadership quotas are expanding.",
+          "textVi": "Còn sự đại diện giới tính thì sao? Nhiều phụ nữ có xu hướng tham gia vào chính trị hơn khi các sáng kiến cố vấn và hạn ngạch lãnh đạo đang được mở rộng."
+        },
+        {
+          "id": "d9-6",
+          "speaker": "woman",
+          "text": "Yes, we are seeing historic records of female lawmakers winning parliamentary seats. Female political engagement is definitely set to rise.",
+          "textVi": "Đúng vậy, chúng ta đang thấy những kỷ lục lịch sử về các nữ nghị sĩ giành được ghế trong quốc hội. Sự tham gia chính trị của nữ giới chắc chắn sẽ tiếp tục tăng."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Young people are becoming more interested in politics",
+          "statementVi": "Giới trẻ đang ngày càng quan tâm hơn đến chính trị",
+          "correct": "both",
+          "explanation": "Cả hai cùng đồng tình: Người đàn ông nói 'Young people are becoming more interested in politics', người phụ nữ tán thành 'I noticed that too... Youth turnout reached an all-time high'.",
+          "keywordClue": "Young people are becoming more interested in politics... noticed that too"
+        },
+        {
+          "id": 2,
+          "statement": "Social media has changed political activism",
+          "statementVi": "Mạng xã hội đã làm thay đổi các hoạt động chính trị",
+          "correct": "man",
+          "explanation": "Người đàn ông nêu rõ lập luận: 'Social media has changed political activism completely. Grassroots campaigns organize nationwide rallies in hours'.",
+          "keywordClue": "Social media has changed political activism completely"
+        },
+        {
+          "id": 3,
+          "statement": "People are better informed about political issues",
+          "statementVi": "Mọi người được cung cấp thông tin tốt hơn về các vấn đề chính trị",
+          "correct": "woman",
+          "explanation": "Người phụ nữ khẳng định: 'today people are better informed about political issues because independent investigative reporting is readily available'.",
+          "keywordClue": "people are better informed about political issues"
+        },
+        {
+          "id": 4,
+          "statement": "More women are likely to participate in politics",
+          "statementVi": "Nhiều phụ nữ có khả năng sẽ tham gia vào chính trị hơn",
+          "correct": "both",
+          "explanation": "Cả hai đều tán thành: Người đàn ông nói 'More women are likely to participate in politics', người phụ nữ đồng tình 'Yes, we are seeing historic records of female lawmakers... set to rise'.",
+          "keywordClue": "More women are likely to participate in politics... Yes, seeing historic records"
+        }
+      ],
+      "keyword": "Politics",
+      "mnemonicPoem": "Politics - Làm chính trị Bọn Mình Wừa Bầu (cử)"
+    },
+    {
+      "id": "p3-de-10",
+      "title": "Đề 10: Urban farming",
+      "titleVi": "Đề 10: Nông nghiệp đô thị",
+      "category": "Urban Agriculture & Environment",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d10-0",
+          "speaker": "man",
+          "text": "Have you seen that new proposal to turn empty urban plots into community vegetable farms?",
+          "textVi": "Cậu đã thấy đề xuất mới về việc biến các khu đất trống trong thành phố thành nông trại rau cộng đồng chưa?"
+        },
+        {
+          "id": "d10-1",
+          "speaker": "woman",
+          "text": "I have, but while converting vacant city land into vegetable plots sounds nice, with our severe housing crisis, living space is more important than farming space in city centers.",
+          "textVi": "Tớ thấy rồi, nhưng dù việc chuyển đổi các khu đất trống trong thành phố thành vườn rau nghe có vẻ hay, với cuộc khủng hoảng nhà ở nghiêm trọng hiện nay, không gian sống quan trọng hơn không gian trồng trọt ở trung tâm đô thị."
+        },
+        {
+          "id": "d10-2",
+          "speaker": "man",
+          "text": "You can combine both on rooftops! Besides, urban farming sites can be visually appealing. Lush rooftop greenery and vertical lettuce towers look far more attractive than bare concrete walls.",
+          "textVi": "Cậu có thể kết hợp cả hai trên sân thượng mà! Hơn nữa, các địa điểm nông nghiệp đô thị có thể rất đẹp mắt về mặt thị giác. Cây xanh tươi tốt trên mái nhà và tháp rau thẳng đứng trông hấp dẫn hơn nhiều so với những bức tường bê tông trơ trọi."
+        },
+        {
+          "id": "d10-3",
+          "speaker": "man",
+          "text": "Furthermore, urban farming can benefit local economics by creating local green jobs, cutting food transportation miles, and keeping profits circulating within the neighborhood.",
+          "textVi": "Hơn thế nữa, nông nghiệp đô thị có thể mang lại lợi ích cho nền kinh tế địa phương bằng cách tạo ra việc làm xanh tại chỗ, cắt giảm quãng đường vận chuyển thực phẩm và giữ lợi nhuận lưu thông trong cộng đồng."
+        },
+        {
+          "id": "d10-4",
+          "speaker": "woman",
+          "text": "One point we certainly share is that city populations are expanding so rapidly that we really need more food in urban areas to maintain food security.",
+          "textVi": "Một điểm mà chúng ta chắc chắn cùng đồng tình là dân số các thành phố đang tăng nhanh đến mức chúng ta thực sự cần nhiều lương thực hơn ở các khu vực đô thị để duy trì an ninh lương thực."
+        },
+        {
+          "id": "d10-5",
+          "speaker": "man",
+          "text": "I agree completely. Securing fresh, affordable produce close to where people live is an urgent necessity.",
+          "textVi": "Tớ hoàn toàn đồng ý. Đảm bảo nguồn nông sản tươi ngon, giá cả phải chăng ngay gần nơi người dân sinh sống là một nhu cầu cấp bách."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Living space is more important than farming space",
+          "statementVi": "Không gian sinh sống quan trọng hơn không gian canh tác nông nghiệp",
+          "correct": "woman",
+          "explanation": "Người phụ nữ khẳng định quan điểm: 'with our severe housing crisis, living space is more important than farming space in city centers'.",
+          "keywordClue": "living space is more important than farming space"
+        },
+        {
+          "id": 2,
+          "statement": "Urban farming sites can be visually appealing",
+          "statementVi": "Các địa điểm nông nghiệp đô thị có thể rất đẹp mắt / hấp dẫn về thị giác",
+          "correct": "man",
+          "explanation": "Người đàn ông phản biện: 'urban farming sites can be visually appealing. Lush rooftop greenery looks far more attractive than bare concrete'.",
+          "keywordClue": "urban farming sites can be visually appealing"
+        },
+        {
+          "id": 3,
+          "statement": "Urban farming can benefit local economics",
+          "statementVi": "Nông nghiệp đô thị có thể đem lại lợi ích cho nền kinh tế địa phương",
+          "correct": "man",
+          "explanation": "Người đàn ông chỉ ra: 'urban farming can benefit local economics by creating local green jobs and cutting food transportation miles'.",
+          "keywordClue": "urban farming can benefit local economics"
+        },
+        {
+          "id": 4,
+          "statement": "We really need more food in urban areas",
+          "statementVi": "Chúng ta thực sự cần nhiều lương thực hơn ở các khu vực đô thị",
+          "correct": "both",
+          "explanation": "Cả hai đều đồng tình: Người phụ nữ nói 'One point we certainly share is that... we really need more food in urban areas', người đàn ông tán thành 'I agree completely. Securing fresh produce... is an urgent necessity'.",
+          "keywordClue": "we really need more food in urban areas... I agree completely"
+        }
+      ],
+      "keyword": "Urban farming",
+      "mnemonicPoem": "Urban farming - Wừa Mới Mua Bò (để làm nông nghiệp)"
+    },
+    {
+      "id": "p3-de-11",
+      "title": "Đề 11: Changes in the workplace",
+      "titleVi": "Đề 11: Môi trường làm việc và An toàn việc làm",
+      "category": "Career & Employment",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d11-1",
+          "speaker": "man",
+          "text": "Frequent management restructuring causes total chaos. In my opinion, continuity is important in the workplace to keep projects stable and maintain team morale.",
+          "textVi": "Việc tái cấu trúc quản lý liên tục gây ra sự hỗn loạn hoàn toàn. Theo tôi, sự liên tục / ổn định là rất quan trọng tại nơi làm việc để giữ các dự án ổn định và duy trì tinh thần đồng đội."
+        },
+        {
+          "id": "d11-2",
+          "speaker": "woman",
+          "text": "Stability is desirable, but in this fast-shifting market, job security can't always be guaranteed. Companies must pivot quickly or risk bankruptcy.",
+          "textVi": "Sự ổn định là điều đáng mong muốn, nhưng trong thị trường biến đổi nhanh này, sự bảo đảm việc làm không thể luôn được đảm bảo. Các công ty phải chuyển hướng nhanh hoặc đối mặt nguy cơ phá sản."
+        },
+        {
+          "id": "d11-3",
+          "speaker": "man",
+          "text": "True, but a high salary alone isn't enough to retain good talent. Job satisfaction is an important motivator for employees to produce their best work.",
+          "textVi": "Đúng vậy, nhưng chỉ mức lương cao thôi chưa đủ để giữ chân nhân tài giỏi. Sự hài lòng với công việc là một động lực quan trọng để nhân viên làm việc hết mình."
+        },
+        {
+          "id": "d11-4",
+          "speaker": "woman",
+          "text": "I couldn't agree more. If people don't find meaning in their daily duties, motivation collapses completely.",
+          "textVi": "Tôi hoàn toàn đồng ý. Nếu mọi người không tìm thấy ý nghĩa trong công việc hàng ngày, động lực sẽ sụp đổ hoàn toàn."
+        },
+        {
+          "id": "d11-5",
+          "speaker": "man",
+          "text": "Looking at the bigger picture, automation and digital infrastructure are transforming industries. Overall, technology is good for the economy as it boosts productivity and creates new global markets.",
+          "textVi": "Nhìn vào bức tranh toàn cảnh, tự động hóa và cơ sở hạ tầng số đang chuyển đổi các ngành công nghiệp. Nhìn chung, công nghệ đem lại lợi ích tốt cho nền kinh tế vì nó thúc đẩy năng suất và tạo ra các thị trường toàn cầu mới."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Continuity is important in the workplace",
+          "statementVi": "Sự liên tục / ổn định là quan trọng tại nơi làm việc",
+          "correct": "man",
+          "explanation": "Người đàn ông nêu quan điểm: 'In my opinion, continuity is important in the workplace to keep projects stable'.",
+          "keywordClue": "continuity is important in the workplace"
+        },
+        {
+          "id": 2,
+          "statement": "Job security can't always be guaranteed",
+          "statementVi": "Sự an toàn / bảo đảm việc làm không thể luôn được cam kết chắc chắn",
+          "correct": "woman",
+          "explanation": "Người phụ nữ khẳng định: 'in this fast-shifting market, job security can't always be guaranteed'.",
+          "keywordClue": "job security can't always be guaranteed"
+        },
+        {
+          "id": 3,
+          "statement": "Job satisfaction is an important motivator",
+          "statementVi": "Sự thỏa mãn trong công việc là một động lực quan trọng",
+          "correct": "both",
+          "explanation": "Cả hai cùng nhất trí: Người đàn ông nói 'Job satisfaction is an important motivator', người phụ nữ tán thành 'I couldn't agree more. If people don't find meaning... motivation collapses'.",
+          "keywordClue": "Job satisfaction is an important motivator... couldn't agree more"
+        },
+        {
+          "id": 4,
+          "statement": "Technology is good for the economy",
+          "statementVi": "Công nghệ đem lại lợi ích tốt cho nền kinh tế",
+          "correct": "man",
+          "explanation": "Người đàn ông khẳng định: 'Overall, technology is good for the economy as it boosts productivity and creates global markets'.",
+          "keywordClue": "technology is good for the economy"
+        }
+      ],
+      "keyword": "Workplace - job",
+      "mnemonicPoem": "Changes in the workplace : thay đổi nơi làm việc Mệt Wới Bố Mẹ"
+    },
+    {
+      "id": "p3-de-12",
+      "title": "Đề 12: Local cultural center (Festival)",
+      "titleVi": "Đề 12: Văn hóa, Triển lãm và Di sản",
+      "category": "Culture & Education",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d12-0",
+          "speaker": "man",
+          "text": "What do you think about our city art museum's visitor numbers declining recently?",
+          "textVi": "Bạn nghĩ gì về việc lượng khách đến bảo tàng nghệ thuật thành phố gần đây bị sụt giảm?"
+        },
+        {
+          "id": "d12-1",
+          "speaker": "woman",
+          "text": "Museums cannot just display the same oil paintings forever. Exhibitions should be different and diverse to appeal to people from all backgrounds and age groups.",
+          "textVi": "Các bảo tàng không thể mãi trưng bày cùng những bức tranh sơn dầu cũ. Các buổi triển lãm nên khác biệt và đa dạng để thu hút mọi người thuộc mọi tầng lớp và lứa tuổi."
+        },
+        {
+          "id": "d12-2",
+          "speaker": "man",
+          "text": "Speaking of traditions, I feel that traditional customs are gradually losing their significance in our fast-paced modern world.",
+          "textVi": "Nhắc đến truyền thống, tôi cảm thấy rằng các phong tục tập quán truyền thống đang dần mất đi tầm quan trọng trong thế giới hiện đại gấp gáp ngày nay."
+        },
+        {
+          "id": "d12-3",
+          "speaker": "woman",
+          "text": "I agree. Young people now spend holidays traveling abroad or on social media rather than observing ancient family rituals.",
+          "textVi": "Tôi đồng ý. Giới trẻ giờ đây dành các kỳ nghỉ để du lịch nước ngoài hoặc lướt mạng xã hội thay vì thực hiện các nghi lễ gia đình xưa cũ."
+        },
+        {
+          "id": "d12-4",
+          "speaker": "man",
+          "text": "If younger generations don't participate, local festivals will disappear soon in the near future because no one will know how to organize them.",
+          "textVi": "Nếu các thế hệ trẻ không tham gia, các lễ hội địa phương sẽ sớm biến mất trong tương lai gần vì sẽ chẳng còn ai biết cách tổ chức chúng."
+        },
+        {
+          "id": "d12-5",
+          "speaker": "man",
+          "text": "That's why formal education is so critical. Schools are important to shaping future generations and instilling cultural heritage in their minds.",
+          "textVi": "Đó là lý do tại sao giáo dục chính quy lại có tính quyết định đến vậy. Nhà trường là yếu tố quan trọng trong việc định hình các thế hệ tương lai và thấm nhuần di sản văn hóa vào tâm trí các em."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Exhibitions should be different and diverse.",
+          "statementVi": "Các buổi triển lãm nên khác biệt và đa dạng.",
+          "correct": "woman",
+          "explanation": "Người phụ nữ nhấn mạnh quan điểm: 'Exhibitions should be different and diverse to appeal to people from all backgrounds'.",
+          "keywordClue": "Exhibitions should be different and diverse"
+        },
+        {
+          "id": 2,
+          "statement": "Traditional customs are gradually losing their significance.",
+          "statementVi": "Các phong tục truyền thống đang dần dần mất đi tầm quan trọng của chúng.",
+          "correct": "both",
+          "explanation": "Cả hai cùng chia sẻ quan điểm: Người đàn ông nói 'traditional customs are gradually losing their significance', người phụ nữ đồng tình 'I agree. Young people now spend holidays traveling rather than observing rituals'.",
+          "keywordClue": "traditional customs are gradually losing their significance... I agree"
+        },
+        {
+          "id": 3,
+          "statement": "Local festivals will disappear soon in the near future.",
+          "statementVi": "Các lễ hội địa phương sẽ sớm biến mất trong tương lai gần.",
+          "correct": "man",
+          "explanation": "Người đàn ông cảnh báo: 'local festivals will disappear soon in the near future because no one will know how to organize them'.",
+          "keywordClue": "local festivals will disappear soon in the near future"
+        },
+        {
+          "id": 4,
+          "statement": "Schools are important to shaping future generations.",
+          "statementVi": "Trường học đóng vai trò quan trọng trong việc định hình các thế hệ tương lai.",
+          "correct": "man",
+          "explanation": "Người đàn ông nhấn mạnh: 'Schools are important to shaping future generations and instilling cultural heritage in their minds'.",
+          "keywordClue": "Schools are important to shaping future generations"
+        }
+      ],
+      "keyword": "Local - festival",
+      "mnemonicPoem": "Local cultural center - Văn hóa - Wiệt Bắc Muôn Màu"
+    },
+    {
+      "id": "p3-de-13",
+      "title": "Đề 13: Homeschooling",
+      "titleVi": "Đề 13: Giáo dục tại nhà (Homeschooling)",
+      "category": "Education & Family",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d13-1",
+          "speaker": "man",
+          "text": "I've been reading several case studies on alternative education, and I think homeschooling is a very viable alternative to crowded state schools.",
+          "textVi": "Tôi vừa đọc một số nghiên cứu về các hình thức giáo dục thay thế, và tôi thấy giáo dục tại nhà là một lựa chọn thay thế rất khả thi cho các trường công lập đông đúc."
+        },
+        {
+          "id": "d13-2",
+          "speaker": "woman",
+          "text": "While academic pacing can be customized, children may miss social experiences like resolving peer conflicts in the playground and working in teams.",
+          "textVi": "Mặc dù tiến độ học tập có thể tùy chỉnh, nhưng trẻ em có thể bỏ lỡ những trải nghiệm xã hội như giải quyết mâu thuẫn bạn bè ở sân chơi và làm việc nhóm."
+        },
+        {
+          "id": "d13-3",
+          "speaker": "man",
+          "text": "You have a point. Interacting with diverse peers is essential, so home learners do risk missing out on spontaneous peer interactions.",
+          "textVi": "Cô nói có lý. Tương tác với bạn bè đồng trang lứa đa dạng là rất cần thiết, nên trẻ học tại nhà thực sự có nguy cơ bỏ lỡ các tương tác bạn bè tự nhiên."
+        },
+        {
+          "id": "d13-4",
+          "speaker": "woman",
+          "text": "Another serious limitation is instruction quality. Parents may not have enough teaching skills when curriculum topics advance to higher chemistry or trigonometry.",
+          "textVi": "Một hạn chế nghiêm trọng khác là chất lượng giảng dạy. Cha mẹ có thể không có đủ kỹ năng sư phạm khi các chủ đề chương trình học tiến tới môn hóa học hay lượng giác nâng cao."
+        },
+        {
+          "id": "d13-5",
+          "speaker": "man",
+          "text": "Despite those challenges, homeschooling can be useful for some families, especially those with medical conditions or parents who travel internationally for work.",
+          "textVi": "Dù có những thách thức đó, giáo dục tại nhà vẫn có thể rất hữu ích cho một số gia đình, đặc biệt là những gia đình có vấn đề y tế hoặc cha mẹ thường xuyên đi công tác quốc tế."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Homeschooling ( đề mới ) - Nam nói trước",
+          "statementVi": "Giáo dục tại nhà (Homeschooling là một lựa chọn tốt - Nam nói trước)",
+          "correct": "man",
+          "explanation": "Người đàn ông nói trước và mở đầu ủng hộ: 'I think homeschooling is a very viable alternative to crowded state schools'.",
+          "keywordClue": "Nam nói trước: homeschooling is a very viable alternative"
+        },
+        {
+          "id": 2,
+          "statement": "Children may miss social experiences",
+          "statementVi": "Trẻ em có thể bỏ lỡ các trải nghiệm xã hội",
+          "correct": "both",
+          "explanation": "Cả hai đều đồng tình: Người phụ nữ nói 'children may miss social experiences', người đàn ông tán thành 'You have a point... risk missing out on spontaneous peer interactions'.",
+          "keywordClue": "children may miss social experiences... You have a point"
+        },
+        {
+          "id": 3,
+          "statement": "Parents may not have enough teaching skills",
+          "statementVi": "Cha mẹ có thể không có đủ kỹ năng giảng dạy",
+          "correct": "woman",
+          "explanation": "Người phụ nữ nêu rõ nhược điểm: 'Parents may not have enough teaching skills when curriculum topics advance to higher chemistry'.",
+          "keywordClue": "Parents may not have enough teaching skills"
+        },
+        {
+          "id": 4,
+          "statement": "Homeschooling can be useful for some families",
+          "statementVi": "Giáo dục tại nhà có thể hữu ích cho một số gia đình",
+          "correct": "man",
+          "explanation": "Người đàn ông kết luận: 'homeschooling can be useful for some families, especially those with medical conditions or who travel'.",
+          "keywordClue": "homeschooling can be useful for some families"
+        }
+      ],
+      "keyword": "Homeschooling",
+      "mnemonicPoem": "Homeschooling ở trường học Mạnh Buộc Wua Môn"
+    },
+    {
+      "id": "p3-de-14",
+      "title": "Đề 14: Children & Technology",
+      "titleVi": "Đề 14: Trẻ em và Việc học dựa trên công nghệ",
+      "category": "Technology & Parenting",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d14-1",
+          "speaker": "man",
+          "text": "Educational gamification is revolutionizing classrooms. Children are genuinely interested in tech-based learning because interactive animations keep their attention.",
+          "textVi": "Việc trò chơi hóa giáo dục đang cách mạng hóa lớp học. Trẻ em thực sự hào hứng với việc học dựa trên công nghệ vì các hình ảnh động tương tác thu hút sự chú ý của các em."
+        },
+        {
+          "id": "d14-2",
+          "speaker": "woman",
+          "text": "That's undeniable. Kids eagerly do math quizzes on tablets when they wouldn't touch a traditional textbook.",
+          "textVi": "Điều đó không thể phủ nhận. Bọn trẻ hào hứng làm các bài kiểm tra toán trên máy tính bảng trong khi chúng chẳng thèm ngó ngàng đến sách giáo khoa truyền thống."
+        },
+        {
+          "id": "d14-3",
+          "speaker": "man",
+          "text": "However, with excessive screen hours, children find it difficult to communicate offline. They struggle to maintain eye contact and read body language in real life.",
+          "textVi": "Tuy nhiên, với việc dán mắt vào màn hình quá nhiều giờ, trẻ em thấy khó giao tiếp ngoại tuyến (ngoài đời thực). Chúng lúng túng trong việc duy trì giao tiếp bằng mắt và đọc ngôn ngữ cơ thể trong đời thực."
+        },
+        {
+          "id": "d14-4",
+          "speaker": "woman",
+          "text": "I see that every day in my neighborhood. Children can text rapidly, but when speaking face-to-face, they feel awkward and anxious.",
+          "textVi": "Tôi thấy điều đó mỗi ngày ở khu phố tôi. Trẻ em có thể nhắn tin thoăn thoắt, nhưng khi nói chuyện trực tiếp, chúng cảm thấy ngượng ngùng và lo âu."
+        },
+        {
+          "id": "d14-5",
+          "speaker": "man",
+          "text": "Parents are confused by privacy settings and algorithmic feeds. Families require help with management of technology through community workshops and school guidance.",
+          "textVi": "Các bậc cha mẹ rất bối rối trước các cài đặt quyền riêng tư và thuật toán gợi ý. Các gia đình cần sự trợ giúp trong việc quản lý công nghệ thông qua các buổi hội thảo cộng đồng và hướng dẫn từ nhà trường."
+        },
+        {
+          "id": "d14-6",
+          "speaker": "woman",
+          "text": "I believe we shouldn't just enforce strict bans. With gradual coaching, children can learn to regulate their online interactions responsibly.",
+          "textVi": "Tôi tin rằng chúng ta không nên chỉ áp đặt các lệnh cấm nghiêm ngặt. Với sự hướng dẫn từng bước, trẻ em hoàn toàn có thể học cách tự điều chỉnh các tương tác trực tuyến của mình một cách có trách nhiệm."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Children are interested in tech - based learning",
+          "statementVi": "Trẻ em rất hứng thú với việc học tập dựa trên công nghệ",
+          "correct": "both",
+          "explanation": "Cả hai đều đồng tình: Người đàn ông nói 'Children are genuinely interested in tech-based learning', người phụ nữ tán thành 'That's undeniable. Kids eagerly do math quizzes on tablets'.",
+          "keywordClue": "Children are genuinely interested in tech-based learning... That's undeniable"
+        },
+        {
+          "id": 2,
+          "statement": "Children find it difficult to communicate offline",
+          "statementVi": "Trẻ em cảm thấy khó khăn khi giao tiếp ngoại tuyến (ngoài đời thực)",
+          "correct": "both",
+          "explanation": "Cả hai cùng nhận xét: Người đàn ông nói 'children find it difficult to communicate offline', người phụ nữ đồng tình 'I see that every day... speaking face-to-face they feel awkward and anxious'.",
+          "keywordClue": "children find it difficult to communicate offline... speaking face-to-face feel awkward"
+        },
+        {
+          "id": 3,
+          "statement": "Families require help with management of technology.",
+          "statementVi": "Các gia đình cần sự trợ giúp trong việc quản lý công nghệ.",
+          "correct": "man",
+          "explanation": "Người đàn ông nêu rõ đề xuất: 'Families require help with management of technology through community workshops and school guidance'.",
+          "keywordClue": "Families require help with management of technology"
+        },
+        {
+          "id": 4,
+          "statement": "Children can learn to regulate their online interactions",
+          "statementVi": "Trẻ em có thể học cách tự điều tiết các tương tác trực tuyến của mình",
+          "correct": "woman",
+          "explanation": "Người phụ nữ khẳng định: 'With gradual coaching, children can learn to regulate their online interactions responsibly'.",
+          "keywordClue": "children can learn to regulate their online interactions"
+        }
+      ],
+      "keyword": "Children - technology",
+      "mnemonicPoem": "Children and young People with Technology - Bé Bin Muốn Wuà (về công nghệ)"
+    },
+    {
+      "id": "p3-de-15",
+      "title": "Đề 15: Volunteer Programme",
+      "titleVi": "Đề 15: Chương trình môi trường và Rác thải",
+      "category": "Environment & Community",
+      "audioUrl": "",
+      "dialogue": [
+        {
+          "id": "d15-1",
+          "speaker": "man",
+          "text": "The local council's new river cleanup campaign was on TV again. But let's be honest, the media exaggerates the benefits of the programme. They make it look like our waterways are pristine, when only a small stretch was cleaned.",
+          "textVi": "Chiến dịch dọn sạch sông mới của hội đồng địa phương lại lên truyền hình. Nhưng thành thật mà nói, truyền thông đang thổi phồng quá mức lợi ích của chương trình. Họ làm như thể nguồn nước của chúng ta đã tinh khiết trở lại, trong khi chỉ có một đoạn nhỏ được dọn dẹp."
+        },
+        {
+          "id": "d15-2",
+          "speaker": "woman",
+          "text": "I agree completely. News headlines claim the pollution problem is solved, which is a gross overstatement.",
+          "textVi": "Tôi hoàn toàn đồng ý. Các tiêu đề tin tức tuyên bố vấn đề ô nhiễm đã được giải quyết, đó là một sự nói quá trơ trẽn."
+        },
+        {
+          "id": "d15-3",
+          "speaker": "man",
+          "text": "No matter how many cleanup days we organize, littering will always be a problem. Human carelessness and laziness are simply ingrained in modern disposable culture.",
+          "textVi": "Dù chúng ta có tổ chức bao nhiêu ngày dọn dẹp đi nữa, xả rác bừa bãi sẽ luôn là một vấn nạn. Sự bất cẩn và lười biếng của con người đã ăn sâu vào văn hóa dùng một lần hiện đại."
+        },
+        {
+          "id": "d15-4",
+          "speaker": "woman",
+          "text": "Some critics complain that people only volunteer for photo opportunities on Instagram, but in my view, the volunteers' motivation do not affect the programme outcome as long as tons of plastic are removed.",
+          "textVi": "Một số người chỉ trích than phiền rằng mọi người chỉ làm tình nguyện để chụp ảnh đăng Instagram, nhưng theo quan điểm của tôi, động cơ của các tình nguyện viên không ảnh hưởng đến kết quả chương trình miễn là hàng tấn rác nhựa được thu gom."
+        },
+        {
+          "id": "d15-5",
+          "speaker": "man",
+          "text": "If we want real change, gentle persuasion is useless. Legal punishment is the most effective way to prevent littering; hefty fines and mandatory community labor will stop offenders instantly.",
+          "textVi": "Nếu chúng ta muốn có sự thay đổi thực sự, sự thuyết phục nhẹ nhàng là vô ích. Hình phạt pháp lý là cách hiệu quả nhất để ngăn chặn xả rác; các khoản tiền phạt nặng và lao động công ích bắt buộc sẽ ngăn chặn những kẻ vi phạm ngay lập tức."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "statement": "Media exaggerates the benefits of the programme",
+          "statementVi": "Truyền thông thổi phồng / phóng đại quá mức các lợi ích của chương trình",
+          "correct": "both",
+          "explanation": "Cả hai cùng đồng tình: Người đàn ông nói 'the media exaggerates the benefits of the programme', người phụ nữ tán thành 'I agree completely. News headlines claim pollution is solved, which is an overstatement'.",
+          "keywordClue": "media exaggerates the benefits of the programme... I agree completely"
+        },
+        {
+          "id": 2,
+          "statement": "Littering will always be a problem",
+          "statementVi": "Việc xả rác bừa bãi sẽ luôn là một vấn đề",
+          "correct": "man",
+          "explanation": "Người đàn ông khẳng định bi quan: 'No matter how many cleanup days we organize, littering will always be a problem. Human carelessness is ingrained'.",
+          "keywordClue": "littering will always be a problem"
+        },
+        {
+          "id": 3,
+          "statement": "The volunteers' motivation do not affect the programme outcome",
+          "statementVi": "Động cơ của các tình nguyện viên không ảnh hưởng đến kết quả của chương trình",
+          "correct": "woman",
+          "explanation": "Người phụ nữ lập luận: 'the volunteers' motivation do not affect the programme outcome as long as tons of plastic are removed'.",
+          "keywordClue": "the volunteers' motivation do not affect the programme outcome"
+        },
+        {
+          "id": 4,
+          "statement": "Punishment is the most effective way to prevent littering",
+          "statementVi": "Hình phạt là phương thức hiệu quả nhất để ngăn chặn hành vi xả rác bừa bãi",
+          "correct": "man",
+          "explanation": "Người đàn ông nêu giải pháp: 'Legal punishment is the most effective way to prevent littering; hefty fines will stop offenders instantly'.",
+          "keywordClue": "Punishment is the most effective way to prevent littering"
+        }
+      ],
+      "keyword": "Program - volunteer",
+      "mnemonicPoem": "New Environment Volunteer Programme - : Đi làm tình nguyện bằng xe BMW Mới ( BMWM)"
+    }
+  ]
+}
