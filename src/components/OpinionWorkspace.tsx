@@ -70,6 +70,39 @@ const PARAGRAPH_COLORS = [
   }
 ];
 
+const TOPIC_MNEMONIC_SUMMARIES: Record<string, Record<string, string>> = {
+  'topic-1': {
+    'James': 'Lần đầu đi xem (First time) ➔ Thất vọng thời tiết mưa (weather / sunshine) ➔ Thích ngày cuối gặp thần tượng (last day / favorite singers)',
+    'Lisa': 'Tham gia hàng năm (every year) ➔ Không ấn tượng, bình thường (unremarkable / not impressed) ➔ Nghi ngờ sẽ quay lại (doubt come back)',
+    'Robert': 'Thích nghe đa dạng thể loại nhạc (variety of genres) ➔ Chê vé đắt, khó chi trả (expensive / high cost / difficult to afford)',
+    'Christina': 'Đi diễn cùng ban nhạc (My band) ➔ Gặp lại cựu thành viên/bạn cũ (ex-band members / old friends) ➔ Địa điểm xa đường chính (location / venue far)'
+  },
+  'topic-2': {
+    'Jose': 'Vốn không thích thể thao ➔ Thích mạo hiểm ngay lần thử đầu tiên (first attempt / fell in love) ➔ Cần tập luyện kỹ (training is important)',
+    'Sira': 'Lặn tự do (free-diving) ➔ Tận hưởng thiên nhiên hoang dã (nature / surrounded by fish) ➔ Ước được chơi thường xuyên hơn (wishes do more often)',
+    'Bao': 'Học thể dục ở trường là lãng phí ➔ Né tránh mọi môn thể thao (avoid doing any sports) ➔ Chỉ thích đọc sách (reading books)',
+    'Marisol': 'Là phi công ➔ Thể thao mạo hiểm là không cần thiết, tự ném mình vào nguy hiểm (not necessary / danger) ➔ Thích thể thao truyền thống (traditional sports)'
+  },
+  'topic-3': {
+    'Sarah': 'Chơi board game từ nhỏ ➔ Trò chơi truyền thống đơn giản hơn nhiều (traditional games were much simpler) ➔ Thích chơi cùng con',
+    'William': 'Thích chơi ngoài trời cùng bạn bè thuở nhỏ (playing with other children / peers) ➔ Định hình tính cách hòa đồng, kết nối',
+    'Sophia': 'Ít vận động, đắm chìm vào sách vở từ bé (preferred reading books) ➔ Lớn lên thích chơi game tương tác máy tính (modern games)',
+    'Jack': 'Thích ra ngoài, hay ước được ra ngoài ngày u ám (wished spend time outdoors) ➔ Được mẹ tặng màu vẽ nên mê hội họa/nghệ thuật (doing arts)'
+  },
+  'topic-4': {
+    'Boyd': 'Giúp đỡ cộng đồng địa phương (local communities) ➔ Hiểu thêm về truyền thống, văn hóa địa phương (good for culture)',
+    'Chirish': 'Làm tình nguyện phát triển kỹ năng mềm cho sự nghiệp tương lai (advance career / soft skills) ➔ Kết bạn mới (make friends)',
+    'Noah': 'Quá bận rộn công việc, không có thời gian trực tiếp (busy with work) ➔ Ủng hộ, giúp đỡ bằng tiền quyên góp (giving money)',
+    'Chinua': 'Đã nghỉ hưu đi xây nhà thiện nguyện (retired / build houses) ➔ Cơ hội đi du lịch (reason to travel) ➔ Rèn luyện thể chất/sức khỏe (physical benefits)'
+  },
+  'topic-5': {
+    'Olivia': 'Làm việc không công (working for free / volunteering) ➔ Nhận được nhiều lợi ích về kiến thức hữu ích (benefited from working for free)',
+    'Chirish': 'Chỉ muốn làm giáo viên, không muốn đổi nghề khác (not want to change to other careers) ➔ Thích kỳ thực tập/tập huấn (enjoyed working when training)',
+    'Emma': 'Thích làm việc bằng tay chân (doing things with hands / pipe leaks, screws) ➔ Tiếc vì học đại học quá dài (training was too long)',
+    'Grace': 'Thiếu kinh nghiệm nên rất khó xin việc đầu tiên (hard to get first job) ➔ Thích môi trường làm việc linh hoạt (flexible work environment / hybrid)'
+  }
+};
+
 export const OpinionWorkspace: React.FC = () => {
   // Active Topic selection
   const [activeTopicId, setActiveTopicId] = useState<string>(OPINION_TOPICS[0].id);
@@ -89,6 +122,9 @@ export const OpinionWorkspace: React.FC = () => {
   const [showVietnamese, setShowVietnamese] = useState<boolean>(false);
   const [showMnemonic, setShowMnemonic] = useState<boolean>(true);
   const [practiceMode, setPracticeMode] = useState<'practice' | 'exam'>('practice');
+
+  // Per-question open mnemonic hints state
+  const [openHints, setOpenHints] = useState<Record<number, boolean>>({});
 
   // Answers state: questionId -> selectedSlotIndex (0..3)
   const [userAnswers, setUserAnswers] = useState<Record<number, number>>({});
@@ -434,15 +470,24 @@ export const OpinionWorkspace: React.FC = () => {
 
           {/* Mnemonic Toggle */}
           <button
-            onClick={() => setShowMnemonic(!showMnemonic)}
-            className={`flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-semibold border transition ${
+            onClick={() => {
+              const next = !showMnemonic;
+              setShowMnemonic(next);
+              triggerToast(
+                next
+                  ? '💡 Đã BẬT Bảng mẹo nhớ 4 đoạn văn và gợi ý cho cả 7 câu hỏi!'
+                  : '💡 Đã TẮT hiển thị mẹo nhớ.'
+              );
+            }}
+            className={`flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-semibold border transition shadow-sm ${
               showMnemonic
-                ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
+                ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 ring-1 ring-amber-500/30'
                 : 'bg-slate-800 text-slate-400 border-slate-700 hover:text-slate-200'
             }`}
+            title="Bật/Tắt hiển thị mẹo nhớ nhanh cho bài đọc và câu hỏi"
           >
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-            <span>{showMnemonic ? '💡 Mẹo nhớ: Bật' : '💡 Mẹo nhớ: Tắt'}</span>
+            <span>{showMnemonic ? '💡 Mẹo nhớ: ĐANG BẬT' : '💡 Mẹo nhớ: Đang Tắt'}</span>
           </button>
         </div>
 
@@ -450,6 +495,53 @@ export const OpinionWorkspace: React.FC = () => {
 
       {/* Main Content Layout: 4 Paragraphs on Top, Questions Below */}
       <div className="space-y-6">
+
+        {/* Topic Mnemonic Cheat Sheet Panel (when showMnemonic is ON) */}
+        {showMnemonic && (
+          <div className="rounded-2xl border border-amber-500/40 bg-gradient-to-br from-amber-950/40 via-slate-900 to-indigo-950/40 p-4 sm:p-5 shadow-xl space-y-3 animate-fadeIn">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-amber-500/20 pb-2.5">
+              <div className="flex items-center space-x-2">
+                <Sparkles className="w-4 h-4 text-amber-400" />
+                <h3 className="text-xs sm:text-sm font-bold text-amber-300 uppercase tracking-wide">
+                  Bảng Mẹo Nhớ Nhanh 4 Đoạn Văn • {activeTopic.titleVi}
+                </h3>
+              </div>
+              <span className="text-[11px] text-amber-400/90 font-medium">
+                {hideNames ? 'Mẹo định vị ứng với Đoạn A, B, C, D (đã khớp thứ tự)' : 'Mẹo ghi nhớ từng nhân vật'}
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {paragraphOrder.map((origPersonIndex, slotIdx) => {
+                const letter = letters[slotIdx];
+                const personName = activeTopic.people[origPersonIndex];
+                const hint = TOPIC_MNEMONIC_SUMMARIES[activeTopic.id]?.[personName] || 'Đọc kỹ nội dung đoạn để tìm từ khóa';
+                const color = PARAGRAPH_COLORS[slotIdx];
+
+                return (
+                  <div
+                    key={`mnemonic-card-${slotIdx}`}
+                    className={`p-3 rounded-xl bg-slate-900/90 border border-amber-500/25 space-y-1.5 transition hover:border-amber-400/50 ${
+                      hoveredSlot === slotIdx ? `ring-1 ${color.ring}` : ''
+                    }`}
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className={`px-2 py-0.5 rounded-md font-black text-xs ${color.badge}`}>
+                        Đoạn {letter} {hideNames ? '' : `• ${personName}`}
+                      </span>
+                      {hideNames && showOriginalNamesPeek && (
+                        <span className="text-[10px] text-amber-300/80 font-medium">({personName})</span>
+                      )}
+                    </div>
+                    <p className="text-[11px] text-slate-200 leading-relaxed font-medium">
+                      {hint}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
 
         {/* Section 1: The 4 Reading Paragraphs (A, B, C, D) */}
         <div className="space-y-3">
@@ -518,6 +610,19 @@ export const OpinionWorkspace: React.FC = () => {
                         </div>
                         <p className="text-[11px] sm:text-xs text-slate-300 italic leading-relaxed">
                           {paragraph.contentVi}
+                        </p>
+                      </div>
+                    )}
+
+                    {/* Paragraph Quick Mnemonic (if showMnemonic is ON) */}
+                    {showMnemonic && (
+                      <div className="mt-3 pt-2.5 border-t border-amber-500/20 bg-amber-950/30 p-2.5 rounded-xl border border-amber-500/25 animate-fadeIn">
+                        <div className="text-[10px] font-bold text-amber-400 flex items-center space-x-1 mb-1">
+                          <Sparkles className="w-3 h-3 text-amber-400" />
+                          <span>Mẹo nhớ Đoạn {slotLetter}:</span>
+                        </div>
+                        <p className="text-[11px] sm:text-xs text-amber-200/95 leading-relaxed font-medium">
+                          {TOPIC_MNEMONIC_SUMMARIES[activeTopic.id]?.[paragraph.personName] || 'Đọc kỹ nội dung đoạn để tìm từ khóa'}
                         </p>
                       </div>
                     )}
@@ -647,22 +752,51 @@ export const OpinionWorkspace: React.FC = () => {
                       </p>
                     </div>
 
-                    {showFeedback && (
-                      <span className="shrink-0">
-                        {isCorrect ? (
-                          <div className="flex items-center space-x-1 text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-lg border border-emerald-500/30">
-                            <CheckCircle2 className="w-4 h-4" />
-                            <span>Chính xác</span>
-                          </div>
-                        ) : (
-                          <div className="flex items-center space-x-1 text-xs font-bold text-rose-400 bg-rose-500/10 px-2.5 py-1 rounded-lg border border-rose-500/30">
-                            <XCircle className="w-4 h-4" />
-                            <span>Chưa đúng</span>
-                          </div>
-                        )}
-                      </span>
-                    )}
+                    <div className="flex items-center space-x-2 shrink-0">
+                      {q.mnemonicHint && (
+                        <button
+                          type="button"
+                          onClick={() => setOpenHints(prev => ({ ...prev, [q.id]: !prev[q.id] }))}
+                          className={`px-2.5 py-1 rounded-lg text-xs font-semibold flex items-center space-x-1 transition shadow-sm ${
+                            (showMnemonic || openHints[q.id])
+                              ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-500/30 ring-1 ring-amber-500/30'
+                              : 'bg-slate-800 text-slate-400 hover:text-amber-300 border border-slate-700 hover:border-amber-500/40'
+                          }`}
+                          title="Bật/Tắt gợi ý mẹo nhớ cho câu này"
+                        >
+                          <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                          <span className="hidden sm:inline">Mẹo nhớ</span>
+                        </button>
+                      )}
+
+                      {showFeedback && (
+                        <span>
+                          {isCorrect ? (
+                            <div className="flex items-center space-x-1 text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-lg border border-emerald-500/30">
+                              <CheckCircle2 className="w-4 h-4" />
+                              <span>Chính xác</span>
+                            </div>
+                          ) : (
+                            <div className="flex items-center space-x-1 text-xs font-bold text-rose-400 bg-rose-500/10 px-2.5 py-1 rounded-lg border border-rose-500/30">
+                              <XCircle className="w-4 h-4" />
+                              <span>Chưa đúng</span>
+                            </div>
+                          )}
+                        </span>
+                      )}
+                    </div>
                   </div>
+
+                  {/* Question Mnemonic Hint (visible if global showMnemonic is ON OR user clicked Mẹo nhớ for this question) */}
+                  {(showMnemonic || openHints[q.id]) && q.mnemonicHint && (
+                    <div className="mt-3 p-3 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs sm:text-sm flex items-start space-x-2.5 animate-fadeIn">
+                      <Sparkles className="w-4 h-4 shrink-0 text-amber-400 mt-0.5" />
+                      <div>
+                        <span className="font-bold text-amber-300">💡 Gợi ý mẹo tìm nhanh: </span>
+                        <span className="text-amber-200/95 leading-relaxed font-medium">{q.mnemonicHint}</span>
+                      </div>
+                    </div>
+                  )}
 
                   {/* 4 Options Grid (A, B, C, D) */}
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-4">

@@ -163,6 +163,21 @@ export const QuizCard: React.FC<QuizCardProps> = ({
           >
             <Bookmark className="w-4 h-4 fill-current" />
           </button>
+
+          {/* Mnemonic Hint Toggle Button */}
+          {question.mnemonicHint && (
+            <button
+              onClick={() => setShowMnemonic(!showMnemonic)}
+              className={`p-2 rounded-lg transition ${
+                showMnemonic
+                  ? 'text-amber-400 bg-amber-400/20 ring-1 ring-amber-400/40'
+                  : 'text-slate-400 hover:text-amber-400 hover:bg-slate-800'
+              }`}
+              title="Hiện mẹo ghi nhớ nhanh"
+            >
+              <Sparkles className="w-4 h-4" />
+            </button>
+          )}
         </div>
       </div>
 
@@ -256,6 +271,17 @@ export const QuizCard: React.FC<QuizCardProps> = ({
         <p className="text-base sm:text-lg font-bold text-slate-100 leading-relaxed whitespace-pre-line">
           {question.question}
         </p>
+
+        {/* Mnemonic Hint (visible if showMnemonic is ON) */}
+        {showMnemonic && question.mnemonicHint && (
+          <div className="mt-3 p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs sm:text-sm flex items-start space-x-2.5 animate-fadeIn">
+            <Sparkles className="w-4 h-4 shrink-0 text-amber-400 mt-0.5" />
+            <div>
+              <span className="font-bold text-amber-300">💡 Mẹo ghi nhớ câu này: </span>
+              <span className="text-amber-200/95 leading-relaxed font-medium">{question.mnemonicHint}</span>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Options Grid */}
