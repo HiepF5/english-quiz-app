@@ -66,11 +66,12 @@ export interface WritingEvaluationReport {
   maxScore: number;
   cefrLevel: 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
   overallComment: string;
+  gradedScope?: 'all' | 'part1' | 'part2' | 'part3' | 'part4';
   partScores: {
-    part1: { score: number; max: number; feedback: string };
-    part2: { score: number; max: number; feedback: string };
-    part3: { score: number; max: number; feedback: string };
-    part4: { score: number; max: number; feedback: string };
+    part1?: { score: number; max: number; feedback: string };
+    part2?: { score: number; max: number; feedback: string };
+    part3?: { score: number; max: number; feedback: string };
+    part4?: { score: number; max: number; feedback: string };
   };
   corrections: WritingCorrectionItem[];
   vocabularySuggestions: Array<{

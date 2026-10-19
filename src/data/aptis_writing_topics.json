@@ -58,16 +58,16 @@
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Our club needs support with several tasks this year. First, we need more members who can actively participate in our ongoing projects. Second, we are looking for creative ideas to develop new activities. Could you share some suggestions with us to help support our projects this year?",
+      "context": "Our club needs support with several tasks this year. First, we need more members who can actively participate in our ongoing projects. Second, we are looking for creative ideas\nto develop new activities. Could you share some suggestions with us to help support our projects this year?",
       "task1": {
         "prompt": "1. Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
         "prompt": "2. Write an email to the manager of the club. Write about 120 - 150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -103,7 +103,7 @@
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
+      "instruction": "Now you've become a new member of the Business club. Fill in the form. Write in sentences. Use 20-30 words",
       "prompt": "Where do you usually go shopping?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": "I usually go shopping at the supermarket near my house with my mother because it is cheap, fast and convernient. We buy many items such as food, fruit, and drinks."
@@ -120,21 +120,26 @@
           "speaker": "Member 2",
           "question": "Can you tell me what qualities and skills are needed to create a successful small business?",
           "sampleAnswer": "In my opinion, you need to learn many things, such as improve communication skills, management skills and gain knowleadge. In your work, you must be devoted and hardworking. You should be open-minded, kind and friendly with you colleagues."
+        },
+        {
+          "speaker": "Member C",
+          "question": "What suggestions do you have for our club to attract more young members?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Currently our club is planning to support local individuals who want to start up a small business. The club has 2 proposals: First, create a call center where customers can call to ask questions and request help. Second, create free courses to support local universities nearby. Let us know which option you would use and why. Write a short email to your friend (about 50 words) about your choice and the idea. Write an email to the manager of the club (about 120-150 words) about your choice and why.",
+      "context": "Currently our club is planning to support local individuals who want to start up a small business. The club has 2 proposals: First, create a call center where customers can call to ask questions and request help. Second, create free courses to support local universities nearby. Let us know which option you would use and why.",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write a short email to your friend (about 50 words) about your choice and the idea.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club (about 120-150 words) about your choice and why.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -170,7 +175,7 @@
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the Museum Club. Fill in the form. Write in sentences. Use 20–30 words. Recommended time: 7 minutes.",
+      "instruction": "You are a new member of Museum Club. Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "Tell me the last time you went to a museum?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": "The last time I went go to a museum was two day ago. It was in the city centrer. It is a big, quiet and beautiful place. I feel excited and happy because I cloud learn many interesting things."
@@ -197,16 +202,16 @@
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear Member,FOO Currently, the museum club is considering that members may pay a fee to visit museums Please give your opinion? Best regards, The Management",
+      "context": "Dear Member,FOO\nCurrently, the museum club is considering that members may pay a fee to visit museums\nPlease give your opinion?\nBest regards,\nThe Management",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -269,16 +274,16 @@
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "\"There will be a car program running across Europe. The program invites the Car Club to send 2 representatives (1 main driver and 1 passenger) and both must have good driving skills. Do you have any suggestions for the above positions?\"",
+      "context": "\"There will be a car program running across Europe. The program invites the Car Club to send 2 representatives (1 main driver and 1 passenger) and both must have good driving skills.\nDo you have any suggestions for the above positions?\"",
       "task1": {
         "prompt": "1. Email to a friend (50 words):",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "2. Email to the manager of the club:"
       },
       "task2": {
-        "prompt": "2. Email to the manager of the club:",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -295,7 +300,7 @@
       {
         "questionNumber": 2,
         "question": "How many people are in your family?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
@@ -325,7 +330,7 @@
         {
           "speaker": "A",
           "question": "Hi! Welcome to the club. Where do you like to visit?",
-          "sampleAnswer": "On the weekends, I want to visit a garden about 20 kilometers  from my house. It is a peaceful and beautiful place. Flowers bloom everywhere and the fruits look fresh. It makes me feel comfortable and relaxs after a busy week."
+          "sampleAnswer": "On the weekends, I want to visit a garden about 20 kilometers from my house. It is a peaceful and beautiful place. Flowers bloom everywhere and the fruits look fresh. It makes me feel comfortable and relaxs after a busy week."
         },
         {
           "speaker": "B",
@@ -341,23 +346,23 @@
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear member, The club wants to make a plan for the young people because they just love to stay home and play games.",
+      "context": "Dear member,\nThe club wants to make a plan for the young people because they just love to stay home and play games.",
       "task1": {
         "prompt": "1. Write an email to your friend. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
         "prompt": "2. Write an email to the manager of the club. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "photography-club",
-    "title": "Photography Club",
-    "description": "Aptis ESOL Writing • Chủ đề Photography Club",
+    "id": "photography-club-d-1",
+    "title": "Photography Club (Đề 1)",
+    "description": "Aptis ESOL Writing • Chủ đề Photography Club (Đề 1)",
     "part1": [
       {
         "questionNumber": 1,
@@ -386,13 +391,13 @@
       }
     ],
     "part2": {
-      "instruction": "Part 2: You are a new member of a photography club. Fill in the form. Write in sentences. Use 20 – 30 words.",
+      "instruction": "Part 2: You are a new member of a photography club. Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "What is your favorite time and place to take pictures?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": "My favorite time to take pictures is in the afternoon. I like taking photos in parks because the flowers are beautiful and the light is nice."
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Photography Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Photography Club (Đề 1) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "A",
@@ -413,7 +418,7 @@
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear member, Our club is organizing an exhibition of people’s best photos. We will have a talk. Please give some suggestions to attract members of all ages.",
+      "context": "Dear member,\nOur club is organizing an exhibition of people’s best photos. We will have a talk. Please give some suggestions to attract members of all ages.",
       "task1": {
         "prompt": "1. Write an email to your friend. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
@@ -427,9 +432,9 @@
     }
   },
   {
-    "id": "photography-club",
-    "title": "Photography Club",
-    "description": "Aptis ESOL Writing • Chủ đề Photography Club",
+    "id": "photography-club-d-2",
+    "title": "Photography Club (Đề 2)",
+    "description": "Aptis ESOL Writing • Chủ đề Photography Club (Đề 2)",
     "part1": [
       {
         "questionNumber": 1,
@@ -458,18 +463,18 @@
       }
     ],
     "part2": {
-      "instruction": "Part 2: You are a new member of a photography club. Fill in the form. Write in sentences. Use 20 – 30 words.",
+      "instruction": "Part 2: You are a new member of a photography club. Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "What is your favorite time and place to take pictures?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": "In my free time, I usually take photos in the park near my house. It is a peaceful and beautiful place. It is a great way to relax ."
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Photography Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Photography Club (Đề 2) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "A",
           "question": "Hi! Welcome to the club. What is your favorite photo?",
-          "sampleAnswer": "When I was six years old, I traveled with my family. We took a photo on the beach. It is my favorite photo because it reminds me of  a wonderful day with my family. I usually keep it in my wallet."
+          "sampleAnswer": "When I was six years old, I traveled with my family. We took a photo on the beach. It is my favorite photo because it reminds me of a wonderful day with my family. I usually keep it in my wallet."
         },
         {
           "speaker": "B",
@@ -485,16 +490,16 @@
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear member, Last year, the club held a contest, but there was only one category. This year, the contest will be divided into several categories, including women, men, and children under 16 years old.",
+      "context": "Dear member,\nLast year, the club held a contest, but there was only one category. This year, the contest will be divided into several categories, including women, men, and children under 16 years old.",
       "task1": {
         "prompt": "1. Write an email to your friend. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
         "prompt": "2. Write an email to the manager of the club. Write about 120 - 150 words",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -557,23 +562,23 @@
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear members, We are going to hold an event with famous designers who will talk about their clothing designs and answer members' questions. We need feedback on organization. There are two opinions that should be held online, while others want to organize a fashion show event . State your opinion Write to your friend Write to the manager of the club",
+      "context": "Dear members,\nWe are going to hold an event with famous designers who will talk about their clothing designs and answer members' questions. We need feedback on organization. There are two opinions that should be held online, while others want to organize a fashion show event . State your opinion\nWrite to your friend\nWrite to the manager of the club",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "food-club",
-    "title": "Food Club",
-    "description": "Aptis ESOL Writing • Chủ đề Food Club",
+    "id": "food-club-d-1-chef-event",
+    "title": "Food Club (Đề 1 - Chef Event)",
+    "description": "Aptis ESOL Writing • Chủ đề Food Club (Đề 1 - Chef Event)",
     "part1": [
       {
         "questionNumber": 1,
@@ -602,13 +607,13 @@
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
+      "instruction": "You are a new member of Food Club (Đề 1 - Chef Event). Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "Hi ! Welcome to the club. Who did you have dinner with? And where?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": "In last day, I had dinner with my girl friend at a restaurant. It was a peaceful and beautiful place. The food was deliciuos, and we had a wonderful time together."
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Food Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Food Club (Đề 1 - Chef Event) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "Member 1",
@@ -629,62 +634,88 @@
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear members, Our club is going to have a meeting next week and invite some chefs in our town. However, in this meeting, we have new members who just started learning how to cook. Therefore, I want all of you to share your ideas for this event and ways to encourage people to attend our club to learn how to cook. 1. Email to your friend. (50 words) 2. Email to the club. (120-150 words)",
+      "context": "Dear members,\nOur club is going to have a meeting next week and invite some chefs in our town. However, in this meeting, we have new members who just started learning how to cook. Therefore, I want all of you to share your ideas for this event and ways to encourage people to attend our club to learn how to cook.",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "1. Email to your friend. (50 words)",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "2. Email to the club. (120-150 words)",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "food-club-2",
-    "title": "Food Club 2",
-    "description": "Aptis ESOL Writing • Chủ đề Food Club 2",
-    "part1": [],
+    "id": "food-club-d-2-cancelled-classes",
+    "title": "Food Club (Đề 2 - Cancelled Classes)",
+    "description": "Aptis ESOL Writing • Chủ đề Food Club (Đề 2 - Cancelled Classes)",
+    "part1": [
+      {
+        "questionNumber": 1,
+        "question": "What is your hobby?",
+        "sampleAnswer": "I enjoy listening to music"
+      },
+      {
+        "questionNumber": 2,
+        "question": "How do you get to work?",
+        "sampleAnswer": "I ride my motorbike"
+      },
+      {
+        "questionNumber": 3,
+        "question": "What is the weather like today?",
+        "sampleAnswer": "It is warm and sunny"
+      },
+      {
+        "questionNumber": 4,
+        "question": "What is your favorite food?",
+        "sampleAnswer": "I like Vietnamese noodles"
+      },
+      {
+        "questionNumber": 5,
+        "question": "Where are you from?",
+        "sampleAnswer": "I am from Vietnam"
+      }
+    ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
-      "prompt": "Why did you decide to join Food Club 2?",
+      "instruction": "You are a new member of Food Club (Đề 2 - Cancelled Classes). Fill in the form. Write in sentences. Use 20 - 30 words.",
+      "prompt": "Please tell us why you decided to join Food Club (Đề 2 - Cancelled Classes) and what you hope to achieve here?",
       "wordLimit": "20 - 30 từ",
-      "sampleAnswer": ""
+      "sampleAnswer": "I decided to join the club because I want to learn more, meet new people with similar interests, and improve my personal skills. It will be a wonderful experience for me."
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Food Club 2 chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Food Club (Đề 2 - Cancelled Classes) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "Member A",
-          "question": "Tell me about your interest in Food Club 2?",
-          "sampleAnswer": ""
+          "question": "Hi! Welcome to Food Club (Đề 2 - Cancelled Classes). How did you first get interested in this activity?",
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "Member B",
-          "question": "What do you think our club should do to attract more members?",
-          "sampleAnswer": ""
+          "question": "Do you prefer participating on weekdays or on weekends? Why?",
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "Member C",
-          "question": "Do you prefer participating online or meeting in person? Why?",
-          "sampleAnswer": ""
+          "question": "What suggestions do you have for our club to attract more young members?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "You are a member of Food Club 2. You received an announcement from the club regarding upcoming events and membership feedback. Please read and respond to the two tasks below.",
+      "context": "Food Club 2 :\nDear members\nI am writing to inform you that next week's cooking classes will be canceled because your teacher is on holiday. Extra classes may be available when the teacher returns. I am sorry if this creates any difficulties for you. Unfortunately, we will not be able to offer you a refund at this stage.",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -721,9 +752,9 @@
     ],
     "part2": {
       "instruction": "Task 2: Do you like Science? Why? (Write in sentences about 20-30 words)",
-      "prompt": "Why did you decide to join Science Club?",
+      "prompt": "Please tell us why you decided to join Science Club and what you hope to achieve here?",
       "wordLimit": "20 - 30 từ",
-      "sampleAnswer": ""
+      "sampleAnswer": "I decided to join the club because I want to learn more, meet new people with similar interests, and improve my personal skills. It will be a wonderful experience for me."
     },
     "part3": {
       "instruction": "You are speaking to other members in the Science Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
@@ -736,7 +767,7 @@
         {
           "speaker": "Member 2",
           "question": "Person B: In the past, you learned about Science in school. Do you remember something about Science?",
-          "sampleAnswer": "Yes,  I remember learning about Biology, Physics, Chemistry at school. Biology taught me about living things, whild Physics explained how thing work. I found these subjects interesting because they helped me understand the world better."
+          "sampleAnswer": "Yes, I remember learning about Biology, Physics, Chemistry at school. Biology taught me about living things, whild Physics explained how thing work. I found these subjects interesting because they helped me understand the world better."
         },
         {
           "speaker": "Member 3",
@@ -747,16 +778,16 @@
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Task 4: You have received an email from the Science Club about the club exhibition next month. Dear members, Our club is organizing a science exhibition next month. Please give some suggestions to encourage both children and adults to attend. Besides, should we charge a free entry fee? Could you give our club some ideas for the event and the ticket fee?\" 1. Email to friend. Write about your feelings and express your ideas. 2. Email to the president of the club. Write about your feelings and express your ideas about the entry fee and some ways to encourage children and adults to participate.",
+      "context": "Dear members,\nOur club is organizing a science exhibition next month. Please give some suggestions to encourage both children and adults to attend. Besides, should we charge a free entry fee? Could you give our club some ideas for the event and the ticket fee?\"\n1. Email to friend. Write about your feelings and express your ideas.\n2. Email to the president of the club. Write about your feelings and express your ideas about the entry fee and some ways to encourage children and adults to participate.",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -792,7 +823,7 @@
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
+      "instruction": "You are a new member of Computer Club. Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "When and where do you use a computer?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": "I often use the computer at home or at school. I use them to chat with my friends, play video games and do homework. It helps me feel relax , reduce stress after a long day."
@@ -819,73 +850,73 @@
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "We are making some changes to the website because we want more people to join us. As you know, the website at the moment is very simple and we would be interested to hear some ideas about ways to make it more attractive and why you think it would attract more visitors. Hi Nam, How are you these days ? I hope you and your family are well. I have some news for you. Our club is planning some changes to the website because the website at the moment is very simple and we want more people to join us. I think we should hire a website designer to add new photos and videos to make the user feel interesting. Best Duc Dear Club Manager My name is Duc. I am 22 years old and from Ha Noi. I have been a dedicated member of the club for seven months . I am writing to express my thoughts and suggestions regarding the notice I received from the club. According to the news, the club wants to make some changes to the website because we want more people , the website at the moment is very simple. In my opinion, the club should hire a designer to help us upgrade the website. We also advertise on the Internet. I hope my suggestions are helpful, and I look forward to hearing your feedback. Best regards, Duc",
+      "context": "We are making some changes to the website because we want more people to join us. As you know, the website at the moment is very simple and we would be interested to hear some ideas about ways to make it more attractive and why you think it would attract more visitors.\nHi Nam,\nHow are you these days ? I hope you and your family are well. I have some news for you. Our club is planning some changes to the website because the website at the moment is very simple and we want more people to join us. I think we should hire a website designer to add new photos and videos to make the user feel interesting.\nBest\nDuc\nDear Club Manager\nMy name is Duc. I am 22 years old and from Ha Noi. I have been a dedicated member of the club for seven months . I am writing to express my thoughts and suggestions regarding the notice I received from the club.\nAccording to the news, the club wants to make some changes to the website because we want more people , the website at the moment is very simple.\nIn my opinion, the club should hire a designer to help us upgrade the website. We also advertise on the Internet. I hope my suggestions are helpful, and I look forward to hearing your feedback.\nBest regards,\nDuc",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "health-club",
-    "title": "Health Club",
-    "description": "Aptis ESOL Writing • Chủ đề Health Club",
+    "id": "health-club-d-1",
+    "title": "Health Club (Đề 1)",
+    "description": "Aptis ESOL Writing • Chủ đề Health Club (Đề 1)",
     "part1": [
       {
         "questionNumber": 1,
         "question": "Where are you from?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "What’s the weather like today?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "What do you do in your free time?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "First language?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "Who do you usually go to the movies with?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
-      "instruction": "Part 2: You are a new member of a health club. Fill in the form. Write in sentences. Use 20 – 30 words.",
+      "instruction": "Part 2: You are a new member of a health club. Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "Tell me about the classes you want to take and what times and days are suitable for you.",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": ""
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Health Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Health Club (Đề 1) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "A",
           "question": "Hi! Welcome to the club. How did you hear about the club?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "B",
           "question": "Hi! What do you hope to achieve by joining the club?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "C",
           "question": "What do you think of the health club facilities? Should we change anything?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
@@ -893,164 +924,190 @@
     "part4": {
       "context": "“Dear all, Because of personal reasons, the instructor will be away for the next two weeks. We will use our facilities by ourselves without the assistance of an instructor. I am so sorry about this situation and hope you are doing well in the next two weeks.”",
       "task1": {
-        "prompt": "1.\tWrite an email to your friend, who is also a member of the Fitness Club. (75 words)",
+        "prompt": "1. Write an email to your friend, who is also a member of the Fitness Club. (75 words)",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": "2.\tEmail to the club manager (225 words)"
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "2. Email to the club manager (225 words)",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "health-club-2",
-    "title": "Health Club 2",
-    "description": "Aptis ESOL Writing • Chủ đề Health Club 2",
+    "id": "health-club-d-2-fee-increase",
+    "title": "Health Club (Đề 2 - Fee Increase)",
+    "description": "Aptis ESOL Writing • Chủ đề Health Club (Đề 2 - Fee Increase)",
     "part1": [
       {
         "questionNumber": 1,
         "question": "What did you do yesterday?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
-        "question": "What do you usually do in the morning",
-        "sampleAnswer": ""
+        "question": "What do you usually do in the morning?",
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
-        "question": "Tell me a famous place in your country",
-        "sampleAnswer": ""
+        "question": "Tell me a famous place in your country?",
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "What are you wearing today?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "What kinds of sports are popular in your country?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
-      "instruction": "PART 2:  Please answer the following question to complete the survey. Use 20 – 30 words.",
+      "instruction": "PART 2: Please answer the following question to complete the survey. Use 20 - 30 words.",
       "prompt": "Please tell me why you would like to join our club.",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": ""
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Health Club 2 chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Health Club (Đề 2 - Fee Increase) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "ADAM",
           "question": "What sports are you good at, and what sports do you want to play in the club?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "JOHN",
           "question": "How often and what time can you play in the club?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "CRISH",
           "question": "What do you think about the services given by the club?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear members, We would like to announce that membership fees will increase by 50% next month. That means you will have to pay 40 dollars instead of 20 dollars.",
+      "context": "Dear members,\nWe would like to announce that membership fees will increase by 50% next month. That means you will have to pay 40 dollars instead of 20 dollars.",
       "task1": {
-        "prompt": "1. Write an email to your friend. (50 words)",
+        "prompt": "1. Write an email to your friend. Write about your feelings and what you would like to do ( 50 words).",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": "2. Write an email to the club manager. Write about your feelings and suggest possible alternatives. (120 – 150 words.)\nCollege\nPart 1\nWhich sport do you like to play the most?\nWhat did you do last night?\nDo you like shopping?\nWhat are you wearing today?\nWhat is your favorite kind of music?\nPart 2:\nPlease tell us about the days and times you can attend courses and what you would like to study.\nPart 3\nA. Hi! Welcome to college. What course are you doing, and why did you choose it?\nB. Welcome! How do you feel about the college so far?\nC. Did you hear that the college sports club has closed? What do you think about this?\nYou are a member of a college. You received this email from the college administrator.\nDear student,\nWe are writing to inform you that the end-of-course exams will now take place two weeks earlier than originally planned. Your exam, which was scheduled for the 21st of next month, will now take place on the 7th of next month. We apologize for any difficulty this may cause.\nCollege Administrator\n2. Write an email to the college administrator. Write about your feelings and what you think the college should do about the situation. Write about 120 – 150 words.\nPart 1:\nYou want to join a book club. Fill in the form. Use 1 – 5 words.\n1. What’s your favorite hobby?\n2. How do you get to work?\n3. What do you like to do in the evening?\n4. What kinds of movies do you like?\n5. What’s your favorite food?\nPart 2: You are a member of the book club. Fill in the form. Write in sentences. Use 20-30 words.\nPlease tell us about the days and times you can come for meetings and about the books you would like to discuss.\nPart 3: You are a member of a book club. You are talking to three other members in the book club chat room. Talk to them using sentences. Use 30-40 words.\nA: Hi! Welcome to the club. When and where do you like reading books?\nB: Hi! I would like to give my friend a book. What would you suggest I buy?\nC: Should online books replace traditional books? What do you think about that?\nDear member,\nThe club will hold a meeting. Who do you want to invite? What is the theme? Please give a suggestion for both young and old people"
+        "sampleAnswer": "2. Write an email to the club manager. Write about your feelings and suggest possible alternatives. (120 - 150 words.)"
       },
       "task2": {
-        "prompt": "2. Write an email to the manager of the club. (120-150 words)",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "book-club-2",
-    "title": "Book Club: 2",
-    "description": "Aptis ESOL Writing • Chủ đề Book Club: 2",
-    "part1": [],
+    "id": "college",
+    "title": "College",
+    "description": "Aptis ESOL Writing • Chủ đề College",
+    "part1": [
+      {
+        "questionNumber": 1,
+        "question": "Which sport do you like to play the most?",
+        "sampleAnswer": "I enjoy listening to music"
+      },
+      {
+        "questionNumber": 2,
+        "question": "What did you do last night?",
+        "sampleAnswer": "I ride my motorbike"
+      },
+      {
+        "questionNumber": 3,
+        "question": "Do you like shopping?",
+        "sampleAnswer": "It is warm and sunny"
+      },
+      {
+        "questionNumber": 4,
+        "question": "What are you wearing today?",
+        "sampleAnswer": "I like Vietnamese noodles"
+      },
+      {
+        "questionNumber": 5,
+        "question": "What is your favorite kind of music?",
+        "sampleAnswer": "I am from Vietnam"
+      }
+    ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
-      "prompt": "Why did you decide to join Book Club: 2?",
+      "instruction": "You are a new member of College. Fill in the form. Write in sentences. Use 20 - 30 words.",
+      "prompt": "Please tell us about the days and times you can attend courses and what you would like to study.",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": ""
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Book Club: 2 chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the College chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
-          "speaker": "Member A",
-          "question": "Tell me about your interest in Book Club: 2?",
-          "sampleAnswer": ""
+          "speaker": "A",
+          "question": "Hi! Welcome to college. What course are you doing, and why did you choose it?",
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
-          "speaker": "Member B",
-          "question": "What do you think our club should do to attract more members?",
-          "sampleAnswer": ""
+          "speaker": "B",
+          "question": "Welcome! How do you feel about the college so far?",
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
-          "speaker": "Member C",
-          "question": "Do you prefer participating online or meeting in person? Why?",
-          "sampleAnswer": ""
+          "speaker": "C",
+          "question": "Did you hear that the college sports club has closed? What do you think about this?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "You are a member of Book Club: 2. You received an announcement from the club regarding upcoming events and membership feedback. Please read and respond to the two tasks below.",
+      "context": "You are a member of a college. You received this email from the college administrator.\nDear student,\nWe are writing to inform you that the end-of-course exams will now take place two weeks earlier than originally planned. Your exam, which was scheduled for the 21st of next month, will now take place on the 7th of next month. We apologize for any difficulty this may cause.\nCollege Administrator",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "1. Write an email to your friend. Write about your feelings and what you think the college should do about the situation. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "2. Write an email to the college administrator. Write about your feelings and what you think the college should do about the situation. Write about 120 - 150 words."
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "book-club-phi-n-b-n-3",
-    "title": "Book Club Phiên Bản 3",
-    "description": "Aptis ESOL Writing • Chủ đề Book Club Phiên Bản 3",
+    "id": "book-club-d-1",
+    "title": "Book Club (Đề 1)",
+    "description": "Aptis ESOL Writing • Chủ đề Book Club (Đề 1)",
     "part1": [
       {
         "questionNumber": 1,
         "question": "What’s your favorite hobby?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "How do you get to work?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "What do you like to do in the evening?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "What kinds of movies do you like?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "What’s your favorite food?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
@@ -1060,181 +1117,325 @@
       "sampleAnswer": ""
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Book Club Phiên Bản 3 chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Book Club (Đề 1) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "A",
-          "question": "Hi! I hear you are a new member of our club. I have been a member for about six months after my friend gave me a year's membership as a gift. Why did you join?",
-          "sampleAnswer": ""
+          "question": "Hi! Welcome to the club. When and where do you like reading books?",
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "B",
-          "question": "How do you feel about the club?",
-          "sampleAnswer": ""
+          "question": "Hi! I would like to give my friend a book. What would you suggest I buy?",
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "C",
-          "question": "What do you think about the new meeting room?",
-          "sampleAnswer": ""
+          "question": "Should online books replace traditional books? What do you think about that?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear Members, We are sorry to tell you that next month membership fees will go up by 20%. Also, we are starting the renovation of the club meeting room, and during the next month, club meetings will be held in the back room of the bookshop every Monday from 18.00 to 20.00. Feel free to email us at management@bookclub.com",
+      "context": "Dear member,\nThe club will hold a meeting. Who do you want to invite? What is the theme? Please give a suggestion for both young and old people",
       "task1": {
-        "prompt": "1. Write an email to your friend. Write about your feelings and what you would like to do. (50 words)",
+        "prompt": "1. Write an email to your friend. (50 words)",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "2. Write an email to the manager. Write about your feelings and what you would like to do. (120-150 words)",
+        "prompt": "2. Write an email to the manager of the club. (120-150 words)",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "language-club",
-    "title": "Language Club",
-    "description": "Aptis ESOL Writing • Chủ đề Language Club",
+    "id": "book-club-d-2-library-closure",
+    "title": "Book Club (Đề 2 - Library Closure)",
+    "description": "Aptis ESOL Writing • Chủ đề Book Club (Đề 2 - Library Closure)",
+    "part1": [
+      {
+        "questionNumber": 1,
+        "question": "What is your hobby?",
+        "sampleAnswer": "I enjoy listening to music"
+      },
+      {
+        "questionNumber": 2,
+        "question": "How do you get to work?",
+        "sampleAnswer": "I ride my motorbike"
+      },
+      {
+        "questionNumber": 3,
+        "question": "What is the weather like today?",
+        "sampleAnswer": "It is warm and sunny"
+      },
+      {
+        "questionNumber": 4,
+        "question": "What is your favorite food?",
+        "sampleAnswer": "I like Vietnamese noodles"
+      },
+      {
+        "questionNumber": 5,
+        "question": "Where are you from?",
+        "sampleAnswer": "I am from Vietnam"
+      }
+    ],
+    "part2": {
+      "instruction": "You are a new member of Book Club (Đề 2 - Library Closure). Fill in the form. Write in sentences. Use 20 - 30 words.",
+      "prompt": "Please tell us why you decided to join Book Club (Đề 2 - Library Closure) and what you hope to achieve here?",
+      "wordLimit": "20 - 30 từ",
+      "sampleAnswer": "I decided to join the club because I want to learn more, meet new people with similar interests, and improve my personal skills. It will be a wonderful experience for me."
+    },
+    "part3": {
+      "instruction": "You are speaking to other members in the Book Club (Đề 2 - Library Closure) chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "items": [
+        {
+          "speaker": "Member A",
+          "question": "Hi! Welcome to Book Club (Đề 2 - Library Closure). How did you first get interested in this activity?",
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
+        },
+        {
+          "speaker": "Member B",
+          "question": "Do you prefer participating on weekdays or on weekends? Why?",
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
+        },
+        {
+          "speaker": "Member C",
+          "question": "What suggestions do you have for our club to attract more young members?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
+        }
+      ],
+      "wordLimit": "30 - 40 từ"
+    },
+    "part4": {
+      "context": "Book club: 2\nDear member,\nThe local authority has a plan to close the public library",
+      "task1": {
+        "prompt": "1. Write an email to your friend. (50 words)",
+        "wordLimit": "Khoảng 50 từ (Thư thân mật)",
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
+      },
+      "task2": {
+        "prompt": "2. Write an email to talk about the importance of public libraries and suggest some ideas. (120-150 words)",
+        "wordLimit": "120 - 150 từ (Thư trang trọng)",
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
+      }
+    }
+  },
+  {
+    "id": "book-club-d-3-author-event",
+    "title": "Book Club (Đề 3 - Author Event)",
+    "description": "Aptis ESOL Writing • Chủ đề Book Club (Đề 3 - Author Event)",
+    "part1": [
+      {
+        "questionNumber": 1,
+        "question": "What’s your favorite hobby?",
+        "sampleAnswer": "I enjoy listening to music"
+      },
+      {
+        "questionNumber": 2,
+        "question": "How do you get to work?",
+        "sampleAnswer": "I ride my motorbike"
+      },
+      {
+        "questionNumber": 3,
+        "question": "What do you like to do in the evening?",
+        "sampleAnswer": "It is warm and sunny"
+      },
+      {
+        "questionNumber": 4,
+        "question": "What kinds of movies do you like?",
+        "sampleAnswer": "I like Vietnamese noodles"
+      },
+      {
+        "questionNumber": 5,
+        "question": "What’s your favorite food?",
+        "sampleAnswer": "I am from Vietnam"
+      }
+    ],
+    "part2": {
+      "instruction": "Part 2: You are a member of the book club. Fill in the form. Write in sentences. Use 20-30 words.",
+      "prompt": "Please tell us about the days and times you can come for meetings and about the books you would like to discuss.",
+      "wordLimit": "20 - 30 từ",
+      "sampleAnswer": ""
+    },
+    "part3": {
+      "instruction": "You are speaking to other members in the Book Club (Đề 3 - Author Event) chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "items": [
+        {
+          "speaker": "A",
+          "question": "Hi! I hear you are a new member of our club. I have been a member for about six months after my friend gave me a year's membership as a gift. Why did you join?",
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
+        },
+        {
+          "speaker": "B",
+          "question": "How do you feel about the club?",
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
+        },
+        {
+          "speaker": "C",
+          "question": "What do you think about the new meeting room?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
+        }
+      ],
+      "wordLimit": "30 - 40 từ"
+    },
+    "part4": {
+      "context": "Dear Members,\nWe are sorry to tell you that next month membership fees will go up by 20%. Also, we are starting the renovation of the club meeting room, and during the next month, club meetings will be held in the back room of the bookshop every Monday from 18.00 to 20.00. Feel free to email us at management@bookclub.com",
+      "task1": {
+        "prompt": "1. Write an email to your friend. Write about your feelings and what you would like to do. (50 words)",
+        "wordLimit": "Khoảng 50 từ (Thư thân mật)",
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
+      },
+      "task2": {
+        "prompt": "2. Write an email to the manager. Write about your feelings and what you would like to do. (120-150 words)",
+        "wordLimit": "120 - 150 từ (Thư trang trọng)",
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
+      }
+    }
+  },
+  {
+    "id": "language-club-d-1",
+    "title": "Language Club (Đề 1)",
+    "description": "Aptis ESOL Writing • Chủ đề Language Club (Đề 1)",
     "part1": [
       {
         "questionNumber": 1,
         "question": "What is your favorite animal?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "What is your favorite hobby?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "What is your favorite food?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "What is your favorite time of the day?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "What is your favorite season?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
+      "instruction": "You are a new member of Language Club (Đề 1). Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "Tell me your free time and interests?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": ""
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Language Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Language Club (Đề 1) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "A",
           "question": "Why did you choose this course?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "B",
           "question": "How have you found the course so far? What's been difficult?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "C",
           "question": "What are you hoping to do when you finish the course?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "The club will have a lecture soon. It needs a speaker. Write an email expressing your desire to be a speaker and giving the topic of the talk. 1. Write a letter to you (50 words) 2. Write a to your Write a letter to your manager – explaining why (120 words)",
+      "context": "The club will have a lecture soon. It needs a speaker. Write an email expressing your desire to be a speaker and giving the topic of the talk.\n1. Write a letter to you (50 words)\n2. Write a to your Write a letter to your manager - explaining why (120 words)",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "language-club-2",
-    "title": "Language Club 2",
-    "description": "Aptis ESOL Writing • Chủ đề Language Club 2",
+    "id": "language-club-d-2",
+    "title": "Language Club (Đề 2)",
+    "description": "Aptis ESOL Writing • Chủ đề Language Club (Đề 2)",
     "part1": [
       {
         "questionNumber": 1,
         "question": "Where are you from?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "What’s the weather like today?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "What do you do in your free time?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "First language?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "Who do you usually go to the movies with?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
+      "instruction": "You are a new member of Language Club (Đề 2). Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "In which cases do you often use foreign languages?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": ""
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Language Club 2 chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Language Club (Đề 2) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "A",
           "question": "I have been learning here for six months. Why did you choose this course?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "B",
           "question": "How have you found the course so far? What's been difficult?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "C",
           "question": "What do you hope to do when you finish the course?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "You have joined an online language course. 1. Email your friend recommending the course and give some advice on how to improve. 2. You don't have time to finish your language course. Write an email to the customer services team telling them why you can't continue and what you think about this course.",
+      "context": "You have joined an online language course.\n1. Email your friend recommending the course and give some advice on how to improve.\n2. You don't have time to finish your language course. Write an email to the customer services team telling them why you can't continue and what you think about this course.",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -1246,31 +1447,31 @@
       {
         "questionNumber": 1,
         "question": "Where did you go last night?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "What do you like doing with your friend?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "Which sport do you like to play the most?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "What did you do last night?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "Do you like shopping?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
+      "instruction": "You are a new member of English Club. Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "What do you usually use the internet for?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": ""
@@ -1281,32 +1482,32 @@
         {
           "speaker": "A",
           "question": "I usually spend 6 hours a day studying English. How do you learn English?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "B",
           "question": "English is a popular language in the world. What are your thoughts on this idea?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "C",
           "question": "When do you usually use English?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Nowadays, more and more new words and phrases are added to the language, so many people have strong reactions to this issue. Some people gladly accept while others argue that there should be rules for language. Write a letter to your friend and the club manager to express your views and explain why so many people react like this. 1.    Write to a friend (50 words) 1.    Write to a manager (120 – 150 words)",
+      "context": "Nowadays, more and more new words and phrases are added to the language, so many people have strong reactions to this issue. Some people gladly accept while others argue that there should be rules for language. Write a letter to your friend and the club manager to express your views and explain why so many people react like this.\n1. Write to a friend (50 words)\n1. Write to a manager (120 - 150 words)",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -1318,31 +1519,31 @@
       {
         "questionNumber": 1,
         "question": "What kinds of art do you like?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "Who is your favorite artist?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "How often do you draw or paint?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "What art materials do you usually use?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "Why do you want to join the art club?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
+      "instruction": "You are a new member of Art Club. Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "Tell me a painting or a photo that you like.",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": ""
@@ -1353,32 +1554,32 @@
         {
           "speaker": "1",
           "question": "I kept a painting for a long time. Tell me a thing that you have had for a long time.",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "2",
           "question": "I would like to learn to paint, but I have not found an effective way. Should I take a course at my local college? Please, give me some advice.",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "3",
-          "question": "Street art – where people paint on the building – is becoming popular. However, some people criticize it as harmful. What is your opinion?",
-          "sampleAnswer": ""
+          "question": "Street art - where people paint on the building - is becoming popular. However, some people criticize it as harmful. What is your opinion?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear all members, The Art Club is organizing a talk to the public to attract more attention. We are going to invite an artist to give a talk to the members. As a member of our club, could you give us an artist to join our talk? What topic should they share to gain more attention? We would like to have more both young and elderly members.”",
+      "context": "Dear all members,\nThe Art Club is organizing a talk to the public to attract more attention. We are going to invite an artist to give a talk to the members. As a member of our club, could you give us an artist to join our talk? What topic should they share to gain more attention? We would like to have more both young and elderly members.”",
       "task1": {
-        "prompt": "1. Write an email to your friend – also a member of the club.",
+        "prompt": "1. Write an email to your friend - also a member of the club.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
         "sampleAnswer": "1. Write an email to the organizer of the plan."
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -1390,34 +1591,34 @@
       {
         "questionNumber": 1,
         "question": "What is your first school?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "What’s the weather like today?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "What is your favorite type of music?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "What kinds of movies do you like?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "What is your favorite film?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
       "instruction": "Part 2: Describe where you live (20-30 words)",
-      "prompt": "Why did you decide to join Home Living Club?",
+      "prompt": "Please tell us why you decided to join Home Living Club and what you hope to achieve here?",
       "wordLimit": "20 - 30 từ",
-      "sampleAnswer": ""
+      "sampleAnswer": "I decided to join the club because I want to learn more, meet new people with similar interests, and improve my personal skills. It will be a wonderful experience for me."
     },
     "part3": {
       "instruction": "You are speaking to other members in the Home Living Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
@@ -1425,17 +1626,17 @@
         {
           "speaker": "A",
           "question": "You have to stay in the bedroom but have to share with your brother. How do you feel?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "B",
           "question": "It is better to live in the city than the countryside. Do you agree? Why?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "C",
           "question": "Nowadays, old buildings are demolished and replaced with modern buildings. I feel we should protect historic buildings. What do you think?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
@@ -1443,14 +1644,14 @@
     "part4": {
       "context": "Many young families want to buy a house or an apartment. The club wants the members to make suggestions to help them find homes.",
       "task1": {
-        "prompt": "1.\tWrite to your friend (50 words)",
+        "prompt": "1. Write to your friend (50 words)",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "2.\tWrite to the club manager (120 – 150 words)",
+        "prompt": "2. Write to the club manager (120 - 150 words)",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -1462,31 +1663,31 @@
       {
         "questionNumber": 1,
         "question": "How is the weather today?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "What is your favorite season of the year?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "What do you usually do in your free time?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "What is your favorite sport?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "What place would you like to visit in your country?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
+      "instruction": "You are a new member of Walking Club. Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "The last time you went for a walk?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": ""
@@ -1497,32 +1698,32 @@
         {
           "speaker": "A",
           "question": "I often go for a walk. What about you?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "B",
           "question": "I prefer to go to the countryside for a walk. Walking in the city is stressful and noisy. What do you think?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "C",
           "question": "In the past, people walked long distances as part of their lives. These days, they don't walk anymore. Why?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "The club plans to organize a walk across European countries. A few members of the group suggested it, but it was said to be unrealistic. Please send us your suggestions and your reasons.",
+      "context": "The club plans to organize a walk across European countries. A few members of the group suggested it, but it was said to be unrealistic.\nPlease send us your suggestions and your reasons.",
       "task1": {
         "prompt": "1. Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
         "prompt": "2. Write an email to the manager of the club. Write about your feelings and what you think the club should do about the situation. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -1534,31 +1735,31 @@
       {
         "questionNumber": 1,
         "question": "Who do you usually go to the movies with?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "Do you like to take photos?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "Where do you like to go on holiday?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "What’s your favorite color?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "What did you do last night?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
+      "instruction": "You are a new member of Outdoor Club. Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "Why did you join the club?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": ""
@@ -1569,32 +1770,32 @@
         {
           "speaker": "A",
           "question": "What kinds of outdoor activities do you often do?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "B",
           "question": "How often and what time can you come to the club?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "C",
           "question": "What are the most popular outdoor activities in your country?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear Members, Our outdoor club is organizing an outdoor event at the end of this month. There will be two options: going to the mountain or traveling to the beach. We would like members to raise their voices and suggest some activities to make the event more appealing to members and so that children can join. The Manager 1.\tEmail to the friend (50 - 75 words) 2.\tEmail to the club manager (120 - 225 words)",
+      "context": "Dear Members,\nOur outdoor club is organizing an outdoor event at the end of this month. There will be two options: going to the mountain or traveling to the beach. We would like members to raise their voices and suggest some activities to make the event more appealing to members and so that children can join.\nThe Manager\n1. Email to the friend (50 - 75 words)",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "2. Email to the club manager (120 - 225 words)",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -1606,27 +1807,27 @@
       {
         "questionNumber": 1,
         "question": "What is your favorite sport?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "What is your favorite color?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "What is your favorite device?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "What do you do?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "Which job would you like to do in the future?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
@@ -1639,29 +1840,106 @@
       "instruction": "You are speaking to other members in the Movie Makers Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
-          "speaker": "Member 1",
-          "question": "Jane: Hi! Welcome to the club. I joined because I love watching films and making them. Why did you join?",
-          "sampleAnswer": "Francis: I want to make a film for young children, but I don’t have any ideas. Can you give me some advice?"
+          "speaker": "Jane",
+          "question": "Hi! Welcome to the club. I joined because I love watching films and making them. Why did you join?",
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
-          "speaker": "Member 2",
-          "question": "Steve: Technology is changing the way we watch films. What do you think will happen in the future?",
-          "sampleAnswer": ""
+          "speaker": "Francis",
+          "question": "I want to make a film for young children, but I don’t have any ideas. Can you give me some advice?",
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
+        },
+        {
+          "speaker": "Steve",
+          "question": "Technology is changing the way we watch films. What do you think will happen in the future?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear members, Our cinema will be closed for repairs for the next three months, and we will not be able to show any films. During this time, we plan to organize some talks and exhibitions about films. We would like to hear from you. Do you have any ideas? What kind of talks and exhibitions would you like to see?",
+      "context": "Dear members,\nOur cinema will be closed for repairs for the next three months, and we will not be able to show any films. During this time, we plan to organize some talks and exhibitions about films. We would like to hear from you. Do you have any ideas? What kind of talks and exhibitions would you like to see?",
+      "task1": {
+        "prompt": "1. Write an email to your friend. Write about your ideas and what you think about the situation. Write about 50 words.",
+        "wordLimit": "Khoảng 50 từ (Thư thân mật)",
+        "sampleAnswer": "2. Write an email to the club manager. Include your ideas and thoughts about the situation. Write 120-150 words."
+      },
+      "task2": {
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
+        "wordLimit": "120 - 150 từ (Thư trang trọng)",
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
+      }
+    }
+  },
+  {
+    "id": "social-club",
+    "title": "Social Club",
+    "description": "Aptis ESOL Writing • Chủ đề Social Club",
+    "part1": [
+      {
+        "questionNumber": 1,
+        "question": "What’s the weather like today?",
+        "sampleAnswer": "I enjoy listening to music"
+      },
+      {
+        "questionNumber": 2,
+        "question": "How are you?",
+        "sampleAnswer": "I ride my motorbike"
+      },
+      {
+        "questionNumber": 3,
+        "question": "What’s your hobby?",
+        "sampleAnswer": "It is warm and sunny"
+      },
+      {
+        "questionNumber": 4,
+        "question": "How do you get to work?",
+        "sampleAnswer": "I like Vietnamese noodles"
+      },
+      {
+        "questionNumber": 5,
+        "question": "What do you like to do in the evening?",
+        "sampleAnswer": "I am from Vietnam"
+      }
+    ],
+    "part2": {
+      "instruction": "Part 2: You are a new member of a social club. Fill in the form. Write in sentences. Use 20 - 30 words.",
+      "prompt": "What do you like to do with friends, and where do you go?",
+      "wordLimit": "20 - 30 từ",
+      "sampleAnswer": ""
+    },
+    "part3": {
+      "instruction": "You are speaking to other members in the Social Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "items": [
+        {
+          "speaker": "A",
+          "question": "Where did you meet your friends for the first time and how did you become friends?",
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
+        },
+        {
+          "speaker": "B",
+          "question": "I have just moved to the city and want to make some friends. Can you give me some advice?",
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
+        },
+        {
+          "speaker": "C",
+          "question": "It is much easier to make new friends these days because of computers and mobile phones. Do you agree? Why or why not?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
+        }
+      ],
+      "wordLimit": "30 - 40 từ"
+    },
+    "part4": {
+      "context": "Dear members,\nWe would like to organize monthly face-to-face meetings. We would like your suggestions about when and where we could meet. This would suit both young and old people. Please send us your suggestions and your reasons.",
       "task1": {
         "prompt": "1. Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": "2.\tWrite an email to the club manager. Include your ideas and thoughts about the situation. Write 120-150 words.\n1.    Social club\nPart 1: You want to join a social club. Fill in the form. Use 1 – 5 words.\n1. What’s the weather like today?\n2. How are you?\n3. What’s your hobby?\n4. How do you get to work?\n5. What do you like to do in the evening?\nPart 2: You are a new member of a social club. Fill in the form. Write in sentences. Use 20 – 30 words.\nWhat do you like to do with friends, and where do you go?\nPart 3: You are a member of a social club. You are talking to three other members in the social club chat room. Talk to them using sentences. Use 30 – 40 words.\nA: Where did you meet your friends for the first time and how did you become friends?\nB: I have just moved to the city and want to make some friends. Can you give me some advice?\nC: It is much easier to make new friends these days because of computers and mobile phones. Do you agree? Why or why not?\nDear members,\nWe would like to organize monthly face-to-face meetings. We would like your suggestions about when and where we could meet. This would suit both young and old people. Please send us your suggestions and your reasons."
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
         "prompt": "2. Write an email to the manager of the club. Write about your feelings and what you think the club should do about the situation. Write about 120 - 150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -1673,31 +1951,31 @@
       {
         "questionNumber": 1,
         "question": "How many phones do you have?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "How often do you go shopping?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "Where are you from?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "Where do you live?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "Where would you like to live?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
+      "instruction": "You are a new member of Music Club. Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "Please tell us about the last time you listened to music.",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": ""
@@ -1708,32 +1986,32 @@
         {
           "speaker": "A",
           "question": "Hi! How often do you listen to music?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "B",
           "question": "I plan to give my son music lessons, but he doesn’t like it. What should I do?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "C",
           "question": "Do you agree that music is important in culture",
-          "sampleAnswer": ""
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear members, Our club has recently had some concerts and plays music at night. However, residents living near our club complain about the noise from our concerts. Please give me some suggestions to solve this problem,",
+      "context": "Dear members,\nOur club has recently had some concerts and plays music at night. However, residents living near our club complain about the noise from our concerts.\nPlease give me some suggestions to solve this problem,",
       "task1": {
         "prompt": "1. Write an email to your friends. Write about your feelings and ask for advice on how to deal with them. Write about 50 words. You have 10 minutes.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
         "sampleAnswer": "2. Write an email to CLUB. Write about your feelings and to find a solution. Write about 120-150 words. You have 20 minutes."
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -1741,10 +2019,36 @@
     "id": "sport-club",
     "title": "Sport Club",
     "description": "Aptis ESOL Writing • Chủ đề Sport Club",
-    "part1": [],
+    "part1": [
+      {
+        "questionNumber": 1,
+        "question": "What’s the weather like today?",
+        "sampleAnswer": "I enjoy listening to music"
+      },
+      {
+        "questionNumber": 2,
+        "question": "How are you?",
+        "sampleAnswer": "I ride my motorbike"
+      },
+      {
+        "questionNumber": 3,
+        "question": "What’s your favorite hobby?",
+        "sampleAnswer": "It is warm and sunny"
+      },
+      {
+        "questionNumber": 4,
+        "question": "How do you get to work?",
+        "sampleAnswer": "I like Vietnamese noodles"
+      },
+      {
+        "questionNumber": 5,
+        "question": "What do you like to do in the evening?",
+        "sampleAnswer": "I am from Vietnam"
+      }
+    ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
-      "prompt": "Why did you decide to join Sport Club?",
+      "instruction": "Now you've become a new member of the Sports club. Fill in the form. Write in sentences. Use 20-30 words",
+      "prompt": "Why did you decide to join the club?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": ""
     },
@@ -1759,111 +2063,116 @@
         {
           "speaker": "Member 2",
           "question": "I like playing sports with my friend but my brother likes playing sports alone. What do you think about this issue?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
+        },
+        {
+          "speaker": "Member C",
+          "question": "What suggestions do you have for our club to attract more young members?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "Dear members, Please give your suggestions about the organization of playing sports for young members.",
+      "context": "Dear members,\nPlease give your suggestions about the organization of playing sports for young members.",
       "task1": {
-        "prompt": "1.    Write an email to your friend. Write about 50 words.",
+        "prompt": "1. Write an email to your friend. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": "1.    Write an email to the manager of the club. Write about 120 - 150 words."
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "1. Write an email to the manager of the club. Write about 120 - 150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
     "id": "tv-club",
-    "title": "Tv Club",
-    "description": "Aptis ESOL Writing • Chủ đề Tv Club",
+    "title": "TV Club",
+    "description": "Aptis ESOL Writing • Chủ đề TV Club",
     "part1": [
       {
         "questionNumber": 1,
         "question": "Who do you usually go to the movies with?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "Do you like to take photos?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "Where do you like to go on holiday?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "What’s your favorite color?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "What did you do last night?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
+      "instruction": "You are a new member of TV Club. Fill in the form. Write in sentences. Use 20 - 30 words.",
       "prompt": "Do you usually watch TV?",
       "wordLimit": "20 - 30 từ",
       "sampleAnswer": ""
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Tv Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the TV Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "A",
           "question": "What do you like to do when you watch TV?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "B",
           "question": "Do you like watching TV alone or with others?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "C",
           "question": "Is it good for children to watch TV programs too much",
-          "sampleAnswer": ""
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "The club is planning to organize a conference to invite all members. The members come from different countries and have only communicated with each other online before. The club would like to get your suggestions on the venue of this conference and the activities held during the conference. 4.1. Write an email to a friend",
+      "context": "The club is planning to organize a conference to invite all members. The members come from different countries and have only communicated with each other online before. The club would like to get your suggestions on the venue of this conference and the activities held during the conference.\n4.1. Write an email to a friend",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
         "prompt": "4.2. Write an email to the manager",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "fitness-club-1",
-    "title": "Fitness Club 1",
-    "description": "Aptis ESOL Writing • Chủ đề Fitness Club 1",
+    "id": "fitness-club-d-1",
+    "title": "Fitness Club (Đề 1)",
+    "description": "Aptis ESOL Writing • Chủ đề Fitness Club (Đề 1)",
     "part1": [
       {
         "questionNumber": 1,
         "question": "Why do you want to join a club?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "What’s the weather like today?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
@@ -1873,32 +2182,32 @@
       {
         "questionNumber": 4,
         "question": "What do you usually do in your free time?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "Why do you learn English?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
-      "instruction": "You are a new member of a fitness club. Fill in the form. Write",
-      "prompt": "Why did you decide to join Fitness Club 1?",
+      "instruction": "You are a new member of Fitness Club (Đề 1). Fill in the form. Write in sentences. Use 20 - 30 words.",
+      "prompt": "Please tell us why you decided to join Fitness Club (Đề 1) and what you hope to achieve here?",
       "wordLimit": "20 - 30 từ",
-      "sampleAnswer": ""
+      "sampleAnswer": "I decided to join the club because I want to learn more, meet new people with similar interests, and improve my personal skills. It will be a wonderful experience for me."
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Fitness Club 1 chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Fitness Club (Đề 1) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "A",
           "question": "I often go jogging because it is good for my health. What about you?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "B",
           "question": "Hi! What do you hope to achieve by joining the club?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "C",
@@ -1909,33 +2218,33 @@
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "You are a member of a fitness club. You received this email from the club. Dear members, Some equipment in the club is old and needs to be replaced. Our club is planning to hold a sponsorship event to raise money for the upgrade of sports equipment. On the other hand, there are also some opinions that the club should increase the membership fee to 50%. Please give your opinions.",
+      "context": "You are a member of a fitness club. You received this email\nfrom the club.\nDear members,\nSome equipment in the club is old and needs to be replaced. Our club\nis planning to hold a sponsorship event to raise money for the upgrade\nof sports equipment. On the other hand, there are also some opinions\nthat the club should increase the membership fee to 50%. Please give\nyour opinions.",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "fitness-power-club-2",
-    "title": "Fitness Power Club 2",
-    "description": "Aptis ESOL Writing • Chủ đề Fitness Power Club 2",
+    "id": "fitness-power-club-d-2",
+    "title": "Fitness Power Club (Đề 2)",
+    "description": "Aptis ESOL Writing • Chủ đề Fitness Power Club (Đề 2)",
     "part1": [
       {
         "questionNumber": 1,
         "question": "Why do you want to join a club?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "What’s the weather like today?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
@@ -1945,47 +2254,52 @@
       {
         "questionNumber": 4,
         "question": "What do you usually do in your free time?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "Why do you learn English?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
-      "instruction": "You are a new member of the club. Fill in the form. Write in sentences. Use 20-30 words.",
-      "prompt": "Why did you decide to join Fitness Power Club 2?",
+      "instruction": "You are a new member of Fitness Power Club (Đề 2). Fill in the form. Write in sentences. Use 20 - 30 words.",
+      "prompt": "Please tell us why you decided to join Fitness Power Club (Đề 2) and what you hope to achieve here?",
       "wordLimit": "20 - 30 từ",
-      "sampleAnswer": ""
+      "sampleAnswer": "I decided to join the club because I want to learn more, meet new people with similar interests, and improve my personal skills. It will be a wonderful experience for me."
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Fitness Power Club 2 chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Fitness Power Club (Đề 2) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "A",
           "question": "Hi! Welcome to the club. How did you hear about the club?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "B",
           "question": "Hi! What do you hope to achieve by joining the club?",
           "sampleAnswer": "C How can the quality of the fitness club be improved?"
+        },
+        {
+          "speaker": "Member C",
+          "question": "What suggestions do you have for our club to attract more young members?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "You received an email that said that in order to cut costs, the club reduced some equipment that was offered to members. Some members suggest that we should close the fitness shop or café.",
+      "context": "You received an email that said that in order to cut costs, the club reduced some equipment that was offered to members. Some members\nsuggest that we should close the fitness shop or café.",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
@@ -1997,29 +2311,34 @@
       {
         "questionNumber": 1,
         "question": "- How is the weather today?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "- What is your favorite season of the year?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "- what do you like to do every morning?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "- What do you like to do in your free time?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
+      },
+      {
+        "questionNumber": 5,
+        "question": "Where are you from?",
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
       "instruction": "Part 2: When was the last time you read a book, and how was the book?",
-      "prompt": "Why did you decide to join Reading Club?",
+      "prompt": "Please tell us why you decided to join Reading Club and what you hope to achieve here?",
       "wordLimit": "20 - 30 từ",
-      "sampleAnswer": ""
+      "sampleAnswer": "I decided to join the club because I want to learn more, meet new people with similar interests, and improve my personal skills. It will be a wonderful experience for me."
     },
     "part3": {
       "instruction": "You are speaking to other members in the Reading Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
@@ -2032,166 +2351,531 @@
         {
           "speaker": "Member 2",
           "question": "Person C: Nowadays, children prefer playing games to reading books. Do you think this is worrying? Why?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
+        },
+        {
+          "speaker": "Member C",
+          "question": "What suggestions do you have for our club to attract more young members?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "The club received an email about a new library, and we need to brainstorm the design of this library to appeal to both young and old. 1.      Write to a frienđ (50 words)",
+      "context": "The club received an email about a new library, and we need to brainstorm the design of this library to appeal to both young and old.\n1. Write to a frienđ (50 words)",
       "task1": {
-        "prompt": "Write an email to your friend. Write about 50 words.",
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
-        "prompt": "2.      Write to the manager of the club (120 words - 150 words)",
+        "prompt": "2. Write to the manager of the club (120 words - 150 words)",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "travel-club",
-    "title": "Travel Club",
-    "description": "Aptis ESOL Writing • Chủ đề Travel Club",
+    "id": "travel-club-d-1-tourist-behavior",
+    "title": "Travel Club (Đề 1 - Tourist Behavior)",
+    "description": "Aptis ESOL Writing • Chủ đề Travel Club (Đề 1 - Tourist Behavior)",
     "part1": [
       {
         "questionNumber": 1,
         "question": "What is your favorite subject in high school?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "What do you like doing with your friend?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "Where do you wanna go on holiday?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "Why are you interested in travel?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "Tell me a place you often visit?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
       "instruction": "Part 2: Why are you interested in travel?",
-      "prompt": "Why did you decide to join Travel Club?",
+      "prompt": "Please tell us why you decided to join Travel Club (Đề 1 - Tourist Behavior) and what you hope to achieve here?",
       "wordLimit": "20 - 30 từ",
-      "sampleAnswer": ""
+      "sampleAnswer": "I decided to join the club because I want to learn more, meet new people with similar interests, and improve my personal skills. It will be a wonderful experience for me."
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Travel Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Travel Club (Đề 1 - Tourist Behavior) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "1",
           "question": "Tell me a time you had a trip in bad weather.",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "2",
           "question": "Traveling a long distance by some means of transportation is not good for the environment. Do you agree?",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "3",
           "question": "What are the most interesting places to visit in your country?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "You are a member of Travel Club. You received an announcement from the club regarding upcoming events and membership feedback. Please read and respond to the two tasks below.",
+      "context": "Dear Member,\nOur club is planning new upcoming events and would like to collect opinions from members regarding schedule adjustments and fee policies. Please review and respond to the two tasks below.",
       "task1": {
-        "prompt": "1.  Write to your friend and share your suggestions. 50 words.",
+        "prompt": "1. Write to your friend and share your suggestions. 50 words.",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": "2.  Write to the president of the club and give your suggestions. Write about 120 - 150 words."
+        "sampleAnswer": "2. Write to the president of the club and give your suggestions. Write about 120 - 150 words."
       },
       "task2": {
-        "prompt": "Write an email to the manager of the club. Write about 120-150 words.",
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   },
   {
-    "id": "writing-club-phi-n-b-n-2",
-    "title": "Writing Club (phiên Bản 2)",
-    "description": "Aptis ESOL Writing • Chủ đề Writing Club (phiên Bản 2)",
+    "id": "travel-club-d-2-language-barriers",
+    "title": "Travel Club (Đề 2 - Language Barriers)",
+    "description": "Aptis ESOL Writing • Chủ đề Travel Club (Đề 2 - Language Barriers)",
     "part1": [
       {
         "questionNumber": 1,
         "question": "What is your favorite subject in high school?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I enjoy listening to music"
       },
       {
         "questionNumber": 2,
         "question": "What do you like doing with your friend?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I ride my motorbike"
       },
       {
         "questionNumber": 3,
         "question": "Where do you wanna go on holiday?",
-        "sampleAnswer": ""
+        "sampleAnswer": "It is warm and sunny"
       },
       {
         "questionNumber": 4,
         "question": "Why are you interested in travel?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I like Vietnamese noodles"
       },
       {
         "questionNumber": 5,
         "question": "Tell me a place you often visit?",
-        "sampleAnswer": ""
+        "sampleAnswer": "I am from Vietnam"
       }
     ],
     "part2": {
       "instruction": "Part 2: Where do you usually travel on holiday?",
-      "prompt": "Why did you decide to join Writing Club (phiên Bản 2)?",
+      "prompt": "Please tell us why you decided to join Travel Club (Đề 2 - Language Barriers) and what you hope to achieve here?",
       "wordLimit": "20 - 30 từ",
-      "sampleAnswer": ""
+      "sampleAnswer": "I decided to join the club because I want to learn more, meet new people with similar interests, and improve my personal skills. It will be a wonderful experience for me."
     },
     "part3": {
-      "instruction": "You are speaking to other members in the Writing Club (phiên Bản 2) chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "instruction": "You are speaking to other members in the Travel Club (Đề 2 - Language Barriers) chat room. Respond to them in full sentences (30 - 40 words per answer).",
       "items": [
         {
           "speaker": "Q1",
           "question": "Do you prefer to travel alone or with a group? Why?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
         },
         {
           "speaker": "Q2",
           "question": "Tell me about an interesting summer vacation you went on.",
-          "sampleAnswer": ""
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
         },
         {
           "speaker": "Q3",
           "question": "Why do many people prefer to travel with friends?",
-          "sampleAnswer": ""
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
         }
       ],
       "wordLimit": "30 - 40 từ"
     },
     "part4": {
-      "context": "As you all know, when going overseas where we don't speak our native language, we're likely to run into language barriers. The club encourages people to travel to different parts of the world, but it's difficult to communicate for the first time. Please give suggestions on solutions. . Email to the club's member . Email to club manager We are writing to let you know that the famous travel writer, Mr David Price, will unfortunately not be able to attend our next club meeting. Although Mr Price will not be there to sign copies of his new book Around the World in Eighty Ways, members of the club will be able to buy a copy at the price of 25 pounds. If you would like to reserve a copy of the book, please contact the club secretary.",
+      "context": "As you all know, when going overseas where we don't speak our native language, we're likely to run into language barriers. The club encourages people to travel to different parts of the world, but it's difficult to communicate for the first time. Please give suggestions on solutions.\n. Email to the club's member\n. Email to club manager",
+      "task1": {
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
+        "wordLimit": "Khoảng 50 từ (Thư thân mật)",
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
+      },
+      "task2": {
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
+        "wordLimit": "120 - 150 từ (Thư trang trọng)",
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
+      }
+    }
+  },
+  {
+    "id": "travel-club-d-3-david-price-book",
+    "title": "Travel Club (Đề 3 - David Price Book)",
+    "description": "Aptis ESOL Writing • Chủ đề Travel Club (Đề 3 - David Price Book)",
+    "part1": [
+      {
+        "questionNumber": 1,
+        "question": "What is your hobby?",
+        "sampleAnswer": "I enjoy listening to music"
+      },
+      {
+        "questionNumber": 2,
+        "question": "How do you get to work?",
+        "sampleAnswer": "I ride my motorbike"
+      },
+      {
+        "questionNumber": 3,
+        "question": "What is the weather like today?",
+        "sampleAnswer": "It is warm and sunny"
+      },
+      {
+        "questionNumber": 4,
+        "question": "What is your favorite food?",
+        "sampleAnswer": "I like Vietnamese noodles"
+      },
+      {
+        "questionNumber": 5,
+        "question": "Where are you from?",
+        "sampleAnswer": "I am from Vietnam"
+      }
+    ],
+    "part2": {
+      "instruction": "You are a new member of Travel Club (Đề 3 - David Price Book). Fill in the form. Write in sentences. Use 20 - 30 words.",
+      "prompt": "Please tell us why you decided to join Travel Club (Đề 3 - David Price Book) and what you hope to achieve here?",
+      "wordLimit": "20 - 30 từ",
+      "sampleAnswer": "I decided to join the club because I want to learn more, meet new people with similar interests, and improve my personal skills. It will be a wonderful experience for me."
+    },
+    "part3": {
+      "instruction": "You are speaking to other members in the Travel Club (Đề 3 - David Price Book) chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "items": [
+        {
+          "speaker": "Member A",
+          "question": "Hi! Welcome to Travel Club (Đề 3 - David Price Book). How did you first get interested in this activity?",
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
+        },
+        {
+          "speaker": "Member B",
+          "question": "Do you prefer participating on weekdays or on weekends? Why?",
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
+        },
+        {
+          "speaker": "Member C",
+          "question": "What suggestions do you have for our club to attract more young members?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
+        }
+      ],
+      "wordLimit": "30 - 40 từ"
+    },
+    "part4": {
+      "context": "We are writing to let you know that the famous travel writer, Mr David Price, will unfortunately not be able to attend our next club meeting. Although Mr Price will not be there to sign copies of his new book Around the World in Eighty Ways, members of the club will be able to buy a copy at the price of 25 pounds. If you would like to reserve a copy of the book, please contact the club secretary.",
+      "task1": {
+        "prompt": "1.Write an email to your friend. Write about your feelings and what you are planning to do.",
+        "wordLimit": "Khoảng 50 từ (Thư thân mật)",
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
+      },
+      "task2": {
+        "prompt": "2. Write to the manager 120 -150 words",
+        "wordLimit": "120 - 150 từ (Thư trang trọng)",
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
+      }
+    }
+  },
+  {
+    "id": "debate-club",
+    "title": "Debate Club",
+    "description": "Aptis ESOL Writing • Chủ đề Debate Club",
+    "part1": [
+      {
+        "questionNumber": 1,
+        "question": "Where are you from?",
+        "sampleAnswer": "I enjoy listening to music"
+      },
+      {
+        "questionNumber": 2,
+        "question": "What’s the weather like today?",
+        "sampleAnswer": "I ride my motorbike"
+      },
+      {
+        "questionNumber": 3,
+        "question": "What do you do in your free time?",
+        "sampleAnswer": "It is warm and sunny"
+      },
+      {
+        "questionNumber": 4,
+        "question": "First language?",
+        "sampleAnswer": "I like Vietnamese noodles"
+      },
+      {
+        "questionNumber": 5,
+        "question": "Who do you usually go to the movies with?",
+        "sampleAnswer": "I am from Vietnam"
+      }
+    ],
+    "part2": {
+      "instruction": "Part 2: You are a member of a book club. You are talking to three other members in the book club chat room. Talk to them using sentences. Use 30 - 40 words.",
+      "prompt": "What do you usually talk about with your friends?",
+      "wordLimit": "20 - 30 từ",
+      "sampleAnswer": "A: Hi! Nowadays, there are many ways to update news. How do you keep up with world issues? B: I am going to join a debate in front of 50 people next week. How can I make a good impression? C: Before making a decision about something, you should consider two sides of the problem. What do you think about that?"
+    },
+    "part3": {
+      "instruction": "You are speaking to other members in the Debate Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "items": [
+        {
+          "speaker": "Member A",
+          "question": "Hi! Welcome to Debate Club. How did you first get interested in this activity?",
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
+        },
+        {
+          "speaker": "Member B",
+          "question": "Do you prefer participating on weekdays or on weekends? Why?",
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
+        },
+        {
+          "speaker": "Member C",
+          "question": "What suggestions do you have for our club to attract more young members?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
+        }
+      ],
+      "wordLimit": "30 - 40 từ"
+    },
+    "part4": {
+      "context": "We want to encourage many young people to join the club. Unfortunately, young people usually think that debating is not for them. What do you think is the benefit of debating and speaking in public? Please provide two benefits that you think are the most important and why.",
+      "task1": {
+        "prompt": "1. Write an email to your friend who is also a member of the club. Write about how you feel and what you think the club should do. Write about 50 words.",
+        "wordLimit": "Khoảng 50 từ (Thư thân mật)",
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
+      },
+      "task2": {
+        "prompt": "2. Write an email to the manager of the club. Write about 120 - 150 words.",
+        "wordLimit": "120 - 150 từ (Thư trang trọng)",
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
+      }
+    }
+  },
+  {
+    "id": "technology-club",
+    "title": "Technology Club",
+    "description": "Aptis ESOL Writing • Chủ đề Technology Club",
+    "part1": [
+      {
+        "questionNumber": 1,
+        "question": "Where are you from?",
+        "sampleAnswer": "I enjoy listening to music"
+      },
+      {
+        "questionNumber": 2,
+        "question": "What’s the weather like today?",
+        "sampleAnswer": "I ride my motorbike"
+      },
+      {
+        "questionNumber": 3,
+        "question": "What did you do last night?",
+        "sampleAnswer": "It is warm and sunny"
+      },
+      {
+        "questionNumber": 4,
+        "question": "First language?",
+        "sampleAnswer": "I like Vietnamese noodles"
+      },
+      {
+        "questionNumber": 5,
+        "question": "What is your favorite color?",
+        "sampleAnswer": "I am from Vietnam"
+      }
+    ],
+    "part2": {
+      "instruction": "Part 2: You are a new member of a technology club. Fill in the form.",
+      "prompt": "What do you usually use your laptop for?",
+      "wordLimit": "20 - 30 từ",
+      "sampleAnswer": ""
+    },
+    "part3": {
+      "instruction": "You are speaking to other members in the Technology Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "items": [
+        {
+          "speaker": "A",
+          "question": "I often help Grandma use the computer. Have you ever helped anyone?",
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
+        },
+        {
+          "speaker": "B",
+          "question": "Reading books on a laptop in bed makes it difficult for us to sleep. Do you have any advice?",
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
+        },
+        {
+          "speaker": "C",
+          "question": "In the future, roads will be safer and will be controlled by computers. What do you think?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
+        }
+      ],
+      "wordLimit": "30 - 40 từ"
+    },
+    "part4": {
+      "context": "Dear member,\nMembers often post on the club’s website. But lately, there have been a few negative comments on other members' posts. Please give your opinion on how to fix the situation.",
       "task1": {
         "prompt": "1. Write an email to your friend. (50 words)",
         "wordLimit": "Khoảng 50 từ (Thư thân mật)",
-        "sampleAnswer": ""
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
       },
       "task2": {
         "prompt": "2. Write an email to the manager of the club. (120-150 words)",
         "wordLimit": "120 - 150 từ (Thư trang trọng)",
-        "sampleAnswer": "Part 1\nWhere are you from?\nWhat’s the weather like today?\nWhat do you do in your free time?\nFirst language?\nWho do you usually go to the movies with?\nPart 2: You are a new member of a debate club. Fill in the form. Write in sentences. Use 20 – 30 words.\nWhat do you usually talk about with your friends?\nPart 2: You are a member of a book club. You are talking to three other members in the book club chat room. Talk to them using sentences. Use 30 – 40 words.\nA: Hi! Nowadays, there are many ways to update news. How do you keep up with world issues?\nB: I am going to join a debate in front of 50 people next week. How can I make a good impression?\nC: Before making a decision about something, you should consider two sides of the problem. What do you think about that?\nWe want to encourage many young people to join the club. Unfortunately, young people usually think that debating is not for them. What do you think is the benefit of debating and speaking in public? Please provide two benefits that you think are the most important and why.\nPart 1\nWhere are you from?\nWhat’s the weather like today?\nWhat did you do last night?\nFirst language?\nWhat is your favorite color?\nPart 2: You are a new member of a technology club. Fill in the form.\nWhat do you usually use your laptop for?\nPart 3: You are a member of a book club. You are talking to three other members in the book club chat room. Use 30-40 words.\nA: I often help Grandma use the computer. Have you ever helped anyone?\nB: Reading books on a laptop in bed makes it difficult for us to sleep. Do you have any advice?\nC: In the future, roads will be safer and will be controlled by computers. What do you think?\nDear member,\nMembers often post on the club’s website. But lately, there have been a few negative comments on other members' posts. Please give your opinion on how to fix the situation.\nPart 1\nWhat's your job?\nWhat are you going to do tomorrow?\nWhat will you do after work?\nWhat sports do you like?\nWhat is your favorite color?\nPart 2: Write in sentences. Use 20-30 words.\nDescribe a garden or a park near your home?\nPart 3: You are a member of a garden club. You are talking to three other members in the garden club chat room. Talk to them using sentences. Use 30-40 words.\nA: I don't live in the countryside, so when I want to appreciate nature, I have to go to the park. How about you?\nB: I am planning to buy a house, do you think I should buy a house with a garden or without a garden?\nC: People should pay a small fee to maintain public parks and gardens. What do you think?\nDear members,\nThe city council wants to encourage more people to participate in gardening. The council has two proposals. One is to plant 50 new trees and new species of flowers at the local park. The second is to offer practical workshops in gardening skills at the local college. Which proposal should we support?\nWrite a short email (about 50 words) to your friend,\nWrite an email (120-150 words) to the president of the club.\nPart 1: You want to join a writing club. Fill in the form. Use 1 – 5 words.\n1. What’s the weather like today?\n2. How are you?\n3. What’s your favorite hobby?\n4. How do you get to work?\n5. What do you like to do in the evening?\nPart 3: You are a member of a writing club. You are talking to three other members in the writing club chat room. Talk to them using sentences. Use 30 – 40 words.\nA: I usually write at the cof êc fee shop. What about you? I aslo write at the coffe shop near my house. It is a peaceful and beautiful place. It helps me come up with creative ideas. I go there two or three times a week.\nB. Do you prefer handwriting or typing?\nI prefer handwriting because it is cheap, convenient and fast. I can write in my notebook as soon as I have a new ideal. I often write in the park near my house because it makes me feel relaxed\nC: There are many people who like to write, but only a few people become writers. What do you think is a successful writer?\nIn my opinion, a successful writer is a creative and hard-working person. They read continuously and practise writing regularly to improve their skills, producing meaningful stories that inspire readers and make a great impact.\n1. Dear members,\nMany people complain that the website is unprofessional and difficult to use. Please send us your suggestions. In in\nWrite an email to your friend. Write about 50 words."
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
+      }
+    }
+  },
+  {
+    "id": "garden-club",
+    "title": "Garden Club",
+    "description": "Aptis ESOL Writing • Chủ đề Garden Club",
+    "part1": [
+      {
+        "questionNumber": 1,
+        "question": "What's your job?",
+        "sampleAnswer": "I enjoy listening to music"
+      },
+      {
+        "questionNumber": 2,
+        "question": "What are you going to do tomorrow?",
+        "sampleAnswer": "I ride my motorbike"
+      },
+      {
+        "questionNumber": 3,
+        "question": "What will you do after work?",
+        "sampleAnswer": "It is warm and sunny"
+      },
+      {
+        "questionNumber": 4,
+        "question": "What sports do you like?",
+        "sampleAnswer": "I like Vietnamese noodles"
+      },
+      {
+        "questionNumber": 5,
+        "question": "What is your favorite color?",
+        "sampleAnswer": "I am from Vietnam"
+      }
+    ],
+    "part2": {
+      "instruction": "Part 2: Write in sentences. Use 20-30 words.",
+      "prompt": "Describe a garden or a park near your home?",
+      "wordLimit": "20 - 30 từ",
+      "sampleAnswer": ""
+    },
+    "part3": {
+      "instruction": "You are speaking to other members in the Garden Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "items": [
+        {
+          "speaker": "A",
+          "question": "I don't live in the countryside, so when I want to appreciate nature, I have to go to the park. How about you?",
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
+        },
+        {
+          "speaker": "B",
+          "question": "I am planning to buy a house, do you think I should buy a house with a garden or without a garden?",
+          "sampleAnswer": "In my opinion, I prefer joining activities on weekends because I have plenty of free time. During weekdays, I am usually occupied with work and study, so weekends help me relax completely."
+        },
+        {
+          "speaker": "C",
+          "question": "People should pay a small fee to maintain public parks and gardens. What do you think?",
+          "sampleAnswer": "I think the club should organize engaging workshops and promote our activities on social media platforms. This is an effective way to reach young people and raise their interest."
+        }
+      ],
+      "wordLimit": "30 - 40 từ"
+    },
+    "part4": {
+      "context": "Dear members,\nThe city council wants to encourage more people to participate in gardening. The council has two proposals. One is to plant 50 new trees and new species of flowers at the local park. The second is to offer practical workshops in gardening skills at the local college. Which proposal should we support?\nWrite a short email (about 50 words) to your friend,\nWrite an email (120-150 words) to the president of the club.",
+      "task1": {
+        "prompt": "Write an email to your friend. Write about your feelings and what you would like to do. Write about 50 words.",
+        "wordLimit": "Khoảng 50 từ (Thư thân mật)",
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
+      },
+      "task2": {
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
+        "wordLimit": "120 - 150 từ (Thư trang trọng)",
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
+      }
+    }
+  },
+  {
+    "id": "writing-club",
+    "title": "Writing Club",
+    "description": "Aptis ESOL Writing • Chủ đề Writing Club",
+    "part1": [
+      {
+        "questionNumber": 1,
+        "question": "What’s the weather like today?",
+        "sampleAnswer": "I enjoy listening to music"
+      },
+      {
+        "questionNumber": 2,
+        "question": "How are you?",
+        "sampleAnswer": "I ride my motorbike"
+      },
+      {
+        "questionNumber": 3,
+        "question": "What’s your favorite hobby?",
+        "sampleAnswer": "It is warm and sunny"
+      },
+      {
+        "questionNumber": 4,
+        "question": "How do you get to work?",
+        "sampleAnswer": "I like Vietnamese noodles"
+      },
+      {
+        "questionNumber": 5,
+        "question": "What do you like to do in the evening?",
+        "sampleAnswer": "I am from Vietnam"
+      }
+    ],
+    "part2": {
+      "instruction": "You are a new member of Writing Club. Fill in the form. Write in sentences. Use 20 - 30 words.",
+      "prompt": "Please tell us why you decided to join Writing Club and what you hope to achieve here?",
+      "wordLimit": "20 - 30 từ",
+      "sampleAnswer": "I decided to join the club because I want to learn more, meet new people with similar interests, and improve my personal skills. It will be a wonderful experience for me."
+    },
+    "part3": {
+      "instruction": "You are speaking to other members in the Writing Club chat room. Respond to them in full sentences (30 - 40 words per answer).",
+      "items": [
+        {
+          "speaker": "A",
+          "question": "I usually write at the cof êc fee shop. What about you? I aslo write at the coffe shop near my house. It is a peaceful and beautiful place. It helps me come up with creative ideas. I go there two or three times a week.",
+          "sampleAnswer": "I have been interested in this field since I was in high school. Joining this club gives me an excellent chance to share ideas with others and learn new techniques from experienced members."
+        },
+        {
+          "speaker": "B",
+          "question": "Do you prefer handwriting or typing?",
+          "sampleAnswer": "I prefer handwriting because it is cheap, convenient and fast. I can write in my notebook as soon as I have a new ideal. I often write in the park near my house because it makes me feel relaxed"
+        },
+        {
+          "speaker": "C",
+          "question": "There are many people who like to write, but only a few people become writers. What do you think is a successful writer?",
+          "sampleAnswer": "In my opinion, a successful writer is a creative and hard-working person. They read continuously and practise writing regularly to improve their skills, producing meaningful stories that inspire readers and make a great impact."
+        }
+      ],
+      "wordLimit": "30 - 40 từ"
+    },
+    "part4": {
+      "context": "1. Dear members,\nMany people complain that the website is unprofessional and difficult to use. Please send us your suggestions. In in",
+      "task1": {
+        "prompt": "Write an email to your friend. Write about 50 words.",
+        "wordLimit": "Khoảng 50 từ (Thư thân mật)",
+        "sampleAnswer": "Hi Alex,\nI hope you're doing well. Have you heard the latest announcement from our club? To be honest, I was quite surprised and a bit worried about these changes. We should definitely meet up this weekend to discuss what we can do about it. Let me know what you think!\nBest,\nNam"
+      },
+      "task2": {
+        "prompt": "Write an email to the manager of the club. Write about your feelings and suggest possible alternatives. Write about 120-150 words.",
+        "wordLimit": "120 - 150 từ (Thư trang trọng)",
+        "sampleAnswer": "Dear Club Manager,\n\nI am writing this email to express my views regarding the recent announcement about upcoming club adjustments. As an active and dedicated member, I appreciate the committee's continuous efforts to develop our club.\n\nHowever, I am somewhat concerned that the proposed changes might inconvenience many participants, especially students and busy professionals. Therefore, I would like to put forward a couple of constructive suggestions.\n\nFirstly, it would be beneficial to conduct a member survey before making a final decision. Secondly, offering flexible participation options or hybrid sessions could help accommodate everyone.\n\nThank you for taking the time to consider my recommendations. I look forward to hearing your thoughts on this matter.\n\nYours sincerely,\nNam Nguyen"
       }
     }
   }
