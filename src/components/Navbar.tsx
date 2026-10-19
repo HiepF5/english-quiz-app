@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import {
   BookOpen,
   HelpCircle,
-  Languages,
   Sparkles,
   Upload,
   ClipboardPaste,
@@ -19,7 +18,7 @@ import {
   Mic
 } from 'lucide-react';
 
-export type AppModule = 'quiz' | 'translation' | 'ordering' | 'headings' | 'opinion' | 'listening_p3' | 'listening_p4';
+export type AppModule = 'quiz' | 'ordering' | 'headings' | 'opinion' | 'listening_p3' | 'listening_p4';
 
 interface NavbarProps {
   activeModule: AppModule;
@@ -84,7 +83,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </h1>
               </div>
               <p className="text-xs opacity-75 font-medium line-clamp-1 max-w-xs sm:max-w-md">
-                {currentQuizTitle ? `Đang làm: ${currentQuizTitle}` : 'Trắc Nghiệm • Sắp Xếp Câu (Part 2-3) • Nối Từ (Part 4) • Ý Kiến Người (Part 5) • Luyện Dịch'}
+                {currentQuizTitle ? `Đang làm: ${currentQuizTitle}` : 'Trắc Nghiệm • Sắp Xếp Câu (Part 2-3) • Nối Từ (Part 5) • Ý Kiến Người (Part 4) • Nghe Part 3 & 4'}
               </p>
             </div>
           </div>
@@ -139,18 +138,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <Users className="w-3.5 h-3.5 text-indigo-300" />
               <span>Ý Kiến Người (Part 4)</span>
-            </button>
-
-            <button
-              onClick={() => onChangeModule('translation')}
-              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                activeModule === 'translation'
-                  ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-md'
-                  : 'opacity-70 hover:opacity-100'
-              }`}
-            >
-              <Languages className="w-3.5 h-3.5 text-amber-300" />
-              <span>Luyện Dịch</span>
             </button>
 
             <button
@@ -267,9 +254,9 @@ export const Navbar: React.FC<NavbarProps> = ({
               )}
             </>
           ) : (
-            <div className="flex items-center space-x-2 text-xs font-semibold text-purple-600 dark:text-purple-300">
+            <div className="flex items-center space-x-2 text-xs font-semibold text-indigo-600 dark:text-indigo-300">
               <Sparkles className="w-4 h-4 text-amber-500 dark:text-amber-300" />
-              <span>Chế độ: Luyện Dịch & AI Chấm</span>
+              <span>Aptis ESOL Practice Hub</span>
             </div>
           )}
         </div>

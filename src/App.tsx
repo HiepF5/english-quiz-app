@@ -10,7 +10,6 @@ import { JsonTemplateModal } from './components/JsonTemplateModal';
 import { GithubPushModal } from './components/GithubPushModal';
 import { JsonPasteModal } from './components/JsonPasteModal';
 import { AiConverterModal } from './components/AiConverterModal';
-import { TranslationWorkspace } from './components/TranslationWorkspace';
 import { OrderingWorkspace } from './components/OrderingWorkspace';
 import { HeadingsWorkspace } from './components/HeadingsWorkspace';
 import { OpinionWorkspace } from './components/OpinionWorkspace';
@@ -337,9 +336,6 @@ export const App: React.FC = () => {
         ) : activeModule === 'ordering' ? (
           /* Sentence Reordering Workspace (Aptis Part 2) */
           <OrderingWorkspace />
-        ) : activeModule === 'translation' ? (
-          /* Translation Practice & AI Grading Workspace */
-          <TranslationWorkspace />
         ) : !activeQuiz ? (
           /* Quiz Selector Screen */
           <QuizSelector
