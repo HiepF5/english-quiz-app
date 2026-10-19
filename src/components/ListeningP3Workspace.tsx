@@ -30,8 +30,27 @@ export const ListeningP3Workspace: React.FC = () => {
   const [activeTopicId, setActiveTopicId] = useState<string>(topics[0]?.id || '');
   const activeTopic = topics.find(t => t.id === activeTopicId) || topics[0];
 
-  // Mode: 'exam' (max 2 listens, transcript hidden until submit) | 'practice' (unlimited, can peek script)
-  const [mode, setMode] = useState<'exam' | 'practice'>('practice');
+  // Mode:
+  // - 'practice': Luyện tập (unlimited listens, can peek script, full explanations)
+  // - 'exam': Thi thật (max 2 listens, transcript hidden until submit, full explanations)
+  // - 'exam-no-explain': Thi chỉ Đúng/Sai (max 2 listens, transcript hidden, only shows Đúng/Sai without explanations)
+  const [mode, setMode] = useState<'practice' | 'exam' | 'exam-no-explain'>(() => {
+    try {
+      const saved = localStorage.getItem('aptis_listening_p3_mode');
+      if (saved === 'practice' || saved === 'exam' || saved === 'exam-no-explain') return saved;
+    } catch {}
+    return 'practice';
+  });
+
+  const handleModeChange = (newMode: 'practice' | 'exam' | 'exam-no-explain') => {
+    setMode(newMode);
+    try {
+      localStorage.setItem('aptis_listening_p3_mode', newMode);
+    } catch {}
+  };
+
+  // Allow temporarily revealing explanations in 'exam-no-explain' mode after submit if user requests
+  const [revealExplanation, setRevealExplanation] = useState<boolean>(false);
 
   // Display style: 'dropdown' (like user's exam screenshot) vs 'buttons'
   const [inputStyle, setInputStyle] = useState<'dropdown' | 'buttons'>('dropdown');
@@ -168,6 +187,7 @@ export const ListeningP3Workspace: React.FC = () => {
     setListenCount(0);
     setSecondsElapsed(0);
     setShowScript(false);
+    setRevealExplanation(false);
   }, [activeTopicId]);
 
   // Timer interval
@@ -227,8 +247,12 @@ export const ListeningP3Workspace: React.FC = () => {
   // Play full dialogue using Web Speech API sequentially
   const playFullDialogueTTS = () => {
     if (!activeTopic) return;
-    if (mode === 'exam' && listenCount >= 2) {
-      alert('Ở chế độ Thi thật, bạn chỉ được nghe tối đa 2 lần!');
+    if (mode !== 'practice' && listenCount >= 2) {
+      alert(
+        mode === 'exam-no-explain'
+          ? 'Ở chế độ Thi chỉ Đúng/Sai, bạn chỉ được nghe tối đa 2 lần!'
+          : 'Ở chế độ Thi thật, bạn chỉ được nghe tối đa 2 lần!'
+      );
       return;
     }
 
@@ -304,7 +328,11 @@ export const ListeningP3Workspace: React.FC = () => {
     const percentage = Math.round((score / totalCount) * 100);
     setScoreResult({ score, total: totalCount, percentage });
     setIsSubmitted(true);
-    setShowScript(true);
+    if (mode !== 'exam-no-explain') {
+      setShowScript(true);
+    } else {
+      setShowScript(false);
+    }
 
     const record: ListeningP3ScoreRecord = {
       topicId: activeTopic.id,
@@ -342,6 +370,7 @@ export const ListeningP3Workspace: React.FC = () => {
     setListenCount(0);
     setSecondsElapsed(0);
     setShowScript(false);
+    setRevealExplanation(false);
     if (shuffleOptions) {
       setOptionsSeed(prev => prev + 1);
     }
@@ -374,9 +403,9 @@ export const ListeningP3Workspace: React.FC = () => {
 
           {/* Mode Switcher */}
           <div className="flex flex-wrap items-center gap-2">
-            <div className="bg-slate-900/90 border border-slate-800 p-1 rounded-xl flex items-center text-xs">
+            <div className="bg-slate-900/90 border border-slate-800 p-1 rounded-xl flex flex-wrap items-center text-xs gap-1">
               <button
-                onClick={() => setMode('practice')}
+                onClick={() => handleModeChange('practice')}
                 className={`px-3 py-1.5 rounded-lg font-semibold transition ${
                   mode === 'practice' ? 'bg-indigo-600 text-white shadow' : 'text-slate-400 hover:text-white'
                 }`}
@@ -384,12 +413,21 @@ export const ListeningP3Workspace: React.FC = () => {
                 Luyện tập
               </button>
               <button
-                onClick={() => setMode('exam')}
+                onClick={() => handleModeChange('exam')}
                 className={`px-3 py-1.5 rounded-lg font-semibold transition ${
                   mode === 'exam' ? 'bg-amber-600 text-white shadow' : 'text-slate-400 hover:text-white'
                 }`}
               >
-                Thi thật (Max 2 lần nghe)
+                Thi thật (Hiện giải thích)
+              </button>
+              <button
+                onClick={() => handleModeChange('exam-no-explain')}
+                className={`px-3 py-1.5 rounded-lg font-semibold transition ${
+                  mode === 'exam-no-explain' ? 'bg-rose-600 text-white shadow' : 'text-slate-400 hover:text-white'
+                }`}
+                title="Chế độ thi: Giới hạn 2 lần nghe, khi nộp bài chỉ hiển thị Đúng / Sai cho từng câu, ẩn hoàn toàn giải thích đáp án"
+              >
+                Thi chỉ Đúng/Sai (Ẩn giải thích)
               </button>
             </div>
           </div>
@@ -491,19 +529,21 @@ export const ListeningP3Workspace: React.FC = () => {
               <span>{showAudioPlayer ? '🔊 Trình Phát: Bật' : '🔇 Trình Phát: Đã Bỏ'}</span>
             </button>
 
-            {/* Gợi Ý Key / Bài Thơ Mẹo Nhớ */}
-            <button
-              onClick={toggleKeyHint}
-              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border font-semibold transition ${
-                showKeyHint
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/50 shadow-md shadow-amber-500/10'
-                  : 'bg-slate-800/80 text-slate-400 border-slate-700 hover:text-slate-200'
-              }`}
-              title="Bật/Tắt gợi ý key và bài thơ mẹo nhớ của đề này"
-            >
-              <Lightbulb className={`w-3.5 h-3.5 ${showKeyHint ? 'text-amber-300 fill-amber-300/30' : ''}`} />
-              <span>{showKeyHint ? '💡 Gợi ý key: ĐANG BẬT' : '💡 Gợi ý key'}</span>
-            </button>
+            {/* Gợi Ý Key / Bài Thơ Mẹo Nhớ (Ẩn trong chế độ thi chỉ Đúng/Sai) */}
+            {mode !== 'exam-no-explain' && (
+              <button
+                onClick={toggleKeyHint}
+                className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border font-semibold transition ${
+                  showKeyHint
+                    ? 'bg-amber-500/20 text-amber-300 border-amber-500/50 shadow-md shadow-amber-500/10'
+                    : 'bg-slate-800/80 text-slate-400 border-slate-700 hover:text-slate-200'
+                }`}
+                title="Bật/Tắt gợi ý key và bài thơ mẹo nhớ của đề này"
+              >
+                <Lightbulb className={`w-3.5 h-3.5 ${showKeyHint ? 'text-amber-300 fill-amber-300/30' : ''}`} />
+                <span>{showKeyHint ? '💡 Gợi ý key: ĐANG BẬT' : '💡 Gợi ý key'}</span>
+              </button>
+            )}
 
             {/* Option: Bỏ tên đề tài, chỉ hiện số đề */}
             <button
@@ -562,11 +602,11 @@ export const ListeningP3Workspace: React.FC = () => {
                   <span>Trình Phát Âm Thanh AI</span>
                 </h3>
                 <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full border ${
-                  listenCount >= 2 && mode === 'exam'
+                  listenCount >= 2 && mode !== 'practice'
                     ? 'bg-rose-500/10 text-rose-400 border-rose-500/30'
                     : 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30'
                 }`}>
-                  Đã nghe: {listenCount} {mode === 'exam' ? '/ 2 lần' : 'lần'}
+                  Đã nghe: {listenCount} {mode !== 'practice' ? '/ 2 lần' : 'lần'}
                 </span>
               </div>
 
@@ -583,9 +623,9 @@ export const ListeningP3Workspace: React.FC = () => {
                 ) : (
                   <button
                     onClick={playFullDialogueTTS}
-                    disabled={mode === 'exam' && listenCount >= 2}
+                    disabled={mode !== 'practice' && listenCount >= 2}
                     className={`w-full py-3 px-4 rounded-xl font-bold flex items-center justify-center space-x-2 shadow-lg transition active:scale-95 ${
-                      mode === 'exam' && listenCount >= 2
+                      mode !== 'practice' && listenCount >= 2
                         ? 'bg-slate-800 text-slate-500 cursor-not-allowed'
                         : 'bg-gradient-to-r from-cyan-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white shadow-cyan-600/25'
                     }`}
@@ -635,7 +675,7 @@ export const ListeningP3Workspace: React.FC = () => {
                   <span className="font-mono text-cyan-400 font-bold">{formatTime(secondsElapsed)}</span>
                 </div>
 
-                {(mode === 'practice' || isSubmitted) && (
+                {(mode === 'practice' || (isSubmitted && (mode !== 'exam-no-explain' || revealExplanation))) && (
                   <button
                     onClick={() => setShowScript(!showScript)}
                     className="w-full py-2 px-3 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-center gap-2 border border-slate-700/60 transition"
@@ -665,7 +705,7 @@ export const ListeningP3Workspace: React.FC = () => {
               </div>
 
               <div className="flex items-center space-x-2">
-                {(mode === 'practice' || isSubmitted) && (
+                {(mode === 'practice' || (isSubmitted && (mode !== 'exam-no-explain' || revealExplanation))) && (
                   <button
                     onClick={() => setShowScript(!showScript)}
                     className="py-1 px-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold flex items-center gap-1.5 border border-slate-700 transition"
@@ -689,7 +729,7 @@ export const ListeningP3Workspace: React.FC = () => {
           {/* Result Alert if submitted */}
           {isSubmitted && scoreResult && (
             <div className="p-6 rounded-2xl bg-gradient-to-br from-indigo-900/60 to-purple-900/60 border border-indigo-500/30 shadow-xl space-y-3">
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-black text-xl">
                     <Trophy className="w-6 h-6" />
@@ -699,24 +739,39 @@ export const ListeningP3Workspace: React.FC = () => {
                       Kết Quả {hideTopicName ? `Đề ${currentTopicIdx + 1}` : activeTopic.title}: {scoreResult.score} / {scoreResult.total} ({scoreResult.percentage}%)
                     </h4>
                     <p className="text-xs text-slate-300">
-                      {scoreResult.percentage >= 75
+                      {mode === 'exam-no-explain' && !revealExplanation
+                        ? 'Chế độ thi chỉ Đúng / Sai: Kết quả từng câu được hiển thị đúng/sai, ẩn toàn bộ giải thích.'
+                        : scoreResult.percentage >= 75
                         ? 'Xuất sắc! Bạn đã xác định chính xác các quan điểm của người nói.'
                         : 'Xem lại lời thoại và giải thích chi tiết phía dưới để ghi nhớ nhé!'}
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  {mode === 'exam-no-explain' && !revealExplanation && (
+                    <button
+                      onClick={() => {
+                        setRevealExplanation(true);
+                        setShowScript(true);
+                      }}
+                      className="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-semibold text-xs flex items-center gap-1.5 transition shadow active:scale-95"
+                      title="Mở xem đáp án chuẩn và lời giải thích chi tiết"
+                    >
+                      <Eye className="w-3.5 h-3.5" />
+                      <span>Xem Giải Thích Chi Tiết</span>
+                    </button>
+                  )}
                   <button
                     onClick={handleRetake}
-                    className="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs flex items-center gap-1.5 transition"
+                    className="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs flex items-center gap-1.5 transition active:scale-95"
                   >
                     <RotateCcw className="w-3.5 h-3.5" />
                     <span>Làm Lại</span>
                   </button>
                   <button
                     onClick={handleRandomTopic}
-                    className="px-3.5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold text-xs flex items-center gap-1.5 transition shadow"
+                    className="px-3.5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold text-xs flex items-center gap-1.5 transition shadow active:scale-95"
                   >
                     <Dices className="w-3.5 h-3.5" />
                     <span>Đổi Đề Khác</span>
@@ -745,19 +800,21 @@ export const ListeningP3Workspace: React.FC = () => {
             </div>
 
             <div className="flex items-center space-x-3 text-xs">
-              {/* Quick toggle for Gợi ý key */}
-              <button
-                onClick={toggleKeyHint}
-                className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border font-bold transition ${
-                  showKeyHint
-                    ? 'bg-amber-500/20 text-amber-300 border-amber-500/50 shadow-md shadow-amber-500/10'
-                    : 'bg-slate-800/80 text-slate-400 border-slate-700 hover:text-amber-300 hover:border-amber-500/30'
-                }`}
-                title="Bật/Tắt hiển thị gợi ý bài thơ mẹo nhớ"
-              >
-                <Lightbulb className={`w-3.5 h-3.5 ${showKeyHint ? 'text-amber-300 fill-amber-300/30' : ''}`} />
-                <span>Gợi ý key {showKeyHint ? '(Đang bật)' : ''}</span>
-              </button>
+              {/* Quick toggle for Gợi ý key (Ẩn trong chế độ thi chỉ Đúng/Sai) */}
+              {mode !== 'exam-no-explain' && (
+                <button
+                  onClick={toggleKeyHint}
+                  className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border font-bold transition ${
+                    showKeyHint
+                      ? 'bg-amber-500/20 text-amber-300 border-amber-500/50 shadow-md shadow-amber-500/10'
+                      : 'bg-slate-800/80 text-slate-400 border-slate-700 hover:text-amber-300 hover:border-amber-500/30'
+                  }`}
+                  title="Bật/Tắt hiển thị gợi ý bài thơ mẹo nhớ"
+                >
+                  <Lightbulb className={`w-3.5 h-3.5 ${showKeyHint ? 'text-amber-300 fill-amber-300/30' : ''}`} />
+                  <span>Gợi ý key {showKeyHint ? '(Đang bật)' : ''}</span>
+                </button>
+              )}
 
               <div className="text-slate-400 hidden sm:block">
                 Thứ tự đáp án: <b className="text-cyan-400 uppercase">{activeOptionsList.join(' • ')}</b>
@@ -765,8 +822,8 @@ export const ListeningP3Workspace: React.FC = () => {
             </div>
           </div>
 
-          {/* Gợi Ý Key / Bài Thơ Mẹo Nhớ (Chỉ hiện khi tích vào button 'Gợi ý key') */}
-          {showKeyHint && activeTopic.mnemonicPoem && (
+          {/* Gợi Ý Key / Bài Thơ Mẹo Nhớ (Chỉ hiện khi tích vào button 'Gợi ý key' và không ở chế độ thi chỉ Đúng/Sai) */}
+          {showKeyHint && mode !== 'exam-no-explain' && activeTopic.mnemonicPoem && (
             <div className="p-4 rounded-2xl bg-gradient-to-r from-amber-950/30 via-slate-900 to-amber-950/30 border border-amber-500/40 text-amber-200 shadow-xl space-y-2 animate-fadeIn">
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2 text-xs font-bold text-amber-400 uppercase tracking-wider">
@@ -799,13 +856,18 @@ export const ListeningP3Workspace: React.FC = () => {
             {activeTopic.questions.map((q, idx) => {
               const currentAns = userAnswers[q.id];
               const isCorrect = isSubmitted && currentAns === q.correct;
+              const isHideExplanation = mode === 'exam-no-explain' && !revealExplanation;
 
               return (
                 <div
                   key={q.id}
                   className={`p-5 rounded-2xl border transition-all ${
                     inputStyle === 'dropdown'
-                      ? 'border-l-4 border-l-blue-500 bg-white/95 text-slate-900 dark:bg-slate-900/90 dark:text-slate-100 dark:border-slate-800 dark:border-l-cyan-400 shadow-sm'
+                      ? isSubmitted
+                        ? isCorrect
+                          ? 'border-l-4 border-l-emerald-500 bg-white/95 text-slate-900 dark:bg-slate-900/90 dark:text-slate-100 dark:border-slate-800 dark:border-l-emerald-400 shadow-sm'
+                          : 'border-l-4 border-l-rose-500 bg-white/95 text-slate-900 dark:bg-slate-900/90 dark:text-slate-100 dark:border-slate-800 dark:border-l-rose-400 shadow-sm'
+                        : 'border-l-4 border-l-blue-500 bg-white/95 text-slate-900 dark:bg-slate-900/90 dark:text-slate-100 dark:border-slate-800 dark:border-l-cyan-400 shadow-sm'
                       : isSubmitted
                       ? isCorrect
                         ? 'bg-emerald-950/20 border-emerald-500/40 text-slate-100'
@@ -831,11 +893,11 @@ export const ListeningP3Workspace: React.FC = () => {
                     {isSubmitted && (
                       <div className="shrink-0">
                         {isCorrect ? (
-                          <span className="inline-flex items-center gap-1 text-xs text-emerald-600 dark:text-emerald-400 font-bold bg-emerald-500/10 px-2.5 py-1 rounded-lg border border-emerald-500/20">
+                          <span className="inline-flex items-center gap-1 text-xs text-emerald-600 dark:text-emerald-400 font-bold bg-emerald-500/10 px-2.5 py-1 rounded-lg border border-emerald-500/20 shadow-sm">
                             <CheckCircle2 className="w-3.5 h-3.5" /> Đúng
                           </span>
                         ) : (
-                          <span className="inline-flex items-center gap-1 text-xs text-rose-600 dark:text-rose-400 font-bold bg-rose-500/10 px-2.5 py-1 rounded-lg border border-rose-500/20">
+                          <span className="inline-flex items-center gap-1 text-xs text-rose-600 dark:text-rose-400 font-bold bg-rose-500/10 px-2.5 py-1 rounded-lg border border-rose-500/20 shadow-sm">
                             <XCircle className="w-3.5 h-3.5" /> Sai
                           </span>
                         )}
@@ -878,13 +940,23 @@ export const ListeningP3Workspace: React.FC = () => {
                       <div className="grid grid-cols-3 gap-2.5">
                         {activeOptionsList.map(opt => {
                           const isSelected = currentAns === opt;
-                          const isOptCorrect = isSubmitted && q.correct === opt;
+                          // If in blind mode and not revealed: DO NOT highlight the correct option if the user chose wrong!
+                          const isOptCorrect = isSubmitted && q.correct === opt && (!isHideExplanation || isCorrect);
+                          const isOptWrongSelected = isSubmitted && isSelected && !isCorrect && isHideExplanation;
 
                           let bgClass = 'bg-slate-800/80 hover:bg-slate-800 text-slate-300 border-slate-700/60';
                           if (isSelected) {
-                            if (opt === 'man') bgClass = 'bg-blue-600 text-white border-blue-500 shadow-md';
-                            else if (opt === 'woman') bgClass = 'bg-pink-600 text-white border-pink-500 shadow-md';
-                            else bgClass = 'bg-purple-600 text-white border-purple-500 shadow-md';
+                            if (isSubmitted && isHideExplanation) {
+                              if (isCorrect) {
+                                bgClass = 'bg-emerald-600 text-white border-emerald-500 shadow-md';
+                              } else {
+                                bgClass = 'bg-rose-600 text-white border-rose-500 shadow-md';
+                              }
+                            } else {
+                              if (opt === 'man') bgClass = 'bg-blue-600 text-white border-blue-500 shadow-md';
+                              else if (opt === 'woman') bgClass = 'bg-pink-600 text-white border-pink-500 shadow-md';
+                              else bgClass = 'bg-purple-600 text-white border-purple-500 shadow-md';
+                            }
                           }
 
                           return (
@@ -894,7 +966,7 @@ export const ListeningP3Workspace: React.FC = () => {
                               disabled={isSubmitted}
                               className={`py-2.5 px-3 rounded-xl text-xs font-bold flex items-center justify-center space-x-1.5 transition border ${bgClass} ${
                                 isOptCorrect ? 'ring-2 ring-emerald-400' : ''
-                              }`}
+                              } ${isOptWrongSelected ? 'ring-2 ring-rose-500' : ''}`}
                             >
                               {opt === 'both' ? <Users className="w-3.5 h-3.5" /> : <User className="w-3.5 h-3.5" />}
                               <span>{getOptionLabel(opt)}</span>
@@ -905,9 +977,9 @@ export const ListeningP3Workspace: React.FC = () => {
                     )}
                   </div>
 
-                  {/* Explanation after submit */}
-                  {isSubmitted && (
-                    <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-800 text-xs space-y-1.5">
+                  {/* Explanation after submit (Hidden in exam-no-explain unless revealExplanation is true) */}
+                  {isSubmitted && !isHideExplanation && (
+                    <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-800 text-xs space-y-1.5 animate-fadeIn">
                       <div className="text-slate-700 dark:text-slate-300">
                         <span className="font-semibold text-blue-600 dark:text-cyan-400">Đáp án chuẩn: </span>
                         <span className="uppercase font-bold text-white bg-slate-800 px-2 py-0.5 rounded">
@@ -920,6 +992,19 @@ export const ListeningP3Workspace: React.FC = () => {
                           Dẫn chứng: "{q.keywordClue}"
                         </div>
                       )}
+                    </div>
+                  )}
+
+                  {/* Mode indicator when submitted in exam-no-explain */}
+                  {isSubmitted && isHideExplanation && (
+                    <div className="mt-3 pt-2.5 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between text-xs text-slate-400">
+                      <span className="italic text-[11px] flex items-center gap-1">
+                        <EyeOff className="w-3 h-3 text-slate-500" />
+                        Chế độ thi: Chỉ báo Đúng / Sai (Đã ẩn giải thích)
+                      </span>
+                      <span className={`font-bold text-xs ${isCorrect ? 'text-emerald-500 dark:text-emerald-400' : 'text-rose-500 dark:text-rose-400'}`}>
+                        {isCorrect ? '✓ Bạn làm Đúng' : '✗ Bạn làm Sai'}
+                      </span>
                     </div>
                   )}
 
@@ -936,7 +1021,11 @@ export const ListeningP3Workspace: React.FC = () => {
                 className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold shadow-lg shadow-emerald-600/25 transition active:scale-98 flex items-center justify-center space-x-2"
               >
                 <CheckCircle2 className="w-5 h-5" />
-                <span>Nộp Bài & Xem Điểm Số Chi Tiết</span>
+                <span>
+                  {mode === 'exam-no-explain'
+                    ? 'Nộp Bài & Xem Kết Quả Đúng / Sai'
+                    : 'Nộp Bài & Xem Điểm Số Chi Tiết'}
+                </span>
               </button>
             </div>
           )}
@@ -994,6 +1083,93 @@ export const ListeningP3Workspace: React.FC = () => {
 
         </div>
 
+      </div>
+
+      {/* Bottom Navigation: Chuyển Chủ Đề & Chọn Nhanh 15 Đề */}
+      <div className="pt-6 pb-8 border-t border-slate-800/80 space-y-4">
+        {/* Main Prev / Random / Next row */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 p-4 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl">
+          
+          {/* Previous Topic */}
+          <button
+            onClick={handlePrevTopic}
+            disabled={currentTopicIdx <= 0}
+            className={`w-full sm:w-auto flex items-center justify-center space-x-2 px-4 py-2.5 rounded-xl border text-xs font-bold transition ${
+              currentTopicIdx <= 0
+                ? 'bg-slate-950/40 border-slate-800 text-slate-600 cursor-not-allowed'
+                : 'bg-slate-800 hover:bg-slate-700 border-slate-700 text-white shadow-sm active:scale-95'
+            }`}
+            title="Quay về đề trước"
+          >
+            <ChevronLeft className="w-4 h-4" />
+            <span>Đề Trước ({currentTopicIdx > 0 ? `Đề ${currentTopicIdx}` : 'Đầu tiên'})</span>
+          </button>
+
+          {/* Center Info & Random Button */}
+          <div className="flex flex-col sm:flex-row items-center gap-3 text-center">
+            <span className="text-xs text-slate-300 font-medium">
+              Đang làm: <b className="text-cyan-400 font-bold">{hideTopicName ? `Đề ${currentTopicIdx + 1}` : activeTopic.title}</b> ({currentTopicIdx + 1}/{topics.length})
+            </span>
+            <button
+              onClick={handleRandomTopic}
+              className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white text-xs font-bold shadow-md shadow-purple-600/20 transition active:scale-95"
+              title="Bốc ngẫu nhiên một đề khác trong kho 15 đề"
+            >
+              <Dices className="w-3.5 h-3.5 text-amber-300" />
+              <span>🎲 Đổi Đề Ngẫu Nhiên</span>
+            </button>
+          </div>
+
+          {/* Next Topic */}
+          <button
+            onClick={handleNextTopic}
+            disabled={currentTopicIdx >= topics.length - 1}
+            className={`w-full sm:w-auto flex items-center justify-center space-x-2 px-4 py-2.5 rounded-xl border text-xs font-bold transition ${
+              currentTopicIdx >= topics.length - 1
+                ? 'bg-slate-950/40 border-slate-800 text-slate-600 cursor-not-allowed'
+                : 'bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 border-indigo-500/50 text-white shadow-md shadow-cyan-600/20 active:scale-95'
+            }`}
+            title="Chuyển sang đề kế tiếp"
+          >
+            <span>Đề Kế Tiếp ({currentTopicIdx < topics.length - 1 ? `Đề ${currentTopicIdx + 2}` : 'Hết'})</span>
+            <ChevronRight className="w-4 h-4" />
+          </button>
+
+        </div>
+
+        {/* Quick 15 Đề Selector Grid at the Bottom */}
+        <div className="p-3.5 rounded-2xl bg-slate-950/60 border border-slate-800/80 space-y-2">
+          <div className="flex items-center justify-between text-xs text-slate-400 font-semibold px-1">
+            <span>Chọn nhanh đề thi (1 - {topics.length}):</span>
+            <span className="text-[11px] text-slate-500">Chạm số đề để chuyển ngay</span>
+          </div>
+          <div className="flex items-center space-x-2 overflow-x-auto pb-1.5 no-scrollbar">
+            {topics.map((t, idx) => {
+              const hist = history[t.id];
+              const isActive = t.id === activeTopicId;
+              return (
+                <button
+                  key={`bottom-topic-${t.id}`}
+                  onClick={() => {
+                    setActiveTopicId(t.id);
+                    window.scrollTo({ top: 120, behavior: 'smooth' });
+                  }}
+                  className={`flex items-center space-x-1 px-3 py-1.5 rounded-xl text-xs font-bold transition whitespace-nowrap border shrink-0 ${
+                    isActive
+                      ? 'bg-cyan-600 text-white border-cyan-400 shadow-md shadow-cyan-600/30'
+                      : 'bg-slate-900 text-slate-400 hover:text-slate-200 border-slate-800 hover:bg-slate-800'
+                  }`}
+                  title={hideTopicName ? `Đề ${idx + 1}` : t.title}
+                >
+                  <span>{hideTopicName ? `Đề ${idx + 1}` : `Đề ${idx + 1}: ${t.keyword || t.title.replace(/^Đề \d+:\s*/, '')}`}</span>
+                  {hist && (
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 inline-block" title={`Điểm: ${hist.score}/${hist.total}`} />
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        </div>
       </div>
 
     </div>
