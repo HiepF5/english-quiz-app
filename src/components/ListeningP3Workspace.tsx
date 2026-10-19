@@ -65,7 +65,6 @@ export const ListeningP3Workspace: React.FC = () => {
   const [currentTurnIndex, setCurrentTurnIndex] = useState<number>(-1);
   const [playbackSpeed, setPlaybackSpeed] = useState<number>(1.0);
   const [showScript, setShowScript] = useState<boolean>(false);
-  const [showVietnamese, setShowVietnamese] = useState<boolean>(false);
 
   // User preference: Option to hide audio player completely for distraction-free exam practice
   const [showAudioPlayer, setShowAudioPlayer] = useState<boolean>(() => {
@@ -743,9 +742,6 @@ export const ListeningP3Workspace: React.FC = () => {
               <h2 className="text-lg font-bold text-white mt-1">
                 {hideTopicName ? `Đề ${currentTopicIdx + 1}` : activeTopic.title}
               </h2>
-              {!hideTopicName && activeTopic.titleVi && (
-                <p className="text-xs text-slate-400">{activeTopic.titleVi}</p>
-              )}
             </div>
 
             <div className="flex items-center space-x-3 text-xs">
@@ -830,9 +826,6 @@ export const ListeningP3Workspace: React.FC = () => {
                           {q.statement}
                         </p>
                       </div>
-                      {q.statementVi && (
-                        <p className="text-xs opacity-70 pl-5">{q.statementVi}</p>
-                      )}
                     </div>
 
                     {isSubmitted && (
@@ -956,13 +949,6 @@ export const ListeningP3Workspace: React.FC = () => {
                   <FileText className="w-4 h-4 text-cyan-400" />
                   <span>Kịch Bản Lời Thoại (Audio Script)</span>
                 </h3>
-
-                <button
-                  onClick={() => setShowVietnamese(!showVietnamese)}
-                  className="text-xs px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold transition"
-                >
-                  {showVietnamese ? 'Ẩn Dịch Tiếng Việt' : 'Hiện Dịch Song Ngữ'}
-                </button>
               </div>
 
               <div className="space-y-3">
@@ -989,11 +975,6 @@ export const ListeningP3Workspace: React.FC = () => {
                           <p className="text-xs sm:text-sm text-slate-200 leading-relaxed mt-1">
                             {turn.text}
                           </p>
-                          {showVietnamese && turn.textVi && (
-                            <p className="text-xs text-slate-400 italic mt-1 pl-2 border-l border-slate-700">
-                              {turn.textVi}
-                            </p>
-                          )}
                         </div>
 
                         <button
