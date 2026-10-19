@@ -84,7 +84,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </h1>
               </div>
               <p className="text-xs opacity-75 font-medium line-clamp-1 max-w-xs sm:max-w-md">
-                {currentQuizTitle ? `Đang làm: ${currentQuizTitle}` : 'Trắc Nghiệm • Sắp Xếp Câu • Nối Tiêu Đề • Luyện Dịch'}
+                {currentQuizTitle ? `Đang làm: ${currentQuizTitle}` : 'Trắc Nghiệm • Sắp Xếp Câu (Part 2-3) • Nối Từ (Part 4) • Ý Kiến Người (Part 5) • Luyện Dịch'}
               </p>
             </div>
           </div>
@@ -114,7 +114,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               <ListOrdered className="w-3.5 h-3.5 text-amber-300" />
-              <span>Sắp Xếp Câu</span>
+              <span>Sắp Xếp Câu (Part 2-3)</span>
             </button>
 
             <button
@@ -126,7 +126,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               <LayoutList className="w-3.5 h-3.5 text-emerald-300" />
-              <span>Nối Tiêu Đề (Part 3)</span>
+              <span>Nối Từ (Part 4)</span>
             </button>
 
             <button
@@ -138,7 +138,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               <Users className="w-3.5 h-3.5 text-indigo-300" />
-              <span>Ý Kiến 4 Người (Part 4)</span>
+              <span>Ý Kiến Người (Part 5)</span>
             </button>
 
             <button

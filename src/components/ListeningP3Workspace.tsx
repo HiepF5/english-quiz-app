@@ -113,6 +113,26 @@ export const ListeningP3Workspace: React.FC = () => {
     });
   };
 
+  // User setting to hide topic title/keywords and only show topic numbers (Đề 1, Đề 2, ...)
+  const [hideTopicName, setHideTopicName] = useState<boolean>(() => {
+    try {
+      const saved = localStorage.getItem('aptis_listening_p3_hide_topic_name');
+      return saved === 'true';
+    } catch {
+      return false;
+    }
+  });
+
+  const toggleHideTopicName = () => {
+    setHideTopicName(prev => {
+      const next = !prev;
+      try {
+        localStorage.setItem('aptis_listening_p3_hide_topic_name', String(next));
+      } catch {}
+      return next;
+    });
+  };
+
   // Timer
   const [secondsElapsed, setSecondsElapsed] = useState<number>(0);
 
@@ -485,6 +505,20 @@ export const ListeningP3Workspace: React.FC = () => {
               <Lightbulb className={`w-3.5 h-3.5 ${showKeyHint ? 'text-amber-300 fill-amber-300/30' : ''}`} />
               <span>{showKeyHint ? '💡 Gợi ý key: ĐANG BẬT' : '💡 Gợi ý key'}</span>
             </button>
+
+            {/* Option: Bỏ tên đề tài, chỉ hiện số đề */}
+            <button
+              onClick={toggleHideTopicName}
+              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border font-semibold transition ${
+                hideTopicName
+                  ? 'bg-fuchsia-500/20 text-fuchsia-300 border-fuchsia-500/40 shadow'
+                  : 'bg-slate-800/80 text-slate-400 border-slate-700 hover:text-slate-200'
+              }`}
+              title={hideTopicName ? "Hiển thị lại tên đề tài đầy đủ" : "Bỏ tên đề tài, chỉ để số đề (Đề 1, Đề 2...)"}
+            >
+              {hideTopicName ? <EyeOff className="w-3.5 h-3.5 text-fuchsia-400" /> : <Eye className="w-3.5 h-3.5 text-slate-400" />}
+              <span>{hideTopicName ? 'Chỉ Để Số Đề' : 'Hiện Tên Đề'}</span>
+            </button>
           </div>
 
         </div>
@@ -503,9 +537,9 @@ export const ListeningP3Workspace: React.FC = () => {
                     ? 'bg-cyan-600 text-white border-cyan-400 shadow-md shadow-cyan-600/30'
                     : 'bg-slate-900/80 text-slate-400 hover:text-slate-200 border-slate-800 hover:bg-slate-800'
                 }`}
-                title={t.title}
+                title={hideTopicName ? `Đề ${idx + 1}` : t.title}
               >
-                <span>{`Đề ${idx + 1}: ${t.keyword || t.title.replace(/^Đề \d+:\s*/, '')}`}</span>
+                <span>{hideTopicName ? `Đề ${idx + 1}` : `Đề ${idx + 1}: ${t.keyword || t.title.replace(/^Đề \d+:\s*/, '')}`}</span>
                 {hist && (
                   <span className="w-2 h-2 rounded-full bg-emerald-400 inline-block" title={`Điểm: ${hist.score}/${hist.total}`} />
                 )}
@@ -662,7 +696,9 @@ export const ListeningP3Workspace: React.FC = () => {
                     <Trophy className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-white">Kết Quả {activeTopic.title}: {scoreResult.score} / {scoreResult.total} ({scoreResult.percentage}%)</h4>
+                    <h4 className="text-lg font-bold text-white">
+                      Kết Quả {hideTopicName ? `Đề ${currentTopicIdx + 1}` : activeTopic.title}: {scoreResult.score} / {scoreResult.total} ({scoreResult.percentage}%)
+                    </h4>
                     <p className="text-xs text-slate-300">
                       {scoreResult.percentage >= 75
                         ? 'Xuất sắc! Bạn đã xác định chính xác các quan điểm của người nói.'
@@ -698,14 +734,16 @@ export const ListeningP3Workspace: React.FC = () => {
                 <span className="text-xs font-bold text-cyan-400 bg-cyan-950/60 border border-cyan-800/60 px-2.5 py-0.5 rounded-full">
                   Listening • Part 3
                 </span>
-                {activeTopic.keyword && (
+                {!hideTopicName && activeTopic.keyword && (
                   <span className="text-xs font-semibold text-slate-300">
                     Từ khóa: <b className="text-white">{activeTopic.keyword}</b>
                   </span>
                 )}
               </div>
-              <h2 className="text-lg font-bold text-white mt-1">{activeTopic.title}</h2>
-              {activeTopic.titleVi && (
+              <h2 className="text-lg font-bold text-white mt-1">
+                {hideTopicName ? `Đề ${currentTopicIdx + 1}` : activeTopic.title}
+              </h2>
+              {!hideTopicName && activeTopic.titleVi && (
                 <p className="text-xs text-slate-400">{activeTopic.titleVi}</p>
               )}
             </div>
