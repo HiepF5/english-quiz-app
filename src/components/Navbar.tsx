@@ -1,12 +1,8 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import {
   BookOpen,
   HelpCircle,
   Sparkles,
-  Upload,
-  ClipboardPaste,
-  GitCommit,
-  FileCode,
   Award,
   RotateCcw,
   Sun,
@@ -23,11 +19,11 @@ export type AppModule = 'quiz' | 'ordering' | 'headings' | 'opinion' | 'listenin
 interface NavbarProps {
   activeModule: AppModule;
   onChangeModule: (module: AppModule) => void;
-  onImportJson: (content: string, filename: string) => void;
-  onOpenTemplateModal: () => void;
-  onOpenPasteModal: () => void;
-  onOpenAiModal: () => void;
-  onOpenGithubModal: () => void;
+  onImportJson?: (content: string, filename: string) => void;
+  onOpenTemplateModal?: () => void;
+  onOpenPasteModal?: () => void;
+  onOpenAiModal?: () => void;
+  onOpenGithubModal?: () => void;
   onResetToSelection: () => void;
   currentQuizTitle?: string;
   scoreHistoryCount: number;
@@ -38,31 +34,13 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({
   activeModule,
   onChangeModule,
-  onImportJson,
-  onOpenTemplateModal,
-  onOpenPasteModal,
-  onOpenAiModal,
-  onOpenGithubModal,
   onResetToSelection,
   currentQuizTitle,
   scoreHistoryCount,
   theme,
   onToggleTheme
 }) => {
-  const fileInputRef = useRef<HTMLInputElement>(null);
   const isLight = theme === 'light';
-
-  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        const text = event.target?.result as string;
-        onImportJson(text, file.name);
-      };
-      reader.readAsText(file);
-    }
-  };
 
   return (
     <header className={`sticky top-0 z-50 border-b backdrop-blur-md transition-colors shadow-md ${
@@ -167,7 +145,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         {/* Action Buttons & Theme Switcher */}
-        <div className="flex items-center space-x-2 overflow-x-auto pb-1 md:pb-0">
+        <div className="flex items-center space-x-2 shrink-0">
           {/* Theme Toggle Button */}
           <button
             onClick={onToggleTheme}
@@ -185,69 +163,15 @@ export const Navbar: React.FC<NavbarProps> = ({
               {currentQuizTitle && (
                 <button
                   onClick={onResetToSelection}
-                  className="hidden sm:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-slate-200 dark:bg-slate-800 hover:opacity-80 text-xs font-semibold transition border border-slate-300 dark:border-slate-700"
+                  className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-slate-200 dark:bg-slate-800 hover:opacity-80 text-xs font-semibold transition border border-slate-300 dark:border-slate-700"
                 >
                   <RotateCcw className="w-3.5 h-3.5" />
                   <span>Đổi đề</span>
                 </button>
               )}
 
-              <input
-                type="file"
-                ref={fileInputRef}
-                onChange={handleFileUpload}
-                accept=".json"
-                className="hidden"
-              />
-
-              <button
-                onClick={onOpenAiModal}
-                className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white text-xs font-bold shadow-md transition-all border border-purple-400/30"
-                title="Dán văn bản thô, AI tự chuyển JSON & Push"
-              >
-                <Sparkles className="w-3.5 h-3.5 fill-current text-amber-300" />
-                <span className="hidden sm:inline">✨ AI Chuyển Đề & Push</span>
-                <span className="sm:hidden">✨ AI Chuyển Đề</span>
-              </button>
-
-              <button
-                onClick={() => fileInputRef.current?.click()}
-                className="hidden md:flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-md transition-all"
-                title="Tải file JSON đề bài của bạn"
-              >
-                <Upload className="w-3.5 h-3.5" />
-                <span>Nộp JSON Mới</span>
-              </button>
-
-              <button
-                onClick={onOpenPasteModal}
-                className="hidden lg:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-emerald-600/10 hover:bg-emerald-600/20 text-emerald-700 dark:text-emerald-300 text-xs font-semibold border border-emerald-500/30 transition-all"
-                title="Dán trực tiếp mã JSON"
-              >
-                <ClipboardPaste className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                <span>Dán Mã JSON</span>
-              </button>
-
-              <button
-                onClick={onOpenGithubModal}
-                className="hidden xl:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-purple-600/10 hover:bg-purple-600/20 text-purple-700 dark:text-purple-300 text-xs font-semibold border border-purple-500/30 transition-all"
-                title="Push đề mới lên GitHub & Vercel"
-              >
-                <GitCommit className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" />
-                <span>Push GitHub</span>
-              </button>
-
-              <button
-                onClick={onOpenTemplateModal}
-                className="hidden 2xl:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 text-xs font-semibold border border-indigo-500/30 transition-all"
-                title="Xem cấu trúc file JSON mẫu"
-              >
-                <FileCode className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
-                <span>Mẫu JSON</span>
-              </button>
-
               {scoreHistoryCount > 0 && (
-                <div className="hidden 2xl:flex items-center space-x-1 text-xs px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-400 font-medium">
+                <div className="flex items-center space-x-1 text-xs px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-400 font-medium">
                   <Award className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                   <span>Đã xong: {scoreHistoryCount}</span>
                 </div>
