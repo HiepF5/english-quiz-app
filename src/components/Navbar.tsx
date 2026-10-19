@@ -126,7 +126,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               <LayoutList className="w-3.5 h-3.5 text-emerald-300" />
-              <span>Nối Từ (Part 4)</span>
+              <span>Nối Từ (Part 5)</span>
             </button>
 
             <button
@@ -138,7 +138,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               <Users className="w-3.5 h-3.5 text-indigo-300" />
-              <span>Ý Kiến Người (Part 5)</span>
+              <span>Ý Kiến Người (Part 4)</span>
             </button>
 
             <button
