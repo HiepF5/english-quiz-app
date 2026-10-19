@@ -11,10 +11,11 @@ import {
   LayoutList,
   Users,
   Headphones,
-  Mic
+  Mic,
+  PenTool
 } from 'lucide-react';
 
-export type AppModule = 'quiz' | 'ordering' | 'headings' | 'opinion' | 'listening_p3' | 'listening_p4';
+export type AppModule = 'quiz' | 'ordering' | 'headings' | 'opinion' | 'writing' | 'listening_p3' | 'listening_p4';
 
 interface NavbarProps {
   activeModule: AppModule;
@@ -61,7 +62,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </h1>
               </div>
               <p className="text-xs opacity-75 font-medium line-clamp-1 max-w-xs sm:max-w-md">
-                {currentQuizTitle ? `Đang làm: ${currentQuizTitle}` : 'Trắc Nghiệm • Sắp Xếp Câu (Part 2-3) • Nối Từ (Part 5) • Ý Kiến Người (Part 4) • Nghe Part 3 & 4'}
+                {currentQuizTitle ? `Đang làm: ${currentQuizTitle}` : 'Trắc Nghiệm • Sắp Xếp Câu (Part 2-3) • Nối Từ (Part 5) • Ý Kiến Người (Part 4) • Viết (Writing) • Nghe Part 3 & 4'}
               </p>
             </div>
           </div>
@@ -116,6 +117,18 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <Users className="w-3.5 h-3.5 text-indigo-300" />
               <span>Ý Kiến Người (Part 4)</span>
+            </button>
+
+            <button
+              onClick={() => onChangeModule('writing')}
+              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                activeModule === 'writing'
+                  ? 'bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 text-white shadow-md'
+                  : 'opacity-70 hover:opacity-100'
+              }`}
+            >
+              <PenTool className="w-3.5 h-3.5 text-pink-300" />
+              <span>Luyện Viết (Writing)</span>
             </button>
 
             <button

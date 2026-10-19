@@ -15,6 +15,7 @@ import { HeadingsWorkspace } from './components/HeadingsWorkspace';
 import { OpinionWorkspace } from './components/OpinionWorkspace';
 import { ListeningP3Workspace } from './components/ListeningP3Workspace';
 import { ListeningP4Workspace } from './components/ListeningP4Workspace';
+import { WritingWorkspace } from './components/WritingWorkspace';
 import type { AppModule } from './components/Navbar';
 
 // Dynamically import ALL .json files inside src/data/ at build time via Vite glob
@@ -330,6 +331,9 @@ export const App: React.FC = () => {
         ) : activeModule === 'listening_p4' ? (
           /* Aptis Listening Part 4 Workspace (Monologues / Talks) */
           <ListeningP4Workspace />
+        ) : activeModule === 'writing' ? (
+          /* Aptis Writing Practice Workspace (All 4 Parts with AI Scoring) */
+          <WritingWorkspace />
         ) : activeModule === 'headings' ? (
           /* Matching Headings Workspace (Aptis Part 3) */
           <HeadingsWorkspace />
