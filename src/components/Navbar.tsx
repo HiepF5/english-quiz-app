@@ -46,21 +46,32 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const isLight = theme === 'light';
   const [isListeningDropdownOpen, setIsListeningDropdownOpen] = React.useState(false);
+  const [isReadingDropdownOpen, setIsReadingDropdownOpen] = React.useState(false);
 
   const isListeningActive = activeModule === 'listening_p1' || activeModule === 'listening_p3' || activeModule === 'listening_p4';
+  const isReadingActive = activeModule === 'ordering' || activeModule === 'headings' || activeModule === 'opinion';
 
-  // Close dropdown on outside click
+  const listeningDropdownRef = React.useRef<HTMLDivElement>(null);
+  const readingDropdownRef = React.useRef<HTMLDivElement>(null);
+
+  // Close dropdowns on outside click
   React.useEffect(() => {
-    const handleOutsideClick = () => {
-      setIsListeningDropdownOpen(false);
+    const handleOutsideClick = (e: MouseEvent) => {
+      const target = e.target as Node;
+      if (listeningDropdownRef.current && !listeningDropdownRef.current.contains(target)) {
+        setIsListeningDropdownOpen(false);
+      }
+      if (readingDropdownRef.current && !readingDropdownRef.current.contains(target)) {
+        setIsReadingDropdownOpen(false);
+      }
     };
-    if (isListeningDropdownOpen) {
-      window.addEventListener('click', handleOutsideClick);
+    if (isListeningDropdownOpen || isReadingDropdownOpen) {
+      document.addEventListener('mousedown', handleOutsideClick);
     }
     return () => {
-      window.removeEventListener('click', handleOutsideClick);
+      document.removeEventListener('mousedown', handleOutsideClick);
     };
-  }, [isListeningDropdownOpen]);
+  }, [isListeningDropdownOpen, isReadingDropdownOpen]);
 
   return (
     <header className={`sticky top-0 z-50 border-b backdrop-blur-md transition-colors shadow-md ${
@@ -81,13 +92,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </h1>
               </div>
               <p className="text-xs opacity-75 font-medium line-clamp-1 max-w-xs sm:max-w-md">
-                {currentQuizTitle ? `Đang làm: ${currentQuizTitle}` : 'Trắc Nghiệm • Sắp Xếp Câu (Part 2-3) • Nối Từ (Part 5) • Ý Kiến Người (Part 4) • Viết (Writing) • Nghe Part 3 & 4'}
+                {currentQuizTitle ? `Đang làm: ${currentQuizTitle}` : 'Trắc Nghiệm JSON • Luyện Đọc (Reading) • Luyện Viết (Writing) • Luyện Nghe (Listening)'}
               </p>
             </div>
           </div>
 
           {/* Module Switcher Tabs */}
-          <div className={`flex items-center p-1 rounded-xl border overflow-x-auto max-w-[calc(100vw-280px)] scrollbar-none shrink-0 ${
+          <div className={`flex items-center p-1 rounded-xl border shrink-0 ${
             isLight ? 'bg-slate-100 border-slate-200' : 'bg-slate-950 border-slate-800'
           }`}>
             <button
@@ -102,41 +113,114 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span>Trắc Nghiệm JSON</span>
             </button>
 
-            <button
-              onClick={() => onChangeModule('ordering')}
-              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                activeModule === 'ordering'
-                  ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md'
-                  : 'opacity-70 hover:opacity-100'
-              }`}
-            >
-              <ListOrdered className="w-3.5 h-3.5 text-amber-300" />
-              <span>Sắp Xếp Câu (Part 2-3)</span>
-            </button>
+            {/* Reading Dropdown Group */}
+            <div ref={readingDropdownRef} className="relative">
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsReadingDropdownOpen(prev => !prev);
+                  setIsListeningDropdownOpen(false);
+                }}
+                className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                  isReadingActive
+                    ? 'bg-gradient-to-r from-emerald-600 via-teal-600 to-indigo-600 text-white shadow-md'
+                    : 'opacity-70 hover:opacity-100'
+                }`}
+              >
+                <BookOpen className="w-3.5 h-3.5 text-emerald-200" />
+                <span>
+                  {activeModule === 'ordering'
+                    ? 'Sắp Xếp Câu (Part 2-3)'
+                    : activeModule === 'headings'
+                    ? 'Nối Từ (Part 5)'
+                    : activeModule === 'opinion'
+                    ? 'Ý Kiến Người (Part 4)'
+                    : 'Luyện Đọc (Reading)'}
+                </span>
+                {isReadingDropdownOpen ? (
+                  <ChevronUp className="w-3.5 h-3.5 opacity-80" />
+                ) : (
+                  <ChevronDown className="w-3.5 h-3.5 opacity-80" />
+                )}
+              </button>
 
-            <button
-              onClick={() => onChangeModule('headings')}
-              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                activeModule === 'headings'
-                  ? 'bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md'
-                  : 'opacity-70 hover:opacity-100'
-              }`}
-            >
-              <LayoutList className="w-3.5 h-3.5 text-emerald-300" />
-              <span>Nối Từ (Part 5)</span>
-            </button>
+              {/* Reading Dropdown Menu */}
+              {isReadingDropdownOpen && (
+                <div
+                  className={`absolute top-full left-0 mt-2 w-60 rounded-xl border shadow-2xl p-1.5 z-50 animate-fadeIn ${
+                    isLight
+                      ? 'bg-white border-slate-200 text-slate-800'
+                      : 'bg-slate-900 border-slate-800 text-slate-100'
+                  }`}
+                >
+                  <button
+                    onClick={() => {
+                      onChangeModule('ordering');
+                      setIsReadingDropdownOpen(false);
+                    }}
+                    className={`w-full flex items-center space-x-2.5 px-3 py-2 rounded-lg text-xs font-bold text-left transition ${
+                      activeModule === 'ordering'
+                        ? 'bg-amber-500/20 text-amber-300 font-extrabold border border-amber-500/30'
+                        : isLight
+                        ? 'hover:bg-slate-100 text-slate-700'
+                        : 'hover:bg-slate-800 text-slate-300'
+                    }`}
+                  >
+                    <div className="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                      <ListOrdered className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="leading-tight">Sắp Xếp Câu</div>
+                      <div className="text-[10px] opacity-60 font-normal">Part 2 & Part 3 (Sentence Reordering)</div>
+                    </div>
+                  </button>
 
-            <button
-              onClick={() => onChangeModule('opinion')}
-              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                activeModule === 'opinion'
-                  ? 'bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow-md'
-                  : 'opacity-70 hover:opacity-100'
-              }`}
-            >
-              <Users className="w-3.5 h-3.5 text-indigo-300" />
-              <span>Ý Kiến Người (Part 4)</span>
-            </button>
+                  <button
+                    onClick={() => {
+                      onChangeModule('headings');
+                      setIsReadingDropdownOpen(false);
+                    }}
+                    className={`w-full flex items-center space-x-2.5 px-3 py-2 rounded-lg text-xs font-bold text-left transition mt-1 ${
+                      activeModule === 'headings'
+                        ? 'bg-emerald-500/20 text-emerald-300 font-extrabold border border-emerald-500/30'
+                        : isLight
+                        ? 'hover:bg-slate-100 text-slate-700'
+                        : 'hover:bg-slate-800 text-slate-300'
+                    }`}
+                  >
+                    <div className="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                      <LayoutList className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="leading-tight">Nối Từ</div>
+                      <div className="text-[10px] opacity-60 font-normal">Part 5 (Matching Headings)</div>
+                    </div>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      onChangeModule('opinion');
+                      setIsReadingDropdownOpen(false);
+                    }}
+                    className={`w-full flex items-center space-x-2.5 px-3 py-2 rounded-lg text-xs font-bold text-left transition mt-1 ${
+                      activeModule === 'opinion'
+                        ? 'bg-indigo-500/20 text-indigo-300 font-extrabold border border-indigo-500/30'
+                        : isLight
+                        ? 'hover:bg-slate-100 text-slate-700'
+                        : 'hover:bg-slate-800 text-slate-300'
+                    }`}
+                  >
+                    <div className="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0">
+                      <Users className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="leading-tight">Ý Kiến Người</div>
+                      <div className="text-[10px] opacity-60 font-normal">Part 4 (4 People Opinion Matching)</div>
+                    </div>
+                  </button>
+                </div>
+              )}
+            </div>
 
             <button
               onClick={() => onChangeModule('writing')}
@@ -151,11 +235,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
 
             {/* Listening Dropdown Group */}
-            <div className="relative">
+            <div ref={listeningDropdownRef} className="relative">
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   setIsListeningDropdownOpen(prev => !prev);
+                  setIsReadingDropdownOpen(false);
                 }}
                 className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
                   isListeningActive
