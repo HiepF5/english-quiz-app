@@ -13,6 +13,7 @@ import { AiConverterModal } from './components/AiConverterModal';
 import { OrderingWorkspace } from './components/OrderingWorkspace';
 import { HeadingsWorkspace } from './components/HeadingsWorkspace';
 import { OpinionWorkspace } from './components/OpinionWorkspace';
+import { ListeningP1Workspace } from './components/ListeningP1Workspace';
 import { ListeningP3Workspace } from './components/ListeningP3Workspace';
 import { ListeningP4Workspace } from './components/ListeningP4Workspace';
 import { WritingWorkspace } from './components/WritingWorkspace';
@@ -41,7 +42,7 @@ export const App: React.FC = () => {
     setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
   };
 
-  const [activeModule, setActiveModule] = useState<AppModule>('opinion');
+  const [activeModule, setActiveModule] = useState<AppModule>('listening_p1');
 
   // Specialized state for Aptis Part 4 (4 people opinion matching) in quiz mode
   const [quizHideNames, setQuizHideNames] = useState<boolean>(true);
@@ -322,7 +323,10 @@ export const App: React.FC = () => {
 
       {/* Main Container */}
       <main className="flex-1 pb-16">
-        {activeModule === 'opinion' ? (
+        {activeModule === 'listening_p1' ? (
+          /* Aptis Listening Part 1 Workspace (50 Questions - Vietnamese Memory & Exam Modes) */
+          <ListeningP1Workspace />
+        ) : activeModule === 'opinion' ? (
           /* Four People Opinion Matching Workspace (Aptis Part 4) */
           <OpinionWorkspace />
         ) : activeModule === 'listening_p3' ? (

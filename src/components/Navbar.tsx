@@ -12,10 +12,13 @@ import {
   Users,
   Headphones,
   Mic,
-  PenTool
+  PenTool,
+  Brain,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
 
-export type AppModule = 'quiz' | 'ordering' | 'headings' | 'opinion' | 'writing' | 'listening_p3' | 'listening_p4';
+export type AppModule = 'quiz' | 'ordering' | 'headings' | 'opinion' | 'writing' | 'listening_p1' | 'listening_p3' | 'listening_p4';
 
 interface NavbarProps {
   activeModule: AppModule;
@@ -42,6 +45,22 @@ export const Navbar: React.FC<NavbarProps> = ({
   onToggleTheme
 }) => {
   const isLight = theme === 'light';
+  const [isListeningDropdownOpen, setIsListeningDropdownOpen] = React.useState(false);
+
+  const isListeningActive = activeModule === 'listening_p1' || activeModule === 'listening_p3' || activeModule === 'listening_p4';
+
+  // Close dropdown on outside click
+  React.useEffect(() => {
+    const handleOutsideClick = () => {
+      setIsListeningDropdownOpen(false);
+    };
+    if (isListeningDropdownOpen) {
+      window.addEventListener('click', handleOutsideClick);
+    }
+    return () => {
+      window.removeEventListener('click', handleOutsideClick);
+    };
+  }, [isListeningDropdownOpen]);
 
   return (
     <header className={`sticky top-0 z-50 border-b backdrop-blur-md transition-colors shadow-md ${
@@ -68,7 +87,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* Module Switcher Tabs */}
-          <div className={`flex items-center p-1 rounded-xl border ${
+          <div className={`flex items-center p-1 rounded-xl border overflow-x-auto max-w-[calc(100vw-280px)] scrollbar-none shrink-0 ${
             isLight ? 'bg-slate-100 border-slate-200' : 'bg-slate-950 border-slate-800'
           }`}>
             <button
@@ -131,29 +150,113 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span>Luyện Viết (Writing)</span>
             </button>
 
-            <button
-              onClick={() => onChangeModule('listening_p3')}
-              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                activeModule === 'listening_p3'
-                  ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white shadow-md'
-                  : 'opacity-70 hover:opacity-100'
-              }`}
-            >
-              <Headphones className="w-3.5 h-3.5 text-cyan-300" />
-              <span>Nghe Part 3</span>
-            </button>
+            {/* Listening Dropdown Group */}
+            <div className="relative">
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsListeningDropdownOpen(prev => !prev);
+                }}
+                className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                  isListeningActive
+                    ? 'bg-gradient-to-r from-cyan-600 via-indigo-600 to-purple-600 text-white shadow-md'
+                    : 'opacity-70 hover:opacity-100'
+                }`}
+              >
+                <Headphones className="w-3.5 h-3.5 text-cyan-200" />
+                <span>
+                  {activeModule === 'listening_p1'
+                    ? 'Nghe Part 1 (Trí Nhớ)'
+                    : activeModule === 'listening_p3'
+                    ? 'Nghe Part 3'
+                    : activeModule === 'listening_p4'
+                    ? 'Nghe Part 4'
+                    : 'Luyện Nghe (Listening)'}
+                </span>
+                {isListeningDropdownOpen ? (
+                  <ChevronUp className="w-3.5 h-3.5 opacity-80" />
+                ) : (
+                  <ChevronDown className="w-3.5 h-3.5 opacity-80" />
+                )}
+              </button>
 
-            <button
-              onClick={() => onChangeModule('listening_p4')}
-              className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                activeModule === 'listening_p4'
-                  ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-md'
-                  : 'opacity-70 hover:opacity-100'
-              }`}
-            >
-              <Mic className="w-3.5 h-3.5 text-pink-300" />
-              <span>Nghe Part 4</span>
-            </button>
+              {/* Dropdown Menu */}
+              {isListeningDropdownOpen && (
+                <div
+                  className={`absolute top-full left-0 mt-2 w-56 rounded-xl border shadow-2xl p-1.5 z-50 animate-fadeIn ${
+                    isLight
+                      ? 'bg-white border-slate-200 text-slate-800'
+                      : 'bg-slate-900 border-slate-800 text-slate-100'
+                  }`}
+                >
+                  <button
+                    onClick={() => {
+                      onChangeModule('listening_p1');
+                      setIsListeningDropdownOpen(false);
+                    }}
+                    className={`w-full flex items-center space-x-2.5 px-3 py-2 rounded-lg text-xs font-bold text-left transition ${
+                      activeModule === 'listening_p1'
+                        ? 'bg-amber-500/20 text-amber-300 font-extrabold border border-amber-500/30'
+                        : isLight
+                        ? 'hover:bg-slate-100 text-slate-700'
+                        : 'hover:bg-slate-800 text-slate-300'
+                    }`}
+                  >
+                    <div className="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                      <Brain className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="leading-tight">Nghe Part 1 (Trí Nhớ)</div>
+                      <div className="text-[10px] opacity-60 font-normal">188 câu • 3 Set đề</div>
+                    </div>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      onChangeModule('listening_p3');
+                      setIsListeningDropdownOpen(false);
+                    }}
+                    className={`w-full flex items-center space-x-2.5 px-3 py-2 rounded-lg text-xs font-bold text-left transition mt-1 ${
+                      activeModule === 'listening_p3'
+                        ? 'bg-cyan-500/20 text-cyan-300 font-extrabold border border-cyan-500/30'
+                        : isLight
+                        ? 'hover:bg-slate-100 text-slate-700'
+                        : 'hover:bg-slate-800 text-slate-300'
+                    }`}
+                  >
+                    <div className="w-7 h-7 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+                      <Headphones className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="leading-tight">Nghe Part 3</div>
+                      <div className="text-[10px] opacity-60 font-normal">Man / Woman / Both</div>
+                    </div>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      onChangeModule('listening_p4');
+                      setIsListeningDropdownOpen(false);
+                    }}
+                    className={`w-full flex items-center space-x-2.5 px-3 py-2 rounded-lg text-xs font-bold text-left transition mt-1 ${
+                      activeModule === 'listening_p4'
+                        ? 'bg-purple-500/20 text-purple-300 font-extrabold border border-purple-500/30'
+                        : isLight
+                        ? 'hover:bg-slate-100 text-slate-700'
+                        : 'hover:bg-slate-800 text-slate-300'
+                    }`}
+                  >
+                    <div className="w-7 h-7 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0">
+                      <Mic className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="leading-tight">Nghe Part 4</div>
+                      <div className="text-[10px] opacity-60 font-normal">Đoạn độc thoại (Monologues)</div>
+                    </div>
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 

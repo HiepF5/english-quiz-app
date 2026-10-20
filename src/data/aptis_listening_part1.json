@@ -1,0 +1,3978 @@
+{
+  "id": "aptis-listening-part-1-all-questions",
+  "title": "Aptis Listening Part 1 - Tổng hợp 188 câu",
+  "description": "Luyện tập theo trí nhớ tiếng Việt & Thi thử 188 câu nghe Aptis Part 1 (Set 1: 1-50, Set 2: 51-100, Set 3: 101-188)",
+  "level": "B1-B2",
+  "category": "Listening",
+  "timeLimitMinutes": 60,
+  "totalQuestions": 188,
+  "sets": [
+    {
+      "id": "set-1",
+      "name": "Set 1 (Câu 1 - 50)",
+      "count": 50,
+      "questionStart": 1,
+      "questionEnd": 50
+    },
+    {
+      "id": "set-2",
+      "name": "Set 2 (Câu 51 - 100)",
+      "count": 50,
+      "questionStart": 51,
+      "questionEnd": 100
+    },
+    {
+      "id": "set-3",
+      "name": "Set 3 (Câu 101 - 188)",
+      "count": 88,
+      "questionStart": 101,
+      "questionEnd": 188
+    }
+  ],
+  "questions": [
+    {
+      "num": 1,
+      "id": "579204534",
+      "setIndex": 1,
+      "question": "What does the customer complain about?",
+      "options": [
+        "The coffee was cold",
+        "The Wi-Fi was too slow",
+        "The shop was too noisy"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Khách hàng phàn nàn về điều gì?",
+      "optionsVi": [
+        "Cà phê bị nguội",
+        "Wi-Fi quá chậm",
+        "Quán quá ồn"
+      ],
+      "explanation": "Đáp án đúng: B. The Wi-Fi was too slow\n• Dịch câu hỏi: Khách hàng phàn nàn về điều gì?\n• Dịch các đáp án:\n  - A. The coffee was cold ➔ Cà phê bị nguội\n  - B. The Wi-Fi was too slow ➔ Wi-Fi quá chậm\n  - C. The shop was too noisy ➔ Quán quá ồn",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 2,
+      "id": "579204535",
+      "setIndex": 1,
+      "question": "Talking about the park, what is going to be replaced?",
+      "options": [
+        "benches",
+        "wooden seats",
+        "signs"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Nói về công viên, cái gì chuẩn bị được thay thế?",
+      "optionsVi": [
+        "những chiếc ghế dài",
+        "những chiếc ghế gỗ",
+        "những biển báo"
+      ],
+      "explanation": "Đáp án đúng: B. wooden seats\n• Dịch câu hỏi: Nói về công viên, cái gì chuẩn bị được thay thế?\n• Dịch các đáp án:\n  - A. benches ➔ những chiếc ghế dài\n  - B. wooden seats ➔ những chiếc ghế gỗ\n  - C. signs ➔ những biển báo",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 3,
+      "id": "579204536",
+      "setIndex": 1,
+      "question": "Anne is calling her daughter Sally. What do Anne need?",
+      "options": [
+        "Milk",
+        "Eggs",
+        "Bread"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Anne đang gọi cho con gái Sally. Anne cần gì?",
+      "optionsVi": [
+        "Sữa",
+        "Trứng",
+        "Bánh mì"
+      ],
+      "explanation": "Đáp án đúng: B. Eggs\n• Dịch câu hỏi: Anne đang gọi cho con gái Sally. Anne cần gì?\n• Dịch các đáp án:\n  - A. Milk ➔ Sữa\n  - B. Eggs ➔ Trứng\n  - C. Bread ➔ Bánh mì",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 4,
+      "id": "579204537",
+      "setIndex": 1,
+      "question": "What does the woman complain about?",
+      "options": [
+        "The gym was too crowded",
+        "Her yoga class was cancelled",
+        "The membership fee increased"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Người phụ nữ phàn nàn về điều gì?",
+      "optionsVi": [
+        "Phòng gym quá đông",
+        "Lớp học yoga của cô ấy bị hủy",
+        "Phí hội viên đã tăng lên"
+      ],
+      "explanation": "Đáp án đúng: B. Her yoga class was cancelled\n• Dịch câu hỏi: Người phụ nữ phàn nàn về điều gì?\n• Dịch các đáp án:\n  - A. The gym was too crowded ➔ Phòng gym quá đông\n  - B. Her yoga class was cancelled ➔ Lớp học yoga của cô ấy bị hủy\n  - C. The membership fee increased ➔ Phí hội viên đã tăng lên",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 5,
+      "id": "579204538",
+      "setIndex": 1,
+      "question": "Anna is calling her brother Max. What does Anna do later in the afternoon?",
+      "options": [
+        "Hang out with friends",
+        "Stay late at the office",
+        "Pick up her kids"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Anna đang gọi cho anh/em trai Max. Anna sẽ làm gì vào cuối buổi chiều?",
+      "optionsVi": [
+        "Đi chơi với bạn bè",
+        "Ở lại làm việc muộn ở văn phòng",
+        "Đi đón các con của cô ấy"
+      ],
+      "explanation": "Đáp án đúng: B. Stay late at the office\n• Dịch câu hỏi: Anna đang gọi cho anh/em trai Max. Anna sẽ làm gì vào cuối buổi chiều?\n• Dịch các đáp án:\n  - A. Hang out with friends ➔ Đi chơi với bạn bè\n  - B. Stay late at the office ➔ Ở lại làm việc muộn ở văn phòng\n  - C. Pick up her kids ➔ Đi đón các con của cô ấy",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 6,
+      "id": "579204539",
+      "setIndex": 1,
+      "question": "A woman is talking about her favorite film on the radio. What film did she recommend?",
+      "options": [
+        "A comedy",
+        "An action film",
+        "A romantic film"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người phụ nữ đang nói về bộ phim yêu thích của mình trên đài phát thanh. Cô ấy đã đề cử phim gì?",
+      "optionsVi": [
+        "Phim hài",
+        "Phim hành động",
+        "Phim lãng mạn"
+      ],
+      "explanation": "Đáp án đúng: B. An action film\n• Dịch câu hỏi: Một người phụ nữ đang nói về bộ phim yêu thích của mình trên đài phát thanh. Cô ấy đã đề cử phim gì?\n• Dịch các đáp án:\n  - A. A comedy ➔ Phim hài\n  - B. An action film ➔ Phim hành động\n  - C. A romantic film ➔ Phim lãng mạn",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 7,
+      "id": "579204540",
+      "setIndex": 1,
+      "question": "What has he had problems with?",
+      "options": [
+        "managing the time",
+        "Using the computers",
+        "Using technology"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Anh ấy gặp vấn đề với điều gì?",
+      "optionsVi": [
+        "Quản lý thời gian",
+        "Sử dụng máy tính",
+        "Sử dụng công nghệ"
+      ],
+      "explanation": "Đáp án đúng: C. Using technology\n• Dịch câu hỏi: Anh ấy gặp vấn đề với điều gì?\n• Dịch các đáp án:\n  - A. managing the time ➔ Quản lý thời gian\n  - B. Using the computers ➔ Sử dụng máy tính\n  - C. Using technology ➔ Sử dụng công nghệ",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 8,
+      "id": "579204541",
+      "setIndex": 1,
+      "question": "Greg is talking about a working day in his life. How does he go to work?",
+      "options": [
+        "By bus",
+        "On foot",
+        "By bike"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Greg đang nói về một ngày làm việc trong cuộc đời anh ấy. Anh ấy đi làm bằng phương tiện gì?",
+      "optionsVi": [
+        "Bằng xe buýt",
+        "Đi bộ",
+        "Bằng xe đạp"
+      ],
+      "explanation": "Đáp án đúng: A. By bus\n• Dịch câu hỏi: Greg đang nói về một ngày làm việc trong cuộc đời anh ấy. Anh ấy đi làm bằng phương tiện gì?\n• Dịch các đáp án:\n  - A. By bus ➔ Bằng xe buýt\n  - B. On foot ➔ Đi bộ\n  - C. By bike ➔ Bằng xe đạp",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 9,
+      "id": "579204542",
+      "setIndex": 1,
+      "question": "Listen to a nutrition expert. What time is the best for children to eat fruit?",
+      "options": [
+        "In the evening",
+        "In the morning",
+        "In the afternoon"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hãy nghe một chuyên gia dinh dưỡng. Thời điểm nào là tốt nhất để trẻ em ăn trái cây?",
+      "optionsVi": [
+        "Vào buổi tối",
+        "Vào buổi sáng",
+        "Vào buổi chiều"
+      ],
+      "explanation": "Đáp án đúng: B. In the morning\n• Dịch câu hỏi: Hãy nghe một chuyên gia dinh dưỡng. Thời điểm nào là tốt nhất để trẻ em ăn trái cây?\n• Dịch các đáp án:\n  - A. In the evening ➔ Vào buổi tối\n  - B. In the morning ➔ Vào buổi sáng\n  - C. In the afternoon ➔ Vào buổi chiều",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 10,
+      "id": "579204543",
+      "setIndex": 1,
+      "question": "Listen to a woman explaining her morning routine to her friend. Why do women get up early?",
+      "options": [
+        "Have some quiet time",
+        "to take care of children",
+        "to go to work early"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe một người phụ nữ giải thích về thói quen buổi sáng của cô ấy cho bạn mình. Tại sao phụ nữ thường dậy sớm?",
+      "optionsVi": [
+        "Để có chút thời gian yên tĩnh",
+        "Để chăm sóc con cái",
+        "Để đi làm sớm"
+      ],
+      "explanation": "Đáp án đúng: A. Have some quiet time\n• Dịch câu hỏi: Hãy nghe một người phụ nữ giải thích về thói quen buổi sáng của cô ấy cho bạn mình. Tại sao phụ nữ thường dậy sớm?\n• Dịch các đáp án:\n  - A. Have some quiet time ➔ Để có chút thời gian yên tĩnh\n  - B. to take care of children ➔ Để chăm sóc con cái\n  - C. to go to work early ➔ Để đi làm sớm",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 11,
+      "id": "579204544",
+      "setIndex": 1,
+      "question": "Why does he need to learn driving car?",
+      "options": [
+        "He lost his driving license",
+        "He bought a new car.",
+        "He has to drive to work"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Tại sao anh ấy cần học lái xe ô tô?",
+      "optionsVi": [
+        "Anh ấy đã làm mất bằng lái xe",
+        "Anh ấy đã mua một chiếc xe mới.",
+        "Anh ấy phải lái xe đi làm"
+      ],
+      "explanation": "Đáp án đúng: C. He has to drive to work\n• Dịch câu hỏi: Tại sao anh ấy cần học lái xe ô tô?\n• Dịch các đáp án:\n  - A. He lost his driving license ➔ Anh ấy đã làm mất bằng lái xe\n  - B. He bought a new car. ➔ Anh ấy đã mua một chiếc xe mới.\n  - C. He has to drive to work ➔ Anh ấy phải lái xe đi làm",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 12,
+      "id": "579204545",
+      "setIndex": 1,
+      "question": "A woman is talking to her coworker. When does the meeting start?",
+      "options": [
+        "10:00",
+        "10:15",
+        "11:15"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người phụ nữ đang nói chuyện với đồng nghiệp của mình. Khi nào cuộc họp bắt đầu?",
+      "optionsVi": [
+        "10:00",
+        "10:15",
+        "11:15"
+      ],
+      "explanation": "Đáp án đúng: B. 10:15\n• Dịch câu hỏi: Một người phụ nữ đang nói chuyện với đồng nghiệp của mình. Khi nào cuộc họp bắt đầu?\n• Dịch các đáp án:\n  - A. 10:00 ➔ 10:00\n  - B. 10:15 ➔ 10:15\n  - C. 11:15 ➔ 11:15",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 13,
+      "id": "579204546",
+      "setIndex": 1,
+      "question": "A man is describing his school. What color is the teacher's building?",
+      "options": [
+        "blue",
+        "white",
+        "yellow"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người đàn ông đang mô tả về trường học của mình. Tòa nhà của giáo viên có màu gì?",
+      "optionsVi": [
+        "màu xanh dương",
+        "màu trắng",
+        "màu vàng"
+      ],
+      "explanation": "Đáp án đúng: B. white\n• Dịch câu hỏi: Một người đàn ông đang mô tả về trường học của mình. Tòa nhà của giáo viên có màu gì?\n• Dịch các đáp án:\n  - A. blue ➔ màu xanh dương\n  - B. white ➔ màu trắng\n  - C. yellow ➔ màu vàng",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 14,
+      "id": "579204547",
+      "setIndex": 1,
+      "question": "Louis is calling his friend Standar. Where will Luis meet Standar?",
+      "options": [
+        "At the cafe",
+        "Near the ticket counter",
+        "Outside the station"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Louis đang gọi cho người bạn Standar của mình. Luis sẽ gặp Standar ở đâu?",
+      "optionsVi": [
+        "Ở quán cà phê",
+        "Gần quầy bán vé",
+        "Bên ngoài nhà ga"
+      ],
+      "explanation": "Đáp án đúng: C. Outside the station\n• Dịch câu hỏi: Louis đang gọi cho người bạn Standar của mình. Luis sẽ gặp Standar ở đâu?\n• Dịch các đáp án:\n  - A. At the cafe ➔ Ở quán cà phê\n  - B. Near the ticket counter ➔ Gần quầy bán vé\n  - C. Outside the station ➔ Bên ngoài nhà ga",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 15,
+      "id": "579204548",
+      "setIndex": 1,
+      "question": "A woman is talking about shopping places. Where is she going to go shopping?",
+      "options": [
+        "At the downtown market",
+        "shopping center",
+        "At the mall"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người phụ nữ đang nói về các địa điểm mua sắm. Cô ấy dự định đi mua sắm ở đâu?",
+      "optionsVi": [
+        "Ở chợ trung tâm",
+        "trung tâm mua sắm",
+        "Ở khu thương mại"
+      ],
+      "explanation": "Đáp án đúng: B. shopping center\n• Dịch câu hỏi: Một người phụ nữ đang nói về các địa điểm mua sắm. Cô ấy dự định đi mua sắm ở đâu?\n• Dịch các đáp án:\n  - A. At the downtown market ➔ Ở chợ trung tâm\n  - B. shopping center ➔ trung tâm mua sắm\n  - C. At the mall ➔ Ở khu thương mại",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 16,
+      "id": "579204549",
+      "setIndex": 1,
+      "question": "A tour guide is making an announcement. Why was the tour canceled?",
+      "options": [
+        "Bad weather",
+        "Transportation problems",
+        "Not enough people"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một hướng dẫn viên du lịch đang thông báo. Tại sao chuyến tham quan bị hủy?",
+      "optionsVi": [
+        "Thời tiết xấu",
+        "Vấn đề giao thông",
+        "Không đủ người"
+      ],
+      "explanation": "Đáp án đúng: C. Not enough people\n• Dịch câu hỏi: Một hướng dẫn viên du lịch đang thông báo. Tại sao chuyến tham quan bị hủy?\n• Dịch các đáp án:\n  - A. Bad weather ➔ Thời tiết xấu\n  - B. Transportation problems ➔ Vấn đề giao thông\n  - C. Not enough people ➔ Không đủ người",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 17,
+      "id": "579204550",
+      "setIndex": 1,
+      "question": "A woman talks to her friend. What time do they arrange the meeting?",
+      "options": [
+        "At 4:30",
+        "At 4:00",
+        "At 5:30"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người phụ nữ nói chuyện với bạn của mình. Họ hẹn gặp nhau lúc mấy giờ?",
+      "optionsVi": [
+        "Lúc 4:30",
+        "Lúc 4:00",
+        "Lúc 5:30"
+      ],
+      "explanation": "Đáp án đúng: C. At 5:30\n• Dịch câu hỏi: Một người phụ nữ nói chuyện với bạn của mình. Họ hẹn gặp nhau lúc mấy giờ?\n• Dịch các đáp án:\n  - A. At 4:30 ➔ Lúc 4:30\n  - B. At 4:00 ➔ Lúc 4:00\n  - C. At 5:30 ➔ Lúc 5:30",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 18,
+      "id": "579204551",
+      "setIndex": 1,
+      "question": "How much does the book cost?",
+      "options": [
+        "11$",
+        "21$",
+        "15$"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Cuốn sách giá bao nhiêu?",
+      "optionsVi": [
+        "11$",
+        "21$",
+        "15$\\vert{} 11$"
+      ],
+      "explanation": "Đáp án đúng: A. 11$\n• Dịch câu hỏi: Cuốn sách giá bao nhiêu?\n• Dịch các đáp án:\n  - A. 11$ ➔ 11$\n  - B. 21$ ➔ 21$\n  - C. 15$ ➔ 15$\\vert{} 11$",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 19,
+      "id": "579204552",
+      "setIndex": 1,
+      "question": "Listen to Anna talking about her routine. Where does Anna go for a walk every morning?",
+      "options": [
+        "park",
+        "college",
+        "neighborhood"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hãy nghe Anna nói về thói quen của cô ấy. Anna đi dạo ở đâu vào mỗi buổi sáng?",
+      "optionsVi": [
+        "công viên",
+        "trường cao đẳng/đại học",
+        "khu phố"
+      ],
+      "explanation": "Đáp án đúng: B. college\n• Dịch câu hỏi: Hãy nghe Anna nói về thói quen của cô ấy. Anna đi dạo ở đâu vào mỗi buổi sáng?\n• Dịch các đáp án:\n  - A. park ➔ công viên\n  - B. college ➔ trường cao đẳng/đại học\n  - C. neighborhood ➔ khu phố",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 20,
+      "id": "579204553",
+      "setIndex": 1,
+      "question": "A woman is discussing with her team. How many chairs/seats does she need?",
+      "options": [
+        "12",
+        "20",
+        "15"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người phụ nữ đang thảo luận với nhóm của mình. Cô ấy cần bao nhiêu chiếc ghế/chỗ ngồi?",
+      "optionsVi": [
+        "12",
+        "20",
+        "15"
+      ],
+      "explanation": "Đáp án đúng: B. 20\n• Dịch câu hỏi: Một người phụ nữ đang thảo luận với nhóm của mình. Cô ấy cần bao nhiêu chiếc ghế/chỗ ngồi?\n• Dịch các đáp án:\n  - A. 12 ➔ 12\n  - B. 20 ➔ 20\n  - C. 15 ➔ 15",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 21,
+      "id": "579204554",
+      "setIndex": 1,
+      "question": "Listen to a girl calling the cafe. What did she forget, and where did she leave it?",
+      "options": [
+        "near the door",
+        "on the counter",
+        "in the corner"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Hãy nghe một cô gái gọi điện cho quán cà phê. Cô ấy đã quên gì, và để nó ở đâu?",
+      "optionsVi": [
+        "gần cửa ra vào",
+        "trên quầy",
+        "trong góc"
+      ],
+      "explanation": "Đáp án đúng: C. in the corner\n• Dịch câu hỏi: Hãy nghe một cô gái gọi điện cho quán cà phê. Cô ấy đã quên gì, và để nó ở đâu?\n• Dịch các đáp án:\n  - A. near the door ➔ gần cửa ra vào\n  - B. on the counter ➔ trên quầy\n  - C. in the corner ➔ trong góc",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 22,
+      "id": "579204555",
+      "setIndex": 1,
+      "question": "Where did they meet?",
+      "options": [
+        "The parking lot",
+        "The front entrance",
+        "The school gate"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Họ đã gặp nhau ở đâu?",
+      "optionsVi": [
+        "Bãi đỗ xe",
+        "Lối vào phía trước",
+        "Cổng trường"
+      ],
+      "explanation": "Đáp án đúng: B. The front entrance\n• Dịch câu hỏi: Họ đã gặp nhau ở đâu?\n• Dịch các đáp án:\n  - A. The parking lot ➔ Bãi đỗ xe\n  - B. The front entrance ➔ Lối vào phía trước\n  - C. The school gate ➔ Cổng trường",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 23,
+      "id": "579204556",
+      "setIndex": 1,
+      "question": "A woman is going home after shopping. What did she buy?",
+      "options": [
+        "A blouse",
+        "a dress",
+        "a hat"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người phụ nữ đang về nhà sau khi mua sắm. Cô ấy đã mua gì?",
+      "optionsVi": [
+        "Một chiếc áo sơ mi nữ",
+        "một chiếc váy liền",
+        "một chiếc mũ"
+      ],
+      "explanation": "Đáp án đúng: B. a dress\n• Dịch câu hỏi: Một người phụ nữ đang về nhà sau khi mua sắm. Cô ấy đã mua gì?\n• Dịch các đáp án:\n  - A. A blouse ➔ Một chiếc áo sơ mi nữ\n  - B. a dress ➔ một chiếc váy liền\n  - C. a hat ➔ một chiếc mũ",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 24,
+      "id": "579204557",
+      "setIndex": 1,
+      "question": "Listen to a teacher talking about meeting preparations. What is she preparing for the meeting now?",
+      "options": [
+        "Set up the chairs",
+        "Organize the documents",
+        "Order the food"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Hãy nghe một giáo viên nói về việc chuẩn bị cho cuộc họp. Hiện tại cô ấy đang chuẩn bị gì cho cuộc họp?",
+      "optionsVi": [
+        "Sắp xếp ghế",
+        "Sắp xếp tài liệu",
+        "Đặt đồ ăn"
+      ],
+      "explanation": "Đáp án đúng: C. Order the food\n• Dịch câu hỏi: Hãy nghe một giáo viên nói về việc chuẩn bị cho cuộc họp. Hiện tại cô ấy đang chuẩn bị gì cho cuộc họp?\n• Dịch các đáp án:\n  - A. Set up the chairs ➔ Sắp xếp ghế\n  - B. Organize the documents ➔ Sắp xếp tài liệu\n  - C. Order the food ➔ Đặt đồ ăn",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 25,
+      "id": "579204558",
+      "setIndex": 1,
+      "question": "When will she need a computer?",
+      "options": [
+        "Tuesday",
+        "On Friday",
+        "Saturday"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Khi nào cô ấy sẽ cần máy tính?",
+      "optionsVi": [
+        "Thứ Ba",
+        "Vào Thứ Sáu",
+        "Thứ Bảy"
+      ],
+      "explanation": "Đáp án đúng: B. On Friday\n• Dịch câu hỏi: Khi nào cô ấy sẽ cần máy tính?\n• Dịch các đáp án:\n  - A. Tuesday ➔ Thứ Ba\n  - B. On Friday ➔ Vào Thứ Sáu\n  - C. Saturday ➔ Thứ Bảy",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 26,
+      "id": "579204559",
+      "setIndex": 1,
+      "question": "What country will they study next semester?",
+      "options": [
+        "France",
+        "Italy",
+        "Germany"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Họ sẽ học về quốc gia nào trong học kỳ tới?",
+      "optionsVi": [
+        "Pháp",
+        "Ý",
+        "Đức"
+      ],
+      "explanation": "Đáp án đúng: A. France\n• Dịch câu hỏi: Họ sẽ học về quốc gia nào trong học kỳ tới?\n• Dịch các đáp án:\n  - A. France ➔ Pháp\n  - B. Italy ➔ Ý\n  - C. Germany ➔ Đức",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 27,
+      "id": "579204560",
+      "setIndex": 1,
+      "question": "A woman is talking about her house. What is she going to change in their house?",
+      "options": [
+        "the car",
+        "the computer",
+        "the window"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người phụ nữ đang nói về ngôi nhà của cô ấy. Cô ấy dự định thay đổi gì trong nhà của họ?",
+      "optionsVi": [
+        "chiếc xe ô tô",
+        "chiếc máy tính",
+        "cửa sổ"
+      ],
+      "explanation": "Đáp án đúng: C. the window\n• Dịch câu hỏi: Một người phụ nữ đang nói về ngôi nhà của cô ấy. Cô ấy dự định thay đổi gì trong nhà của họ?\n• Dịch các đáp án:\n  - A. the car ➔ chiếc xe ô tô\n  - B. the computer ➔ chiếc máy tính\n  - C. the window ➔ cửa sổ",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 28,
+      "id": "579204561",
+      "setIndex": 1,
+      "question": "Listen to an actor discussing his hobbies. What does the actor like to do in his free time?",
+      "options": [
+        "Playing sports",
+        "Watching movies",
+        "Drawing"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Hãy nghe một diễn viên thảo luận về sở thích của anh ấy. Nam diễn viên thích làm gì trong thời gian rảnh rỗi?",
+      "optionsVi": [
+        "Chơi thể thao",
+        "Xem phim",
+        "Vẽ"
+      ],
+      "explanation": "Đáp án đúng: C. Drawing\n• Dịch câu hỏi: Hãy nghe một diễn viên thảo luận về sở thích của anh ấy. Nam diễn viên thích làm gì trong thời gian rảnh rỗi?\n• Dịch các đáp án:\n  - A. Playing sports ➔ Chơi thể thao\n  - B. Watching movies ➔ Xem phim\n  - C. Drawing ➔ Vẽ",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 29,
+      "id": "579204562",
+      "setIndex": 1,
+      "question": "Listen to a principal talking about new school facilities. What new facility will the school have?",
+      "options": [
+        "a new library",
+        "the performance space",
+        "a sports field"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hãy nghe một hiệu trưởng nói về cơ sở vật chất mới của trường. Trường sẽ có cơ sở vật chất mới nào?",
+      "optionsVi": [
+        "một thư viện mới",
+        "không gian biểu diễn",
+        "một sân thể thao"
+      ],
+      "explanation": "Đáp án đúng: B. the performance space\n• Dịch câu hỏi: Hãy nghe một hiệu trưởng nói về cơ sở vật chất mới của trường. Trường sẽ có cơ sở vật chất mới nào?\n• Dịch các đáp án:\n  - A. a new library ➔ một thư viện mới\n  - B. the performance space ➔ không gian biểu diễn\n  - C. a sports field ➔ một sân thể thao",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 30,
+      "id": "579204563",
+      "setIndex": 1,
+      "question": "Listening to a man talking about his business trip. What does he like in Dubai?",
+      "options": [
+        "enjoy the food there",
+        "enjoy the people there",
+        "Enjoy his job there"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Nghe một người đàn ông nói về chuyến công tác của anh ấy. Anh ấy thích điều gì ở Dubai?",
+      "optionsVi": [
+        "thích đồ ăn ở đó",
+        "thích con người ở đó",
+        "Thích công việc của anh ấy ở đó"
+      ],
+      "explanation": "Đáp án đúng: C. Enjoy his job there\n• Dịch câu hỏi: Nghe một người đàn ông nói về chuyến công tác của anh ấy. Anh ấy thích điều gì ở Dubai?\n• Dịch các đáp án:\n  - A. enjoy the food there ➔ thích đồ ăn ở đó\n  - B. enjoy the people there ➔ thích con người ở đó\n  - C. Enjoy his job there ➔ Thích công việc của anh ấy ở đó",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 31,
+      "id": "579204564",
+      "setIndex": 1,
+      "question": "What should the teacher focus on this week?",
+      "options": [
+        "Building the students' confidence",
+        "Provide students with more material",
+        "Give feedback to students"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Giáo viên nên tập trung vào điều gì trong tuần này?",
+      "optionsVi": [
+        "Xây dựng sự tự tin cho học sinh",
+        "Cung cấp cho học sinh nhiều tài liệu hơn",
+        "Đưa ra phản hồi cho học sinh"
+      ],
+      "explanation": "Đáp án đúng: A. Building the students' confidence\n• Dịch câu hỏi: Giáo viên nên tập trung vào điều gì trong tuần này?\n• Dịch các đáp án:\n  - A. Building the students' confidence ➔ Xây dựng sự tự tin cho học sinh\n  - B. Provide students with more material ➔ Cung cấp cho học sinh nhiều tài liệu hơn\n  - C. Give feedback to students ➔ Đưa ra phản hồi cho học sinh",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 32,
+      "id": "579204565",
+      "setIndex": 1,
+      "question": "A man is talking about the city concert. How will the concert end?",
+      "options": [
+        "The city's favorite group",
+        "Fireworks performance",
+        "Singing from orchestra"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông đang nói về buổi hòa nhạc của thành phố. Buổi hòa nhạc sẽ kết thúc như thế nào?",
+      "optionsVi": [
+        "Nhóm nhạc yêu thích của thành phố",
+        "Màn trình diễn pháo hoa",
+        "Tiết mục hát của dàn nhạc"
+      ],
+      "explanation": "Đáp án đúng: A. The city's favorite group\n• Dịch câu hỏi: Một người đàn ông đang nói về buổi hòa nhạc của thành phố. Buổi hòa nhạc sẽ kết thúc như thế nào?\n• Dịch các đáp án:\n  - A. The city's favorite group ➔ Nhóm nhạc yêu thích của thành phố\n  - B. Fireworks performance ➔ Màn trình diễn pháo hoa\n  - C. Singing from orchestra ➔ Tiết mục hát của dàn nhạc",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 33,
+      "id": "579204566",
+      "setIndex": 1,
+      "question": "A woman tells her friend about her plans for the day. What is the woman going to do?",
+      "options": [
+        "Drink tea",
+        "Have lunch",
+        "Have coffee"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người phụ nữ kể cho bạn cô ấy về kế hoạch trong ngày của mình. Người phụ nữ dự định sẽ làm gì?",
+      "optionsVi": [
+        "Uống trà",
+        "Ăn trưa",
+        "Uống cà phê"
+      ],
+      "explanation": "Đáp án đúng: C. Have coffee\n• Dịch câu hỏi: Một người phụ nữ kể cho bạn cô ấy về kế hoạch trong ngày của mình. Người phụ nữ dự định sẽ làm gì?\n• Dịch các đáp án:\n  - A. Drink tea ➔ Uống trà\n  - B. Have lunch ➔ Ăn trưa\n  - C. Have coffee ➔ Uống cà phê",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 34,
+      "id": "579204567",
+      "setIndex": 1,
+      "question": "Listen to the announcement. When does the train leave?",
+      "options": [
+        "At 9:15",
+        "At 9.45",
+        "At 9.30"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe thông báo. Khi nào tàu khởi hành?",
+      "optionsVi": [
+        "Lúc 9:15",
+        "Lúc 9:45",
+        "Lúc 9:30"
+      ],
+      "explanation": "Đáp án đúng: A. At 9:15\n• Dịch câu hỏi: Hãy nghe thông báo. Khi nào tàu khởi hành?\n• Dịch các đáp án:\n  - A. At 9:15 ➔ Lúc 9:15\n  - B. At 9.45 ➔ Lúc 9:45\n  - C. At 9.30 ➔ Lúc 9:30",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 35,
+      "id": "579204568",
+      "setIndex": 1,
+      "question": "What is he going to do to prepare for the event?",
+      "options": [
+        "Change the time of the meeting",
+        "Invite more guests.",
+        "Buy new office equipment."
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Anh ấy dự định sẽ làm gì để chuẩn bị cho sự kiện?",
+      "optionsVi": [
+        "Thay đổi thời gian cuộc họp",
+        "Mời thêm khách.",
+        "Mua thiết bị văn phòng mới."
+      ],
+      "explanation": "Đáp án đúng: A. Change the time of the meeting\n• Dịch câu hỏi: Anh ấy dự định sẽ làm gì để chuẩn bị cho sự kiện?\n• Dịch các đáp án:\n  - A. Change the time of the meeting ➔ Thay đổi thời gian cuộc họp\n  - B. Invite more guests. ➔ Mời thêm khách.\n  - C. Buy new office equipment. ➔ Mua thiết bị văn phòng mới.",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 36,
+      "id": "579204569",
+      "setIndex": 1,
+      "question": "Two people are talking about meeting for dinner. What time does Ahmed meet Rose?",
+      "options": [
+        "quarter past seven 7.15",
+        "half past seven 7.30",
+        "7.45 quarter to eight"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Hai người đang nói chuyện về việc hẹn gặp nhau ăn tối. Ahmed gặp Rose lúc mấy giờ?",
+      "optionsVi": [
+        "7 giờ 15 phút (7.15)",
+        "7 giờ 30 phút (7.30)",
+        "7.45 (8 giờ kém 15)"
+      ],
+      "explanation": "Đáp án đúng: C. 7.45 quarter to eight\n• Dịch câu hỏi: Hai người đang nói chuyện về việc hẹn gặp nhau ăn tối. Ahmed gặp Rose lúc mấy giờ?\n• Dịch các đáp án:\n  - A. quarter past seven 7.15 ➔ 7 giờ 15 phút (7.15)\n  - B. half past seven 7.30 ➔ 7 giờ 30 phút (7.30)\n  - C. 7.45 quarter to eight ➔ 7.45 (8 giờ kém 15)",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 37,
+      "id": "579204570",
+      "setIndex": 1,
+      "question": "Anna is calling her friend. Where will they meet?",
+      "options": [
+        "At the marketplace",
+        "At the super market",
+        "At the mall"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Anna đang gọi cho bạn mình. Họ sẽ gặp nhau ở đâu?",
+      "optionsVi": [
+        "Ở khu chợ",
+        "Ở siêu thị",
+        "Ở trung tâm thương mại"
+      ],
+      "explanation": "Đáp án đúng: A. At the marketplace\n• Dịch câu hỏi: Anna đang gọi cho bạn mình. Họ sẽ gặp nhau ở đâu?\n• Dịch các đáp án:\n  - A. At the marketplace ➔ Ở khu chợ\n  - B. At the super market ➔ Ở siêu thị\n  - C. At the mall ➔ Ở trung tâm thương mại",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 38,
+      "id": "579204571",
+      "setIndex": 1,
+      "question": "Stephanie is looking for a job taking care of children. How old is she?",
+      "options": [
+        "21",
+        "20",
+        "22"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Stephanie đang tìm công việc chăm sóc trẻ em. Cô ấy bao nhiêu tuổi?",
+      "optionsVi": [
+        "21",
+        "20",
+        "22"
+      ],
+      "explanation": "Đáp án đúng: A. 21\n• Dịch câu hỏi: Stephanie đang tìm công việc chăm sóc trẻ em. Cô ấy bao nhiêu tuổi?\n• Dịch các đáp án:\n  - A. 21 ➔ 21\n  - B. 20 ➔ 20\n  - C. 22 ➔ 22",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 39,
+      "id": "579204572",
+      "setIndex": 1,
+      "question": "A man is giving directions to a friend about how to get to the football club. The football club is near?",
+      "options": [
+        "A grocery store",
+        "a park",
+        "a library"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người đàn ông đang chỉ đường cho bạn mình cách đến câu lạc bộ bóng đá. Câu lạc bộ bóng đá ở gần đâu?",
+      "optionsVi": [
+        "Một cửa hàng tạp hóa",
+        "một công viên",
+        "một thư viện"
+      ],
+      "explanation": "Đáp án đúng: B. a park\n• Dịch câu hỏi: Một người đàn ông đang chỉ đường cho bạn mình cách đến câu lạc bộ bóng đá. Câu lạc bộ bóng đá ở gần đâu?\n• Dịch các đáp án:\n  - A. A grocery store ➔ Một cửa hàng tạp hóa\n  - B. a park ➔ một công viên\n  - C. a library ➔ một thư viện",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 40,
+      "id": "579204573",
+      "setIndex": 1,
+      "question": "A boy is talking about his cat. What does he feed the cat?",
+      "options": [
+        "fish",
+        "Mice",
+        "Insects"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một cậu bé đang nói về con mèo của mình. Cậu bé cho mèo ăn gì?",
+      "optionsVi": [
+        "cá",
+        "Chuột",
+        "Côn trùng"
+      ],
+      "explanation": "Đáp án đúng: A. fish\n• Dịch câu hỏi: Một cậu bé đang nói về con mèo của mình. Cậu bé cho mèo ăn gì?\n• Dịch các đáp án:\n  - A. fish ➔ cá\n  - B. Mice ➔ Chuột\n  - C. Insects ➔ Côn trùng",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 41,
+      "id": "579204574",
+      "setIndex": 1,
+      "question": "Samia is going to meet her friends. What time are they going to meet?",
+      "options": [
+        "9:00",
+        "9:30",
+        "10.00"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Samia dự định đi gặp bạn bè của cô ấy. Họ sẽ gặp nhau lúc mấy giờ?",
+      "optionsVi": [
+        "9:00",
+        "9:30",
+        "10:00"
+      ],
+      "explanation": "Đáp án đúng: C. 10.00\n• Dịch câu hỏi: Samia dự định đi gặp bạn bè của cô ấy. Họ sẽ gặp nhau lúc mấy giờ?\n• Dịch các đáp án:\n  - A. 9:00 ➔ 9:00\n  - B. 9:30 ➔ 9:30\n  - C. 10.00 ➔ 10:00",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 42,
+      "id": "579204575",
+      "setIndex": 1,
+      "question": "Jack is phoning his mom. What does Jack need to buy for his sister?",
+      "options": [
+        "Fruit",
+        "Milk",
+        "Chocolates"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Jack đang gọi điện cho mẹ. Jack cần mua gì cho chị/em gái mình?",
+      "optionsVi": [
+        "Trái cây",
+        "Sữa",
+        "Sô-cô-la"
+      ],
+      "explanation": "Đáp án đúng: C. Chocolates\n• Dịch câu hỏi: Jack đang gọi điện cho mẹ. Jack cần mua gì cho chị/em gái mình?\n• Dịch các đáp án:\n  - A. Fruit ➔ Trái cây\n  - B. Milk ➔ Sữa\n  - C. Chocolates ➔ Sô-cô-la",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 43,
+      "id": "579204576",
+      "setIndex": 1,
+      "question": "Listen to a man talking about their train journey. What time did the train depart?",
+      "options": [
+        "9:00",
+        "9.45",
+        "9.30"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Hãy nghe một người đàn ông nói về chuyến đi tàu của họ. Tàu đã khởi hành lúc mấy giờ?",
+      "optionsVi": [
+        "9:00",
+        "9:45",
+        "9:30"
+      ],
+      "explanation": "Đáp án đúng: C. 9.30\n• Dịch câu hỏi: Hãy nghe một người đàn ông nói về chuyến đi tàu của họ. Tàu đã khởi hành lúc mấy giờ?\n• Dịch các đáp án:\n  - A. 9:00 ➔ 9:00\n  - B. 9.45 ➔ 9:45\n  - C. 9.30 ➔ 9:30",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 44,
+      "id": "579204577",
+      "setIndex": 1,
+      "question": "The driver trainer is calling a man, when is the new appointment date?",
+      "options": [
+        "Sunday",
+        "Friday",
+        "Monday"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Huấn luyện viên dạy lái xe đang gọi cho một người đàn ông, ngày hẹn mới là khi nào?",
+      "optionsVi": [
+        "Chủ nhật",
+        "Thứ Sáu",
+        "Thứ Hai"
+      ],
+      "explanation": "Đáp án đúng: B. Friday\n• Dịch câu hỏi: Huấn luyện viên dạy lái xe đang gọi cho một người đàn ông, ngày hẹn mới là khi nào?\n• Dịch các đáp án:\n  - A. Sunday ➔ Chủ nhật\n  - B. Friday ➔ Thứ Sáu\n  - C. Monday ➔ Thứ Hai",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 45,
+      "id": "579204578",
+      "setIndex": 1,
+      "question": "A man is calling his friend to meet for coffee. Where is the Coffee shop located?",
+      "options": [
+        "opposite the gift shop",
+        "next to the gift shop",
+        "behind the gift shop"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông đang gọi cho bạn mình để hẹn đi uống cà phê. Quán cà phê nằm ở đâu?",
+      "optionsVi": [
+        "đối diện cửa hàng lưu niệm (quà tặng)",
+        "cạnh cửa hàng lưu niệm",
+        "phía sau cửa hàng lưu niệm"
+      ],
+      "explanation": "Đáp án đúng: A. opposite the gift shop\n• Dịch câu hỏi: Một người đàn ông đang gọi cho bạn mình để hẹn đi uống cà phê. Quán cà phê nằm ở đâu?\n• Dịch các đáp án:\n  - A. opposite the gift shop ➔ đối diện cửa hàng lưu niệm (quà tặng)\n  - B. next to the gift shop ➔ cạnh cửa hàng lưu niệm\n  - C. behind the gift shop ➔ phía sau cửa hàng lưu niệm",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 46,
+      "id": "579204579",
+      "setIndex": 1,
+      "question": "Listen to a tour guide introducing the tour. Where will tea be served?",
+      "options": [
+        "On the Mountain Boat",
+        "On the beach Boat",
+        "On the River Boat"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Hãy nghe hướng dẫn viên du lịch giới thiệu về chuyến đi. Trà sẽ được phục vụ ở đâu?",
+      "optionsVi": [
+        "Trên thuyền leo núi (Mountain Boat)",
+        "Trên thuyền bãi biển",
+        "Trên thuyền trên sông (River Boat)"
+      ],
+      "explanation": "Đáp án đúng: C. On the River Boat\n• Dịch câu hỏi: Hãy nghe hướng dẫn viên du lịch giới thiệu về chuyến đi. Trà sẽ được phục vụ ở đâu?\n• Dịch các đáp án:\n  - A. On the Mountain Boat ➔ Trên thuyền leo núi (Mountain Boat)\n  - B. On the beach Boat ➔ Trên thuyền bãi biển\n  - C. On the River Boat ➔ Trên thuyền trên sông (River Boat)",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 47,
+      "id": "579204580",
+      "setIndex": 1,
+      "question": "Listen to a saleswoman talking about a property. Which room is the largest?",
+      "options": [
+        "Bedroom",
+        "Kitchen",
+        "Bathroom"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hãy nghe một nữ nhân viên bán hàng nói về một bất động sản. Căn phòng nào là lớn nhất?",
+      "optionsVi": [
+        "Phòng ngủ",
+        "Nhà bếp",
+        "Phòng tắm"
+      ],
+      "explanation": "Đáp án đúng: B. Kitchen\n• Dịch câu hỏi: Hãy nghe một nữ nhân viên bán hàng nói về một bất động sản. Căn phòng nào là lớn nhất?\n• Dịch các đáp án:\n  - A. Bedroom ➔ Phòng ngủ\n  - B. Kitchen ➔ Nhà bếp\n  - C. Bathroom ➔ Phòng tắm",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 48,
+      "id": "579204581",
+      "setIndex": 1,
+      "question": "Listen to a woman talking about what she has just bought. What is Dress she wears like?",
+      "options": [
+        "black and white",
+        "long and red",
+        "long and white"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hãy nghe một người phụ nữ nói về món đồ cô ấy vừa mua. Chiếc váy cô ấy mặc trông như thế nào?",
+      "optionsVi": [
+        "màu đen và trắng",
+        "dài và màu đỏ",
+        "dài và màu trắng"
+      ],
+      "explanation": "Đáp án đúng: B. long and red\n• Dịch câu hỏi: Hãy nghe một người phụ nữ nói về món đồ cô ấy vừa mua. Chiếc váy cô ấy mặc trông như thế nào?\n• Dịch các đáp án:\n  - A. black and white ➔ màu đen và trắng\n  - B. long and red ➔ dài và màu đỏ\n  - C. long and white ➔ dài và màu trắng",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 49,
+      "id": "579204582",
+      "setIndex": 1,
+      "question": "Doctor’s office is calling about a change in the appointment. When is the new appointment?",
+      "options": [
+        "On Friday 14th",
+        "On Thursday 30th",
+        "On Thursday 13th"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Phòng khám bác sĩ đang gọi điện thông báo về việc thay đổi lịch hẹn. Lịch hẹn mới là khi nào?",
+      "optionsVi": [
+        "Vào thứ Sáu ngày 14",
+        "Vào thứ Năm ngày 30",
+        "Vào thứ Năm ngày 13"
+      ],
+      "explanation": "Đáp án đúng: C. On Thursday 13th\n• Dịch câu hỏi: Phòng khám bác sĩ đang gọi điện thông báo về việc thay đổi lịch hẹn. Lịch hẹn mới là khi nào?\n• Dịch các đáp án:\n  - A. On Friday 14th ➔ Vào thứ Sáu ngày 14\n  - B. On Thursday 30th ➔ Vào thứ Năm ngày 30\n  - C. On Thursday 13th ➔ Vào thứ Năm ngày 13",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 50,
+      "id": "579204583",
+      "setIndex": 1,
+      "question": "A woman is talking about her weekends. What did she do last week?",
+      "options": [
+        "Went hiking",
+        "Stayed at home",
+        "Attended a party"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người phụ nữ đang nói về những ngày cuối tuần của cô ấy. Cô ấy đã làm gì vào tuần trước?",
+      "optionsVi": [
+        "Đi leo núi",
+        "Ở nhà",
+        "Tham dự một bữa tiệc"
+      ],
+      "explanation": "Đáp án đúng: B. Stayed at home\n• Dịch câu hỏi: Một người phụ nữ đang nói về những ngày cuối tuần của cô ấy. Cô ấy đã làm gì vào tuần trước?\n• Dịch các đáp án:\n  - A. Went hiking ➔ Đi leo núi\n  - B. Stayed at home ➔ Ở nhà\n  - C. Attended a party ➔ Tham dự một bữa tiệc",
+      "part": "Phần 1 (Câu 1 - 50)"
+    },
+    {
+      "num": 51,
+      "id": "579204584",
+      "setIndex": 2,
+      "question": "Nate is on the phone with his friend. How long does Nate stay in India?",
+      "options": [
+        "3 days",
+        "1 week",
+        "2 weeks"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Nate đang nói chuyện điện thoại với bạn của anh ấy. Nate ở lại Ấn Độ bao lâu?",
+      "optionsVi": [
+        "3 ngày",
+        "1 tuần",
+        "2 tuần"
+      ],
+      "explanation": "Đáp án đúng: C. 2 weeks\n• Dịch câu hỏi: Nate đang nói chuyện điện thoại với bạn của anh ấy. Nate ở lại Ấn Độ bao lâu?\n• Dịch các đáp án:\n  - A. 3 days ➔ 3 ngày\n  - B. 1 week ➔ 1 tuần\n  - C. 2 weeks ➔ 2 tuần",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 52,
+      "id": "579204585",
+      "setIndex": 2,
+      "question": "Listen to a tour guide. Where is the office located?",
+      "options": [
+        "Opposite the hotel",
+        "Next to the park",
+        "Above a restaurant"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe một hướng dẫn viên du lịch. Văn phòng nằm ở đâu?",
+      "optionsVi": [
+        "Đối diện khách sạn",
+        "Cạnh công viên",
+        "Phía trên một nhà hàng"
+      ],
+      "explanation": "Đáp án đúng: A. Opposite the hotel\n• Dịch câu hỏi: Hãy nghe một hướng dẫn viên du lịch. Văn phòng nằm ở đâu?\n• Dịch các đáp án:\n  - A. Opposite the hotel ➔ Đối diện khách sạn\n  - B. Next to the park ➔ Cạnh công viên\n  - C. Above a restaurant ➔ Phía trên một nhà hàng",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 53,
+      "id": "579204586",
+      "setIndex": 2,
+      "question": "Listening to a woman’s announcement. Where will they wait for the bus?",
+      "options": [
+        "Behind the hotel's main entrance",
+        "By the hotel's side entrance",
+        "By the hotel's main entrance"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Nghe thông báo của một người phụ nữ. Họ sẽ đợi xe buýt ở đâu?",
+      "optionsVi": [
+        "Phía sau lối vào chính của khách sạn",
+        "Cạnh lối vào phụ của khách sạn",
+        "Cạnh lối vào chính của khách sạn"
+      ],
+      "explanation": "Đáp án đúng: C. By the hotel's main entrance\n• Dịch câu hỏi: Nghe thông báo của một người phụ nữ. Họ sẽ đợi xe buýt ở đâu?\n• Dịch các đáp án:\n  - A. Behind the hotel's main entrance ➔ Phía sau lối vào chính của khách sạn\n  - B. By the hotel's side entrance ➔ Cạnh lối vào phụ của khách sạn\n  - C. By the hotel's main entrance ➔ Cạnh lối vào chính của khách sạn",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 54,
+      "id": "579204587",
+      "setIndex": 2,
+      "question": "A man is talking about his family trip. What does the man’s wife enjoy?",
+      "options": [
+        "photography",
+        "shopping",
+        "drawing"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông đang nói về chuyến đi của gia đình anh ấy. Vợ của người đàn ông thích làm gì?",
+      "optionsVi": [
+        "chụp ảnh (nhiếp ảnh)",
+        "mua sắm",
+        "vẽ"
+      ],
+      "explanation": "Đáp án đúng: A. photography\n• Dịch câu hỏi: Một người đàn ông đang nói về chuyến đi của gia đình anh ấy. Vợ của người đàn ông thích làm gì?\n• Dịch các đáp án:\n  - A. photography ➔ chụp ảnh (nhiếp ảnh)\n  - B. shopping ➔ mua sắm\n  - C. drawing ➔ vẽ",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 55,
+      "id": "579204588",
+      "setIndex": 2,
+      "question": "When is the best time for her to get up?",
+      "options": [
+        "At 6 o'clock",
+        "At 8 o'clock",
+        "At 7 o'clock"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Khi nào là thời điểm tốt nhất để cô ấy thức dậy?",
+      "optionsVi": [
+        "Lúc 6 giờ",
+        "Lúc 8 giờ",
+        "Lúc 7 giờ"
+      ],
+      "explanation": "Đáp án đúng: C. At 7 o'clock\n• Dịch câu hỏi: Khi nào là thời điểm tốt nhất để cô ấy thức dậy?\n• Dịch các đáp án:\n  - A. At 6 o'clock ➔ Lúc 6 giờ\n  - B. At 8 o'clock ➔ Lúc 8 giờ\n  - C. At 7 o'clock ➔ Lúc 7 giờ",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 56,
+      "id": "579204589",
+      "setIndex": 2,
+      "question": "Listen to a writer talking about her job. What is her first job?",
+      "options": [
+        "teacher",
+        "Engineer",
+        "doctor"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe một nhà văn nói về công việc của cô ấy. Công việc đầu tiên của cô ấy là gì?",
+      "optionsVi": [
+        "giáo viên",
+        "Kỹ sư",
+        "bác sĩ"
+      ],
+      "explanation": "Đáp án đúng: A. teacher\n• Dịch câu hỏi: Hãy nghe một nhà văn nói về công việc của cô ấy. Công việc đầu tiên của cô ấy là gì?\n• Dịch các đáp án:\n  - A. teacher ➔ giáo viên\n  - B. Engineer ➔ Kỹ sư\n  - C. doctor ➔ bác sĩ",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 57,
+      "id": "579204590",
+      "setIndex": 2,
+      "question": "Max is calling his friend. How much can Max pay for the computer?",
+      "options": [
+        "250 pounds",
+        "150 pounds",
+        "350 pounds"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Max đang gọi cho bạn mình. Max có thể trả bao nhiêu tiền cho chiếc máy tính?",
+      "optionsVi": [
+        "250 bảng Anh",
+        "150 bảng Anh",
+        "350 bảng Anh"
+      ],
+      "explanation": "Đáp án đúng: A. 250 pounds\n• Dịch câu hỏi: Max đang gọi cho bạn mình. Max có thể trả bao nhiêu tiền cho chiếc máy tính?\n• Dịch các đáp án:\n  - A. 250 pounds ➔ 250 bảng Anh\n  - B. 150 pounds ➔ 150 bảng Anh\n  - C. 350 pounds ➔ 350 bảng Anh",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 58,
+      "id": "579204591",
+      "setIndex": 2,
+      "question": "Pierre and Emma are talking together about the picnic on the weekend. What will they bring to the picnic?",
+      "options": [
+        "fruit",
+        "food",
+        "water"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Pierre và Emma đang nói chuyện cùng nhau về chuyến dã ngoại vào cuối tuần. Họ sẽ mang theo gì đi dã ngoại?",
+      "optionsVi": [
+        "trái cây",
+        "đồ ăn",
+        "nước"
+      ],
+      "explanation": "Đáp án đúng: B. food\n• Dịch câu hỏi: Pierre và Emma đang nói chuyện cùng nhau về chuyến dã ngoại vào cuối tuần. Họ sẽ mang theo gì đi dã ngoại?\n• Dịch các đáp án:\n  - A. fruit ➔ trái cây\n  - B. food ➔ đồ ăn\n  - C. water ➔ nước",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 59,
+      "id": "579204592",
+      "setIndex": 2,
+      "question": "Lily is talking about her daily routine. What does she do in the evening?",
+      "options": [
+        "Cooks dinner",
+        "Goes for a walk",
+        "Plays video games."
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Lily đang nói về thói quen hàng ngày của cô ấy. Cô ấy làm gì vào buổi tối?",
+      "optionsVi": [
+        "Nấu bữa tối",
+        "Đi dạo",
+        "Chơi trò chơi điện tử."
+      ],
+      "explanation": "Đáp án đúng: B. Goes for a walk\n• Dịch câu hỏi: Lily đang nói về thói quen hàng ngày của cô ấy. Cô ấy làm gì vào buổi tối?\n• Dịch các đáp án:\n  - A. Cooks dinner ➔ Nấu bữa tối\n  - B. Goes for a walk ➔ Đi dạo\n  - C. Plays video games. ➔ Chơi trò chơi điện tử.",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 60,
+      "id": "579204593",
+      "setIndex": 2,
+      "question": "Listen to Anna talk about his old manager, George. What did Anna say about George?",
+      "options": [
+        "he taught her a lot",
+        "he didn't like her",
+        "he was very strict"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe Anna nói về người quản lý cũ của cô ấy, George. Anna đã nói gì về George?",
+      "optionsVi": [
+        "ông ấy đã dạy cô ấy rất nhiều",
+        "ông ấy không thích cô ấy",
+        "ông ấy rất nghiêm khắc"
+      ],
+      "explanation": "Đáp án đúng: A. he taught her a lot\n• Dịch câu hỏi: Hãy nghe Anna nói về người quản lý cũ của cô ấy, George. Anna đã nói gì về George?\n• Dịch các đáp án:\n  - A. he taught her a lot ➔ ông ấy đã dạy cô ấy rất nhiều\n  - B. he didn't like her ➔ ông ấy không thích cô ấy\n  - C. he was very strict ➔ ông ấy rất nghiêm khắc",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 61,
+      "id": "579204594",
+      "setIndex": 2,
+      "question": "A man is talking about his jobs. What does the man want to do next?",
+      "options": [
+        "Start teaching history again",
+        "Become a writer",
+        "Become a chef again"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người đàn ông đang nói về các công việc của mình. Người đàn ông muốn làm gì tiếp theo?",
+      "optionsVi": [
+        "Bắt đầu dạy lại môn lịch sử",
+        "Trở thành một nhà văn",
+        "Trở thành đầu bếp một lần nữa"
+      ],
+      "explanation": "Đáp án đúng: B. Become a writer\n• Dịch câu hỏi: Một người đàn ông đang nói về các công việc của mình. Người đàn ông muốn làm gì tiếp theo?\n• Dịch các đáp án:\n  - A. Start teaching history again ➔ Bắt đầu dạy lại môn lịch sử\n  - B. Become a writer ➔ Trở thành một nhà văn\n  - C. Become a chef again ➔ Trở thành đầu bếp một lần nữa",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 62,
+      "id": "579204595",
+      "setIndex": 2,
+      "question": "Lucy is calling her brother. What does the brother have to drink?",
+      "options": [
+        "water",
+        "milk",
+        "Medicine"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Lucy đang gọi cho anh/em trai của mình. Người anh/em trai phải uống gì?",
+      "optionsVi": [
+        "nước",
+        "sữa",
+        "Thuốc"
+      ],
+      "explanation": "Đáp án đúng: A. water\n• Dịch câu hỏi: Lucy đang gọi cho anh/em trai của mình. Người anh/em trai phải uống gì?\n• Dịch các đáp án:\n  - A. water ➔ nước\n  - B. milk ➔ sữa\n  - C. Medicine ➔ Thuốc",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 63,
+      "id": "579204596",
+      "setIndex": 2,
+      "question": "A man and a woman are talking about their old school days. What was the man's favorite thing about school?",
+      "options": [
+        "Math classes",
+        "History classes",
+        "Geography classes"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người đàn ông và một người phụ nữ đang nói về những ngày đi học trước đây của họ. Điều người đàn ông thích nhất ở trường là gì?",
+      "optionsVi": [
+        "Các lớp học Toán",
+        "Các lớp học Lịch sử",
+        "Các lớp học Địa lý"
+      ],
+      "explanation": "Đáp án đúng: B. History classes\n• Dịch câu hỏi: Một người đàn ông và một người phụ nữ đang nói về những ngày đi học trước đây của họ. Điều người đàn ông thích nhất ở trường là gì?\n• Dịch các đáp án:\n  - A. Math classes ➔ Các lớp học Toán\n  - B. History classes ➔ Các lớp học Lịch sử\n  - C. Geography classes ➔ Các lớp học Địa lý",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 64,
+      "id": "579204597",
+      "setIndex": 2,
+      "question": "Linda is talking about her mother. What do mother and daughter have in common?",
+      "options": [
+        "Similar appearance",
+        "Similar interests",
+        "Similar personalities"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Linda đang nói về mẹ cô ấy. Hai mẹ con có điểm gì chung?",
+      "optionsVi": [
+        "Ngoại hình giống nhau",
+        "Sở thích giống nhau",
+        "Tính cách giống nhau"
+      ],
+      "explanation": "Đáp án đúng: B. Similar interests\n• Dịch câu hỏi: Linda đang nói về mẹ cô ấy. Hai mẹ con có điểm gì chung?\n• Dịch các đáp án:\n  - A. Similar appearance ➔ Ngoại hình giống nhau\n  - B. Similar interests ➔ Sở thích giống nhau\n  - C. Similar personalities ➔ Tính cách giống nhau",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 65,
+      "id": "579204598",
+      "setIndex": 2,
+      "question": "A man and a woman are going shopping. What does he buy in the store?",
+      "options": [
+        "A suit for the office",
+        "A T-shirt",
+        "A pair of shoes"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông và một người phụ nữ đang đi mua sắm. Anh ấy mua gì trong cửa hàng?",
+      "optionsVi": [
+        "Một bộ áo vest để đi làm",
+        "Một chiếc áo thun",
+        "Một đôi giày"
+      ],
+      "explanation": "Đáp án đúng: A. A suit for the office\n• Dịch câu hỏi: Một người đàn ông và một người phụ nữ đang đi mua sắm. Anh ấy mua gì trong cửa hàng?\n• Dịch các đáp án:\n  - A. A suit for the office ➔ Một bộ áo vest để đi làm\n  - B. A T-shirt ➔ Một chiếc áo thun\n  - C. A pair of shoes ➔ Một đôi giày",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 66,
+      "id": "579204599",
+      "setIndex": 2,
+      "question": "What do these birds do in winter?",
+      "options": [
+        "immigrate",
+        "sleep",
+        "They stay in groups for protection"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Những con chim này làm gì vào mùa đông?",
+      "optionsVi": [
+        "di cư",
+        "ngủ",
+        "Chúng ở theo bầy đàn để bảo vệ nhau"
+      ],
+      "explanation": "Đáp án đúng: C. They stay in groups for protection\n• Dịch câu hỏi: Những con chim này làm gì vào mùa đông?\n• Dịch các đáp án:\n  - A. immigrate ➔ di cư\n  - B. sleep ➔ ngủ\n  - C. They stay in groups for protection ➔ Chúng ở theo bầy đàn để bảo vệ nhau",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 67,
+      "id": "579204600",
+      "setIndex": 2,
+      "question": "Linda is talking about what she likes to eat. What does she have for lunch?",
+      "options": [
+        "Juice",
+        "tea",
+        "coffee"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Linda đang nói về những món cô ấy thích ăn. Cô ấy dùng gì cho bữa trưa?",
+      "optionsVi": [
+        "Nước ép trái cây",
+        "trà",
+        "cà phê"
+      ],
+      "explanation": "Đáp án đúng: B. tea\n• Dịch câu hỏi: Linda đang nói về những món cô ấy thích ăn. Cô ấy dùng gì cho bữa trưa?\n• Dịch các đáp án:\n  - A. Juice ➔ Nước ép trái cây\n  - B. tea ➔ trà\n  - C. coffee ➔ cà phê",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 68,
+      "id": "579204601",
+      "setIndex": 2,
+      "question": "A tour guide is introducing a tourist destination. How many people live in the town?",
+      "options": [
+        "10,000",
+        "8,000",
+        "9,000"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một hướng dẫn viên du lịch đang giới thiệu về một điểm đến du lịch. Có bao nhiêu người sống trong thị trấn?",
+      "optionsVi": [
+        "10,000",
+        "8,000",
+        "9,000"
+      ],
+      "explanation": "Đáp án đúng: A. 10,000\n• Dịch câu hỏi: Một hướng dẫn viên du lịch đang giới thiệu về một điểm đến du lịch. Có bao nhiêu người sống trong thị trấn?\n• Dịch các đáp án:\n  - A. 10,000 ➔ 10,000\n  - B. 8,000 ➔ 8,000\n  - C. 9,000 ➔ 9,000",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 69,
+      "id": "579204602",
+      "setIndex": 2,
+      "question": "A student is talking about housing. Where does he live now?",
+      "options": [
+        "In a small village",
+        "In a town hall",
+        "In an apartment"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một sinh viên đang nói về chỗ ở. Hiện tại anh ấy đang sống ở đâu?",
+      "optionsVi": [
+        "Trong một ngôi làng nhỏ",
+        "Trong tòa thị chính (hoặc hội trường thị trấn)",
+        "Trong một căn hộ"
+      ],
+      "explanation": "Đáp án đúng: B. In a town hall\n• Dịch câu hỏi: Một sinh viên đang nói về chỗ ở. Hiện tại anh ấy đang sống ở đâu?\n• Dịch các đáp án:\n  - A. In a small village ➔ Trong một ngôi làng nhỏ\n  - B. In a town hall ➔ Trong tòa thị chính (hoặc hội trường thị trấn)\n  - C. In an apartment ➔ Trong một căn hộ",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 70,
+      "id": "579204603",
+      "setIndex": 2,
+      "question": "Listen to the instructions of a university. Where is the main office?",
+      "options": [
+        "On the first floor",
+        "On the third floor",
+        "In the basement"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe hướng dẫn của một trường đại học. Văn phòng chính nằm ở đâu?",
+      "optionsVi": [
+        "Ở tầng một",
+        "Ở tầng ba",
+        "Ở tầng hầm"
+      ],
+      "explanation": "Đáp án đúng: A. On the first floor\n• Dịch câu hỏi: Hãy nghe hướng dẫn của một trường đại học. Văn phòng chính nằm ở đâu?\n• Dịch các đáp án:\n  - A. On the first floor ➔ Ở tầng một\n  - B. On the third floor ➔ Ở tầng ba\n  - C. In the basement ➔ Ở tầng hầm",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 71,
+      "id": "579204604",
+      "setIndex": 2,
+      "question": "Lalia is talking to her friend about her upcoming trip. How much does she think the bus fare will be?",
+      "options": [
+        "£3",
+        "£2.5",
+        "£4.5"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Lalia đang nói chuyện với bạn về chuyến đi sắp tới của cô ấy. Cô ấy nghĩ giá vé xe buýt sẽ là bao nhiêu?",
+      "optionsVi": [
+        "£3 (3 bảng Anh)",
+        "£2.5 (2,5 bảng Anh)",
+        "£4.5 (4,5 bảng Anh)"
+      ],
+      "explanation": "Đáp án đúng: B. £2.5\n• Dịch câu hỏi: Lalia đang nói chuyện với bạn về chuyến đi sắp tới của cô ấy. Cô ấy nghĩ giá vé xe buýt sẽ là bao nhiêu?\n• Dịch các đáp án:\n  - A. £3 ➔ £3 (3 bảng Anh)\n  - B. £2.5 ➔ £2.5 (2,5 bảng Anh)\n  - C. £4.5 ➔ £4.5 (4,5 bảng Anh)",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 72,
+      "id": "579204605",
+      "setIndex": 2,
+      "question": "When do the students play football?",
+      "options": [
+        "Monday morning",
+        "Wednesday Morning",
+        "Wednesday afternoon"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Khi nào các học sinh chơi bóng đá?",
+      "optionsVi": [
+        "Sáng thứ Hai",
+        "Sáng thứ Tư",
+        "Chiều thứ Tư"
+      ],
+      "explanation": "Đáp án đúng: C. Wednesday afternoon\n• Dịch câu hỏi: Khi nào các học sinh chơi bóng đá?\n• Dịch các đáp án:\n  - A. Monday morning ➔ Sáng thứ Hai\n  - B. Wednesday Morning ➔ Sáng thứ Tư\n  - C. Wednesday afternoon ➔ Chiều thứ Tư",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 73,
+      "id": "579204606",
+      "setIndex": 2,
+      "question": "A man is calling his wife. Where will they meet?",
+      "options": [
+        "At home",
+        "In the garden",
+        "Outside the shop"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người đàn ông đang gọi điện cho vợ. Họ sẽ gặp nhau ở đâu?",
+      "optionsVi": [
+        "Ở nhà",
+        "Trong vườn",
+        "Bên ngoài cửa hàng"
+      ],
+      "explanation": "Đáp án đúng: C. Outside the shop\n• Dịch câu hỏi: Một người đàn ông đang gọi điện cho vợ. Họ sẽ gặp nhau ở đâu?\n• Dịch các đáp án:\n  - A. At home ➔ Ở nhà\n  - B. In the garden ➔ Trong vườn\n  - C. Outside the shop ➔ Bên ngoài cửa hàng",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 74,
+      "id": "579204607",
+      "setIndex": 2,
+      "question": "A man is talking about his eating habit. What time does he usually eat?",
+      "options": [
+        "6 o'clock",
+        "7 o'clock",
+        "8 o'clock"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người đàn ông đang nói về thói quen ăn uống của mình. Anh ấy thường ăn lúc mấy giờ?",
+      "optionsVi": [
+        "Lúc 6 giờ",
+        "Lúc 7 giờ",
+        "Lúc 8 giờ"
+      ],
+      "explanation": "Đáp án đúng: B. 7 o'clock\n• Dịch câu hỏi: Một người đàn ông đang nói về thói quen ăn uống của mình. Anh ấy thường ăn lúc mấy giờ?\n• Dịch các đáp án:\n  - A. 6 o'clock ➔ Lúc 6 giờ\n  - B. 7 o'clock ➔ Lúc 7 giờ\n  - C. 8 o'clock ➔ Lúc 8 giờ",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 75,
+      "id": "579204608",
+      "setIndex": 2,
+      "question": "A man is talking about his daily routine. What does he do after work?",
+      "options": [
+        "Goes to the gym",
+        "Plays football",
+        "Reads books"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người đàn ông đang nói về thói quen hàng ngày của mình. Anh ấy làm gì sau giờ làm việc?",
+      "optionsVi": [
+        "Đi tập gym",
+        "Chơi bóng đá",
+        "Đọc sách"
+      ],
+      "explanation": "Đáp án đúng: B. Plays football\n• Dịch câu hỏi: Một người đàn ông đang nói về thói quen hàng ngày của mình. Anh ấy làm gì sau giờ làm việc?\n• Dịch các đáp án:\n  - A. Goes to the gym ➔ Đi tập gym\n  - B. Plays football ➔ Chơi bóng đá\n  - C. Reads books ➔ Đọc sách",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 76,
+      "id": "579204609",
+      "setIndex": 2,
+      "question": "Two friends are discussing a movie they recently watched. What elements of the film do they agree on?",
+      "options": [
+        "The ending",
+        "the song",
+        "the theme"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hai người bạn đang thảo luận về một bộ phim họ mới xem gần đây. Họ đồng ý với nhau về yếu tố nào của bộ phim?",
+      "optionsVi": [
+        "Cái kết",
+        "bài hát",
+        "chủ đề"
+      ],
+      "explanation": "Đáp án đúng: A. The ending\n• Dịch câu hỏi: Hai người bạn đang thảo luận về một bộ phim họ mới xem gần đây. Họ đồng ý với nhau về yếu tố nào của bộ phim?\n• Dịch các đáp án:\n  - A. The ending ➔ Cái kết\n  - B. the song ➔ bài hát\n  - C. the theme ➔ chủ đề",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 77,
+      "id": "579204610",
+      "setIndex": 2,
+      "question": "A man is talking to a friend about his family. What is his main problem?",
+      "options": [
+        "Persuading his family",
+        "Finding a job abroad",
+        "Saving money for the move"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông đang nói chuyện với bạn về gia đình mình. Vấn đề chính của anh ấy là gì?",
+      "optionsVi": [
+        "Thuyết phục gia đình anh ấy",
+        "Tìm việc làm ở nước ngoài",
+        "Tiết kiệm tiền để chuyển đi"
+      ],
+      "explanation": "Đáp án đúng: A. Persuading his family\n• Dịch câu hỏi: Một người đàn ông đang nói chuyện với bạn về gia đình mình. Vấn đề chính của anh ấy là gì?\n• Dịch các đáp án:\n  - A. Persuading his family ➔ Thuyết phục gia đình anh ấy\n  - B. Finding a job abroad ➔ Tìm việc làm ở nước ngoài\n  - C. Saving money for the move ➔ Tiết kiệm tiền để chuyển đi",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 78,
+      "id": "579204611",
+      "setIndex": 2,
+      "question": "A man is reading the news about a housing development plan. How many new houses are going to be built?",
+      "options": [
+        "1500",
+        "2500",
+        "2000"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người đàn ông đang đọc tin tức về kế hoạch phát triển nhà ở. Có bao nhiêu ngôi nhà mới sẽ được xây dựng?",
+      "optionsVi": [
+        "1500",
+        "2500",
+        "2000"
+      ],
+      "explanation": "Đáp án đúng: C. 2000\n• Dịch câu hỏi: Một người đàn ông đang đọc tin tức về kế hoạch phát triển nhà ở. Có bao nhiêu ngôi nhà mới sẽ được xây dựng?\n• Dịch các đáp án:\n  - A. 1500 ➔ 1500\n  - B. 2500 ➔ 2500\n  - C. 2000 ➔ 2000",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 79,
+      "id": "579204612",
+      "setIndex": 2,
+      "question": "Listening to Sarah leaving a message for her friend. When does she want to meet?",
+      "options": [
+        "Two o'clock",
+        "Three o'clock",
+        "One o'clock"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Nghe Sarah để lại tin nhắn cho bạn cô ấy. Cô ấy muốn gặp nhau lúc mấy giờ?",
+      "optionsVi": [
+        "Lúc 2 giờ",
+        "Lúc 3 giờ",
+        "Lúc 1 giờ"
+      ],
+      "explanation": "Đáp án đúng: B. Three o'clock\n• Dịch câu hỏi: Nghe Sarah để lại tin nhắn cho bạn cô ấy. Cô ấy muốn gặp nhau lúc mấy giờ?\n• Dịch các đáp án:\n  - A. Two o'clock ➔ Lúc 2 giờ\n  - B. Three o'clock ➔ Lúc 3 giờ\n  - C. One o'clock ➔ Lúc 1 giờ",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 80,
+      "id": "579204613",
+      "setIndex": 2,
+      "question": "What time will the friends meet?",
+      "options": [
+        "7.30",
+        "6.30",
+        "6.00"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Những người bạn sẽ gặp nhau lúc mấy giờ?",
+      "optionsVi": [
+        "7:30",
+        "6:30",
+        "6:00"
+      ],
+      "explanation": "Đáp án đúng: B. 6.30\n• Dịch câu hỏi: Những người bạn sẽ gặp nhau lúc mấy giờ?\n• Dịch các đáp án:\n  - A. 7.30 ➔ 7:30\n  - B. 6.30 ➔ 6:30\n  - C. 6.00 ➔ 6:00",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 81,
+      "id": "579204614",
+      "setIndex": 2,
+      "question": "When is the best time for her to get up?",
+      "options": [
+        "7.40",
+        "7.15",
+        "At 7 o'clock"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Khi nào là thời điểm tốt nhất để cô ấy thức dậy?",
+      "optionsVi": [
+        "7:40",
+        "7:15",
+        "Lúc 7 giờ"
+      ],
+      "explanation": "Đáp án đúng: C. At 7 o'clock\n• Dịch câu hỏi: Khi nào là thời điểm tốt nhất để cô ấy thức dậy?\n• Dịch các đáp án:\n  - A. 7.40 ➔ 7:40\n  - B. 7.15 ➔ 7:15\n  - C. At 7 o'clock ➔ Lúc 7 giờ",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 82,
+      "id": "579204615",
+      "setIndex": 2,
+      "question": "A man is talking to a shopping assistant. What color top is he going to buy?",
+      "options": [
+        "black",
+        "blue",
+        "green"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông đang nói chuyện với nhân viên bán hàng. Anh ấy định mua áo màu gì?",
+      "optionsVi": [
+        "màu đen",
+        "màu xanh dương",
+        "màu xanh lá cây"
+      ],
+      "explanation": "Đáp án đúng: A. black\n• Dịch câu hỏi: Một người đàn ông đang nói chuyện với nhân viên bán hàng. Anh ấy định mua áo màu gì?\n• Dịch các đáp án:\n  - A. black ➔ màu đen\n  - B. blue ➔ màu xanh dương\n  - C. green ➔ màu xanh lá cây",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 83,
+      "id": "579204616",
+      "setIndex": 2,
+      "question": "Julie is asking her professor about the assignment. When is the work due?",
+      "options": [
+        "On Saturday morning",
+        "On Friday morning",
+        "On Thursday morning"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Julie đang hỏi giáo sư của mình về bài tập. Khi nào là hạn chót nộp bài?",
+      "optionsVi": [
+        "Vào sáng thứ Bảy",
+        "Vào sáng thứ Sáu",
+        "Vào sáng thứ Năm"
+      ],
+      "explanation": "Đáp án đúng: A. On Saturday morning\n• Dịch câu hỏi: Julie đang hỏi giáo sư của mình về bài tập. Khi nào là hạn chót nộp bài?\n• Dịch các đáp án:\n  - A. On Saturday morning ➔ Vào sáng thứ Bảy\n  - B. On Friday morning ➔ Vào sáng thứ Sáu\n  - C. On Thursday morning ➔ Vào sáng thứ Năm",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 84,
+      "id": "579204617",
+      "setIndex": 2,
+      "question": "A professor is talking to his student. What does the professor ask his student to do?",
+      "options": [
+        "Speak at a conference",
+        "Tutor another student",
+        "Write another thesis"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một giáo sư đang nói chuyện với sinh viên của mình. Giáo sư yêu cầu sinh viên làm gì?",
+      "optionsVi": [
+        "Phát biểu tại một hội nghị",
+        "Làm gia sư cho một sinh viên khác",
+        "Viết một luận văn khác"
+      ],
+      "explanation": "Đáp án đúng: A. Speak at a conference\n• Dịch câu hỏi: Một giáo sư đang nói chuyện với sinh viên của mình. Giáo sư yêu cầu sinh viên làm gì?\n• Dịch các đáp án:\n  - A. Speak at a conference ➔ Phát biểu tại một hội nghị\n  - B. Tutor another student ➔ Làm gia sư cho một sinh viên khác\n  - C. Write another thesis ➔ Viết một luận văn khác",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 85,
+      "id": "579204618",
+      "setIndex": 2,
+      "question": "Listen to the woman talking about her holiday plans. Where is she going next?",
+      "options": [
+        "The south",
+        "The east",
+        "The north"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe người phụ nữ nói về kế hoạch kỳ nghỉ của cô ấy. Tiếp theo cô ấy sẽ đi đâu?",
+      "optionsVi": [
+        "Miền Nam",
+        "Miền Đông",
+        "Miền Bắc"
+      ],
+      "explanation": "Đáp án đúng: A. The south\n• Dịch câu hỏi: Hãy nghe người phụ nữ nói về kế hoạch kỳ nghỉ của cô ấy. Tiếp theo cô ấy sẽ đi đâu?\n• Dịch các đáp án:\n  - A. The south ➔ Miền Nam\n  - B. The east ➔ Miền Đông\n  - C. The north ➔ Miền Bắc",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 86,
+      "id": "579204619",
+      "setIndex": 2,
+      "question": "Listen to a radio man talking about a new popular song. Which is the most attractive part of the song?",
+      "options": [
+        "The instruments",
+        "The words",
+        "The cover art"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hãy nghe một phát thanh viên nói về một bài hát mới nổi tiếng. Phần hấp dẫn nhất của bài hát là gì?",
+      "optionsVi": [
+        "Nhạc cụ",
+        "Lời bài hát",
+        "Ảnh bìa"
+      ],
+      "explanation": "Đáp án đúng: B. The words\n• Dịch câu hỏi: Hãy nghe một phát thanh viên nói về một bài hát mới nổi tiếng. Phần hấp dẫn nhất của bài hát là gì?\n• Dịch các đáp án:\n  - A. The instruments ➔ Nhạc cụ\n  - B. The words ➔ Lời bài hát\n  - C. The cover art ➔ Ảnh bìa",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 87,
+      "id": "579204620",
+      "setIndex": 2,
+      "question": "A girl is talking about a film. What did she like best about the film?",
+      "options": [
+        "Racing scenes",
+        "The mountain scenes",
+        "Fight scenes"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một cô gái đang nói về một bộ phim. Cô ấy thích điều gì nhất ở bộ phim?",
+      "optionsVi": [
+        "Các cảnh đua xe",
+        "Các cảnh miền núi",
+        "Các cảnh chiến đấu"
+      ],
+      "explanation": "Đáp án đúng: B. The mountain scenes\n• Dịch câu hỏi: Một cô gái đang nói về một bộ phim. Cô ấy thích điều gì nhất ở bộ phim?\n• Dịch các đáp án:\n  - A. Racing scenes ➔ Các cảnh đua xe\n  - B. The mountain scenes ➔ Các cảnh miền núi\n  - C. Fight scenes ➔ Các cảnh chiến đấu",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 88,
+      "id": "579204621",
+      "setIndex": 2,
+      "question": "A woman is talking about her job. What Encouraged her to become a scientist?",
+      "options": [
+        "A large stone",
+        "Her mother",
+        "The computer"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người phụ nữ đang nói về công việc của cô ấy. Điều gì đã khuyến khích cô ấy trở thành một nhà khoa học?",
+      "optionsVi": [
+        "Một hòn đá lớn",
+        "Mẹ cô ấy",
+        "Máy tính"
+      ],
+      "explanation": "Đáp án đúng: A. A large stone\n• Dịch câu hỏi: Một người phụ nữ đang nói về công việc của cô ấy. Điều gì đã khuyến khích cô ấy trở thành một nhà khoa học?\n• Dịch các đáp án:\n  - A. A large stone ➔ Một hòn đá lớn\n  - B. Her mother ➔ Mẹ cô ấy\n  - C. The computer ➔ Máy tính",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 89,
+      "id": "579204622",
+      "setIndex": 2,
+      "question": "What are they happy about the business trip?",
+      "options": [
+        "stay in a luxury hotel.",
+        "Learning new areas",
+        "have a lot of free time"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Họ vui vẻ về điều gì trong chuyến công tác?",
+      "optionsVi": [
+        "ở trong một khách sạn sang trọng.",
+        "Tìm hiểu những lĩnh vực mới",
+        "có nhiều thời gian rảnh"
+      ],
+      "explanation": "Đáp án đúng: B. Learning new areas\n• Dịch câu hỏi: Họ vui vẻ về điều gì trong chuyến công tác?\n• Dịch các đáp án:\n  - A. stay in a luxury hotel. ➔ ở trong một khách sạn sang trọng.\n  - B. Learning new areas ➔ Tìm hiểu những lĩnh vực mới\n  - C. have a lot of free time ➔ có nhiều thời gian rảnh",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 90,
+      "id": "579204623",
+      "setIndex": 2,
+      "question": "Where is the break room?",
+      "options": [
+        "On the third floor",
+        "On the ground floor",
+        "On the second floor"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Phòng nghỉ giải lao nằm ở đâu?",
+      "optionsVi": [
+        "Ở tầng ba",
+        "Ở tầng trệt",
+        "Ở tầng hai"
+      ],
+      "explanation": "Đáp án đúng: A. On the third floor\n• Dịch câu hỏi: Phòng nghỉ giải lao nằm ở đâu?\n• Dịch các đáp án:\n  - A. On the third floor ➔ Ở tầng ba\n  - B. On the ground floor ➔ Ở tầng trệt\n  - C. On the second floor ➔ Ở tầng hai",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 91,
+      "id": "579204624",
+      "setIndex": 2,
+      "question": "Where will the first computer science lesson take place?",
+      "options": [
+        "Room 302",
+        "Room 301",
+        "Room 201"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Buổi học khoa học máy tính đầu tiên sẽ diễn ra ở đâu?",
+      "optionsVi": [
+        "Phòng 302",
+        "Phòng 301",
+        "Phòng 201"
+      ],
+      "explanation": "Đáp án đúng: B. Room 301\n• Dịch câu hỏi: Buổi học khoa học máy tính đầu tiên sẽ diễn ra ở đâu?\n• Dịch các đáp án:\n  - A. Room 302 ➔ Phòng 302\n  - B. Room 301 ➔ Phòng 301\n  - C. Room 201 ➔ Phòng 201",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 92,
+      "id": "579204625",
+      "setIndex": 2,
+      "question": "Jorge is calling his friend about their plan for the weekend. What time does the football match start?",
+      "options": [
+        "1 p.m",
+        "6 p.m",
+        "11 p.m"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Jorge đang gọi cho bạn mình về kế hoạch cuối tuần của họ. Trận đấu bóng đá bắt đầu lúc mấy giờ?",
+      "optionsVi": [
+        "1 giờ chiều",
+        "6 giờ tối",
+        "11 giờ đêm"
+      ],
+      "explanation": "Đáp án đúng: A. 1 p.m\n• Dịch câu hỏi: Jorge đang gọi cho bạn mình về kế hoạch cuối tuần của họ. Trận đấu bóng đá bắt đầu lúc mấy giờ?\n• Dịch các đáp án:\n  - A. 1 p.m ➔ 1 giờ chiều\n  - B. 6 p.m ➔ 6 giờ tối\n  - C. 11 p.m ➔ 11 giờ đêm",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 93,
+      "id": "579204626",
+      "setIndex": 2,
+      "question": "A man calls the teleshop. What is the teleshop number?",
+      "options": [
+        "102030",
+        "201030",
+        "301020"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người đàn ông gọi cho cửa hàng mua sắm qua điện thoại (teleshop). Số điện thoại của cửa hàng là gì?",
+      "optionsVi": [
+        "102030",
+        "201030",
+        "301020"
+      ],
+      "explanation": "Đáp án đúng: B. 201030\n• Dịch câu hỏi: Một người đàn ông gọi cho cửa hàng mua sắm qua điện thoại (teleshop). Số điện thoại của cửa hàng là gì?\n• Dịch các đáp án:\n  - A. 102030 ➔ 102030\n  - B. 201030 ➔ 201030\n  - C. 301020 ➔ 301020",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 94,
+      "id": "579204627",
+      "setIndex": 2,
+      "question": "Listen to the director talking about sales of his company. How many copies of Freeze Frame magazine were sold?",
+      "options": [
+        "Over 30,000 copies",
+        "Over 3,000 copies",
+        "Over 300,000 copies"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Hãy nghe giám đốc nói về doanh thu của công ty ông ấy. Có bao nhiêu bản tạp chí Freeze Frame đã được bán?",
+      "optionsVi": [
+        "Hơn 30.000 bản",
+        "Hơn 3.000 bản",
+        "Hơn 300.000 bản"
+      ],
+      "explanation": "Đáp án đúng: C. Over 300,000 copies\n• Dịch câu hỏi: Hãy nghe giám đốc nói về doanh thu của công ty ông ấy. Có bao nhiêu bản tạp chí Freeze Frame đã được bán?\n• Dịch các đáp án:\n  - A. Over 30,000 copies ➔ Hơn 30.000 bản\n  - B. Over 3,000 copies ➔ Hơn 3.000 bản\n  - C. Over 300,000 copies ➔ Hơn 300.000 bản",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 95,
+      "id": "579204628",
+      "setIndex": 2,
+      "question": "A man and woman are discussing their plans for the evening. What do the man and woman decide to do in the evening?",
+      "options": [
+        "Stay at home",
+        "Go to the movie",
+        "Make plan later"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người đàn ông và một người phụ nữ đang thảo luận về kế hoạch của họ cho buổi tối. Họ quyết định làm gì vào buổi tối?",
+      "optionsVi": [
+        "Ở nhà",
+        "Đi xem phim",
+        "Lên kế hoạch sau"
+      ],
+      "explanation": "Đáp án đúng: C. Make plan later\n• Dịch câu hỏi: Một người đàn ông và một người phụ nữ đang thảo luận về kế hoạch của họ cho buổi tối. Họ quyết định làm gì vào buổi tối?\n• Dịch các đáp án:\n  - A. Stay at home ➔ Ở nhà\n  - B. Go to the movie ➔ Đi xem phim\n  - C. Make plan later ➔ Lên kế hoạch sau",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 96,
+      "id": "579204629",
+      "setIndex": 2,
+      "question": "A man is talking to a waiter. What drink does the man choose?",
+      "options": [
+        "Iced tea",
+        "Milk tea",
+        "Hot tea"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông đang nói chuyện với người phục vụ. Người đàn ông chọn đồ uống gì?",
+      "optionsVi": [
+        "Trà đá",
+        "Trà sữa",
+        "Trà nóng"
+      ],
+      "explanation": "Đáp án đúng: A. Iced tea\n• Dịch câu hỏi: Một người đàn ông đang nói chuyện với người phục vụ. Người đàn ông chọn đồ uống gì?\n• Dịch các đáp án:\n  - A. Iced tea ➔ Trà đá\n  - B. Milk tea ➔ Trà sữa\n  - C. Hot tea ➔ Trà nóng",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 97,
+      "id": "579204630",
+      "setIndex": 2,
+      "question": "Listen to the conversation. Who is she taking a photo of?",
+      "options": [
+        "The boys' and the girls' team",
+        "Sue and Lily",
+        "The girls' team"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Hãy nghe đoạn hội thoại. Cô ấy đang chụp ảnh ai?",
+      "optionsVi": [
+        "Đội nam và đội nữ",
+        "Sue và Lily",
+        "Đội nữ"
+      ],
+      "explanation": "Đáp án đúng: C. The girls' team\n• Dịch câu hỏi: Hãy nghe đoạn hội thoại. Cô ấy đang chụp ảnh ai?\n• Dịch các đáp án:\n  - A. The boys' and the girls' team ➔ Đội nam và đội nữ\n  - B. Sue and Lily ➔ Sue và Lily\n  - C. The girls' team ➔ Đội nữ",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 98,
+      "id": "579204631",
+      "setIndex": 2,
+      "question": "Where do they go when they travel to India?",
+      "options": [
+        "Go to the park",
+        "Go to famous places",
+        "Go out to eat"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Họ đi đâu khi đi du lịch Ấn Độ?",
+      "optionsVi": [
+        "Đi đến công viên",
+        "Đi đến những địa điểm nổi tiếng",
+        "Đi ra ngoài ăn"
+      ],
+      "explanation": "Đáp án đúng: A. Go to the park\n• Dịch câu hỏi: Họ đi đâu khi đi du lịch Ấn Độ?\n• Dịch các đáp án:\n  - A. Go to the park ➔ Đi đến công viên\n  - B. Go to famous places ➔ Đi đến những địa điểm nổi tiếng\n  - C. Go out to eat ➔ Đi ra ngoài ăn",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 99,
+      "id": "579204632",
+      "setIndex": 2,
+      "question": "Two friends are talking about their trip. What will the weather be like?",
+      "options": [
+        "Warm and dry",
+        "Cold and wet",
+        "Hot and sunny"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hai người bạn đang nói chuyện về chuyến đi của họ. Thời tiết sẽ như thế nào?",
+      "optionsVi": [
+        "Ấm áp và khô ráo",
+        "Lạnh và ẩm ướt",
+        "Nóng và có nắng"
+      ],
+      "explanation": "Đáp án đúng: B. Cold and wet\n• Dịch câu hỏi: Hai người bạn đang nói chuyện về chuyến đi của họ. Thời tiết sẽ như thế nào?\n• Dịch các đáp án:\n  - A. Warm and dry ➔ Ấm áp và khô ráo\n  - B. Cold and wet ➔ Lạnh và ẩm ướt\n  - C. Hot and sunny ➔ Nóng và có nắng",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 100,
+      "id": "579204633",
+      "setIndex": 2,
+      "question": "Listen to Marry talking to Jane while waiting for James. What did they decide to do?",
+      "options": [
+        "Have the meeting without him",
+        "Continue to waiting for him",
+        "Cancel the meeting"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe Marry nói chuyện với Jane trong khi chờ James. Họ đã quyết định làm gì?",
+      "optionsVi": [
+        "Tiến hành cuộc họp mà không có anh ấy",
+        "Tiếp tục chờ anh ấy",
+        "Hủy cuộc họp"
+      ],
+      "explanation": "Đáp án đúng: A. Have the meeting without him\n• Dịch câu hỏi: Hãy nghe Marry nói chuyện với Jane trong khi chờ James. Họ đã quyết định làm gì?\n• Dịch các đáp án:\n  - A. Have the meeting without him ➔ Tiến hành cuộc họp mà không có anh ấy\n  - B. Continue to waiting for him ➔ Tiếp tục chờ anh ấy\n  - C. Cancel the meeting ➔ Hủy cuộc họp",
+      "part": "Phần 2 (Câu 51 - 100)"
+    },
+    {
+      "num": 101,
+      "id": "579204634",
+      "setIndex": 3,
+      "question": "Which platform to wait for the train?",
+      "options": [
+        "Platform 5",
+        "Platform 8",
+        "Platform 2"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Đợi tàu ở sân ga nào?",
+      "optionsVi": [
+        "Sân ga số 5",
+        "Sân ga số 8",
+        "Sân ga số 2"
+      ],
+      "explanation": "Đáp án đúng: C. Platform 2\n• Dịch câu hỏi: Đợi tàu ở sân ga nào?\n• Dịch các đáp án:\n  - A. Platform 5 ➔ Sân ga số 5\n  - B. Platform 8 ➔ Sân ga số 8\n  - C. Platform 2 ➔ Sân ga số 2",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 102,
+      "id": "579204635",
+      "setIndex": 3,
+      "question": "Listen to a voice message. How does Even feel?",
+      "options": [
+        "tired",
+        "sick",
+        "happy"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hãy nghe một tin nhắn thoại. Even cảm thấy thế nào?",
+      "optionsVi": [
+        "mệt mỏi",
+        "ốm",
+        "vui vẻ"
+      ],
+      "explanation": "Đáp án đúng: B. sick\n• Dịch câu hỏi: Hãy nghe một tin nhắn thoại. Even cảm thấy thế nào?\n• Dịch các đáp án:\n  - A. tired ➔ mệt mỏi\n  - B. sick ➔ ốm\n  - C. happy ➔ vui vẻ",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 103,
+      "id": "579204636",
+      "setIndex": 3,
+      "question": "Listen to the conversation between Douglas and Kay. Why does Douglas call Kay?",
+      "options": [
+        "say thank you",
+        "ask for a favor",
+        "suggest a meeting"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe đoạn hội thoại giữa Douglas và Kay. Tại sao Douglas gọi cho Kay?",
+      "optionsVi": [
+        "để nói cảm ơn",
+        "nhờ giúp đỡ",
+        "đề nghị một cuộc họp"
+      ],
+      "explanation": "Đáp án đúng: A. say thank you\n• Dịch câu hỏi: Hãy nghe đoạn hội thoại giữa Douglas và Kay. Tại sao Douglas gọi cho Kay?\n• Dịch các đáp án:\n  - A. say thank you ➔ để nói cảm ơn\n  - B. ask for a favor ➔ nhờ giúp đỡ\n  - C. suggest a meeting ➔ đề nghị một cuộc họp",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 104,
+      "id": "579204637",
+      "setIndex": 3,
+      "question": "Tom is calling his mom. Who is visiting Tom this weekend?",
+      "options": [
+        "His mother and sister",
+        "His mother and uncle",
+        "His sister and her children"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Tom đang gọi cho mẹ anh ấy. Ai sẽ đến thăm Tom vào cuối tuần này?",
+      "optionsVi": [
+        "Mẹ và chị/em gái của anh ấy",
+        "Mẹ và chú của anh ấy",
+        "Chị/em gái và các con của cô ấy"
+      ],
+      "explanation": "Đáp án đúng: C. His sister and her children\n• Dịch câu hỏi: Tom đang gọi cho mẹ anh ấy. Ai sẽ đến thăm Tom vào cuối tuần này?\n• Dịch các đáp án:\n  - A. His mother and sister ➔ Mẹ và chị/em gái của anh ấy\n  - B. His mother and uncle ➔ Mẹ và chú của anh ấy\n  - C. His sister and her children ➔ Chị/em gái và các con của cô ấy",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 105,
+      "id": "579204638",
+      "setIndex": 3,
+      "question": "Listen to the chief announce to students. When is lunch ready?",
+      "options": [
+        "2:00p.m",
+        "12:30p.m",
+        "1:15p.m"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe đầu bếp thông báo cho các học sinh. Khi nào bữa trưa sẵn sàng?",
+      "optionsVi": [
+        "2:00 chiều",
+        "12:30 trưa",
+        "1:15 chiều"
+      ],
+      "explanation": "Đáp án đúng: A. 2:00p.m\n• Dịch câu hỏi: Hãy nghe đầu bếp thông báo cho các học sinh. Khi nào bữa trưa sẵn sàng?\n• Dịch các đáp án:\n  - A. 2:00p.m ➔ 2:00 chiều\n  - B. 12:30p.m ➔ 12:30 trưa\n  - C. 1:15p.m ➔ 1:15 chiều",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 106,
+      "id": "579204639",
+      "setIndex": 3,
+      "question": "The woman is walking into a local store. How much are the cleaning products?",
+      "options": [
+        "Three pounds fifty",
+        "Two pounds fifty",
+        "One pounds fifty (1.50 pounds)"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Người phụ nữ đang bước vào một cửa hàng địa phương. Các sản phẩm tẩy rửa giá bao nhiêu?",
+      "optionsVi": [
+        "Ba bảng rưỡi (£3.50)",
+        "Hai bảng rưỡi (£2.50)",
+        "Một bảng rưỡi (£1.50)"
+      ],
+      "explanation": "Đáp án đúng: C. One pounds fifty (1.50 pounds)\n• Dịch câu hỏi: Người phụ nữ đang bước vào một cửa hàng địa phương. Các sản phẩm tẩy rửa giá bao nhiêu?\n• Dịch các đáp án:\n  - A. Three pounds fifty ➔ Ba bảng rưỡi (£3.50)\n  - B. Two pounds fifty ➔ Hai bảng rưỡi (£2.50)\n  - C. One pounds fifty (1.50 pounds) ➔ Một bảng rưỡi (£1.50)",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 107,
+      "id": "579204640",
+      "setIndex": 3,
+      "question": "A woman is talking about her holiday plan. Where is she going on holidays?",
+      "options": [
+        "The cave",
+        "the beach",
+        "the mountains"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người phụ nữ đang nói về kế hoạch kỳ nghỉ của cô ấy. Cô ấy dự định đi nghỉ ở đâu?",
+      "optionsVi": [
+        "Hang động",
+        "bãi biển",
+        "những ngọn núi"
+      ],
+      "explanation": "Đáp án đúng: C. the mountains\n• Dịch câu hỏi: Một người phụ nữ đang nói về kế hoạch kỳ nghỉ của cô ấy. Cô ấy dự định đi nghỉ ở đâu?\n• Dịch các đáp án:\n  - A. The cave ➔ Hang động\n  - B. the beach ➔ bãi biển\n  - C. the mountains ➔ những ngọn núi",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 108,
+      "id": "579204641",
+      "setIndex": 3,
+      "question": "A man is talking about his trip. What did he enjoy last year?",
+      "options": [
+        "go cycling",
+        "go picnic",
+        "go for a walk"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông đang nói về chuyến đi của anh ấy. Anh ấy đã thích điều gì vào năm ngoái?",
+      "optionsVi": [
+        "đi xe đạp",
+        "đi dã ngoại",
+        "đi dạo"
+      ],
+      "explanation": "Đáp án đúng: A. go cycling\n• Dịch câu hỏi: Một người đàn ông đang nói về chuyến đi của anh ấy. Anh ấy đã thích điều gì vào năm ngoái?\n• Dịch các đáp án:\n  - A. go cycling ➔ đi xe đạp\n  - B. go picnic ➔ đi dã ngoại\n  - C. go for a walk ➔ đi dạo",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 109,
+      "id": "579204642",
+      "setIndex": 3,
+      "question": "Listen to David talking about the conference. How long did he talk in the speech?",
+      "options": [
+        "45 minutes",
+        "15 minutes",
+        "30 minutes"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hãy nghe David nói về hội nghị. Anh ấy đã nói bao lâu trong bài phát biểu?",
+      "optionsVi": [
+        "45 phút",
+        "15 phút",
+        "30 phút"
+      ],
+      "explanation": "Đáp án đúng: B. 15 minutes\n• Dịch câu hỏi: Hãy nghe David nói về hội nghị. Anh ấy đã nói bao lâu trong bài phát biểu?\n• Dịch các đáp án:\n  - A. 45 minutes ➔ 45 phút\n  - B. 15 minutes ➔ 15 phút\n  - C. 30 minutes ➔ 30 phút",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 110,
+      "id": "579204643",
+      "setIndex": 3,
+      "question": "A woman is talking about her vacation. What is the relationship between the speaker and Lisa?",
+      "options": [
+        "Best friends",
+        "Mother and daughter",
+        "Teacher and students"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người phụ nữ đang nói về kỳ nghỉ của mình. Mối quan hệ giữa người nói và Lisa là gì?",
+      "optionsVi": [
+        "Bạn thân nhất",
+        "Mẹ và con gái",
+        "Giáo viên và học sinh"
+      ],
+      "explanation": "Đáp án đúng: A. Best friends\n• Dịch câu hỏi: Một người phụ nữ đang nói về kỳ nghỉ của mình. Mối quan hệ giữa người nói và Lisa là gì?\n• Dịch các đáp án:\n  - A. Best friends ➔ Bạn thân nhất\n  - B. Mother and daughter ➔ Mẹ và con gái\n  - C. Teacher and students ➔ Giáo viên và học sinh",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 111,
+      "id": "579204644",
+      "setIndex": 3,
+      "question": "A woman shares her job with her friend. Why does she want to become a writer?",
+      "options": [
+        "to earn much money",
+        "to help people",
+        "to become famous"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người phụ nữ chia sẻ về công việc của mình với bạn. Tại sao cô ấy muốn trở thành nhà văn?",
+      "optionsVi": [
+        "để kiếm nhiều tiền",
+        "để giúp đỡ mọi người",
+        "để trở nên nổi tiếng"
+      ],
+      "explanation": "Đáp án đúng: B. to help people\n• Dịch câu hỏi: Một người phụ nữ chia sẻ về công việc của mình với bạn. Tại sao cô ấy muốn trở thành nhà văn?\n• Dịch các đáp án:\n  - A. to earn much money ➔ để kiếm nhiều tiền\n  - B. to help people ➔ để giúp đỡ mọi người\n  - C. to become famous ➔ để trở nên nổi tiếng",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 112,
+      "id": "579204645",
+      "setIndex": 3,
+      "question": "Listen to the announcement from a travel agent representative. Why is the air travel cancelled?",
+      "options": [
+        "Delay at transit spot",
+        "Engine failure",
+        "Poor weather conditions"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Hãy nghe thông báo từ đại diện đại lý du lịch. Tại sao chuyến bay bị hủy?",
+      "optionsVi": [
+        "Trễ tại điểm quá cảnh",
+        "Hỏng động cơ",
+        "Điều kiện thời tiết xấu"
+      ],
+      "explanation": "Đáp án đúng: C. Poor weather conditions\n• Dịch câu hỏi: Hãy nghe thông báo từ đại diện đại lý du lịch. Tại sao chuyến bay bị hủy?\n• Dịch các đáp án:\n  - A. Delay at transit spot ➔ Trễ tại điểm quá cảnh\n  - B. Engine failure ➔ Hỏng động cơ\n  - C. Poor weather conditions ➔ Điều kiện thời tiết xấu",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 113,
+      "id": "579204646",
+      "setIndex": 3,
+      "question": "A woman is talking to a police officer. What did she lose?",
+      "options": [
+        "Phone",
+        "Wallet",
+        "Car"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người phụ nữ đang nói chuyện với cảnh sát. Cô ấy đã làm mất cái gì?",
+      "optionsVi": [
+        "Điện thoại",
+        "Ví",
+        "Xe ô tô"
+      ],
+      "explanation": "Đáp án đúng: A. Phone\n• Dịch câu hỏi: Một người phụ nữ đang nói chuyện với cảnh sát. Cô ấy đã làm mất cái gì?\n• Dịch các đáp án:\n  - A. Phone ➔ Điện thoại\n  - B. Wallet ➔ Ví\n  - C. Car ➔ Xe ô tô",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 114,
+      "id": "579204647",
+      "setIndex": 3,
+      "question": "Listen to an auction man talking about a cabinet. Which part of the cabinet is original?",
+      "options": [
+        "The drawer",
+        "The handles",
+        "The doors"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe một người bán đấu giá nói về một chiếc tủ. Phần nào của chiếc tủ là nguyên bản (nguyên thủy)?",
+      "optionsVi": [
+        "Ngăn kéo",
+        "Các tay cầm",
+        "Các cánh cửa"
+      ],
+      "explanation": "Đáp án đúng: A. The drawer\n• Dịch câu hỏi: Hãy nghe một người bán đấu giá nói về một chiếc tủ. Phần nào của chiếc tủ là nguyên bản (nguyên thủy)?\n• Dịch các đáp án:\n  - A. The drawer ➔ Ngăn kéo\n  - B. The handles ➔ Các tay cầm\n  - C. The doors ➔ Các cánh cửa",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 115,
+      "id": "579204648",
+      "setIndex": 3,
+      "question": "Vincent is calling James. Why does Vincent call James?",
+      "options": [
+        "To say hello",
+        "To suggest a drink",
+        "To arrange meeting"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "",
+      "optionsVi": [],
+      "explanation": "Đáp án đúng: B. To suggest a drink\n• Dịch câu hỏi: \n• Dịch các đáp án:\n  - A. To say hello ➔ \n  - B. To suggest a drink ➔ \n  - C. To arrange meeting ➔ ",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 116,
+      "id": "579204649",
+      "setIndex": 3,
+      "question": "A person calls a friend about his new car. How much does the small car cost him?",
+      "options": [
+        "3550 pounds",
+        "3250 pounds",
+        "4250 pounds"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người gọi cho bạn về chiếc xe mới của mình. Chiếc xe nhỏ đó giá bao nhiêu?",
+      "optionsVi": [
+        "3550 bảng Anh",
+        "3250 bảng Anh",
+        "4250 bảng Anh"
+      ],
+      "explanation": "Đáp án đúng: B. 3250 pounds\n• Dịch câu hỏi: Một người gọi cho bạn về chiếc xe mới của mình. Chiếc xe nhỏ đó giá bao nhiêu?\n• Dịch các đáp án:\n  - A. 3550 pounds ➔ 3550 bảng Anh\n  - B. 3250 pounds ➔ 3250 bảng Anh\n  - C. 4250 pounds ➔ 4250 bảng Anh",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 117,
+      "id": "579204650",
+      "setIndex": 3,
+      "question": "A receptionist is checking the client list of a clinic. How many clients are Americans?",
+      "options": [
+        "Two",
+        "three",
+        "one"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một nhân viên lễ tân đang kiểm tra danh sách khách hàng của một phòng khám. Có bao nhiêu khách hàng là người Mỹ?",
+      "optionsVi": [
+        "Hai",
+        "ba",
+        "một"
+      ],
+      "explanation": "Đáp án đúng: C. one\n• Dịch câu hỏi: Một nhân viên lễ tân đang kiểm tra danh sách khách hàng của một phòng khám. Có bao nhiêu khách hàng là người Mỹ?\n• Dịch các đáp án:\n  - A. Two ➔ Hai\n  - B. three ➔ ba\n  - C. one ➔ một",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 118,
+      "id": "579204651",
+      "setIndex": 3,
+      "question": "Soobin is talking about his favorite room. What is Soobin's favorite room?",
+      "options": [
+        "kitchen",
+        "living room",
+        "bathroom"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Soobin đang nói về căn phòng yêu thích của mình. Căn phòng yêu thích của Soobin là gì?",
+      "optionsVi": [
+        "nhà bếp",
+        "phòng khách",
+        "phòng tắm"
+      ],
+      "explanation": "Đáp án đúng: C. bathroom\n• Dịch câu hỏi: Soobin đang nói về căn phòng yêu thích của mình. Căn phòng yêu thích của Soobin là gì?\n• Dịch các đáp án:\n  - A. kitchen ➔ nhà bếp\n  - B. living room ➔ phòng khách\n  - C. bathroom ➔ phòng tắm",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 119,
+      "id": "579204652",
+      "setIndex": 3,
+      "question": "A woman is talking about her family's holidays. What did the family do last year?",
+      "options": [
+        "camping",
+        "Traveled abroad",
+        "Went to the beach"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người phụ nữ đang nói về những kỳ nghỉ của gia đình cô ấy. Gia đình đã làm gì vào năm ngoái?",
+      "optionsVi": [
+        "cắm trại",
+        "Đi du lịch nước ngoài",
+        "Đi đến bãi biển"
+      ],
+      "explanation": "Đáp án đúng: A. camping\n• Dịch câu hỏi: Một người phụ nữ đang nói về những kỳ nghỉ của gia đình cô ấy. Gia đình đã làm gì vào năm ngoái?\n• Dịch các đáp án:\n  - A. camping ➔ cắm trại\n  - B. Traveled abroad ➔ Đi du lịch nước ngoài\n  - C. Went to the beach ➔ Đi đến bãi biển",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 120,
+      "id": "579204653",
+      "setIndex": 3,
+      "question": "A mom is talking to her son. What does he like to study?",
+      "options": [
+        "History",
+        "art",
+        "Science"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người mẹ đang nói chuyện với con trai. Cậu ấy thích học môn gì?",
+      "optionsVi": [
+        "Lịch sử",
+        "nghệ thuật (mỹ thuật)",
+        "Khoa học"
+      ],
+      "explanation": "Đáp án đúng: B. art\n• Dịch câu hỏi: Một người mẹ đang nói chuyện với con trai. Cậu ấy thích học môn gì?\n• Dịch các đáp án:\n  - A. History ➔ Lịch sử\n  - B. art ➔ nghệ thuật (mỹ thuật)\n  - C. Science ➔ Khoa học",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 121,
+      "id": "579204654",
+      "setIndex": 3,
+      "question": "Two friends are talking about their favorite activities. What is the woman's favorite form of entertainment?",
+      "options": [
+        "Playing chess with her cousin",
+        "Going to the theatre",
+        "Reading books"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hai người bạn đang nói chuyện về những hoạt động yêu thích của họ. Hình thức giải trí yêu thích của người phụ nữ là gì?",
+      "optionsVi": [
+        "Chơi cờ với anh/em họ của cô ấy",
+        "Đi đến nhà hát",
+        "Đọc sách"
+      ],
+      "explanation": "Đáp án đúng: B. Going to the theatre\n• Dịch câu hỏi: Hai người bạn đang nói chuyện về những hoạt động yêu thích của họ. Hình thức giải trí yêu thích của người phụ nữ là gì?\n• Dịch các đáp án:\n  - A. Playing chess with her cousin ➔ Chơi cờ với anh/em họ của cô ấy\n  - B. Going to the theatre ➔ Đi đến nhà hát\n  - C. Reading books ➔ Đọc sách",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 122,
+      "id": "579204655",
+      "setIndex": 3,
+      "question": "Mary is talking to her friend about her new home. What does she ask her friend about?",
+      "options": [
+        "Where to buy a new table",
+        "The furniture",
+        "Mirror"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Mary đang nói chuyện với bạn về ngôi nhà mới của cô ấy. Cô ấy hỏi bạn mình về điều gì?",
+      "optionsVi": [
+        "Nơi mua một chiếc bàn mới",
+        "Đồ nội thất",
+        "Gương"
+      ],
+      "explanation": "Đáp án đúng: A. Where to buy a new table\n• Dịch câu hỏi: Mary đang nói chuyện với bạn về ngôi nhà mới của cô ấy. Cô ấy hỏi bạn mình về điều gì?\n• Dịch các đáp án:\n  - A. Where to buy a new table ➔ Nơi mua một chiếc bàn mới\n  - B. The furniture ➔ Đồ nội thất\n  - C. Mirror ➔ Gương",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 123,
+      "id": "579204656",
+      "setIndex": 3,
+      "question": "A man is talking about how he goes to work. Why does he prefer traveling by train?",
+      "options": [
+        "It's cheaper than biking",
+        "It's practical",
+        "It's faster than flying"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người đàn ông đang nói về cách anh ấy đi làm. Tại sao anh ấy thích đi bằng tàu hỏa hơn?",
+      "optionsVi": [
+        "Rẻ hơn đi xe đạp",
+        "Thực tế/Tiện lợi",
+        "Nhanh hơn đi máy bay"
+      ],
+      "explanation": "Đáp án đúng: B. It's practical\n• Dịch câu hỏi: Một người đàn ông đang nói về cách anh ấy đi làm. Tại sao anh ấy thích đi bằng tàu hỏa hơn?\n• Dịch các đáp án:\n  - A. It's cheaper than biking ➔ Rẻ hơn đi xe đạp\n  - B. It's practical ➔ Thực tế/Tiện lợi\n  - C. It's faster than flying ➔ Nhanh hơn đi máy bay",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 124,
+      "id": "579204657",
+      "setIndex": 3,
+      "question": "What is not original?",
+      "options": [
+        "wall",
+        "shelf",
+        "furniture"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Điều gì (hay vật gì) không phải là nguyên bản?",
+      "optionsVi": [
+        "bức tường",
+        "kệ/giá đỡ",
+        "đồ nội thất"
+      ],
+      "explanation": "Đáp án đúng: C. furniture\n• Dịch câu hỏi: Điều gì (hay vật gì) không phải là nguyên bản?\n• Dịch các đáp án:\n  - A. wall ➔ bức tường\n  - B. shelf ➔ kệ/giá đỡ\n  - C. furniture ➔ đồ nội thất",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 125,
+      "id": "579204658",
+      "setIndex": 3,
+      "question": "Which button should the man press to buy a new computer?",
+      "options": [
+        "three",
+        "six",
+        "four"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Người đàn ông nên nhấn nút nào để mua một chiếc máy tính mới?",
+      "optionsVi": [
+        "số 3",
+        "số 6",
+        "số 4"
+      ],
+      "explanation": "Đáp án đúng: A. three\n• Dịch câu hỏi: Người đàn ông nên nhấn nút nào để mua một chiếc máy tính mới?\n• Dịch các đáp án:\n  - A. three ➔ số 3\n  - B. six ➔ số 6\n  - C. four ➔ số 4",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 126,
+      "id": "579204659",
+      "setIndex": 3,
+      "question": "A mom is calling her son to remind him about picking up groceries. How much is an egg?",
+      "options": [
+        "£3.50 (Three pounds fifty)",
+        "£1.50 (One pounds fifty)",
+        "£2.50 (Two pounds fifty)"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người mẹ đang gọi cho con trai để nhắc cậu ấy mua hàng tạp hóa. Một quả trứng giá bao nhiêu?",
+      "optionsVi": [
+        "£3.50 (Ba bảng rưỡi)",
+        "£1.50 (Một bảng rưỡi)",
+        "£2.50 (Hai bảng rưỡi)"
+      ],
+      "explanation": "Đáp án đúng: B. £1.50 (One pounds fifty)\n• Dịch câu hỏi: Một người mẹ đang gọi cho con trai để nhắc cậu ấy mua hàng tạp hóa. Một quả trứng giá bao nhiêu?\n• Dịch các đáp án:\n  - A. £3.50 (Three pounds fifty) ➔ £3.50 (Ba bảng rưỡi)\n  - B. £1.50 (One pounds fifty) ➔ £1.50 (Một bảng rưỡi)\n  - C. £2.50 (Two pounds fifty) ➔ £2.50 (Hai bảng rưỡi)",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 127,
+      "id": "579204660",
+      "setIndex": 3,
+      "question": "A teacher and a student are talking about transportation. How does the teacher go to school?",
+      "options": [
+        "He walks",
+        "He takes the bus",
+        "He drives"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một giáo viên và một học sinh đang nói chuyện về phương tiện đi lại. Giáo viên đến trường bằng cách nào?",
+      "optionsVi": [
+        "Thầy ấy đi bộ",
+        "Thầy ấy đi xe buýt",
+        "Thầy ấy tự lái xe"
+      ],
+      "explanation": "Đáp án đúng: A. He walks\n• Dịch câu hỏi: Một giáo viên và một học sinh đang nói chuyện về phương tiện đi lại. Giáo viên đến trường bằng cách nào?\n• Dịch các đáp án:\n  - A. He walks ➔ Thầy ấy đi bộ\n  - B. He takes the bus ➔ Thầy ấy đi xe buýt\n  - C. He drives ➔ Thầy ấy tự lái xe",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 128,
+      "id": "579204661",
+      "setIndex": 3,
+      "question": "What time is the meeting?",
+      "options": [
+        "2 p.m",
+        "10 a.m",
+        "11 a.m"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Cuộc họp diễn ra lúc mấy giờ?",
+      "optionsVi": [
+        "2 giờ chiều",
+        "10 giờ sáng",
+        "11 giờ sáng"
+      ],
+      "explanation": "Đáp án đúng: A. 2 p.m\n• Dịch câu hỏi: Cuộc họp diễn ra lúc mấy giờ?\n• Dịch các đáp án:\n  - A. 2 p.m ➔ 2 giờ chiều\n  - B. 10 a.m ➔ 10 giờ sáng\n  - C. 11 a.m ➔ 11 giờ sáng",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 129,
+      "id": "579204662",
+      "setIndex": 3,
+      "question": "A woman is talking about her family's weekend. What does the family do most weekends?",
+      "options": [
+        "Goes picnic",
+        "Goes for a walk",
+        "Goes to the beach"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người phụ nữ đang nói về ngày cuối tuần của gia đình cô ấy. Gia đình thường làm gì vào hầu hết các ngày cuối tuần?",
+      "optionsVi": [
+        "Đi dã ngoại",
+        "Đi dạo",
+        "Đi đến bãi biển"
+      ],
+      "explanation": "Đáp án đúng: B. Goes for a walk\n• Dịch câu hỏi: Một người phụ nữ đang nói về ngày cuối tuần của gia đình cô ấy. Gia đình thường làm gì vào hầu hết các ngày cuối tuần?\n• Dịch các đáp án:\n  - A. Goes picnic ➔ Đi dã ngoại\n  - B. Goes for a walk ➔ Đi dạo\n  - C. Goes to the beach ➔ Đi đến bãi biển",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 130,
+      "id": "579204663",
+      "setIndex": 3,
+      "question": "Two colleges talk about meeting. When do they want to meet?",
+      "options": [
+        "On Sunday",
+        "Tuesday",
+        "On Saturday"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hai trường đại học (hoặc đồng nghiệp - colleges/colleagues) nói chuyện về cuộc gặp. Họ muốn gặp nhau khi nào?",
+      "optionsVi": [
+        "Vào Chủ nhật",
+        "Thứ Ba",
+        "Vào thứ Bảy"
+      ],
+      "explanation": "Đáp án đúng: B. Tuesday\n• Dịch câu hỏi: Hai trường đại học (hoặc đồng nghiệp - colleges/colleagues) nói chuyện về cuộc gặp. Họ muốn gặp nhau khi nào?\n• Dịch các đáp án:\n  - A. On Sunday ➔ Vào Chủ nhật\n  - B. Tuesday ➔ Thứ Ba\n  - C. On Saturday ➔ Vào thứ Bảy",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 131,
+      "id": "579204664",
+      "setIndex": 3,
+      "question": "A man is seeking advice on future career. What is he going to do?",
+      "options": [
+        "To work in business",
+        "to work in technology",
+        "to work in computer"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông đang tìm lời khuyên về sự nghiệp tương lai. Anh ấy dự định sẽ làm gì?",
+      "optionsVi": [
+        "Làm việc trong lĩnh vực kinh doanh",
+        "làm việc trong lĩnh vực công nghệ",
+        "làm việc trong lĩnh vực máy tính"
+      ],
+      "explanation": "Đáp án đúng: A. To work in business\n• Dịch câu hỏi: Một người đàn ông đang tìm lời khuyên về sự nghiệp tương lai. Anh ấy dự định sẽ làm gì?\n• Dịch các đáp án:\n  - A. To work in business ➔ Làm việc trong lĩnh vực kinh doanh\n  - B. to work in technology ➔ làm việc trong lĩnh vực công nghệ\n  - C. to work in computer ➔ làm việc trong lĩnh vực máy tính",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 132,
+      "id": "579204665",
+      "setIndex": 3,
+      "question": "Listen to a student talking about his study. What course is the student going to take this year?",
+      "options": [
+        "Computers",
+        "Science",
+        "Math"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe một sinh viên nói về việc học của mình. Sinh viên đó sẽ tham gia khóa học nào trong năm nay?",
+      "optionsVi": [
+        "Máy tính",
+        "Khoa học",
+        "Toán học"
+      ],
+      "explanation": "Đáp án đúng: A. Computers\n• Dịch câu hỏi: Hãy nghe một sinh viên nói về việc học của mình. Sinh viên đó sẽ tham gia khóa học nào trong năm nay?\n• Dịch các đáp án:\n  - A. Computers ➔ Máy tính\n  - B. Science ➔ Khoa học\n  - C. Math ➔ Toán học",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 133,
+      "id": "579204666",
+      "setIndex": 3,
+      "question": "An artist is talking about her jobs. What is the difference in her job?",
+      "options": [
+        "She works from 9 to 5",
+        "Work irregular hours",
+        "She doesn't work on weekends"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một nghệ sĩ đang nói về công việc của cô ấy. Điểm khác biệt trong công việc của cô ấy là gì?",
+      "optionsVi": [
+        "Cô ấy làm việc từ 9 giờ sáng đến 5 giờ chiều (giờ hành chính)",
+        "Làm việc với thời gian không cố định (giờ giấc thất thường)",
+        "Cô ấy không làm việc vào cuối tuần"
+      ],
+      "explanation": "Đáp án đúng: B. Work irregular hours\n• Dịch câu hỏi: Một nghệ sĩ đang nói về công việc của cô ấy. Điểm khác biệt trong công việc của cô ấy là gì?\n• Dịch các đáp án:\n  - A. She works from 9 to 5 ➔ Cô ấy làm việc từ 9 giờ sáng đến 5 giờ chiều (giờ hành chính)\n  - B. Work irregular hours ➔ Làm việc với thời gian không cố định (giờ giấc thất thường)\n  - C. She doesn't work on weekends ➔ Cô ấy không làm việc vào cuối tuần",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 134,
+      "id": "579204667",
+      "setIndex": 3,
+      "question": "A man is talking about the environment of the countryside. What is the main cause of poor air quality?",
+      "options": [
+        "Fires in the countryside",
+        "Smokes from factories",
+        "Vehicles on the roads"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông đang nói về môi trường ở nông thôn. Nguyên nhân chính gây ra chất lượng không khí kém là gì?",
+      "optionsVi": [
+        "Các đám cháy ở nông thôn",
+        "Khói từ các nhà máy",
+        "Xe cộ trên đường"
+      ],
+      "explanation": "Đáp án đúng: A. Fires in the countryside\n• Dịch câu hỏi: Một người đàn ông đang nói về môi trường ở nông thôn. Nguyên nhân chính gây ra chất lượng không khí kém là gì?\n• Dịch các đáp án:\n  - A. Fires in the countryside ➔ Các đám cháy ở nông thôn\n  - B. Smokes from factories ➔ Khói từ các nhà máy\n  - C. Vehicles on the roads ➔ Xe cộ trên đường",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 135,
+      "id": "579204668",
+      "setIndex": 3,
+      "question": "A man is calling his teacher to meet for the assignment. When is the meeting?",
+      "options": [
+        "On Tuesday morning",
+        "On Thursday afternoon",
+        "On Thursday morning"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người đàn ông đang gọi cho giáo viên của mình để hẹn gặp về bài tập. Cuộc họp diễn ra khi nào?",
+      "optionsVi": [
+        "Vào sáng thứ Ba",
+        "Vào chiều thứ Năm",
+        "Vào sáng thứ Năm"
+      ],
+      "explanation": "Đáp án đúng: C. On Thursday morning\n• Dịch câu hỏi: Một người đàn ông đang gọi cho giáo viên của mình để hẹn gặp về bài tập. Cuộc họp diễn ra khi nào?\n• Dịch các đáp án:\n  - A. On Tuesday morning ➔ Vào sáng thứ Ba\n  - B. On Thursday afternoon ➔ Vào chiều thứ Năm\n  - C. On Thursday morning ➔ Vào sáng thứ Năm",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 136,
+      "id": "579204669",
+      "setIndex": 3,
+      "question": "Listening to a tour guide talking about Rock city. How old is the city?",
+      "options": [
+        "2500 years",
+        "1500 years",
+        "3500 years"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Nghe một hướng dẫn viên du lịch nói về thành phố Rock. Thành phố này bao nhiêu tuổi?",
+      "optionsVi": [
+        "2500 năm",
+        "1500 năm",
+        "3500 năm"
+      ],
+      "explanation": "Đáp án đúng: B. 1500 years\n• Dịch câu hỏi: Nghe một hướng dẫn viên du lịch nói về thành phố Rock. Thành phố này bao nhiêu tuổi?\n• Dịch các đáp án:\n  - A. 2500 years ➔ 2500 năm\n  - B. 1500 years ➔ 1500 năm\n  - C. 3500 years ➔ 3500 năm",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 137,
+      "id": "579204670",
+      "setIndex": 3,
+      "question": "Jack is calling to invite a friend to his house. What color is Jack's house?",
+      "options": [
+        "red",
+        "Green",
+        "blue"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Jack đang gọi điện mời một người bạn đến nhà anh ấy. Ngôi nhà của Jack màu gì?",
+      "optionsVi": [
+        "màu đỏ",
+        "màu xanh lá cây",
+        "màu xanh dương"
+      ],
+      "explanation": "Đáp án đúng: A. red\n• Dịch câu hỏi: Jack đang gọi điện mời một người bạn đến nhà anh ấy. Ngôi nhà của Jack màu gì?\n• Dịch các đáp án:\n  - A. red ➔ màu đỏ\n  - B. Green ➔ màu xanh lá cây\n  - C. blue ➔ màu xanh dương",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 138,
+      "id": "579204671",
+      "setIndex": 3,
+      "question": "Jana is talking to her friend. What does Jana's sister look like?",
+      "options": [
+        "short",
+        "curly hair",
+        "thin"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Jana đang nói chuyện với bạn của cô ấy. Chị/em gái của Jana trông như thế nào?",
+      "optionsVi": [
+        "thấp (lùn)",
+        "tóc xoăn",
+        "gầy"
+      ],
+      "explanation": "Đáp án đúng: A. short\n• Dịch câu hỏi: Jana đang nói chuyện với bạn của cô ấy. Chị/em gái của Jana trông như thế nào?\n• Dịch các đáp án:\n  - A. short ➔ thấp (lùn)\n  - B. curly hair ➔ tóc xoăn\n  - C. thin ➔ gầy",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 139,
+      "id": "579204672",
+      "setIndex": 3,
+      "question": "A man is talking about his routine after work. What is the man going to do after work?",
+      "options": [
+        "Meets his client",
+        "Goes Running",
+        "Cycles home"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người đàn ông đang nói về thói quen sau giờ làm việc của mình. Anh ấy định làm gì sau giờ làm việc?",
+      "optionsVi": [
+        "Gặp khách hàng",
+        "Đi chạy bộ",
+        "Đạp xe về nhà"
+      ],
+      "explanation": "Đáp án đúng: B. Goes Running\n• Dịch câu hỏi: Một người đàn ông đang nói về thói quen sau giờ làm việc của mình. Anh ấy định làm gì sau giờ làm việc?\n• Dịch các đáp án:\n  - A. Meets his client ➔ Gặp khách hàng\n  - B. Goes Running ➔ Đi chạy bộ\n  - C. Cycles home ➔ Đạp xe về nhà",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 140,
+      "id": "579204673",
+      "setIndex": 3,
+      "question": "The woman is discussing her new exercise routine. How much time does she spend cycling?",
+      "options": [
+        "15 minutes",
+        "25 minutes",
+        "35 minutes"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Người phụ nữ đang thảo luận về thói quen tập thể dục mới của mình. Cô ấy dành bao nhiêu thời gian để đạp xe?",
+      "optionsVi": [
+        "15 phút",
+        "25 phút",
+        "35 phút"
+      ],
+      "explanation": "Đáp án đúng: C. 35 minutes\n• Dịch câu hỏi: Người phụ nữ đang thảo luận về thói quen tập thể dục mới của mình. Cô ấy dành bao nhiêu thời gian để đạp xe?\n• Dịch các đáp án:\n  - A. 15 minutes ➔ 15 phút\n  - B. 25 minutes ➔ 25 phút\n  - C. 35 minutes ➔ 35 phút",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 141,
+      "id": "579204674",
+      "setIndex": 3,
+      "question": "Listen to a conversation between the teacher and a parent. What will the father do?",
+      "options": [
+        "Arrange private class",
+        "Enroll him in summer school",
+        "Talk to the principal"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe cuộc trò chuyện giữa giáo viên và một phụ huynh. Người cha sẽ làm gì?",
+      "optionsVi": [
+        "Sắp xếp lớp học riêng (gia sư)",
+        "Cho cậu bé đăng ký học hè",
+        "Nói chuyện với hiệu trưởng"
+      ],
+      "explanation": "Đáp án đúng: A. Arrange private class\n• Dịch câu hỏi: Hãy nghe cuộc trò chuyện giữa giáo viên và một phụ huynh. Người cha sẽ làm gì?\n• Dịch các đáp án:\n  - A. Arrange private class ➔ Sắp xếp lớp học riêng (gia sư)\n  - B. Enroll him in summer school ➔ Cho cậu bé đăng ký học hè\n  - C. Talk to the principal ➔ Nói chuyện với hiệu trưởng",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 142,
+      "id": "579204675",
+      "setIndex": 3,
+      "question": "Listen to Sarah talking about her hobby. What does she do in her free time?",
+      "options": [
+        "Going to the theater and play sports",
+        "Watch movies and go shopping",
+        "Read books and paint"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe Sarah nói về sở thích của cô ấy. Cô ấy làm gì vào thời gian rảnh?",
+      "optionsVi": [
+        "Đi đến nhà hát và chơi thể thao",
+        "Xem phim và đi mua sắm",
+        "Đọc sách và vẽ"
+      ],
+      "explanation": "Đáp án đúng: A. Going to the theater and play sports\n• Dịch câu hỏi: Hãy nghe Sarah nói về sở thích của cô ấy. Cô ấy làm gì vào thời gian rảnh?\n• Dịch các đáp án:\n  - A. Going to the theater and play sports ➔ Đi đến nhà hát và chơi thể thao\n  - B. Watch movies and go shopping ➔ Xem phim và đi mua sắm\n  - C. Read books and paint ➔ Đọc sách và vẽ",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 143,
+      "id": "579204676",
+      "setIndex": 3,
+      "question": "Two friends are talking about their school days. What was the woman good at?",
+      "options": [
+        "volleyball",
+        "plays football",
+        "basketball"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hai người bạn đang nói chuyện về những ngày đi học của họ. Người phụ nữ đã giỏi môn gì?",
+      "optionsVi": [
+        "bóng chuyền",
+        "chơi bóng đá",
+        "bóng rổ"
+      ],
+      "explanation": "Đáp án đúng: B. plays football\n• Dịch câu hỏi: Hai người bạn đang nói chuyện về những ngày đi học của họ. Người phụ nữ đã giỏi môn gì?\n• Dịch các đáp án:\n  - A. volleyball ➔ bóng chuyền\n  - B. plays football ➔ chơi bóng đá\n  - C. basketball ➔ bóng rổ",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 144,
+      "id": "579204677",
+      "setIndex": 3,
+      "question": "James is talking about his family members. In what way does his mother and his aunt alike?",
+      "options": [
+        "They both had long hair",
+        "They both had blue eyes",
+        "They were both thin"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "James đang nói về các thành viên trong gia đình mình. Mẹ và dì của anh ấy giống nhau ở điểm nào?",
+      "optionsVi": [
+        "Cả hai đều có mái tóc dài",
+        "Cả hai đều có đôi mắt màu xanh dương",
+        "Cả hai đều gầy"
+      ],
+      "explanation": "Đáp án đúng: C. They were both thin\n• Dịch câu hỏi: James đang nói về các thành viên trong gia đình mình. Mẹ và dì của anh ấy giống nhau ở điểm nào?\n• Dịch các đáp án:\n  - A. They both had long hair ➔ Cả hai đều có mái tóc dài\n  - B. They both had blue eyes ➔ Cả hai đều có đôi mắt màu xanh dương\n  - C. They were both thin ➔ Cả hai đều gầy",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 145,
+      "id": "579204678",
+      "setIndex": 3,
+      "question": "An author is talking about her daily routine. When does she usually write?",
+      "options": [
+        "In the afternoons",
+        "in the evening",
+        "in the morning"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một tác giả đang nói về thói quen hàng ngày của cô ấy. Cô ấy thường viết văn vào khi nào?",
+      "optionsVi": [
+        "Vào các buổi chiều",
+        "vào buổi tối",
+        "vào buổi sáng"
+      ],
+      "explanation": "Đáp án đúng: A. In the afternoons\n• Dịch câu hỏi: Một tác giả đang nói về thói quen hàng ngày của cô ấy. Cô ấy thường viết văn vào khi nào?\n• Dịch các đáp án:\n  - A. In the afternoons ➔ Vào các buổi chiều\n  - B. in the evening ➔ vào buổi tối\n  - C. in the morning ➔ vào buổi sáng",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 146,
+      "id": "579204679",
+      "setIndex": 3,
+      "question": "An expert is talking about lack of satisfaction at work. What should be the solution?",
+      "options": [
+        "Request a transaction",
+        "Request a transfer",
+        "Request a change"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một chuyên gia đang nói về sự thiếu hài lòng trong công việc. Giải pháp đề ra nên là gì?",
+      "optionsVi": [
+        "Yêu cầu một giao dịch",
+        "Yêu cầu chuyển công tác (chuyển bộ phận)",
+        "Yêu cầu một sự thay đổi"
+      ],
+      "explanation": "Đáp án đúng: B. Request a transfer\n• Dịch câu hỏi: Một chuyên gia đang nói về sự thiếu hài lòng trong công việc. Giải pháp đề ra nên là gì?\n• Dịch các đáp án:\n  - A. Request a transaction ➔ Yêu cầu một giao dịch\n  - B. Request a transfer ➔ Yêu cầu chuyển công tác (chuyển bộ phận)\n  - C. Request a change ➔ Yêu cầu một sự thay đổi",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 147,
+      "id": "579204680",
+      "setIndex": 3,
+      "question": "Lucy is calling her friend. What is her sister like?",
+      "options": [
+        "She is young",
+        "She will be wearing red coat",
+        "They have similar characters"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Lucy đang gọi điện cho bạn mình. Chị/em gái của cô ấy là người như thế nào?",
+      "optionsVi": [
+        "Cô ấy trẻ",
+        "Cô ấy sẽ mặc áo khoác đỏ",
+        "Họ có tính cách giống nhau"
+      ],
+      "explanation": "Đáp án đúng: C. They have similar characters\n• Dịch câu hỏi: Lucy đang gọi điện cho bạn mình. Chị/em gái của cô ấy là người như thế nào?\n• Dịch các đáp án:\n  - A. She is young ➔ Cô ấy trẻ\n  - B. She will be wearing red coat ➔ Cô ấy sẽ mặc áo khoác đỏ\n  - C. They have similar characters ➔ Họ có tính cách giống nhau",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 148,
+      "id": "579204681",
+      "setIndex": 3,
+      "question": "A man is talking to his friend. Why does he choose to be a doctor?",
+      "options": [
+        "To help people",
+        "To make his family proud",
+        "To make a lot of money"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông đang nói chuyện với bạn của mình. Tại sao anh ấy chọn làm bác sĩ?",
+      "optionsVi": [
+        "Để giúp đỡ mọi người",
+        "Để làm cho gia đình tự hào",
+        "Để kiếm nhiều tiền"
+      ],
+      "explanation": "Đáp án đúng: A. To help people\n• Dịch câu hỏi: Một người đàn ông đang nói chuyện với bạn của mình. Tại sao anh ấy chọn làm bác sĩ?\n• Dịch các đáp án:\n  - A. To help people ➔ Để giúp đỡ mọi người\n  - B. To make his family proud ➔ Để làm cho gia đình tự hào\n  - C. To make a lot of money ➔ Để kiếm nhiều tiền",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 149,
+      "id": "579204682",
+      "setIndex": 3,
+      "question": "A woman is talking about her plan for the holiday. What will she do during the holiday?",
+      "options": [
+        "Go for a walk",
+        "Go for a bike ride",
+        "Go for a run"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người phụ nữ đang nói về kế hoạch cho kỳ nghỉ của cô ấy. Cô ấy sẽ làm gì trong kỳ nghỉ?",
+      "optionsVi": [
+        "Đi dạo",
+        "Đi xe đạp",
+        "Đi chạy bộ"
+      ],
+      "explanation": "Đáp án đúng: A. Go for a walk\n• Dịch câu hỏi: Một người phụ nữ đang nói về kế hoạch cho kỳ nghỉ của cô ấy. Cô ấy sẽ làm gì trong kỳ nghỉ?\n• Dịch các đáp án:\n  - A. Go for a walk ➔ Đi dạo\n  - B. Go for a bike ride ➔ Đi xe đạp\n  - C. Go for a run ➔ Đi chạy bộ",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 150,
+      "id": "579204683",
+      "setIndex": 3,
+      "question": "A woman is calling her son. What time will the mother meet the son?",
+      "options": [
+        "4 o'clock",
+        "5 o'clock",
+        "3 o'clock"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người phụ nữ đang gọi cho con trai mình. Người mẹ sẽ gặp con trai lúc mấy giờ?",
+      "optionsVi": [
+        "Lúc 4 giờ",
+        "Lúc 5 giờ",
+        "Lúc 3 giờ"
+      ],
+      "explanation": "Đáp án đúng: C. 3 o'clock\n• Dịch câu hỏi: Một người phụ nữ đang gọi cho con trai mình. Người mẹ sẽ gặp con trai lúc mấy giờ?\n• Dịch các đáp án:\n  - A. 4 o'clock ➔ Lúc 4 giờ\n  - B. 5 o'clock ➔ Lúc 5 giờ\n  - C. 3 o'clock ➔ Lúc 3 giờ",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 151,
+      "id": "579204684",
+      "setIndex": 3,
+      "question": "A woman is chatting with a friend about her afternoon plans. What is she going to do this afternoon?",
+      "options": [
+        "visiting a museum",
+        "relax at home",
+        "Go on a city tour"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người phụ nữ đang trò chuyện với một người bạn về kế hoạch buổi chiều của mình. Cô ấy dự định làm gì vào chiều nay?",
+      "optionsVi": [
+        "đi thăm bảo tàng",
+        "thư giãn ở nhà",
+        "Đi tham quan thành phố"
+      ],
+      "explanation": "Đáp án đúng: C. Go on a city tour\n• Dịch câu hỏi: Một người phụ nữ đang trò chuyện với một người bạn về kế hoạch buổi chiều của mình. Cô ấy dự định làm gì vào chiều nay?\n• Dịch các đáp án:\n  - A. visiting a museum ➔ đi thăm bảo tàng\n  - B. relax at home ➔ thư giãn ở nhà\n  - C. Go on a city tour ➔ Đi tham quan thành phố",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 152,
+      "id": "579204685",
+      "setIndex": 3,
+      "question": "A man is talking to a group of people. Where are they standing?",
+      "options": [
+        "library complex",
+        "social housing area",
+        "university area"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người đàn ông đang nói chuyện với một nhóm người. Họ đang đứng ở đâu?",
+      "optionsVi": [
+        "khu phức hợp thư viện",
+        "khu nhà ở xã hội",
+        "khu vực trường đại học"
+      ],
+      "explanation": "Đáp án đúng: C. university area\n• Dịch câu hỏi: Một người đàn ông đang nói chuyện với một nhóm người. Họ đang đứng ở đâu?\n• Dịch các đáp án:\n  - A. library complex ➔ khu phức hợp thư viện\n  - B. social housing area ➔ khu nhà ở xã hội\n  - C. university area ➔ khu vực trường đại học",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 153,
+      "id": "579204686",
+      "setIndex": 3,
+      "question": "A man is calling his friend, Maria. When will he see her?",
+      "options": [
+        "at 9 am on Sunday",
+        "at 8 am on Sunday",
+        "at 10 am on Saturday"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông đang gọi cho bạn mình là Maria. Khi nào anh ấy sẽ gặp cô ấy?",
+      "optionsVi": [
+        "lúc 9 giờ sáng Chủ nhật",
+        "lúc 8 giờ sáng Chủ nhật",
+        "lúc 10 giờ sáng thứ Bảy"
+      ],
+      "explanation": "Đáp án đúng: A. at 9 am on Sunday\n• Dịch câu hỏi: Một người đàn ông đang gọi cho bạn mình là Maria. Khi nào anh ấy sẽ gặp cô ấy?\n• Dịch các đáp án:\n  - A. at 9 am on Sunday ➔ lúc 9 giờ sáng Chủ nhật\n  - B. at 8 am on Sunday ➔ lúc 8 giờ sáng Chủ nhật\n  - C. at 10 am on Saturday ➔ lúc 10 giờ sáng thứ Bảy",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 154,
+      "id": "579204687",
+      "setIndex": 3,
+      "question": "A man is talking on the phone. What did the man lose?",
+      "options": [
+        "Jacket",
+        "Books",
+        "Glasses"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người đàn ông đang nói chuyện điện thoại. Người đàn ông đã làm mất cái gì?",
+      "optionsVi": [
+        "Áo khoác",
+        "Sách",
+        "Kính (mắt kính)"
+      ],
+      "explanation": "Đáp án đúng: C. Glasses\n• Dịch câu hỏi: Một người đàn ông đang nói chuyện điện thoại. Người đàn ông đã làm mất cái gì?\n• Dịch các đáp án:\n  - A. Jacket ➔ Áo khoác\n  - B. Books ➔ Sách\n  - C. Glasses ➔ Kính (mắt kính)",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 155,
+      "id": "579204688",
+      "setIndex": 3,
+      "question": "How long does it take to get to the station?",
+      "options": [
+        "20 minutes",
+        "15 minutes",
+        "25 minutes"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Mất bao lâu để đến nhà ga?",
+      "optionsVi": [
+        "20 phút",
+        "15 phút",
+        "25 phút"
+      ],
+      "explanation": "Đáp án đúng: A. 20 minutes\n• Dịch câu hỏi: Mất bao lâu để đến nhà ga?\n• Dịch các đáp án:\n  - A. 20 minutes ➔ 20 phút\n  - B. 15 minutes ➔ 15 phút\n  - C. 25 minutes ➔ 25 phút",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 156,
+      "id": "579204689",
+      "setIndex": 3,
+      "question": "A mom talks to her son about buying food. How much money is left in the kitchen?",
+      "options": [
+        "10 pounds",
+        "5 pounds",
+        "15 pounds"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người mẹ nói chuyện với con trai về việc mua đồ ăn. Còn lại bao nhiêu tiền trong bếp?",
+      "optionsVi": [
+        "10 bảng Anh",
+        "5 bảng Anh",
+        "15 bảng Anh"
+      ],
+      "explanation": "Đáp án đúng: A. 10 pounds\n• Dịch câu hỏi: Một người mẹ nói chuyện với con trai về việc mua đồ ăn. Còn lại bao nhiêu tiền trong bếp?\n• Dịch các đáp án:\n  - A. 10 pounds ➔ 10 bảng Anh\n  - B. 5 pounds ➔ 5 bảng Anh\n  - C. 15 pounds ➔ 15 bảng Anh",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 157,
+      "id": "579204690",
+      "setIndex": 3,
+      "question": "How much does a bus card cost?",
+      "options": [
+        "$10",
+        "$20",
+        "$30"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một thẻ xe buýt giá bao nhiêu?",
+      "optionsVi": [
+        "$10",
+        "$20",
+        "$30"
+      ],
+      "explanation": "Đáp án đúng: B. $20\n• Dịch câu hỏi: Một thẻ xe buýt giá bao nhiêu?\n• Dịch các đáp án:\n  - A. $10 ➔ $10\n  - B. $20 ➔ $20\n  - C. $30 ➔ $30",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 158,
+      "id": "579204691",
+      "setIndex": 3,
+      "question": "What bus number stops near the boy's home?",
+      "options": [
+        "Ten",
+        "Eight",
+        "Night"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Xe buýt số mấy dừng gần nhà cậu bé?",
+      "optionsVi": [
+        "Số 10 (Mười)",
+        "Số 8 (Tám)",
+        "Đêm (có thể đề gốc viết nhầm chữ Nine - số 9)"
+      ],
+      "explanation": "Đáp án đúng: B. Eight\n• Dịch câu hỏi: Xe buýt số mấy dừng gần nhà cậu bé?\n• Dịch các đáp án:\n  - A. Ten ➔ Số 10 (Mười)\n  - B. Eight ➔ Số 8 (Tám)\n  - C. Night ➔ Đêm (có thể đề gốc viết nhầm chữ Nine - số 9)",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 159,
+      "id": "579204692",
+      "setIndex": 3,
+      "question": "What time does the party start?",
+      "options": [
+        "Three o'clock",
+        "Five o'clock",
+        "Four o'clock"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Bữa tiệc bắt đầu lúc mấy giờ?",
+      "optionsVi": [
+        "Lúc 3 giờ",
+        "Lúc 5 giờ",
+        "Lúc 4 giờ"
+      ],
+      "explanation": "Đáp án đúng: A. Three o'clock\n• Dịch câu hỏi: Bữa tiệc bắt đầu lúc mấy giờ?\n• Dịch các đáp án:\n  - A. Three o'clock ➔ Lúc 3 giờ\n  - B. Five o'clock ➔ Lúc 5 giờ\n  - C. Four o'clock ➔ Lúc 4 giờ",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 160,
+      "id": "579204693",
+      "setIndex": 3,
+      "question": "Why did he buy this jacket?",
+      "options": [
+        "because it fits him well",
+        "because it is cheap",
+        "because it will keep him warm"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Tại sao anh ấy lại mua chiếc áo khoác này?",
+      "optionsVi": [
+        "vì nó vừa vặn với anh ấy",
+        "vì nó rẻ",
+        "vì nó sẽ giữ ấm cho anh ấy"
+      ],
+      "explanation": "Đáp án đúng: C. because it will keep him warm\n• Dịch câu hỏi: Tại sao anh ấy lại mua chiếc áo khoác này?\n• Dịch các đáp án:\n  - A. because it fits him well ➔ vì nó vừa vặn với anh ấy\n  - B. because it is cheap ➔ vì nó rẻ\n  - C. because it will keep him warm ➔ vì nó sẽ giữ ấm cho anh ấy",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 161,
+      "id": "579204694",
+      "setIndex": 3,
+      "question": "What time is the dinner?",
+      "options": [
+        "8.30",
+        "7.30",
+        "9.30"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Bữa tối diễn ra lúc mấy giờ?",
+      "optionsVi": [
+        "8:30",
+        "7:30",
+        "9:30"
+      ],
+      "explanation": "Đáp án đúng: B. 7.30\n• Dịch câu hỏi: Bữa tối diễn ra lúc mấy giờ?\n• Dịch các đáp án:\n  - A. 8.30 ➔ 8:30\n  - B. 7.30 ➔ 7:30\n  - C. 9.30 ➔ 9:30",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 162,
+      "id": "579204695",
+      "setIndex": 3,
+      "question": "A man has a new job. How many days does the man have to work?",
+      "options": [
+        "5 days",
+        "4 days",
+        "3 days"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người đàn ông có công việc mới. Người đàn ông phải làm việc bao nhiêu ngày?",
+      "optionsVi": [
+        "5 ngày",
+        "4 ngày",
+        "3 ngày"
+      ],
+      "explanation": "Đáp án đúng: C. 3 days\n• Dịch câu hỏi: Một người đàn ông có công việc mới. Người đàn ông phải làm việc bao nhiêu ngày?\n• Dịch các đáp án:\n  - A. 5 days ➔ 5 ngày\n  - B. 4 days ➔ 4 ngày\n  - C. 3 days ➔ 3 ngày",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 163,
+      "id": "579204696",
+      "setIndex": 3,
+      "question": "Why can't he do the job today? / Why can the repairman not do the job today?",
+      "options": [
+        "He has another appointment",
+        "He is sick",
+        "He has to eat"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Tại sao anh ấy không thể làm công việc này hôm nay? / Tại sao người thợ sửa chữa không thể làm việc hôm nay?",
+      "optionsVi": [
+        "Anh ấy có một cuộc hẹn khác",
+        "Anh ấy bị ốm",
+        "Anh ấy phải đi ăn"
+      ],
+      "explanation": "Đáp án đúng: A. He has another appointment\n• Dịch câu hỏi: Tại sao anh ấy không thể làm công việc này hôm nay? / Tại sao người thợ sửa chữa không thể làm việc hôm nay?\n• Dịch các đáp án:\n  - A. He has another appointment ➔ Anh ấy có một cuộc hẹn khác\n  - B. He is sick ➔ Anh ấy bị ốm\n  - C. He has to eat ➔ Anh ấy phải đi ăn",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 164,
+      "id": "579204697",
+      "setIndex": 3,
+      "question": "What is the man going to?",
+      "options": [
+        "Get something to eat",
+        "Go to sleep",
+        "Get something to drink"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Người đàn ông dự định làm gì?",
+      "optionsVi": [
+        "Đi ăn gì đó",
+        "Đi ngủ",
+        "Đi uống gì đó"
+      ],
+      "explanation": "Đáp án đúng: A. Get something to eat\n• Dịch câu hỏi: Người đàn ông dự định làm gì?\n• Dịch các đáp án:\n  - A. Get something to eat ➔ Đi ăn gì đó\n  - B. Go to sleep ➔ Đi ngủ\n  - C. Get something to drink ➔ Đi uống gì đó",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 165,
+      "id": "579204698",
+      "setIndex": 3,
+      "question": "What is the new health center next to?",
+      "options": [
+        "A train station",
+        "A bus station",
+        "An airport"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Trung tâm y tế mới nằm cạnh cái gì?",
+      "optionsVi": [
+        "Một nhà ga xe lửa",
+        "Một trạm xe buýt",
+        "Một sân bay"
+      ],
+      "explanation": "Đáp án đúng: A. A train station\n• Dịch câu hỏi: Trung tâm y tế mới nằm cạnh cái gì?\n• Dịch các đáp án:\n  - A. A train station ➔ Một nhà ga xe lửa\n  - B. A bus station ➔ Một trạm xe buýt\n  - C. An airport ➔ Một sân bay",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 166,
+      "id": "579204699",
+      "setIndex": 3,
+      "question": "In which room will the director's presentation happen?",
+      "options": [
+        "The main hall",
+        "The meeting room",
+        "The lecture room"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Bài thuyết trình của giám đốc sẽ diễn ra ở phòng nào?",
+      "optionsVi": [
+        "Sảnh chính",
+        "Phòng họp",
+        "Phòng giảng đường"
+      ],
+      "explanation": "Đáp án đúng: B. The meeting room\n• Dịch câu hỏi: Bài thuyết trình của giám đốc sẽ diễn ra ở phòng nào?\n• Dịch các đáp án:\n  - A. The main hall ➔ Sảnh chính\n  - B. The meeting room ➔ Phòng họp\n  - C. The lecture room ➔ Phòng giảng đường",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 167,
+      "id": "579204700",
+      "setIndex": 3,
+      "question": "On which floor is the French class?",
+      "options": [
+        "Second",
+        "Third",
+        "First"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Lớp học tiếng Pháp ở tầng mấy?",
+      "optionsVi": [
+        "Tầng hai",
+        "Tầng ba",
+        "Tầng một"
+      ],
+      "explanation": "Đáp án đúng: A. Second\n• Dịch câu hỏi: Lớp học tiếng Pháp ở tầng mấy?\n• Dịch các đáp án:\n  - A. Second ➔ Tầng hai\n  - B. Third ➔ Tầng ba\n  - C. First ➔ Tầng một",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 168,
+      "id": "579204701",
+      "setIndex": 3,
+      "question": "Where is she taking the staff to?",
+      "options": [
+        "To a different city",
+        "To a different country",
+        "To a village"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Cô ấy đang đưa nhân viên đi đâu?",
+      "optionsVi": [
+        "Đến một thành phố khác",
+        "Đến một quốc gia khác",
+        "Đến một ngôi làng"
+      ],
+      "explanation": "Đáp án đúng: B. To a different country\n• Dịch câu hỏi: Cô ấy đang đưa nhân viên đi đâu?\n• Dịch các đáp án:\n  - A. To a different city ➔ Đến một thành phố khác\n  - B. To a different country ➔ Đến một quốc gia khác\n  - C. To a village ➔ Đến một ngôi làng",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 169,
+      "id": "579204702",
+      "setIndex": 3,
+      "question": "What is she going to take with her?",
+      "options": [
+        "A flashlight",
+        "Games",
+        "Food"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Cô ấy dự định mang theo cái gì?",
+      "optionsVi": [
+        "Một chiếc đèn pin",
+        "Trò chơi",
+        "Thức ăn"
+      ],
+      "explanation": "Đáp án đúng: B. Games\n• Dịch câu hỏi: Cô ấy dự định mang theo cái gì?\n• Dịch các đáp án:\n  - A. A flashlight ➔ Một chiếc đèn pin\n  - B. Games ➔ Trò chơi\n  - C. Food ➔ Thức ăn",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 170,
+      "id": "579204703",
+      "setIndex": 3,
+      "question": "What can the staff use?",
+      "options": [
+        "The printers",
+        "The projectors",
+        "The computers"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Nhân viên có thể sử dụng những gì?",
+      "optionsVi": [
+        "Các máy in",
+        "Các máy chiếu",
+        "Các máy tính"
+      ],
+      "explanation": "Đáp án đúng: C. The computers\n• Dịch câu hỏi: Nhân viên có thể sử dụng những gì?\n• Dịch các đáp án:\n  - A. The printers ➔ Các máy in\n  - B. The projectors ➔ Các máy chiếu\n  - C. The computers ➔ Các máy tính",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 171,
+      "id": "579204704",
+      "setIndex": 3,
+      "question": "What do they decide to write about?",
+      "options": [
+        "A famous battle",
+        "Ancient culture",
+        "Historian"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Họ quyết định viết về điều gì?",
+      "optionsVi": [
+        "Một trận chiến nổi tiếng",
+        "Văn hóa cổ đại",
+        "Nhà sử học"
+      ],
+      "explanation": "Đáp án đúng: C. Historian\n• Dịch câu hỏi: Họ quyết định viết về điều gì?\n• Dịch các đáp án:\n  - A. A famous battle ➔ Một trận chiến nổi tiếng\n  - B. Ancient culture ➔ Văn hóa cổ đại\n  - C. Historian ➔ Nhà sử học",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 172,
+      "id": "579204705",
+      "setIndex": 3,
+      "question": "A trainer talks to his student. What will the student write about?",
+      "options": [
+        "Important events",
+        "Famous people",
+        "Land"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một giáo viên/huấn luyện viên nói chuyện với học sinh của mình. Học sinh sẽ viết về điều gì?",
+      "optionsVi": [
+        "Những sự kiện quan trọng",
+        "Những người nổi tiếng",
+        "Vùng đất / Đất đai"
+      ],
+      "explanation": "Đáp án đúng: C. Land\n• Dịch câu hỏi: Một giáo viên/huấn luyện viên nói chuyện với học sinh của mình. Học sinh sẽ viết về điều gì?\n• Dịch các đáp án:\n  - A. Important events ➔ Những sự kiện quan trọng\n  - B. Famous people ➔ Những người nổi tiếng\n  - C. Land ➔ Vùng đất / Đất đai",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 173,
+      "id": "579204706",
+      "setIndex": 3,
+      "question": "What does the teacher want the student to do?",
+      "options": [
+        "Study harder for exams",
+        "complete the assignment on time",
+        "Hand in more assignments"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Giáo viên muốn học sinh làm gì?",
+      "optionsVi": [
+        "Học chăm chỉ hơn cho các kỳ thi",
+        "hoàn thành bài tập đúng hạn",
+        "Nộp thêm nhiều bài tập"
+      ],
+      "explanation": "Đáp án đúng: B. complete the assignment on time\n• Dịch câu hỏi: Giáo viên muốn học sinh làm gì?\n• Dịch các đáp án:\n  - A. Study harder for exams ➔ Học chăm chỉ hơn cho các kỳ thi\n  - B. complete the assignment on time ➔ hoàn thành bài tập đúng hạn\n  - C. Hand in more assignments ➔ Nộp thêm nhiều bài tập",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 174,
+      "id": "579204707",
+      "setIndex": 3,
+      "question": "What do the students need to do every Tuesday?",
+      "options": [
+        "Work in groups",
+        "Have a discussion",
+        "Write a report"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Các học sinh cần làm gì vào mỗi thứ Ba?",
+      "optionsVi": [
+        "Làm việc nhóm",
+        "Thảo luận",
+        "Viết một báo cáo"
+      ],
+      "explanation": "Đáp án đúng: C. Write a report\n• Dịch câu hỏi: Các học sinh cần làm gì vào mỗi thứ Ba?\n• Dịch các đáp án:\n  - A. Work in groups ➔ Làm việc nhóm\n  - B. Have a discussion ➔ Thảo luận\n  - C. Write a report ➔ Viết một báo cáo",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 175,
+      "id": "579204708",
+      "setIndex": 3,
+      "question": "Listen to a radio programme about a new restaurant. What does the man complain about?",
+      "options": [
+        "The food was bad",
+        "The place was cold",
+        "The service was slow"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Hãy nghe một chương trình phát thanh về một nhà hàng mới. Người đàn ông phàn nàn về điều gì?",
+      "optionsVi": [
+        "Thức ăn tệ",
+        "Nơi đó bị lạnh",
+        "Phục vụ chậm"
+      ],
+      "explanation": "Đáp án đúng: B. The place was cold\n• Dịch câu hỏi: Hãy nghe một chương trình phát thanh về một nhà hàng mới. Người đàn ông phàn nàn về điều gì?\n• Dịch các đáp án:\n  - A. The food was bad ➔ Thức ăn tệ\n  - B. The place was cold ➔ Nơi đó bị lạnh\n  - C. The service was slow ➔ Phục vụ chậm",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 176,
+      "id": "579204709",
+      "setIndex": 3,
+      "question": "What advice she gives to save money?",
+      "options": [
+        "Get loans from the bank",
+        "invest on stocks",
+        "cook for yourself"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Cô ấy đưa ra lời khuyên gì để tiết kiệm tiền?",
+      "optionsVi": [
+        "Vay tiền từ ngân hàng",
+        "đầu tư vào cổ phiếu",
+        "tự nấu ăn"
+      ],
+      "explanation": "Đáp án đúng: C. cook for yourself\n• Dịch câu hỏi: Cô ấy đưa ra lời khuyên gì để tiết kiệm tiền?\n• Dịch các đáp án:\n  - A. Get loans from the bank ➔ Vay tiền từ ngân hàng\n  - B. invest on stocks ➔ đầu tư vào cổ phiếu\n  - C. cook for yourself ➔ tự nấu ăn",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 177,
+      "id": "579204710",
+      "setIndex": 3,
+      "question": "What color is her dress?",
+      "options": [
+        "white",
+        "green",
+        "black"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Chiếc váy của cô ấy màu gì?",
+      "optionsVi": [
+        "màu trắng",
+        "màu xanh lá cây",
+        "màu đen"
+      ],
+      "explanation": "Đáp án đúng: C. black\n• Dịch câu hỏi: Chiếc váy của cô ấy màu gì?\n• Dịch các đáp án:\n  - A. white ➔ màu trắng\n  - B. green ➔ màu xanh lá cây\n  - C. black ➔ màu đen",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 178,
+      "id": "579204711",
+      "setIndex": 3,
+      "question": "What time does the shop open on monday?",
+      "options": [
+        "8.20 a.m",
+        "8.30 a.m",
+        "8.40 a.m"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Cửa hàng mở cửa lúc mấy giờ vào thứ Hai?",
+      "optionsVi": [
+        "8:20 sáng",
+        "8:30 sáng",
+        "8:40 sáng"
+      ],
+      "explanation": "Đáp án đúng: B. 8.30 a.m\n• Dịch câu hỏi: Cửa hàng mở cửa lúc mấy giờ vào thứ Hai?\n• Dịch các đáp án:\n  - A. 8.20 a.m ➔ 8:20 sáng\n  - B. 8.30 a.m ➔ 8:30 sáng\n  - C. 8.40 a.m ➔ 8:40 sáng",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 179,
+      "id": "579204712",
+      "setIndex": 3,
+      "question": "When is the shop going to open again?",
+      "options": [
+        "Thursday",
+        "Tuesday",
+        "Saturday"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Khi nào cửa hàng sẽ mở cửa trở lại?",
+      "optionsVi": [
+        "Thứ Năm",
+        "Thứ Ba",
+        "Thứ Bả"
+      ],
+      "explanation": "Đáp án đúng: A. Thursday\n• Dịch câu hỏi: Khi nào cửa hàng sẽ mở cửa trở lại?\n• Dịch các đáp án:\n  - A. Thursday ➔ Thứ Năm\n  - B. Tuesday ➔ Thứ Ba\n  - C. Saturday ➔ Thứ Bả",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 180,
+      "id": "579204713",
+      "setIndex": 3,
+      "question": "What is he going to buy?",
+      "options": [
+        "soda",
+        "coke",
+        "tea"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Anh ấy định mua gì?",
+      "optionsVi": [
+        "soda (nước ngọt có ga)",
+        "coke (coca)",
+        "trà"
+      ],
+      "explanation": "Đáp án đúng: C. tea\n• Dịch câu hỏi: Anh ấy định mua gì?\n• Dịch các đáp án:\n  - A. soda ➔ soda (nước ngọt có ga)\n  - B. coke ➔ coke (coca)\n  - C. tea ➔ trà",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 181,
+      "id": "579204714",
+      "setIndex": 3,
+      "question": "What are they opening next week?",
+      "options": [
+        "The playground",
+        "The resaturant",
+        "The coffee shop"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Họ dự định mở cái gì vào tuần tới?",
+      "optionsVi": [
+        "Sân chơi",
+        "Nhà hàng (lưu ý chữ \"restaurant\" viết sai chính tả trong ảnh)",
+        "Quán cà phê"
+      ],
+      "explanation": "Đáp án đúng: C. The coffee shop\n• Dịch câu hỏi: Họ dự định mở cái gì vào tuần tới?\n• Dịch các đáp án:\n  - A. The playground ➔ Sân chơi\n  - B. The resaturant ➔ Nhà hàng (lưu ý chữ \"restaurant\" viết sai chính tả trong ảnh)\n  - C. The coffee shop ➔ Quán cà phê",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 182,
+      "id": "579204715",
+      "setIndex": 3,
+      "question": "Listen a message about a book club, where is the meeting?",
+      "options": [
+        "The art center",
+        "The yoga class",
+        "The fitness center"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Hãy nghe một tin nhắn về một câu lạc bộ sách, cuộc họp diễn ra ở đâu?",
+      "optionsVi": [
+        "Trung tâm nghệ thuật",
+        "Lớp học yoga",
+        "Trung tâm thể dục (phòng gym)"
+      ],
+      "explanation": "Đáp án đúng: A. The art center\n• Dịch câu hỏi: Hãy nghe một tin nhắn về một câu lạc bộ sách, cuộc họp diễn ra ở đâu?\n• Dịch các đáp án:\n  - A. The art center ➔ Trung tâm nghệ thuật\n  - B. The yoga class ➔ Lớp học yoga\n  - C. The fitness center ➔ Trung tâm thể dục (phòng gym)",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 183,
+      "id": "579204716",
+      "setIndex": 3,
+      "question": "Which club is the student going to choose?",
+      "options": [
+        "The museum",
+        "The art club",
+        "The shopping mall"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Sinh viên đó định chọn câu lạc bộ nào?",
+      "optionsVi": [
+        "Bảo tàng",
+        "Câu lạc bộ nghệ thuật",
+        "Trung tâm mua sắm"
+      ],
+      "explanation": "Đáp án đúng: B. The art club\n• Dịch câu hỏi: Sinh viên đó định chọn câu lạc bộ nào?\n• Dịch các đáp án:\n  - A. The museum ➔ Bảo tàng\n  - B. The art club ➔ Câu lạc bộ nghệ thuật\n  - C. The shopping mall ➔ Trung tâm mua sắm",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 184,
+      "id": "579204717",
+      "setIndex": 3,
+      "question": "The man is talking about his key. Where did he find the key?",
+      "options": [
+        "In his car",
+        "In the front door",
+        "In the bedroom"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Người đàn ông đang nói về chiếc chìa khóa của mình. Anh ấy đã tìm thấy chìa khóa ở đâu?",
+      "optionsVi": [
+        "Trong xe ô tô của anh ấy",
+        "Ở cửa trước",
+        "Trong phòng ngủ"
+      ],
+      "explanation": "Đáp án đúng: B. In the front door\n• Dịch câu hỏi: Người đàn ông đang nói về chiếc chìa khóa của mình. Anh ấy đã tìm thấy chìa khóa ở đâu?\n• Dịch các đáp án:\n  - A. In his car ➔ Trong xe ô tô của anh ấy\n  - B. In the front door ➔ Ở cửa trước\n  - C. In the bedroom ➔ Trong phòng ngủ",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 185,
+      "id": "579204718",
+      "setIndex": 3,
+      "question": "Why does he like his new job?",
+      "options": [
+        "He has more choices",
+        "He has flexible schedule",
+        "He has a shorter travel time"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Tại sao anh ấy lại thích công việc mới của mình?",
+      "optionsVi": [
+        "Anh ấy có nhiều lựa chọn hơn",
+        "Anh ấy có lịch trình linh hoạt",
+        "Anh ấy có thời gian di chuyển ngắn hơn"
+      ],
+      "explanation": "Đáp án đúng: C. He has a shorter travel time\n• Dịch câu hỏi: Tại sao anh ấy lại thích công việc mới của mình?\n• Dịch các đáp án:\n  - A. He has more choices ➔ Anh ấy có nhiều lựa chọn hơn\n  - B. He has flexible schedule ➔ Anh ấy có lịch trình linh hoạt\n  - C. He has a shorter travel time ➔ Anh ấy có thời gian di chuyển ngắn hơn",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 186,
+      "id": "579204719",
+      "setIndex": 3,
+      "question": "A woman is talking about her usual Saturday routine. What does she usually do on Saturdays?",
+      "options": [
+        "Meeting a friend",
+        "Seeing her family",
+        "Going shopping"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người phụ nữ đang nói về thói quen thường lệ vào thứ Bảy của cô ấy. Cô ấy thường làm gì vào các ngày thứ Bảy?",
+      "optionsVi": [
+        "Gặp gỡ một người bạn",
+        "Gặp gỡ gia đình",
+        "Đi mua sắm"
+      ],
+      "explanation": "Đáp án đúng: B. Seeing her family\n• Dịch câu hỏi: Một người phụ nữ đang nói về thói quen thường lệ vào thứ Bảy của cô ấy. Cô ấy thường làm gì vào các ngày thứ Bảy?\n• Dịch các đáp án:\n  - A. Meeting a friend ➔ Gặp gỡ một người bạn\n  - B. Seeing her family ➔ Gặp gỡ gia đình\n  - C. Going shopping ➔ Đi mua sắm",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 187,
+      "id": "579204720",
+      "setIndex": 3,
+      "question": "Two friends are talking with each other. What did they both buy?",
+      "options": [
+        "Tea",
+        "Cakes",
+        "Clothes"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Hai người bạn đang nói chuyện với nhau. Họ đều đã mua thứ gì?",
+      "optionsVi": [
+        "Trà",
+        "Bánh ngọt",
+        "Quần áo"
+      ],
+      "explanation": "Đáp án đúng: C. Clothes\n• Dịch câu hỏi: Hai người bạn đang nói chuyện với nhau. Họ đều đã mua thứ gì?\n• Dịch các đáp án:\n  - A. Tea ➔ Trà\n  - B. Cakes ➔ Bánh ngọt\n  - C. Clothes ➔ Quần áo",
+      "part": "Phần 3 (Câu 101 - 188)"
+    },
+    {
+      "num": 188,
+      "id": "579204721",
+      "setIndex": 3,
+      "question": "What does this family do most weekends?",
+      "options": [
+        "Go cycling",
+        "Go picnic",
+        "Go for a walk"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Gia đình này làm gì vào hầu hết các ngày cuối tuần?",
+      "optionsVi": [
+        "Đi xe đạp",
+        "Đi dã ngoại",
+        "Đi dạo"
+      ],
+      "explanation": "Đáp án đúng: A. Go cycling\n• Dịch câu hỏi: Gia đình này làm gì vào hầu hết các ngày cuối tuần?\n• Dịch các đáp án:\n  - A. Go cycling ➔ Đi xe đạp\n  - B. Go picnic ➔ Đi dã ngoại\n  - C. Go for a walk ➔ Đi dạo",
+      "part": "Phần 3 (Câu 101 - 188)"
+    }
+  ]
+}
