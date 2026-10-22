@@ -115,8 +115,8 @@
             "Cả hai đều nhắc đến nhau trong tác phẩm của mình"
           ],
           "correct": 0,
-          "keyHighlight": "have something to say about modern society",
-          "keyHighlightVi": "có điều gì đó để nói về xã hội hiện đại"
+          "keyHighlight": "modern society",
+          "keyHighlightVi": "xã hội hiện đại"
         },
         {
           "id": "p4-p3-q2",
@@ -133,8 +133,8 @@
             "Ý nghĩa của tác phẩm của họ không phải lúc nào cũng dễ nhận diện"
           ],
           "correct": 2,
-          "keyHighlight": "meaning of their work is not always easily identified",
-          "keyHighlightVi": "ý nghĩa của tác phẩm... không phải lúc nào cũng dễ nhận diện"
+          "keyHighlight": "not always easily identified",
+          "keyHighlightVi": "dễ nhận diện"
         }
       ]
     },
@@ -207,8 +207,8 @@
             "Các nhân vật rất thú vị"
           ],
           "correct": 2,
-          "keyHighlight": "characters were interesting",
-          "keyHighlightVi": "nhân vật rất thú vị"
+          "keyHighlight": "interesting",
+          "keyHighlightVi": "thú vị"
         },
         {
           "id": "p4-p5-q2",
@@ -225,8 +225,8 @@
             "Nó khó có thể thu hút độc giả quốc tế"
           ],
           "correct": 1,
-          "keyHighlight": "establish the author's popularity",
-          "keyHighlightVi": "tạo dựng sự nổi tiếng cho tác giả"
+          "keyHighlight": "popularity",
+          "keyHighlightVi": "sự nổi tiếng"
         }
       ]
     },
@@ -253,8 +253,8 @@
             "Tìm kiếm một công việc ổn định sau khi tốt nghiệp thường rất khó khăn"
           ],
           "correct": 0,
-          "keyHighlight": "How to be more independent",
-          "keyHighlightVi": "trở nên độc lập hơn"
+          "keyHighlight": "independent",
+          "keyHighlightVi": "độc lập"
         },
         {
           "id": "p4-p6-q2",
@@ -271,8 +271,8 @@
             "Anh ấy chưa sẵn sàng bắt đầu bậc học cao hơn"
           ],
           "correct": 2,
-          "keyHighlight": "not ready to start higher education",
-          "keyHighlightVi": "chưa sẵn sàng bắt đầu bậc học cao hơn"
+          "keyHighlight": "not ready",
+          "keyHighlightVi": "chưa sẵn sàng"
         }
       ]
     },
@@ -483,8 +483,8 @@
             "Nó quá tốn kém để thực hiện kế hoạch"
           ],
           "correct": 0,
-          "keyHighlight": "doesn't provide enough alternatives to driving",
-          "keyHighlightVi": "không cung cấp đủ phương án thay thế cho việc lái xe"
+          "keyHighlight": "alternatives to driving",
+          "keyHighlightVi": "thay thế cho việc lái xe"
         },
         {
           "id": "p4-p11-q2",
@@ -501,8 +501,8 @@
             "Nó có thể gặp khó khăn trong việc xin phê duyệt của chính phủ"
           ],
           "correct": 0,
-          "keyHighlight": "meet resistance from local communities",
-          "keyHighlightVi": "gặp phải sự phản đối từ cộng đồng địa phương"
+          "keyHighlight": "resistance",
+          "keyHighlightVi": "sự phản đối"
         }
       ]
     },
@@ -529,8 +529,8 @@
             "Họ sử dụng các tuyên bố phóng đại thổi phồng"
           ],
           "correct": 2,
-          "keyHighlight": "use exaggerated claims",
-          "keyHighlightVi": "tuyên bố phóng đại thổi phồng"
+          "keyHighlight": "exaggerated claims",
+          "keyHighlightVi": "phóng đại"
         },
         {
           "id": "p4-p12-q2",
@@ -547,8 +547,8 @@
             "Nó quá giống với nhiều sản phẩm hiện có"
           ],
           "correct": 2,
-          "keyHighlight": "too similar to many existing products",
-          "keyHighlightVi": "quá giống với nhiều sản phẩm hiện có"
+          "keyHighlight": "too similar",
+          "keyHighlightVi": "quá giống"
         }
       ]
     },
@@ -759,8 +759,8 @@
             "Nó làm tăng giá sản phẩm"
           ],
           "correct": 1,
-          "keyHighlight": "reach new customers",
-          "keyHighlightVi": "tiếp cận khách hàng mới"
+          "keyHighlight": "new customers",
+          "keyHighlightVi": "khách hàng mới"
         },
         {
           "id": "p4-p17-q2",
@@ -777,8 +777,8 @@
             "Chúng không phải lúc nào cũng tốt cho người hâm mộ"
           ],
           "correct": 2,
-          "keyHighlight": "not always good for fans",
-          "keyHighlightVi": "không phải lúc nào cũng tốt cho người hâm mộ"
+          "keyHighlight": "fans",
+          "keyHighlightVi": "người hâm mộ"
         }
       ]
     },
@@ -851,8 +851,8 @@
             "Chỉ sử dụng tiền mặt thay vì quẹt thẻ"
           ],
           "correct": 1,
-          "keyHighlight": "Organize their resources more effectively",
-          "keyHighlightVi": "tổ chức các nguồn lực hiệu quả hơn"
+          "keyHighlight": "resources",
+          "keyHighlightVi": "nguồn lực"
         },
         {
           "id": "p4-p19-q2",
@@ -869,8 +869,8 @@
             "Tránh nói chuyện về tiền bạc với bạn bè"
           ],
           "correct": 0,
-          "keyHighlight": "Seek advice from someone who is experienced",
-          "keyHighlightVi": "tìm kiếm lời khuyên từ người có kinh nghiệm"
+          "keyHighlight": "experienced",
+          "keyHighlightVi": "có kinh nghiệm"
         }
       ]
     },
@@ -897,8 +897,8 @@
             "Bối cảnh không gian cảm giác quá không thực tế"
           ],
           "correct": 0,
-          "keyHighlight": "dialogues seem unrealistic",
-          "keyHighlightVi": "lời thoại có vẻ phi thực tế"
+          "keyHighlight": "unrealistic",
+          "keyHighlightVi": "phi thực tế"
         },
         {
           "id": "p4-p20-q2",
@@ -915,8 +915,8 @@
             "Những đòi hỏi mới của ngành đang ảnh hưởng tiêu cực đến việc sản xuất kịch bản"
           ],
           "correct": 2,
-          "keyHighlight": "negatively influencing script production",
-          "keyHighlightVi": "ảnh hưởng tiêu cực đến sản xuất kịch bản"
+          "keyHighlight": "negatively",
+          "keyHighlightVi": "tiêu cực"
         }
       ]
     },
@@ -989,8 +989,8 @@
             "Chi phí quảng cáo tương đương với chi phí sản xuất một bộ phim"
           ],
           "correct": 1,
-          "keyHighlight": "damaged by overexposure",
-          "keyHighlightVi": "bị tổn hại do xuất hiện quá mức"
+          "keyHighlight": "overexposure",
+          "keyHighlightVi": "xuất hiện quá nhiều"
         },
         {
           "id": "p4-p22-q2",
@@ -1007,8 +1007,8 @@
             "Chúng mang lại sự chú ý cho khán giả ngay từ đầu"
           ],
           "correct": 2,
-          "keyHighlight": "attention to the audience from beginning",
-          "keyHighlightVi": "thu hút sự chú ý của khán giả ngay từ đầu"
+          "keyHighlight": "attention",
+          "keyHighlightVi": "sự chú ý"
         }
       ]
     },
@@ -1035,8 +1035,8 @@
             "Nó cho phép bạn trở nên linh hoạt hơn"
           ],
           "correct": 2,
-          "keyHighlight": "allows you to be more flexible",
-          "keyHighlightVi": "trở nên linh hoạt hơn"
+          "keyHighlight": "flexible",
+          "keyHighlightVi": "linh hoạt"
         },
         {
           "id": "p4-p23-q2",
@@ -1053,8 +1053,8 @@
             "Nó đảm bảo thành công ngay lập tức"
           ],
           "correct": 0,
-          "keyHighlight": "set yourself certain limits",
-          "keyHighlightVi": "đặt ra những giới hạn nhất định"
+          "keyHighlight": "limits",
+          "keyHighlightVi": "giới hạn"
         }
       ]
     },
@@ -1081,8 +1081,8 @@
             "Nó tuyệt vời và đáng nhớ"
           ],
           "correct": 0,
-          "keyHighlight": "difficult to relate to",
-          "keyHighlightVi": "khó có thể đồng cảm được"
+          "keyHighlight": "relate to",
+          "keyHighlightVi": "đồng cảm"
         },
         {
           "id": "p4-p24-q2",
@@ -1127,8 +1127,8 @@
             "Rất khó để thành công trong ngành này"
           ],
           "correct": 1,
-          "keyHighlight": "very similar to the author's other books",
-          "keyHighlightVi": "rất giống với các cuốn sách khác của tác giả"
+          "keyHighlight": "similar",
+          "keyHighlightVi": "rất giống"
         },
         {
           "id": "p4-p25-q2",
@@ -1145,8 +1145,8 @@
             "Cuốn sách này rất đáng được đề xuất"
           ],
           "correct": 0,
-          "keyHighlight": "plot was very strong",
-          "keyHighlightVi": "cốt truyện rất mạnh mẽ"
+          "keyHighlight": "plot",
+          "keyHighlightVi": "cốt truyện"
         }
       ]
     },
@@ -1173,8 +1173,8 @@
             "Người sáng tạo không quảng bá chương trình của họ"
           ],
           "correct": 2,
-          "keyHighlight": "do not promote their shows",
-          "keyHighlightVi": "không quảng bá chương trình của họ"
+          "keyHighlight": "not promote",
+          "keyHighlightVi": "không quảng bá"
         },
         {
           "id": "p4-p26-q2",
@@ -1191,8 +1191,8 @@
             "Đó là một cách tuyệt vời để xây dựng một cộng đồng"
           ],
           "correct": 2,
-          "keyHighlight": "great way to build a community",
-          "keyHighlightVi": "xây dựng một cộng đồng"
+          "keyHighlight": "community",
+          "keyHighlightVi": "cộng đồng"
         }
       ]
     },
@@ -1219,8 +1219,8 @@
             "Chia nhỏ mục tiêu thành các bước"
           ],
           "correct": 1,
-          "keyHighlight": "Effective time management",
-          "keyHighlightVi": "quản lý thời gian hiệu quả"
+          "keyHighlight": "time management",
+          "keyHighlightVi": "quản lý thời gian"
         },
         {
           "id": "p4-p27-q2",
@@ -1237,8 +1237,8 @@
             "Sử dụng chúng hiệu quả đòi hỏi sự nỗ lực"
           ],
           "correct": 2,
-          "keyHighlight": "effectively require effort",
-          "keyHighlightVi": "đòi hỏi sự nỗ lực"
+          "keyHighlight": "effort",
+          "keyHighlightVi": "nỗ lực"
         }
       ]
     },
@@ -1265,8 +1265,8 @@
             "Nó chứa đựng một mô tả được viết tốt về một giai đoạn nhất định"
           ],
           "correct": 1,
-          "keyHighlight": "good description of a specific period of time",
-          "keyHighlightVi": "mô tả tốt về một khoảng thời gian cụ thể"
+          "keyHighlight": "description",
+          "keyHighlightVi": "mô tả"
         },
         {
           "id": "p4-p28-q2",
@@ -1283,8 +1283,8 @@
             "Nó cần nhiều hơn là chỉ những sự thật và số liệu"
           ],
           "correct": 0,
-          "keyHighlight": "unconventional biography",
-          "keyHighlightVi": "tiểu sử phá cách, phi truyền thống"
+          "keyHighlight": "unconventional",
+          "keyHighlightVi": "phá cách"
         }
       ]
     },
@@ -1311,8 +1311,8 @@
             "Duy trì sự hiện diện đều đặn trên mạng xã hội"
           ],
           "correct": 1,
-          "keyHighlight": "Belief in her musical instincts",
-          "keyHighlightVi": "niềm tin vào bản năng âm nhạc"
+          "keyHighlight": "instincts",
+          "keyHighlightVi": "bản năng"
         },
         {
           "id": "p4-p29-q2",
@@ -1329,7 +1329,7 @@
             "Tận dụng nền tảng số để tiếp cận lượng khán giả rộng lớn hơn"
           ],
           "correct": 0,
-          "keyHighlight": "find it hard to get started",
+          "keyHighlight": "hard to get started",
           "keyHighlightVi": "khó khăn khi mới bắt đầu"
         }
       ]
@@ -1357,8 +1357,8 @@
             "Các bức tranh của Panos có thể so sánh được với của một nghệ sĩ khác"
           ],
           "correct": 1,
-          "keyHighlight": "similar to those of another artist",
-          "keyHighlightVi": "tương tự như tranh của một nghệ sĩ khác"
+          "keyHighlight": "similar",
+          "keyHighlightVi": "tương tự"
         },
         {
           "id": "p4-p30-q2",
