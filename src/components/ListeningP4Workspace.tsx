@@ -11,7 +11,9 @@ import {
   Shuffle,
   ChevronLeft,
   ChevronRight,
-  Highlighter
+  Highlighter,
+  Dices,
+  ArrowRight
 } from 'lucide-react';
 import type { P4PairItem } from '../types/listeningP4';
 import p4PairsData from '../data/aptis_listening_part4_pairs.json';
@@ -136,6 +138,28 @@ export const ListeningP4Workspace: React.FC = () => {
       setIsShuffled(false);
     }
     setActivePairIndex(0);
+  };
+
+  // Jump to a random pair
+  const handleRandomJump = () => {
+    stopSpeaking();
+    if (pairsList.length <= 1) return;
+    let nextIdx = Math.floor(Math.random() * pairsList.length);
+    if (nextIdx === activePairIndex) {
+      nextIdx = (nextIdx + 1) % pairsList.length;
+    }
+    setActivePairIndex(nextIdx);
+  };
+
+  // Go to next pair (wrap around if needed or advance)
+  const handleNextPair = () => {
+    stopSpeaking();
+    setActivePairIndex(prev => (prev < pairsList.length - 1 ? prev + 1 : 0));
+  };
+
+  const handlePrevPair = () => {
+    stopSpeaking();
+    setActivePairIndex(prev => (prev > 0 ? prev - 1 : pairsList.length - 1));
   };
 
   const handleSelectOption = (qId: string, optIdx: number) => {
@@ -383,19 +407,41 @@ export const ListeningP4Workspace: React.FC = () => {
       {mode === 'practice' && currentPair && (
         <div className="space-y-6">
           
-          {/* Pair Pagination Bar */}
-          <div className="flex items-center justify-between bg-white dark:bg-slate-900 p-3 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm text-xs">
-            <button
-              onClick={() => setActivePairIndex(prev => Math.max(0, prev - 1))}
-              disabled={activePairIndex === 0}
-              className="flex items-center space-x-1 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 disabled:opacity-40 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold transition"
-            >
-              <ChevronLeft className="w-4 h-4" />
-              <span>Cặp trước</span>
-            </button>
+          {/* Top Navigation & Quick Switch Bar */}
+          <div className="bg-white dark:bg-slate-900 p-3 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm text-xs space-y-3">
+            <div className="flex items-center justify-between gap-2">
+              <button
+                onClick={handlePrevPair}
+                className="flex items-center space-x-1 px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold transition shrink-0"
+                title="Quay lại câu/cặp trước (vòng lặp)"
+              >
+                <ChevronLeft className="w-4 h-4" />
+                <span>Trước</span>
+              </button>
+
+              <div className="flex items-center space-x-2">
+                <button
+                  onClick={handleRandomJump}
+                  className="flex items-center space-x-1.5 px-3 py-2 rounded-xl bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-800 text-purple-700 dark:text-purple-300 font-bold hover:bg-purple-100 dark:hover:bg-purple-900/60 transition shadow-sm"
+                  title="Nhảy ngẫu nhiên sang một cặp câu khác"
+                >
+                  <Dices className="w-4 h-4 text-purple-600 dark:text-purple-400 animate-pulse" />
+                  <span>Ngẫu nhiên</span>
+                </button>
+
+                <button
+                  onClick={handleNextPair}
+                  className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition shadow-sm shrink-0"
+                  title="Chuyển tiếp sang cặp câu tiếp theo"
+                >
+                  <span>Chuyển tiếp</span>
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
 
             {/* Quick pair numbers scroll */}
-            <div className="flex items-center space-x-1.5 overflow-x-auto px-2 max-w-[50%] no-scrollbar">
+            <div className="flex items-center space-x-1.5 overflow-x-auto pt-1 pb-1 px-1 no-scrollbar border-t border-slate-100 dark:border-slate-800/80">
               {pairsList.map((p, idx) => {
                 const q1Answered = userAnswers[p.questions[0].id] !== undefined;
                 const q2Answered = userAnswers[p.questions[1].id] !== undefined;
@@ -408,10 +454,13 @@ export const ListeningP4Workspace: React.FC = () => {
                 return (
                   <button
                     key={p.id}
-                    onClick={() => setActivePairIndex(idx)}
+                    onClick={() => {
+                      stopSpeaking();
+                      setActivePairIndex(idx);
+                    }}
                     className={`w-7 h-7 rounded-lg font-bold text-[11px] shrink-0 transition flex items-center justify-center ${
                       isActive
-                        ? 'bg-blue-600 text-white shadow-sm'
+                        ? 'bg-blue-600 text-white shadow-sm ring-2 ring-blue-400 ring-offset-1 dark:ring-offset-slate-900'
                         : bothCorrect
                         ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 border border-emerald-300'
                         : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200'
@@ -422,15 +471,6 @@ export const ListeningP4Workspace: React.FC = () => {
                 );
               })}
             </div>
-
-            <button
-              onClick={() => setActivePairIndex(prev => Math.min(pairsList.length - 1, prev + 1))}
-              disabled={activePairIndex === pairsList.length - 1}
-              className="flex items-center space-x-1 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 disabled:opacity-40 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold transition"
-            >
-              <span>Cặp tiếp</span>
-              <ChevronRight className="w-4 h-4" />
-            </button>
           </div>
 
           {/* Render Active Pair Card */}
@@ -445,6 +485,35 @@ export const ListeningP4Workspace: React.FC = () => {
             mode="practice"
             renderHighlightedText={renderHighlightedText}
           />
+
+          {/* Bottom Navigation & Quick Switch Bar */}
+          <div className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+            <button
+              onClick={handlePrevPair}
+              className="w-full sm:w-auto flex items-center justify-center space-x-1.5 px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold transition"
+            >
+              <ChevronLeft className="w-4 h-4" />
+              <span>Cặp trước (Câu {activePairIndex === 0 ? pairsList.length : activePairIndex})</span>
+            </button>
+
+            <div className="flex items-center space-x-3 w-full sm:w-auto">
+              <button
+                onClick={handleRandomJump}
+                className="flex-1 sm:flex-none flex items-center justify-center space-x-1.5 px-4 py-2.5 rounded-xl bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-800 text-purple-700 dark:text-purple-300 font-bold hover:bg-purple-100 dark:hover:bg-purple-900/60 transition shadow-sm"
+              >
+                <Dices className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                <span>Ngẫu nhiên</span>
+              </button>
+
+              <button
+                onClick={handleNextPair}
+                className="flex-1 sm:flex-none flex items-center justify-center space-x-1.5 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition shadow-md shadow-emerald-600/20"
+              >
+                <span>Chuyển tiếp</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
 
         </div>
       )}
