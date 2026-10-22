@@ -1,0 +1,188 @@
+{
+  "pairs": [
+    {
+      "id": "p4-pair-1",
+      "pairIndex": 1,
+      "audioPrompt": "Listen to an expert talk about sports competitions and physical activities in schools, then answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Thể thao có cả tác động tiêu cực và cung cấp cân bằng",
+      "explanationVi": "Dịch:\n1/ Chúng có tác động tiêu cực\n2/ Mang lại cho họ sự cân bằng trong cuộc sống\nMẹo: Thể thao có cả tác động tiêu cực và cung cấp cân bằng",
+      "questions": [
+        {
+          "id": "p4-p1-q1",
+          "question": "What is the expert's opinion about sports competitions?",
+          "questionVi": "Ý kiến của chuyên gia về các cuộc thi đấu thể thao là gì?",
+          "options": [
+            "They have a harmful effect",
+            "Nature potential sportsmen for the country.",
+            "Provide school with external investments"
+          ],
+          "optionsVi": [
+            "Chúng có tác động tiêu cực / có hại",
+            "Nuôi dưỡng vận động viên tiềm năng cho đất nước",
+            "Cung cấp cho trường học các khoản đầu tư bên ngoài"
+          ],
+          "correct": 0,
+          "keyHighlight": "harmful effect",
+          "keyHighlightVi": "tiêu cực / có hại"
+        },
+        {
+          "id": "p4-p1-q2",
+          "question": "What is the expert's advice for schools?",
+          "questionVi": "Lời khuyên của chuyên gia dành cho các trường học là gì?",
+          "options": [
+            "Provides them with a balance in their lives.",
+            "Should consider sports as a mandatory subject.",
+            "Keep students focus on academic subjects"
+          ],
+          "optionsVi": [
+            "Mang lại cho họ sự cân bằng trong cuộc sống",
+            "Nên coi thể thao là môn học bắt buộc",
+            "Giữ học sinh tập trung vào các môn học thuật"
+          ],
+          "correct": 0,
+          "keyHighlight": "balance in their lives",
+          "keyHighlightVi": "cân bằng"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-2",
+      "pairIndex": 2,
+      "audioPrompt": "Listen to an announcer talking about a writer and his new novel, then answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Tiểu thuyết mới: khá khác tác phẩm trước & nên lắng nghe các nhà phê bình",
+      "explanationVi": "Dịch:\nĐáp án:\n1. Nó khá khác so với những tác phẩm trước đây của anh ấy.\n2. Anh ấy nên lắng nghe các nhà phê bình trước khi viết tác phẩm tiếp theo.",
+      "questions": [
+        {
+          "id": "p4-p2-q1",
+          "question": "What does the announcer say about the new novel?",
+          "questionVi": "Người thông báo nói gì về cuốn tiểu thuyết mới?",
+          "options": [
+            "It is quite different compared to his earlier works",
+            "It is less famous than his earlier work",
+            "It is romantic and soft"
+          ],
+          "optionsVi": [
+            "Nó khá khác so với những tác phẩm trước đây của anh ấy",
+            "Nó ít nổi tiếng hơn tác phẩm trước",
+            "Nó lãng mạn và nhẹ nhàng"
+          ],
+          "correct": 0,
+          "keyHighlight": "quite different compared to his earlier works",
+          "keyHighlightVi": "khá khác so với những tác phẩm trước đây"
+        },
+        {
+          "id": "p4-p2-q2",
+          "question": "What does the announcer say the writer should do in the future?",
+          "questionVi": "Người thông báo nói nhà văn nên làm gì trong tương lai?",
+          "options": [
+            "The writer should go back to his original genre",
+            "The writer should continue to write this genre",
+            "He should listen to critics before writing his next work"
+          ],
+          "optionsVi": [
+            "Nhà văn nên quay trở lại thể loại ban đầu của mình",
+            "Nhà văn nên tiếp tục viết thể loại này",
+            "Anh ấy nên lắng nghe các nhà phê bình trước khi viết tác phẩm tiếp theo"
+          ],
+          "correct": 2,
+          "keyHighlight": "listen to critics before writing his next work",
+          "keyHighlightVi": "nên lắng nghe các nhà phê bình"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-3",
+      "pairIndex": 3,
+      "audioPrompt": "Listen to a reporter talk about Two big writers of history, which are Shakespeares William and Louis Michael. and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "2 tác giả lớn: nói về xã hội hiện đại & ý nghĩa không phải lúc nào cũng dễ nhận diện",
+      "explanationVi": "Dịch:\nĐáp án:\n1. Cả hai đều có điều gì đó để nói về xã hội hiện đại\n2. Ý nghĩa của các tác phẩm của họ không phải lúc nào cũng dễ nhận diện",
+      "questions": [
+        {
+          "id": "p4-p3-q1",
+          "question": "What was the lecturer's opinion about both authors' past work?",
+          "questionVi": "Ý kiến của giảng viên về tác phẩm quá khứ của cả hai tác giả là gì?",
+          "options": [
+            "They both have something to say about modern society",
+            "They have both been overlooked by academics",
+            "They both makes references to each other in their work"
+          ],
+          "optionsVi": [
+            "Cả hai đều có điều gì đó để nói về xã hội hiện đại",
+            "Cả hai đều bị các nhà học thuật bỏ qua",
+            "Cả hai đều nhắc đến nhau trong tác phẩm của mình"
+          ],
+          "correct": 0,
+          "keyHighlight": "have something to say about modern society",
+          "keyHighlightVi": "có điều gì đó để nói về xã hội hiện đại"
+        },
+        {
+          "id": "p4-p3-q2",
+          "question": "What did the lecturer say about both authors?",
+          "questionVi": "Giảng viên đã nói gì về cả hai tác giả?",
+          "options": [
+            "They should have been more popular.",
+            "Their reputation goes beyond their target audience.",
+            "The meaning of their work is not always easily identified"
+          ],
+          "optionsVi": [
+            "Họ đáng lẽ phải nổi tiếng hơn",
+            "Danh tiếng của họ vượt ra ngoài đối tượng độc giả mục tiêu",
+            "Ý nghĩa của tác phẩm của họ không phải lúc nào cũng dễ nhận diện"
+          ],
+          "correct": 2,
+          "keyHighlight": "meaning of their work is not always easily identified",
+          "keyHighlightVi": "ý nghĩa... không phải lúc nào cũng dễ nhận diện"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-4",
+      "pairIndex": 4,
+      "audioPrompt": "Listen to a talk about a musician and his singing career, then answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Nhạc sĩ: nghỉ hưu không ca hát nữa & có thể đã thành công hơn",
+      "explanationVi": "Dịch:\nĐáp án:\n1. Anh ấy sẽ nghỉ hưu và không còn ca hát chuyên nghiệp nữa.\n2. Anh ấy có thể đã thành công hơn",
+      "questions": [
+        {
+          "id": "p4-p4-q1",
+          "question": "What has the musician decided regarding his singing career?",
+          "questionVi": "Người nhạc sĩ đã quyết định điều gì liên quan đến sự nghiệp ca hát của mình?",
+          "options": [
+            "He will inform fans about new albums",
+            "He will retire from singing professionally",
+            "He will make a comeback after a long break"
+          ],
+          "optionsVi": [
+            "Anh ấy sẽ thông báo cho người hâm mộ về các album mới",
+            "Anh ấy sẽ nghỉ hưu và không còn ca hát chuyên nghiệp nữa",
+            "Anh ấy sẽ trở lại sau một kỳ nghỉ dài"
+          ],
+          "correct": 1,
+          "keyHighlight": "retire from singing professionally",
+          "keyHighlightVi": "nghỉ hưu và không còn ca hát chuyên nghiệp"
+        },
+        {
+          "id": "p4-p4-q2",
+          "question": "What could the musician have achieved with his recent albums?",
+          "questionVi": "Người nhạc sĩ có thể đã đạt được điều gì với các album gần đây của mình?",
+          "options": [
+            "He could have gotten a bigger fan base",
+            "He could have inspired future generations in general.",
+            "He could have been more successful"
+          ],
+          "optionsVi": [
+            "Anh ấy có thể đã có lượng fan lớn hơn",
+            "Anh ấy có thể đã truyền cảm hứng cho các thế hệ tương lai nói chung",
+            "Anh ấy có thể đã thành công hơn"
+          ],
+          "correct": 2,
+          "keyHighlight": "could have been more successful",
+          "keyHighlightVi": "có thể đã thành công hơn"
+        }
+      ]
+    }
+  ]
+}

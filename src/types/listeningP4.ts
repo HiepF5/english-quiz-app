@@ -1,40 +1,32 @@
-export interface P4Question {
+export interface P4SubQuestion {
   id: string;
   question: string;
   questionVi?: string;
   options: string[];
   optionsVi?: string[];
-  correct: number; // 0-indexed: 0, 1, 2
-  explanation: string;
-  keywordClue?: string;
+  correct: number; // 0, 1, 2
+  keyHighlight?: string; // key nhớ tiếng Anh cần to đậm
+  keyHighlightVi?: string; // key nhớ tiếng Việt cần to đậm
 }
 
-export interface P4Speaker {
-  speakerId: number;
-  speakerName: string;
-  speakerGender: 'man' | 'woman';
-  topicStance?: string;
-  scriptEn: string;
-  scriptVi?: string;
-  audioUrl?: string;
-  questions: P4Question[];
-}
-
-export interface ListeningP4Topic {
+export interface P4PairItem {
   id: string;
-  title: string;
-  titleVi: string;
-  category: string;
+  pairIndex: number;
+  instruction?: string;
+  audioPrompt?: string;
   audioUrl?: string;
-  speakers: P4Speaker[];
+  // Gợi ý / Mẹo nhớ 2 key
+  tipMnemonic?: string;
+  // Lời giải thích / Transcript
+  explanationEn?: string;
+  explanationVi?: string;
+  questions: [P4SubQuestion, P4SubQuestion];
 }
 
 export interface ListeningP4ScoreRecord {
-  topicId: string;
-  topicTitle: string;
   score: number;
   total: number;
   percentage: number;
   completedAt: string;
+  mode: 'practice' | 'exam';
 }
-
