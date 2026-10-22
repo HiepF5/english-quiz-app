@@ -64,13 +64,13 @@
             "It is romantic and soft"
           ],
           "optionsVi": [
-            "Nó khá khác so với những tác phẩm trước đây của anh ấy",
+            "Nó khá khác biệt so với những tác phẩm trước đây của anh ấy",
             "Nó ít nổi tiếng hơn tác phẩm trước",
             "Nó lãng mạn và nhẹ nhàng"
           ],
           "correct": 0,
           "keyHighlight": "quite different compared to his earlier works",
-          "keyHighlightVi": "khá khác so với những tác phẩm trước đây"
+          "keyHighlightVi": "khác biệt"
         },
         {
           "id": "p4-p2-q2",
@@ -88,7 +88,7 @@
           ],
           "correct": 2,
           "keyHighlight": "listen to critics before writing his next work",
-          "keyHighlightVi": "nên lắng nghe các nhà phê bình"
+          "keyHighlightVi": "lắng nghe"
         }
       ]
     },
@@ -162,7 +162,7 @@
           ],
           "correct": 1,
           "keyHighlight": "retire from singing professionally",
-          "keyHighlightVi": "nghỉ hưu và không còn ca hát chuyên nghiệp"
+          "keyHighlightVi": "nghỉ hưu"
         },
         {
           "id": "p4-p4-q2",
@@ -180,7 +180,7 @@
           ],
           "correct": 2,
           "keyHighlight": "could have been more successful",
-          "keyHighlightVi": "có thể đã thành công hơn"
+          "keyHighlightVi": "thành công"
         }
       ]
     },
@@ -300,7 +300,7 @@
           ],
           "correct": 2,
           "keyHighlight": "Blocking noise and light is the key",
-          "keyHighlightVi": "ngăn tiếng ồn và ánh sáng"
+          "keyHighlightVi": "tiếng ồn"
         },
         {
           "id": "p4-p7-q2",
@@ -318,7 +318,7 @@
           ],
           "correct": 2,
           "keyHighlight": "media overemphasize the subject",
-          "keyHighlightVi": "truyền thông phóng đại quá mức"
+          "keyHighlightVi": "truyền thông"
         }
       ]
     },
@@ -346,7 +346,7 @@
           ],
           "correct": 2,
           "keyHighlight": "very exciting to read",
-          "keyHighlightVi": "rất hấp dẫn khi đọc"
+          "keyHighlightVi": "hấp dẫn"
         },
         {
           "id": "p4-p8-q2",
@@ -364,7 +364,7 @@
           ],
           "correct": 0,
           "keyHighlight": "written for a general audience",
-          "keyHighlightVi": "được viết dành cho độc giả nói chung"
+          "keyHighlightVi": "độc giả nói chung"
         }
       ]
     },
@@ -392,7 +392,7 @@
           ],
           "correct": 1,
           "keyHighlight": "wasn't as good as she expected",
-          "keyHighlightVi": "không tốt như cô ấy đã kỳ vọng"
+          "keyHighlightVi": "kỳ vọng"
         },
         {
           "id": "p4-p9-q2",
@@ -410,7 +410,7 @@
           ],
           "correct": 0,
           "keyHighlight": "depends on your situation and personality",
-          "keyHighlightVi": "phụ thuộc vào hoàn cảnh và tính cách của bạn"
+          "keyHighlightVi": "hoàn cảnh"
         }
       ]
     },
@@ -456,7 +456,7 @@
           ],
           "correct": 0,
           "keyHighlight": "becoming more competitive",
-          "keyHighlightVi": "trở nên cạnh tranh hơn"
+          "keyHighlightVi": "cạnh tranh hơn"
         }
       ]
     },
@@ -576,7 +576,7 @@
           ],
           "correct": 1,
           "keyHighlight": "not been accurately reported by the media",
-          "keyHighlightVi": "không được truyền thông đưa tin chính xác"
+          "keyHighlightVi": "chính xác"
         },
         {
           "id": "p4-p13-q2",
@@ -594,7 +594,7 @@
           ],
           "correct": 0,
           "keyHighlight": "unlikely to find a conclusive answer",
-          "keyHighlightVi": "khó có khả năng tìm ra câu trả lời chắc chắn"
+          "keyHighlightVi": "câu trả lời"
         }
       ]
     },
@@ -622,7 +622,7 @@
           ],
           "correct": 1,
           "keyHighlight": "Create dedicated periods for writing",
-          "keyHighlightVi": "khoảng thời gian riêng dành cho việc viết"
+          "keyHighlightVi": "khoảng thời gian riêng"
         },
         {
           "id": "p4-p14-q2",
@@ -640,7 +640,7 @@
           ],
           "correct": 0,
           "keyHighlight": "Refuse to seek advice from others",
-          "keyHighlightVi": "từ chối tìm kiếm lời khuyên từ người khác"
+          "keyHighlightVi": "tìm kiếm lời khuyên"
         }
       ]
     },
@@ -686,7 +686,7 @@
           ],
           "correct": 2,
           "keyHighlight": "definition of it is changing",
-          "keyHighlightVi": "đang thay đổi"
+          "keyHighlightVi": "thay đổi"
         }
       ]
     },
@@ -714,7 +714,7 @@
           ],
           "correct": 0,
           "keyHighlight": "unnecessarily worried about them",
-          "keyHighlightVi": "lo lắng không cần thiết"
+          "keyHighlightVi": "lo lắng"
         },
         {
           "id": "p4-p16-q2",
@@ -732,7 +732,7 @@
           ],
           "correct": 1,
           "keyHighlight": "feel reassured about their presence",
-          "keyHighlightVi": "yên tâm về sự hiện diện của chúng"
+          "keyHighlightVi": "sự hiện diện của chúng"
         }
       ]
     },
@@ -806,7 +806,7 @@
           ],
           "correct": 2,
           "keyHighlight": "creates an adventure",
-          "keyHighlightVi": "tạo ra một cuộc phiêu lưu"
+          "keyHighlightVi": "cuộc phiêu lưu"
         },
         {
           "id": "p4-pair-18-q2",
@@ -824,7 +824,7 @@
           ],
           "correct": 0,
           "keyHighlight": "suitable for particular generations",
-          "keyHighlightVi": "phù hợp với một số thế hệ nhất định"
+          "keyHighlightVi": "thế hệ"
         }
       ]
     },
@@ -944,7 +944,7 @@
           ],
           "correct": 0,
           "keyHighlight": "standard of service wasn't good",
-          "keyHighlightVi": "chất lượng phục vụ không tốt"
+          "keyHighlightVi": "phục vụ không tốt"
         },
         {
           "id": "p4-p21-q2",
@@ -962,7 +962,7 @@
           ],
           "correct": 2,
           "keyHighlight": "customers feel valued and welcome",
-          "keyHighlightVi": "khách hàng cảm thấy được coi trọng và chào đón"
+          "keyHighlightVi": "khách hàng cảm thấy được coi trọng"
         }
       ]
     },
