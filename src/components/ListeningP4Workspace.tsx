@@ -170,6 +170,28 @@ export const ListeningP4Workspace: React.FC = () => {
     }));
   };
 
+  // Reset current pair answers in practice mode
+  const handleResetCurrentPair = () => {
+    stopSpeaking();
+    setIsPlayingAudio(false);
+    setPlayingPairId(null);
+    if (!currentPair) return;
+    setUserAnswers(prev => {
+      const next = { ...prev };
+      delete next[currentPair.questions[0].id];
+      delete next[currentPair.questions[1].id];
+      return next;
+    });
+  };
+
+  // Reset all answers in practice mode
+  const handleResetAllPractice = () => {
+    stopSpeaking();
+    setIsPlayingAudio(false);
+    setPlayingPairId(null);
+    setUserAnswers({});
+  };
+
   // Play audio simulation
   const handlePlayAudio = (pair: P4PairItem) => {
     if (isPlayingAudio && playingPairId === pair.id) {
@@ -352,6 +374,31 @@ export const ListeningP4Workspace: React.FC = () => {
             >
               <span>{showVietnamese ? 'Dịch: BẬT' : 'Dịch: TẮT'}</span>
             </button>
+
+            {/* Practice mode reset buttons */}
+            {mode === 'practice' && (
+              <>
+                <button
+                  onClick={handleResetCurrentPair}
+                  className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-rose-50 hover:text-rose-600 dark:hover:bg-rose-950/40 dark:hover:text-rose-400 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 font-semibold transition"
+                  title="Làm lại câu này (xóa lựa chọn để chọn lại)"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" />
+                  <span>Làm lại câu này</span>
+                </button>
+
+                {Object.keys(userAnswers).length > 0 && (
+                  <button
+                    onClick={handleResetAllPractice}
+                    className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-rose-50 hover:text-rose-600 dark:hover:bg-rose-950/40 dark:hover:text-rose-400 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 font-semibold transition"
+                    title="Xóa toàn bộ câu đã chọn để làm lại từ đầu"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5" />
+                    <span>Làm lại tất cả</span>
+                  </button>
+                )}
+              </>
+            )}
           </div>
 
           {/* Right Status */}
@@ -484,6 +531,7 @@ export const ListeningP4Workspace: React.FC = () => {
             showVietnamese={showVietnamese}
             mode="practice"
             renderHighlightedText={renderHighlightedText}
+            onResetPair={handleResetCurrentPair}
           />
 
           {/* Bottom Navigation & Quick Switch Bar */}
@@ -496,10 +544,19 @@ export const ListeningP4Workspace: React.FC = () => {
               <span>Cặp trước (Câu {activePairIndex === 0 ? pairsList.length : activePairIndex})</span>
             </button>
 
-            <div className="flex items-center space-x-3 w-full sm:w-auto">
+            <div className="flex items-center space-x-2 w-full sm:w-auto">
+              <button
+                onClick={handleResetCurrentPair}
+                className="flex-1 sm:flex-none flex items-center justify-center space-x-1.5 px-3.5 py-2.5 rounded-xl bg-slate-100 hover:bg-rose-50 text-slate-700 hover:text-rose-600 dark:bg-slate-800 dark:hover:bg-rose-950/40 dark:text-slate-300 dark:hover:text-rose-400 border border-slate-200 dark:border-slate-700 font-semibold transition"
+                title="Xóa lựa chọn và làm lại câu này"
+              >
+                <RotateCcw className="w-4 h-4" />
+                <span>Làm lại</span>
+              </button>
+
               <button
                 onClick={handleRandomJump}
-                className="flex-1 sm:flex-none flex items-center justify-center space-x-1.5 px-4 py-2.5 rounded-xl bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-800 text-purple-700 dark:text-purple-300 font-bold hover:bg-purple-100 dark:hover:bg-purple-900/60 transition shadow-sm"
+                className="flex-1 sm:flex-none flex items-center justify-center space-x-1.5 px-3.5 py-2.5 rounded-xl bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-800 text-purple-700 dark:text-purple-300 font-bold hover:bg-purple-100 dark:hover:bg-purple-900/60 transition shadow-sm"
               >
                 <Dices className="w-4 h-4 text-purple-600 dark:text-purple-400" />
                 <span>Ngẫu nhiên</span>
@@ -507,7 +564,7 @@ export const ListeningP4Workspace: React.FC = () => {
 
               <button
                 onClick={handleNextPair}
-                className="flex-1 sm:flex-none flex items-center justify-center space-x-1.5 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition shadow-md shadow-emerald-600/20"
+                className="flex-1 sm:flex-none flex items-center justify-center space-x-1.5 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition shadow-md shadow-emerald-600/20"
               >
                 <span>Chuyển tiếp</span>
                 <ArrowRight className="w-4 h-4" />
@@ -568,6 +625,7 @@ interface PairCardProps {
   mode: 'practice' | 'exam';
   isExamSubmitted?: boolean;
   renderHighlightedText: (fullText: string, key?: string) => React.ReactNode;
+  onResetPair?: () => void;
 }
 
 const PairCard: React.FC<PairCardProps> = ({
@@ -580,7 +638,8 @@ const PairCard: React.FC<PairCardProps> = ({
   showVietnamese,
   mode,
   isExamSubmitted = false,
-  renderHighlightedText
+  renderHighlightedText,
+  onResetPair
 }) => {
   const [showExplanation, setShowExplanation] = useState<boolean>(false);
 
@@ -636,15 +695,28 @@ const PairCard: React.FC<PairCardProps> = ({
             </div>
           </div>
 
-          {/* Quick tip mnemonic button */}
-          {pair.tipMnemonic && (
-            <button
-              onClick={() => setShowExplanation(!showExplanation)}
-              className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline font-semibold shrink-0"
-            >
-              {showExplanation ? 'Ẩn mẹo nhớ' : '💡 Xem mẹo nhớ 2 key'}
-            </button>
-          )}
+          {/* Right actions: Reset pair & Quick tip mnemonic button */}
+          <div className="flex items-center space-x-2 shrink-0">
+            {mode === 'practice' && onResetPair && (isQ1Answered || isQ2Answered) && (
+              <button
+                onClick={onResetPair}
+                className="flex items-center space-x-1 px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-rose-50 text-slate-600 hover:text-rose-600 dark:bg-slate-800 dark:hover:bg-rose-950/40 dark:text-slate-300 dark:hover:text-rose-400 border border-slate-200 dark:border-slate-700 text-xs font-semibold transition"
+                title="Xóa lựa chọn và làm lại câu này"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>Làm lại</span>
+              </button>
+            )}
+
+            {pair.tipMnemonic && (
+              <button
+                onClick={() => setShowExplanation(!showExplanation)}
+                className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline font-semibold"
+              >
+                {showExplanation ? 'Ẩn mẹo nhớ' : '💡 Xem mẹo nhớ 2 key'}
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Audio Prompt text if present */}
@@ -848,6 +920,18 @@ const PairCard: React.FC<PairCardProps> = ({
             {pair.tipMnemonic && (
               <div className="pt-2 border-t border-slate-100 dark:border-slate-800 text-amber-700 dark:text-amber-300 font-semibold">
                 💡 <b>Mẹo:</b> {pair.tipMnemonic}
+              </div>
+            )}
+
+            {mode === 'practice' && onResetPair && (
+              <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex justify-end">
+                <button
+                  onClick={onResetPair}
+                  className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold transition text-xs"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" />
+                  <span>Làm lại câu này</span>
+                </button>
               </div>
             )}
           </div>
