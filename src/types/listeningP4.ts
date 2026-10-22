@@ -23,10 +23,12 @@ export interface P4PairItem {
   questions: [P4SubQuestion, P4SubQuestion];
 }
 
+export type ListeningP4Mode = 'practice' | 'exam' | 'quiz60';
+
 export interface ListeningP4ScoreRecord {
   score: number;
   total: number;
   percentage: number;
   completedAt: string;
-  mode: 'practice' | 'exam';
+  mode: ListeningP4Mode;
 }

@@ -15,18 +15,38 @@ import {
   Dices,
   ArrowRight
 } from 'lucide-react';
-import type { P4PairItem } from '../types/listeningP4';
+import type { P4PairItem, ListeningP4Mode } from '../types/listeningP4';
 import p4PairsData from '../data/aptis_listening_part4_pairs.json';
 import { speakSingleSentence, stopSpeaking } from '../utils/speech';
+
+export interface FlattenedP4Question {
+  globalIndex: number;
+  pairIndex: number;
+  pairId: string;
+  audioPrompt?: string;
+  instruction?: string;
+  tipMnemonic?: string;
+  explanationVi?: string;
+  question: {
+    id: string;
+    question: string;
+    questionVi?: string;
+    options: string[];
+    optionsVi?: string[];
+    correct: number;
+    keyHighlight?: string;
+    keyHighlightVi?: string;
+  };
+}
 
 export const ListeningP4Workspace: React.FC = () => {
   const initialPairs: P4PairItem[] = (p4PairsData as any).pairs || [];
 
-  // Mode: 'practice' (Luyện tập - có gợi ý, xem giải thích ngay) vs 'exam' (Thi đảo - làm hết nộp bài)
-  const [mode, setMode] = useState<'practice' | 'exam'>(() => {
+  // Mode: 'practice' (Luyện tập cặp câu) vs 'exam' (Thi đảo cặp câu) vs 'quiz60' (Trắc nghiệm 60 câu liên tục)
+  const [mode, setMode] = useState<ListeningP4Mode>(() => {
     try {
       const saved = localStorage.getItem('aptis_listening_p4_mode');
-      if (saved === 'practice' || saved === 'exam') return saved;
+      if (saved === 'practice' || saved === 'exam' || saved === 'quiz60') return saved as ListeningP4Mode;
     } catch {}
     return 'practice';
   });
@@ -75,10 +95,32 @@ export const ListeningP4Workspace: React.FC = () => {
   // Toggle translation
   const [showVietnamese, setShowVietnamese] = useState<boolean>(true);
 
+  // Flattened 60 questions from pairsList
+  const flattenedQuestions: FlattenedP4Question[] = useMemo(() => {
+    const list: FlattenedP4Question[] = [];
+    let count = 0;
+    pairsList.forEach(pair => {
+      pair.questions.forEach(q => {
+        count++;
+        list.push({
+          globalIndex: count,
+          pairIndex: pair.pairIndex,
+          pairId: pair.id,
+          audioPrompt: pair.audioPrompt,
+          instruction: pair.instruction,
+          tipMnemonic: pair.tipMnemonic,
+          explanationVi: pair.explanationVi,
+          question: q
+        });
+      });
+    });
+    return list;
+  }, [pairsList]);
+
   // Timer count
   useEffect(() => {
     let interval: any = null;
-    if (mode === 'exam' && !isExamSubmitted) {
+    if ((mode === 'exam' || mode === 'quiz60') && !isExamSubmitted) {
       interval = setInterval(() => {
         setSecondsElapsed(s => s + 1);
       }, 1000);
@@ -87,7 +129,7 @@ export const ListeningP4Workspace: React.FC = () => {
   }, [mode, isExamSubmitted]);
 
   // Handle mode change
-  const handleModeChange = (newMode: 'practice' | 'exam') => {
+  const handleModeChange = (newMode: ListeningP4Mode) => {
     stopSpeaking();
     setIsPlayingAudio(false);
     setPlayingPairId(null);
@@ -98,6 +140,10 @@ export const ListeningP4Workspace: React.FC = () => {
 
     if (newMode === 'exam') {
       startNewExam();
+    } else if (newMode === 'quiz60') {
+      setIsExamSubmitted(false);
+      setScoreResult(null);
+      setSecondsElapsed(0);
     } else {
       setPairsList(initialPairs);
       setIsExamSubmitted(false);
@@ -312,7 +358,7 @@ export const ListeningP4Workspace: React.FC = () => {
 
           {/* Mode Switcher Tabs */}
           <div className="flex items-center space-x-2">
-            <div className="bg-slate-100 dark:bg-slate-800 p-1 rounded-xl flex items-center text-xs">
+            <div className="bg-slate-100 dark:bg-slate-800 p-1 rounded-xl flex flex-wrap items-center gap-1 text-xs">
               <button
                 onClick={() => handleModeChange('practice')}
                 className={`px-3 py-1.5 rounded-lg font-semibold transition ${
@@ -332,6 +378,16 @@ export const ListeningP4Workspace: React.FC = () => {
                 }`}
               >
                 Chế độ Thi Đảo
+              </button>
+              <button
+                onClick={() => handleModeChange('quiz60')}
+                className={`px-3 py-1.5 rounded-lg font-bold transition flex items-center space-x-1 ${
+                  mode === 'quiz60'
+                    ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-sm'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                }`}
+              >
+                <span>Trắc nghiệm 60 câu</span>
               </button>
             </div>
           </div>
@@ -375,17 +431,19 @@ export const ListeningP4Workspace: React.FC = () => {
               <span>{showVietnamese ? 'Dịch: BẬT' : 'Dịch: TẮT'}</span>
             </button>
 
-            {/* Practice mode reset buttons */}
-            {mode === 'practice' && (
+            {/* Reset buttons */}
+            {(mode === 'practice' || mode === 'quiz60') && (
               <>
-                <button
-                  onClick={handleResetCurrentPair}
-                  className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-rose-50 hover:text-rose-600 dark:hover:bg-rose-950/40 dark:hover:text-rose-400 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 font-semibold transition"
-                  title="Làm lại câu này (xóa lựa chọn để chọn lại)"
-                >
-                  <RotateCcw className="w-3.5 h-3.5" />
-                  <span>Làm lại câu này</span>
-                </button>
+                {mode === 'practice' && (
+                  <button
+                    onClick={handleResetCurrentPair}
+                    className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-rose-50 hover:text-rose-600 dark:hover:bg-rose-950/40 dark:hover:text-rose-400 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 font-semibold transition"
+                    title="Làm lại câu này (xóa lựa chọn để chọn lại)"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5" />
+                    <span>Làm lại câu này</span>
+                  </button>
+                )}
 
                 {Object.keys(userAnswers).length > 0 && (
                   <button
@@ -403,7 +461,7 @@ export const ListeningP4Workspace: React.FC = () => {
 
           {/* Right Status */}
           <div className="flex items-center space-x-3 text-slate-500 dark:text-slate-400">
-            {mode === 'exam' && (
+            {(mode === 'exam' || mode === 'quiz60') && (
               <span className="flex items-center space-x-1 font-mono text-emerald-600 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-950/40 px-2 py-0.5 rounded-lg border border-emerald-200 dark:border-emerald-800">
                 <Clock className="w-3.5 h-3.5" />
                 <span>{formatTime(secondsElapsed)}</span>
@@ -412,6 +470,8 @@ export const ListeningP4Workspace: React.FC = () => {
             <span>
               {mode === 'practice'
                 ? `Cặp ${activePairIndex + 1} / ${pairsList.length}`
+                : mode === 'quiz60'
+                ? `Đã làm ${Object.keys(userAnswers).length} / ${flattenedQuestions.length} câu`
                 : `Tổng: ${pairsList.length} cặp (60 câu)`}
             </span>
           </div>
@@ -419,8 +479,8 @@ export const ListeningP4Workspace: React.FC = () => {
         </div>
       </div>
 
-      {/* Score Summary if Exam submitted */}
-      {mode === 'exam' && isExamSubmitted && scoreResult && (
+      {/* Score Summary if Exam or Quiz60 submitted */}
+      {(mode === 'exam' || mode === 'quiz60') && isExamSubmitted && scoreResult && (
         <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/40 dark:to-teal-950/40 border border-emerald-300 dark:border-emerald-700/50 shadow-md space-y-4 animate-fadeIn">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center space-x-3">
@@ -575,37 +635,269 @@ export const ListeningP4Workspace: React.FC = () => {
         </div>
       )}
 
-      {/* EXAM MODE: List of All Pairs with Submit button at bottom */}
-      {mode === 'exam' && (
-        <div className="space-y-8">
-          {pairsList.map((pair, idx) => (
-            <PairCard
-              key={pair.id}
-              pair={pair}
-              pairDisplayIndex={idx + 1}
-              userAnswers={userAnswers}
-              onSelectOption={handleSelectOption}
-              isPlayingAudio={isPlayingAudio && playingPairId === pair.id}
-              onPlayAudio={() => handlePlayAudio(pair)}
-              showVietnamese={showVietnamese}
-              mode="exam"
-              isExamSubmitted={isExamSubmitted}
-              renderHighlightedText={renderHighlightedText}
-            />
-          ))}
+      {/* QUIZ 60 MODE: Sequential 60 Multiple-Choice Questions (1 to 60) */}
+      {mode === 'quiz60' && (
+        <div className="space-y-6">
+          
+          {/* Quick jump grid for 60 questions */}
+          <div className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
+            <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <div className="flex items-center space-x-2">
+                <span className="font-bold text-slate-700 dark:text-slate-200">
+                  Bảng theo dõi 60 câu trắc nghiệm:
+                </span>
+                <span className="text-slate-400">
+                  (Click số để cuộn nhanh đến câu hỏi)
+                </span>
+              </div>
+              <div className="flex items-center space-x-3 text-[11px]">
+                <span className="flex items-center space-x-1 text-emerald-600 dark:text-emerald-400 font-semibold">
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>
+                  <span>Đã chọn ({Object.keys(userAnswers).length})</span>
+                </span>
+                <span className="flex items-center space-x-1 text-slate-500 dark:text-slate-400">
+                  <span className="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-700 inline-block"></span>
+                  <span>Chưa làm ({flattenedQuestions.length - Object.keys(userAnswers).length})</span>
+                </span>
+              </div>
+            </div>
 
-          {/* Exam Submit Button */}
+            {/* 60 question buttons */}
+            <div className="grid grid-cols-10 sm:grid-cols-12 md:grid-cols-15 gap-1.5 pt-1">
+              {flattenedQuestions.map((item) => {
+                const isAnswered = userAnswers[item.question.id] !== undefined;
+                const isCorrect = isAnswered && userAnswers[item.question.id] === item.question.correct;
+
+                let btnStyle = 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200';
+                if (isExamSubmitted) {
+                  if (isCorrect) {
+                    btnStyle = 'bg-emerald-500 text-white font-bold shadow-sm';
+                  } else if (isAnswered) {
+                    btnStyle = 'bg-rose-500 text-white font-bold shadow-sm';
+                  } else {
+                    btnStyle = 'bg-slate-200 dark:bg-slate-800 text-slate-400';
+                  }
+                } else if (isAnswered) {
+                  btnStyle = 'bg-indigo-600 text-white font-bold shadow-sm';
+                }
+
+                return (
+                  <button
+                    key={item.question.id}
+                    onClick={() => {
+                      const el = document.getElementById(`q60-card-${item.globalIndex}`);
+                      if (el) {
+                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                      }
+                    }}
+                    className={`h-8 rounded-lg text-xs font-semibold transition flex items-center justify-center ${btnStyle}`}
+                    title={`Câu ${item.globalIndex} (Cặp ${item.pairIndex})`}
+                  >
+                    {item.globalIndex}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* List of 60 individual question cards */}
+          <div className="space-y-6">
+            {flattenedQuestions.map((item) => {
+              const q = item.question;
+              const selectedOpt = userAnswers[q.id];
+              const isAnswered = selectedOpt !== undefined;
+              const isCorrect = selectedOpt === q.correct;
+              const isPairPlaying = isPlayingAudio && playingPairId === item.pairId;
+
+              const matchedPair = pairsList.find(p => p.id === item.pairId);
+
+              return (
+                <div
+                  key={q.id}
+                  id={`q60-card-${item.globalIndex}`}
+                  className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-5 sm:p-6 shadow-sm space-y-4 scroll-mt-24 transition-all"
+                >
+                  {/* Card Header: Global Question Index, Pair Reference, Audio */}
+                  <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-100 dark:border-slate-800/80">
+                    <div className="flex items-center space-x-2.5">
+                      <div className="w-8 h-8 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 flex items-center justify-center font-black text-xs shrink-0">
+                        #{item.globalIndex}
+                      </div>
+                      <div>
+                        <div className="flex items-center space-x-2">
+                          <span className="text-xs font-bold text-slate-900 dark:text-white">
+                            Câu hỏi {item.globalIndex} / 60
+                          </span>
+                          <span className="text-[10px] px-2 py-0.5 rounded-full font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Cặp {item.pairIndex}
+                          </span>
+                        </div>
+                        {item.instruction && (
+                          <p className="text-[11px] text-slate-400">
+                            {item.instruction}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Audio & Reset single button */}
+                    <div className="flex items-center space-x-2">
+                      {isAnswered && (
+                        <button
+                          onClick={() => {
+                            setUserAnswers(prev => {
+                              const next = { ...prev };
+                              delete next[q.id];
+                              return next;
+                            });
+                          }}
+                          className="flex items-center space-x-1 px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-rose-50 text-slate-600 hover:text-rose-600 dark:bg-slate-800 dark:hover:bg-rose-950/40 dark:text-slate-300 dark:hover:text-rose-400 border border-slate-200 dark:border-slate-700 text-xs font-medium transition"
+                          title="Làm lại câu này"
+                        >
+                          <RotateCcw className="w-3.5 h-3.5" />
+                          <span>Làm lại</span>
+                        </button>
+                      )}
+
+                      {matchedPair && (
+                        <button
+                          onClick={() => handlePlayAudio(matchedPair)}
+                          className={`p-2 rounded-xl font-bold transition flex items-center justify-center shrink-0 text-xs ${
+                            isPairPlaying
+                              ? 'bg-rose-500 text-white shadow animate-pulse'
+                              : 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100'
+                          }`}
+                          title="Nghe audio"
+                        >
+                          {isPairPlaying ? <Square className="w-3.5 h-3.5 fill-current" /> : <Volume2 className="w-3.5 h-3.5" />}
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Audio Prompt if exists */}
+                  {item.audioPrompt && (
+                    <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 italic bg-slate-50 dark:bg-slate-950/50 p-3 rounded-xl border border-slate-100 dark:border-slate-800">
+                      {item.audioPrompt}
+                    </p>
+                  )}
+
+                  {/* Question Prompt */}
+                  <div className="space-y-1">
+                    <h4 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white">
+                      {q.question}
+                    </h4>
+                    {showVietnamese && q.questionVi && (
+                      <p className="text-xs text-slate-500 dark:text-slate-400">
+                        {q.questionVi}
+                      </p>
+                    )}
+                  </div>
+
+                  {/* Options */}
+                  <div className="space-y-2.5">
+                    {q.options.map((opt, optIdx) => {
+                      const isSelected = selectedOpt === optIdx;
+                      const isCorrectOption = q.correct === optIdx;
+
+                      let borderStyle = 'border-slate-200 dark:border-slate-800 hover:border-slate-300 bg-white dark:bg-slate-950';
+                      if (isExamSubmitted) {
+                        if (isCorrectOption) {
+                          borderStyle = 'border-emerald-500 bg-emerald-50/50 dark:bg-emerald-950/20 text-emerald-900 dark:text-emerald-100 font-semibold ring-1 ring-emerald-500';
+                        } else if (isSelected && !isCorrectOption) {
+                          borderStyle = 'border-rose-400 bg-rose-50/50 dark:bg-rose-950/20 text-rose-900 dark:text-rose-200';
+                        }
+                      } else if (isSelected) {
+                        borderStyle = 'border-indigo-500 bg-indigo-50/40 dark:bg-indigo-950/30 text-indigo-900 dark:text-indigo-100 font-semibold';
+                      }
+
+                      return (
+                        <label
+                          key={optIdx}
+                          onClick={() => handleSelectOption(q.id, optIdx)}
+                          className={`flex items-start space-x-3 p-3.5 rounded-2xl border transition-all cursor-pointer ${borderStyle}`}
+                        >
+                          <input
+                            type="radio"
+                            name={`q60-${q.id}`}
+                            checked={isSelected}
+                            onChange={() => handleSelectOption(q.id, optIdx)}
+                            className="mt-1 w-4 h-4 text-indigo-600 focus:ring-indigo-500 cursor-pointer"
+                          />
+                          <div className="text-xs sm:text-sm space-y-0.5 flex-1">
+                            <div className="text-slate-800 dark:text-slate-200 font-medium">
+                              {isCorrectOption
+                                ? renderHighlightedText(opt, q.keyHighlight)
+                                : <span>{opt}</span>}
+                            </div>
+                            {showVietnamese && q.optionsVi && q.optionsVi[optIdx] && (
+                              <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                                {isCorrectOption
+                                  ? renderHighlightedText(q.optionsVi[optIdx], q.keyHighlightVi)
+                                  : <span>{q.optionsVi[optIdx]}</span>}
+                              </div>
+                            )}
+                          </div>
+                        </label>
+                      );
+                    })}
+                  </div>
+
+                  {/* Feedback after submit or tip */}
+                  {isExamSubmitted && (
+                    <div className="pt-2">
+                      <div className="text-xs font-semibold mb-2">
+                        {isCorrect ? (
+                          <span className="text-emerald-600 dark:text-emerald-400 flex items-center space-x-1">
+                            <CheckCircle2 className="w-3.5 h-3.5" />
+                            <span>Chính xác</span>
+                          </span>
+                        ) : (
+                          <span className="text-rose-600 dark:text-rose-400 flex items-center space-x-1">
+                            <XCircle className="w-3.5 h-3.5" />
+                            <span>
+                              Chưa đúng. Đáp án: <b className="underline text-emerald-600 dark:text-emerald-400">{q.options[q.correct]}</b>
+                            </span>
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Explanation box */}
+                      {(item.explanationVi || item.tipMnemonic) && (
+                        <div className="bg-slate-50 dark:bg-slate-950/60 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 text-xs space-y-1.5 text-slate-700 dark:text-slate-300">
+                          {item.explanationVi && (
+                            <div className="whitespace-pre-line leading-relaxed">
+                              <b>Giải thích / Dịch:</b> {item.explanationVi}
+                            </div>
+                          )}
+                          {item.tipMnemonic && (
+                            <div className="text-amber-700 dark:text-amber-300 font-semibold">
+                              💡 <b>Mẹo nhớ:</b> {item.tipMnemonic}
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Submit button for Quiz60 */}
           {!isExamSubmitted && (
             <div className="sticky bottom-6 z-20 pt-4">
               <button
                 onClick={handleExamSubmit}
-                className="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black shadow-xl shadow-emerald-600/30 transition transform active:scale-98 flex items-center justify-center space-x-2 text-base"
+                className="w-full py-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-black shadow-xl shadow-indigo-600/30 transition transform active:scale-98 flex items-center justify-center space-x-2 text-base"
               >
                 <CheckCircle2 className="w-5 h-5" />
-                <span>Nộp Bài Thi Toàn Bộ Part 4 ({pairsList.length} Cặp Đề)</span>
+                <span>Nộp Bài Trắc Nghiệm 60 Câu ({Object.keys(userAnswers).length} / {flattenedQuestions.length} câu đã làm)</span>
               </button>
             </div>
           )}
+
         </div>
       )}
 
