@@ -6,7 +6,7 @@
       "audioPrompt": "Listen to an expert talk about sports competitions and physical activities in schools, then answer the questions below.",
       "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
       "tipMnemonic": "Thể thao có cả tác động tiêu cực và cung cấp cân bằng",
-      "explanationVi": "Dịch:\n1/ Chúng có tác động tiêu cực\n2/ Mang lại cho họ sự cân bằng trong cuộc sống\nMẹo: Thể thao có cả tác động tiêu cực và cung cấp cân bằng",
+      "explanationVi": "Dịch:\n1/ Chúng có tác động tiêu cực\n2/ Mang lại cho họ sự cân bằng trong cuộc sống\nMẹo: Thể thao có cả tác động tiêu cực và cung cấp cân bằng\n\nChủ đề: Thi đấu thể thao",
       "questions": [
         {
           "id": "p4-p1-q1",
@@ -18,13 +18,13 @@
             "Provide school with external investments"
           ],
           "optionsVi": [
-            "Chúng có tác động tiêu cực / có hại",
+            "Chúng có tác động tiêu cực",
             "Nuôi dưỡng vận động viên tiềm năng cho đất nước",
             "Cung cấp cho trường học các khoản đầu tư bên ngoài"
           ],
           "correct": 0,
           "keyHighlight": "harmful effect",
-          "keyHighlightVi": "tiêu cực / có hại"
+          "keyHighlightVi": "tiêu cực"
         },
         {
           "id": "p4-p1-q2",
@@ -49,10 +49,10 @@
     {
       "id": "p4-pair-2",
       "pairIndex": 2,
-      "audioPrompt": "Listen to an announcer talking about a writer and his new novel, then answer the questions below.",
+      "audioPrompt": "Listen to a reporter talk about A newly released novel and answer the questions below.",
       "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
-      "tipMnemonic": "Tiểu thuyết mới: khá khác tác phẩm trước & nên lắng nghe các nhà phê bình",
-      "explanationVi": "Dịch:\nĐáp án:\n1. Nó khá khác so với những tác phẩm trước đây của anh ấy.\n2. Anh ấy nên lắng nghe các nhà phê bình trước khi viết tác phẩm tiếp theo.",
+      "tipMnemonic": "Cuốn tiểu thuyết mới khác biệt, cần lắng nghe",
+      "explanationVi": "Dịch:\nĐáp án:\n1. Nó khá khác so với những tác phẩm trước đây của anh ấy.\n2. Anh ấy nên lắng nghe các nhà phê bình trước khi viết tác phẩm tiếp theo.\n\nMẹo: Cuốn tiểu thuyết mới khác biệt, cần lắng nghe\n\nChủ đề: Cuốn tiểu thuyết mới được phát hành",
       "questions": [
         {
           "id": "p4-p2-q1",
@@ -134,7 +134,7 @@
           ],
           "correct": 2,
           "keyHighlight": "meaning of their work is not always easily identified",
-          "keyHighlightVi": "ý nghĩa... không phải lúc nào cũng dễ nhận diện"
+          "keyHighlightVi": "ý nghĩa của tác phẩm... không phải lúc nào cũng dễ nhận diện"
         }
       ]
     },
@@ -143,8 +143,8 @@
       "pairIndex": 4,
       "audioPrompt": "Listen to a talk about a musician and his singing career, then answer the questions below.",
       "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
-      "tipMnemonic": "Nhạc sĩ: nghỉ hưu không ca hát nữa & có thể đã thành công hơn",
-      "explanationVi": "Dịch:\nĐáp án:\n1. Anh ấy sẽ nghỉ hưu và không còn ca hát chuyên nghiệp nữa.\n2. Anh ấy có thể đã thành công hơn",
+      "tipMnemonic": "Nhạc sĩ sẽ nghỉ hưu sau khi thành công",
+      "explanationVi": "Dịch:\nĐáp án:\n1. Anh ấy sẽ nghỉ hưu và không còn ca hát chuyên nghiệp nữa.\n2. Anh ấy có thể đã thành công hơn\n\nMẹo: Nhạc sĩ sẽ nghỉ hưu sau khi thành công\n\nChủ đề: Sự nghiệp của một nhạc sĩ và những album mới nhất",
       "questions": [
         {
           "id": "p4-p4-q1",
@@ -181,6 +181,1202 @@
           "correct": 2,
           "keyHighlight": "could have been more successful",
           "keyHighlightVi": "có thể đã thành công hơn"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-5",
+      "pairIndex": 5,
+      "audioPrompt": "Listen to a reporter talk about Criticism of the new novel and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Tiểu thuyết có nhân vật thú vị giúp tác giả nổi tiếng",
+      "explanationVi": "Dịch:\nĐáp án:\n1. Các nhân vật rất thú vị.\n2. Nó sẽ tạo dựng sự nổi tiếng cho tác giả.\n\nMẹo: Tiểu thuyết có nhân vật thú vị giúp tác giả nổi tiếng",
+      "questions": [
+        {
+          "id": "p4-p5-q1",
+          "question": "17.1 What attracts readers to this novel?",
+          "questionVi": "Điều gì thu hút độc giả đến với cuốn tiểu thuyết này?",
+          "options": [
+            "The book includes detailed historical facts",
+            "The chapters are very short and easy to read",
+            "The characters were interesting"
+          ],
+          "optionsVi": [
+            "Cuốn sách bao gồm các sự kiện lịch sử chi tiết",
+            "Các chương rất ngắn và dễ đọc",
+            "Các nhân vật rất thú vị"
+          ],
+          "correct": 2,
+          "keyHighlight": "characters were interesting",
+          "keyHighlightVi": "nhân vật rất thú vị"
+        },
+        {
+          "id": "p4-p5-q2",
+          "question": "17.2 What is the speaker's opinion about this novel?",
+          "questionVi": "Ý kiến của người nói về cuốn tiểu thuyết này là gì?",
+          "options": [
+            "It needs major editing before publication",
+            "It will establish the author's popularity",
+            "It's unlikely to appeal to international readers"
+          ],
+          "optionsVi": [
+            "Nó cần chỉnh sửa lớn trước khi xuất bản",
+            "Nó sẽ tạo dựng sự nổi tiếng cho tác giả",
+            "Nó khó có thể thu hút độc giả quốc tế"
+          ],
+          "correct": 1,
+          "keyHighlight": "establish the author's popularity",
+          "keyHighlightVi": "tạo dựng sự nổi tiếng cho tác giả"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-6",
+      "pairIndex": 6,
+      "audioPrompt": "Listen to a reporter talk about a break from studying/gap year and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Nghỉ học để tự lập vì chưa sẵn sàng học tiếp",
+      "explanationVi": "Dịch:\nĐáp án:\n1. Cách để trở nên độc lập hơn.\n2. Anh ấy chưa sẵn sàng để bắt đầu bậc học cao hơn (đại học).\n\nMẹo: Nghỉ học để tự lập vì chưa sẵn sàng học tiếp",
+      "questions": [
+        {
+          "id": "p4-p6-q1",
+          "question": "ý 1: What is the main reason to take a break from studying?",
+          "questionVi": "Ý 1: Lý do chính để tạm dừng việc học là gì?",
+          "options": [
+            "How to be more independent",
+            "competition for job is intense",
+            "Finding a stable job after graduation is often very difficult."
+          ],
+          "optionsVi": [
+            "Làm thế nào để trở nên độc lập hơn",
+            "Cạnh tranh việc làm rất gay gắt",
+            "Tìm kiếm một công việc ổn định sau khi tốt nghiệp thường rất khó khăn"
+          ],
+          "correct": 0,
+          "keyHighlight": "How to be more independent",
+          "keyHighlightVi": "trở nên độc lập hơn"
+        },
+        {
+          "id": "p4-p6-q2",
+          "question": "ý 2: What was his personal situation regarding higher education?",
+          "questionVi": "Ý 2: Tình huống cá nhân của anh ấy đối với việc học lên cao là gì?",
+          "options": [
+            "He doesn't want to study MBA",
+            "He was not prepared to find a job.",
+            "He was not ready to start higher education"
+          ],
+          "optionsVi": [
+            "Anh ấy không muốn học Thạc sĩ Quản trị Kinh doanh",
+            "Anh ấy chưa chuẩn bị để tìm việc làm",
+            "Anh ấy chưa sẵn sàng bắt đầu bậc học cao hơn"
+          ],
+          "correct": 2,
+          "keyHighlight": "not ready to start higher education",
+          "keyHighlightVi": "chưa sẵn sàng bắt đầu bậc học cao hơn"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-7",
+      "pairIndex": 7,
+      "audioPrompt": "Listen to a reporter talk about the important of sleep and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Giấc ngủ cần tránh ồn và xa rời xa truyền thông",
+      "explanationVi": "Dịch:\nĐáp án:\n1. Việc ngăn tiếng ồn và ánh sáng là điều quan trọng.\n2. Truyền thông phóng đại quá mức vấn đề này.\n\nMẹo: Giấc ngủ cần tránh ồn và xa rời xa truyền thông",
+      "questions": [
+        {
+          "id": "p4-p7-q1",
+          "question": "The most important thing to help sleep well is:",
+          "questionVi": "Điều quan trọng nhất để giúp ngủ ngon là:",
+          "options": [
+            "Resting sufficiently is necessary",
+            "Beds are best for sleeping",
+            "Blocking noise and light is the key"
+          ],
+          "optionsVi": [
+            "Nghỉ ngơi đầy đủ là cần thiết",
+            "Giường là tốt nhất để ngủ",
+            "Ngăn chặn tiếng ồn và ánh sáng là chìa khóa"
+          ],
+          "correct": 2,
+          "keyHighlight": "Blocking noise and light is the key",
+          "keyHighlightVi": "ngăn tiếng ồn và ánh sáng"
+        },
+        {
+          "id": "p4-p7-q2",
+          "question": "According to the expert, what is the public attitude towards sleeping?",
+          "questionVi": "Theo chuyên gia, thái độ của công chúng đối với giấc ngủ là gì?",
+          "options": [
+            "Sleeping quality has deteriorated over time.",
+            "People can't always recognize the symptoms of tiredness",
+            "The media overemphasize the subject"
+          ],
+          "optionsVi": [
+            "Chất lượng giấc ngủ đã xấu đi theo thời gian",
+            "Mọi người không phải lúc nào cũng nhận ra triệu chứng mệt mỏi",
+            "Truyền thông phóng đại quá mức chủ đề này"
+          ],
+          "correct": 2,
+          "keyHighlight": "media overemphasize the subject",
+          "keyHighlightVi": "truyền thông phóng đại quá mức"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-8",
+      "pairIndex": 8,
+      "audioPrompt": "Listen to a speaker talk about a biography book of a scientist, then answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Quyển sách về nhà khoa học hay và có nhiều khán giả",
+      "explanationVi": "Dịch:\n1. Nó rất hấp dẫn khi đọc.\n2. Nó được viết dành cho độc giả nói chung\n\nMẹo: Quyển sách về nhà khoa học hay và có nhiều khán giả\n\nChủ đề: Cuốn sách về cuộc đời của một nhà khoa học",
+      "questions": [
+        {
+          "id": "p4-p8-q1",
+          "question": "What does the speaker say about the way of writing?",
+          "questionVi": "Người nói nói gì về cách viết của cuốn sách?",
+          "options": [
+            "It is focused on technical details",
+            "It is more of a textbook than a biography",
+            "It is very exciting to read"
+          ],
+          "optionsVi": [
+            "Nó tập trung vào các chi tiết kỹ thuật",
+            "Nó giống sách giáo khoa hơn là tiểu sử",
+            "Nó rất hấp dẫn khi đọc"
+          ],
+          "correct": 2,
+          "keyHighlight": "very exciting to read",
+          "keyHighlightVi": "rất hấp dẫn khi đọc"
+        },
+        {
+          "id": "p4-p8-q2",
+          "question": "What does the speaker say about the overall content of the book?",
+          "questionVi": "Người nói nói gì về nội dung tổng thể của cuốn sách?",
+          "options": [
+            "It has been written for a general audience",
+            "It lacks engaging storytelling",
+            "It is only suitable for experts in the field"
+          ],
+          "optionsVi": [
+            "Nó được viết dành cho độc giả nói chung",
+            "Nó thiếu lối kể chuyện hấp dẫn",
+            "Nó chỉ phù hợp với các chuyên gia trong ngành"
+          ],
+          "correct": 0,
+          "keyHighlight": "written for a general audience",
+          "keyHighlightVi": "được viết dành cho độc giả nói chung"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-9",
+      "pairIndex": 9,
+      "audioPrompt": "Listen to a talk about working from home and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Làm việc ở nhà không tốt như mong đợi vì tùy trường hợp",
+      "explanationVi": "Dịch:\nĐáp án:\n1. Nó không tốt như cô ấy đã kỳ vọng\n2. Điều đó phụ thuộc vào hoàn cảnh và tính cách của bạn.\n\nMẹo: Làm việc ở nhà không tốt như mong đợi vì tùy trường hợp\n\nChủ đề: Làm việc tại nhà",
+      "questions": [
+        {
+          "id": "p4-p9-q1",
+          "question": "What does she say about working at home?",
+          "questionVi": "Cô ấy nói gì về việc làm việc tại nhà?",
+          "options": [
+            "There are no distractions",
+            "It wasn't as good as she expected",
+            "Video calls are superior to face-to-face conversation"
+          ],
+          "optionsVi": [
+            "Không có phiền nhiễu nào",
+            "Nó không tốt như cô ấy đã kỳ vọng",
+            "Các cuộc gọi video vượt trội hơn trò chuyện trực tiếp"
+          ],
+          "correct": 1,
+          "keyHighlight": "wasn't as good as she expected",
+          "keyHighlightVi": "không tốt như cô ấy đã kỳ vọng"
+        },
+        {
+          "id": "p4-p9-q2",
+          "question": "According to the author, working from home:",
+          "questionVi": "Theo tác giả, làm việc tại nhà:",
+          "options": [
+            "It depends on your situation and personality",
+            "Needs a big home office",
+            "Do not require self-motivation."
+          ],
+          "optionsVi": [
+            "Điều đó phụ thuộc vào hoàn cảnh và tính cách của bạn",
+            "Cần một phòng làm việc lớn tại nhà",
+            "Không đòi hỏi sự tự giác"
+          ],
+          "correct": 0,
+          "keyHighlight": "depends on your situation and personality",
+          "keyHighlightVi": "phụ thuộc vào hoàn cảnh và tính cách của bạn"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-10",
+      "pairIndex": 10,
+      "audioPrompt": "Listen to a talk about life and job market after graduating from university, then answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Học đại học xong mở mang nhưng cũng cạnh tranh",
+      "explanationVi": "Dịch:\n1. Họ có khả năng sẽ linh hoạt và cởi mở hơn.\n2. Họ đang trở nên cạnh tranh hơn.\n\nMẹo: Học đại học xong mở mang nhưng cũng cạnh tranh\n\nChủ đề: Cuộc sống sau khi tốt nghiệp đại học",
+      "questions": [
+        {
+          "id": "p4-p10-q1",
+          "question": "How does life change for graduates after university?",
+          "questionVi": "Cuộc sống thay đổi như thế nào đối với sinh viên sau khi tốt nghiệp đại học?",
+          "options": [
+            "They feel more stressed about job seeking",
+            "Many jobs offer great benefits",
+            "They are likely to be more flexible and open-minded"
+          ],
+          "optionsVi": [
+            "Họ cảm thấy căng thẳng hơn về việc tìm việc",
+            "Nhiều công việc mang lại lợi ích tuyệt vời",
+            "Họ có khả năng sẽ linh hoạt và cởi mở hơn"
+          ],
+          "correct": 2,
+          "keyHighlight": "more flexible and open-minded",
+          "keyHighlightVi": "linh hoạt và cởi mở hơn"
+        },
+        {
+          "id": "p4-p10-q2",
+          "question": "What is a common characteristic of the job market after university?",
+          "questionVi": "Đặc điểm chung của thị trường việc làm sau đại học là gì?",
+          "options": [
+            "They are becoming more competitive",
+            "More opportunities for networking",
+            "Many jobs offer great benefits"
+          ],
+          "optionsVi": [
+            "Chúng đang trở nên cạnh tranh hơn",
+            "Nhiều cơ hội kết nối mạng lưới hơn",
+            "Nhiều công việc mang lại phúc lợi tốt"
+          ],
+          "correct": 0,
+          "keyHighlight": "becoming more competitive",
+          "keyHighlightVi": "trở nên cạnh tranh hơn"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-11",
+      "pairIndex": 11,
+      "audioPrompt": "Listen to a reporter talk about Regional Development Planning and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Quy hoạch vùng: thiếu phương án thay thế xe và gặp phản đối từ cộng đồng",
+      "explanationVi": "Dịch:\n1. Không cung cấp đủ các phương án thay thế cho việc lái xe.\n2. Khả năng cao sẽ gặp phải sự phản đối từ cộng đồng địa phương.\n\nMẹo: Quy hoạch giao thông thiếu xe buýt và bị phản đối",
+      "questions": [
+        {
+          "id": "p4-p11-q1",
+          "question": "What is one of the main criticisms of the Regional Development Plan?",
+          "questionVi": "Một trong những lời chỉ trích chính đối với Kế hoạch phát triển vùng là gì?",
+          "options": [
+            "It doesn't provide enough alternatives to driving.",
+            "It places too much emphasis on public transportation.",
+            "It is too expensive to implement the plan."
+          ],
+          "optionsVi": [
+            "Nó không cung cấp đủ các phương án thay thế cho việc lái xe riêng",
+            "Nó quá chú trọng vào giao thông công cộng",
+            "Nó quá tốn kém để thực hiện kế hoạch"
+          ],
+          "correct": 0,
+          "keyHighlight": "doesn't provide enough alternatives to driving",
+          "keyHighlightVi": "không cung cấp đủ phương án thay thế cho việc lái xe"
+        },
+        {
+          "id": "p4-p11-q2",
+          "question": "What challenge is the Regional Development Plan likely to face?",
+          "questionVi": "Kế hoạch phát triển vùng có khả năng phải đối mặt với thách thức nào?",
+          "options": [
+            "It is likely to meet resistance from local communities.",
+            "The plan is not making efficient use of existing land",
+            "It could face difficulties in gaining government approval."
+          ],
+          "optionsVi": [
+            "Khả năng cao sẽ vấp phải sự phản đối từ các cộng đồng địa phương",
+            "Kế hoạch không sử dụng hiệu quả quỹ đất hiện có",
+            "Nó có thể gặp khó khăn trong việc xin phê duyệt của chính phủ"
+          ],
+          "correct": 0,
+          "keyHighlight": "meet resistance from local communities",
+          "keyHighlightVi": "gặp phải sự phản đối từ cộng đồng địa phương"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-12",
+      "pairIndex": 12,
+      "audioPrompt": "Listen to a reporter talk about a promotion campaign for a product and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Quảng cáo thổi phồng và sản phẩm quá giống cũ",
+      "explanationVi": "Dịch:\n1. Họ sử dụng các tuyên bố phóng đại (thổi phồng).\n2. Nó quá giống với nhiều sản phẩm hiện có.\n\nMẹo: Quảng cáo thổi phồng và sản phẩm quá giống cũ",
+      "questions": [
+        {
+          "id": "p4-p12-q1",
+          "question": "What is the main issue with the product's promotion campaign?",
+          "questionVi": "Vấn đề chính với chiến dịch quảng bá sản phẩm là gì?",
+          "options": [
+            "It is using outdated advertising methods",
+            "It is not targeting the correct market",
+            "They use exaggerated claims"
+          ],
+          "optionsVi": [
+            "Nó đang sử dụng các phương pháp quảng cáo lỗi thời",
+            "Nó không nhắm đúng thị trường mục tiêu",
+            "Họ sử dụng các tuyên bố phóng đại thổi phồng"
+          ],
+          "correct": 2,
+          "keyHighlight": "use exaggerated claims",
+          "keyHighlightVi": "tuyên bố phóng đại thổi phồng"
+        },
+        {
+          "id": "p4-p12-q2",
+          "question": "What is another problem with the product?",
+          "questionVi": "Một vấn đề khác đối với sản phẩm này là gì?",
+          "options": [
+            "It is priced too high compared to its competitors",
+            "It cost too much to make to be profitable",
+            "It is too similar to many existing products"
+          ],
+          "optionsVi": [
+            "Nó có giá quá cao so với các đối thủ cạnh tranh",
+            "Chi phí sản xuất quá lớn để có lãi",
+            "Nó quá giống với nhiều sản phẩm hiện có"
+          ],
+          "correct": 2,
+          "keyHighlight": "too similar to many existing products",
+          "keyHighlightVi": "quá giống với nhiều sản phẩm hiện có"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-13",
+      "pairIndex": 13,
+      "audioPrompt": "Listen to a reporter talk about a research in happiness and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Nghiên cứu về hạnh phúc không chính xác để tìm được câu trả lời",
+      "explanationVi": "Dịch:\n1. Nó đã không được truyền thông đưa tin một cách chính xác.\n2. Nghiên cứu khó có khả năng tìm ra một câu trả lời chắc chắn.\n\nMẹo: Nghiên cứu về hạnh phúc không chính xác để tìm được câu trả lời\n\nChủ đề: Nghiên cứu về hạnh phúc",
+      "questions": [
+        {
+          "id": "p4-p13-q1",
+          "question": "What does the radio MC say about how the research on happiness has been covered by the media?",
+          "questionVi": "Người dẫn chương trình phát thanh nói gì về việc nghiên cứu hạnh phúc được truyền thông đưa tin?",
+          "options": [
+            "It has been accurately reported by the media",
+            "It has not been accurately reported by the media",
+            "It has been ignored completely by the media"
+          ],
+          "optionsVi": [
+            "Nó đã được truyền thông đưa tin một cách chính xác",
+            "Nó đã không được truyền thông đưa tin một cách chính xác",
+            "Nó đã bị truyền thông phớt lờ hoàn toàn"
+          ],
+          "correct": 1,
+          "keyHighlight": "not been accurately reported by the media",
+          "keyHighlightVi": "không được truyền thông đưa tin chính xác"
+        },
+        {
+          "id": "p4-p13-q2",
+          "question": "According to the radio MC, what is unlikely regarding the research on happiness?",
+          "questionVi": "Theo MC, điều gì khó có khả năng xảy ra liên quan đến nghiên cứu về hạnh phúc?",
+          "options": [
+            "Research is unlikely to find a conclusive answer",
+            "To find personal happiness",
+            "To discuss happiness in the media"
+          ],
+          "optionsVi": [
+            "Nghiên cứu khó có khả năng tìm ra câu trả lời chắc chắn",
+            "Tìm kiếm hạnh phúc cá nhân",
+            "Thảo luận về hạnh phúc trên các phương tiện truyền thông"
+          ],
+          "correct": 0,
+          "keyHighlight": "unlikely to find a conclusive answer",
+          "keyHighlightVi": "khó có khả năng tìm ra câu trả lời chắc chắn"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-14",
+      "pairIndex": 14,
+      "audioPrompt": "Listen to a writer talk about writer's block and writing habits, then answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Kinh nghiệm viết văn là cần có giai đoạn cống hiến và xin lời khuyên",
+      "explanationVi": "Dịch:\n1. Tạo những khoảng thời gian riêng dành cho việc viết.\n2. Từ chối tìm kiếm lời khuyên từ người khác.\n\nMẹo: Kinh nghiệm viết văn là cần có giai đoạn cống hiến và xin lời khuyên\n\nChủ đề: Kinh nghiệm viết",
+      "questions": [
+        {
+          "id": "p4-p14-q1",
+          "question": "What does the writer believe helps her the most in her writing process?",
+          "questionVi": "Nhà văn tin rằng điều gì giúp cô ấy nhiều nhất trong quá trình sáng tác?",
+          "options": [
+            "Writing every day for 15-20 minutes",
+            "Create dedicated periods for writing",
+            "Finding a quiet space to work"
+          ],
+          "optionsVi": [
+            "Viết mỗi ngày từ 15-20 phút",
+            "Tạo ra những khoảng thời gian riêng dành cho việc viết",
+            "Tìm một không gian yên tĩnh để làm việc"
+          ],
+          "correct": 1,
+          "keyHighlight": "Create dedicated periods for writing",
+          "keyHighlightVi": "khoảng thời gian riêng dành cho việc viết"
+        },
+        {
+          "id": "p4-p14-q2",
+          "question": "What does the writer regret doing during her experience with writer's block?",
+          "questionVi": "Nhà văn hối tiếc điều gì trong trải nghiệm bí ý tưởng của mình?",
+          "options": [
+            "Refuse to seek advice from others",
+            "Writing without a plan",
+            "Ignoring feedback from editors"
+          ],
+          "optionsVi": [
+            "Từ chối tìm kiếm lời khuyên từ người khác",
+            "Viết mà không có kế hoạch",
+            "Phớt lờ phản hồi từ các biên tập viên"
+          ],
+          "correct": 0,
+          "keyHighlight": "Refuse to seek advice from others",
+          "keyHighlightVi": "từ chối tìm kiếm lời khuyên từ người khác"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-15",
+      "pairIndex": 15,
+      "audioPrompt": "Listen to an expert talk about professionalism in work, then answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Sự chuyên nghiệp ở nơi làm việc là thái độ tích cực và đang thay đổi",
+      "explanationVi": "Dịch:\n1. Duy trì một thái độ tích cực.\n2. Định nghĩa của chúng ta về điều đó đang thay đổi.\n\nMẹo: Sự chuyên nghiệp ở nơi làm việc là thái độ tích cực và đang thay đổi\n\nChủ đề: Tính chuyên nghiệp trong công việc",
+      "questions": [
+        {
+          "id": "p4-p15-q1",
+          "question": "What does the expert say about what being professional is all about?",
+          "questionVi": "Chuyên gia nói gì về ý nghĩa cốt lõi của tính chuyên nghiệp?",
+          "options": [
+            "To make good impressions",
+            "To create a good working environment",
+            "Maintain a positive attitude"
+          ],
+          "optionsVi": [
+            "Tạo ấn tượng tốt",
+            "Tạo ra một môi trường làm việc tốt",
+            "Duy trì một thái độ tích cực"
+          ],
+          "correct": 2,
+          "keyHighlight": "Maintain a positive attitude",
+          "keyHighlightVi": "thái độ tích cực"
+        },
+        {
+          "id": "p4-p15-q2",
+          "question": "What does the expert say about the definition of professionalism?",
+          "questionVi": "Chuyên gia nói gì về định nghĩa của tính chuyên nghiệp?",
+          "options": [
+            "It is the same as 40 years ago",
+            "It will not change anymore",
+            "Our definition of it is changing"
+          ],
+          "optionsVi": [
+            "Nó giống như 40 năm trước",
+            "Nó sẽ không còn thay đổi nữa",
+            "Định nghĩa của chúng ta về nó đang thay đổi"
+          ],
+          "correct": 2,
+          "keyHighlight": "definition of it is changing",
+          "keyHighlightVi": "đang thay đổi"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-16",
+      "pairIndex": 16,
+      "audioPrompt": "Listen to a speaker talk about security cameras in the workplace and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Camera an ninh khiến mọi người lo lắng về sự hiện diện",
+      "explanationVi": "Dịch:\n1. Mọi người lo lắng không cần thiết về chúng.\n2. Mọi người nên cảm thấy yên tâm về sự hiện diện của chúng.\n\nMẹo: Camera an ninh khiến mọi người lo lắng về sự hiện diện\n\nChủ đề: Camera an ninh",
+      "questions": [
+        {
+          "id": "p4-p16-q1",
+          "question": "What is the speaker's opinion about security cameras at work?",
+          "questionVi": "Ý kiến của người nói về camera an ninh tại nơi làm việc là gì?",
+          "options": [
+            "People are unnecessarily worried about them",
+            "Cameras should be placed to ensure complete coverage.",
+            "Most people don't even realize cameras are present."
+          ],
+          "optionsVi": [
+            "Mọi người lo lắng không cần thiết về chúng",
+            "Camera nên được bố trí để đảm bảo bao quát toàn bộ",
+            "Hầu hết mọi người thậm chí không nhận ra có camera"
+          ],
+          "correct": 0,
+          "keyHighlight": "unnecessarily worried about them",
+          "keyHighlightVi": "lo lắng không cần thiết"
+        },
+        {
+          "id": "p4-p16-q2",
+          "question": "How does the speaker suggest people should feel about security cameras at work?",
+          "questionVi": "Người nói khuyên mọi người nên cảm thấy như thế nào về camera tại nơi làm việc?",
+          "options": [
+            "People often find them intimidating and invasive.",
+            "People should feel reassured about their presence",
+            "Many believe they are only useful after incidents have occurred."
+          ],
+          "optionsVi": [
+            "Mọi người thường thấy chúng đáng sợ và xâm phạm đời tư",
+            "Mọi người nên cảm thấy yên tâm về sự hiện diện của chúng",
+            "Nhiều người tin rằng chúng chỉ hữu ích sau khi sự cố xảy ra"
+          ],
+          "correct": 1,
+          "keyHighlight": "feel reassured about their presence",
+          "keyHighlightVi": "yên tâm về sự hiện diện của chúng"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-17",
+      "pairIndex": 17,
+      "audioPrompt": "Listen to a reporter talk about Advertising and sponsoring (A newly broadcasted TV series) and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Quảng cáo tiếp cận khách mới và tài trợ thể thao chưa hẳn tốt cho fan",
+      "explanationVi": "Dịch:\n1. Nó giúp tiếp cận khách hàng mới.\n2. Chúng không phải lúc nào cũng tốt cho người hâm mộ.\n\nMẹo: Quảng cáo tiếp cận khách mới và tài trợ thể thao chưa hẳn tốt cho fan",
+      "questions": [
+        {
+          "id": "p4-p17-q1",
+          "question": "What is the importance of advertising?",
+          "questionVi": "Tầm quan trọng của quảng cáo là gì?",
+          "options": [
+            "It can build brand recognition",
+            "It helps to reach new customers.",
+            "It increases the product price"
+          ],
+          "optionsVi": [
+            "Nó có thể xây dựng sự nhận diện thương hiệu",
+            "Nó giúp tiếp cận những khách hàng mới",
+            "Nó làm tăng giá sản phẩm"
+          ],
+          "correct": 1,
+          "keyHighlight": "reach new customers",
+          "keyHighlightVi": "tiếp cận khách hàng mới"
+        },
+        {
+          "id": "p4-p17-q2",
+          "question": "Why shouldn't we sponsor sports tournaments?",
+          "questionVi": "Tại sao chúng ta không nên tài trợ cho các giải đấu thể thao?",
+          "options": [
+            "They can create unfair competition",
+            "They are too expensive",
+            "They are not always good for fans"
+          ],
+          "optionsVi": [
+            "Chúng có thể tạo ra sự cạnh tranh không lành mạnh",
+            "Chúng quá đắt đỏ",
+            "Chúng không phải lúc nào cũng tốt cho người hâm mộ"
+          ],
+          "correct": 2,
+          "keyHighlight": "not always good for fans",
+          "keyHighlightVi": "không phải lúc nào cũng tốt cho người hâm mộ"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-18",
+      "pairIndex": 18,
+      "audioPrompt": "Listen to a talk about a travel guidebook and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Sách hướng dẫn mới tạo ra cuộc phiêu lưu phù hợp thế hệ",
+      "explanationVi": "Dịch:\nĐáp án:\n1. Nó tạo ra một cuộc phiêu lưu.\n2. Nó phù hợp với một số thế hệ nhất định.\n\nMẹo: Sách hướng dẫn mới tạo ra cuộc phiêu lưu phù hợp thế hệ\n\nChủ đề: Một cuốn sách hướng dẫn mới",
+      "questions": [
+        {
+          "id": "p4-p18-q1",
+          "question": "What does this guidebook offer to its audience?",
+          "questionVi": "Cuốn sách hướng dẫn này mang lại điều gì cho độc giả?",
+          "options": [
+            "It focuses solely on historical landmarks.",
+            "It is difficult to navigate.",
+            "It creates an adventure."
+          ],
+          "optionsVi": [
+            "Nó chỉ tập trung vào các di tích lịch sử",
+            "Nó rất khó định hướng tra cứu",
+            "Nó tạo ra một cuộc phiêu lưu"
+          ],
+          "correct": 2,
+          "keyHighlight": "creates an adventure",
+          "keyHighlightVi": "tạo ra một cuộc phiêu lưu"
+        },
+        {
+          "id": "p4-pair-18-q2",
+          "question": "What is the speaker's opinion about this guidebook?",
+          "questionVi": "Ý kiến của người nói về cuốn sách hướng dẫn này là gì?",
+          "options": [
+            "It is suitable for particular generations.",
+            "It caters only to seasoned travelers.",
+            "It is outdated and irrelevant."
+          ],
+          "optionsVi": [
+            "Nó phù hợp với một số thế hệ nhất định (giới trẻ)",
+            "Nó chỉ phục vụ cho những người đi du lịch dày dặn kinh nghiệm",
+            "Nó đã lỗi thời và không còn phù hợp"
+          ],
+          "correct": 0,
+          "keyHighlight": "suitable for particular generations",
+          "keyHighlightVi": "phù hợp với một số thế hệ nhất định"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-19",
+      "pairIndex": 19,
+      "audioPrompt": "Listen to a reporter talk about personal finances and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Quản lý tiền: sắp xếp nguồn lực và hỏi người có kinh nghiệm",
+      "explanationVi": "Dịch:\n1. Tổ chức nguồn lực của họ hiệu quả hơn.\n2. Tìm kiếm lời khuyên từ một người có kinh nghiệm.\n\nMẹo: Quản lý tiền: sắp xếp nguồn lực và hỏi người có kinh nghiệm",
+      "questions": [
+        {
+          "id": "p4-p19-q1",
+          "question": "What should you do to better control your short-term spending?",
+          "questionVi": "Bạn nên làm gì để kiểm soát tốt hơn chi tiêu ngắn hạn của mình?",
+          "options": [
+            "Avoid all unnecessary purchases entirely",
+            "Organize their resources more effectively.",
+            "Use only cash instead of cards"
+          ],
+          "optionsVi": [
+            "Tránh hoàn toàn mọi khoản mua sắm không cần thiết",
+            "Tổ chức và sắp xếp các nguồn lực của họ hiệu quả hơn",
+            "Chỉ sử dụng tiền mặt thay vì quẹt thẻ"
+          ],
+          "correct": 1,
+          "keyHighlight": "Organize their resources more effectively",
+          "keyHighlightVi": "tổ chức các nguồn lực hiệu quả hơn"
+        },
+        {
+          "id": "p4-p19-q2",
+          "question": "What does the speaker suggest for improving financial management?",
+          "questionVi": "Người nói gợi ý điều gì để cải thiện việc quản lý tài chính?",
+          "options": [
+            "Seek advice from someone who is experienced",
+            "Invest in more financial apps",
+            "Avoid talking about money with friends"
+          ],
+          "optionsVi": [
+            "Tìm kiếm lời khuyên từ một người có kinh nghiệm",
+            "Đầu tư vào nhiều ứng dụng tài chính hơn",
+            "Tránh nói chuyện về tiền bạc với bạn bè"
+          ],
+          "correct": 0,
+          "keyHighlight": "Seek advice from someone who is experienced",
+          "keyHighlightVi": "tìm kiếm lời khuyên từ người có kinh nghiệm"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-20",
+      "pairIndex": 20,
+      "audioPrompt": "Listen to a reporter talk about script production and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Kịch bản lời thoại phi thực tế do đòi hỏi tiêu cực từ ngành",
+      "explanationVi": "Dịch:\n1. Các đoạn đối thoại có vẻ không thực tế.\n2. Những đòi hỏi mới của ngành công nghiệp đang ảnh hưởng tiêu cực đến việc sản xuất kịch bản.\n\nMẹo: Kịch bản lời thoại phi thực tế do đòi hỏi tiêu cực từ ngành",
+      "questions": [
+        {
+          "id": "p4-p20-q1",
+          "question": "What is the speaker's opinion on this script?",
+          "questionVi": "Ý kiến của người nói về kịch bản này là gì?",
+          "options": [
+            "The dialogues seem unrealistic",
+            "The characters' background are not adequately explored",
+            "The setting feels too unrealistic"
+          ],
+          "optionsVi": [
+            "Các đoạn đối thoại có vẻ phi thực tế",
+            "Bối cảnh xuất thân của các nhân vật chưa được khai thác đầy đủ",
+            "Bối cảnh không gian cảm giác quá không thực tế"
+          ],
+          "correct": 0,
+          "keyHighlight": "dialogues seem unrealistic",
+          "keyHighlightVi": "lời thoại có vẻ phi thực tế"
+        },
+        {
+          "id": "p4-p20-q2",
+          "question": "How do industries impact script production?",
+          "questionVi": "Các ngành công nghiệp tác động như thế nào đến việc sản xuất kịch bản?",
+          "options": [
+            "They increase audience engagement significantly",
+            "They provide more creative freedom to writers",
+            "The new industry demands are negatively influencing script production"
+          ],
+          "optionsVi": [
+            "Họ gia tăng sự tương tác của khán giả đáng kể",
+            "Họ mang lại sự tự do sáng tạo nhiều hơn cho biên kịch",
+            "Những đòi hỏi mới của ngành đang ảnh hưởng tiêu cực đến việc sản xuất kịch bản"
+          ],
+          "correct": 2,
+          "keyHighlight": "negatively influencing script production",
+          "keyHighlightVi": "ảnh hưởng tiêu cực đến sản xuất kịch bản"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-21",
+      "pairIndex": 21,
+      "audioPrompt": "Listen to a reporter talk about a restaurant Baloo and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Nhà hàng dịch vụ không tốt và cần trân trọng khách hàng hơn",
+      "explanationVi": "Dịch:\n1. Chất lượng phục vụ không tốt.\n2. Họ cần làm cho khách hàng cảm thấy được coi trọng và được chào đón.\n\nMẹo: Nhà hàng dịch vụ không tốt và cần trân trọng khách hàng hơn\n\nChủ đề: Nhà hàng La Bella Bistro",
+      "questions": [
+        {
+          "id": "p4-p21-q1",
+          "question": "What are the critic's opinions about the restaurant La Bella Bistro?",
+          "questionVi": "Ý kiến của nhà phê bình về nhà hàng La Bella Bistro là gì?",
+          "options": [
+            "The standard of service wasn't good",
+            "The food is not fresh.",
+            "The chef lacks experience"
+          ],
+          "optionsVi": [
+            "Tiêu chuẩn phục vụ không tốt",
+            "Thức ăn không tươi ngon",
+            "Đầu bếp thiếu kinh nghiệm"
+          ],
+          "correct": 0,
+          "keyHighlight": "standard of service wasn't good",
+          "keyHighlightVi": "chất lượng phục vụ không tốt"
+        },
+        {
+          "id": "p4-p21-q2",
+          "question": "What can compete with online food delivery?",
+          "questionVi": "Điều gì có thể cạnh tranh với dịch vụ giao đồ ăn trực tuyến?",
+          "options": [
+            "Organic ingredients",
+            "Providing ready-made packs for customers",
+            "They need to make the customers feel valued and welcome"
+          ],
+          "optionsVi": [
+            "Nguyên liệu hữu cơ",
+            "Cung cấp các gói ăn sẵn cho khách hàng",
+            "Họ cần làm cho khách hàng cảm thấy được coi trọng và chào đón"
+          ],
+          "correct": 2,
+          "keyHighlight": "customers feel valued and welcome",
+          "keyHighlightVi": "khách hàng cảm thấy được coi trọng và chào đón"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-22",
+      "pairIndex": 22,
+      "audioPrompt": "Listen to a reporter talk about TV series and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Phim truyền hình bị tổn hại vì xuất hiện quá mức và thu hút sự chú ý ban đầu",
+      "explanationVi": "Dịch:\n1. Các loạt phim bị tổn hại do xuất hiện quá nhiều trên truyền thông.\n2. Họ mang lại sự chú ý cho khán giả ngay từ đầu.\n\nMẹo: Phim truyền hình bị tổn hại vì xuất hiện quá mức và thu hút sự chú ý ban đầu",
+      "questions": [
+        {
+          "id": "p4-p22-q1",
+          "question": "What does the expert say about the negative side of advertising?",
+          "questionVi": "Chuyên gia nói gì về mặt tiêu cực của quảng cáo?",
+          "options": [
+            "Advertisements might sometimes be repetitive, which is annoying.",
+            "Series are damaged by overexposure.",
+            "Advertising costs the same amount of money to produce a movie."
+          ],
+          "optionsVi": [
+            "Quảng cáo đôi khi bị lặp đi lặp lại gây khó chịu",
+            "Các loạt phim bị tổn hại do xuất hiện quá nhiều trên truyền thông",
+            "Chi phí quảng cáo tương đương với chi phí sản xuất một bộ phim"
+          ],
+          "correct": 1,
+          "keyHighlight": "damaged by overexposure",
+          "keyHighlightVi": "bị tổn hại do xuất hiện quá mức"
+        },
+        {
+          "id": "p4-p22-q2",
+          "question": "In what way can advertising affect sports?",
+          "questionVi": "Quảng cáo có thể ảnh hưởng đến thể thao theo cách nào?",
+          "options": [
+            "They can boost ticket sales and sales of sports-related items",
+            "They help to attract more fans",
+            "They bring the attention to the audience from beginning"
+          ],
+          "optionsVi": [
+            "Chúng có thể thúc đẩy doanh số bán vé và các mặt hàng thể thao",
+            "Chúng giúp thu hút nhiều người hâm mộ hơn",
+            "Chúng mang lại sự chú ý cho khán giả ngay từ đầu"
+          ],
+          "correct": 2,
+          "keyHighlight": "attention to the audience from beginning",
+          "keyHighlightVi": "thu hút sự chú ý của khán giả ngay từ đầu"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-23",
+      "pairIndex": 23,
+      "audioPrompt": "Listen to a reporter talk about Making plans / set up goals and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Kế hoạch nhỏ giúp linh hoạt, kế hoạch lớn phải đặt giới hạn",
+      "explanationVi": "Dịch:\n1. Nó cho phép bạn trở nên linh hoạt hơn.\n2. Nó đòi hỏi bạn phải tự đặt ra cho mình những giới hạn nhất định.\n\nMẹo: Kế hoạch nhỏ giúp linh hoạt, kế hoạch lớn phải đặt giới hạn",
+      "questions": [
+        {
+          "id": "p4-p23-q1",
+          "question": "How does creating each small plan help you?",
+          "questionVi": "Việc lập từng kế hoạch nhỏ giúp ích gì cho bạn?",
+          "options": [
+            "They increased workload",
+            "They help you make decisions",
+            "It allows you to be more flexible."
+          ],
+          "optionsVi": [
+            "Chúng làm tăng khối lượng công việc",
+            "Chúng giúp bạn đưa ra quyết định",
+            "Nó cho phép bạn trở nên linh hoạt hơn"
+          ],
+          "correct": 2,
+          "keyHighlight": "allows you to be more flexible",
+          "keyHighlightVi": "trở nên linh hoạt hơn"
+        },
+        {
+          "id": "p4-p23-q2",
+          "question": "How does creating a plan help you in general?",
+          "questionVi": "Nhìn chung việc lập một kế hoạch giúp ích gì cho bạn?",
+          "options": [
+            "It requires you to set yourself certain limits",
+            "It removes all risks from the process",
+            "It guarantees immediate success"
+          ],
+          "optionsVi": [
+            "Nó đòi hỏi bạn phải tự đặt ra cho mình những giới hạn nhất định",
+            "Nó loại bỏ mọi rủi ro trong quá trình thực hiện",
+            "Nó đảm bảo thành công ngay lập tức"
+          ],
+          "correct": 0,
+          "keyHighlight": "set yourself certain limits",
+          "keyHighlightVi": "đặt ra những giới hạn nhất định"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-24",
+      "pairIndex": 24,
+      "audioPrompt": "Listen to a book reviewer talk about a new novel (hopeless love) and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Tình yêu vô vọng: khó đồng cảm và là thất bại đầy tham vọng",
+      "explanationVi": "Dịch:\n1. Khó có thể đồng cảm được.\n2. Đó là một thất bại đầy tham vọng.\n\nMẹo: Tình yêu vô vọng: khó đồng cảm và là thất bại đầy tham vọng",
+      "questions": [
+        {
+          "id": "p4-p24-q1",
+          "question": "Câu hỏi 1: What is the main drawback of this novel?",
+          "questionVi": "Câu hỏi 1: Nhược điểm chính của cuốn tiểu thuyết này là gì?",
+          "options": [
+            "It's difficult to relate to",
+            "It's easy to relate to",
+            "It's amazing and memorable"
+          ],
+          "optionsVi": [
+            "Khó có thể đồng cảm được",
+            "Dễ dàng đồng cảm được",
+            "Nó tuyệt vời và đáng nhớ"
+          ],
+          "correct": 0,
+          "keyHighlight": "difficult to relate to",
+          "keyHighlightVi": "khó có thể đồng cảm được"
+        },
+        {
+          "id": "p4-p24-q2",
+          "question": "Câu hỏi 2: What is the reviewer's verdict on the novel?",
+          "questionVi": "Câu hỏi 2: Nhận định của người đánh giá về cuốn tiểu thuyết là gì?",
+          "options": [
+            "It's a simple but entertain story",
+            "It's an ambitious failure",
+            "It is a focus in daily life"
+          ],
+          "optionsVi": [
+            "Đó là một câu chuyện đơn giản nhưng mang tính giải trí",
+            "Đó là một thất bại đầy tham vọng",
+            "Nó là tâm điểm trong đời sống hàng ngày"
+          ],
+          "correct": 1,
+          "keyHighlight": "ambitious failure",
+          "keyHighlightVi": "thất bại đầy tham vọng"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-25",
+      "pairIndex": 25,
+      "audioPrompt": "Listen to a reporter talk about a new book/novel and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Sách giống các cuốn trước nhưng cốt truyện rất mạnh",
+      "explanationVi": "Dịch:\n1. Nó rất giống với những cuốn sách khác của tác giả.\n2. Cốt truyện rất mạnh mẽ và lôi cuốn.\n\nMẹo: Sách giống các cuốn trước nhưng cốt truyện rất mạnh",
+      "questions": [
+        {
+          "id": "p4-p25-q1",
+          "question": "ý 1: What is noted about this new book compared to previous works?",
+          "questionVi": "Ý 1: Điều gì được ghi nhận về cuốn sách mới này so với các tác phẩm trước?",
+          "options": [
+            "It explains the true purpose",
+            "It is very similar to the author's other books",
+            "It is very difficult to succeed in the business"
+          ],
+          "optionsVi": [
+            "Nó giải thích mục đích thực sự",
+            "Nó rất giống với những cuốn sách khác của tác giả",
+            "Rất khó để thành công trong ngành này"
+          ],
+          "correct": 1,
+          "keyHighlight": "very similar to the author's other books",
+          "keyHighlightVi": "rất giống với các cuốn sách khác của tác giả"
+        },
+        {
+          "id": "p4-p25-q2",
+          "question": "ý 2: What is the main highlight of the book?",
+          "questionVi": "Ý 2: Điểm nổi bật nhất của cuốn sách là gì?",
+          "options": [
+            "The plot was very strong",
+            "The content is easy to guess",
+            "This book is highly recommended"
+          ],
+          "optionsVi": [
+            "Cốt truyện rất mạnh mẽ và lôi cuốn",
+            "Nội dung rất dễ đoán",
+            "Cuốn sách này rất đáng được đề xuất"
+          ],
+          "correct": 0,
+          "keyHighlight": "plot was very strong",
+          "keyHighlightVi": "cốt truyện rất mạnh mẽ"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-26",
+      "pairIndex": 26,
+      "audioPrompt": "Listen to a reporter talk about Podcasting and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Podcast thất bại vì không quảng bá, podcast thành công nhờ xây dựng cộng đồng",
+      "explanationVi": "Dịch:\n1. Những người sáng tạo không quảng bá chương trình của họ.\n2. Đó là một cách tuyệt vời để xây dựng một cộng đồng.\n\nMẹo: Podcast thất bại vì không quảng bá, podcast thành công nhờ xây dựng cộng đồng",
+      "questions": [
+        {
+          "id": "p4-p26-q1",
+          "question": "What does the speaker say about why new podcast fail?",
+          "questionVi": "Người nói nói gì về lý do tại sao podcast mới thất bại?",
+          "options": [
+            "The content is boring",
+            "creators spend too much money on equipment",
+            "Creators do not promote their shows"
+          ],
+          "optionsVi": [
+            "Nội dung nhàm chán",
+            "Người sáng tạo chi quá nhiều tiền vào thiết bị",
+            "Người sáng tạo không quảng bá chương trình của họ"
+          ],
+          "correct": 2,
+          "keyHighlight": "do not promote their shows",
+          "keyHighlightVi": "không quảng bá chương trình của họ"
+        },
+        {
+          "id": "p4-p26-q2",
+          "question": "What is the speaker's opinion about podcasting?",
+          "questionVi": "Ý kiến của người nói về làm podcast là gì?",
+          "options": [
+            "It is mainly useful for advertising products",
+            "People like a certain level of consistency",
+            "It is a great way to build a community"
+          ],
+          "optionsVi": [
+            "Nó chủ yếu hữu ích để quảng cáo sản phẩm",
+            "Mọi người thích một mức độ nhất quán nhất định",
+            "Đó là một cách tuyệt vời để xây dựng một cộng đồng"
+          ],
+          "correct": 2,
+          "keyHighlight": "great way to build a community",
+          "keyHighlightVi": "xây dựng một cộng đồng"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-27",
+      "pairIndex": 27,
+      "audioPrompt": "Listen to a reporter talk about using the time effectively and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Năng suất: quản lý thời gian hiệu quả và đòi hỏi nỗ lực",
+      "explanationVi": "Dịch:\n1. Quản lý thời gian hiệu quả.\n2. Sử dụng chúng một cách hiệu quả đòi hỏi sự nỗ lực.\n\nMẹo: Năng suất: quản lý thời gian hiệu quả và đòi hỏi nỗ lực",
+      "questions": [
+        {
+          "id": "p4-p27-q1",
+          "question": "Maximize productivity:",
+          "questionVi": "Tối đa hóa năng suất:",
+          "options": [
+            "Create time blocks for tasks",
+            "Effective time management",
+            "break down goals into steps"
+          ],
+          "optionsVi": [
+            "Tạo các khối thời gian cho các nhiệm vụ",
+            "Quản lý thời gian hiệu quả",
+            "Chia nhỏ mục tiêu thành các bước"
+          ],
+          "correct": 1,
+          "keyHighlight": "Effective time management",
+          "keyHighlightVi": "quản lý thời gian hiệu quả"
+        },
+        {
+          "id": "p4-p27-q2",
+          "question": "Productivity strategies:",
+          "questionVi": "Các chiến lược năng suất:",
+          "options": [
+            "set specific time limits for each task",
+            "select strategies carefully",
+            "Using them effectively require effort"
+          ],
+          "optionsVi": [
+            "Đặt giới hạn thời gian cụ thể cho từng nhiệm vụ",
+            "Lựa chọn chiến lược cẩn thận",
+            "Sử dụng chúng hiệu quả đòi hỏi sự nỗ lực"
+          ],
+          "correct": 2,
+          "keyHighlight": "effectively require effort",
+          "keyHighlightVi": "đòi hỏi sự nỗ lực"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-28",
+      "pairIndex": 28,
+      "audioPrompt": "Listen to a book critic talks about a biography and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Tiểu sử: mô tả giai đoạn tốt và mang tính phá cách",
+      "explanationVi": "Dịch:\n1. Nó có một mô tả tốt về một khoảng thời gian cụ thể.\n2. Đó là một cuốn tiểu sử độc đáo, khác với truyền thống (unconventional).\n\nMẹo: Tiểu sử: mô tả giai đoạn tốt và mang tính phá cách",
+      "questions": [
+        {
+          "id": "p4-p28-q1",
+          "question": "The main strength of the book?",
+          "questionVi": "Điểm mạnh chính của cuốn sách là gì?",
+          "options": [
+            "It offers a vivid description of a particular time period.",
+            "It has a good description of a specific period of time",
+            "It contains a well-written description of a certain period of time."
+          ],
+          "optionsVi": [
+            "Nó mang lại mô tả sống động về một khoảng thời gian cụ thể",
+            "Nó có một mô tả tốt về một khoảng thời gian cụ thể",
+            "Nó chứa đựng một mô tả được viết tốt về một giai đoạn nhất định"
+          ],
+          "correct": 1,
+          "keyHighlight": "good description of a specific period of time",
+          "keyHighlightVi": "mô tả tốt về một khoảng thời gian cụ thể"
+        },
+        {
+          "id": "p4-p28-q2",
+          "question": "What is the critic's overall opinion of the book?",
+          "questionVi": "Ý kiến tổng thể của nhà phê bình về cuốn sách là gì?",
+          "options": [
+            "It is an unconventional biography",
+            "It includes an interview with a famous politician",
+            "It takes more than just facts and figures"
+          ],
+          "optionsVi": [
+            "Đó là một cuốn tiểu sử phá cách, phi truyền thống",
+            "Nó bao gồm một cuộc phỏng vấn với một chính trị gia nổi tiếng",
+            "Nó cần nhiều hơn là chỉ những sự thật và số liệu"
+          ],
+          "correct": 0,
+          "keyHighlight": "unconventional biography",
+          "keyHighlightVi": "tiểu sử phá cách, phi truyền thống"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-29",
+      "pairIndex": 29,
+      "audioPrompt": "Listen to a reporter talks about the music industry and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Ngành âm nhạc: tin bản năng và khó khăn khi khởi nghiệp",
+      "explanationVi": "Dịch:\n1. Niềm tin vào bản năng âm nhạc của cô ấy.\n2. Những người biểu diễn cảm thấy khó khăn khi mới bắt đầu.\n\nMẹo: Ngành âm nhạc: tin bản năng và khó khăn khi khởi nghiệp",
+      "questions": [
+        {
+          "id": "p4-p29-q1",
+          "question": "What is the key for her long term career?",
+          "questionVi": "Chìa khóa cho sự nghiệp lâu dài của cô ấy là gì?",
+          "options": [
+            "support from major record labels",
+            "Belief in her musical instincts",
+            "maintaining a consistent social media presence"
+          ],
+          "optionsVi": [
+            "Sự hỗ trợ từ các hãng thu âm lớn",
+            "Niềm tin vào bản năng âm nhạc của cô ấy",
+            "Duy trì sự hiện diện đều đặn trên mạng xã hội"
+          ],
+          "correct": 1,
+          "keyHighlight": "Belief in her musical instincts",
+          "keyHighlightVi": "niềm tin vào bản năng âm nhạc"
+        },
+        {
+          "id": "p4-p29-q2",
+          "question": "What is the musician's opinion of the current music industry?",
+          "questionVi": "Ý kiến của nhạc sĩ về ngành công nghiệp âm nhạc hiện nay là gì?",
+          "options": [
+            "Performers find it hard to get started",
+            "Musician have more creative freedom now",
+            "Leveraging digital platforms to reach a wider audience"
+          ],
+          "optionsVi": [
+            "Những người biểu diễn cảm thấy khó khăn khi mới bắt đầu",
+            "Các nhạc sĩ hiện có nhiều tự do sáng tạo hơn",
+            "Tận dụng nền tảng số để tiếp cận lượng khán giả rộng lớn hơn"
+          ],
+          "correct": 0,
+          "keyHighlight": "find it hard to get started",
+          "keyHighlightVi": "khó khăn khi mới bắt đầu"
+        }
+      ]
+    },
+    {
+      "id": "p4-pair-30",
+      "pairIndex": 30,
+      "audioPrompt": "Listen to a reporter talks about an Exhibition of the Greek Artist Jim Panos and answer the questions below.",
+      "instruction": "Phần này chỉ cần nhớ 2 đáp án đúng. Click vào mô tả để xem 2 đáp án đúng",
+      "tipMnemonic": "Tranh của Jim Panos tương tự nghệ sĩ khác và là cửa sổ nhìn về quá khứ",
+      "explanationVi": "Dịch:\n1. Các bức tranh của Panos sẽ tương tự như tranh của một nghệ sĩ khác.\n2. Đó là một cánh cửa sổ nhìn về quá khứ.\n\nMẹo: Tranh của Jim Panos tương tự nghệ sĩ khác và là cửa sổ nhìn về quá khứ",
+      "questions": [
+        {
+          "id": "p4-p30-q1",
+          "question": "ý 1: What is noted about Jim Panos' paintings?",
+          "questionVi": "Ý 1: Điều gì được ghi nhận về các bức tranh của Jim Panos?",
+          "options": [
+            "Panos' work would be much like that of another artist.",
+            "Panos' paintings would be similar to those of another artist.",
+            "Panos' paintings would be comparable to that of another artist."
+          ],
+          "optionsVi": [
+            "Tác phẩm của Panos sẽ rất giống với tác phẩm của nghệ sĩ khác",
+            "Các bức tranh của Panos sẽ tương tự như tranh của một nghệ sĩ khác",
+            "Các bức tranh của Panos có thể so sánh được với của một nghệ sĩ khác"
+          ],
+          "correct": 1,
+          "keyHighlight": "similar to those of another artist",
+          "keyHighlightVi": "tương tự như tranh của một nghệ sĩ khác"
+        },
+        {
+          "id": "p4-p30-q2",
+          "question": "ý 2: What impact do his paintings have?",
+          "questionVi": "Ý 2: Các bức tranh của ông mang lại tác động gì?",
+          "options": [
+            "It provides a glimpse into the past.",
+            "It reveals aspects of a bygone era.",
+            "It is a window to the past"
+          ],
+          "optionsVi": [
+            "Nó cung cấp một cái nhìn thoáng qua về quá khứ",
+            "Nó hé lộ những khía cạnh của một kỷ nguyên đã qua",
+            "Đó là một cánh cửa sổ nhìn về quá khứ"
+          ],
+          "correct": 2,
+          "keyHighlight": "window to the past",
+          "keyHighlightVi": "cánh cửa sổ nhìn về quá khứ"
         }
       ]
     }
