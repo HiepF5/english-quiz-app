@@ -1,11 +1,11 @@
 {
   "id": "aptis-listening-part-1-all-questions",
-  "title": "Aptis Listening Part 1 - Tổng hợp 192 câu",
-  "description": "Luyện tập theo trí nhớ tiếng Việt & Thi thử 192 câu nghe Aptis Part 1 (Set 1: 1-50, Set 2: 51-100, Set 3: 101-192)",
+  "title": "Aptis Listening Part 1 - Tổng hợp 194 câu",
+  "description": "Luyện tập theo trí nhớ tiếng Việt & Thi thử 194 câu nghe Aptis Part 1 (Set 1: 1-50, Set 2: 51-100, Set 3: 101-194)",
   "level": "B1-B2",
   "category": "Listening",
   "timeLimitMinutes": 60,
-  "totalQuestions": 192,
+  "totalQuestions": 194,
   "sets": [
     {
       "id": "set-1",
@@ -23,10 +23,10 @@
     },
     {
       "id": "set-3",
-      "name": "Set 3 (Câu 101 - 192)",
-      "count": 92,
+      "name": "Set 3 (Câu 101 - 194)",
+      "count": 94,
       "questionStart": 101,
-      "questionEnd": 192
+      "questionEnd": 194
     }
   ],
   "questions": [
@@ -4056,7 +4056,49 @@
         "400 bảng"
       ],
       "explanation": "Đáp án đúng: B. 350 pounds\n• Dịch câu hỏi: Nghe một người phụ nữ hỏi về một chuyến bay. Chuyến bay vào buổi sáng có giá bao nhiêu?\n• Dịch các đáp án:\n  - A. 300 pounds ➔ 300 bảng\n  - B. 350 pounds ➔ 350 bảng\n  - C. 400 pounds ➔ 400 bảng",
-      "part": "Phần 3 (Câu 101 - 192)"
+      "part": "Phần 3 (Câu 101 - 194)"
+    },
+    {
+      "num": 193,
+      "id": "579204726",
+      "setIndex": 3,
+      "question": "Listen to a friend talking about selling her music player. How much did she sell it for?",
+      "options": [
+        "50 dollars",
+        "60 dollars",
+        "40 dollars"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Nghe một người bạn nói về việc bán máy nghe nhạc của cô ấy. Cô ấy đã bán nó với giá bao nhiêu?",
+      "optionsVi": [
+        "50 đô la",
+        "60 đô la",
+        "40 đô la"
+      ],
+      "explanation": "Đáp án đúng: A. 50 dollars\n• Dịch câu hỏi: Nghe một người bạn nói về việc bán máy nghe nhạc của cô ấy. Cô ấy đã bán nó với giá bao nhiêu?\n• Dịch các đáp án:\n  - A. 50 dollars ➔ 50 đô la\n  - B. 60 dollars ➔ 60 đô la\n  - C. 40 dollars ➔ 40 đô la",
+      "part": "Phần 3 (Câu 101 - 194)"
+    },
+    {
+      "num": 194,
+      "id": "579204727",
+      "setIndex": 3,
+      "question": "Listen to a woman explaining why she was late. What is the main reason she gets late?",
+      "options": [
+        "Overslept",
+        "Forgot something",
+        "Missed the train"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Nghe một người phụ nữ giải thích lý do tại sao cô ấy đến muộn. Lý do chính khiến cô ấy bị muộn là gì?",
+      "optionsVi": [
+        "Ngủ quên",
+        "Quên đồ",
+        "Bị lỡ chuyến tàu"
+      ],
+      "explanation": "Đáp án đúng: C. Missed the train\n• Dịch câu hỏi: Nghe một người phụ nữ giải thích lý do tại sao cô ấy đến muộn. Lý do chính khiến cô ấy bị muộn là gì?\n• Dịch các đáp án:\n  - A. Overslept ➔ Ngủ quên\n  - B. Forgot something ➔ Quên đồ\n  - C. Missed the train ➔ Bị lỡ chuyến tàu",
+      "part": "Phần 3 (Câu 101 - 194)"
     }
   ]
 }
