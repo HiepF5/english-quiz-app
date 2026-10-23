@@ -485,5 +485,296 @@ export const OPINION_TOPICS: OpinionTopic[] = [
         "mnemonicHint": "Thích làm việc bằng tay chân (doing things with their hands / checking pipe leaks, fastening screws) -> Tiếc vì học đại học quá dài thay vì học khóa ngắn hạn (training was too long / wish chosen short online courses)."
       }
     ]
+  },
+  {
+    "id": "topic-6",
+    "topicNumber": 6,
+    "title": "Childhood activities (Bản 2)",
+    "titleVi": "Hoạt động thời thơ ấu - Bản 2 (Childhood)",
+    "category": "Aptis Reading Part 4",
+    "people": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "paragraphs": [
+      {
+        "personIndex": 0,
+        "personName": "Person A",
+        "contentEn": "In the past, I really liked playing board games, now to limit the children from using computers, I often spend time playing with them, but I have struggled with them, the games nowadays have more characters and rules, making us think a lot every time we play, but my children and I still like it and have a good time and laugh together.",
+        "contentVi": "Trước đây, tôi rất thích chơi cờ bàn (board games). Bây giờ để hạn chế các con dùng máy tính, tôi thường dành thời gian chơi cùng chúng, nhưng tôi đã gặp khá nhiều chật vật với chúng. Các trò chơi ngày nay có nhiều nhân vật và luật lệ hơn, khiến chúng tôi phải suy nghĩ rất nhiều mỗi khi chơi, nhưng các con tôi và tôi vẫn thích nó, có khoảng thời gian vui vẻ và cười đùa cùng nhau."
+      },
+      {
+        "personIndex": 1,
+        "personName": "Person B",
+        "contentEn": "When I was a child, I often played soccer with other children of the same age, we often played football in the school yard and sometimes in the open spaces of the neighborhood. We divided into small teams and chased the ball until we were all tired.",
+        "contentVi": "Khi còn nhỏ, tôi thường đá bóng với những đứa trẻ khác cùng tuổi, chúng tôi thường đá bóng trong sân trường và đôi khi ở những khoảng không gian mở của khu phố. Chúng tôi chia thành các đội nhỏ và đuổi theo bóng cho đến khi tất cả đều mệt nhoài."
+      },
+      {
+        "personIndex": 2,
+        "personName": "Person C",
+        "contentEn": "When I was a child, I didn't like going out to play, so I chose reading books as a form of entertainment. The stories described in the pages of books helped me discover my own world. Later, when I grow up, I like playing modern games with eye-catching interfaces, which helps me relax and increase my creativity.",
+        "contentVi": "Khi còn nhỏ, tôi không thích ra ngoài chơi, nên tôi chọn đọc sách như một hình thức giải trí. Những câu chuyện được miêu tả trên từng trang sách đã giúp tôi khám phá thế giới của riêng mình. Sau này khi lớn lên, tôi thích chơi các trò chơi hiện đại với giao diện bắt mắt, giúp tôi thư giãn và tăng cường tính sáng tạo."
+      },
+      {
+        "personIndex": 3,
+        "personName": "Person D",
+        "contentEn": "When I was a child, I really liked playing outdoor activities. I remember on bad weather days, I was always by the window, glued to the window to look outside, praying for the rain to stop. At those times, my mother often gave me paper and a box of crayons, I really liked that drawing activity and often drew at home when the weather was not good.",
+        "contentVi": "Khi còn nhỏ, tôi thực sự thích tham gia các hoạt động ngoài trời. Tôi nhớ vào những ngày thời tiết xấu, tôi luôn ở bên cửa sổ, dán mắt vào cửa sổ để nhìn ra ngoài, cầu nguyện cho mưa tạnh. Vào những lúc đó, mẹ thường cho tôi giấy và một hộp bút sáp màu, tôi thực sự thích hoạt động vẽ tranh đó và thường vẽ ở nhà khi thời tiết không tốt."
+      }
+    ],
+    "questions": [
+      {
+        "id": 36,
+        "questionNumber": 1,
+        "question": "Who likes to play with children?",
+        "correctPersonIndex": 0,
+        "explanation": "Đáp án đúng: Person A\n\n📌 Dẫn chứng trích đoạn:\n\"now to limit the children from using computers, I often spend time playing with them... but my children and I still like it and have a good time and laugh together.\"\n-> Dịch: \"bây giờ để hạn chế các con dùng máy tính, tôi thường dành thời gian chơi cùng chúng... nhưng các con và tôi vẫn thích và có khoảng thời gian vui vẻ, cùng cười đùa.\"\n\n💡 Mẹo ghi nhớ cho Person A:\nThích chơi với trẻ nhỏ (likes to play with children / spend time playing with them) & Thấy trò chơi ngày nay khó hơn nhiều (finds games nowadays much more difficult).",
+        "mnemonicHint": "Thích chơi với trẻ nhỏ (likes to play with children) -> Person A."
+      },
+      {
+        "id": 37,
+        "questionNumber": 2,
+        "question": "Who likes to play with other children in the past?",
+        "correctPersonIndex": 1,
+        "explanation": "Đáp án đúng: Person B\n\n📌 Dẫn chứng trích đoạn:\n\"When I was a child, I often played soccer with other children of the same age, we often played football in the school yard and sometimes in the open spaces of the neighborhood.\"\n-> Dịch: \"Khi còn nhỏ, tôi thường đá bóng với những đứa trẻ khác cùng tuổi, chúng tôi thường đá bóng trong sân trường và đôi khi ở những khoảng đất trống trong khu phố.\"\n\n💡 Mẹo ghi nhớ cho Person B:\nQuá khứ thích chơi với những đứa trẻ khác cùng tuổi (likes to play with other children in the past / played soccer with other children).",
+        "mnemonicHint": "Thích chơi với những đứa trẻ khác trong quá khứ (play with other children in the past) -> Person B."
+      },
+      {
+        "id": 38,
+        "questionNumber": 3,
+        "question": "Who looked forward to going out to play?",
+        "correctPersonIndex": 3,
+        "explanation": "Đáp án đúng: Person D\n\n📌 Dẫn chứng trích đoạn:\n\"When I was a child, I really liked playing outdoor activities. I remember on bad weather days, I was always by the window, glued to the window to look outside, praying for the rain to stop.\"\n-> Dịch: \"Khi còn nhỏ, tôi thực sự thích các hoạt động ngoài trời. Tôi nhớ vào những ngày thời tiết xấu, tôi luôn đứng bên cửa sổ, dán mắt vào cửa sổ nhìn ra ngoài, cầu cho mưa tạnh.\"\n\n💡 Mẹo ghi nhớ cho Person D:\nMong ngóng được ra ngoài chơi (looked forward to going out to play / glued to the window looking outside, praying for rain to stop) & Lúc nhỏ mê vẽ nghệ thuật (liked arts when he was a child / box of crayons, drawing).",
+        "mnemonicHint": "Ngóng ra ngoài chơi lúc trời mưa (looked forward to going out to play) -> Person D."
+      },
+      {
+        "id": 39,
+        "questionNumber": 4,
+        "question": "Who liked arts when he was a child?",
+        "correctPersonIndex": 3,
+        "explanation": "Đáp án đúng: Person D\n\n📌 Dẫn chứng trích đoạn:\n\"At those times, my mother often gave me paper and a box of crayons, I really liked that drawing activity and often drew at home when the weather was not good.\"\n-> Dịch: \"Những lúc đó, mẹ thường cho tôi giấy và một hộp bút màu sáp, tôi thực sự thích hoạt động vẽ tranh đó và thường vẽ ở nhà khi thời tiết không tốt.\"\n\n💡 Mẹo ghi nhớ cho Person D:\nLúc nhỏ thích nghệ thuật, hội họa (liked arts when he was a child / box of crayons, drawing activity).",
+        "mnemonicHint": "Lúc nhỏ thích nghệ thuật hội họa (liked arts when he was a child) -> Person D."
+      },
+      {
+        "id": 40,
+        "questionNumber": 5,
+        "question": "Who likes modern games when growing up?",
+        "correctPersonIndex": 2,
+        "explanation": "Đáp án đúng: Person C\n\n📌 Dẫn chứng trích đoạn:\n\"Later, when I grow up, I like playing modern games with eye-catching interfaces, which helps me relax and increase my creativity.\"\n-> Dịch: \"Sau này khi lớn lên, tôi thích chơi các trò chơi hiện đại với giao diện bắt mắt, giúp tôi thư giãn và tăng khả năng sáng tạo.\"\n\n💡 Mẹo ghi nhớ cho Person C:\nKhi lớn lên thích các trò chơi hiện đại (likes modern games when growing up) & Hồi nhỏ thích đọc sách (liked reading books when he/she was a child).",
+        "mnemonicHint": "Lớn lên thích game hiện đại (likes modern games when growing up) -> Person C."
+      },
+      {
+        "id": 41,
+        "questionNumber": 6,
+        "question": "Who finds the games nowadays much more difficult?",
+        "correctPersonIndex": 0,
+        "explanation": "Đáp án đúng: Person A\n\n📌 Dẫn chứng trích đoạn:\n\"the games nowadays have more characters and rules, making us think a lot every time we play... but I have struggled with them\"\n-> Dịch: \"các trò chơi ngày nay có nhiều nhân vật và luật lệ hơn, khiến chúng tôi phải suy nghĩ rất nhiều mỗi khi chơi... nhưng tôi đã phải rất chật vật với chúng\"\n\n💡 Mẹo ghi nhớ cho Person A:\nThấy trò chơi ngày nay khó hơn nhiều (finds the games nowadays much more difficult / struggled, more characters and rules, think a lot).",
+        "mnemonicHint": "Thấy game ngày nay phức tạp, khó hơn (finds games nowadays much more difficult) -> Person A."
+      },
+      {
+        "id": 42,
+        "questionNumber": 7,
+        "question": "Who liked reading books when he was a child?",
+        "correctPersonIndex": 2,
+        "explanation": "Đáp án đúng: Person C\n\n📌 Dẫn chứng trích đoạn:\n\"When I was a child, I didn't like going out to play, so I chose reading books as a form of entertainment. The stories described in the pages of books helped me discover my own world.\"\n-> Dịch: \"Khi còn nhỏ, tôi không thích đi ra ngoài chơi nên tôi chọn đọc sách như một hình thức giải trí. Những câu chuyện được miêu tả trên từng trang sách giúp tôi khám phá thế giới của riêng mình.\"\n\n💡 Mẹo ghi nhớ cho Person C:\nHồi nhỏ thích đọc sách (liked reading books when he was a child) & Lớn lên thích game hiện đại (likes modern games when growing up).",
+        "mnemonicHint": "Hồi nhỏ thích đọc sách (liked reading books when he was a child) -> Person C."
+      }
+    ]
+  },
+  {
+    "id": "topic-7",
+    "topicNumber": 7,
+    "title": "Careers (Nghề nghiệp - Bản mới)",
+    "titleVi": "Nghề nghiệp - Bản mới (Careers)",
+    "category": "Aptis Reading Part 4",
+    "people": [
+      "Person A",
+      "Person B",
+      "Person C",
+      "Person D"
+    ],
+    "paragraphs": [
+      {
+        "personIndex": 0,
+        "personName": "Person A",
+        "contentEn": "When I was a student, I decided to do an unpaid internship at organizations and companies. At first, my friends said it was a waste of time because I didn’t earn any money. However, I learned a lot of practical skills and gained real working experience. I also built good relationships with my colleagues, which later helped me find a full-time job more easily.",
+        "contentVi": "Khi còn là sinh viên, tôi quyết định thực tập không lương tại các tổ chức và công ty. Ban đầu, bạn bè nói đó là sự lãng phí thời gian vì tôi không kiếm được đồng tiền nào. Tuy nhiên, tôi đã học được rất nhiều kỹ năng thực tế và tích lũy được kinh nghiệm làm việc thực sự. Tôi cũng xây dựng mối quan hệ tốt với các đồng nghiệp, điều này sau đó đã giúp tôi tìm được một công việc toàn thời gian dễ dàng hơn."
+      },
+      {
+        "personIndex": 1,
+        "personName": "Person B",
+        "contentEn": "My dream job is becoming a teacher, and I have never thought about changing to another career. Teaching has always been my goal because I enjoy working with students and helping them learn new things. At the moment, I am studying hard to become a good teacher in the future. While I am still in training, I also work part-time at a school so that I can gain real teaching experience. I really enjoy working while studying because it helps me improve my skills and become more confident in the classroom. Even though it can be challenging sometimes, I believe this experience is very valuable, and I am happy to continue on this career path without changing my job plans.",
+        "contentVi": "Công việc mơ ước của tôi là trở thành giáo viên, và tôi chưa bao giờ nghĩ đến việc chuyển sang nghề khác. Giảng dạy luôn là mục tiêu của tôi vì tôi thích làm việc với học sinh và giúp các em học hỏi những điều mới. Hiện tại, tôi đang học tập chăm chỉ để trở thành một giáo viên giỏi trong tương lai. Trong khi vẫn đang trong quá trình đào tạo, tôi cũng làm việc bán thời gian tại một trường học để tích lũy kinh nghiệm giảng dạy thực tế. Tôi thực sự thích vừa học vừa làm vì nó giúp tôi nâng cao kỹ năng và tự tin hơn trong lớp học. Mặc dù đôi khi có thể có nhiều thử thách, tôi tin rằng trải nghiệm này rất quý giá và tôi rất vui khi tiếp tục theo đuổi con đường sự nghiệp này mà không thay đổi kế hoạch công việc của mình."
+      },
+      {
+        "personIndex": 2,
+        "personName": "Person C",
+        "contentEn": "When I was a child I worked with a plumber and helped her with fixing things. I love a career in mechanical engineering because I enjoy making and repairing things by hand. However, the training period was much longer than I expected, about 2 years. Sometimes I felt tired of studying theory for so many years before actually starting work. Still, I believe the skills I learned will be useful in the long run.",
+        "contentVi": "Khi còn nhỏ, tôi đã làm việc với một người thợ sửa ống nước và giúp cô ấy sửa chữa mọi thứ. Tôi yêu thích nghề kỹ thuật cơ khí vì tôi thích chế tạo và sửa chữa đồ vật bằng tay. Tuy nhiên, thời gian đào tạo dài hơn nhiều so với tôi dự kiến, khoảng 2 năm. Đôi khi tôi cảm thấy mệt mỏi vì phải học lý thuyết quá nhiều năm trước khi thực sự bắt đầu đi làm. Dù vậy, tôi tin rằng những kỹ năng mình học được sẽ hữu ích về lâu dài."
+      },
+      {
+        "personIndex": 3,
+        "personName": "Person D",
+        "contentEn": "After graduating, it took me a long time to find my first job. Many companies required experience, which made the process quite stressful. Luckily, I finally found a position that suits me well in a gaming company. I now work in a flexible working environment where I can manage my own time and work from home, and this helps me balance my work and personal life better.",
+        "contentVi": "Sau khi tốt nghiệp, tôi phải mất nhiều thời gian để tìm được công việc đầu tiên. Nhiều công ty yêu cầu kinh nghiệm, điều này khiến quá trình này khá căng thẳng. May mắn thay, cuối cùng tôi đã tìm được một vị trí rất phù hợp với mình tại một công ty trò chơi điện tử. Hiện tại tôi làm việc trong một môi trường làm việc linh hoạt, nơi tôi có thể tự quản lý thời gian của mình và làm việc tại nhà, điều này giúp tôi cân bằng công việc và cuộc sống cá nhân tốt hơn."
+      }
+    ],
+    "questions": [
+      {
+        "id": 43,
+        "questionNumber": 1,
+        "question": "Who does not want to change to another job?",
+        "correctPersonIndex": 1,
+        "explanation": "Đáp án đúng: Person B\n\n📌 Dẫn chứng trích đoạn:\n\"My dream job is becoming a teacher, and I have never thought about changing to another career... without changing my job plans.\"\n-> Dịch: \"Công việc mơ ước của tôi là trở thành giáo viên, và tôi chưa bao giờ nghĩ đến việc chuyển sang nghề khác... mà không thay đổi kế hoạch công việc.\"\n\n💡 Mẹo ghi nhớ cho Person B:\nKhông muốn đổi sang nghề khác (does not want to change to another job / never thought about changing) & Thích vừa làm vừa học/đào tạo (enjoys working while training).",
+        "mnemonicHint": "Không muốn đổi nghề khác (not want to change to another job) -> Person B."
+      },
+      {
+        "id": 44,
+        "questionNumber": 2,
+        "question": "Who thinks their training is too long?",
+        "correctPersonIndex": 2,
+        "explanation": "Đáp án đúng: Person C\n\n📌 Dẫn chứng trích đoạn:\n\"However, the training period was much longer than I expected, about 2 years. Sometimes I felt tired of studying theory for so many years before actually starting work.\"\n-> Dịch: \"Tuy nhiên, thời gian đào tạo dài hơn nhiều so với tôi dự kiến, khoảng 2 năm. Đôi khi tôi cảm thấy mệt mỏi vì phải học lý thuyết quá nhiều năm trước khi thực sự đi làm.\"\n\n💡 Mẹo ghi nhớ cho Person C:\nThấy thời gian đào tạo quá dài (training is too long / much longer than I expected, about 2 years) & Thích làm việc bằng tay chân (likes doing things with their hands).",
+        "mnemonicHint": "Đào tạo quá dài (training is too long) -> Person C."
+      },
+      {
+        "id": 45,
+        "questionNumber": 3,
+        "question": "Who enjoys working while training?",
+        "correctPersonIndex": 1,
+        "explanation": "Đáp án đúng: Person B\n\n📌 Dẫn chứng trích đoạn:\n\"While I am still in training, I also work part-time at a school so that I can gain real teaching experience. I really enjoy working while studying because it helps me improve my skills...\"\n-> Dịch: \"Trong khi vẫn đang trong quá trình đào tạo, tôi cũng làm việc bán thời gian tại trường... Tôi thực sự thích vừa học vừa làm vì nó giúp nâng cao kỹ năng...\"\n\n💡 Mẹo ghi nhớ cho Person B:\nThích vừa làm vừa được đào tạo/học tập (enjoys working while training / while studying).",
+        "mnemonicHint": "Thích vừa làm vừa học/đào tạo (enjoys working while training) -> Person B."
+      },
+      {
+        "id": 46,
+        "questionNumber": 4,
+        "question": "Who enjoys working in a flexible working environment?",
+        "correctPersonIndex": 3,
+        "explanation": "Đáp án đúng: Person D\n\n📌 Dẫn chứng trích đoạn:\n\"I now work in a flexible working environment where I can manage my own time and work from home, and this helps me balance my work and personal life better.\"\n-> Dịch: \"Hiện tại tôi làm việc trong một môi trường làm việc linh hoạt, nơi tôi có thể tự quản lý thời gian của mình và làm việc tại nhà...\"\n\n💡 Mẹo ghi nhớ cho Person D:\nThích môi trường làm việc linh hoạt (flexible working environment / manage my own time and work from home) & Thấy khó tìm việc đầu tiên (difficult to get the first job).",
+        "mnemonicHint": "Môi trường làm việc linh hoạt (flexible working environment) -> Person D."
+      },
+      {
+        "id": 47,
+        "questionNumber": 5,
+        "question": "Who thinks it was difficult to get the first job?",
+        "correctPersonIndex": 3,
+        "explanation": "Đáp án đúng: Person D\n\n📌 Dẫn chứng trích đoạn:\n\"After graduating, it took me a long time to find my first job. Many companies required experience, which made the process quite stressful.\"\n-> Dịch: \"Sau khi tốt nghiệp, tôi phải mất nhiều thời gian để tìm được công việc đầu tiên. Nhiều công ty yêu cầu kinh nghiệm, điều này khiến quá trình này khá căng thẳng.\"\n\n💡 Mẹo ghi nhớ cho Person D:\nKhó tìm được công việc đầu tiên (difficult to get the first job / took me a long time to find my first job).",
+        "mnemonicHint": "Khó tìm việc đầu tiên (difficult to get first job) -> Person D."
+      },
+      {
+        "id": 48,
+        "questionNumber": 6,
+        "question": "Who thinks they got benefits from working for free?",
+        "correctPersonIndex": 0,
+        "explanation": "Đáp án đúng: Person A\n\n📌 Dẫn chứng trích đoạn:\n\"When I was a student, I decided to do an unpaid internship... I learned a lot of practical skills and gained real working experience... which later helped me find a full-time job more easily.\"\n-> Dịch: \"Khi còn là sinh viên, tôi quyết định thực tập không lương... Tôi đã học được nhiều kỹ năng thực tế, tích lũy kinh nghiệm làm việc thực sự... sau này giúp tôi tìm việc dễ dàng hơn.\"\n\n💡 Mẹo ghi nhớ cho Person A:\nNhận được nhiều lợi ích từ việc làm không lương (benefits from working for free / unpaid internship, didn't earn money).",
+        "mnemonicHint": "Lợi ích từ làm việc không công (benefits from working for free) -> Person A."
+      },
+      {
+        "id": 49,
+        "questionNumber": 7,
+        "question": "Who likes doing things with their hands?",
+        "correctPersonIndex": 2,
+        "explanation": "Đáp án đúng: Person C\n\n📌 Dẫn chứng trích đoạn:\n\"I love a career in mechanical engineering because I enjoy making and repairing things by hand.\"\n-> Dịch: \"Tôi yêu thích nghề kỹ thuật cơ khí vì tôi thích chế tạo và sửa chữa đồ vật bằng tay.\"\n\n💡 Mẹo ghi nhớ cho Person C:\nThích làm đồ bằng tay (doing things with their hands / making and repairing things by hand).",
+        "mnemonicHint": "Thích làm việc chế tạo bằng tay (doing things with their hands) -> Person C."
+      }
+    ]
+  },
+  {
+    "id": "topic-8",
+    "topicNumber": 8,
+    "title": "Music Festival (Lễ hội âm nhạc - Bản 2)",
+    "titleVi": "Lễ hội âm nhạc - Bản 2 (Music Festival)",
+    "category": "Aptis Reading Part 4",
+    "people": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "paragraphs": [
+      {
+        "personIndex": 0,
+        "personName": "Person A",
+        "contentEn": "This was my first time attending the Music Festival, and to be honest, the weather really didn’t cooperate. It rained heavily on the first two days, which made it difficult to enjoy the outdoor activities. I still got wet in the tent. But I didn’t let that ruin the experience. On the final day, the skies cleared up and the performances were truly amazing — especially the final act in the evening. That last day made it all worthwhile, and I left with some great memories despite the poor weather.",
+        "contentVi": "Đây là lần đầu tiên tôi tham dự Lễ hội Âm nhạc, và thành thật mà nói, thời tiết thực sự không ủng hộ chút nào. Trời mưa tầm tã suốt hai ngày đầu tiên, khiến việc tận hưởng các hoạt động ngoài trời trở nên khó khăn. Tôi thậm chí còn bị ướt cả trong lều. Nhưng tôi không để điều đó phá hỏng trải nghiệm của mình. Vào ngày cuối cùng, bầu trời đã quang đãng và các buổi biểu diễn thực sự tuyệt vời — đặc biệt là tiết mục cuối cùng vào buổi tối. Ngày cuối cùng đó đã khiến mọi thứ trở nên hoàn toàn xứng đáng, và tôi ra về với những kỷ niệm tuyệt vời bất chấp thời tiết xấu."
+      },
+      {
+        "personIndex": 1,
+        "personName": "Person B",
+        "contentEn": "I’ve been to this festival a couple of times in the past, the quality was good the last times I came, but this time is completely different. The sound quality wasn’t great, and the whole event just felt disorganised. There weren’t enough facilities, and the staff didn’t seem prepared to handle the crowd. I couldn’t even interact with the band. I don’t think I’ll be coming back next year. It’s simply not worth the money or the time anymore.",
+        "contentVi": "Tôi đã đến lễ hội này một vài lần trong quá khứ, chất lượng những lần trước rất tốt, nhưng lần này thì hoàn toàn khác. Chất lượng âm thanh không tốt, và toàn bộ sự kiện tạo cảm giác vô tổ chức. Không có đủ cơ sở vật chất, và nhân viên dường như chưa sẵn sàng để xử lý đám đông. Tôi thậm chí không thể giao lưu với ban nhạc. Tôi không nghĩ mình sẽ quay lại vào năm tới. Đơn giản là nó không còn đáng tiền hay thời gian nữa."
+      },
+      {
+        "personIndex": 2,
+        "personName": "Person C",
+        "contentEn": "I really enjoyed the music of this festival and I danced to the music, I felt every second of the festival was worth it. I absolutely loved the energy of the performances, and the music was spot on throughout the weekend. However, I have to say the ticket prices were far too high, especially for students. I paid almost double what I did two years ago, and although I enjoyed the music, I’m not sure it offered good value for money. If they don’t lower the prices next year, a lot of people might skip it.",
+        "contentVi": "Tôi thực sự rất thích âm nhạc của lễ hội này và tôi đã nhảy theo điệu nhạc, tôi cảm thấy từng giây từng phút của lễ hội đều rất đáng giá. Tôi hoàn toàn yêu thích năng lượng từ các màn trình diễn, và âm nhạc rất tuyệt vời trong suốt cả dịp cuối tuần. Tuy nhiên, tôi phải nói rằng giá vé quá cao, đặc biệt là đối với sinh viên. Tôi đã phải trả gần gấp đôi so với hai năm trước, và mặc dù thích âm nhạc, tôi không chắc nó có tương xứng với số tiền bỏ ra hay không. Nếu họ không giảm giá vào năm tới, rất nhiều người có thể sẽ bỏ qua không tham gia."
+      },
+      {
+        "personIndex": 3,
+        "personName": "Person D",
+        "contentEn": "We were playing in a band and we finished our performance in the morning. However, I stayed at the festival to meet up with some old band mates. We talked a lot. However, I didn’t like the venue. It was too crowded and not well organised. The road to the tent village was also congested. I think they should choose a better location next year.",
+        "contentVi": "Chúng tôi biểu diễn trong một ban nhạc và đã hoàn thành phần trình diễn của mình vào buổi sáng. Tuy nhiên, tôi vẫn ở lại lễ hội để gặp gỡ một số bạn cũ trong ban nhạc trước đây. Chúng tôi đã trò chuyện rất nhiều. Tuy vậy, tôi không thích địa điểm tổ chức. Nó quá đông đúc và không được tổ chức tốt. Con đường dẫn đến khu lều trại cũng bị tắc nghẽn. Tôi nghĩ họ nên chọn một địa điểm tốt hơn vào năm tới."
+      }
+    ],
+    "questions": [
+      {
+        "id": 50,
+        "questionNumber": 1,
+        "question": "Who disappointed with the festival?",
+        "correctPersonIndex": 1,
+        "explanation": "Đáp án đúng: Person B (B)\n\n📌 Dẫn chứng trích đoạn:\n\"The sound quality wasn't great, and the whole event just felt disorganised... I don't think I'll be coming back next year. It's simply not worth the money or the time anymore.\"\n-> Dịch: \"Chất lượng âm thanh không tốt, toàn bộ sự kiện tạo cảm giác vô tổ chức... Tôi không nghĩ mình sẽ quay lại vào năm tới. Đơn giản là nó không còn đáng tiền hay thời gian nữa.\"\n\n💡 Mẹo ghi nhớ cho Person B:\nThất vọng với lễ hội (disappointed with the festival / disorganised / not worth money or time).",
+        "mnemonicHint": "Thất vọng về lễ hội (disappointed with festival) -> Person B."
+      },
+      {
+        "id": 51,
+        "questionNumber": 2,
+        "question": "Who didn’t like the venue?",
+        "correctPersonIndex": 3,
+        "explanation": "Đáp án đúng: Person D (D)\n\n📌 Dẫn chứng trích đoạn:\n\"However, I didn't like the venue. It was too crowded and not well organised. The road to the tent village was also congested. I think they should choose a better location next year.\"\n-> Dịch: \"Tuy nhiên, tôi không thích địa điểm tổ chức. Nó quá đông đúc và không được tổ chức tốt... Tôi nghĩ họ nên chọn một địa điểm tốt hơn vào năm tới.\"\n\n💡 Mẹo ghi nhớ cho Person D:\nKhông thích địa điểm tổ chức (didn't like the venue / choose a better location next year) & Thích gặp lại bạn cũ (liked to meet old friends / old band mates).",
+        "mnemonicHint": "Không thích địa điểm (didn't like the venue) -> Person D."
+      },
+      {
+        "id": 52,
+        "questionNumber": 3,
+        "question": "Who found the ticket prices expensive?",
+        "correctPersonIndex": 2,
+        "explanation": "Đáp án đúng: Person C (C)\n\n📌 Dẫn chứng trích đoạn:\n\"However, I have to say the ticket prices were far too high, especially for students. I paid almost double what I did two years ago...\"\n-> Dịch: \"Tuy nhiên, tôi phải nói rằng giá vé quá cao, đặc biệt là đối với sinh viên. Tôi đã phải trả gần gấp đôi so với hai năm trước...\"\n\n💡 Mẹo ghi nhớ cho Person C:\nThấy giá vé đắt đỏ (found the ticket prices expensive / ticket prices were far too high) & Thích âm nhạc tại sự kiện (enjoyed the music at the event).",
+        "mnemonicHint": "Chê giá vé đắt (ticket prices expensive) -> Person C."
+      },
+      {
+        "id": 53,
+        "questionNumber": 4,
+        "question": "Who enjoyed the last day?",
+        "correctPersonIndex": 0,
+        "explanation": "Đáp án đúng: Person A (A)\n\n📌 Dẫn chứng trích đoạn:\n\"On the final day, the skies cleared up and the performances were truly amazing — especially the final act in the evening. That last day made it all worthwhile...\"\n-> Dịch: \"Vào ngày cuối cùng, bầu trời đã quang đãng và các buổi biểu diễn thực sự tuyệt vời... Ngày cuối cùng đó đã khiến mọi thứ trở nên hoàn toàn xứng đáng...\"\n\n💡 Mẹo ghi nhớ cho Person A:\nThích ngày cuối cùng (enjoyed the last day / final day made it all worthwhile) & Không thích thời tiết xấu (disliked the bad weather / rained heavily).",
+        "mnemonicHint": "Thích ngày cuối cùng (enjoyed the last day) -> Person A."
+      },
+      {
+        "id": 54,
+        "questionNumber": 5,
+        "question": "Who liked to meet old friends?",
+        "correctPersonIndex": 3,
+        "explanation": "Đáp án đúng: Person D (D)\n\n📌 Dẫn chứng trích đoạn:\n\"However, I stayed at the festival to meet up with some old band mates. We talked a lot.\"\n-> Dịch: \"Tuy nhiên, tôi vẫn ở lại lễ hội để gặp gỡ một số bạn cũ trong ban nhạc trước đây. Chúng tôi đã trò chuyện rất nhiều.\"\n\n💡 Mẹo ghi nhớ cho Person D:\nThích gặp lại bạn cũ (liked to meet old friends / meet up with some old band mates) & Không thích địa điểm (didn't like the venue).",
+        "mnemonicHint": "Thích gặp lại bạn cũ (meet old friends) -> Person D."
+      },
+      {
+        "id": 55,
+        "questionNumber": 6,
+        "question": "Who disliked the bad weather?",
+        "correctPersonIndex": 0,
+        "explanation": "Đáp án đúng: Person A (A)\n\n📌 Dẫn chứng trích đoạn:\n\"and to be honest, the weather really didn't cooperate. It rained heavily on the first two days, which made it difficult to enjoy the outdoor activities. I still got wet in the tent.\"\n-> Dịch: \"và thành thật mà nói, thời tiết thực sự không ủng hộ chút nào. Trời mưa tầm tã suốt hai ngày đầu tiên... Tôi thậm chí còn bị ướt cả trong lều.\"\n\n💡 Mẹo ghi nhớ cho Person A:\nKhông thích thời tiết xấu (disliked the bad weather / rained heavily, poor weather) & Thích ngày cuối cùng (enjoyed the last day).",
+        "mnemonicHint": "Không thích thời tiết xấu, mưa ướt lều (disliked the bad weather) -> Person A."
+      },
+      {
+        "id": 56,
+        "questionNumber": 7,
+        "question": "Who enjoyed the music at the event?",
+        "correctPersonIndex": 2,
+        "explanation": "Đáp án đúng: Person C (C)\n\n📌 Dẫn chứng trích đoạn:\n\"I really enjoyed the music of this festival and I danced to the music, I felt every second of the festival was worth it. I absolutely loved the energy of the performances, and the music was spot on throughout the weekend.\"\n-> Dịch: \"Tôi thực sự rất thích âm nhạc của lễ hội này và tôi đã nhảy theo điệu nhạc, tôi cảm thấy từng giây từng phút của lễ hội đều rất đáng giá. Tôi hoàn toàn yêu thích năng lượng từ các màn trình diễn, và âm nhạc rất tuyệt vời...\"\n\n💡 Mẹo ghi nhớ cho Person C:\nThích âm nhạc tại sự kiện (enjoyed the music at the event / danced to the music, music was spot on) & Chê giá vé đắt (found the ticket prices expensive).",
+        "mnemonicHint": "Thích âm nhạc, nhảy theo nhạc (enjoyed the music at the event) -> Person C."
+      }
+    ]
   }
 ];

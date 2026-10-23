@@ -100,6 +100,24 @@ const TOPIC_MNEMONIC_SUMMARIES: Record<string, Record<string, string>> = {
     'Chirish': 'Chỉ muốn làm giáo viên, không muốn đổi nghề khác (not want to change to other careers) ➔ Thích kỳ thực tập/tập huấn (enjoyed working when training)',
     'Emma': 'Thích làm việc bằng tay chân (doing things with hands / pipe leaks, screws) ➔ Tiếc vì học đại học quá dài (training was too long)',
     'Grace': 'Thiếu kinh nghiệm nên rất khó xin việc đầu tiên (hard to get first job) ➔ Thích môi trường làm việc linh hoạt (flexible work environment / hybrid)'
+  },
+  'topic-6': {
+    'A': 'Thích chơi với trẻ con để hạn chế dùng máy tính (play with children) ➔ Game bây giờ khó, nhiều luật lệ hơn (games nowadays much more difficult)',
+    'B': 'Đá bóng cùng bạn bè cùng trang lứa trên sân trường/khu phố (play with other children in the past / played soccer)',
+    'C': 'Lúc nhỏ không thích ra ngoài mà thích đọc sách (liked reading books) ➔ Lớn lên thích game hiện đại giao diện đẹp (likes modern games when growing up)',
+    'D': 'Hay đứng ngóng qua cửa sổ mong tạnh mưa để ra ngoài chơi (looked forward to going out to play) ➔ Mẹ cho màu sáp vẽ nên mê nghệ thuật (liked arts)'
+  },
+  'topic-7': {
+    'Person A': 'Thực tập không lương (unpaid internship) ➔ Thu được nhiều kỹ năng và kinh nghiệm thực tế (benefits from working for free)',
+    'Person B': 'Mơ ước làm giáo viên và không muốn đổi nghề (not want to change to another job) ➔ Vừa làm vừa học để nâng cao kỹ năng (enjoys working while training)',
+    'Person C': 'Tuổi thơ phụ thợ sửa ống nước, thích cơ khí chế tạo bằng tay (likes doing things with their hands) ➔ Thấy thời gian đào tạo quá dài (training is too long)',
+    'Person D': 'Rất khó để tìm được việc đầu tiên (difficult to get the first job) ➔ Thích môi trường làm việc linh hoạt tại nhà (flexible working environment)'
+  },
+  'topic-8': {
+    'A': 'Thích ngày cuối cùng (enjoyed the last day) ➔ Không thích thời tiết xấu (disliked the bad weather / rained heavily)',
+    'B': 'Thất vọng với lễ hội (disappointed with the festival / sound wasn\'t great, disorganised, not worth money)',
+    'C': 'Thích âm nhạc tại sự kiện (enjoyed the music at the event / danced to music) ➔ Chê giá vé đắt (found the ticket prices expensive)',
+    'D': 'Thích gặp lại bạn cũ (liked to meet old friends / old band mates) ➔ Không thích địa điểm tổ chức (didn\'t like the venue)'
   }
 };
 
