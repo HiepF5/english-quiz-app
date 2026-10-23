@@ -13,7 +13,9 @@ import {
   ChevronRight,
   Highlighter,
   Dices,
-  ArrowRight
+  ArrowRight,
+  Eye,
+  EyeOff
 } from 'lucide-react';
 import type { P4PairItem, ListeningP4Mode } from '../types/listeningP4';
 import p4PairsData from '../data/aptis_listening_part4_pairs.json';
@@ -94,6 +96,26 @@ export const ListeningP4Workspace: React.FC = () => {
 
   // Toggle translation
   const [showVietnamese, setShowVietnamese] = useState<boolean>(true);
+
+  // State: Hiển thị khung Giải thích / Transcript & kết quả sau khi chọn đáp án (Mặc định TẮT / Bỏ theo yêu cầu người dùng, có option bật/tắt)
+  const [showExplanationBox, setShowExplanationBox] = useState<boolean>(() => {
+    try {
+      const saved = localStorage.getItem('aptis_listening_p4_show_explanation_box');
+      return saved !== null ? saved === 'true' : false;
+    } catch {
+      return false;
+    }
+  });
+
+  const toggleShowExplanationBox = () => {
+    setShowExplanationBox(prev => {
+      const next = !prev;
+      try {
+        localStorage.setItem('aptis_listening_p4_show_explanation_box', String(next));
+      } catch {}
+      return next;
+    });
+  };
 
   // Flattened 60 questions from pairsList
   const flattenedQuestions: FlattenedP4Question[] = useMemo(() => {
@@ -431,6 +453,20 @@ export const ListeningP4Workspace: React.FC = () => {
               <span>{showVietnamese ? 'Dịch: BẬT' : 'Dịch: TẮT'}</span>
             </button>
 
+            {/* Toggle show/hide explanation & transcript box */}
+            <button
+              onClick={toggleShowExplanationBox}
+              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl font-semibold transition border ${
+                showExplanationBox
+                  ? 'bg-blue-100 dark:bg-blue-950/40 border-blue-300 dark:border-blue-700 text-blue-800 dark:text-blue-300 shadow-sm'
+                  : 'bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400'
+              }`}
+              title="Bật/Tắt hiển thị khung Giải thích / Transcript & kết quả sau khi chọn đáp án"
+            >
+              {showExplanationBox ? <Eye className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" /> : <EyeOff className="w-3.5 h-3.5" />}
+              <span>{showExplanationBox ? 'Giải thích: BẬT' : 'Giải thích: TẮT'}</span>
+            </button>
+
             {/* Reset buttons */}
             {(mode === 'practice' || mode === 'quiz60') && (
               <>
@@ -510,8 +546,8 @@ export const ListeningP4Workspace: React.FC = () => {
         </div>
       )}
 
-      {/* PRACTICE MODE: Single Pair View with Previous/Next and Quick Tip Modal */}
-      {mode === 'practice' && currentPair && (
+      {/* PRACTICE OR EXAM MODE: Single Pair View with Previous/Next and Quick Tip Modal */}
+      {(mode === 'practice' || mode === 'exam') && currentPair && (
         <div className="space-y-6">
           
           {/* Top Navigation & Quick Switch Bar */}
@@ -589,7 +625,9 @@ export const ListeningP4Workspace: React.FC = () => {
             isPlayingAudio={isPlayingAudio && playingPairId === currentPair.id}
             onPlayAudio={() => handlePlayAudio(currentPair)}
             showVietnamese={showVietnamese}
-            mode="practice"
+            showExplanationBox={showExplanationBox}
+            mode={mode}
+            isExamSubmitted={isExamSubmitted}
             renderHighlightedText={renderHighlightedText}
             onResetPair={handleResetCurrentPair}
           />
@@ -629,6 +667,16 @@ export const ListeningP4Workspace: React.FC = () => {
                 <span>Chuyển tiếp</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
+
+              {mode === 'exam' && !isExamSubmitted && (
+                <button
+                  onClick={handleExamSubmit}
+                  className="flex-1 sm:flex-none flex items-center justify-center space-x-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold transition shadow-md shadow-blue-600/20"
+                >
+                  <CheckCircle2 className="w-4 h-4" />
+                  <span>Nộp bài thi</span>
+                </button>
+              )}
             </div>
           </div>
 
@@ -862,8 +910,8 @@ export const ListeningP4Workspace: React.FC = () => {
                         )}
                       </div>
 
-                      {/* Explanation box */}
-                      {(item.explanationVi || item.tipMnemonic) && (
+                      {/* Explanation box (respects showExplanationBox toggle) */}
+                      {showExplanationBox && (item.explanationVi || item.tipMnemonic) && (
                         <div className="bg-slate-50 dark:bg-slate-950/60 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 text-xs space-y-1.5 text-slate-700 dark:text-slate-300">
                           {item.explanationVi && (
                             <div className="whitespace-pre-line leading-relaxed">
@@ -914,6 +962,7 @@ interface PairCardProps {
   isPlayingAudio: boolean;
   onPlayAudio: () => void;
   showVietnamese: boolean;
+  showExplanationBox: boolean;
   mode: 'practice' | 'exam';
   isExamSubmitted?: boolean;
   renderHighlightedText: (fullText: string, key?: string) => React.ReactNode;
@@ -928,12 +977,22 @@ const PairCard: React.FC<PairCardProps> = ({
   isPlayingAudio,
   onPlayAudio,
   showVietnamese,
+  showExplanationBox,
   mode,
   isExamSubmitted = false,
   renderHighlightedText,
   onResetPair
 }) => {
   const [showExplanation, setShowExplanation] = useState<boolean>(false);
+
+  // Clean explanation text if it already ends with "Mẹo: ..." to avoid repeating with tipMnemonic
+  const cleanExplanationVi = useMemo(() => {
+    if (!pair.explanationVi) return '';
+    if (pair.tipMnemonic) {
+      return pair.explanationVi.replace(/\n\s*Mẹo:[\s\S]*$/i, '').trim();
+    }
+    return pair.explanationVi;
+  }, [pair.explanationVi, pair.tipMnemonic]);
 
   const q1 = pair.questions[0];
   const q2 = pair.questions[1];
@@ -1183,22 +1242,49 @@ const PairCard: React.FC<PairCardProps> = ({
         )}
       </div>
 
-      {/* PAIR SUMMARY & EXPLANATION BOX (Exact layout as screenshot) */}
-      {((showFeedbackQ1 && showFeedbackQ2) || showExplanation) && (
+      {/* Nút Xem giải thích khi Option tắt và người dùng đã trả lời cả 2 câu */}
+      {!showExplanationBox && (showFeedbackQ1 && showFeedbackQ2) && !showExplanation && (
+        <div className="flex justify-center pt-1">
+          <button
+            onClick={() => setShowExplanation(true)}
+            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs font-semibold transition border border-slate-200 dark:border-slate-700 shadow-sm"
+          >
+            <Eye className="w-3.5 h-3.5 text-blue-500" />
+            <span>Xem giải thích / Transcript</span>
+          </button>
+        </div>
+      )}
+
+      {/* PAIR SUMMARY & EXPLANATION BOX (Tự động hiển thị khi Option Giải thích BẬT, hoặc khi bấm Xem giải thích) */}
+      {((showExplanationBox && showFeedbackQ1 && showFeedbackQ2) || showExplanation) && (
         <div className={`p-4 sm:p-5 rounded-2xl border space-y-3 ${
           bothCorrect
             ? 'bg-emerald-50/40 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/60'
             : 'bg-slate-50 dark:bg-slate-950/60 border-slate-200 dark:border-slate-800'
         }`}>
-          <div className="flex items-center space-x-2">
-            {bothCorrect ? (
-              <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
-            ) : (
-              <XCircle className="w-5 h-5 text-rose-500 shrink-0" />
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              {bothCorrect ? (
+                <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+              ) : (
+                <XCircle className="w-5 h-5 text-rose-500 shrink-0" />
+              )}
+              <h4 className={`text-sm font-bold ${bothCorrect ? 'text-emerald-700 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+                {bothCorrect ? 'Chính xác, làm tốt lắm!' : 'Chưa đúng hết – xem lại các ý đánh dấu đỏ ở trên.'}
+              </h4>
+            </div>
+
+            {/* Nút thu gọn / ẩn khi xem theo dạng mở rộng */}
+            {!showExplanationBox && (
+              <button
+                onClick={() => setShowExplanation(false)}
+                className="text-xs text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 flex items-center space-x-1 font-semibold"
+                title="Ẩn khung giải thích này"
+              >
+                <EyeOff className="w-3.5 h-3.5" />
+                <span>Ẩn đi</span>
+              </button>
             )}
-            <h4 className={`text-sm font-bold ${bothCorrect ? 'text-emerald-700 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
-              {bothCorrect ? 'Chính xác, làm tốt lắm!' : 'Chưa đúng hết – xem lại các ý đánh dấu đỏ ở trên.'}
-            </h4>
           </div>
 
           {/* Transcript / Dịch box */}
@@ -1207,7 +1293,7 @@ const PairCard: React.FC<PairCardProps> = ({
               Giải thích / Transcript
             </h5>
             <div className="whitespace-pre-line leading-relaxed">
-              {pair.explanationVi || `Đáp án:\n1. ${q1.options[q1.correct]}\n2. ${q2.options[q2.correct]}`}
+              {cleanExplanationVi || `Đáp án:\n1. ${q1.options[q1.correct]}\n2. ${q2.options[q2.correct]}`}
             </div>
             {pair.tipMnemonic && (
               <div className="pt-2 border-t border-slate-100 dark:border-slate-800 text-amber-700 dark:text-amber-300 font-semibold">
