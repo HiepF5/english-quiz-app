@@ -1,11 +1,11 @@
 {
   "id": "aptis-listening-part-1-all-questions",
-  "title": "Aptis Listening Part 1 - Tổng hợp 188 câu",
-  "description": "Luyện tập theo trí nhớ tiếng Việt & Thi thử 188 câu nghe Aptis Part 1 (Set 1: 1-50, Set 2: 51-100, Set 3: 101-188)",
+  "title": "Aptis Listening Part 1 - Tổng hợp 192 câu",
+  "description": "Luyện tập theo trí nhớ tiếng Việt & Thi thử 192 câu nghe Aptis Part 1 (Set 1: 1-50, Set 2: 51-100, Set 3: 101-192)",
   "level": "B1-B2",
   "category": "Listening",
   "timeLimitMinutes": 60,
-  "totalQuestions": 188,
+  "totalQuestions": 192,
   "sets": [
     {
       "id": "set-1",
@@ -23,10 +23,10 @@
     },
     {
       "id": "set-3",
-      "name": "Set 3 (Câu 101 - 188)",
-      "count": 88,
+      "name": "Set 3 (Câu 101 - 192)",
+      "count": 92,
       "questionStart": 101,
-      "questionEnd": 188
+      "questionEnd": 192
     }
   ],
   "questions": [
@@ -3972,7 +3972,91 @@
         "Đi dạo"
       ],
       "explanation": "Đáp án đúng: A. Go cycling\n• Dịch câu hỏi: Gia đình này làm gì vào hầu hết các ngày cuối tuần?\n• Dịch các đáp án:\n  - A. Go cycling ➔ Đi xe đạp\n  - B. Go picnic ➔ Đi dã ngoại\n  - C. Go for a walk ➔ Đi dạo",
-      "part": "Phần 3 (Câu 101 - 188)"
+      "part": "Phần 3 (Câu 101 - 192)"
+    },
+    {
+      "num": 189,
+      "id": "579204722",
+      "setIndex": 3,
+      "question": "Helen is calling a friend about the place her whole family is standing while seeing her off to college. Where are they standing?",
+      "options": [
+        "library complex",
+        "university area",
+        "Residential area"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Helen đang gọi cho một người bạn về địa điểm mà cả gia đình cô ấy đang đứng tiễn cô ấy đi học đại học. Họ đang đứng ở đâu?",
+      "optionsVi": [
+        "Khu phức hợp thư viện",
+        "Khuôn viên trường đại học",
+        "Khu dân cư"
+      ],
+      "explanation": "Đáp án đúng: C. Residential area\n• Dịch câu hỏi: Helen đang gọi cho một người bạn về địa điểm mà cả gia đình cô ấy đang đứng tiễn cô ấy đi học đại học. Họ đang đứng ở đâu?\n• Dịch các đáp án:\n  - A. library complex ➔ Khu phức hợp thư viện\n  - B. university area ➔ Khuôn viên trường đại học\n  - C. Residential area ➔ Khu dân cư",
+      "part": "Phần 3 (Câu 101 - 192)"
+    },
+    {
+      "num": 190,
+      "id": "579204723",
+      "setIndex": 3,
+      "question": "A tour guide is talking about the vacation list of activities. What can people do in the afternoon?",
+      "options": [
+        "Join a dance class",
+        "Play golf",
+        "Go shopping"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một hướng dẫn viên du lịch đang nói về danh sách các hoạt động trong kỳ nghỉ. Mọi người có thể làm gì vào buổi chiều?",
+      "optionsVi": [
+        "Tham gia lớp học khiêu vũ",
+        "Chơi golf",
+        "Đi mua sắm"
+      ],
+      "explanation": "Đáp án đúng: B. Play golf\n• Dịch câu hỏi: Một hướng dẫn viên du lịch đang nói về danh sách các hoạt động trong kỳ nghỉ. Mọi người có thể làm gì vào buổi chiều?\n• Dịch các đáp án:\n  - A. Join a dance class ➔ Tham gia lớp học khiêu vũ\n  - B. Play golf ➔ Chơi golf\n  - C. Go shopping ➔ Đi mua sắm",
+      "part": "Phần 3 (Câu 101 - 192)"
+    },
+    {
+      "num": 191,
+      "id": "579204724",
+      "setIndex": 3,
+      "question": "The woman is calling a friend about meeting for dinner. How long does it take to get to the station?",
+      "options": [
+        "30 minutes",
+        "40 minutes",
+        "50 minutes"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Người phụ nữ đang gọi điện cho một người bạn về việc hẹn ăn tối. Mất bao lâu để đến nhà ga?",
+      "optionsVi": [
+        "30 phút",
+        "40 phút",
+        "50 phút"
+      ],
+      "explanation": "Đáp án đúng: B. 40 minutes\n• Dịch câu hỏi: Người phụ nữ đang gọi điện cho một người bạn về việc hẹn ăn tối. Mất bao lâu để đến nhà ga?\n• Dịch các đáp án:\n  - A. 30 minutes ➔ 30 phút\n  - B. 40 minutes ➔ 40 phút\n  - C. 50 minutes ➔ 50 phút",
+      "part": "Phần 3 (Câu 101 - 192)"
+    },
+    {
+      "num": 192,
+      "id": "579204725",
+      "setIndex": 3,
+      "question": "Listen to a woman asking about a flight. How much does the flight in the morning cost?",
+      "options": [
+        "300 pounds",
+        "350 pounds",
+        "400 pounds"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Nghe một người phụ nữ hỏi về một chuyến bay. Chuyến bay vào buổi sáng có giá bao nhiêu?",
+      "optionsVi": [
+        "300 bảng",
+        "350 bảng",
+        "400 bảng"
+      ],
+      "explanation": "Đáp án đúng: B. 350 pounds\n• Dịch câu hỏi: Nghe một người phụ nữ hỏi về một chuyến bay. Chuyến bay vào buổi sáng có giá bao nhiêu?\n• Dịch các đáp án:\n  - A. 300 pounds ➔ 300 bảng\n  - B. 350 pounds ➔ 350 bảng\n  - C. 400 pounds ➔ 400 bảng",
+      "part": "Phần 3 (Câu 101 - 192)"
     }
   ]
 }
