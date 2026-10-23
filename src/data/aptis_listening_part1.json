@@ -1,11 +1,11 @@
 {
   "id": "aptis-listening-part-1-all-questions",
-  "title": "Aptis Listening Part 1 - Tổng hợp 194 câu",
-  "description": "Luyện tập theo trí nhớ tiếng Việt & Thi thử 194 câu nghe Aptis Part 1 (Set 1: 1-50, Set 2: 51-100, Set 3: 101-194)",
+  "title": "Aptis Listening Part 1 - Tổng hợp 207 câu",
+  "description": "Luyện tập theo trí nhớ tiếng Việt & Thi thử 207 câu nghe Aptis Part 1 (Set 1: 1-50, Set 2: 51-100, Set 3: 101-207)",
   "level": "B1-B2",
   "category": "Listening",
   "timeLimitMinutes": 60,
-  "totalQuestions": 194,
+  "totalQuestions": 207,
   "sets": [
     {
       "id": "set-1",
@@ -23,10 +23,10 @@
     },
     {
       "id": "set-3",
-      "name": "Set 3 (Câu 101 - 194)",
-      "count": 94,
+      "name": "Set 3 (Câu 101 - 207)",
+      "count": 107,
       "questionStart": 101,
-      "questionEnd": 194
+      "questionEnd": 207
     }
   ],
   "questions": [
@@ -4098,7 +4098,280 @@
         "Bị lỡ chuyến tàu"
       ],
       "explanation": "Đáp án đúng: C. Missed the train\n• Dịch câu hỏi: Nghe một người phụ nữ giải thích lý do tại sao cô ấy đến muộn. Lý do chính khiến cô ấy bị muộn là gì?\n• Dịch các đáp án:\n  - A. Overslept ➔ Ngủ quên\n  - B. Forgot something ➔ Quên đồ\n  - C. Missed the train ➔ Bị lỡ chuyến tàu",
-      "part": "Phần 3 (Câu 101 - 194)"
+      "part": "Phần 3 (Câu 101 - 199)"
+    },
+    {
+      "num": 195,
+      "id": "579204728",
+      "setIndex": 3,
+      "question": "A man is calling his mother. How long will he be late?",
+      "options": [
+        "10 minutes",
+        "15 minutes",
+        "20 minutes"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người đàn ông đang gọi cho mẹ mình. Anh ấy sẽ đến muộn bao lâu?",
+      "optionsVi": [
+        "10 phút",
+        "15 phút",
+        "20 phút"
+      ],
+      "explanation": "Đáp án đúng: A. 10 minutes\n• Dịch câu hỏi: Một người đàn ông đang gọi cho mẹ mình. Anh ấy sẽ đến muộn bao lâu?\n• Dịch các đáp án:\n  - A. 10 minutes ➔ 10 phút\n  - B. 15 minutes ➔ 15 phút\n  - C. 20 minutes ➔ 20 phút",
+      "part": "Phần 3 (Câu 101 - 199)"
+    },
+    {
+      "num": 196,
+      "id": "579204729",
+      "setIndex": 3,
+      "question": "A woman is going to the cinema with her husband. What time does the movie begin?",
+      "options": [
+        "6:40",
+        "7:00",
+        "9:20"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người phụ nữ sẽ đi xem phim cùng chồng. Bộ phim bắt đầu lúc mấy giờ?",
+      "optionsVi": [
+        "6:40",
+        "7:00",
+        "9:20"
+      ],
+      "explanation": "Đáp án đúng: A. 6:40\n• Dịch câu hỏi: Một người phụ nữ sẽ đi xem phim cùng chồng. Bộ phim bắt đầu lúc mấy giờ?\n• Dịch các đáp án:\n  - A. 6:40 ➔ 6:40\n  - B. 7:00 ➔ 7:00\n  - C. 9:20 ➔ 9:20",
+      "part": "Phần 3 (Câu 101 - 199)"
+    },
+    {
+      "num": 197,
+      "id": "579204730",
+      "setIndex": 3,
+      "question": "A man is calling his friend. Where will they meet?",
+      "options": [
+        "At school",
+        "By the park",
+        "In the cafe"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người đàn ông đang gọi cho bạn mình. Họ sẽ gặp nhau ở đâu?",
+      "optionsVi": [
+        "Tại trường học",
+        "Bên cạnh công viên",
+        "Trong quán cà phê"
+      ],
+      "explanation": "Đáp án đúng: B. By the park\n• Dịch câu hỏi: Một người đàn ông đang gọi cho bạn mình. Họ sẽ gặp nhau ở đâu?\n• Dịch các đáp án:\n  - A. At school ➔ Tại trường học\n  - B. By the park ➔ Bên cạnh công viên\n  - C. In the cafe ➔ Trong quán cà phê",
+      "part": "Phần 3 (Câu 101 - 199)"
+    },
+    {
+      "num": 198,
+      "id": "579204731",
+      "setIndex": 3,
+      "question": "Dan is going to university. Where should Dan turn right?",
+      "options": [
+        "At the Main Street",
+        "At the hospital",
+        "At the traffic lights"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Dan đang đi đến trường đại học. Dan nên rẽ phải ở đâu?",
+      "optionsVi": [
+        "Tại đường Main Street",
+        "Tại bệnh viện",
+        "Tại cột đèn giao thông"
+      ],
+      "explanation": "Đáp án đúng: C. At the traffic lights\n• Dịch câu hỏi: Dan đang đi đến trường đại học. Dan nên rẽ phải ở đâu?\n• Dịch các đáp án:\n  - A. At the Main Street ➔ Tại đường Main Street\n  - B. At the hospital ➔ Tại bệnh viện\n  - C. At the traffic lights ➔ Tại cột đèn giao thông",
+      "part": "Phần 3 (Câu 101 - 199)"
+    },
+    {
+      "num": 199,
+      "id": "579204732",
+      "setIndex": 3,
+      "question": "A saleswoman is talking to her customer. How much is the cheapest computer in the shop?",
+      "options": [
+        "135 pounds",
+        "145 pounds",
+        "155 pounds"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một nữ nhân viên bán hàng đang nói chuyện với khách hàng. Máy tính rẻ nhất trong cửa hàng có giá bao nhiêu?",
+      "optionsVi": [
+        "135 bảng",
+        "145 bảng",
+        "155 bảng"
+      ],
+      "explanation": "Đáp án đúng: A. 135 pounds\n• Dịch câu hỏi: Một nữ nhân viên bán hàng đang nói chuyện với khách hàng. Máy tính rẻ nhất trong cửa hàng có giá bao nhiêu?\n• Dịch các đáp án:\n  - A. 135 pounds ➔ 135 bảng\n  - B. 145 pounds ➔ 145 bảng\n  - C. 155 pounds ➔ 155 bảng",
+      "part": "Phần 3 (Câu 101 - 204)"
+    },
+    {
+      "num": 200,
+      "id": "579204733",
+      "setIndex": 3,
+      "question": "A tour guide is introducing a famous building. What is this building currently used for?",
+      "options": [
+        "A museum",
+        "A department store",
+        "A cinema"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một hướng dẫn viên du lịch đang giới thiệu về một tòa nhà nổi tiếng. Tòa nhà này hiện đang được sử dụng để làm gì?",
+      "optionsVi": [
+        "Một bảo tàng",
+        "Một cửa hàng bách hóa",
+        "Một rạp chiếu phim"
+      ],
+      "explanation": "Đáp án đúng: B. A department store\n• Dịch câu hỏi: Một hướng dẫn viên du lịch đang giới thiệu về một tòa nhà nổi tiếng. Tòa nhà này hiện đang được sử dụng để làm gì?\n• Dịch các đáp án:\n  - A. A museum ➔ Một bảo tàng\n  - B. A department store ➔ Một cửa hàng bách hóa\n  - C. A cinema ➔ Một rạp chiếu phim",
+      "part": "Phần 3 (Câu 101 - 204)"
+    },
+    {
+      "num": 201,
+      "id": "579204734",
+      "setIndex": 3,
+      "question": "David is in an interview. What was his last job?",
+      "options": [
+        "An engineer",
+        "A teacher",
+        "An electrician"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "David đang trong một buổi phỏng vấn. Công việc gần đây nhất của anh ấy là gì?",
+      "optionsVi": [
+        "Một kỹ sư",
+        "Một giáo viên",
+        "Một thợ điện"
+      ],
+      "explanation": "Đáp án đúng: C. An electrician\n• Dịch câu hỏi: David đang trong một buổi phỏng vấn. Công việc gần đây nhất của anh ấy là gì?\n• Dịch các đáp án:\n  - A. An engineer ➔ Một kỹ sư\n  - B. A teacher ➔ Một giáo viên\n  - C. An electrician ➔ Một thợ điện",
+      "part": "Phần 3 (Câu 101 - 204)"
+    },
+    {
+      "num": 202,
+      "id": "579204735",
+      "setIndex": 3,
+      "question": "A woman is talking to the police. What did she lose?",
+      "options": [
+        "A necklace",
+        "A bag",
+        "A wallet"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một người phụ nữ đang nói chuyện với cảnh sát. Cô ấy đã làm mất cái gì?",
+      "optionsVi": [
+        "Một chiếc vòng cổ",
+        "Một chiếc túi xách",
+        "Một chiếc ví"
+      ],
+      "explanation": "Đáp án đúng: B. A bag\n• Dịch câu hỏi: Một người phụ nữ đang nói chuyện với cảnh sát. Cô ấy đã làm mất cái gì?\n• Dịch các đáp án:\n  - A. A necklace ➔ Một chiếc vòng cổ\n  - B. A bag ➔ Một chiếc túi xách\n  - C. A wallet ➔ Một chiếc ví",
+      "part": "Phần 3 (Câu 101 - 204)"
+    },
+    {
+      "num": 203,
+      "id": "579204736",
+      "setIndex": 3,
+      "question": "Tom is talking with his friend about his teachers. What is his favourite teacher?",
+      "options": [
+        "Miss Taylor",
+        "Mr. Styles",
+        "Miss Brown"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Tom đang nói chuyện với bạn mình về các giáo viên của mình. Ai là giáo viên yêu thích nhất của cậu ấy?",
+      "optionsVi": [
+        "Cô Taylor",
+        "Thầy Styles",
+        "Cô Brown"
+      ],
+      "explanation": "Đáp án đúng: C. Miss Brown\n• Dịch câu hỏi: Tom đang nói chuyện với bạn mình về các giáo viên của mình. Ai là giáo viên yêu thích nhất của cậu ấy?\n• Dịch các đáp án:\n  - A. Miss Taylor ➔ Cô Taylor\n  - B. Mr. Styles ➔ Thầy Styles\n  - C. Miss Brown ➔ Cô Brown",
+      "part": "Phần 3 (Câu 101 - 204)"
+    },
+    {
+      "num": 204,
+      "id": "579204737",
+      "setIndex": 3,
+      "question": "A woman is talking to a shop assistant. Why does the woman return the dress?",
+      "options": [
+        "Because of its size",
+        "Because of its color",
+        "Because of its pattern"
+      ],
+      "correctLetter": "A",
+      "correct": 0,
+      "questionVi": "Một người phụ nữ đang nói chuyện với nhân viên bán hàng. Tại sao người phụ nữ lại trả lại chiếc váy?",
+      "optionsVi": [
+        "Vì kích cỡ của nó",
+        "Vì màu sắc của nó",
+        "Vì hoa văn họa tiết của nó"
+      ],
+      "explanation": "Đáp án đúng: A. Because of its size\n• Dịch câu hỏi: Một người phụ nữ đang nói chuyện với nhân viên bán hàng. Tại sao người phụ nữ lại trả lại chiếc váy?\n• Dịch các đáp án:\n  - A. Because of its size ➔ Vì kích cỡ của nó\n  - B. Because of its color ➔ Vì màu sắc của nó\n  - C. Because of its pattern ➔ Vì hoa văn họa tiết của nó",
+      "part": "Phần 3 (Câu 101 - 207)"
+    },
+    {
+      "num": 205,
+      "id": "579204738",
+      "setIndex": 3,
+      "question": "Louis is having dinner in a new restaurant. What is his opinion about that restaurant?",
+      "options": [
+        "The price is cheap",
+        "The food is delicious",
+        "The service is slow"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Louis đang ăn tối tại một nhà hàng mới. Ý kiến của anh ấy về nhà hàng đó như thế nào?",
+      "optionsVi": [
+        "Giá cả rẻ",
+        "Đồ ăn ngon",
+        "Dịch vụ chậm chạp"
+      ],
+      "explanation": "Đáp án đúng: C. The service is slow\n• Dịch câu hỏi: Louis đang ăn tối tại một nhà hàng mới. Ý kiến của anh ấy về nhà hàng đó như thế nào?\n• Dịch các đáp án:\n  - A. The price is cheap ➔ Giá cả rẻ\n  - B. The food is delicious ➔ Đồ ăn ngon\n  - C. The service is slow ➔ Dịch vụ chậm chạp",
+      "part": "Phần 3 (Câu 101 - 207)"
+    },
+    {
+      "num": 206,
+      "id": "579204739",
+      "setIndex": 3,
+      "question": "A teacher is talking to her students. Where are the students now?",
+      "options": [
+        "At school",
+        "In a townhouse",
+        "In a museum"
+      ],
+      "correctLetter": "B",
+      "correct": 1,
+      "questionVi": "Một giáo viên đang nói chuyện với học sinh của mình. Bây giờ các học sinh đang ở đâu?",
+      "optionsVi": [
+        "Ở trường học",
+        "Trong một ngôi nhà phố / biệt thự phố",
+        "Trong viện bảo tàng"
+      ],
+      "explanation": "Đáp án đúng: B. In a townhouse\n• Dịch câu hỏi: Một giáo viên đang nói chuyện với học sinh của mình. Bây giờ các học sinh đang ở đâu?\n• Dịch các đáp án:\n  - A. At school ➔ Ở trường học\n  - B. In a townhouse ➔ Trong một ngôi nhà phố / biệt thự phố\n  - C. In a museum ➔ Trong viện bảo tàng",
+      "part": "Phần 3 (Câu 101 - 207)"
+    },
+    {
+      "num": 207,
+      "id": "579204740",
+      "setIndex": 3,
+      "question": "A man is talking about his job. Where is he working now?",
+      "options": [
+        "At a university",
+        "In a big company",
+        "In a bank"
+      ],
+      "correctLetter": "C",
+      "correct": 2,
+      "questionVi": "Một người đàn ông đang nói về công việc của mình. Hiện tại anh ấy đang làm việc ở đâu?",
+      "optionsVi": [
+        "Tại một trường đại học",
+        "Trong một công ty lớn",
+        "Trong một ngân hàng"
+      ],
+      "explanation": "Đáp án đúng: C. In a bank\n• Dịch câu hỏi: Một người đàn ông đang nói về công việc của mình. Hiện tại anh ấy đang làm việc ở đâu?\n• Dịch các đáp án:\n  - A. At a university ➔ Tại một trường đại học\n  - B. In a big company ➔ Trong một công ty lớn\n  - C. In a bank ➔ Trong một ngân hàng\n• Giải thích: After leaving University, I started working in a bank.",
+      "part": "Phần 3 (Câu 101 - 207)"
     }
   ]
 }
